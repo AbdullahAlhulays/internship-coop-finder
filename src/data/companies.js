@@ -17,7 +17,7 @@ export const companies = [
   },
   {
     name: "flyadeal",
-    location: "Jeddah, Saudi Arabia (Head Office)",
+    location: "Jeddah, Saudi Arabia",
     applicationLink: "https://careers.flyadeal.com/jobs/coop-training-program-june-2026-1775463437",
     deadline: "2026-05-14",
     type: "COOP Training Program - Summer 2026",
