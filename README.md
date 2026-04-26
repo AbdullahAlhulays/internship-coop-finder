@@ -38,6 +38,7 @@ That URL must return JSON in either format:
   {
     "name": "Company Name",
     "bio": "Optional short description about the company.",
+    "location": "Riyadh / Remote",
     "applicationLink": "https://example.com",
     "openingDate": "2026-05-01",
     "deadline": "2026-05-30",
@@ -54,6 +55,7 @@ or:
     {
       "name": "Company Name",
       "bio": "Optional short description about the company.",
+      "location": "Riyadh / Remote",
       "applicationLink": "https://example.com",
       "openingDate": "2026-05-01",
       "deadline": "2026-05-30",
@@ -68,3 +70,5 @@ The app checks that URL when the page loads, refreshes it every 5 minutes, and r
 Expired opportunities are hidden automatically when their deadline passes.
 
 `openingDate` is optional. Add it only when an opportunity should appear as `Open Soon` before applications begin.
+
+`bio` and `location` are optional. Add them only when you want those details to appear on the card.

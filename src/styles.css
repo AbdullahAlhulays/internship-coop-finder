@@ -271,11 +271,20 @@ input {
 
 .company-card h2 {
   position: relative;
-  margin: 0 0 9px;
+  margin: 0 0 7px;
   color: #283629;
   font-size: 1.38rem;
   font-weight: 850;
   line-height: 1.18;
+}
+
+.location {
+  position: relative;
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 760;
+  line-height: 1.4;
 }
 
 .bio-toggle {

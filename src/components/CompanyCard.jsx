@@ -12,6 +12,7 @@ export default function CompanyCard({ company, currentTime }) {
   const isOpenSoon = status.key === "open-soon";
   const canApply = status.key === "open";
   const hasBio = Boolean(company.bio?.trim());
+  const hasLocation = Boolean(company.location?.trim());
   const deadlineCountdown = getDeadlineCountdown(company.deadline, currentTime);
   const openingCountdown =
     isOpenSoon && company.openingDate
@@ -28,6 +29,7 @@ export default function CompanyCard({ company, currentTime }) {
 
       <div>
         <h2>{company.name}</h2>
+        {hasLocation && <p className="location">{company.location}</p>}
         {hasBio && (
           <button
             type="button"
