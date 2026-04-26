@@ -13,7 +13,11 @@ export default function CompanyCard({ company, currentTime }) {
   const canApply = status.key === "open";
   const hasBio = Boolean(company.bio?.trim());
   const hasLocation = Boolean(company.location?.trim());
-  const deadlineCountdown = getDeadlineCountdown(company.deadline, currentTime);
+  const deadlineCountdown = getDeadlineCountdown(
+    company.deadline,
+    currentTime,
+    company.deadlineTime,
+  );
   const openingCountdown =
     isOpenSoon && company.openingDate
       ? getOpeningCountdown(company.openingDate, currentTime)
@@ -54,7 +58,7 @@ export default function CompanyCard({ company, currentTime }) {
           </>
         )}
         <span>Deadline</span>
-        <strong>{formatDeadline(company.deadline)}</strong>
+        <strong>{formatDeadline(company.deadline, company.deadlineTime)}</strong>
         {canApply && (
           <small className="live-countdown">
             Closes in {formatCountdown(deadlineCountdown)}

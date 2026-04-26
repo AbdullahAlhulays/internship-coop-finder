@@ -3,17 +3,23 @@ const MINUTE_IN_MS = 60 * SECOND_IN_MS;
 const HOUR_IN_MS = 60 * MINUTE_IN_MS;
 const DAY_IN_MS = 24 * HOUR_IN_MS;
 
-function getDeadlineDate(deadline) {
-  return new Date(`${deadline}T23:59:59`);
+function getDeadlineDate(deadline, deadlineTime) {
+  const time = deadlineTime
+    ? deadlineTime.length === 5
+      ? `${deadlineTime}:00`
+      : deadlineTime
+    : "23:59:59";
+
+  return new Date(`${deadline}T${time}`);
 }
 
 function getOpeningDate(openingDate) {
   return new Date(`${openingDate}T00:00:00`);
 }
 
-export function getApplicationStatus(deadline, now = new Date()) {
+export function getApplicationStatus(deadline, now = new Date(), deadlineTime) {
   const today = new Date(now);
-  const deadlineDate = new Date(`${deadline}T23:59:59`);
+  const deadlineDate = getDeadlineDate(deadline, deadlineTime);
 
   today.setHours(0, 0, 0, 0);
 
@@ -38,7 +44,11 @@ export function getCompanyStatus(company, now = new Date()) {
   const today = new Date(now);
   today.setHours(0, 0, 0, 0);
 
-  const deadlineStatus = getApplicationStatus(company.deadline, now);
+  const deadlineStatus = getApplicationStatus(
+    company.deadline,
+    now,
+    company.deadlineTime,
+  );
 
   if (deadlineStatus.key === "closed") {
     return deadlineStatus;
@@ -61,8 +71,8 @@ export function getCompanyStatus(company, now = new Date()) {
   return deadlineStatus;
 }
 
-export function getDeadlineCountdown(deadline, now = new Date()) {
-  return getCountdownParts(getDeadlineDate(deadline), now);
+export function getDeadlineCountdown(deadline, now = new Date(), deadlineTime) {
+  return getCountdownParts(getDeadlineDate(deadline, deadlineTime), now);
 }
 
 export function getOpeningCountdown(openingDate, now = new Date()) {
@@ -97,10 +107,21 @@ export function formatCountdown(countdown) {
   return `${paddedHours}h ${paddedMinutes}m ${paddedSeconds}s`;
 }
 
-export function formatDeadline(deadline) {
-  return new Intl.DateTimeFormat("en", {
+export function formatDeadline(deadline, deadlineTime) {
+  const options = {
     day: "numeric",
     month: "long",
     year: "numeric",
-  }).format(new Date(`${deadline}T12:00:00`));
+  };
+
+  if (deadlineTime) {
+    options.hour = "2-digit";
+    options.minute = "2-digit";
+  }
+
+  const time = deadlineTime ? `${deadlineTime}:00` : "12:00:00";
+
+  return new Intl.DateTimeFormat("en", options).format(
+    new Date(`${deadline}T${time}`),
+  );
 }

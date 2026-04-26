@@ -42,6 +42,7 @@ That URL must return JSON in either format:
     "applicationLink": "https://example.com",
     "openingDate": "2026-05-01",
     "deadline": "2026-05-30",
+    "deadlineTime": "23:55",
     "type": "Internship / COOP"
   }
 ]
@@ -59,6 +60,7 @@ or:
       "applicationLink": "https://example.com",
       "openingDate": "2026-05-01",
       "deadline": "2026-05-30",
+      "deadlineTime": "23:55",
       "type": "Internship / COOP"
     }
   ]
@@ -72,3 +74,5 @@ Expired opportunities are hidden automatically when their deadline passes.
 `openingDate` is optional. Add it only when an opportunity should appear as `Open Soon` before applications begin.
 
 `bio` and `location` are optional. Add them only when you want those details to appear on the card.
+
+`deadlineTime` is optional. Add it in 24-hour `HH:mm` format when the posting includes an exact apply-before time.
