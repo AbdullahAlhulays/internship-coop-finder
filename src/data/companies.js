@@ -35,4 +35,10 @@ export const companies = [
     applicationLink: "https://www.jisr.net/en/zid/careers/ec8eb290-648e-421b-a2fb-357f6d0c2375?host=1",
     type: "Co-op / Summer Internship / Tamheer Program",
   },
+  {
+    name: "SGS",
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://175102.jobs2web.com/job/Jeddah-%28Headquarter%29-COOP-Program-1-0/794146502/",
+    type: "COOP Program",
+  },
 ];
