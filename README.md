@@ -71,6 +71,8 @@ The app checks that URL when the page loads, refreshes it every 5 minutes, and r
 
 Expired opportunities are hidden automatically when their deadline passes.
 
+`deadline` is optional. If an opportunity has no specified end date, leave it out and the card will stay open.
+
 `openingDate` is optional. Add it only when an opportunity should appear as `Open Soon` before applications begin.
 
 `bio` and `location` are optional. Add them only when you want those details to appear on the card.

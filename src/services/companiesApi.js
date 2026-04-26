@@ -11,7 +11,7 @@ function isValidCompany(company) {
     (company.openingDate === undefined || typeof company.openingDate === "string") &&
     (company.deadlineTime === undefined || typeof company.deadlineTime === "string") &&
     typeof company.applicationLink === "string" &&
-    typeof company.deadline === "string" &&
+    (company.deadline === undefined || typeof company.deadline === "string") &&
     typeof company.type === "string"
   );
 }

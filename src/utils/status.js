@@ -4,6 +4,10 @@ const HOUR_IN_MS = 60 * MINUTE_IN_MS;
 const DAY_IN_MS = 24 * HOUR_IN_MS;
 
 function getDeadlineDate(deadline, deadlineTime) {
+  if (!deadline) {
+    return null;
+  }
+
   const time = deadlineTime
     ? deadlineTime.length === 5
       ? `${deadlineTime}:00`
@@ -18,6 +22,15 @@ function getOpeningDate(openingDate) {
 }
 
 export function getApplicationStatus(deadline, now = new Date(), deadlineTime) {
+  if (!deadline) {
+    return {
+      label: "Open",
+      key: "open",
+      daysLeft: null,
+      hasDeadline: false,
+    };
+  }
+
   const today = new Date(now);
   const deadlineDate = getDeadlineDate(deadline, deadlineTime);
 
@@ -72,7 +85,13 @@ export function getCompanyStatus(company, now = new Date()) {
 }
 
 export function getDeadlineCountdown(deadline, now = new Date(), deadlineTime) {
-  return getCountdownParts(getDeadlineDate(deadline, deadlineTime), now);
+  const deadlineDate = getDeadlineDate(deadline, deadlineTime);
+
+  if (!deadlineDate) {
+    return null;
+  }
+
+  return getCountdownParts(deadlineDate, now);
 }
 
 export function getOpeningCountdown(openingDate, now = new Date()) {
@@ -96,6 +115,10 @@ export function getCountdownParts(targetDate, now = new Date()) {
 }
 
 export function formatCountdown(countdown) {
+  if (!countdown) {
+    return "";
+  }
+
   const paddedHours = String(countdown.hours).padStart(2, "0");
   const paddedMinutes = String(countdown.minutes).padStart(2, "0");
   const paddedSeconds = String(countdown.seconds).padStart(2, "0");
@@ -108,6 +131,10 @@ export function formatCountdown(countdown) {
 }
 
 export function formatDeadline(deadline, deadlineTime) {
+  if (!deadline) {
+    return "Open until filled";
+  }
+
   const options = {
     day: "numeric",
     month: "long",
