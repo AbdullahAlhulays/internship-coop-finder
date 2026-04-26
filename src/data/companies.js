@@ -21,4 +21,11 @@ export const companies = [
     deadline: "2026-05-14",
     type: "COOP Training Program - Summer 2026",
   },
+  {
+    name: "Misk x Hyundai Motor Company",
+    location: "Seoul",
+    applicationLink: "https://hub.misk.org.sa/ar/programs/skills/misk-traineeship-program-x-hyundai-motor-company/",
+    deadline: "2026-04-27",
+    type: "برنامج مسك للتدريب بالشراكة مع مجموعة هيونداي موتور",
+  },
 ];
