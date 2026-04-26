@@ -41,4 +41,11 @@ export const companies = [
     applicationLink: "https://175102.jobs2web.com/job/Jeddah-%28Headquarter%29-COOP-Program-1-0/794146502/",
     type: "COOP Program",
   },
+  {
+    name: "WAS SPA",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://spanewsacademy.edu.sa/ar/portal/survey/b2700261-44fd-4386-abb6-244cc19baed5",
+    openingDate: "2026-05-01",
+    type: "6-month Internship",
+  },
 ];
