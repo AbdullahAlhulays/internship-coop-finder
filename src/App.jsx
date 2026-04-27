@@ -4,13 +4,14 @@ import Header from "./components/Header.jsx";
 import SearchBar from "./components/SearchBar.jsx";
 import FilterButtons from "./components/FilterButtons.jsx";
 import CitySelect from "./components/CitySelect.jsx";
+import DeadlineSortToggle from "./components/DeadlineSortToggle.jsx";
 import CompanyList from "./components/CompanyList.jsx";
 import SubmitOpportunity from "./components/SubmitOpportunity.jsx";
 import Footer from "./components/Footer.jsx";
 import { companies as fallbackCompanies } from "./data/companies.js";
 import { getCompanies } from "./services/companiesApi.js";
 import { getCompanyCities } from "./utils/cities.js";
-import { getCompanyStatus } from "./utils/status.js";
+import { getCompanyStatus, getDeadlineSortTime } from "./utils/status.js";
 
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const CLOCK_INTERVAL_MS = 1000;
@@ -23,6 +24,7 @@ export default function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [activeFilter, setActiveFilter] = useState("all");
   const [activeCity, setActiveCity] = useState("all");
+  const [sortByDeadline, setSortByDeadline] = useState(false);
   const [companies, setCompanies] = useState(fallbackCompanies);
   const [isLoading, setIsLoading] = useState(Boolean(import.meta.env.VITE_COMPANIES_DATA_URL));
   const [dataError, setDataError] = useState("");
@@ -99,13 +101,22 @@ export default function App() {
 
         return isVisible && matchesSearch && matchesFilter && matchesCity;
       })
-      .sort((firstCompany, secondCompany) =>
-        getSortLabel(firstCompany).localeCompare(getSortLabel(secondCompany), "en", {
+      .sort((firstCompany, secondCompany) => {
+        const labelSort = getSortLabel(firstCompany).localeCompare(getSortLabel(secondCompany), "en", {
           numeric: true,
           sensitivity: "base",
-        }),
-      );
-  }, [activeCity, activeFilter, companies, currentTime, searchTerm]);
+        });
+
+        if (!sortByDeadline) {
+          return labelSort;
+        }
+
+        const deadlineSort =
+          getDeadlineSortTime(firstCompany) - getDeadlineSortTime(secondCompany);
+
+        return deadlineSort || labelSort;
+      });
+  }, [activeCity, activeFilter, companies, currentTime, searchTerm, sortByDeadline]);
 
   const opportunityCounts = useMemo(() => {
     return companies.reduce(
@@ -182,6 +193,10 @@ export default function App() {
               cities={cityOptions}
               counts={cityCounts}
               onCityChange={setActiveCity}
+            />
+            <DeadlineSortToggle
+              checked={sortByDeadline}
+              onChange={setSortByDeadline}
             />
           </div>
         </section>

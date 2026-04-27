@@ -136,6 +136,12 @@ export function getDeadlineCountdown(deadline, now = new Date(), deadlineTime) {
   return getCountdownParts(deadlineDate, now);
 }
 
+export function getDeadlineSortTime(company) {
+  const deadlineDate = getDeadlineDate(company.deadline, company.deadlineTime);
+
+  return deadlineDate ? deadlineDate.getTime() : Number.POSITIVE_INFINITY;
+}
+
 export function isDeadlineUrgent(company, now = new Date()) {
   const deadlineDate = getDeadlineDate(company.deadline, company.deadlineTime);
 

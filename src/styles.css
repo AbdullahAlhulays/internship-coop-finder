@@ -52,7 +52,7 @@ input {
 .header-content,
 .page-shell,
 .site-footer {
-  width: min(1060px, calc(100% - 36px));
+  width: min(1240px, calc(100% - 36px));
   margin: 0 auto;
 }
 
@@ -104,7 +104,7 @@ input {
 
 .controls {
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(720px, 1.1fr);
+  grid-template-columns: minmax(260px, 0.8fr) minmax(760px, 1.2fr);
   gap: 18px;
   align-items: start;
   margin: 0 auto 22px;
@@ -150,7 +150,7 @@ input {
 .filter-panel {
   display: flex;
   align-items: end;
-  gap: 16px;
+  gap: 12px;
   justify-self: start;
   width: 100%;
 }
@@ -158,17 +158,19 @@ input {
 .city-select {
   display: grid;
   gap: 8px;
-  flex: 0 0 250px;
-  min-width: 250px;
+  flex: 0 0 220px;
+  min-width: 220px;
 }
 
-.city-select span {
+.city-select span,
+.deadline-sort > span:first-child {
   color: var(--soft-ink);
   font-size: 0.84rem;
   font-weight: 820;
 }
 
-.city-select select {
+.city-select select,
+.deadline-sort-control {
   width: 100%;
   min-height: 46px;
   border: 1px solid var(--line);
@@ -183,6 +185,37 @@ input {
 }
 
 .city-select select:focus {
+  border-color: rgba(85, 124, 85, 0.46);
+  box-shadow: 0 0 0 5px rgba(85, 124, 85, 0.12);
+}
+
+.deadline-sort {
+  display: grid;
+  gap: 8px;
+  flex: 0 0 150px;
+  min-width: 150px;
+}
+
+.deadline-sort-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--leaf-deep);
+  font-size: 0.85rem;
+  font-weight: 820;
+  padding: 0 13px;
+  white-space: nowrap;
+}
+
+.deadline-sort-control input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--leaf-deep);
+  cursor: pointer;
+}
+
+.deadline-sort-control:focus-within {
   border-color: rgba(85, 124, 85, 0.46);
   box-shadow: 0 0 0 5px rgba(85, 124, 85, 0.12);
 }
@@ -579,6 +612,11 @@ input {
     min-width: 0;
   }
 
+  .deadline-sort {
+    flex-basis: auto;
+    min-width: 0;
+  }
+
   .filters {
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -597,7 +635,7 @@ input {
   .header-content,
   .page-shell,
   .site-footer {
-    width: min(100% - 28px, 1060px);
+    width: min(100% - 28px, 1240px);
   }
 
   .quote-wrap {
