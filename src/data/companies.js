@@ -140,4 +140,10 @@ export const companies = [
     applicationLink: "https://services.pha.gov.sa/Cooperativetraining/",
     type: "Internship / Cooperative",
   },
+  {
+    name: "KACST",
+    location: "King Abdulaziz City, Riyadh, Saudi Arabia",
+    applicationLink: "https://kacst.gov.sa/coop/",
+    type: "Cooperative Training",
+  },
 ];
