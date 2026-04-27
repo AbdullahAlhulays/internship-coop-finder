@@ -146,4 +146,10 @@ export const companies = [
     applicationLink: "https://kacst.gov.sa/coop/",
     type: "Cooperative Training",
   },
+  {
+    name: "Communications, Space and Technology Commission (CST)",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://fa-etnq-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/ar/sites/CX_2001/job/47/?utm_medium=jobshare&utm_source=External+Job+Share",
+    type: "Cooperative Training",
+  },
 ];
