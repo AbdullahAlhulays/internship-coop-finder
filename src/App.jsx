@@ -3,10 +3,12 @@ import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header.jsx";
 import SearchBar from "./components/SearchBar.jsx";
 import FilterButtons from "./components/FilterButtons.jsx";
+import CityFilterButtons from "./components/CityFilterButtons.jsx";
 import CompanyList from "./components/CompanyList.jsx";
 import Footer from "./components/Footer.jsx";
 import { companies as fallbackCompanies } from "./data/companies.js";
 import { getCompanies } from "./services/companiesApi.js";
+import { getCompanyCities } from "./utils/cities.js";
 import { getCompanyStatus } from "./utils/status.js";
 
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
@@ -15,6 +17,7 @@ const CLOCK_INTERVAL_MS = 1000;
 export default function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [activeFilter, setActiveFilter] = useState("all");
+  const [activeCity, setActiveCity] = useState("all");
   const [companies, setCompanies] = useState(fallbackCompanies);
   const [isLoading, setIsLoading] = useState(Boolean(import.meta.env.VITE_COMPANIES_DATA_URL));
   const [dataError, setDataError] = useState("");
@@ -83,10 +86,12 @@ export default function App() {
       const isVisible = status.key !== "closed";
       const matchesFilter =
         activeFilter === "all" || status.key === activeFilter;
+      const cities = getCompanyCities(company);
+      const matchesCity = activeCity === "all" || cities.includes(activeCity);
 
-      return isVisible && matchesSearch && matchesFilter;
+      return isVisible && matchesSearch && matchesFilter && matchesCity;
     });
-  }, [activeFilter, companies, currentTime, searchTerm]);
+  }, [activeCity, activeFilter, companies, currentTime, searchTerm]);
 
   const opportunityCounts = useMemo(() => {
     return companies.reduce(
@@ -110,6 +115,41 @@ export default function App() {
     );
   }, [companies, currentTime]);
 
+  const cityCounts = useMemo(() => {
+    return companies.reduce(
+      (counts, company) => {
+        const status = getCompanyStatus(company, currentTime);
+
+        if (status.key === "closed") {
+          return counts;
+        }
+
+        const cities = getCompanyCities(company);
+
+        cities.forEach((city) => {
+          counts[city] = (counts[city] ?? 0) + 1;
+        });
+
+        return counts;
+      },
+      {
+        all: opportunityCounts.all,
+      },
+    );
+  }, [companies, currentTime, opportunityCounts.all]);
+
+  const cityOptions = useMemo(() => {
+    return Object.keys(cityCounts)
+      .filter((city) => city !== "all")
+      .sort((firstCity, secondCity) => firstCity.localeCompare(secondCity));
+  }, [cityCounts]);
+
+  useEffect(() => {
+    if (activeCity !== "all" && !cityOptions.includes(activeCity)) {
+      setActiveCity("all");
+    }
+  }, [activeCity, cityOptions]);
+
   return (
     <>
       <Header />
@@ -117,11 +157,19 @@ export default function App() {
       <main className="page-shell">
         <section className="controls" aria-label="Search and filters">
           <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-          <FilterButtons
-            activeFilter={activeFilter}
-            counts={opportunityCounts}
-            onFilterChange={setActiveFilter}
-          />
+          <div className="filter-panel">
+            <FilterButtons
+              activeFilter={activeFilter}
+              counts={opportunityCounts}
+              onFilterChange={setActiveFilter}
+            />
+            <CityFilterButtons
+              activeCity={activeCity}
+              cities={cityOptions}
+              counts={cityCounts}
+              onCityChange={setActiveCity}
+            />
+          </div>
         </section>
 
         {isLoading && <p className="data-note">Loading latest opportunities...</p>}
