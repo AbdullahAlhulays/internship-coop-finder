@@ -48,4 +48,11 @@ export const companies = [
     openingDate: "2026-05-01",
     type: "6-month Internship",
   },
+  {
+    name: "SAMREF",
+    location: "Yanbu, Saudi Arabia",
+    applicationLink: "https://career-sa20.hr.cloud.sap/portalcareer?career%5fns=job%5flisting&company=saudiara02&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fGB&career_job_req_id=4502&selected_lang=en_GB&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=Asia/Riyadh&_s.crb=%2fu6BgYOVuUHSZdsFm5ORUU3ARQxyzwSqJUH0fZkMOM0%3d",
+    deadline: "2026-05-02",
+    type: "Cooperative Training Program",
+  },
 ];
