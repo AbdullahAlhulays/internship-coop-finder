@@ -171,4 +171,10 @@ export const companies = [
     deadline: "2026-05-27",
     type: "COOP",
   },
+  {
+    name: "Diriyah Company",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4398804672/",
+    type: "Coop Training Program",
+  },
 ];
