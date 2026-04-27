@@ -159,6 +159,12 @@ export const companies = [
     type: "Internship",
   },
   {
+    name: "Osool",
+    location: "Riyadh Province, Saudi Arabia",
+    applicationLink: "https://apply.workable.com/osool-1/j/F8E636FF44/",
+    type: "COOP Program",
+  },
+  {
     name: "Mnzil",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4398271155/",
