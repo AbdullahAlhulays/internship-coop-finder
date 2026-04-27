@@ -116,4 +116,10 @@ export const companies = [
     applicationLink: "https://jobs.sap.com/job/Riyadh-Student-Internship-Riyadh-11435/1290191201/?feedId=384233&utm_campaign=SAP_Linkedin&utm_source=LinkedinJobPostings",
     type: "Internship",
   },
+  {
+    name: "BOSCH",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://jobs.smartrecruiters.com/BoschGroup/744000121717337-business-management-intern",
+    type: "Business Management Intern",
+  },
 ];
