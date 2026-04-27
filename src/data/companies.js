@@ -92,4 +92,10 @@ export const companies = [
     applicationLink: "https://career.spark.sa/jobs/details/691f0151246b8a2137efba2c",
     type: "Internship",
   },
+  {
+    name: "WalaPlus",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4402481370",
+    type: "Coop & Tamheer Opportunities",
+  },
 ];
