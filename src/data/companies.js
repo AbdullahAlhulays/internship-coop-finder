@@ -207,4 +207,10 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4399512328/",
     type: "Cooperative Training Program",
   },
+  {
+  name: "SAMACO MOTORS ",
+  location: "Jeddah, Saudi Arabia",
+  applicationLink: "https://career23.sapsf.com/career?career_ns=job_listing&company=saudiara08&career_job_req_id=906",
+  type: "COOP Training",
+},
 ];
