@@ -219,4 +219,16 @@ export const companies = [
   applicationLink: "https://www.linkedin.com/jobs/view/4361522849/",
   type: "COOP",
 },
+ {
+  name: "TAWAL",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://www.linkedin.com/jobs/view/4395054461",
+  type: "COOP Training",
+},
+ {
+  name: "Tamara",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://job-boards.eu.greenhouse.io/tamara/jobs/4792932101",
+  type: "Internship/Co-op Training",
+},
 ];
