@@ -80,4 +80,10 @@ export const companies = [
     deadline: "2026-05-02",
     type: "Cooperative Training",
   },
+  {
+    name: "Riyadh Air",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://careers-riyadhair.icims.com/jobs/2540/co-op/login?mobile=false&width=1024&height=500&bga=true&needsRedirect=false&jan1offset=180&jun1offset=180",
+    type: "CO-OP",
+  },
 ];
