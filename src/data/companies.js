@@ -122,4 +122,10 @@ export const companies = [
     applicationLink: "https://jobs.smartrecruiters.com/BoschGroup/744000121717337-business-management-intern",
     type: "Business Management Intern",
   },
+  {
+    name: "Lumi",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4404038529/",
+    type: "Co-op Internship",
+  },
 ];
