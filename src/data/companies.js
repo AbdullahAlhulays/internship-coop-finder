@@ -189,4 +189,10 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4398395577/",
     type: "Marketing Coop",
   },
+  {
+    name: "SAP",
+    location: "Jeddah, Makkah, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4368740142/",
+    type: "Internship",
+  },
 ];
