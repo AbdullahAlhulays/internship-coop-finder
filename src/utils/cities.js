@@ -15,8 +15,14 @@ const SAUDI_CITY_LABELS = {
   yanbu: "Yanbu",
 };
 
+const ALL_SAUDI_CITY_LABELS = [...new Set(Object.values(SAUDI_CITY_LABELS))];
+
 export function getSaudiCitiesFromLocation(location = "") {
   const normalizedLocation = location.toLowerCase();
+
+  if (/(^|[^a-z])many([^a-z]|$)/.test(normalizedLocation)) {
+    return ALL_SAUDI_CITY_LABELS;
+  }
 
   return Object.entries(SAUDI_CITY_LABELS).reduce((cities, [keyword, label]) => {
     if (normalizedLocation.includes(keyword) && !cities.includes(label)) {
