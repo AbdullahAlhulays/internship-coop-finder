@@ -61,4 +61,10 @@ export const companies = [
     applicationLink: "https://careers.petrorabigh.com/jobs/6110058-university-internship-program-coop/2a4c5574-d92e-4e2c-b529-e8ba40696c14",
     type: "CO-OP",
   },
+  {
+    name: "GE VERNOVA",
+    location: "Dammam, Saudi Arabia",
+    applicationLink: "https://careers.gevernova.com/co-op-internship-program/job/R5037595",
+    type: "Intern",
+  },
 ];
