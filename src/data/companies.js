@@ -98,4 +98,10 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4402481370",
     type: "Coop & Tamheer Opportunities",
   },
+  {
+    name: "POWR",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://talents.powr.sa/",
+    type: "3-month Internship / COOP",
+  },
 ];
