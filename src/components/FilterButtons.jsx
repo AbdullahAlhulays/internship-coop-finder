@@ -4,7 +4,7 @@ const filters = [
   { label: "Open Soon", value: "open-soon" },
 ];
 
-export default function FilterButtons({ activeFilter, onFilterChange }) {
+export default function FilterButtons({ activeFilter, counts, onFilterChange }) {
   return (
     <div className="filters" aria-label="Filter opportunities by status">
       {filters.map((filter) => (
@@ -14,7 +14,10 @@ export default function FilterButtons({ activeFilter, onFilterChange }) {
           className={activeFilter === filter.value ? "filter active" : "filter"}
           onClick={() => onFilterChange(filter.value)}
         >
-          {filter.label}
+          <span>{filter.label}</span>
+          <span className="filter-count" aria-label={`${counts[filter.value]} opportunities`}>
+            {counts[filter.value]}
+          </span>
         </button>
       ))}
     </div>

@@ -152,6 +152,10 @@ input {
 }
 
 .filter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
   min-height: 44px;
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -172,9 +176,29 @@ input {
   border-color: rgba(85, 124, 85, 0.36);
 }
 
+.filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: rgba(85, 124, 85, 0.12);
+  color: var(--leaf-deep);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 900;
+  padding: 0 7px;
+}
+
 .filter.active {
   border-color: transparent;
   background: var(--leaf-deep);
+  color: #fffdf7;
+}
+
+.filter.active .filter-count {
+  background: rgba(255, 253, 247, 0.22);
   color: #fffdf7;
 }
 

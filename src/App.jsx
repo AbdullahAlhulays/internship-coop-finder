@@ -87,6 +87,28 @@ export default function App() {
     });
   }, [activeFilter, companies, currentTime, searchTerm]);
 
+  const opportunityCounts = useMemo(() => {
+    return companies.reduce(
+      (counts, company) => {
+        const status = getCompanyStatus(company, currentTime);
+
+        if (status.key === "closed") {
+          return counts;
+        }
+
+        counts.all += 1;
+        counts[status.key] += 1;
+
+        return counts;
+      },
+      {
+        all: 0,
+        open: 0,
+        "open-soon": 0,
+      },
+    );
+  }, [companies, currentTime]);
+
   return (
     <>
       <Header />
@@ -96,6 +118,7 @@ export default function App() {
           <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
           <FilterButtons
             activeFilter={activeFilter}
+            counts={opportunityCounts}
             onFilterChange={setActiveFilter}
           />
         </section>
