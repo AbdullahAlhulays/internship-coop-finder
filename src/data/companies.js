@@ -332,7 +332,7 @@ export const companies = [
 },
 {
   name: "STC Channels",
-  location: "Many, Saudi Arabia",
+  location: "Jeddah and Riyadh, Saudi Arabia",
   applicationLink: "https://www.channels.com.sa/career",
   type: "Internship/Co-op Training",
 },
