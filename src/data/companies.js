@@ -177,4 +177,10 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4398804672/",
     type: "Coop Training Program",
   },
+  {
+    name: "Lean Business Services",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4400426103/",
+    type: "Coop Training Program",
+  },
 ];
