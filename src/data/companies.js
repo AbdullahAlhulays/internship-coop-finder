@@ -55,4 +55,10 @@ export const companies = [
     deadline: "2026-05-02",
     type: "Cooperative Training Program",
   },
+  {
+    name: "Petro Rabigh",
+    location: "Rabigh, Saudi Arabia",
+    applicationLink: "https://careers.petrorabigh.com/jobs/6110058-university-internship-program-coop/2a4c5574-d92e-4e2c-b529-e8ba40696c14",
+    type: "CO-OP",
+  },
 ];
