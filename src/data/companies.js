@@ -73,4 +73,11 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4374719492/",
     type: "Intern",
   },
+  {
+    name: "Madinah Municipality",
+    location: "Madinah, Saudi Arabia",
+    applicationLink: "https://services.amana-md.gov.sa/cooperativeTraining/Home/OpnennigDetails/20",
+    deadline: "2026-05-02",
+    type: "Cooperative Training",
+  },
 ];
