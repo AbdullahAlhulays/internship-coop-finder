@@ -4,22 +4,49 @@ const HOUR_IN_MS = 60 * MINUTE_IN_MS;
 const DAY_IN_MS = 24 * HOUR_IN_MS;
 const URGENT_DEADLINE_MS = 48 * HOUR_IN_MS;
 
-function getDeadlineDate(deadline, deadlineTime) {
-  if (!deadline) {
+function getLocalDate(dateValue, fallbackTime) {
+  if (!dateValue) {
     return null;
   }
 
-  const time = deadlineTime
-    ? deadlineTime.length === 5
-      ? `${deadlineTime}:00`
-      : deadlineTime
-    : "23:59:59";
+  const dateMatch = dateValue.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
 
-  return new Date(`${deadline}T${time}`);
+  if (!dateMatch) {
+    return null;
+  }
+
+  const [, year, month, day] = dateMatch;
+  const [hours = "0", minutes = "0", seconds = "0"] = fallbackTime.split(":");
+  const date = new Date(
+    Number(year),
+    Number(month) - 1,
+    Number(day),
+    Number(hours),
+    Number(minutes),
+    Number(seconds),
+  );
+
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function normalizeTime(time, fallbackTime) {
+  if (!time) {
+    return fallbackTime;
+  }
+
+  return time.length === 5 ? `${time}:00` : time;
+}
+
+function getDeadlineDate(deadline, deadlineTime) {
+  return getLocalDate(deadline, normalizeTime(deadlineTime, "23:59:59"));
+}
+
+function getDisplayDate(deadline, deadlineTime) {
+  return getLocalDate(deadline, normalizeTime(deadlineTime, "12:00:00"));
 }
 
 function getOpeningDate(openingDate) {
-  return new Date(`${openingDate}T00:00:00`);
+  return getLocalDate(openingDate, "00:00:00");
 }
 
 export function getApplicationStatus(deadline, now = new Date(), deadlineTime) {
@@ -34,6 +61,15 @@ export function getApplicationStatus(deadline, now = new Date(), deadlineTime) {
 
   const today = new Date(now);
   const deadlineDate = getDeadlineDate(deadline, deadlineTime);
+
+  if (!deadlineDate) {
+    return {
+      label: "Open",
+      key: "open",
+      daysLeft: null,
+      hasDeadline: false,
+    };
+  }
 
   today.setHours(0, 0, 0, 0);
 
@@ -70,6 +106,11 @@ export function getCompanyStatus(company, now = new Date()) {
 
   if (company.openingDate) {
     const openingDate = getOpeningDate(company.openingDate);
+
+    if (!openingDate) {
+      return deadlineStatus;
+    }
+
     const daysUntilOpen = Math.ceil((openingDate - today) / DAY_IN_MS);
 
     if (openingDate - now > 0) {
@@ -108,7 +149,13 @@ export function isDeadlineUrgent(company, now = new Date()) {
 }
 
 export function getOpeningCountdown(openingDate, now = new Date()) {
-  return getCountdownParts(getOpeningDate(openingDate), now);
+  const openingDateValue = getOpeningDate(openingDate);
+
+  if (!openingDateValue) {
+    return null;
+  }
+
+  return getCountdownParts(openingDateValue, now);
 }
 
 export function getCountdownParts(targetDate, now = new Date()) {
@@ -159,9 +206,11 @@ export function formatDeadline(deadline, deadlineTime) {
     options.minute = "2-digit";
   }
 
-  const time = deadlineTime ? `${deadlineTime}:00` : "12:00:00";
+  const displayDate = getDisplayDate(deadline, deadlineTime);
 
-  return new Intl.DateTimeFormat("en", options).format(
-    new Date(`${deadline}T${time}`),
-  );
+  if (!displayDate) {
+    return "Deadline not available";
+  }
+
+  return new Intl.DateTimeFormat("en", options).format(displayDate);
 }
