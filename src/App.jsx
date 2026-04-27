@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header.jsx";
 import SearchBar from "./components/SearchBar.jsx";
 import FilterButtons from "./components/FilterButtons.jsx";
-import CityFilterButtons from "./components/CityFilterButtons.jsx";
+import CitySelect from "./components/CitySelect.jsx";
 import CompanyList from "./components/CompanyList.jsx";
 import Footer from "./components/Footer.jsx";
 import { companies as fallbackCompanies } from "./data/companies.js";
@@ -163,7 +163,7 @@ export default function App() {
               counts={opportunityCounts}
               onFilterChange={setActiveFilter}
             />
-            <CityFilterButtons
+            <CitySelect
               activeCity={activeCity}
               cities={cityOptions}
               counts={cityCounts}

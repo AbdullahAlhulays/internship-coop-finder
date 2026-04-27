@@ -149,6 +149,36 @@ input {
   gap: 12px;
 }
 
+.city-select {
+  display: grid;
+  gap: 8px;
+}
+
+.city-select span {
+  color: var(--soft-ink);
+  font-size: 0.84rem;
+  font-weight: 820;
+}
+
+.city-select select {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 253, 247, 0.8);
+  color: var(--leaf-deep);
+  cursor: pointer;
+  font-weight: 820;
+  padding: 0 42px 0 14px;
+  outline: none;
+  box-shadow: 0 10px 28px rgba(55, 72, 51, 0.05);
+}
+
+.city-select select:focus {
+  border-color: rgba(85, 124, 85, 0.46);
+  box-shadow: 0 0 0 5px rgba(85, 124, 85, 0.12);
+}
+
 .filter-group {
   display: grid;
   gap: 8px;
