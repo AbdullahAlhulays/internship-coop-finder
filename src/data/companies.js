@@ -86,4 +86,10 @@ export const companies = [
     applicationLink: "https://careers-riyadhair.icims.com/jobs/2540/co-op/login?mobile=false&width=1024&height=500&bga=true&needsRedirect=false&jan1offset=180&jun1offset=180",
     type: "CO-OP",
   },
+  {
+    name: "SPARK",
+    location: "Abqaiq, Saudi Arabia",
+    applicationLink: "https://career.spark.sa/jobs/details/691f0151246b8a2137efba2c",
+    type: "Internship",
+  },
 ];
