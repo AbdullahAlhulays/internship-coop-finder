@@ -2,6 +2,7 @@ const SECOND_IN_MS = 1000;
 const MINUTE_IN_MS = 60 * SECOND_IN_MS;
 const HOUR_IN_MS = 60 * MINUTE_IN_MS;
 const DAY_IN_MS = 24 * HOUR_IN_MS;
+const URGENT_DEADLINE_MS = 48 * HOUR_IN_MS;
 
 function getDeadlineDate(deadline, deadlineTime) {
   if (!deadline) {
@@ -92,6 +93,18 @@ export function getDeadlineCountdown(deadline, now = new Date(), deadlineTime) {
   }
 
   return getCountdownParts(deadlineDate, now);
+}
+
+export function isDeadlineUrgent(company, now = new Date()) {
+  const deadlineDate = getDeadlineDate(company.deadline, company.deadlineTime);
+
+  if (!deadlineDate) {
+    return false;
+  }
+
+  const remainingMs = deadlineDate - now;
+
+  return remainingMs > 0 && remainingMs <= URGENT_DEADLINE_MS;
 }
 
 export function getOpeningCountdown(openingDate, now = new Date()) {

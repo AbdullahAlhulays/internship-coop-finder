@@ -5,12 +5,14 @@ import {
   getCompanyStatus,
   getDeadlineCountdown,
   getOpeningCountdown,
+  isDeadlineUrgent,
 } from "../utils/status.js";
 
 export default function CompanyCard({ company, currentTime }) {
   const status = getCompanyStatus(company, currentTime);
   const isOpenSoon = status.key === "open-soon";
   const canApply = status.key === "open";
+  const isUrgent = isDeadlineUrgent(company, currentTime);
   const hasBio = Boolean(company.bio?.trim());
   const hasLocation = Boolean(company.location?.trim());
   const hasDeadline = Boolean(company.deadline?.trim());
@@ -26,7 +28,11 @@ export default function CompanyCard({ company, currentTime }) {
   const [showBio, setShowBio] = useState(false);
 
   return (
-    <article className={`company-card ${isOpenSoon ? "is-open-soon" : ""}`}>
+    <article
+      className={`company-card ${isOpenSoon ? "is-open-soon" : ""} ${
+        isUrgent ? "is-urgent" : ""
+      }`}
+    >
       <div className="card-topline">
         <span className="opportunity-type">{company.type}</span>
         <span className={`status status-${status.key}`}>{status.label}</span>
@@ -60,6 +66,9 @@ export default function CompanyCard({ company, currentTime }) {
         )}
         <span>Deadline</span>
         <strong>{formatDeadline(company.deadline, company.deadlineTime)}</strong>
+        {canApply && isUrgent && (
+          <small className="deadline-alert">Less than 48 hours left</small>
+        )}
         {canApply && hasDeadline && (
           <small className="live-countdown">
             Closes in {formatCountdown(deadlineCountdown)}

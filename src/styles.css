@@ -17,6 +17,9 @@
   --line: rgba(85, 124, 85, 0.18);
   --muted: #70806f;
   --soft-ink: #435143;
+  --urgent: #b42318;
+  --urgent-bg: #fff1ef;
+  --urgent-line: rgba(180, 35, 24, 0.28);
   --shadow: 0 18px 48px rgba(55, 72, 51, 0.1);
 }
 
@@ -145,8 +148,9 @@ input {
 }
 
 .filter-panel {
-  display: grid;
-  gap: 12px;
+  display: flex;
+  align-items: end;
+  gap: 14px;
   justify-self: start;
   width: min(100%, 560px);
 }
@@ -154,6 +158,8 @@ input {
 .city-select {
   display: grid;
   gap: 8px;
+  flex: 0 1 220px;
+  min-width: 190px;
 }
 
 .city-select span {
@@ -163,7 +169,7 @@ input {
 }
 
 .city-select select {
-  width: min(100%, 420px);
+  width: 100%;
   min-height: 46px;
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -184,6 +190,7 @@ input {
 .filter-group {
   display: grid;
   gap: 8px;
+  flex: 1 1 auto;
 }
 
 .filter-label {
@@ -305,6 +312,15 @@ input {
   box-shadow: 0 22px 58px rgba(55, 72, 51, 0.14);
 }
 
+.company-card.is-urgent {
+  border-color: var(--urgent-line);
+  background: linear-gradient(180deg, #fff8f7 0%, rgba(255, 253, 247, 0.92) 100%);
+}
+
+.company-card.is-urgent::before {
+  background: rgba(180, 35, 24, 0.1);
+}
+
 .card-topline {
   position: relative;
   display: flex;
@@ -333,6 +349,11 @@ input {
 .status-open-soon {
   background: #f2e7c9;
   color: #7d5b20;
+}
+
+.company-card.is-urgent .status-open {
+  background: #fde2df;
+  color: var(--urgent);
 }
 
 .opportunity-type {
@@ -403,6 +424,11 @@ input {
   background: rgba(242, 231, 201, 0.58);
 }
 
+.company-card.is-urgent .deadline-box {
+  border: 1px solid var(--urgent-line);
+  background: var(--urgent-bg);
+}
+
 .deadline-box span,
 .deadline-box small {
   color: var(--muted);
@@ -413,6 +439,15 @@ input {
   color: var(--leaf-deep);
   font-variant-numeric: tabular-nums;
   font-weight: 820;
+}
+
+.company-card.is-urgent .live-countdown,
+.deadline-box .deadline-alert {
+  color: var(--urgent);
+}
+
+.deadline-box .deadline-alert {
+  font-weight: 900;
 }
 
 .deadline-box strong {
@@ -441,6 +476,14 @@ input {
   transform: translateY(-1px);
 }
 
+.company-card.is-urgent .apply-button {
+  background: var(--urgent);
+}
+
+.company-card.is-urgent .apply-button:hover {
+  background: #8f1d15;
+}
+
 .apply-button.disabled {
   background: #c9c0b8;
   color: #fffaf2;
@@ -454,6 +497,38 @@ input {
   background: var(--paper);
   padding: 34px;
   text-align: center;
+}
+
+.submit-opportunity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 0 0 22px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 253, 247, 0.74);
+  padding: 14px 16px;
+  box-shadow: 0 12px 34px rgba(55, 72, 51, 0.06);
+}
+
+.submit-opportunity p {
+  margin: 0;
+  color: var(--soft-ink);
+  font-weight: 820;
+}
+
+.submit-opportunity a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  border-radius: 999px;
+  background: var(--leaf-deep);
+  color: #fffdf7;
+  font-weight: 880;
+  padding: 0 15px;
+  text-decoration: none;
 }
 
 .empty-state h2 {
@@ -486,6 +561,16 @@ input {
   .filter-panel,
   .city-select select {
     width: 100%;
+  }
+
+  .filter-panel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .city-select {
+    flex-basis: auto;
+    min-width: 0;
   }
 
   .filters {
@@ -532,6 +617,15 @@ input {
 
   .filter {
     flex: 1 1 0;
+  }
+
+  .submit-opportunity {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .submit-opportunity a {
+    width: 100%;
   }
 }
 

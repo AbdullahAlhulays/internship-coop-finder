@@ -5,6 +5,7 @@ import SearchBar from "./components/SearchBar.jsx";
 import FilterButtons from "./components/FilterButtons.jsx";
 import CitySelect from "./components/CitySelect.jsx";
 import CompanyList from "./components/CompanyList.jsx";
+import SubmitOpportunity from "./components/SubmitOpportunity.jsx";
 import Footer from "./components/Footer.jsx";
 import { companies as fallbackCompanies } from "./data/companies.js";
 import { getCompanies } from "./services/companiesApi.js";
@@ -13,6 +14,10 @@ import { getCompanyStatus } from "./utils/status.js";
 
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const CLOCK_INTERVAL_MS = 1000;
+
+function getSortLabel(company) {
+  return company.name || company.title || company.type || "";
+}
 
 export default function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -80,17 +85,26 @@ export default function App() {
   const filteredCompanies = useMemo(() => {
     const normalizedSearch = searchTerm.trim().toLowerCase();
 
-    return companies.filter((company) => {
-      const status = getCompanyStatus(company, currentTime);
-      const matchesSearch = company.name.toLowerCase().includes(normalizedSearch);
-      const isVisible = status.key !== "closed";
-      const matchesFilter =
-        activeFilter === "all" || status.key === activeFilter;
-      const cities = getCompanyCities(company);
-      const matchesCity = activeCity === "all" || cities.includes(activeCity);
+    return companies
+      .filter((company) => {
+        const status = getCompanyStatus(company, currentTime);
+        const matchesSearch = getSortLabel(company)
+          .toLowerCase()
+          .includes(normalizedSearch);
+        const isVisible = status.key !== "closed";
+        const matchesFilter =
+          activeFilter === "all" || status.key === activeFilter;
+        const cities = getCompanyCities(company);
+        const matchesCity = activeCity === "all" || cities.includes(activeCity);
 
-      return isVisible && matchesSearch && matchesFilter && matchesCity;
-    });
+        return isVisible && matchesSearch && matchesFilter && matchesCity;
+      })
+      .sort((firstCompany, secondCompany) =>
+        getSortLabel(firstCompany).localeCompare(getSortLabel(secondCompany), "en", {
+          numeric: true,
+          sensitivity: "base",
+        }),
+      );
   }, [activeCity, activeFilter, companies, currentTime, searchTerm]);
 
   const opportunityCounts = useMemo(() => {
@@ -179,6 +193,7 @@ export default function App() {
           </p>
         )}
 
+        <SubmitOpportunity />
         <CompanyList companies={filteredCompanies} currentTime={currentTime} />
       </main>
 
