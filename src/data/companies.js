@@ -164,4 +164,11 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4398271155/",
     type: "Business Development Intern",
   },
+  {
+    name: "Digital Government Authority",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://career.dga.gov.sa/ar/saudi-arabia/jobs/%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-coop-1100076621/",
+    deadline: "2026-05-27",
+    type: "COOP",
+  },
 ];
