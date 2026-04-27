@@ -14,7 +14,7 @@ export default function CompanyList({ companies, currentTime }) {
     <section className="company-grid" aria-label="Company opportunities">
       {companies.map((company) => (
         <CompanyCard
-          key={`${company.name}-${company.deadline}`}
+          key={company.applicationLink}
           company={company}
           currentTime={currentTime}
         />
