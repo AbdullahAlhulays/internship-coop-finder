@@ -128,4 +128,10 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4404038529/",
     type: "Co-op Internship",
   },
+  {
+    name: "Alfanar",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://jobs.alfanar.com/alfanar/job/Riyadh-COOP-Training-Program%2C-Engineering-alfanar-Electric/1382939433/?utm_campaign=LinkedinJobPostings&utm_source=LinkedinJobPostings&applySourceOverride=LinkedIn",
+    type: "COOP",
+  },
 ];
