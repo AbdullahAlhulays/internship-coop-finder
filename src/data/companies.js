@@ -67,4 +67,10 @@ export const companies = [
     applicationLink: "https://careers.gevernova.com/co-op-internship-program/job/R5037595",
     type: "Intern",
   },
+  {
+    name: "R&D",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4374719492/",
+    type: "Intern",
+  },
 ];
