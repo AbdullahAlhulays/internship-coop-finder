@@ -158,4 +158,10 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4289263334/",
     type: "Internship",
   },
+  {
+    name: "Mnzil",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4398271155/",
+    type: "Business Development Intern",
+  },
 ];
