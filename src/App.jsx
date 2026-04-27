@@ -15,9 +15,20 @@ import { getCompanyStatus, getDeadlineSortTime } from "./utils/status.js";
 
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const CLOCK_INTERVAL_MS = 1000;
+const THEME_STORAGE_KEY = "internship-coop-theme";
 
 function getSortLabel(company) {
   return company.name || company.title || company.type || "";
+}
+
+function getSavedTheme() {
+  try {
+    return window.localStorage.getItem(THEME_STORAGE_KEY) === "dark"
+      ? "dark"
+      : "light";
+  } catch {
+    return "light";
+  }
 }
 
 export default function App() {
@@ -25,10 +36,21 @@ export default function App() {
   const [activeFilter, setActiveFilter] = useState("all");
   const [activeCity, setActiveCity] = useState("all");
   const [sortByDeadline, setSortByDeadline] = useState(false);
+  const [theme, setTheme] = useState(getSavedTheme);
   const [companies, setCompanies] = useState(fallbackCompanies);
   const [isLoading, setIsLoading] = useState(Boolean(import.meta.env.VITE_COMPANIES_DATA_URL));
   const [dataError, setDataError] = useState("");
   const [currentTime, setCurrentTime] = useState(() => new Date());
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+
+    try {
+      window.localStorage.setItem(THEME_STORAGE_KEY, theme);
+    } catch {
+      // Theme still changes even if the browser blocks localStorage.
+    }
+  }, [theme]);
 
   useEffect(() => {
     let isMounted = true;
@@ -177,7 +199,14 @@ export default function App() {
 
   return (
     <>
-      <Header />
+      <Header
+        theme={theme}
+        onThemeToggle={() =>
+          setTheme((currentTheme) =>
+            currentTheme === "dark" ? "light" : "dark",
+          )
+        }
+      />
 
       <main className="page-shell">
         <section className="controls" aria-label="Search and filters">
