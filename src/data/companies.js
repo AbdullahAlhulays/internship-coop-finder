@@ -110,4 +110,10 @@ export const companies = [
     applicationLink: "https://jobs.siemens.com/en_US/externaljobs/JobDetail/498426?source=LinkedIn&sourceType=PREMIUM_POST_SITE",
     type: "Tamayouz Program Internship",
   },
+  {
+    name: "SAP",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://jobs.sap.com/job/Riyadh-Student-Internship-Riyadh-11435/1290191201/?feedId=384233&utm_campaign=SAP_Linkedin&utm_source=LinkedinJobPostings",
+    type: "Internship",
+  },
 ];
