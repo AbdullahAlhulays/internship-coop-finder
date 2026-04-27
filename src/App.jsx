@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header.jsx";
 import SearchBar from "./components/SearchBar.jsx";
 import FilterButtons from "./components/FilterButtons.jsx";
@@ -134,6 +135,7 @@ export default function App() {
       </main>
 
       <Footer />
+      <Analytics />
     </>
   );
 }
