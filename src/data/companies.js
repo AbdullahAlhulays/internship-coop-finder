@@ -134,4 +134,10 @@ export const companies = [
     applicationLink: "https://jobs.alfanar.com/alfanar/job/Riyadh-COOP-Training-Program%2C-Engineering-alfanar-Electric/1382939433/?utm_campaign=LinkedinJobPostings&utm_source=LinkedinJobPostings&applySourceOverride=LinkedIn",
     type: "COOP",
   },
+  {
+    name: "Public Health Authority",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://services.pha.gov.sa/Cooperativetraining/",
+    type: "Internship / Cooperative",
+  },
 ];
