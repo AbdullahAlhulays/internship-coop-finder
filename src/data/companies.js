@@ -195,4 +195,10 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4368740142/",
     type: "Internship",
   },
+  {
+    name: "SABIC",
+    location: "Eastern, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4399512328/",
+    type: "Cooperative Training Program",
+  },
 ];

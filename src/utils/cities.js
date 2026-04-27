@@ -3,6 +3,7 @@ const SAUDI_CITY_LABELS = {
   "al khobar": "Al Khobar",
   "al-khobar": "Al Khobar",
   dammam: "Dammam",
+  eastern: "Eastern",
   jeddah: "Jeddah",
   khobar: "Al Khobar",
   madinah: "Madinah",
@@ -29,4 +30,3 @@ export function getSaudiCitiesFromLocation(location = "") {
 export function getCompanyCities(company) {
   return getSaudiCitiesFromLocation(company.location);
 }
-
