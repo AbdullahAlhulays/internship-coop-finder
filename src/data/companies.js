@@ -242,6 +242,7 @@ export const companies = [
   name: "SDAIA",
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://careers.sdaia.gov.sa/training",
+  deadline: "2026-05-08",
   type: "Internship/Co-op Training",
 },
  {
