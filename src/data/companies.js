@@ -349,4 +349,34 @@ export const companies = [
   applicationLink: "https://www.alfalak.com/career/internship/",
   type: "Internship/Co-op Training",
 },
+{
+  name: "Talent 360 ME",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://www.linkedin.com/jobs/view/4404095961/",
+  type: "AI & Automation Intern",
+},
+{
+  name: "Sarj.ai",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://www.linkedin.com/jobs/view/4401003576/",
+  type: "Product Intern",
+},
+{
+  name: "ELM | علـم",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28June-2026-Intake%29-Software-Engineering-Job/1357847557/",
+  type: "Co-op Training",
+},
+{
+  name: "FedEx",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://careers.fedex.com/m00i0-intern-professional/job/DD4D3D398F6CAC6D986084069947E1A2",
+  type: "Intern Professional",
+},
+{
+  name: "Emdad",
+  location: "Jeddah, Saudi Arabia",
+  applicationLink: "https://people-ksa.com/job/725",
+  type: "Co-op Training",
+},
 ];
