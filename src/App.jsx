@@ -16,7 +16,7 @@ import { getCompanyStatus, getDeadlineSortTime } from "./utils/status.js";
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const CLOCK_INTERVAL_MS = 1000;
 const THEME_STORAGE_KEY = "internship-coop-theme";
-const LAST_UPDATED = "April 28, 2026";
+const LAST_UPDATED = "April 29, 2026";
 
 function getSortLabel(company) {
   return company.name || company.title || company.type || "";
