@@ -198,7 +198,7 @@ export function formatCountdown(countdown) {
 
 export function formatDeadline(deadline, deadlineTime) {
   if (!deadline) {
-    return "Open until filled";
+    return "Open until filled - apply early";
   }
 
   const options = {
