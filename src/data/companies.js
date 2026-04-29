@@ -379,4 +379,11 @@ export const companies = [
   applicationLink: "https://people-ksa.com/job/725",
   type: "Co-op Training",
 },
+{
+  name: "المعهد السعودي التقني للخطوط الحديدية | SAUDI RAILWAY POLYTECHNIC",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://srp.edu.sa/registrationRequirements",
+  deadline: "2026-05-03",
+  type: "Internship Training",
+},
 ];
