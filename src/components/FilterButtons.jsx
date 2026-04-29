@@ -1,14 +1,15 @@
 const filters = [
   { label: "All", value: "all" },
   { label: "Open", value: "open" },
-  { label: "Open Soon", value: "open-soon" },
+  { label: "Saved", value: "saved" },
+  { label: "Applied", value: "applied" },
 ];
 
 export default function FilterButtons({ activeFilter, counts, onFilterChange }) {
   return (
     <div className="filter-group">
-      <span className="filter-label">Status</span>
-      <div className="filters" aria-label="Filter opportunities by status">
+      <span className="filter-label">View</span>
+      <div className="filters" aria-label="Choose opportunity view">
         {filters.map((filter) => (
           <button
             key={filter.value}
@@ -17,8 +18,11 @@ export default function FilterButtons({ activeFilter, counts, onFilterChange }) 
             onClick={() => onFilterChange(filter.value)}
           >
             <span>{filter.label}</span>
-            <span className="filter-count" aria-label={`${counts[filter.value]} opportunities`}>
-              {counts[filter.value]}
+            <span
+              className="filter-count"
+              aria-label={`${counts[filter.value] ?? 0} opportunities`}
+            >
+              {counts[filter.value] ?? 0}
             </span>
           </button>
         ))}

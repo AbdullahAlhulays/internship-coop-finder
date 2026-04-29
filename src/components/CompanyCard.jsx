@@ -8,7 +8,20 @@ import {
   isDeadlineUrgent,
 } from "../utils/status.js";
 
-export default function CompanyCard({ company, currentTime }) {
+function getWhatsAppShareUrl(company) {
+  const message = `Check out this student opportunity from ${company.name}: ${company.applicationLink}`;
+
+  return `https://wa.me/?text=${encodeURIComponent(message)}`;
+}
+
+export default function CompanyCard({
+  company,
+  currentTime,
+  isApplied = false,
+  isSaved = false,
+  onAppliedToggle = () => {},
+  onSavedToggle = () => {},
+}) {
   const status = getCompanyStatus(company, currentTime);
   const isOpenSoon = status.key === "open-soon";
   const canApply = status.key === "open";
@@ -25,6 +38,7 @@ export default function CompanyCard({ company, currentTime }) {
     isOpenSoon && company.openingDate
       ? getOpeningCountdown(company.openingDate, currentTime)
       : null;
+  const whatsappShareUrl = getWhatsAppShareUrl(company);
   const [showBio, setShowBio] = useState(false);
 
   return (
@@ -35,7 +49,23 @@ export default function CompanyCard({ company, currentTime }) {
     >
       <div className="card-topline">
         <span className="opportunity-type">{company.type}</span>
-        <span className={`status status-${status.key}`}>{status.label}</span>
+        <div className="card-status-actions">
+          <span className={`status status-${status.key}`}>{status.label}</span>
+          <button
+            type="button"
+            className={isSaved ? "save-button active" : "save-button"}
+            aria-label={
+              isSaved
+                ? `Remove ${company.name} from saved`
+                : `Save ${company.name}`
+            }
+            aria-pressed={isSaved}
+            title={isSaved ? "Saved" : "Save"}
+            onClick={() => onSavedToggle(company.applicationLink)}
+          >
+            <span aria-hidden="true">{isSaved ? "\u2665" : "\u2661"}</span>
+          </button>
+        </div>
       </div>
 
       <div>
@@ -77,16 +107,38 @@ export default function CompanyCard({ company, currentTime }) {
         {canApply && !hasDeadline && <small>No deadline specified</small>}
       </div>
 
-      <a
-        className={canApply ? "apply-button" : "apply-button disabled"}
-        href={canApply ? company.applicationLink : undefined}
-        target="_blank"
-        rel="noreferrer"
-        aria-disabled={!canApply}
-        tabIndex={canApply ? 0 : -1}
-      >
-        {isOpenSoon ? "Open soon" : "Apply now"}
-      </a>
+      <div className="card-actions">
+        <a
+          className={canApply ? "apply-button" : "apply-button disabled"}
+          href={canApply ? company.applicationLink : undefined}
+          target="_blank"
+          rel="noreferrer"
+          aria-disabled={!canApply}
+          tabIndex={canApply ? 0 : -1}
+        >
+          {isOpenSoon ? "Open soon" : "Apply now"}
+        </a>
+        <div className="secondary-actions">
+          <a
+            className="whatsapp-share"
+            href={whatsappShareUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Share ${company.name} on WhatsApp`}
+          >
+            WhatsApp
+          </a>
+          <button
+            type="button"
+            className={isApplied ? "applied-button active" : "applied-button"}
+            disabled={!canApply}
+            aria-pressed={isApplied}
+            onClick={() => onAppliedToggle(company.applicationLink)}
+          >
+            {isApplied ? "Applied" : "Mark applied"}
+          </button>
+        </div>
+      </div>
     </article>
   );
 }

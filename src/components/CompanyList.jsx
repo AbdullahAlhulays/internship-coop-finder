@@ -1,6 +1,13 @@
 import CompanyCard from "./CompanyCard.jsx";
 
-export default function CompanyList({ companies, currentTime }) {
+export default function CompanyList({
+  companies,
+  currentTime,
+  appliedLinks,
+  savedLinks,
+  onAppliedToggle,
+  onSavedToggle,
+}) {
   if (companies.length === 0) {
     return (
       <div className="empty-state">
@@ -17,6 +24,10 @@ export default function CompanyList({ companies, currentTime }) {
           key={company.applicationLink}
           company={company}
           currentTime={currentTime}
+          isApplied={appliedLinks.has(company.applicationLink)}
+          isSaved={savedLinks.has(company.applicationLink)}
+          onAppliedToggle={onAppliedToggle}
+          onSavedToggle={onSavedToggle}
         />
       ))}
     </section>

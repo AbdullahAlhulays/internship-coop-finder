@@ -6,8 +6,8 @@ import FilterButtons from "./components/FilterButtons.jsx";
 import CitySelect from "./components/CitySelect.jsx";
 import DeadlineSortToggle from "./components/DeadlineSortToggle.jsx";
 import CompanyList from "./components/CompanyList.jsx";
-import SubmitOpportunity from "./components/SubmitOpportunity.jsx";
 import Footer from "./components/Footer.jsx";
+import MobileBottomNav from "./components/MobileBottomNav.jsx";
 import { companies as fallbackCompanies } from "./data/companies.js";
 import { getCompanies } from "./services/companiesApi.js";
 import { getCompanyCities } from "./utils/cities.js";
@@ -16,6 +16,8 @@ import { getCompanyStatus, getDeadlineSortTime } from "./utils/status.js";
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const CLOCK_INTERVAL_MS = 1000;
 const THEME_STORAGE_KEY = "internship-coop-theme";
+const SAVED_STORAGE_KEY = "internship-coop-saved";
+const APPLIED_STORAGE_KEY = "internship-coop-applied";
 const LAST_UPDATED = "April 29, 2026";
 
 function getSortLabel(company) {
@@ -32,16 +34,54 @@ function getSavedTheme() {
   }
 }
 
+function getStoredLinks(storageKey) {
+  try {
+    const parsedLinks = JSON.parse(window.localStorage.getItem(storageKey));
+
+    return Array.isArray(parsedLinks)
+      ? parsedLinks.filter((link) => typeof link === "string")
+      : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveStoredLinks(storageKey, links) {
+  try {
+    window.localStorage.setItem(storageKey, JSON.stringify(links));
+  } catch {
+    // Saving is optional; the app still works for the current session.
+  }
+}
+
+function toggleStoredLink(link, links) {
+  if (links.includes(link)) {
+    return links.filter((storedLink) => storedLink !== link);
+  }
+
+  return [...links, link];
+}
+
 export default function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [activeFilter, setActiveFilter] = useState("all");
   const [activeCity, setActiveCity] = useState("all");
   const [sortByDeadline, setSortByDeadline] = useState(false);
   const [theme, setTheme] = useState(getSavedTheme);
+  const [savedLinks, setSavedLinks] = useState(() =>
+    getStoredLinks(SAVED_STORAGE_KEY),
+  );
+  const [appliedLinks, setAppliedLinks] = useState(() =>
+    getStoredLinks(APPLIED_STORAGE_KEY),
+  );
   const [companies, setCompanies] = useState(fallbackCompanies);
-  const [isLoading, setIsLoading] = useState(Boolean(import.meta.env.VITE_COMPANIES_DATA_URL));
+  const [isLoading, setIsLoading] = useState(
+    Boolean(import.meta.env.VITE_COMPANIES_DATA_URL),
+  );
   const [dataError, setDataError] = useState("");
   const [currentTime, setCurrentTime] = useState(() => new Date());
+  const savedLinksSet = useMemo(() => new Set(savedLinks), [savedLinks]);
+  const appliedLinksSet = useMemo(() => new Set(appliedLinks), [appliedLinks]);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -52,6 +92,14 @@ export default function App() {
       // Theme still changes even if the browser blocks localStorage.
     }
   }, [theme]);
+
+  useEffect(() => {
+    saveStoredLinks(SAVED_STORAGE_KEY, savedLinks);
+  }, [savedLinks]);
+
+  useEffect(() => {
+    saveStoredLinks(APPLIED_STORAGE_KEY, appliedLinks);
+  }, [appliedLinks]);
 
   useEffect(() => {
     let isMounted = true;
@@ -113,12 +161,18 @@ export default function App() {
     return companies
       .filter((company) => {
         const status = getCompanyStatus(company, currentTime);
+        const isSaved = savedLinksSet.has(company.applicationLink);
+        const isApplied = appliedLinksSet.has(company.applicationLink);
         const matchesSearch = getSortLabel(company)
           .toLowerCase()
           .includes(normalizedSearch);
         const isVisible = status.key !== "closed";
         const matchesFilter =
-          activeFilter === "all" || status.key === activeFilter;
+          activeFilter === "saved"
+            ? isSaved
+            : activeFilter === "applied"
+              ? isApplied
+              : activeFilter === "all" || status.key === activeFilter;
         const cities = getCompanyCities(company);
         const matchesCity = activeCity === "all" || cities.includes(activeCity);
 
@@ -139,7 +193,16 @@ export default function App() {
 
         return deadlineSort || labelSort;
       });
-  }, [activeCity, activeFilter, companies, currentTime, searchTerm, sortByDeadline]);
+  }, [
+    activeCity,
+    activeFilter,
+    appliedLinksSet,
+    companies,
+    currentTime,
+    savedLinksSet,
+    searchTerm,
+    sortByDeadline,
+  ]);
 
   const opportunityCounts = useMemo(() => {
     return companies.reduce(
@@ -153,15 +216,37 @@ export default function App() {
         counts.all += 1;
         counts[status.key] += 1;
 
+        if (savedLinksSet.has(company.applicationLink)) {
+          counts.saved += 1;
+        }
+
+        if (appliedLinksSet.has(company.applicationLink)) {
+          counts.applied += 1;
+        }
+
         return counts;
       },
       {
         all: 0,
         open: 0,
         "open-soon": 0,
+        saved: 0,
+        applied: 0,
       },
     );
-  }, [companies, currentTime]);
+  }, [appliedLinksSet, companies, currentTime, savedLinksSet]);
+
+  const handleSavedToggle = (applicationLink) => {
+    setSavedLinks((currentLinks) =>
+      toggleStoredLink(applicationLink, currentLinks),
+    );
+  };
+
+  const handleAppliedToggle = (applicationLink) => {
+    setAppliedLinks((currentLinks) =>
+      toggleStoredLink(applicationLink, currentLinks),
+    );
+  };
 
   const cityCounts = useMemo(() => {
     return companies.reduce(
@@ -220,16 +305,18 @@ export default function App() {
               counts={opportunityCounts}
               onFilterChange={setActiveFilter}
             />
-            <CitySelect
-              activeCity={activeCity}
-              cities={cityOptions}
-              counts={cityCounts}
-              onCityChange={setActiveCity}
-            />
-            <DeadlineSortToggle
-              checked={sortByDeadline}
-              onChange={setSortByDeadline}
-            />
+            <div className="filter-pair">
+              <CitySelect
+                activeCity={activeCity}
+                cities={cityOptions}
+                counts={cityCounts}
+                onCityChange={setActiveCity}
+              />
+              <DeadlineSortToggle
+                checked={sortByDeadline}
+                onChange={setSortByDeadline}
+              />
+            </div>
           </div>
         </section>
 
@@ -240,11 +327,22 @@ export default function App() {
           </p>
         )}
 
-        <SubmitOpportunity />
-        <CompanyList companies={filteredCompanies} currentTime={currentTime} />
+        <CompanyList
+          companies={filteredCompanies}
+          currentTime={currentTime}
+          appliedLinks={appliedLinksSet}
+          savedLinks={savedLinksSet}
+          onAppliedToggle={handleAppliedToggle}
+          onSavedToggle={handleSavedToggle}
+        />
       </main>
 
       <Footer />
+      <MobileBottomNav
+        activeFilter={activeFilter}
+        counts={opportunityCounts}
+        onFilterChange={setActiveFilter}
+      />
       <Analytics />
     </>
   );
