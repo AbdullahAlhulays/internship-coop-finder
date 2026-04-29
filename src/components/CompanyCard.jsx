@@ -24,6 +24,7 @@ export default function CompanyCard({
 }) {
   const status = getCompanyStatus(company, currentTime);
   const isOpenSoon = status.key === "open-soon";
+  const isClosed = status.key === "closed";
   const canApply = status.key === "open";
   const isUrgent = isDeadlineUrgent(company, currentTime);
   const hasBio = Boolean(company.bio?.trim());
@@ -45,7 +46,7 @@ export default function CompanyCard({
     <article
       className={`company-card ${isOpenSoon ? "is-open-soon" : ""} ${
         isUrgent ? "is-urgent" : ""
-      }`}
+      } ${isClosed ? "is-closed" : ""}`}
     >
       <div className="card-topline">
         <span className="opportunity-type">{company.type}</span>
@@ -85,7 +86,14 @@ export default function CompanyCard({
       </div>
 
       <div className="deadline-box">
-        {isOpenSoon && company.openingDate && (
+        {isClosed && (
+          <>
+            <span>Status</span>
+            <strong>Closed</strong>
+            <small>Applications are no longer accepting submissions.</small>
+          </>
+        )}
+        {!isClosed && isOpenSoon && company.openingDate && (
           <>
             <span>Opens</span>
             <strong>{formatDeadline(company.openingDate)}</strong>
@@ -94,17 +102,21 @@ export default function CompanyCard({
             </small>
           </>
         )}
-        <span>Deadline</span>
-        <strong>{formatDeadline(company.deadline, company.deadlineTime)}</strong>
-        {canApply && isUrgent && (
+        {!isClosed && <span>Deadline</span>}
+        {!isClosed && (
+          <strong>{formatDeadline(company.deadline, company.deadlineTime)}</strong>
+        )}
+        {!isClosed && canApply && isUrgent && (
           <small className="deadline-alert">Less than 48 hours left</small>
         )}
-        {canApply && hasDeadline && (
+        {!isClosed && canApply && hasDeadline && (
           <small className="live-countdown">
             Closes in {formatCountdown(deadlineCountdown)}
           </small>
         )}
-        {canApply && !hasDeadline && <small>No deadline specified</small>}
+        {!isClosed && canApply && !hasDeadline && (
+          <small>No deadline specified</small>
+        )}
       </div>
 
       <div className="card-actions">
@@ -116,7 +128,7 @@ export default function CompanyCard({
           aria-disabled={!canApply}
           tabIndex={canApply ? 0 : -1}
         >
-          {isOpenSoon ? "Open soon" : "Apply now"}
+          {isClosed ? "Closed" : isOpenSoon ? "Open soon" : "Apply now"}
         </a>
         <div className="secondary-actions">
           <a

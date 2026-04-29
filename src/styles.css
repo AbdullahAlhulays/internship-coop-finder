@@ -494,6 +494,19 @@ select {
   background: var(--urgent-mark);
 }
 
+.company-card.is-closed {
+  border-color: var(--urgent-line);
+  background: linear-gradient(180deg, #fff1ef 0%, rgba(255, 248, 247, 0.94) 100%);
+}
+
+:root[data-theme="dark"] .company-card.is-closed {
+  background: linear-gradient(180deg, rgba(67, 31, 28, 0.9) 0%, rgba(24, 32, 24, 0.94) 100%);
+}
+
+.company-card.is-closed::before {
+  background: var(--urgent-mark);
+}
+
 .card-topline {
   position: relative;
   display: flex;
@@ -535,6 +548,11 @@ select {
 .status-open-soon {
   background: var(--status-open-soon-bg);
   color: var(--status-open-soon-text);
+}
+
+.status-closed {
+  background: var(--urgent-bg);
+  color: var(--urgent);
 }
 
 .company-card.is-urgent .status-open {
@@ -655,6 +673,11 @@ select {
   background: var(--urgent-bg);
 }
 
+.company-card.is-closed .deadline-box {
+  border: 1px solid var(--urgent-line);
+  background: var(--urgent-bg);
+}
+
 .deadline-box span,
 .deadline-box small {
   color: var(--muted);
@@ -668,7 +691,8 @@ select {
 }
 
 .company-card.is-urgent .live-countdown,
-.deadline-box .deadline-alert {
+.deadline-box .deadline-alert,
+.company-card.is-closed .deadline-box strong {
   color: var(--urgent);
 }
 

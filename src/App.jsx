@@ -166,7 +166,7 @@ export default function App() {
         const matchesSearch = getSortLabel(company)
           .toLowerCase()
           .includes(normalizedSearch);
-        const isVisible = status.key !== "closed";
+        const isVisible = status.key !== "closed" || company.isClosed;
         const matchesFilter =
           activeFilter === "saved"
             ? isSaved
@@ -209,12 +209,14 @@ export default function App() {
       (counts, company) => {
         const status = getCompanyStatus(company, currentTime);
 
-        if (status.key === "closed") {
+        if (status.key === "closed" && !company.isClosed) {
           return counts;
         }
 
         counts.all += 1;
-        counts[status.key] += 1;
+        if (counts[status.key] !== undefined) {
+          counts[status.key] += 1;
+        }
 
         if (savedLinksSet.has(company.applicationLink)) {
           counts.saved += 1;
@@ -253,7 +255,7 @@ export default function App() {
       (counts, company) => {
         const status = getCompanyStatus(company, currentTime);
 
-        if (status.key === "closed") {
+        if (status.key === "closed" && !company.isClosed) {
           return counts;
         }
 

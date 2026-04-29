@@ -91,6 +91,14 @@ export function getApplicationStatus(deadline, now = new Date(), deadlineTime) {
 }
 
 export function getCompanyStatus(company, now = new Date()) {
+  if (company.isClosed) {
+    return {
+      label: "Closed",
+      key: "closed",
+      daysLeft: null,
+    };
+  }
+
   const today = new Date(now);
   today.setHours(0, 0, 0, 0);
 

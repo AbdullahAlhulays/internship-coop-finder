@@ -6,6 +6,7 @@
 // The bio field is optional. If you add it, students can reveal it from the card.
 // The location field is optional. Use it for city, country, remote, or hybrid details.
 // The openingDate field is optional. Use it for opportunities that should show "Open Soon".
+// The isClosed field is optional. Set it to true to keep a closed opportunity visible.
 export const companies = [
   {
     name: "SANS",
@@ -206,6 +207,7 @@ export const companies = [
     location: "Eastern, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4399512328/",
     type: "Cooperative Training Program",
+    isClosed: true,
   },
   {
   name: "SAMACO MOTORS",
