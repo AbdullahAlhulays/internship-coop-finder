@@ -9,7 +9,7 @@
 // The isClosed field is optional. Set it to true to keep a closed opportunity visible.
 export const companies = [
   {
-    name: "SANS",
+    name: "SANS | Saudi Air Navigation Services",
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://careers.sans.com.sa/#en/sites/CX_1/job/1804",
     deadline: "2026-05-06",
@@ -66,12 +66,6 @@ export const companies = [
     name: "GE VERNOVA",
     location: "Dammam, Saudi Arabia",
     applicationLink: "https://careers.gevernova.com/co-op-internship-program/job/R5037595",
-    type: "Intern",
-  },
-  {
-    name: "R&D",
-    location: "Riyadh, Saudi Arabia",
-    applicationLink: "https://www.linkedin.com/jobs/view/4374719492/",
     type: "Intern",
   },
   {
@@ -220,12 +214,6 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.linkedin.com/jobs/view/4361522849/",
   type: "COOP",
-},
- {
-  name: "TAWAL",
-  location: "Riyadh, Saudi Arabia",
-  applicationLink: "https://www.linkedin.com/jobs/view/4395054461",
-  type: "COOP Training",
 },
  {
   name: "Tamara",
@@ -387,5 +375,11 @@ export const companies = [
   applicationLink: "https://srp.edu.sa/registrationRequirements",
   deadline: "2026-05-03",
   type: "Internship Training",
+},
+{
+  name: "SNB | Saudi National Bank",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://www.alahli.com/en/pages/about-us/careers/snb-cooperative-training-program",
+  type: "Co-op Training",
 },
 ];
