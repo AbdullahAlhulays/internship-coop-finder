@@ -7,6 +7,7 @@
 // The location field is optional. Use it for city, country, remote, or hybrid details.
 // The openingDate field is optional. Use it for opportunities that should show "Open Soon".
 // The isClosed field is optional. Set it to true to keep a closed opportunity visible.
+// The isNew field is optional. Set it to true for recently added opportunities.
 export const companies = [
   {
     name: "SANS | Saudi Air Navigation Services",
@@ -370,6 +371,7 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.linkedin.com/jobs/view/4398776667/",
   type: "CO-OP Training",
+  isNew: true,
 },
 {
   name: "FedEx",
@@ -395,29 +397,34 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.alahli.com/en/pages/about-us/careers/snb-cooperative-training-program",
   type: "CO-OP Training",
+  isNew: true,
 },
 {
   name: "SATORP",
   location: "Jubail, Saudi Arabia",
   applicationLink: "https://career-sa20.hr.cloud.sap/career?career%5fns=job%5flisting&company=SATORPPROD&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fUS&career_job_req_id=7845&selected_lang=en_US&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=Asia/Riyadh&_s.crb=f1Ic7brlkcAq93gtXURyVgxp0bm8fk3rV%2bXXPbd6ox4%3d",
   type: "CO-OP Training",
+  isNew: true,
 },
 {
   name: "CAMCO",
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=ZsJ8uMQJzECN-skuCL-ctOj-cRqbkBBKpFmiyr5xz85UM1A1VEMyUklZUDNTRFpBNkJHM1RJNjg2RC4u&route=shorturl",
   type: "CO-OP Training",
+  isNew: true,
 },
 {
   name: "NESR",
   location: "Al Dammam, Saudi Arabia",
   applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=wtETX6wQuEmoXkuz2RE1uerPzaiYzdNHsAaFJkomCX5UNlZOTzE5WkdESUk4RjlXWTdGVzRCREtDNC4u&route=shorturl",
   type: "Internship",
+  isNew: true,
 },
 {
   name: "Alrajhi Takaful",
   location: "Many, Saudi Arabia",
   applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSew1yGsZ-P7EZ24CfMuB6KJpGG8XTRd_WTtjI38GdzcfE66Cg/formResponse?pli=1",
   type: "Internship",
+  isNew: true,
 },
 ];

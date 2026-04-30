@@ -522,8 +522,17 @@ select {
   gap: 8px;
 }
 
+.card-badges {
+  position: relative;
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+}
+
 .status,
-.opportunity-type {
+.opportunity-type,
+.new-badge {
   display: inline-flex;
   align-items: center;
   min-height: 31px;
@@ -535,9 +544,17 @@ select {
 }
 
 .opportunity-type {
-  max-width: min(68%, 18rem);
+  max-width: min(100%, 18rem);
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.new-badge {
+  flex: 0 0 auto;
+  background: var(--action-bg);
+  color: var(--action-text);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .status-open {
@@ -885,7 +902,7 @@ select {
   }
 
   .opportunity-type {
-    max-width: calc(100% - 132px);
+    max-width: 100%;
   }
 
   .filter {

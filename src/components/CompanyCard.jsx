@@ -47,7 +47,10 @@ export default function CompanyCard({
       } ${isClosed ? "is-closed" : ""}`}
     >
       <div className="card-topline">
-        <span className="opportunity-type">{company.type}</span>
+        <div className="card-badges">
+          <span className="opportunity-type">{company.type}</span>
+          {company.isNew && <span className="new-badge">New</span>}
+        </div>
         <div className="card-status-actions">
           <span className={`status status-${status.key}`}>{status.label}</span>
         </div>
