@@ -415,4 +415,10 @@ export const companies = [
   applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=wtETX6wQuEmoXkuz2RE1uerPzaiYzdNHsAaFJkomCX5UNlZOTzE5WkdESUk4RjlXWTdGVzRCREtDNC4u&route=shorturl",
   type: "Internship",
 },
+{
+  name: "Alrajhi Takaful",
+  location: "Many, Saudi Arabia",
+  applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSew1yGsZ-P7EZ24CfMuB6KJpGG8XTRd_WTtjI38GdzcfE66Cg/formResponse?pli=1",
+  type: "Internship",
+},
 ];
