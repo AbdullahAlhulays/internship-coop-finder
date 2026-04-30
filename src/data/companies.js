@@ -388,4 +388,10 @@ export const companies = [
   applicationLink: "https://career-sa20.hr.cloud.sap/career?career%5fns=job%5flisting&company=SATORPPROD&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fUS&career_job_req_id=7845&selected_lang=en_US&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=Asia/Riyadh&_s.crb=f1Ic7brlkcAq93gtXURyVgxp0bm8fk3rV%2bXXPbd6ox4%3d",
   type: "Coop Program",
 },
+{
+  name: "CAMCO",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=ZsJ8uMQJzECN-skuCL-ctOj-cRqbkBBKpFmiyr5xz85UM1A1VEMyUklZUDNTRFpBNkJHM1RJNjg2RC4u&route=shorturl",
+  type: "Coop training",
+},
 ];
