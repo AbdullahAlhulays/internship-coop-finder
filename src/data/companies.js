@@ -368,7 +368,8 @@ export const companies = [
 {
   name: "ELM | علـم",
   location: "Riyadh, Saudi Arabia",
-  applicationLink: "https://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28June-2026-Intake%29-Software-Engineering-Job/1357847557/",
+  applicationLink: "https://www.linkedin.com/jobs/view/4398776667/",
+  deadline: "2026-04-30",
   type: "CO-OP Training",
 },
 {
