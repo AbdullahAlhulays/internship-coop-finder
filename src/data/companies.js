@@ -408,4 +408,10 @@ export const companies = [
   applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=ZsJ8uMQJzECN-skuCL-ctOj-cRqbkBBKpFmiyr5xz85UM1A1VEMyUklZUDNTRFpBNkJHM1RJNjg2RC4u&route=shorturl",
   type: "CO-OP Training",
 },
+{
+  name: "NESR",
+  location: "Al Dammam, Saudi Arabia",
+  applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=wtETX6wQuEmoXkuz2RE1uerPzaiYzdNHsAaFJkomCX5UNlZOTzE5WkdESUk4RjlXWTdGVzRCREtDNC4u&route=shorturl",
+  type: "Internship",
+},
 ];
