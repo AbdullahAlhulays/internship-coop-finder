@@ -427,4 +427,11 @@ export const companies = [
   type: "Internship",
   isNew: true,
 },
+{
+  name: "Bupa",
+  location: "Jeddah, Saudi Arabia",
+  applicationLink: "https://careers.bupa.com.sa/en/job-search-results/?keyword=coop&sort=22,d&page=1&view=grid",
+  type: "Internship",
+  isNew: true,
+},
 ];
