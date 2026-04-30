@@ -369,7 +369,6 @@ export const companies = [
   name: "ELM | علـم",
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.linkedin.com/jobs/view/4398776667/",
-  deadline: "2026-04-30",
   type: "CO-OP Training",
 },
 {
