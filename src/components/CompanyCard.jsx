@@ -18,9 +18,7 @@ export default function CompanyCard({
   company,
   currentTime,
   isApplied = false,
-  isSaved = false,
   onAppliedToggle = () => {},
-  onSavedToggle = () => {},
 }) {
   const status = getCompanyStatus(company, currentTime);
   const isOpenSoon = status.key === "open-soon";
@@ -52,20 +50,6 @@ export default function CompanyCard({
         <span className="opportunity-type">{company.type}</span>
         <div className="card-status-actions">
           <span className={`status status-${status.key}`}>{status.label}</span>
-          <button
-            type="button"
-            className={isSaved ? "save-button active" : "save-button"}
-            aria-label={
-              isSaved
-                ? `Remove ${company.name} from saved`
-                : `Save ${company.name}`
-            }
-            aria-pressed={isSaved}
-            title={isSaved ? "Saved" : "Save"}
-            onClick={() => onSavedToggle(company.applicationLink)}
-          >
-            <span aria-hidden="true">{isSaved ? "\u2665" : "\u2661"}</span>
-          </button>
         </div>
       </div>
 

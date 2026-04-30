@@ -566,46 +566,6 @@ select {
   color: var(--muted);
 }
 
-.save-button {
-  position: relative;
-  display: inline-flex;
-  width: 36px;
-  height: 36px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--control-bg);
-  color: var(--leaf-deep);
-  cursor: pointer;
-  font-size: 1.15rem;
-  font-weight: 900;
-  line-height: 1;
-  transition:
-    background 180ms ease,
-    border-color 180ms ease,
-    color 180ms ease,
-    transform 180ms ease;
-}
-
-.save-button:hover {
-  transform: translateY(-1px);
-  border-color: var(--hover-line);
-  background: var(--control-bg-strong);
-}
-
-.save-button.active {
-  border-color: transparent;
-  background: var(--action-bg);
-  color: var(--action-text);
-}
-
-.save-button:focus-visible {
-  border-color: var(--focus-line);
-  outline: none;
-  box-shadow: 0 0 0 5px var(--focus-ring);
-}
-
 .company-card h2 {
   position: relative;
   margin: 0 0 7px;

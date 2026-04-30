@@ -1,7 +1,7 @@
 const filters = [
   { label: "All", value: "all" },
   { label: "Open", value: "open" },
-  { label: "Saved", value: "saved" },
+  { label: "Closed", value: "closed" },
   { label: "Applied", value: "applied" },
 ];
 

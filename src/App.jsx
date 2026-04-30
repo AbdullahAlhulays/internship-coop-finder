@@ -16,7 +16,6 @@ import { getCompanyStatus, getDeadlineSortTime } from "./utils/status.js";
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const CLOCK_INTERVAL_MS = 1000;
 const THEME_STORAGE_KEY = "internship-coop-theme";
-const SAVED_STORAGE_KEY = "internship-coop-saved";
 const APPLIED_STORAGE_KEY = "internship-coop-applied";
 const LAST_UPDATED = "April 30, 2026";
 
@@ -68,9 +67,6 @@ export default function App() {
   const [activeCity, setActiveCity] = useState("all");
   const [sortByDeadline, setSortByDeadline] = useState(false);
   const [theme, setTheme] = useState(getSavedTheme);
-  const [savedLinks, setSavedLinks] = useState(() =>
-    getStoredLinks(SAVED_STORAGE_KEY),
-  );
   const [appliedLinks, setAppliedLinks] = useState(() =>
     getStoredLinks(APPLIED_STORAGE_KEY),
   );
@@ -80,7 +76,6 @@ export default function App() {
   );
   const [dataError, setDataError] = useState("");
   const [currentTime, setCurrentTime] = useState(() => new Date());
-  const savedLinksSet = useMemo(() => new Set(savedLinks), [savedLinks]);
   const appliedLinksSet = useMemo(() => new Set(appliedLinks), [appliedLinks]);
 
   useEffect(() => {
@@ -92,10 +87,6 @@ export default function App() {
       // Theme still changes even if the browser blocks localStorage.
     }
   }, [theme]);
-
-  useEffect(() => {
-    saveStoredLinks(SAVED_STORAGE_KEY, savedLinks);
-  }, [savedLinks]);
 
   useEffect(() => {
     saveStoredLinks(APPLIED_STORAGE_KEY, appliedLinks);
@@ -161,15 +152,16 @@ export default function App() {
     return companies
       .filter((company) => {
         const status = getCompanyStatus(company, currentTime);
-        const isSaved = savedLinksSet.has(company.applicationLink);
+        const isClosed = status.key === "closed" && company.isClosed;
         const isApplied = appliedLinksSet.has(company.applicationLink);
         const matchesSearch = getSortLabel(company)
           .toLowerCase()
           .includes(normalizedSearch);
-        const isVisible = status.key !== "closed" || company.isClosed;
+        const isVisible =
+          activeFilter === "closed" ? isClosed : status.key !== "closed";
         const matchesFilter =
-          activeFilter === "saved"
-            ? isSaved
+          activeFilter === "closed"
+            ? isClosed
             : activeFilter === "applied"
               ? isApplied
               : activeFilter === "all" || status.key === activeFilter;
@@ -199,7 +191,6 @@ export default function App() {
     appliedLinksSet,
     companies,
     currentTime,
-    savedLinksSet,
     searchTerm,
     sortByDeadline,
   ]);
@@ -213,13 +204,14 @@ export default function App() {
           return counts;
         }
 
+        if (status.key === "closed") {
+          counts.closed += 1;
+          return counts;
+        }
+
         counts.all += 1;
         if (counts[status.key] !== undefined) {
           counts[status.key] += 1;
-        }
-
-        if (savedLinksSet.has(company.applicationLink)) {
-          counts.saved += 1;
         }
 
         if (appliedLinksSet.has(company.applicationLink)) {
@@ -232,17 +224,11 @@ export default function App() {
         all: 0,
         open: 0,
         "open-soon": 0,
-        saved: 0,
+        closed: 0,
         applied: 0,
       },
     );
-  }, [appliedLinksSet, companies, currentTime, savedLinksSet]);
-
-  const handleSavedToggle = (applicationLink) => {
-    setSavedLinks((currentLinks) =>
-      toggleStoredLink(applicationLink, currentLinks),
-    );
-  };
+  }, [appliedLinksSet, companies, currentTime]);
 
   const handleAppliedToggle = (applicationLink) => {
     setAppliedLinks((currentLinks) =>
@@ -333,9 +319,7 @@ export default function App() {
           companies={filteredCompanies}
           currentTime={currentTime}
           appliedLinks={appliedLinksSet}
-          savedLinks={savedLinksSet}
           onAppliedToggle={handleAppliedToggle}
-          onSavedToggle={handleSavedToggle}
         />
       </main>
 

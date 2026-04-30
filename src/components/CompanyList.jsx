@@ -4,9 +4,7 @@ export default function CompanyList({
   companies,
   currentTime,
   appliedLinks,
-  savedLinks,
   onAppliedToggle,
-  onSavedToggle,
 }) {
   if (companies.length === 0) {
     return (
@@ -25,9 +23,7 @@ export default function CompanyList({
           company={company}
           currentTime={currentTime}
           isApplied={appliedLinks.has(company.applicationLink)}
-          isSaved={savedLinks.has(company.applicationLink)}
           onAppliedToggle={onAppliedToggle}
-          onSavedToggle={onSavedToggle}
         />
       ))}
     </section>

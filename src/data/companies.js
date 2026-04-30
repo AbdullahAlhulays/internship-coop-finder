@@ -197,6 +197,20 @@ export const companies = [
     type: "Internship",
   },
   {
+    name: "R&D",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4374719492/",
+    type: "Internship",
+    isClosed: true,
+  },
+  {
+    name: "TAWAL",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4395054461",
+    type: "CO-OP Training",
+    isClosed: true,
+  },
+  {
     name: "SABIC",
     location: "Eastern, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4399512328/",
