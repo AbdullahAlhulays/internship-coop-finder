@@ -5,6 +5,7 @@ const SAUDI_CITY_LABELS = {
   dammam: "Dammam",
   eastern: "Eastern",
   jeddah: "Jeddah",
+  jubail: "Jubail",
   khobar: "Al Khobar",
   madinah: "Madinah",
   mecca: "Makkah",

@@ -382,4 +382,10 @@ export const companies = [
   applicationLink: "https://www.alahli.com/en/pages/about-us/careers/snb-cooperative-training-program",
   type: "Co-op Training",
 },
+{
+  name: "SATORP",
+  location: "Jubail, Saudi Arabia",
+  applicationLink: "https://career-sa20.hr.cloud.sap/career?career%5fns=job%5flisting&company=SATORPPROD&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fUS&career_job_req_id=7845&selected_lang=en_US&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=Asia/Riyadh&_s.crb=f1Ic7brlkcAq93gtXURyVgxp0bm8fk3rV%2bXXPbd6ox4%3d",
+  type: "Coop Program",
+},
 ];
