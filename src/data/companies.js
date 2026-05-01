@@ -435,4 +435,12 @@ export const companies = [
   type: "Internship",
   isNew: true,
 },
+{
+  name: "NHC",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://eghj.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3001/job/207/?utm_medium=jobshare&utm_source=External+Job+Share",
+  deadline: "2026-05-10",
+  type: "CO-OP Training",
+  isNew: true,
+},
 ];
