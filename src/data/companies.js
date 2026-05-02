@@ -193,6 +193,14 @@ export const companies = [
     isClosed: true,
   },
   {
+    name: "Takamol",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://careers.takamol.sa/jobs/details/691054aceb6bc342ed895274?src=LinkedIn",
+    deadline: "2026-06-01",
+    type: "Internship / CO-OP Training",
+    isNew: true,
+  },
+  {
     name: "SAP",
     location: "Jeddah, Makkah, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4368740142/",
