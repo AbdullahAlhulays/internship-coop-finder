@@ -1,6 +1,6 @@
-# Internship & COOP Finder
+# Fursati
 
-A clean React app for helping students find internship and COOP application links.
+A clean React app for helping students find internship and CO-OP application links.
 
 ## Run Locally
 

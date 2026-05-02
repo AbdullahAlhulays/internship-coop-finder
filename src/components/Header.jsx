@@ -15,7 +15,7 @@ export default function Header({ theme, onThemeToggle }) {
         </div>
 
         <div className="intro">
-          <h1>Student opportunities</h1>
+          <h1>Fursati</h1>
         </div>
       </div>
     </header>
