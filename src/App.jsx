@@ -154,7 +154,6 @@ export default function App() {
         const status = getCompanyStatus(company, currentTime);
         const isClosed = status.key === "closed" && company.isClosed;
         const isApplied = appliedLinksSet.has(company.applicationLink);
-        const isNew = Boolean(company.isNew);
         const matchesSearch = getSortLabel(company)
           .toLowerCase()
           .includes(normalizedSearch);
@@ -165,9 +164,7 @@ export default function App() {
             ? isClosed
             : activeFilter === "applied"
               ? isApplied
-              : activeFilter === "new"
-                ? isNew
-                : status.key !== "closed";
+              : status.key !== "closed";
         const cities = getCompanyCities(company);
         const matchesCity = activeCity === "all" || cities.includes(activeCity);
 
@@ -215,10 +212,6 @@ export default function App() {
         counts.all += 1;
         counts.open += 1;
 
-        if (company.isNew) {
-          counts.new += 1;
-        }
-
         if (appliedLinksSet.has(company.applicationLink)) {
           counts.applied += 1;
         }
@@ -231,7 +224,6 @@ export default function App() {
         "open-soon": 0,
         closed: 0,
         applied: 0,
-        new: 0,
       },
     );
   }, [appliedLinksSet, companies, currentTime]);

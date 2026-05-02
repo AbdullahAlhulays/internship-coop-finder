@@ -1,12 +1,11 @@
 export default function MobileBottomNav({ activeFilter, counts, onFilterChange }) {
-  const activeTab = ["open", "closed", "applied", "new"].includes(activeFilter)
+  const activeTab = ["open", "closed", "applied"].includes(activeFilter)
     ? activeFilter
     : "open";
   const navItems = [
     { label: "Open", value: "open", count: counts.open ?? 0 },
     { label: "Closed", value: "closed", count: counts.closed ?? 0 },
     { label: "Applied", value: "applied", count: counts.applied ?? 0 },
-    { label: "New", value: "new", count: counts.new ?? 0 },
   ];
 
   function handleNavClick(value) {

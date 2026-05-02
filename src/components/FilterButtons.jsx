@@ -2,7 +2,6 @@ const filters = [
   { label: "Open", value: "open" },
   { label: "Closed", value: "closed" },
   { label: "Applied", value: "applied" },
-  { label: "New", value: "new" },
 ];
 
 export default function FilterButtons({ activeFilter, counts, onFilterChange }) {
