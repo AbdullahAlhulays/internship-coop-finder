@@ -190,6 +190,7 @@ export const companies = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4398395577/",
     type: "CO-OP Training",
+    isClosed: true,
   },
   {
     name: "SAP",
