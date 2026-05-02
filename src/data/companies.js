@@ -443,4 +443,11 @@ export const companies = [
   type: "CO-OP Training",
   isNew: true,
 },
+{
+  name: "King Fahd Armed Forces Hospital | مستشفى الملك فهد للقوات المسلحة ",
+  location: "Jeddah, Saudi Arabia",
+  applicationLink: "https://gen.kfafh.med.sa/training/",
+  type: "CO-OP Training",
+  isNew: true,
+},
 ];
