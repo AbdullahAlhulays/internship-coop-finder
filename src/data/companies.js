@@ -445,6 +445,14 @@ export const companies = [
   isNew: true,
 },
 {
+  name: "Barakah",
+  location: "Jeddah, Saudi Arabia",
+  applicationLink: "https://tally.so/r/Me8KZl",
+  deadline: "2026-05-16",
+  type: "Data & AI Internship",
+  isNew: true,
+},
+{
   name: "NHC",
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://eghj.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3001/job/207/?utm_medium=jobshare&utm_source=External+Job+Share",

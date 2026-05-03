@@ -17,7 +17,7 @@ const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const CLOCK_INTERVAL_MS = 1000;
 const THEME_STORAGE_KEY = "internship-coop-theme";
 const APPLIED_STORAGE_KEY = "internship-coop-applied";
-const LAST_UPDATED = "May 2, 2026";
+const LAST_UPDATED = "May 3, 2026";
 
 function getSortLabel(company) {
   return company.name || company.title || company.type || "";
