@@ -40,6 +40,7 @@ That URL must return JSON in either format:
     "bio": "Optional short description about the company.",
     "location": "Riyadh / Remote",
     "applicationLink": "https://example.com",
+    "addedAt": "2026-05-03T23:09:44+03:00",
     "openingDate": "2026-05-01",
     "deadline": "2026-05-30",
     "deadlineTime": "23:55",
@@ -58,6 +59,7 @@ or:
       "bio": "Optional short description about the company.",
       "location": "Riyadh / Remote",
       "applicationLink": "https://example.com",
+      "addedAt": "2026-05-03T23:09:44+03:00",
       "openingDate": "2026-05-01",
       "deadline": "2026-05-30",
       "deadlineTime": "23:55",
@@ -78,3 +80,5 @@ Expired opportunities are hidden automatically when their deadline passes.
 `bio` and `location` are optional. Add them only when you want those details to appear on the card.
 
 `deadlineTime` is optional. Add it in 24-hour `HH:mm` format when the posting includes an exact apply-before time.
+
+`addedAt` is optional. Add an ISO timestamp when an opportunity is first provided, and the app will show the `New` badge for 48 hours.

@@ -7,8 +7,16 @@
 // The location field is optional. Use it for city, country, remote, or hybrid details.
 // The openingDate field is optional. Use it for opportunities that should show "Open Soon".
 // The isClosed field is optional. Set it to true to keep a closed opportunity visible.
-// The isNew field is optional. Set it to true for recently added opportunities.
+// The addedAt field is optional. Use an ISO timestamp to show "New" for 48 hours.
 export const companies = [
+  {
+    name: "Soudah Development | السودة للتطوير",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://fa-eueh-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/ar/sites/CX_1/job/189/?utm_medium=jobshare&utm_source=External%20Job%20Share",
+    deadline: "2026-05-21",
+    type: "CO-OP Training",
+    addedAt: "2026-05-03T23:09:44+03:00",
+  },
   {
     name: "SANS | Saudi Air Navigation Services",
     location: "Jeddah, Saudi Arabia",
@@ -198,7 +206,6 @@ export const companies = [
     applicationLink: "https://careers.takamol.sa/jobs/details/691054aceb6bc342ed895274?src=LinkedIn",
     deadline: "2026-06-01",
     type: "Internship / CO-OP Training",
-    isNew: true,
   },
   {
     name: "SAP",
@@ -380,7 +387,6 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.linkedin.com/jobs/view/4398776667/",
   type: "CO-OP Training",
-  isNew: true,
 },
 {
   name: "FedEx",
@@ -406,35 +412,30 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.alahli.com/en/pages/about-us/careers/snb-cooperative-training-program",
   type: "CO-OP Training",
-  isNew: true,
 },
 {
   name: "SATORP",
   location: "Jubail, Saudi Arabia",
   applicationLink: "https://career-sa20.hr.cloud.sap/career?career%5fns=job%5flisting&company=SATORPPROD&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fUS&career_job_req_id=7845&selected_lang=en_US&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=Asia/Riyadh&_s.crb=f1Ic7brlkcAq93gtXURyVgxp0bm8fk3rV%2bXXPbd6ox4%3d",
   type: "CO-OP Training",
-  isNew: true,
 },
 {
   name: "CAMCO",
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=ZsJ8uMQJzECN-skuCL-ctOj-cRqbkBBKpFmiyr5xz85UM1A1VEMyUklZUDNTRFpBNkJHM1RJNjg2RC4u&route=shorturl",
   type: "CO-OP Training",
-  isNew: true,
 },
 {
   name: "NESR",
   location: "Al Dammam, Saudi Arabia",
   applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=wtETX6wQuEmoXkuz2RE1uerPzaiYzdNHsAaFJkomCX5UNlZOTzE5WkdESUk4RjlXWTdGVzRCREtDNC4u&route=shorturl",
   type: "Internship",
-  isNew: true,
 },
 {
   name: "Alrajhi Takaful",
   location: "Many, Saudi Arabia",
   applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSew1yGsZ-P7EZ24CfMuB6KJpGG8XTRd_WTtjI38GdzcfE66Cg/formResponse?pli=1",
   type: "Internship",
-  isNew: true,
 },
 {
   name: "Bupa",
@@ -442,7 +443,6 @@ export const companies = [
   applicationLink: "https://careers.bupa.com.sa/en/job-search-results/?keyword=coop&sort=22,d&page=1&view=grid",
   deadline: "2026-05-13",
   type: "Internship",
-  isNew: true,
 },
 {
   name: "Barakah",
@@ -450,14 +450,12 @@ export const companies = [
   applicationLink: "https://tally.so/r/Me8KZl",
   deadline: "2026-05-16",
   type: "Data & AI Internship",
-  isNew: true,
 },
 {
   name: "Pure Consulting",
   location: "Jeddah, Madinah, Riyadh, Taif, and Thuwal, Saudi Arabia",
   applicationLink: "https://pure-consulting.com/job-opportunities/888/internship",
   type: "Internship",
-  isNew: true,
 },
 {
   name: "NHC",
@@ -465,13 +463,11 @@ export const companies = [
   applicationLink: "https://eghj.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3001/job/207/?utm_medium=jobshare&utm_source=External+Job+Share",
   deadline: "2026-05-10",
   type: "CO-OP Training",
-  isNew: true,
 },
 {
   name: "King Fahd Armed Forces Hospital | مستشفى الملك فهد للقوات المسلحة ",
   location: "Jeddah, Saudi Arabia",
   applicationLink: "https://gen.kfafh.med.sa/training/",
   type: "CO-OP Training",
-  isNew: true,
 },
 ];

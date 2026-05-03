@@ -6,6 +6,7 @@ import {
   getDeadlineCountdown,
   getOpeningCountdown,
   isDeadlineUrgent,
+  isOpportunityNew,
 } from "../utils/status.js";
 
 function getWhatsAppShareUrl(company) {
@@ -25,6 +26,7 @@ export default function CompanyCard({
   const isClosed = status.key === "closed";
   const canApply = status.key === "open";
   const isUrgent = isDeadlineUrgent(company, currentTime);
+  const isNew = isOpportunityNew(company, currentTime);
   const hasBio = Boolean(company.bio?.trim());
   const hasLocation = Boolean(company.location?.trim());
   const hasDeadline = Boolean(company.deadline?.trim());
@@ -49,7 +51,7 @@ export default function CompanyCard({
       <div className="card-topline">
         <div className="card-badges">
           <span className="opportunity-type">{company.type}</span>
-          {company.isNew && <span className="new-badge">New</span>}
+          {isNew && <span className="new-badge">New</span>}
         </div>
         <div className="card-status-actions">
           <span className={`status status-${status.key}`}>{status.label}</span>

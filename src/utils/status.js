@@ -3,6 +3,7 @@ const MINUTE_IN_MS = 60 * SECOND_IN_MS;
 const HOUR_IN_MS = 60 * MINUTE_IN_MS;
 const DAY_IN_MS = 24 * HOUR_IN_MS;
 const URGENT_DEADLINE_MS = 48 * HOUR_IN_MS;
+const NEW_OPPORTUNITY_MS = 48 * HOUR_IN_MS;
 
 function getLocalDate(dateValue, fallbackTime) {
   if (!dateValue) {
@@ -160,6 +161,22 @@ export function isDeadlineUrgent(company, now = new Date()) {
   const remainingMs = deadlineDate - now;
 
   return remainingMs > 0 && remainingMs <= URGENT_DEADLINE_MS;
+}
+
+export function isOpportunityNew(company, now = new Date()) {
+  if (!company.addedAt) {
+    return false;
+  }
+
+  const addedAt = new Date(company.addedAt);
+
+  if (Number.isNaN(addedAt.getTime())) {
+    return false;
+  }
+
+  const ageMs = now - addedAt;
+
+  return ageMs >= 0 && ageMs <= NEW_OPPORTUNITY_MS;
 }
 
 export function getOpeningCountdown(openingDate, now = new Date()) {
