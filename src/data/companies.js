@@ -453,6 +453,13 @@ export const companies = [
   isNew: true,
 },
 {
+  name: "Pure Consulting",
+  location: "Jeddah, Madinah, Riyadh, Taif, and Thuwal, Saudi Arabia",
+  applicationLink: "https://pure-consulting.com/job-opportunities/888/internship",
+  type: "Internship",
+  isNew: true,
+},
+{
   name: "NHC",
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://eghj.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3001/job/207/?utm_medium=jobshare&utm_source=External+Job+Share",

@@ -13,6 +13,8 @@ const SAUDI_CITY_LABELS = {
   makkah: "Makkah",
   rabigh: "Rabigh",
   riyadh: "Riyadh",
+  taif: "Taif",
+  thuwal: "Thuwal",
   yanbu: "Yanbu",
 };
 
