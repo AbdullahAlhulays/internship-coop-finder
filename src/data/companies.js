@@ -477,4 +477,10 @@ export const companies = [
   applicationLink: "https://gen.kfafh.med.sa/training/",
   type: "CO-OP Training",
 },
+{
+  name: "Saudi Azm | عزم السعودية",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://azmtalent.recruitee.com/o/azem-internship-program-50?source=LinkedIn",
+  type: "Internship Training",
+},
 ];
