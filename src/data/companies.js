@@ -10,6 +10,13 @@
 // The addedAt field is optional. Use an ISO timestamp to show "New" for 48 hours.
 export const companies = [
   {
+    name: "PwC",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4408288248/",
+    type: "CO-OP Training",
+    addedAt: "2026-05-04T00:00:00+03:00",
+  },
+  {
     name: "Soudah Development | السودة للتطوير",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://fa-eueh-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/ar/sites/CX_1/job/189/?utm_medium=jobshare&utm_source=External%20Job%20Share",
