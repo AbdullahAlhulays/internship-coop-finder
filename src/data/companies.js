@@ -491,5 +491,13 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://azmtalent.recruitee.com/o/azem-internship-program-50?source=LinkedIn",
   type: "Internship Training",
+  addedAt: "2026-05-05T00:00:00+03:00",
+},
+{
+  name: "Peaks",
+  location: "Riyadh, Saudi Arabia",
+  applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSflG6jSvC96h7xp3gcBckHg9CJ3Haj-Yo8ByBg87k6VMc2DGw/viewform",
+  type: "Internship / CO-OP Training",
+  addedAt: "2026-05-05T00:00:00+03:00",
 },
 ];
