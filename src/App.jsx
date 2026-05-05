@@ -5,6 +5,7 @@ import SearchBar from "./components/SearchBar.jsx";
 import FilterButtons from "./components/FilterButtons.jsx";
 import CitySelect from "./components/CitySelect.jsx";
 import DeadlineSortToggle from "./components/DeadlineSortToggle.jsx";
+import LetterRequirementToggle from "./components/LetterRequirementToggle.jsx";
 import CompanyList from "./components/CompanyList.jsx";
 import Footer from "./components/Footer.jsx";
 import MobileBottomNav from "./components/MobileBottomNav.jsx";
@@ -17,7 +18,7 @@ const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const CLOCK_INTERVAL_MS = 1000;
 const THEME_STORAGE_KEY = "internship-coop-theme";
 const APPLIED_STORAGE_KEY = "internship-coop-applied";
-const LAST_UPDATED = "May 3, 2026";
+const LAST_UPDATED = "May 5, 2026";
 
 function getSortLabel(company) {
   return company.name || company.title || company.type || "";
@@ -66,6 +67,7 @@ export default function App() {
   const [activeFilter, setActiveFilter] = useState("open");
   const [activeCity, setActiveCity] = useState("all");
   const [sortByDeadline, setSortByDeadline] = useState(false);
+  const [showNoLetterOnly, setShowNoLetterOnly] = useState(false);
   const [theme, setTheme] = useState(getSavedTheme);
   const [appliedLinks, setAppliedLinks] = useState(() =>
     getStoredLinks(APPLIED_STORAGE_KEY),
@@ -154,21 +156,28 @@ export default function App() {
         const status = getCompanyStatus(company, currentTime);
         const isClosed = status.key === "closed" && company.isClosed;
         const isApplied = appliedLinksSet.has(company.applicationLink);
+        const isOpen = status.key !== "closed" && !isApplied;
+        const isAppliedVisible = status.key !== "closed" && isApplied;
         const matchesSearch = getSortLabel(company)
           .toLowerCase()
           .includes(normalizedSearch);
-        const isVisible =
-          activeFilter === "closed" ? isClosed : status.key !== "closed";
         const matchesFilter =
           activeFilter === "closed"
             ? isClosed
             : activeFilter === "applied"
-              ? isApplied
-              : status.key !== "closed";
+              ? isAppliedVisible
+              : isOpen;
         const cities = getCompanyCities(company);
         const matchesCity = activeCity === "all" || cities.includes(activeCity);
+        const matchesLetterFilter =
+          !showNoLetterOnly || !company.requiresLetter;
 
-        return isVisible && matchesSearch && matchesFilter && matchesCity;
+        return (
+          matchesSearch &&
+          matchesFilter &&
+          matchesCity &&
+          matchesLetterFilter
+        );
       })
       .sort((firstCompany, secondCompany) => {
         const labelSort = getSortLabel(firstCompany).localeCompare(getSortLabel(secondCompany), "en", {
@@ -192,6 +201,7 @@ export default function App() {
     companies,
     currentTime,
     searchTerm,
+    showNoLetterOnly,
     sortByDeadline,
   ]);
 
@@ -209,12 +219,14 @@ export default function App() {
           return counts;
         }
 
-        counts.all += 1;
-        counts.open += 1;
-
         if (appliedLinksSet.has(company.applicationLink)) {
           counts.applied += 1;
+          counts.all += 1;
+          return counts;
         }
+
+        counts.all += 1;
+        counts.open += 1;
 
         return counts;
       },
@@ -298,10 +310,16 @@ export default function App() {
                 counts={cityCounts}
                 onCityChange={setActiveCity}
               />
-              <DeadlineSortToggle
-                checked={sortByDeadline}
-                onChange={setSortByDeadline}
-              />
+              <div className="filter-toggles">
+                <DeadlineSortToggle
+                  checked={sortByDeadline}
+                  onChange={setSortByDeadline}
+                />
+                <LetterRequirementToggle
+                  checked={showNoLetterOnly}
+                  onChange={setShowNoLetterOnly}
+                />
+              </div>
             </div>
           </div>
         </section>

@@ -9,6 +9,8 @@ function isValidCompany(company) {
     (company.addedAt === undefined || typeof company.addedAt === "string") &&
     (company.bio === undefined || typeof company.bio === "string") &&
     (company.isClosed === undefined || typeof company.isClosed === "boolean") &&
+    (company.requiresLetter === undefined ||
+      typeof company.requiresLetter === "boolean") &&
     (company.location === undefined || typeof company.location === "string") &&
     (company.openingDate === undefined || typeof company.openingDate === "string") &&
     (company.deadlineTime === undefined || typeof company.deadlineTime === "string") &&

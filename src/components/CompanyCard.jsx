@@ -27,6 +27,7 @@ export default function CompanyCard({
   const canApply = status.key === "open";
   const isUrgent = isDeadlineUrgent(company, currentTime);
   const isNew = isOpportunityNew(company, currentTime);
+  const requiresLetter = Boolean(company.requiresLetter);
   const hasBio = Boolean(company.bio?.trim());
   const hasLocation = Boolean(company.location?.trim());
   const hasDeadline = Boolean(company.deadline?.trim());
@@ -51,6 +52,12 @@ export default function CompanyCard({
       <div className="card-topline">
         <div className="card-badges">
           <span className="opportunity-type">{company.type}</span>
+          {requiresLetter && (
+            <span className="letter-badge" title="Requires a training letter">
+              <span className="letter-badge-icon" aria-hidden="true" />
+              Letter
+            </span>
+          )}
           {isNew && <span className="new-badge">New</span>}
         </div>
         <div className="card-status-actions">

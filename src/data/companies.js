@@ -22,6 +22,7 @@ export const companies = [
     applicationLink: "https://fa-eueh-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/ar/sites/CX_1/job/189/?utm_medium=jobshare&utm_source=External%20Job%20Share",
     deadline: "2026-05-21",
     type: "CO-OP Training",
+    requiresLetter: true,
     addedAt: "2026-05-03T23:09:44+03:00",
   },
   {
@@ -31,6 +32,7 @@ export const companies = [
     deadline: "2026-05-06",
     deadlineTime: "23:55",
     type: "Internship / CO-OP Training",
+    requiresLetter: true,
   },
   {
     name: "flyadeal",
@@ -57,6 +59,7 @@ export const companies = [
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://175102.jobs2web.com/job/Jeddah-%28Headquarter%29-COOP-Program-1-0/794146502/",
     type: "CO-OP Training",
+    requiresLetter: true,
   },
   {
     name: "WAS SPA",
@@ -71,6 +74,7 @@ export const companies = [
     applicationLink: "https://career-sa20.hr.cloud.sap/portalcareer?career%5fns=job%5flisting&company=saudiara02&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fGB&career_job_req_id=4502&selected_lang=en_GB&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=Asia/Riyadh&_s.crb=%2fu6BgYOVuUHSZdsFm5ORUU3ARQxyzwSqJUH0fZkMOM0%3d",
     deadline: "2026-05-02",
     type: "CO-OP Training",
+    requiresLetter: true,
   },
   {
     name: "Petro Rabigh",
@@ -265,6 +269,7 @@ export const companies = [
   applicationLink: "https://sgs.gov.sa/%D8%A7%D9%84%D9%85%D8%AA%D8%AF%D8%B1%D8%A8/",
   deadline: "2026-05-03",
   type: "Internship",
+  requiresLetter: true,
 },
  {
   name: "SDAIA",
@@ -272,6 +277,7 @@ export const companies = [
   applicationLink: "https://careers.sdaia.gov.sa/training",
   deadline: "2026-05-08",
   type: "Internship / CO-OP Training",
+  requiresLetter: true,
 },
  {
   name: "Roland Berger",
@@ -340,6 +346,7 @@ export const companies = [
   location: "Many, Saudi Arabia",
   applicationLink: "https://training.moj.gov.sa/",
   type: "Internship / CO-OP Training",
+  requiresLetter: true,
 },
  {
   name: "Wadi Makkah | وادي مكة للتقنية",
@@ -394,6 +401,7 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.linkedin.com/jobs/view/4398776667/",
   type: "CO-OP Training",
+  requiresLetter: true,
 },
 {
   name: "FedEx",
@@ -443,6 +451,7 @@ export const companies = [
   location: "Many, Saudi Arabia",
   applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSew1yGsZ-P7EZ24CfMuB6KJpGG8XTRd_WTtjI38GdzcfE66Cg/formResponse?pli=1",
   type: "Internship",
+  isClosed: true,
 },
 {
   name: "Bupa",

@@ -233,16 +233,18 @@ select {
 }
 
 .controls {
-  display: grid;
-  grid-template-columns: minmax(240px, 0.75fr) minmax(0, 1.25fr);
+  display: flex;
+  flex-wrap: nowrap;
   gap: 18px;
-  align-items: start;
+  align-items: end;
   margin: 0 auto 22px;
 }
 
 .search-bar {
   display: grid;
+  flex: 1 1 230px;
   gap: 8px;
+  min-width: 200px;
 }
 
 .search-bar span {
@@ -280,25 +282,26 @@ select {
 .filter-panel {
   display: flex;
   align-items: end;
+  flex: 0 0 auto;
   flex-wrap: nowrap;
   gap: 12px;
   justify-self: start;
-  width: 100%;
+  min-width: 0;
 }
 
 .filter-pair {
   display: flex;
   align-items: end;
-  flex: 0 1 304px;
+  flex: 0 0 auto;
   gap: 10px;
-  min-width: 284px;
+  min-width: 0;
 }
 
 .city-select {
   display: grid;
   gap: 8px;
-  flex: 1 1 154px;
-  min-width: 146px;
+  flex: 0 0 156px;
+  min-width: 144px;
 }
 
 .city-select span,
@@ -331,8 +334,22 @@ select {
 .deadline-sort {
   display: grid;
   gap: 8px;
-  flex: 0 0 126px;
-  min-width: 118px;
+  flex: 0 0 128px;
+  min-width: 128px;
+}
+
+.filter-toggles {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: end;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.letter-filter {
+  display: grid;
+  flex: 0 0 156px;
+  min-width: 156px;
 }
 
 .deadline-sort-control {
@@ -527,11 +544,13 @@ select {
   display: inline-flex;
   min-width: 0;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
 .status,
 .opportunity-type,
+.letter-badge,
 .new-badge {
   display: inline-flex;
   align-items: center;
@@ -541,6 +560,35 @@ select {
   font-weight: 860;
   padding: 0 11px;
   white-space: nowrap;
+}
+
+.letter-badge {
+  flex: 0 0 auto;
+  gap: 7px;
+  border: 1px solid rgba(125, 91, 32, 0.22);
+  background: var(--status-open-soon-bg);
+  color: var(--status-open-soon-text);
+}
+
+.letter-badge-icon {
+  position: relative;
+  width: 13px;
+  height: 16px;
+  border: 1.8px solid currentColor;
+  border-radius: 3px;
+}
+
+.letter-badge-icon::before {
+  position: absolute;
+  top: -1.8px;
+  right: -1.8px;
+  width: 5px;
+  height: 5px;
+  border-bottom: 1.8px solid currentColor;
+  border-left: 1.8px solid currentColor;
+  border-bottom-left-radius: 2px;
+  background: var(--status-open-soon-bg);
+  content: "";
 }
 
 .opportunity-type {
@@ -817,15 +865,15 @@ select {
 
 @media (max-width: 1120px) {
   .controls {
-    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+  }
+
+  .search-bar {
+    flex-basis: 100%;
   }
 }
 
 @media (max-width: 900px) {
-  .controls {
-    grid-template-columns: 1fr;
-  }
-
   .filter-panel,
   .city-select select {
     width: 100%;
@@ -833,10 +881,11 @@ select {
 
   .filter-panel {
     align-items: end;
+    flex-wrap: wrap;
   }
 
   .filter-pair {
-    flex: 0 1 304px;
+    flex: 1 1 100%;
     gap: 8px;
   }
 
@@ -846,8 +895,17 @@ select {
   }
 
   .deadline-sort {
-    flex: 0 1 126px;
-    min-width: 118px;
+    flex: 0 0 128px;
+    min-width: 128px;
+  }
+
+  .filter-toggles {
+    gap: 8px;
+  }
+
+  .letter-filter {
+    flex: 0 0 156px;
+    min-width: 156px;
   }
 
   .filters {
@@ -907,6 +965,14 @@ select {
 
   .filter {
     flex: 1 1 0;
+  }
+
+  .deadline-sort {
+    flex: 0 0 128px;
+  }
+
+  .letter-filter {
+    flex: 0 0 156px;
   }
 
   .mobile-bottom-nav {
