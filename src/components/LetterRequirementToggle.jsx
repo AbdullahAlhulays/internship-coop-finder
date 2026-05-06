@@ -1,6 +1,7 @@
 export default function LetterRequirementToggle({ checked, onChange }) {
   return (
     <label className="letter-filter">
+      <span>Filter</span>
       <span className="deadline-sort-control">
         <input
           type="checkbox"

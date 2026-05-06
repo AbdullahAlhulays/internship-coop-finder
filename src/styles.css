@@ -305,7 +305,8 @@ select {
 }
 
 .city-select span,
-.deadline-sort > span:first-child {
+.deadline-sort > span:first-child,
+.letter-filter > span:first-child {
   color: var(--soft-ink);
   font-size: 0.84rem;
   font-weight: 820;
@@ -348,6 +349,7 @@ select {
 
 .letter-filter {
   display: grid;
+  gap: 8px;
   flex: 0 0 156px;
   min-width: 156px;
 }
