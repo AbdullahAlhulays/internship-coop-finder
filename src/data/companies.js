@@ -10,6 +10,13 @@
 // The addedAt field is optional. Use an ISO timestamp to show "New" for 48 hours.
 export const companies = [
   {
+    name: "CEREBRA | سيريبرا",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://careers.cerebra.sa/jobs/Careers/858000001337006/Training-Program?source=CareerSite",
+    type: "Internship Program",
+    addedAt: "2026-05-07T00:00:00+03:00",
+  },
+  {
     name: "PwC",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4408288248/",
