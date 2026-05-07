@@ -13,14 +13,21 @@ export const companies = [
     name: "CEREBRA | سيريبرا",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://careers.cerebra.sa/jobs/Careers/858000001337006/Training-Program?source=CareerSite",
-    type: "Internship Program",
+    type: "Internship",
     addedAt: "2026-05-07T00:00:00+03:00",
   },
   {
     name: "Ministry of Communications and Information Technology | وزارة الاتصالات وتقنية المعلومات",
     location: "Many, Saudi Arabia",
     applicationLink: "https://mcit.gov.sa/ar/node/add/co_recruitment",
-    type: "برنامج التدريب التعاوني",
+    type: "CO-OP Training",
+    addedAt: "2026-05-07T00:00:00+03:00",
+  },
+  {
+    name: "Saudi Space Agency | وكالة الفضاء السعودية",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://ssa.gov.sa/EServices/",
+    type: "CO-OP Training",
     addedAt: "2026-05-07T00:00:00+03:00",
   },
   {
@@ -479,7 +486,7 @@ export const companies = [
   location: "Jeddah, Saudi Arabia",
   applicationLink: "https://tally.so/r/Me8KZl",
   deadline: "2026-05-16",
-  type: "Data & AI Internship",
+  type: "Internship",
 },
 {
   name: "Pure Consulting",
@@ -504,7 +511,7 @@ export const companies = [
   name: "Saudi Azm | عزم السعودية",
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://azmtalent.recruitee.com/o/azem-internship-program-50?source=LinkedIn",
-  type: "Internship Training",
+  type: "Internship",
   addedAt: "2026-05-05T00:00:00+03:00",
 },
 {
