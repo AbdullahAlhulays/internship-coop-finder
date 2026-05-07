@@ -31,6 +31,13 @@ export const companies = [
     addedAt: "2026-05-07T00:00:00+03:00",
   },
   {
+    name: "P&G LEADgen",
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4399533706/",
+    type: "Internship",
+    addedAt: "2026-05-07T00:00:00+03:00",
+  },
+  {
     name: "PwC",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4408288248/",
