@@ -17,6 +17,13 @@ export const companies = [
     addedAt: "2026-05-07T00:00:00+03:00",
   },
   {
+    name: "Ministry of Communications and Information Technology | وزارة الاتصالات وتقنية المعلومات",
+    location: "Many, Saudi Arabia",
+    applicationLink: "https://mcit.gov.sa/ar/node/add/co_recruitment",
+    type: "برنامج التدريب التعاوني",
+    addedAt: "2026-05-07T00:00:00+03:00",
+  },
+  {
     name: "PwC",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4408288248/",
