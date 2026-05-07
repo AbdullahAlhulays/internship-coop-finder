@@ -45,6 +45,14 @@ export const companies = [
     addedAt: "2026-05-07T00:00:00+03:00",
   },
   {
+    name: "Ministry of Economy & Planning | وزارة الاقتصاد والتخطيط",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://mepcareers.elevatus.io/jobs/cooperative-training-1775640420",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-05-07T00:00:00+03:00",
+  },
+  {
     name: "PwC",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4408288248/",
