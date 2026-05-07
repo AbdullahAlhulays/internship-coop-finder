@@ -246,6 +246,7 @@ export const companies = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4400426103/",
     type: "CO-OP Training",
+    isClosed: true,
   },
   {
     name: "Takamol Holding",
