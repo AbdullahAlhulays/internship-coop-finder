@@ -38,6 +38,13 @@ export const companies = [
     addedAt: "2026-05-07T00:00:00+03:00",
   },
   {
+    name: "Clifford Chance",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://jobs.cliffordchance.com/job/summer-internship-summer-2026-in-riyadh-jid-3165",
+    type: "Internship",
+    addedAt: "2026-05-07T00:00:00+03:00",
+  },
+  {
     name: "PwC",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4408288248/",
