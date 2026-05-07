@@ -445,6 +445,7 @@ export const companies = [
   applicationLink: "https://www.linkedin.com/jobs/view/4398776667/",
   type: "CO-OP Training",
   requiresLetter: true,
+  isClosed: true,
 },
 {
   name: "FedEx",
