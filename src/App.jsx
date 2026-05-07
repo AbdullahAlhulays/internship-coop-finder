@@ -154,7 +154,7 @@ export default function App() {
     return companies
       .filter((company) => {
         const status = getCompanyStatus(company, currentTime);
-        const isClosed = status.key === "closed" && company.isClosed;
+        const isClosed = status.key === "closed";
         const isApplied = appliedLinksSet.has(company.applicationLink);
         const isOpen = status.key !== "closed" && !isApplied;
         const isAppliedVisible = status.key !== "closed" && isApplied;
