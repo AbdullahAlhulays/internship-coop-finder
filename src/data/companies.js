@@ -167,6 +167,7 @@ export const companies = [
     location: "Riyadh, Jeddah, or Al-Khobar, Saudi Arabia",
     applicationLink: "https://jobs.siemens.com/en_US/externaljobs/JobDetail/498426?source=LinkedIn&sourceType=PREMIUM_POST_SITE",
     type: "Internship",
+    isClosed: true,
   },
   {
     name: "SAP",
