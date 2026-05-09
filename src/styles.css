@@ -198,6 +198,41 @@ select {
   text-align: center;
 }
 
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.brand-mark {
+  display: inline-flex;
+  width: 52px;
+  height: 52px;
+  color: var(--leaf-deep);
+  filter: drop-shadow(0 12px 22px rgba(55, 72, 51, 0.16));
+}
+
+.brand-mark svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.brand-mark-bg {
+  fill: var(--control-bg-strong);
+  stroke: var(--line);
+  stroke-width: 1.4;
+}
+
+.brand-mark-path {
+  fill: var(--leaf-deep);
+}
+
+.brand-mark-spark {
+  fill: #c99a3e;
+}
+
 .intro h1 {
   margin: 0;
   color: var(--heading);
