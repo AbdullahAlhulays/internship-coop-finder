@@ -53,6 +53,34 @@ export const companies = [
     addedAt: "2026-05-07T00:00:00+03:00",
   },
   {
+    name: "مركز الملك فهد للبحوث الطبية",
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLScdvk69NVORP1q-djhN9usrlay4D4IuXFxxcPgyBOwh-YrjIA/viewform",
+    type: "Internship",
+    addedAt: "2026-05-09T00:00:00+03:00",
+  },
+  {
+    name: "Rua Al Madinah Holding",
+    location: "Madinah, Saudi Arabia",
+    applicationLink: "https://talent.ruaalmadinah.com/pwa/#/job/195",
+    type: "CO-OP Training",
+    addedAt: "2026-05-09T00:00:00+03:00",
+  },
+  {
+    name: "Tahcom AI",
+    location: "Many, Saudi Arabia",
+    applicationLink: "https://forms.cloud.microsoft/pages/responsepage.aspx?id=PZi0yEa5vEuSLWvzlfhsNQ-_7ACZHS5Nujqqnqbnj-NURFVHOFI3N0k5NjZLVkoyQkIyMldZNUFBSC4u&origin=lprLink&route=shorturl",
+    type: "CO-OP Training",
+    addedAt: "2026-05-09T00:00:00+03:00",
+  },
+  {
+    name: "ASMO",
+    location: "Al Khobar, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4409234938",
+    type: "Internship",
+    addedAt: "2026-05-09T00:00:00+03:00",
+  },
+  {
     name: "PwC",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4408288248/",
@@ -76,6 +104,7 @@ export const companies = [
     deadlineTime: "23:55",
     type: "Internship / CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
   },
   {
     name: "flyadeal",
@@ -90,6 +119,7 @@ export const companies = [
     applicationLink: "https://hub.misk.org.sa/ar/programs/skills/misk-traineeship-program-x-hyundai-motor-company/",
     deadline: "2026-04-27",
     type: "Internship",
+    isClosed: true,
   },
   {
     name: "Zid",
@@ -118,6 +148,7 @@ export const companies = [
     deadline: "2026-05-02",
     type: "CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
   },
   {
     name: "Petro Rabigh",
@@ -137,6 +168,7 @@ export const companies = [
     applicationLink: "https://services.amana-md.gov.sa/cooperativeTraining/Home/OpnennigDetails/20",
     deadline: "2026-05-02",
     type: "CO-OP Training",
+    isClosed: true,
   },
   {
     name: "Riyadh Air",
@@ -316,6 +348,7 @@ export const companies = [
   deadline: "2026-05-03",
   type: "Internship",
   requiresLetter: true,
+  isClosed: true,
 },
  {
   name: "SDAIA",
@@ -324,6 +357,7 @@ export const companies = [
   deadline: "2026-05-08",
   type: "Internship / CO-OP Training",
   requiresLetter: true,
+  isClosed: true,
 },
  {
   name: "Roland Berger",
@@ -468,6 +502,7 @@ export const companies = [
   applicationLink: "https://srp.edu.sa/registrationRequirements",
   deadline: "2026-05-03",
   type: "Internship",
+  isClosed: true,
 },
 {
   name: "SNB | Saudi National Bank",
