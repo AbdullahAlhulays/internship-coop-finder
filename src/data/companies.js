@@ -561,6 +561,7 @@ export const companies = [
   applicationLink: "https://eghj.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3001/job/207/?utm_medium=jobshare&utm_source=External+Job+Share",
   deadline: "2026-05-10",
   type: "CO-OP Training",
+  isClosed: true,
 },
 {
   name: "King Fahd Armed Forces Hospital | مستشفى الملك فهد للقوات المسلحة ",
