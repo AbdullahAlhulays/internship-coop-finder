@@ -81,6 +81,14 @@ export const companies = [
     addedAt: "2026-05-09T00:00:00+03:00",
   },
   {
+    name: "SAB",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4413011097",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-05-12T00:00:00+03:00",
+  },
+  {
     name: "PwC",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4408288248/",
