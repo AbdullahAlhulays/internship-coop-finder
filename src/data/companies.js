@@ -10,6 +10,21 @@
 // The addedAt field is optional. Use an ISO timestamp to show "New" for 48 hours.
 export const companies = [
   {
+    name: "Saudi Power Procurement Company (SPPC)",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://careers.spb.com.sa/en/saudi-arabia/jobs/future-power-engineering-coop-training-program-1100084676/?job_id=1100084676&board_id=119733&source_board=LinkedIn_Slots",
+    deadline: "2026-05-18",
+    type: "CO-OP Training",
+    addedAt: "2026-05-13T00:00:00+03:00",
+  },
+  {
+    name: "Confidential Government",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4413406552",
+    type: "CO-OP Training",
+    addedAt: "2026-05-13T00:00:00+03:00",
+  },
+  {
     name: "CEREBRA | سيريبرا",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://careers.cerebra.sa/jobs/Careers/858000001337006/Training-Program?source=CareerSite",
