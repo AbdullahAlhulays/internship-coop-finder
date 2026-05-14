@@ -579,6 +579,7 @@ export const companies = [
   applicationLink: "https://careers.bupa.com.sa/en/job-search-results/?keyword=coop&sort=22,d&page=1&view=grid",
   deadline: "2026-05-13",
   type: "Internship",
+  isClosed: true,
 },
 {
   name: "Barakah",
