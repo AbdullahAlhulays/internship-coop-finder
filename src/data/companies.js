@@ -148,8 +148,9 @@ export const companies = [
     name: "flyadeal",
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://careers.flyadeal.com/jobs/coop-training-program-june-2026-1775463437",
-    deadline: "2026-05-14",
+    deadline: "2026-05-13",
     type: "CO-OP Training",
+    isClosed: true,
   },
   {
     name: "Misk x Hyundai Motor Company",
