@@ -10,6 +10,14 @@
 // The addedAt field is optional. Use an ISO timestamp to show "New" for 48 hours.
 export const companies = [
   {
+    name: "Saudi Water Authority | الهيئة السعودية للمياه",
+    location: "Many, Saudi Arabia",
+    applicationLink: "https://www.swa.gov.sa/ar/services/request-service/request-coop-training-program/coop-training",
+    deadline: "2026-05-18",
+    type: "CO-OP Training",
+    addedAt: "2026-05-14T00:00:00+03:00",
+  },
+  {
     name: "Wadi Jeddah Innovation Hub | مجمع وادي جدة للابتكار",
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://form.typeform.com/to/WTXF0llW?typeform-source=qrcode-button",
