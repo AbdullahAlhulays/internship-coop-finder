@@ -10,6 +10,13 @@
 // The addedAt field is optional. Use an ISO timestamp to show "New" for 48 hours.
 export const companies = [
   {
+    name: "Wadi Jeddah Innovation Hub | مجمع وادي جدة للابتكار",
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://form.typeform.com/to/WTXF0llW?typeform-source=qrcode-button",
+    type: "Internship / CO-OP Training",
+    addedAt: "2026-05-14T00:00:00+03:00",
+  },
+  {
     name: "Saudi Power Procurement Company (SPPC)",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://careers.spb.com.sa/en/saudi-arabia/jobs/future-power-engineering-coop-training-program-1100084676/?job_id=1100084676&board_id=119733&source_board=LinkedIn_Slots",
