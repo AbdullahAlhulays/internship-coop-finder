@@ -10,6 +10,13 @@
 // The addedAt field is optional. Use an ISO timestamp to show "New" for 48 hours.
 export const companies = [
   {
+    name: "HUMAIN",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4414437424/",
+    type: "CO-OP Training",
+    addedAt: "2026-05-15T00:00:00+03:00",
+  },
+  {
     name: "Saudi Water Authority | الهيئة السعودية للمياه",
     location: "Many, Saudi Arabia",
     applicationLink: "https://www.swa.gov.sa/ar/services/request-service/request-coop-training-program/coop-training",
