@@ -22,6 +22,7 @@ export const companies = [
     applicationLink: "https://www.swa.gov.sa/ar/services/request-service/request-coop-training-program/coop-training",
     deadline: "2026-05-18",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-14T00:00:00+03:00",
   },
   {
@@ -34,10 +35,33 @@ export const companies = [
   {
     name: "Saudi Power Procurement Company (SPPC)",
     location: "Riyadh, Saudi Arabia",
-    applicationLink: "https://careers.spb.com.sa/en/saudi-arabia/jobs/future-power-engineering-coop-training-program-1100084676/?job_id=1100084676&board_id=119733&source_board=LinkedIn_Slots",
-    deadline: "2026-05-18",
+    applicationLink: "https://www.linkedin.com/jobs/view/4412211034/",
     type: "CO-OP Training",
-    addedAt: "2026-05-13T00:00:00+03:00",
+    requiresLetter: true,
+    addedAt: "2026-05-19T00:00:00+03:00",
+  },
+  {
+    name: "Nahdi Medical",
+    location: "Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4414475883/",
+    type: "CO-OP Training",
+    addedAt: "2026-05-19T00:00:00+03:00",
+  },
+  {
+    name: "Mobily",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://qrto.org/v2WiJi",
+    deadline: "2026-05-31",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-05-19T00:00:00+03:00",
+  },
+  {
+    name: "ARDARA",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4415445206",
+    type: "CO-OP Training",
+    addedAt: "2026-05-19T00:00:00+03:00",
   },
   {
     name: "Confidential Government",
@@ -430,6 +454,7 @@ export const companies = [
   applicationLink: "https://career.aecl.com/jobs/details/69e0c86f8adbad0dab6725cd",
   deadline: "2026-05-17",
   type: "CO-OP Training",
+  isClosed: true,
 },
  {
   name: "Reemat Al-Riyadh",
@@ -596,6 +621,7 @@ export const companies = [
   applicationLink: "https://tally.so/r/Me8KZl",
   deadline: "2026-05-16",
   type: "Internship",
+  isClosed: true,
 },
 {
   name: "Pure Consulting",
