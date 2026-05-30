@@ -76,6 +76,7 @@ export const companies = [
     applicationLink: "https://script.google.com/macros/s/AKfycbwQIfoG0DedEkaPzL-hhW5ely8l71tVdqeS9xR-55nh0s9gwLAxI66JSae75_VV-vwKvQ/exec",
     deadline: "2026-05-27",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-21T00:00:00+03:00",
   },
   {
@@ -84,6 +85,7 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4416138076",
     deadline: "2026-05-26",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-21T00:00:00+03:00",
   },
   {
@@ -186,6 +188,7 @@ export const companies = [
     deadline: "2026-05-21",
     type: "CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
     addedAt: "2026-05-03T23:09:44+03:00",
   },
   {
@@ -361,6 +364,7 @@ export const companies = [
     applicationLink: "https://career.dga.gov.sa/ar/saudi-arabia/jobs/%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-coop-1100076621/",
     deadline: "2026-05-27",
     type: "CO-OP Training",
+    isClosed: true,
   },
   {
     name: "Diriyah Company",

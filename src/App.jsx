@@ -18,7 +18,7 @@ const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const CLOCK_INTERVAL_MS = 1000;
 const THEME_STORAGE_KEY = "internship-coop-theme";
 const APPLIED_STORAGE_KEY = "internship-coop-applied";
-const LAST_UPDATED = "May 21, 2026";
+const LAST_UPDATED = "May 29, 2026";
 
 function getSortLabel(company) {
   return company.name || company.title || company.type || "";
@@ -210,10 +210,6 @@ export default function App() {
       (counts, company) => {
         const status = getCompanyStatus(company, currentTime);
 
-        if (status.key === "closed" && !company.isClosed) {
-          return counts;
-        }
-
         if (status.key === "closed") {
           counts.closed += 1;
           return counts;
@@ -250,10 +246,6 @@ export default function App() {
     return companies.reduce(
       (counts, company) => {
         const status = getCompanyStatus(company, currentTime);
-
-        if (status.key === "closed" && !company.isClosed) {
-          return counts;
-        }
 
         const cities = getCompanyCities(company);
 
