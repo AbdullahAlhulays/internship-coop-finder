@@ -54,6 +54,7 @@ export const companies = [
     deadline: "2026-05-31",
     type: "CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
     addedAt: "2026-05-19T00:00:00+03:00",
   },
   {
@@ -393,6 +394,7 @@ export const companies = [
     applicationLink: "https://careers.takamol.sa/jobs/details/691054aceb6bc342ed895274?src=LinkedIn",
     deadline: "2026-06-01",
     type: "Internship / CO-OP Training",
+    isClosed: true,
   },
   {
     name: "SAP",
@@ -683,5 +685,12 @@ export const companies = [
   applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSflG6jSvC96h7xp3gcBckHg9CJ3Haj-Yo8ByBg87k6VMc2DGw/viewform",
   type: "Internship / CO-OP Training",
   addedAt: "2026-05-05T00:00:00+03:00",
+},
+{
+  name: "Zaiti",
+  location: "Al Qassim, Saudi Arabia",
+  applicationLink: "https://zaiti.co/careers/",
+  type: "CO-OP Training",
+  addedAt: "2026-06-02T00:00:00+03:00",
 },
 ];
