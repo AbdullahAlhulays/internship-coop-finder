@@ -1,9 +1,11 @@
 const SAUDI_CITY_LABELS = {
+  abha: "Abha",
   abqaiq: "Abqaiq",
   "al khobar": "Al Khobar",
   "al-khobar": "Al Khobar",
   dammam: "Dammam",
   eastern: "Eastern",
+  hail: "Hail",
   jeddah: "Jeddah",
   jubail: "Jubail",
   khobar: "Al Khobar",

@@ -10,6 +10,13 @@
 // The addedAt field is optional. Use an ISO timestamp to show "New" for 48 hours.
 export const companies = [
   {
+    name: "SSCL",
+    location: "Jeddah, Riyadh, Hail, Abha, and more, Saudi Arabia",
+    applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=G-NK5HRE10mDWZBAkjxbRjie5pCmK0ZGje8cBLxmW8RUMUZTSzdYNVhKQVVaNk1UVkdaU0FGOVNMUS4u&route=shorturl",
+    type: "CO-OP Training",
+    addedAt: "2026-06-04T00:00:00+03:00",
+  },
+  {
     name: "HUMAIN",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4414437424/",
