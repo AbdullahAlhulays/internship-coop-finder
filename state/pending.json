@@ -674,6 +674,10 @@
       "message_id": 33,
       "field": "company",
       "card_message_id": 32
+    },
+    "awaiting_edit": {
+      "field": "location",
+      "card_message_id": 32
     }
   }
 }
