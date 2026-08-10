@@ -14,7 +14,7 @@ import tempfile
 from pathlib import Path
 
 from read_companies import ReadCompaniesError, read_companies
-from run import as_plain_text, run
+from run import as_plain_text, has_usable_external_link, is_usable_external_link, run
 from state import DELIVERY_QUEUED, DELIVERY_SENT, delivery_status_of, load_pending, load_seen
 
 from _console import use_utf8_stdout
@@ -87,7 +87,8 @@ def opportunity_json(**overrides) -> dict:
 
 
 POST = {"channel": "@SALTRAI", "message_id": 5478, "permalink": "https://t.me/SALTRAI/5478",
-        "posted_at": "2026-08-07T12:00:00+00:00", "text": "some post text", "links": []}
+        "posted_at": "2026-08-07T12:00:00+00:00", "text": "some post text",
+        "links": ["https://newco.example.com/apply"], "has_media": False}
 
 
 print("read_companies: node does the parsing, not a regex")
@@ -117,6 +118,68 @@ with tempfile.TemporaryDirectory() as tmp:
     nolink.write_text('export const companies = [{ name: "X", type: "Internship" }];', encoding="utf-8")
     check_raises("a card missing applicationLink raises — dedupe would be unsafe without it",
                  ReadCompaniesError, lambda: read_companies(nolink))
+
+
+print("\npre-Groq link gate")
+check("a normal HTTPS application URL is usable", is_usable_external_link("https://careers.example.com/apply"))
+check(
+    "the source Telegram permalink is not an application URL",
+    not is_usable_external_link("https://t.me/nobthacv1/2063"),
+)
+check(
+    "Telegram subdomains are excluded too",
+    not is_usable_external_link("https://www.t.me/nobthacv1"),
+)
+check("non-HTTP values are rejected", not is_usable_external_link("HR@example.com"))
+
+with tempfile.TemporaryDirectory() as tmp:
+    tmpp = Path(tmp)
+    companies = write_companies(tmpp)
+    model_calls = []
+    no_link_posts = [
+        {
+            **POST,
+            "message_id": 2064,
+            "text": "فرصة تدريب تعاوني — للتقديم HR@khita.tech",
+            "links": [],
+        },
+        {
+            **POST,
+            "message_id": 2062,
+            "text": "",
+            "links": [],
+            "has_media": True,
+        },
+        {
+            **POST,
+            "message_id": 2061,
+            "links": ["https://t.me/nobthacv1"],
+        },
+    ]
+    summary = run(
+        "@nobthacv1", no_link_posts, str(companies),
+        pending_path=str(tmpp / "pending.json"), ledger_path=str(tmpp / "published.json"),
+        seen_path=str(tmpp / "seen.json"),
+        model_fn=lambda prompt: model_calls.append(prompt)
+        or (_ for _ in ()).throw(AssertionError("Groq must not be called")),
+        send_fn=lambda *_args, **_kwargs: (_ for _ in ()).throw(
+            AssertionError("Telegram must not be called")
+        ),
+    )
+    check("text, media-only, and Telegram-link-only posts are pre-skipped", summary["skipped_no_link"] == 3)
+    check("pre-skipped posts make zero Groq calls", model_calls == [])
+    check("pre-skipped posts create no pending candidates", load_pending(tmpp / "pending.json") == {})
+    check(
+        "pre-skipped posts are marked seen once",
+        load_seen(tmpp / "seen.json") == {"nobthacv1": [2061, 2062, 2064]},
+    )
+
+check(
+    "the Lumi-style post passes the prefilter",
+    has_usable_external_link(
+        {"links": ["https://careers.lumirental.com/job/Co-op-Trainee/857246923/"]}
+    ),
+)
 
 
 print("\nrun: a brand new opportunity gets sent for review")

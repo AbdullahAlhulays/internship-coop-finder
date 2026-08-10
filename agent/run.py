@@ -13,6 +13,7 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from dedupe import decide
 from extract import ModelError, ValidationError, extract_opportunity, to_card
@@ -41,6 +42,34 @@ FETCH_TIMEOUT = 60
 
 class RunError(RuntimeError):
     ...
+
+
+TELEGRAM_LINK_HOSTS = {"t.me", "telegram.me"}
+
+
+def is_usable_external_link(value: object) -> bool:
+    """True for an HTTP(S) link that points outside Telegram itself.
+
+    fetch_posts.py keeps the source-message permalink in ``permalink``,
+    not ``links``, but posts sometimes contain another t.me link in their
+    body. Those channel/repost links are not application destinations and
+    must not spend a Groq call by themselves.
+    """
+    if not isinstance(value, str):
+        return False
+    try:
+        parsed = urlsplit(value.strip())
+    except ValueError:
+        return False
+    if parsed.scheme.lower() not in {"http", "https"} or not parsed.hostname:
+        return False
+    host = parsed.hostname.lower().rstrip(".")
+    return not any(host == blocked or host.endswith(f".{blocked}") for blocked in TELEGRAM_LINK_HOSTS)
+
+
+def has_usable_external_link(post: dict) -> bool:
+    links = post.get("links")
+    return isinstance(links, list) and any(is_usable_external_link(link) for link in links)
 
 
 def as_plain_text(message: str) -> str:
@@ -95,7 +124,7 @@ def run(
     if extraction_attempts < 1:
         raise ValueError("extraction_attempts must be at least 1")
 
-    summary = {"read": len(posts), "skipped_seen": 0, "not_opportunity": 0,
+    summary = {"read": len(posts), "skipped_seen": 0, "skipped_no_link": 0, "not_opportunity": 0,
                "unpublishable": 0, "duplicate": 0, "failed": 0,
                "queued": 0, "sent": 0, "candidate_ids": []}
     processed_ids: list[int] = []
@@ -109,6 +138,24 @@ def run(
             continue
         if candidate_id in pending:
             summary["skipped_seen"] += 1
+            continue
+
+        # The site requires a real application URL. Reject no-link posts
+        # before Groq instead of paying the model to discover something a
+        # deterministic check already proves. Media-only posts also stop
+        # here until the pipeline actually downloads and sends their image
+        # to a vision model; sending an empty text prompt would add cost but
+        # reveal nothing. When vision support lands, that media path should
+        # deliberately bypass this text/link gate.
+        if not has_usable_external_link(post):
+            reason = (
+                "media is not vision-enabled and has no external link"
+                if post.get("has_media")
+                else "no external link"
+            )
+            print(f"  [pre-skip] {candidate_id}: {reason}; Groq not called")
+            summary["skipped_no_link"] += 1
+            processed_ids.append(message_id)
             continue
 
         extracted = None
@@ -242,6 +289,7 @@ def main() -> int:
     print(
         f"\nread {summary['read']}"
         f" | already handled {summary['skipped_seen']}"
+        f" | no external link {summary['skipped_no_link']}"
         f" | not opportunities {summary['not_opportunity']}"
         f" | unpublishable {summary['unpublishable']}"
         f" | duplicates {summary['duplicate']}"
