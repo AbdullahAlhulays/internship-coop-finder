@@ -73,7 +73,7 @@
       "posted_at": "2026-08-10T12:14:17+03:00"
     },
     "awaiting_edit": {
-      "field": "location"
+      "field": "url"
     }
   }
 }
