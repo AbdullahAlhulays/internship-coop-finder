@@ -657,7 +657,7 @@
         "note": "created manually via Telegram /new"
       },
       "is_opportunity": true,
-      "location": "Jeddah - safe test",
+      "location": "Jeddah",
       "reason_excluded": null,
       "requires_letter": true,
       "title": null,
@@ -671,11 +671,7 @@
       "posted_at": "2026-08-10T13:00:32+03:00"
     },
     "last_edit": {
-      "message_id": 33,
-      "field": "company",
-      "card_message_id": 32
-    },
-    "awaiting_edit": {
+      "message_id": 35,
       "field": "location",
       "card_message_id": 32
     }
