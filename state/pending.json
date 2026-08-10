@@ -560,52 +560,6 @@
       "text": "#التدريب_التعاوني\n\n#الرياض\n#جدة\n#الدمام\n#حفرالباطن\n#المدينة_المنورة\n#مكة\n#حائل\n#تبوك\n\nيسرنا في شركة الخريف لتقنية المياه والطاقة الإعلان عن بداية التقديم لـ برنامج التدريب التعاوني، لإتاحة الفرصة للطلاب والطالبات في مرحلة #دبلوم #بكالوريوس لاكتساب الخبرة العملية، وتطوير مهاراتهم، والمشاركة في بيئة عمل احترافية تسهم في بناء مستقبلهم المهني.\n\nنتطلع لاستقبال الكفاءات الطموحة والمساهمة في رحلتهم المهنية"
     }
   },
-  "nobthacv1:2049": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-10T11:21:04+00:00",
-      "status": "sent",
-      "telegram_message_id": 50
-    },
-    "extracted": {
-      "company": "National Transport Safety Center | المركز الوطني لسلامة النقل",
-      "confidence": 0.9,
-      "contact": {
-        "type": "email",
-        "value": "Training@ntsc.gov.sa"
-      },
-      "deadline": null,
-      "deadline_raw": null,
-      "evidence": {
-        "company": "#التدريب_التعاوني | #الرياض",
-        "deadline": null,
-        "location": "#الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNTE3WTAyVkVTUUVBMDY2Qkw5WFE4RUZIUi4u"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": false,
-      "links": [
-        "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNTE3WTAyVkVTUUVBMDY2Qkw5WFE4RUZIUi4u"
-      ],
-      "message_id": 2049,
-      "permalink": "https://t.me/nobthacv1/2049",
-      "posted_at": "2026-08-03T23:16:43+00:00",
-      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nالمركز الوطني لسلامة النقل يعلن عن فتح باب التقديم في برنامج التدريب التعاوني (COOP) وتمهير لطلاب وطالبات الجامعات السعوديين.\n\nالتخصصات المستهدفة:\n\nلغات وترجمه (لغه إنجليزيه)\n\nالمتطلبات\nيشترط ألا يقل المعدل التراكمي عن:\n\n* 2.50 من 4.00 أو\n* 3.50 من 5.00\n\nللتقديمـــــــــــــــــــــــــــــــــ\n\nhttps://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNTE3WTAyVkVTUUVBMDY2Qkw5WFE4RUZIUi4u\n\nاو عن طريق البريد الالكتروني\n\nTraining@ntsc.gov.sa\n\n🎓 #التدريب_التعاوني | #الرياض"
-    }
-  },
   "nobthacv1:2050": {
     "decision": {
       "action": "add",

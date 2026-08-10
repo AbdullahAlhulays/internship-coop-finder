@@ -706,4 +706,11 @@ export const companies = [
     applicationLink: "https://www.jobs4.net/31972",
     type: "CO-OP Training",
     addedAt: "2026-08-10T06:59:34+03:00",
+  },
+  {
+    name: "National Transport Safety Center | المركز الوطني لسلامة النقل",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNTE3WTAyVkVTUUVBMDY2Qkw5WFE4RUZIUi4u",
+    type: "CO-OP Training",
+    addedAt: "2026-08-10T14:30:35+03:00",
   },];
