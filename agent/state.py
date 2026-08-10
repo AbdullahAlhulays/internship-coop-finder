@@ -5,12 +5,14 @@ not tap a Telegram button for hours, so anything that needs to
 survive between "the bot sent a card" and "Abood tapped something"
 has to live on disk -- committed to the repo -- not in memory.
 
-Two files, two different jobs:
+Three files, three different jobs:
 
   state/pending.json   -- candidates currently awaiting a Telegram
-                           decision. Written when notify.send_candidate()
-                           fires, read + removed when the webhook's
-                           GitHub Actions job processes a tap.
+                           decision. Each new record also carries its
+                           durable Telegram delivery state (queued or
+                           sent), so an outage cannot strand a saved card.
+                           Read + removed when the webhook's GitHub Actions
+                           job processes a tap.
 
   state/published.json -- the dedupe ledger (dedupe.py's `ledger`
                            parameter): which applicationLinks this
@@ -19,7 +21,11 @@ Two files, two different jobs:
                            repost from noise, versus a hand-added card
                            it has no business touching.
 
-Both are plain JSON living in the repo -- free, versioned, readable in
+  state/seen.json      -- source posts the hourly scanner has already
+                           handled, so it never re-extracts the same
+                           Telegram message every hour.
+
+All three are plain JSON living in the repo -- free, versioned, readable in
 a PR diff like everything else here. Every write is atomic (write to
 a temp file, then a single os.replace) so a crash mid-write can never
 leave a half-written, corrupted state file behind.
@@ -31,6 +37,7 @@ import json
 import os
 import tempfile
 from dataclasses import asdict
+from datetime import datetime, timezone
 from pathlib import Path
 
 from dedupe import Decision
@@ -39,6 +46,10 @@ from extract import Extracted
 PENDING_PATH = "state/pending.json"
 PUBLISHED_PATH = "state/published.json"
 SEEN_PATH = "state/seen.json"
+
+DELIVERY_QUEUED = "queued"
+DELIVERY_SENT = "sent"
+DELIVERY_STATUSES = {DELIVERY_QUEUED, DELIVERY_SENT}
 
 
 class StateError(RuntimeError):
@@ -90,7 +101,12 @@ def load_pending(path: str | Path = PENDING_PATH) -> dict[str, dict]:
 
 
 def add_pending(
-    candidate_id: str, extracted: Extracted, post: dict, decision: Decision, path: str | Path = PENDING_PATH
+    candidate_id: str,
+    extracted: Extracted,
+    post: dict,
+    decision: Decision,
+    path: str | Path = PENDING_PATH,
+    delivery_status: str = DELIVERY_SENT,
 ) -> dict[str, dict]:
     """Record a candidate as awaiting a Telegram decision. Stores the
     dedupe.Decision computed at extraction time too -- not just the
@@ -109,6 +125,12 @@ def add_pending(
     Refuses to overwrite an existing entry for the same id silently --
     that would normally mean the same post got processed twice in one
     run, itself worth stopping and looking at, not papering over."""
+    if delivery_status not in DELIVERY_STATUSES:
+        raise StateError(
+            f"invalid delivery status {delivery_status!r} for {candidate_id!r}; "
+            f"expected one of {sorted(DELIVERY_STATUSES)}"
+        )
+
     pending = load_pending(path)
     if candidate_id in pending:
         raise StateError(
@@ -116,9 +138,101 @@ def add_pending(
             f"silently. If this post is genuinely being re-sent, pop the old "
             f"entry first."
         )
-    pending[candidate_id] = {"extracted": asdict(extracted), "post": post, "decision": asdict(decision)}
+    delivery = {"status": delivery_status}
+    if delivery_status == DELIVERY_QUEUED:
+        delivery["queued_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    pending[candidate_id] = {
+        "extracted": asdict(extracted),
+        "post": post,
+        "decision": asdict(decision),
+        "delivery": delivery,
+    }
     _write_json_atomic(path, pending)
     return pending
+
+
+def delivery_status_of(record: dict) -> str:
+    """Return a pending record's Telegram delivery status.
+
+    Records committed before the self-healing queue existed have no
+    ``delivery`` field. They were created by the old send-first workflow,
+    so treating them as already sent is the only migration that cannot
+    duplicate historical review cards.
+    """
+    delivery = record.get("delivery")
+    if delivery is None:
+        return DELIVERY_SENT
+    if not isinstance(delivery, dict):
+        raise StateError("pending candidate delivery metadata must be an object")
+    status = delivery.get("status")
+    if status not in DELIVERY_STATUSES:
+        raise StateError(
+            f"pending candidate has invalid delivery status {status!r}; "
+            f"expected one of {sorted(DELIVERY_STATUSES)}"
+        )
+    return status
+
+
+def queued_delivery_ids(pending: dict[str, dict]) -> list[str]:
+    """The stable, sorted list of cards that still need Telegram."""
+    return sorted(
+        candidate_id
+        for candidate_id, record in pending.items()
+        if "creating_step" not in record and delivery_status_of(record) == DELIVERY_QUEUED
+    )
+
+
+def mark_delivery_sent(
+    candidate_id: str,
+    telegram_message_id: int | None,
+    *,
+    sent_at: str | None = None,
+    path: str | Path = PENDING_PATH,
+) -> bool:
+    """Persist Telegram's successful response for one candidate.
+
+    Returns False when the candidate was already removed by an approval;
+    that is a safe idempotent outcome when replaying receipts after a git
+    push collision. A conflicting message id fails closed instead of
+    silently hiding a duplicate send.
+    """
+    if telegram_message_id is not None and (
+        isinstance(telegram_message_id, bool) or not isinstance(telegram_message_id, int)
+    ):
+        raise StateError("telegram_message_id must be an integer or null")
+    if sent_at is not None:
+        if not isinstance(sent_at, str) or not sent_at:
+            raise StateError("sent_at must be a non-empty ISO timestamp or null")
+        try:
+            parsed_sent_at = datetime.fromisoformat(sent_at)
+        except ValueError as exc:
+            raise StateError(f"sent_at is not a valid ISO timestamp: {sent_at!r}") from exc
+        if parsed_sent_at.tzinfo is None:
+            raise StateError("sent_at must include a timezone")
+
+    pending = load_pending(path)
+    record = pending.get(candidate_id)
+    if record is None:
+        return False
+
+    status = delivery_status_of(record)
+    existing_delivery = record.get("delivery") or {"status": DELIVERY_SENT}
+    if status == DELIVERY_SENT:
+        existing_message_id = existing_delivery.get("telegram_message_id")
+        if existing_message_id is not None and telegram_message_id is not None and existing_message_id != telegram_message_id:
+            raise StateError(
+                f"{candidate_id!r} is already recorded as Telegram message "
+                f"{existing_message_id}, refusing conflicting receipt {telegram_message_id}"
+            )
+        return False
+
+    record["delivery"] = {
+        "status": DELIVERY_SENT,
+        "sent_at": sent_at or datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "telegram_message_id": telegram_message_id,
+    }
+    _write_json_atomic(path, pending)
+    return True
 
 
 def pop_pending(candidate_id: str, path: str | Path = PENDING_PATH) -> tuple[dict, dict[str, dict]]:

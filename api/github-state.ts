@@ -23,6 +23,14 @@ export interface PendingRecord {
   extracted: Record<string, unknown>;
   post: Record<string, unknown>;
   decision: Record<string, unknown>;
+  // Python's durable Telegram outbox. Webhook edits always spread the
+  // existing record, preserving this receipt while changing card fields.
+  delivery?: {
+    status: "queued" | "sent";
+    queued_at?: string;
+    sent_at?: string;
+    telegram_message_id?: number | null;
+  };
   awaiting_edit?: { field: string };
   // If Telegram retries a free-text edit after the GitHub write
   // succeeded but the confirmation message failed, recognize the

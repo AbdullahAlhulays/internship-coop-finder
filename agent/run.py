@@ -20,6 +20,7 @@ from notify import format_card_message, send_candidate
 from read_companies import ReadCompaniesError, read_companies
 from _console import use_utf8_stdout
 from state import (
+    DELIVERY_QUEUED,
     PENDING_PATH,
     PUBLISHED_PATH,
     SEEN_PATH,
@@ -29,6 +30,7 @@ from state import (
     load_pending,
     load_seen,
     make_candidate_id,
+    mark_delivery_sent,
     mark_seen,
 )
 
@@ -81,6 +83,7 @@ def run(
     seen_path: str = SEEN_PATH,
     model_fn=None,
     send_fn=send_candidate,
+    mark_delivery_fn=mark_delivery_sent,
     defer_send: bool = False,
     extraction_attempts: int = 3,
 ) -> dict:
@@ -164,13 +167,20 @@ def run(
             summary["sent"] += 1
             continue
 
-        add_pending(candidate_id, extracted, post, decision, path=pending_path)
+        # Queue first, then send. If Telegram raises, the durable queued
+        # marker remains and the scheduled workflow can recover it later.
+        add_pending(
+            candidate_id, extracted, post, decision,
+            path=pending_path, delivery_status=DELIVERY_QUEUED,
+        )
         summary["candidate_ids"].append(candidate_id)
         if defer_send:
             print(f"  [queued]  {candidate_id}: {extracted.company} ({decision.action})")
             summary["queued"] += 1
         else:
-            send_fn(extracted, candidate_id, post=post)
+            response = send_fn(extracted, candidate_id, post=post)
+            telegram_message_id = response.get("result", {}).get("message_id") if isinstance(response, dict) else None
+            mark_delivery_fn(candidate_id, telegram_message_id, path=pending_path)
             print(f"  [sent]    {candidate_id}: {extracted.company} ({decision.action})")
             summary["sent"] += 1
         processed_ids.append(message_id)

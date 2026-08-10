@@ -7,7 +7,7 @@ import tempfile
 from pathlib import Path
 
 from create_candidate import CreateError, create_candidate, send_pending_candidate
-from state import load_pending
+from state import DELIVERY_QUEUED, DELIVERY_SENT, delivery_status_of, load_pending
 
 
 checks = 0
@@ -62,6 +62,7 @@ with tempfile.TemporaryDirectory() as tmp:
     check("candidate is stored under the draft id", "manual:test-1" in pending)
     check("company survives the state round trip", pending["manual:test-1"]["extracted"]["company"] == "Test Company")
     check("deferred creation sends no Telegram card", sent == [])
+    check("deferred creation is durably queued", delivery_status_of(pending["manual:test-1"]) == DELIVERY_QUEUED)
     check("successful creation reports no failure", failures == [])
 
     print("workflow rerun: identical committed candidate is idempotent")
@@ -106,6 +107,13 @@ with tempfile.TemporaryDirectory() as tmp:
     )
     check("send-only emits one review card", len(sent) == 1)
     check("send-only uses the original draft id", sent[0][0][1] == "manual:test-1")
+    check("send-only records successful delivery", delivery_status_of(load_pending(pending_path)["manual:test-1"]) == DELIVERY_SENT)
+    send_pending_candidate(
+        "manual:test-1",
+        pending_path=pending_path,
+        send_candidate_fn=lambda *args, **kwargs: sent.append((args, kwargs)),
+    )
+    check("re-running send-only cannot duplicate a delivered card", len(sent) == 1)
 
     try:
         send_pending_candidate("manual:missing", pending_path=pending_path, send_candidate_fn=lambda *_args, **_kwargs: None)

@@ -15,7 +15,7 @@ from pathlib import Path
 
 from read_companies import ReadCompaniesError, read_companies
 from run import as_plain_text, run
-from state import load_pending, load_seen
+from state import DELIVERY_QUEUED, DELIVERY_SENT, delivery_status_of, load_pending, load_seen
 
 from _console import use_utf8_stdout
 
@@ -133,6 +133,7 @@ with tempfile.TemporaryDirectory() as tmp:
     )
     check("exactly one card was sent", summary["sent"] == 1 and sent == ["SALTRAI:5478"])
     check("it's now recorded as pending, awaiting an answer", "SALTRAI:5478" in load_pending(tmpp / "pending.json"))
+    check("a successful immediate send is recorded", delivery_status_of(load_pending(tmpp / "pending.json")["SALTRAI:5478"]) == DELIVERY_SENT)
     check("the post is marked seen so the next run skips it", load_seen(tmpp / "seen.json") == {"SALTRAI": [5478]})
 
 
@@ -166,6 +167,7 @@ with tempfile.TemporaryDirectory() as tmp:
     check("deferred run sends nothing before the git push", sent == [] and summary["sent"] == 0)
     check("deferred run reports the queued candidate", summary["queued"] == 1 and summary["candidate_ids"] == ["SALTRAI:5478"])
     check("queued candidate is already durable in pending state", "SALTRAI:5478" in load_pending(tmpp / "pending.json"))
+    check("deferred candidate is marked for automatic delivery", delivery_status_of(load_pending(tmpp / "pending.json")["SALTRAI:5478"]) == DELIVERY_QUEUED)
     check("queued post is marked seen in the same transaction", load_seen(tmpp / "seen.json") == {"SALTRAI": [5478]})
 
 

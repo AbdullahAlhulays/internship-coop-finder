@@ -14,12 +14,17 @@ from dedupe import Decision
 from extract import Extracted
 from _console import use_utf8_stdout
 from state import (
+    DELIVERY_QUEUED,
+    DELIVERY_SENT,
     StateError,
     add_pending,
+    delivery_status_of,
     load_ledger,
     load_pending,
     make_candidate_id,
+    mark_delivery_sent,
     pop_pending,
+    queued_delivery_ids,
     record_published,
     record_to_decision,
     record_to_extracted,
@@ -76,6 +81,7 @@ with tempfile.TemporaryDirectory() as tmp:
     check("extracted data round-trips (company)", reloaded[cid]["extracted"]["company"] == "Saudi Aramco")
     check("post metadata round-trips", reloaded[cid]["post"]["channel"] == "@SALTRAI")
     check("decision round-trips too", reloaded[cid]["decision"]["action"] == "add")
+    check("legacy/default additions are treated as already delivered", delivery_status_of(reloaded[cid]) == DELIVERY_SENT)
 
     check_raises(
         "adding the same candidate id twice raises instead of silently overwriting",
@@ -86,6 +92,34 @@ with tempfile.TemporaryDirectory() as tmp:
     check("pop returns the right record", record["extracted"]["company"] == "Saudi Aramco")
     check("pop removes it from the in-memory result", cid not in remaining)
     check("pop removes it from disk too", cid not in load_pending(pending_path))
+
+    print("\ndurable Telegram delivery state")
+    queued_id = make_candidate_id("@SALTRAI", 5479)
+    add_pending(
+        queued_id,
+        ARAMCO,
+        {**post, "message_id": 5479},
+        decision,
+        path=pending_path,
+        delivery_status=DELIVERY_QUEUED,
+    )
+    queued_record = load_pending(pending_path)[queued_id]
+    check("a deferred card is visibly queued", delivery_status_of(queued_record) == DELIVERY_QUEUED)
+    check("queued_at is persisted with the card", bool(queued_record["delivery"].get("queued_at")))
+    check("queue lookup finds only the queued card", queued_delivery_ids(load_pending(pending_path)) == [queued_id])
+    draft_record = {**queued_record, "creating_step": "company"}
+    check("an in-progress /new draft can never enter the delivery queue", queued_delivery_ids({"manual:123": draft_record}) == [])
+    check("a Telegram receipt changes queued to sent", mark_delivery_sent(queued_id, 91234, path=pending_path))
+    delivered_record = load_pending(pending_path)[queued_id]
+    check("Telegram message id is persisted", delivered_record["delivery"]["telegram_message_id"] == 91234)
+    check("sent cards disappear from the retry queue", queued_delivery_ids(load_pending(pending_path)) == [])
+    check("replaying the same receipt is idempotent", not mark_delivery_sent(queued_id, 91234, path=pending_path))
+    check_raises(
+        "a conflicting Telegram receipt fails closed",
+        lambda: mark_delivery_sent(queued_id, 99999, path=pending_path),
+    )
+    pop_pending(queued_id, path=pending_path)
+    check("a receipt for an already-approved card is a safe no-op", not mark_delivery_sent(queued_id, 91234, path=pending_path))
 
     print("\nreconstructing typed objects from a popped record")
     rebuilt_extracted = record_to_extracted(record)

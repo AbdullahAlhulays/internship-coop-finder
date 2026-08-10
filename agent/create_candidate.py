@@ -34,7 +34,19 @@ from dedupe import decide
 from extract import Extracted, to_card
 from notify import send_candidate, send_result
 from read_companies import ReadCompaniesError, read_companies
-from state import PENDING_PATH, PUBLISHED_PATH, StateError, add_pending, load_ledger, load_pending, record_to_extracted
+from state import (
+    DELIVERY_QUEUED,
+    DELIVERY_SENT,
+    PENDING_PATH,
+    PUBLISHED_PATH,
+    StateError,
+    add_pending,
+    delivery_status_of,
+    load_ledger,
+    load_pending,
+    mark_delivery_sent,
+    record_to_extracted,
+)
 
 from _console import use_utf8_stdout
 
@@ -68,6 +80,7 @@ def create_candidate(
     load_pending_fn=load_pending,
     decide_fn=decide,
     add_pending_fn=add_pending,
+    mark_delivery_fn=mark_delivery_sent,
     send_candidate_fn=send_candidate,
     send_result_fn=send_result,
 ) -> None:
@@ -76,15 +89,12 @@ def create_candidate(
     stand-ins, no real repo file or network call needed to verify the
     logic. See test_create_candidate.py.
 
-    defer_send=True skips sending the Telegram review card here --
-    same reasoning as process_approval.py's --defer-notice: add_pending
-    only writes pending.json locally, uncommitted. If a later git push
-    fails (another approval landed first) and this whole attempt gets
-    retried against fresh state, a card already sent to Telegram before
-    that retry would be a card Abood can tap Approve on that isn't
-    actually recorded anywhere. Send only after the push genuinely
-    succeeds -- see send_pending_candidate() below, and
-    create-candidate.yml's two-step split.
+    defer_send=True queues the Telegram review card in pending.json but
+    does not send it yet. If a later git push fails (another approval
+    landed first), the workflow retries against fresh state without ever
+    exposing a phantom card. Once the push succeeds, deliver_pending.py
+    sends it and records Telegram's receipt; an outage leaves it queued
+    for a future hourly run.
     """
     extracted = Extracted(
         is_opportunity=True,
@@ -113,7 +123,7 @@ def create_candidate(
     # A workflow can be re-run after its first step committed the
     # candidate but the second (Telegram delivery) step failed. Treat
     # the exact same draft and fields as an idempotent success so the
-    # workflow reaches --send-only again. A reused id with different
+    # workflow reaches its delivery step again. A reused id with different
     # fields is still a hard failure; never overwrite or guess.
     try:
         existing_record = load_pending_fn(pending_path).get(draft_id)
@@ -132,8 +142,10 @@ def create_candidate(
             detail = f"{draft_id} already exists with different fields -- refusing to overwrite it"
             send_result_fn(draft_id, applied=False, detail=detail)
             raise CreateError(detail)
-        if not defer_send:
-            send_candidate_fn(existing_extracted, draft_id, post=existing_record.get("post"))
+        if not defer_send and delivery_status_of(existing_record) == DELIVERY_QUEUED:
+            response = send_candidate_fn(existing_extracted, draft_id, post=existing_record.get("post"))
+            message_id = response.get("result", {}).get("message_id") if isinstance(response, dict) else None
+            mark_delivery_fn(draft_id, message_id, path=pending_path)
         return
 
     try:
@@ -158,13 +170,18 @@ def create_candidate(
     post = {"channel": "manual", "message_id": None, "posted_at": now_iso, "permalink": None}
 
     try:
-        add_pending_fn(draft_id, extracted, post, decision, path=pending_path)
+        add_pending_fn(
+            draft_id, extracted, post, decision,
+            path=pending_path, delivery_status=DELIVERY_QUEUED,
+        )
     except StateError as exc:
         send_result_fn(draft_id, applied=False, detail=str(exc))
         raise
 
     if not defer_send:
-        send_candidate_fn(extracted, draft_id, post=post)
+        response = send_candidate_fn(extracted, draft_id, post=post)
+        message_id = response.get("result", {}).get("message_id") if isinstance(response, dict) else None
+        mark_delivery_fn(draft_id, message_id, path=pending_path)
 
 
 def send_pending_candidate(
@@ -172,22 +189,27 @@ def send_pending_candidate(
     pending_path: str = PENDING_PATH,
     load_pending_fn=load_pending,
     send_candidate_fn=send_candidate,
-) -> None:
-    """The second half of the deferred flow: called as its own workflow
-    step, only once the commit from create_candidate(..., defer_send=True)
-    has actually been pushed. Re-reads pending.json fresh off disk --
-    this runs after a checkout/pull in the workflow, so it sees the
-    genuinely-committed record, not anything held in memory from the
-    first step (which could be stale if a retry rewrote it against a
-    different base sha). Mirrors process_approval.py's --defer-notice
-    two-step split exactly."""
+    mark_delivery_fn=mark_delivery_sent,
+) -> bool:
+    """Send one queued card idempotently from committed pending state.
+
+    Kept as a focused CLI/manual-recovery helper. Production workflows
+    use deliver_pending.py, which adds batch retries, receipt files, and
+    automatic recovery on the next hourly run.
+    """
     pending = load_pending_fn(pending_path)
     record = pending.get(draft_id)
     if record is None:
         raise CreateError(f"{draft_id} isn't in {pending_path} -- can't send a card for a draft that was never committed")
 
+    if delivery_status_of(record) == DELIVERY_SENT:
+        return False
+
     extracted = record_to_extracted(record)
-    send_candidate_fn(extracted, draft_id, post=record.get("post"))
+    response = send_candidate_fn(extracted, draft_id, post=record.get("post"))
+    message_id = response.get("result", {}).get("message_id") if isinstance(response, dict) else None
+    mark_delivery_fn(draft_id, message_id, path=pending_path)
+    return True
 
 
 def main() -> int:
@@ -201,11 +223,11 @@ def main() -> int:
     parser.add_argument("--requires-letter", action="store_true")
     parser.add_argument(
         "--defer-send", action="store_true",
-        help="add to pending.json but don't send the Telegram card yet -- a later --send-only call does that, after the commit is confirmed pushed",
+        help="queue the Telegram card in pending.json; deliver_pending.py sends it only after the commit is pushed",
     )
     parser.add_argument(
         "--send-only", action="store_true",
-        help="skip creation entirely; just send the review card for a draft_id that's already committed (the second step after --defer-send)",
+        help="manual recovery helper: send one queued review card from committed pending state",
     )
     args = parser.parse_args()
 

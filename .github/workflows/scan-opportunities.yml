@@ -43,7 +43,8 @@ jobs:
           git config user.name "opportunity-agent"
           git config user.email "actions@users.noreply.github.com"
 
-      # The scanner writes pending.json and seen.json first, but defers
+      # The scanner writes pending.json and seen.json first, including a
+      # durable delivery.status=queued marker, but defers
       # Telegram delivery until that state is committed and pushed. If
       # an approval or /new card lands at the same time, reset to the
       # new remote state and rerun without ever sending a phantom card.
@@ -120,30 +121,82 @@ jobs:
           echo "created_count=$(grep -c . "$CREATED_IDS_FILE" || true)" >> "$GITHUB_OUTPUT"
           echo "extraction_failures=$(cat "$FAILURE_COUNT_FILE")" >> "$GITHUB_OUTPUT"
 
-      - name: Send committed candidates to Telegram
-        if: steps.scan.outputs.created_count != '0'
+      # Deliver this run's cards plus queued cards left by an earlier
+      # Telegram outage. A 10-minute age guard prevents this scanner from
+      # racing a fresh /new workflow that is still delivering its own card.
+      # Successful receipts update pending.json locally; failures remain
+      # queued and make the job fail only after successes are persisted.
+      - name: Deliver queued Telegram cards
+        id: delivery
+        if: steps.scan.outcome == 'success'
+        continue-on-error: true
         run: |
-          set -u
-          failed=0
-
+          set -euo pipefail
+          args=()
           while IFS= read -r candidate_id; do
-            sent=0
-            for attempt in 1 2 3; do
-              if python agent/create_candidate.py "$candidate_id" --send-only; then
-                sent=1
-                break
-              fi
-              echo "Telegram delivery attempt $attempt failed for $candidate_id." >&2
-              sleep $((attempt * 3))
-            done
-
-            if [ "$sent" -ne 1 ]; then
-              echo "Could not deliver $candidate_id after 3 attempts." >&2
-              failed=1
+            if [ -n "$candidate_id" ]; then
+              args+=(--candidate-id "$candidate_id")
             fi
           done < "$RUNNER_TEMP/created-ids.txt"
 
-          exit "$failed"
+          python agent/deliver_pending.py \
+            "${args[@]}" \
+            --attempts 3 \
+            --minimum-age-seconds 600 \
+            --receipts-file "$RUNNER_TEMP/delivery-receipts.json" \
+            --summary-file "$RUNNER_TEMP/delivery-summary.json"
+
+      # Telegram has already accepted these messages. If another workflow
+      # pushed first, reset to that fresh state and replay only the saved
+      # receipts -- never call Telegram a second time because of a git
+      # collision.
+      - name: Persist successful delivery receipts
+        if: always() && steps.scan.outcome == 'success'
+        run: |
+          set -euo pipefail
+          RECEIPTS_FILE="$RUNNER_TEMP/delivery-receipts.json"
+          if [ ! -f "$RECEIPTS_FILE" ] || [ "$(jq 'length' "$RECEIPTS_FILE")" -eq 0 ]; then
+            echo "No new Telegram delivery receipts to persist."
+            exit 0
+          fi
+
+          MAX_ATTEMPTS=5
+          for attempt in $(seq 1 "$MAX_ATTEMPTS"); do
+            echo "::group::Receipt push attempt $attempt of $MAX_ATTEMPTS"
+            if [ "$attempt" -gt 1 ]; then
+              git fetch origin "$GITHUB_REF_NAME"
+              git reset --hard "origin/$GITHUB_REF_NAME"
+            fi
+            python agent/deliver_pending.py --apply-receipts "$RECEIPTS_FILE"
+
+            git add -- state/pending.json
+            if git diff --cached --quiet; then
+              echo "Receipts were already applied or their cards were already handled."
+              echo "::endgroup::"
+              break
+            fi
+
+            git commit -m "Record Telegram deliveries: $GITHUB_RUN_ID"
+            if git push; then
+              echo "Delivery receipts pushed successfully."
+              echo "::endgroup::"
+              break
+            fi
+
+            echo "Receipt push collided with another state update."
+            echo "::endgroup::"
+            if [ "$attempt" -eq "$MAX_ATTEMPTS" ]; then
+              echo "Could not persist Telegram delivery receipts after $MAX_ATTEMPTS attempts." >&2
+              exit 1
+            fi
+            sleep $(( (RANDOM % 5) + 2 ))
+          done
+
+      - name: Report delivery failures
+        if: steps.delivery.outcome == 'failure'
+        run: |
+          echo "One or more Telegram cards remain queued and will retry automatically next hour." >&2
+          exit 1
 
       - name: Report extraction failures
         if: steps.scan.outputs.extraction_failures != '0'

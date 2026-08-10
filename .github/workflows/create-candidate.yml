@@ -4,13 +4,10 @@
 # all six fields have been collected.
 #
 # Same two-step shape as process-approval.yml, for the same reason:
-# create_candidate.py --defer-send writes state/pending.json but does
-# NOT send the Telegram review card yet, because nothing is real until
-# the commit below is actually pushed. Only the second step, which
-# only runs once the first step has genuinely succeeded, sends it --
-# see create_candidate.py's send_pending_candidate() docstring for the
-# full reasoning (it's the exact same reasoning as process_approval.py's
-# --defer-notice).
+# create_candidate.py --defer-send writes the candidate with a durable
+# delivery.status=queued marker but does NOT send the Telegram review
+# card yet, because nothing is real until the commit below is pushed.
+# A failed Telegram send stays queued for the hourly scanner to recover.
 
 name: Create Candidate From Telegram
 
@@ -118,19 +115,72 @@ jobs:
             echo "::endgroup::"
           done
 
-      # Only now is the candidate genuinely committed and pushed, so
-      # only now is it honest to show Abood the review card. Reads
-      # state/pending.json straight from this same runner's working
-      # copy -- it already reflects the exact commit that was just
-      # pushed (same checkout, sequential steps in one job), so there's
-      # nothing to re-fetch here.
-      - name: Send the review card, now that it's genuinely pushed
+      # Only now is the candidate genuinely committed and pushed. A
+      # failure leaves it queued in the repo, so the hourly scanner can
+      # recover it without any terminal command.
+      - name: Deliver the queued review card
+        id: delivery
+        continue-on-error: true
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DRAFT_ID: ${{ github.event.client_payload.draft_id }}
         run: |
-          python agent/create_candidate.py "$DRAFT_ID" --send-only
+          python agent/deliver_pending.py \
+            --candidate-id "$DRAFT_ID" \
+            --attempts 3 \
+            --minimum-age-seconds 600 \
+            --receipts-file "$RUNNER_TEMP/delivery-receipts.json"
+
+      - name: Persist the delivery receipt
+        if: always() && steps.create.outcome == 'success'
+        env:
+          DRAFT_ID: ${{ github.event.client_payload.draft_id }}
+        run: |
+          set -euo pipefail
+          RECEIPTS_FILE="$RUNNER_TEMP/delivery-receipts.json"
+          if [ ! -f "$RECEIPTS_FILE" ] || [ "$(jq 'length' "$RECEIPTS_FILE")" -eq 0 ]; then
+            echo "No new Telegram delivery receipt to persist."
+            exit 0
+          fi
+
+          MAX_ATTEMPTS=5
+          for attempt in $(seq 1 "$MAX_ATTEMPTS"); do
+            echo "::group::Receipt push attempt $attempt of $MAX_ATTEMPTS"
+            if [ "$attempt" -gt 1 ]; then
+              git fetch origin "$GITHUB_REF_NAME"
+              git reset --hard "origin/$GITHUB_REF_NAME"
+            fi
+            python agent/deliver_pending.py --apply-receipts "$RECEIPTS_FILE"
+
+            git add -- state/pending.json
+            if git diff --cached --quiet; then
+              echo "Receipt was already applied or the card was already handled."
+              echo "::endgroup::"
+              break
+            fi
+
+            git commit -m "Record Telegram delivery: $DRAFT_ID"
+            if git push; then
+              echo "Delivery receipt pushed successfully."
+              echo "::endgroup::"
+              break
+            fi
+
+            echo "Receipt push collided with another state update."
+            echo "::endgroup::"
+            if [ "$attempt" -eq "$MAX_ATTEMPTS" ]; then
+              echo "Could not persist the Telegram delivery receipt after $MAX_ATTEMPTS attempts." >&2
+              exit 1
+            fi
+            sleep $(( (RANDOM % 5) + 2 ))
+          done
+
+      - name: Report deferred delivery
+        if: steps.delivery.outcome == 'failure'
+        run: |
+          echo "Telegram delivery failed; this card remains queued and will retry automatically." >&2
+          exit 1
 
 # FOLDER LAYOUT: identical to process-approval.yml's -- see the note at
 # the bottom of that file. This workflow and create_candidate.py both
