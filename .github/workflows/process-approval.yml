@@ -1,0 +1,142 @@
+# Save this file as .github/workflows/process-approval.yml in your
+# site's real repo (the one with src/data/companies.js in it) -- not
+# in a standalone agent folder. GitHub Actions only has access to the
+# repo it's running in, and this job needs to both run the agent's
+# Python scripts AND commit to the site's actual source files, so
+# both need to live in the same repo checkout. See the note at the
+# bottom of this file for the folder layout this assumes.
+
+name: Process Telegram Approval
+
+on:
+  repository_dispatch:
+    types: [telegram-decision]
+
+permissions:
+  contents: write # needed to commit and push the approved change
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node (process_approval.py shells out to `node --check`)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python dependencies
+        run: pip install -r agent/requirements.txt
+
+      - name: Configure git identity
+        run: |
+          git config user.name "opportunity-agent"
+          git config user.email "actions@users.noreply.github.com"
+
+      # Approving several cards in a row means several of these runs can
+      # overlap. Two runs both editing companies.js would make the second
+      # push fail (non-fast-forward) and silently lose that card. So on a
+      # rejected push we reset to the newly-updated remote and redo the
+      # whole apply against it -- the earlier attempt's changes are
+      # discarded entirely, including its pending.json edit (that file is
+      # tracked in git), so the retry starts from genuinely clean state
+      # rather than compounding a half-applied one.
+      #
+      # Not using GitHub's `concurrency:` here on purpose: when runs queue
+      # up in a concurrency group, a newly-queued run CANCELS the
+      # previously-queued one. With rapid approvals that would silently
+      # drop cards -- exactly the failure this is meant to prevent.
+      - name: Apply the decision, then commit and push (retrying on collisions)
+        # Deliberately NOT using working-directory here: process_approval.py's
+        # default paths (src/data/companies.js, state/pending.json, etc.) are
+        # relative to the repo root, so this must run from the root too --
+        # only the script's own location is inside agent/.
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CANDIDATE_ID: ${{ github.event.client_payload.candidate_id }}
+          ACTION: ${{ github.event.client_payload.action }}
+        run: |
+          set -euo pipefail
+          MAX_ATTEMPTS=5
+          for attempt in $(seq 1 $MAX_ATTEMPTS); do
+            echo "::group::Attempt $attempt of $MAX_ATTEMPTS"
+
+            if [ "$attempt" -gt 1 ]; then
+              git fetch origin "$GITHUB_REF_NAME"
+              git reset --hard "origin/$GITHUB_REF_NAME"
+            fi
+
+            # --defer-notice: don't announce the outcome yet. Nothing is
+            # actually live until the push below succeeds.
+            python agent/process_approval.py "$CANDIDATE_ID" "$ACTION" --defer-notice
+
+            git add -A
+            if git diff --cached --quiet; then
+              echo "Nothing to commit — a reject, which only updates state that was already clean."
+              break
+            fi
+
+            git commit -m "Telegram $ACTION: $CANDIDATE_ID"
+            if git push; then
+              echo "Pushed successfully."
+              break
+            fi
+
+            echo "Push rejected — another approval landed first."
+            if [ "$attempt" -eq "$MAX_ATTEMPTS" ]; then
+              python agent/notify.py "$CANDIDATE_ID" --failed \
+                --detail "couldn't save after $MAX_ATTEMPTS tries (too many approvals at once) — please tap Approve again"
+              exit 1
+            fi
+            sleep $(( (RANDOM % 5) + 2 ))
+            echo "::endgroup::"
+          done
+
+      # Only now is the change genuinely live, so only now is it honest
+      # to say so.
+      - name: Tell Abood the outcome
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CANDIDATE_ID: ${{ github.event.client_payload.candidate_id }}
+          ACTION: ${{ github.event.client_payload.action }}
+        run: |
+          if [ "$ACTION" = "approve" ]; then
+            python agent/notify.py "$CANDIDATE_ID" --applied
+          else
+            python agent/notify.py "$CANDIDATE_ID" --rejected
+          fi
+
+# FOLDER LAYOUT this assumes, inside your real site repo:
+#
+#   your-site-repo/
+#     src/data/companies.js        <- already exists, what publish.py edits
+#     src/App.jsx                  <- already exists, what publish.py edits
+#     agent/                       <- NEW: copy this whole opportunity-agent
+#       fetch_posts.py                folder here (all the .py files,
+#       extract.py                    requirements.txt, everything except
+#       dedupe.py                     this .yml file itself)
+#       publish.py
+#       notify.py
+#       state.py
+#       process_approval.py
+#       requirements.txt
+#     state/
+#       pending.json                <- created automatically the first
+#       published.json                 time the pipeline runs
+#     .github/workflows/
+#       process-approval.yml        <- this file
+#
+# process_approval.py's default paths (src/data/companies.js,
+# src/App.jsx, state/pending.json, state/published.json) are written
+# relative to the repo root, which is why the "Apply the decision"
+# step above changes into agent/ to run it, but git itself still
+# operates from the repo root.

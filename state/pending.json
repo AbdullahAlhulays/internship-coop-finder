@@ -1,0 +1,116 @@
+{
+  "SALTRAI:5492": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "extracted": {
+      "company": "Ministry of Tourism | وزارة السياحة",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "وزارة السياحة",
+        "deadline": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://www.jobs2.net/31967"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.jobs2.net/31967"
+      ],
+      "message_id": 5492,
+      "permalink": "https://t.me/SALTRAI/5492",
+      "posted_at": "2026-08-09T10:43:20+00:00",
+      "text": "(🔴) وزارة السياحة تعلن بدء التقديم في برنامج (التدريب التعاوني) للطلاب والطالبات بالتعاون مع صندوق (هدف):\n\n⭐️ الفئة المستهدفة (طلاب وطالبات الدبلوم والبكالوريوس).\n📍 بداية التدريب (السبت ١٤٤٨/٣/١٦هـ).\n\nhttps://www.jobs2.net/31967"
+    }
+  },
+  "SALTRAI:5493": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "extracted": {
+      "company": "General Authority for Statistics | الهيئة العامة للإحصاء",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "الهيئة العامة للإحصاء",
+        "deadline": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Cooperative Training Program",
+      "type": "coop",
+      "url": "https://www.jobs4.net/31972"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.jobs4.net/31972"
+      ],
+      "message_id": 5493,
+      "permalink": "https://t.me/SALTRAI/5493",
+      "posted_at": "2026-08-09T10:43:20+00:00",
+      "text": "(🔴) هام | الهيئة العامة للإحصاء تعلن فتح التقديم في برنامج (التدريب التعاوني) للعام ١٤٤٨هـ (للجنسين):\n\n⭐️ للتخصصات (الإحصاء، الرياضيات، الاقتصاد، تحليل البيانات، الذكاء الاصطناعي، تقنية المعلومات، إدارة الأعمال، الموارد البشرية، المحاسبة، القانون، الإعلام) وغيرها.\n\nhttps://www.jobs4.net/31972"
+    }
+  },
+  "SALTRAI:5494": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "extracted": {
+      "company": "National Development Fund | صندوق التنمية الوطني",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "صندوق التنمية الوطني",
+        "deadline": null,
+        "location": "مدينة الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://www.jobs4.net/31973"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.jobs4.net/31973"
+      ],
+      "message_id": 5494,
+      "permalink": "https://t.me/SALTRAI/5494",
+      "posted_at": "2026-08-09T10:43:20+00:00",
+      "text": "(🔴) صندوق التنمية الوطني يعلن فتح التقديم في (برنامج التدريب التعاوني) لعام ٢٠٢٦م:\n\n⭐️ التخصصات (إدارة الأعمال، إدارة المشاريع، المالية، المحاسبة، القانون، الاقتصاد، الإعلام).\n📍 مكان التدريب (مدينة الرياض).\n🎓 الفئة المستهدفة (طلاب وطالبات مرحلة البكالوريوس).\n\nhttps://www.jobs4.net/31973"
+    }
+  }
+}
