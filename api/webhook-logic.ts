@@ -368,6 +368,113 @@ export function buildConstrainedChoiceKeyboard(field: EditableField, candidateId
   return { inline_keyboard: rows };
 }
 
+// ------------------------------------------------------- review-card text
+
+const TYPE_LABELS: Record<string, string> = {
+  internship: "Internship",
+  coop: "CO-OP Training",
+  internship_or_coop: "Internship / CO-OP Training",
+};
+
+/** Telegram uses HTML parse mode for review cards. Every editable and
+ * source-derived value must be escaped before it is inserted into the
+ * message, including URL attributes. */
+export function escapeTelegramHtml(value: unknown): string {
+  if (value === null || value === undefined) return "";
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#x27;");
+}
+
+function nonEmptyString(value: unknown): string | null {
+  return typeof value === "string" && value.length > 0 ? value : null;
+}
+
+function objectValue(value: unknown): Record<string, unknown> | null {
+  return typeof value === "object" && value !== null && !Array.isArray(value)
+    ? value as Record<string, unknown>
+    : null;
+}
+
+function riyadhTodayIso(): string {
+  // Riyadh is UTC+03 year-round (no daylight-saving changes).
+  return new Date(Date.now() + 3 * 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
+function referenceDateIso(post: Record<string, unknown>, todayIso?: string): string {
+  const postedAt = nonEmptyString(post.posted_at);
+  const datePrefix = postedAt?.match(/^\d{4}-\d{2}-\d{2}/)?.[0];
+  return datePrefix ?? todayIso ?? riyadhTodayIso();
+}
+
+/** Mirrors agent/notify.py's format_card_message() so an edited card
+ * keeps the same shape as the card Python originally sent. todayIso is
+ * injectable only for deterministic tests of the deadline warning. */
+export function formatPendingCardMessage(
+  extracted: Record<string, unknown>,
+  post: Record<string, unknown> = {},
+  todayIso?: string,
+): string {
+  const company = nonEmptyString(extracted.company) ?? "Unknown company";
+  const rawType = nonEmptyString(extracted.type) ?? "unknown";
+  const typeLabel = TYPE_LABELS[rawType] ?? rawType;
+  const location = nonEmptyString(extracted.location);
+  const url = nonEmptyString(extracted.url);
+  const deadline = nonEmptyString(extracted.deadline);
+  const deadlineRaw = nonEmptyString(extracted.deadline_raw);
+  const lines = [
+    `Name: ${escapeTelegramHtml(company)}`,
+    `Type: ${escapeTelegramHtml(typeLabel)}`,
+  ];
+
+  if (location) lines.push(`Location: ${escapeTelegramHtml(location)}`);
+  if (url) {
+    const escapedUrl = escapeTelegramHtml(url);
+    lines.push(`Link: <a href="${escapedUrl}">${escapedUrl}</a>`);
+  }
+  if (deadline) {
+    lines.push(`Deadline found: ${escapeTelegramHtml(deadline)}`);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(deadline) && deadline < referenceDateIso(post, todayIso)) {
+      const warning = `AI found ${deadline}, but that's already in the past \u2014 likely wrong, please check`;
+      lines.push(`\u26a0\ufe0f ${escapeTelegramHtml(warning)}`);
+    }
+  } else if (deadlineRaw) {
+    lines.push(`No clear deadline parsed \u2014 post said: \u201c${escapeTelegramHtml(deadlineRaw)}\u201d`);
+  } else {
+    lines.push("Deadline: not found \u2014 pick one below, or leave it blank");
+  }
+
+  lines.push(`Requires enrollment letter: ${extracted.requires_letter ? "Yes" : "No"}`);
+
+  const contact = objectValue(extracted.contact);
+  if (contact) {
+    lines.push(
+      `Contact only, no application link: ${escapeTelegramHtml(contact.type)} ${escapeTelegramHtml(contact.value)}`,
+    );
+  }
+
+  const confidence = typeof extracted.confidence === "number" && Number.isFinite(extracted.confidence)
+    ? extracted.confidence
+    : 0;
+  lines.push(`Confidence: ${Math.round(confidence * 100)}%`);
+
+  const evidence = objectValue(extracted.evidence);
+  const note = evidence && (nonEmptyString(evidence.note) ?? nonEmptyString(evidence.reason));
+  if (note) lines.push(`Why: ${escapeTelegramHtml(note)}`);
+
+  const permalink = nonEmptyString(post.permalink);
+  if (permalink) {
+    lines.push(`Source: <a href="${escapeTelegramHtml(permalink)}">original post</a>`);
+  }
+  const channel = nonEmptyString(post.channel);
+  if (channel) lines.push(`From: ${escapeTelegramHtml(channel)}`);
+
+  return lines.join("\n");
+}
+
 // -------------------------------------------------------- back-to-normal
 
 /**

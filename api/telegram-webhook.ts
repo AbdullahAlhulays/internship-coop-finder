@@ -64,6 +64,7 @@ import {
   EDIT_ACTIONS,
   EditableField,
   FIELD_LABELS,
+  formatPendingCardMessage,
   formatIsoDate,
   isCancelCommand,
   isConstrainedField,
@@ -100,6 +101,7 @@ import {
   readPending,
   restoreDraft,
   type PendingFile,
+  type PendingRecord,
 } from "./github-state";
 
 const TELEGRAM_API = "https://api.telegram.org";
@@ -154,6 +156,39 @@ async function editMessageReplyMarkup(
     // prompt failed. Telegram reports that idempotent replay as 400.
     if (response.status === 400 && detail.toLowerCase().includes("message is not modified")) return;
     throw new TelegramApiError(`Telegram editMessageReplyMarkup failed (${response.status}): ${detail}`);
+  }
+}
+
+async function editMessageText(
+  token: string,
+  chatId: number | string,
+  messageId: number,
+  text: string,
+  replyMarkup: unknown,
+): Promise<void> {
+  let response: Response;
+  try {
+    response = await fetch(`${TELEGRAM_API}/bot${token}/editMessageText`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: chatId,
+        message_id: messageId,
+        text,
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        reply_markup: replyMarkup,
+      }),
+    });
+  } catch (err) {
+    throw new TelegramApiError(`Telegram editMessageText network failure: ${String(err)}`);
+  }
+  if (!response.ok) {
+    const detail = await response.text();
+    // Telegram uses this 400 for a successful idempotent replay after
+    // our first response was lost. Treat it as already completed.
+    if (response.status === 400 && detail.toLowerCase().includes("message is not modified")) return;
+    throw new TelegramApiError(`Telegram editMessageText failed (${response.status}): ${detail}`);
   }
 }
 
@@ -216,6 +251,31 @@ async function dispatchToGitHub(repo: string, ghToken: string, action: string, c
 function currentDeadlineOf(pending: PendingFile, candidateId: string): string | null {
   const raw = pending[candidateId]?.extracted?.deadline;
   return typeof raw === "string" ? raw : null;
+}
+
+function storedCardMessageId(record: PendingRecord | undefined): number | undefined {
+  const value = record?.delivery?.telegram_message_id;
+  return typeof value === "number" ? value : undefined;
+}
+
+async function refreshPendingCard(
+  token: string,
+  chatId: number | string,
+  messageId: number,
+  candidateId: string,
+  pending: PendingFile,
+): Promise<void> {
+  const record = pending[candidateId];
+  if (!record) {
+    throw new PatchError(`${candidateId} is no longer pending -- the Telegram card cannot be refreshed`);
+  }
+  await editMessageText(
+    token,
+    chatId,
+    messageId,
+    formatPendingCardMessage(record.extracted, record.post),
+    buildApprovalKeyboard(candidateId, currentDeadlineOf(pending, candidateId)),
+  );
 }
 
 /**
@@ -291,9 +351,9 @@ async function handleLocalAction(
           await answerCallbackQuery(token, callbackQueryId);
           await resolveCreationDeadline(candidateId, null, chatId, messageId, token, repo, ghToken);
         } else {
-          await patchPending(repo, ghToken, `Telegram: clear deadline for ${candidateId}`, (data) => applyDeadlinePatch(data, candidateId, null));
+          const updated = await patchPending(repo, ghToken, `Telegram: clear deadline for ${candidateId}`, (data) => applyDeadlinePatch(data, candidateId, null));
           await answerCallbackQuery(token, callbackQueryId, "Deadline cleared.");
-          await editMessageReplyMarkup(token, chatId, messageId, buildApprovalKeyboard(candidateId, null));
+          await refreshPendingCard(token, chatId, messageId, candidateId, updated);
         }
         return new Response("ok", { status: 200 });
       }
@@ -308,9 +368,9 @@ async function handleLocalAction(
           await answerCallbackQuery(token, callbackQueryId, `Deadline set: ${iso}`);
           await resolveCreationDeadline(pick.candidateId, iso, chatId, messageId, token, repo, ghToken);
         } else {
-          await patchPending(repo, ghToken, `Telegram: set deadline ${iso} for ${pick.candidateId}`, (data) => applyDeadlinePatch(data, pick.candidateId, iso));
+          const updated = await patchPending(repo, ghToken, `Telegram: set deadline ${iso} for ${pick.candidateId}`, (data) => applyDeadlinePatch(data, pick.candidateId, iso));
           await answerCallbackQuery(token, callbackQueryId, `Deadline set: ${iso}`);
-          await editMessageReplyMarkup(token, chatId, messageId, buildApprovalKeyboard(pick.candidateId, iso));
+          await refreshPendingCard(token, chatId, messageId, pick.candidateId, updated);
         }
         return new Response("ok", { status: 200 });
       }
@@ -338,7 +398,8 @@ async function handleLocalAction(
           await answerCallbackQuery(token, callbackQueryId);
           await editMessageReplyMarkup(token, chatId, messageId, buildConstrainedChoiceKeyboard(field, candidateId));
         } else {
-          await patchPending(repo, ghToken, `Telegram: awaiting ${field} for ${candidateId}`, (data) => applyAwaitingEditPatch(data, candidateId, field));
+          await patchPending(repo, ghToken, `Telegram: awaiting ${field} for ${candidateId}`, (data) =>
+            applyAwaitingEditPatch(data, candidateId, field, messageId));
           await answerCallbackQuery(token, callbackQueryId, `Reply to this chat with the new ${FIELD_LABELS[field].toLowerCase()}.`);
         }
         return new Response("ok", { status: 200 });
@@ -349,9 +410,10 @@ async function handleLocalAction(
         if (!parsed || !isEditableField(parsed.field)) throw new Error("malformed edit-set button");
         const { field, value, candidateId } = parsed;
         const typedValue: unknown = field === "requires_letter" ? value === "true" : value;
-        const pending = await patchPending(repo, ghToken, `Telegram: set ${field} for ${candidateId}`, (data) => applyFieldValuePatch(data, candidateId, field, typedValue));
+        const pending = await patchPending(repo, ghToken, `Telegram: set ${field} for ${candidateId}`, (data) =>
+          applyFieldValuePatch(data, candidateId, field, typedValue, undefined, messageId));
         await answerCallbackQuery(token, callbackQueryId, "Updated.");
-        await editMessageReplyMarkup(token, chatId, messageId, buildApprovalKeyboard(candidateId, currentDeadlineOf(pending, candidateId)));
+        await refreshPendingCard(token, chatId, messageId, candidateId, pending);
         return new Response("ok", { status: 200 });
       }
 
@@ -405,7 +467,7 @@ async function handleLocalAction(
     if (err instanceof TelegramApiError) {
       // A 5xx makes Telegram retry the exact same update. Every local
       // state transition above is idempotent, including the special
-      // "message is not modified" handling in editMessageReplyMarkup.
+      // "message is not modified" handling in both Telegram edit calls.
       console.error("telegram-webhook: Telegram delivery failed; requesting update retry", action, err);
       return new Response("Telegram delivery failed", { status: 502 });
     }
@@ -741,6 +803,11 @@ async function handleTextMessage(update: TelegramUpdate, token: string): Promise
   if (message.message_id !== undefined) {
     const appliedRetry = findAppliedEditRetry(pending, message.message_id);
     if (appliedRetry.status === "found" && isEditableField(appliedRetry.field)) {
+      const cardMessageId = appliedRetry.cardMessageId
+        ?? storedCardMessageId(pending[appliedRetry.candidateId]);
+      if (cardMessageId !== undefined) {
+        await refreshPendingCard(token, message.chat.id, cardMessageId, appliedRetry.candidateId, pending);
+      }
       await sendPlainMessage(
         token,
         message.chat.id,
@@ -773,9 +840,11 @@ async function handleTextMessage(update: TelegramUpdate, token: string): Promise
   }
 
   const value = message.text.trim();
+  const cardMessageId = lookup.cardMessageId ?? storedCardMessageId(pending[candidateId]);
+  let updated: PendingFile;
   try {
-    await patchPending(repo, ghToken, `Telegram edit: ${field} for ${candidateId}`, (data) =>
-      applyFieldValuePatch(data, candidateId, field, value, message.message_id),
+    updated = await patchPending(repo, ghToken, `Telegram edit: ${field} for ${candidateId}`, (data) =>
+      applyFieldValuePatch(data, candidateId, field, value, message.message_id, cardMessageId),
     );
   } catch (err) {
     const detail = err instanceof PatchError ? err.message : "please try again";
@@ -784,7 +853,11 @@ async function handleTextMessage(update: TelegramUpdate, token: string): Promise
   }
   // Keep delivery outside the write-error catch. If Telegram is down,
   // let the webhook return 5xx; the retry is recognized by last_edit
-  // above and only re-sends this confirmation (never writes twice).
+  // above and replays the idempotent card refresh plus confirmation
+  // (never writes twice).
+  if (cardMessageId !== undefined) {
+    await refreshPendingCard(token, message.chat.id, cardMessageId, candidateId, updated);
+  }
   await sendPlainMessage(token, message.chat.id, `Updated. ${FIELD_LABELS[field]}: "${value}"`);
   return new Response("ok", { status: 200 });
 }

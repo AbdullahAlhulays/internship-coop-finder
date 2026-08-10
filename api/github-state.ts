@@ -31,12 +31,15 @@ export interface PendingRecord {
     sent_at?: string;
     telegram_message_id?: number | null;
   };
-  awaiting_edit?: { field: string };
+  // The callback that starts a free-text edit knows which Telegram
+  // card it came from. Keep that id until the reply arrives so the
+  // webhook can rewrite that exact card after saving the new value.
+  awaiting_edit?: { field: string; card_message_id?: number };
   // If Telegram retries a free-text edit after the GitHub write
-  // succeeded but the confirmation message failed, recognize the
-  // update and re-send the confirmation instead of silently ignoring
-  // it (awaiting_edit has already been cleared by then).
-  last_edit?: { message_id: number; field: string };
+  // succeeded but the card refresh or confirmation failed, recognize
+  // the update and replay only those idempotent Telegram deliveries
+  // (awaiting_edit has already been cleared by then).
+  last_edit?: { message_id: number; field: string; card_message_id?: number };
   // Telegram retries the exact same update when a webhook returns a
   // 5xx. Remember the last applied text message so that a retry
   // re-sends the next prompt instead of applying the same text to the
@@ -167,9 +170,23 @@ export function applyDeadlinePatch(data: PendingFile, candidateId: string, isoDa
   };
 }
 
-export function applyAwaitingEditPatch(data: PendingFile, candidateId: string, field: string): PendingFile {
+export function applyAwaitingEditPatch(
+  data: PendingFile,
+  candidateId: string,
+  field: string,
+  cardMessageId?: number,
+): PendingFile {
   const record = requireRecord(data, candidateId);
-  return { ...data, [candidateId]: { ...record, awaiting_edit: { field } } };
+  return {
+    ...data,
+    [candidateId]: {
+      ...record,
+      awaiting_edit: {
+        field,
+        ...(cardMessageId === undefined ? {} : { card_message_id: cardMessageId }),
+      },
+    },
+  };
 }
 
 export function applyFieldValuePatch(
@@ -178,15 +195,28 @@ export function applyFieldValuePatch(
   field: string,
   value: unknown,
   lastMessageId?: number,
+  cardMessageId?: number,
 ): PendingFile {
   const record = requireRecord(data, candidateId);
   const { awaiting_edit, ...rest } = record;
+  const resolvedCardMessageId = cardMessageId
+    ?? awaiting_edit?.card_message_id
+    ?? record.delivery?.telegram_message_id
+    ?? undefined;
   return {
     ...data,
     [candidateId]: {
       ...rest,
       extracted: { ...record.extracted, [field]: value },
-      ...(lastMessageId === undefined ? {} : { last_edit: { message_id: lastMessageId, field } }),
+      ...(lastMessageId === undefined
+        ? {}
+        : {
+            last_edit: {
+              message_id: lastMessageId,
+              field,
+              ...(resolvedCardMessageId === undefined ? {} : { card_message_id: resolvedCardMessageId }),
+            },
+          }),
     },
   };
 }
@@ -201,7 +231,7 @@ export function clearAwaitingEdit(data: PendingFile, candidateId: string): Pendi
 export type AwaitingEditLookup =
   | { status: "none" }
   | { status: "ambiguous"; candidateIds: string[] }
-  | { status: "found"; candidateId: string; field: string };
+  | { status: "found"; candidateId: string; field: string; cardMessageId?: number };
 
 /** Scans for candidates currently awaiting a free-text edit reply.
  * Deliberately refuses to guess which one an incoming message is for
@@ -213,7 +243,12 @@ export function findAwaitingEdit(data: PendingFile): AwaitingEditLookup {
   if (matches.length === 0) return { status: "none" };
   if (matches.length > 1) return { status: "ambiguous", candidateIds: matches.map(([id]) => id) };
   const [candidateId, record] = matches[0];
-  return { status: "found", candidateId, field: record.awaiting_edit!.field };
+  return {
+    status: "found",
+    candidateId,
+    field: record.awaiting_edit!.field,
+    cardMessageId: record.awaiting_edit!.card_message_id ?? record.delivery?.telegram_message_id ?? undefined,
+  };
 }
 
 // -------------------------------------------------------- /new (create)
@@ -273,7 +308,7 @@ export function applyCreationFieldAndAdvance(
 export type AppliedEditRetryLookup =
   | { status: "none" }
   | { status: "ambiguous"; candidateIds: string[] }
-  | { status: "found"; candidateId: string; field: string; value: unknown };
+  | { status: "found"; candidateId: string; field: string; value: unknown; cardMessageId?: number };
 
 /** Locate an edit whose state write already succeeded for this exact
  * Telegram message. Message ids are unique within the authorized chat,
@@ -284,7 +319,13 @@ export function findAppliedEditRetry(data: PendingFile, messageId: number): Appl
   if (matches.length > 1) return { status: "ambiguous", candidateIds: matches.map(([id]) => id) };
   const [candidateId, record] = matches[0];
   const field = record.last_edit!.field;
-  return { status: "found", candidateId, field, value: record.extracted[field] };
+  return {
+    status: "found",
+    candidateId,
+    field,
+    value: record.extracted[field],
+    cardMessageId: record.last_edit!.card_message_id ?? record.delivery?.telegram_message_id ?? undefined,
+  };
 }
 
 /** Recreate a completed draft when repository_dispatch itself fails.
