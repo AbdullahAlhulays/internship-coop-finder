@@ -756,7 +756,7 @@
         "location": "#رأس_الخير"
       },
       "is_opportunity": true,
-      "location": "Ras Al Khair",
+      "location": "Al Jubail",
       "reason_excluded": null,
       "requires_letter": false,
       "title": "Coop Electrical Engineer",
@@ -774,7 +774,8 @@
       "posted_at": "2026-08-06T04:28:44+00:00",
       "text": "🎓 #التدريب_التعاوني | #رأس_الخير\nNOV تعلن عن فتح باب التقديم في برنامج التدريب التعاوني Coop Electrical Engineer لطلاب وطالبات الجامعات.\nالتخصصات المستهدفة:\nالهندسة الكهربائية\nالمتطلبات:\nالالتزام بممارسات السلامة الكهربائية\nالاهتمام بأنظمة الكهرباء الصناعية\nالرغبة في اكتساب خبرة عملية في التركيبات الكهربائية واختبار الأنظمة\nالاستعداد للمشاركة في أعمال التشغيل والاختبارات تحت الإشراف\n\nللتقديمــــــــــــــــــــ"
     },
-    "awaiting_edit": {
+    "last_edit": {
+      "message_id": 53,
       "field": "location",
       "card_message_id": 51
     }
