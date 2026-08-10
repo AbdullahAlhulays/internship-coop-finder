@@ -648,7 +648,7 @@
       "telegram_message_id": 32
     },
     "extracted": {
-      "company": "?? BUTTON TEST - press Reject on this card",
+      "company": "Aramco",
       "confidence": 1,
       "contact": null,
       "deadline": "2026-08-12",
@@ -670,7 +670,8 @@
       "permalink": null,
       "posted_at": "2026-08-10T13:00:32+03:00"
     },
-    "awaiting_edit": {
+    "last_edit": {
+      "message_id": 33,
       "field": "company",
       "card_message_id": 32
     }
