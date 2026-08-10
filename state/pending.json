@@ -598,41 +598,5 @@
       "posted_at": "2026-08-10T01:44:42+00:00",
       "text": "🎓 #التدريب_التعاوني |\n\n📍ممكن عدة مدن\n\nشركة لومي Lumi\n\nتعلن عن فتح التقديم على Co-op Internship Program 2026.\n\nالتخصصات :\nلم يتم تحديد تخصصات معينة\n\nالمتطلبات :\nسعودي الجنسية\nطالب متوقع تخرجه\nمعدل تراكمي جيد جدًا\nخطاب من الجامعة\nأن يكون التدريب التعاوني في الفصل الأول أو الثاني أو الصيفي\n\nمدة التدريب:\nحسب الفصل الأكاديمي (أول / ثاني / صيفي)\n\nالمزايا:\nمكافأة شهرية 1,500 ريال\nتوفير جهاز Laptop/PC طوال فترة التدريب\nشهادة خبرة من لومي بعد إتمام التدريب\n\nللتقديم_____________"
     }
-  },
-  "test:approve-1786355939402": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-10T09:59:19+00:00",
-      "status": "sent",
-      "telegram_message_id": 31
-    },
-    "extracted": {
-      "company": "?? BUTTON TEST - edit fields, then press Approve",
-      "confidence": 1,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "evidence": {
-        "note": "created manually via Telegram /new"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh - safe test",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "internship",
-      "url": "https://example.com/codex-telegram-test/approve-1786355939402"
-    },
-    "post": {
-      "channel": "manual",
-      "message_id": null,
-      "permalink": null,
-      "posted_at": "2026-08-10T12:59:17+03:00"
-    }
   }
 }
