@@ -166,6 +166,135 @@
       "text": "(🔴) صندوق التنمية الوطني يعلن فتح التقديم في (برنامج التدريب التعاوني) لعام ٢٠٢٦م:\n\n⭐️ التخصصات (إدارة الأعمال، إدارة المشاريع، المالية، المحاسبة، القانون، الاقتصاد، الإعلام).\n📍 مكان التدريب (مدينة الرياض).\n🎓 الفئة المستهدفة (طلاب وطالبات مرحلة البكالوريوس).\n\nhttps://www.jobs4.net/31973"
     }
   },
+  "SALTRAI:5499": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T11:12:55+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Tourism technology company",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "شركة متخصصة في مجال السياحة التقنية",
+        "deadline": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://forms.gle/9Jq5cDjA1e4Ln8kb8"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/9Jq5cDjA1e4Ln8kb8"
+      ],
+      "message_id": 5499,
+      "permalink": "https://t.me/SALTRAI/5499",
+      "posted_at": "2026-08-10T10:10:59+00:00",
+      "text": "🟡الفرصة رقم ٢٧١٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\nيسر شركة متخصصة في مجال السياحة التقنية استقبال طلبات التدريب التعاوني في المجالات التاليه\n\nمحاسبة (Accounting)\nمصمم تجربة وواجهة المستخدم (UX/UI)\n\nللتقديم يرجى تعبئة النموذج عبر الرابط التالي:\nhttps://forms.gle/9Jq5cDjA1e4Ln8kb8"
+    }
+  },
+  "SALTRAI:5502": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T11:13:04+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "إثبات",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "شركة إثبات",
+        "deadline": null,
+        "location": "القصيم"
+      },
+      "is_opportunity": true,
+      "location": "القصيم, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
+      ],
+      "message_id": 5502,
+      "permalink": "https://t.me/SALTRAI/5502",
+      "posted_at": "2026-08-10T10:10:59+00:00",
+      "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
+    }
+  },
+  "SALTRAI:5510": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T11:13:05+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Makkah Municipality | أمانة العاصمة المقدسة",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": "من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ",
+      "evidence": {
+        "company": "أمانة العاصمة المقدسة",
+        "deadline": "من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": "Makkah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://hmm.gov.sa/esrvc/coop.php"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://hmm.gov.sa/esrvc/coop.php",
+        "https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
+      ],
+      "message_id": 5510,
+      "permalink": "https://t.me/SALTRAI/5510",
+      "posted_at": "2026-08-10T10:16:15+00:00",
+      "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
@@ -254,6 +383,49 @@
       "text": "🟡الفرصة رقم ٢٧١٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\nيسر شركة متخصصة في مجال السياحة التقنية استقبال طلبات التدريب التعاوني في المجالات التاليه\n\nمحاسبة (Accounting)\nمصمم تجربة وواجهة المستخدم (UX/UI)\n\nللتقديم يرجى تعبئة النموذج عبر الرابط التالي:\nhttps://forms.gle/9Jq5cDjA1e4Ln8kb8"
     }
   },
+  "cooptraning_inksa:4351": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T11:13:49+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "إثبات",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "شركة إثبات",
+        "deadline": null,
+        "location": "القصيم"
+      },
+      "is_opportunity": true,
+      "location": "Buraidah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "شاغر تدريبي في القصيم (محاسبة)",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
+      ],
+      "message_id": 4351,
+      "permalink": "https://t.me/cooptraning_inksa/4351",
+      "posted_at": "2026-08-09T14:53:49+00:00",
+      "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
+    }
+  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
@@ -296,6 +468,48 @@
       "permalink": "https://t.me/nobthacv1/2042",
       "posted_at": "2026-08-01T03:50:34+00:00",
       "text": "🎓 #التدريب_التعاوني | #جدة #الرياض بس ممكن #الخبر\n\nشركة بوبا العربية\n\n1. Coop - Patient Experience & Operational Analytics\n\n2. Intern (Coop/Tamheer) Financial Planning & Perfo\n\n3. Tamheer / COOP - Digital Marketing\n\nللتقديمـــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2043": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T11:13:06+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Ministry of Justice | وزارة العدل",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني | وزارة العدل",
+        "deadline": null,
+        "location": "#الرياض - #الدمام - #جدة - #القصيم - #حفرالباطن - #مكة - #المدينة - #تبوك - #الرس - #رماح - #ينبع - #أبها - #الباحة"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://training.moj.gov.sa/applications"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://training.moj.gov.sa/applications"
+      ],
+      "message_id": 2043,
+      "permalink": "https://t.me/nobthacv1/2043",
+      "posted_at": "2026-08-01T03:59:27+00:00",
+      "text": "#التدريب_التعاوني | وزارة العدل\n\n📍 مواقع التدريب:\n#الرياض - #الدمام - #جدة - #القصيم - #حفرالباطن - #مكة - #المدينة - #تبوك - #الرس - #رماح - #ينبع - #أبها - #الباحة\n\n🏛 جهات التدريب المتاحة:\nوكالة الوزارة للشؤون القضائية\nوكالة الوزارة للتوثيق والتسجيل العيني للعقار\nوكالة الوزارة للخدمات المشتركة\nمركز التدريب العدلي\nمكتب الإجراءات\n\n⏰ ساعات التدريب:\nمن الساعة 8:00 صباحًا حتى 2:15 ظهرًا\n\nمميزات التدريب:\nتجربة عملية في بيئة عدلية احترافية\nإشراف مباشر من مختصين في المجالات القانونية والإدارية\nفرصة لاكتساب خبرة واقعية في القطاعات القضائية والتوثيقية\n\n📅 وقت التقديم غير محدد تابعو موقعهم لان الفرص تطرح باستمرار\n\nللتقديم_____________"
     }
   },
   "nobthacv1:2046": {
@@ -382,6 +596,48 @@
       "permalink": "https://t.me/nobthacv1/2050",
       "posted_at": "2026-08-04T06:59:32+00:00",
       "text": "🎓 #التدريب_التعاوني | #الرياض\n\nصندوق التنمية الوطني (NDF)تعلن عن فتح باب التقديم في برنامج التدريب التعاوني COOP-2026 لطلاب وطالبات الجامعات السعوديين.\nالتخصصات المستهدفة:\nإدارة الأعمال\nإدارة المشاريع\nالمالية\nالمحاسبة\nالقانون\nالاقتصاد\nالإعلام\nالمتطلبات:\nسعودي الجنسية\nدرجة البكالوريوس\nاجتياز المقابلة الشخصية\nمعدل تراكمي لا يقل عن 3.00 من 4.00 أو 3.75 من 5.00\n\nللتقديمــــــــــــــــــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2051": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T11:13:20+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "MEMF Electrical Industries Co",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "MEMF Electrical Industries Co",
+        "deadline": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "برنامج التدريب التعاوني (COOP)",
+      "type": "coop",
+      "url": "https://hunt.kayanhr.com/share/LOlAseV7"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://hunt.kayanhr.com/share/LOlAseV7"
+      ],
+      "message_id": 2051,
+      "permalink": "https://t.me/nobthacv1/2051",
+      "posted_at": "2026-08-04T07:05:04+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\nMEMF Electrical Industries Co تعلن عن فتح باب التقديم في برنامج التدريب التعاوني (COOP) لطلاب وطالبات الجامعات والكليات.\nالتخصصات المستهدفة:\nالهندسة الكهربائية\nالتسويق\nتقنية المعلومات\nالمالية\nالمحاسبة\nالموارد البشرية\nالمتطلبات:\nطالب منتظم في جامعة أو كلية معترف بها\nأن يكون التدريب التعاوني متطلبًا للتخرج\nأن يكون التخصص متوافقًا مع الفرصة التدريبية\nالقدرة على الحضور في مقر الشركة بمدينة الرياض\nتقديم خطاب تدريب تعاوني رسمي من الجامعة أو الكلية\n\nالمزايا:\n6 ساعات عمل يوميًا\nالتدريب في القسم المرتبط بالتخصص\nتنفيذ مشروع تخرج خلال آخر شهرين من البرنامج\n\nللتقديمـــــــــــــــــ"
     }
   },
   "nobthacv1:2052": {
@@ -554,6 +810,48 @@
       "permalink": "https://t.me/nobthacv1/2059",
       "posted_at": "2026-08-06T04:32:19+00:00",
       "text": "🎓 #التدريب_التعاوني | #الرياض\nMRSOOL تعلن عن فتح باب التقديم في برنامج التدريب التعاوني Co-op Intern – Procurement لطلاب وطالبات الجامعات السعوديين.\nالتخصصات المستهدفة:\nإدارة الأعمال\nإدارة سلاسل الإمداد\nالخدمات اللوجستية\nالهندسة الصناعية\nأو تخصصات ذات صلة\nالمتطلبات:\nطالب بكالوريوس ويشترط أن يكون التدريب التعاوني متطلبًا للتخرج\nمهارات تواصل وعلاقات جيدة\nمهارات تنظيمية والاهتمام بالتفاصيل\nإجادة استخدام Microsoft Office، خاصة Excel\nإجادة اللغتين العربية والإنجليزية\nالرغبة في التعلم والعمل ضمن فريق\n\nللتقديمـــــــــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2060": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T11:13:27+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "SAMI | الشركة السعودية للصناعات العسكرية",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني | SAMI Land",
+        "deadline": null,
+        "location": "#الخرج"
+      },
+      "is_opportunity": true,
+      "location": "Al-Kharj, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "Project Management Office (PMO) - COOP",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4447369122"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4447369122"
+      ],
+      "message_id": 2060,
+      "permalink": "https://t.me/nobthacv1/2060",
+      "posted_at": "2026-08-06T04:35:45+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الخرج\nSAMI Land تعلن عن فتح باب التقديم في برنامج التدريب التعاوني Project Management Office (PMO) - COOP لطلاب وطالبات الجامعات السعوديين.\nالتخصصات المستهدفة:\nإدارة الأعمال\nالهندسة الصناعية\nالهندسة الميكانيكية\nنظم إدارة المعلومات\nأو تخصصات ذات صلة\nالمتطلبات:\nطالب بكالوريوس في أحد التخصصات المطلوبة\nمنتظم في برنامج التدريب التعاوني مع خطاب رسمي من الجامعة\nمعدل تراكمي لا يقل عن 3.75 من 5.00 أو 2.75 من 4.00\nاستيفاء متطلبات الجامعة للتدريب التعاوني\nمهارات تواصل وتنظيم\nإجادة استخدام Microsoft Office (Word، Excel، PowerPoint)\n\nللتقديمــــــــــــــــــــــــــــ"
     }
   },
   "nobthacv1:2063": {
