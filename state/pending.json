@@ -568,8 +568,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T11:21:00+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T11:21:04+00:00",
+      "status": "sent",
+      "telegram_message_id": 50
     },
     "extracted": {
       "company": "National Transport Safety Center | المركز الوطني لسلامة النقل",
@@ -785,8 +786,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T11:21:00+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T11:21:04+00:00",
+      "status": "sent",
+      "telegram_message_id": 51
     },
     "extracted": {
       "company": "NOV",
