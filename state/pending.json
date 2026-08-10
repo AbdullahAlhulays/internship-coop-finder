@@ -45,8 +45,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:14:17+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:14:18+00:00",
+      "status": "sent",
+      "telegram_message_id": 13
     },
     "extracted": {
       "company": "Test Company",
