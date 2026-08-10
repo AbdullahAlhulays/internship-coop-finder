@@ -634,46 +634,5 @@
       "permalink": null,
       "posted_at": "2026-08-10T12:59:17+03:00"
     }
-  },
-  "test:reject-1786356015821": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-10T10:00:34+00:00",
-      "status": "sent",
-      "telegram_message_id": 32
-    },
-    "extracted": {
-      "company": "Aramco",
-      "confidence": 1,
-      "contact": null,
-      "deadline": "2026-08-12",
-      "deadline_raw": null,
-      "evidence": {
-        "note": "created manually via Telegram /new"
-      },
-      "is_opportunity": true,
-      "location": "Jeddah",
-      "reason_excluded": null,
-      "requires_letter": true,
-      "title": null,
-      "type": "coop",
-      "url": "https://example.com/codex-telegram-test/reject-1786356015821"
-    },
-    "post": {
-      "channel": "manual",
-      "message_id": null,
-      "permalink": null,
-      "posted_at": "2026-08-10T13:00:32+03:00"
-    },
-    "last_edit": {
-      "message_id": 35,
-      "field": "location",
-      "card_message_id": 32
-    }
   }
 }
