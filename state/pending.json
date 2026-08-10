@@ -560,6 +560,51 @@
       "text": "#التدريب_التعاوني\n\n#الرياض\n#جدة\n#الدمام\n#حفرالباطن\n#المدينة_المنورة\n#مكة\n#حائل\n#تبوك\n\nيسرنا في شركة الخريف لتقنية المياه والطاقة الإعلان عن بداية التقديم لـ برنامج التدريب التعاوني، لإتاحة الفرصة للطلاب والطالبات في مرحلة #دبلوم #بكالوريوس لاكتساب الخبرة العملية، وتطوير مهاراتهم، والمشاركة في بيئة عمل احترافية تسهم في بناء مستقبلهم المهني.\n\nنتطلع لاستقبال الكفاءات الطموحة والمساهمة في رحلتهم المهنية"
     }
   },
+  "nobthacv1:2049": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T11:21:00+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "National Transport Safety Center | المركز الوطني لسلامة النقل",
+      "confidence": 0.9,
+      "contact": {
+        "type": "email",
+        "value": "Training@ntsc.gov.sa"
+      },
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني | #الرياض",
+        "deadline": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNTE3WTAyVkVTUUVBMDY2Qkw5WFE4RUZIUi4u"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNTE3WTAyVkVTUUVBMDY2Qkw5WFE4RUZIUi4u"
+      ],
+      "message_id": 2049,
+      "permalink": "https://t.me/nobthacv1/2049",
+      "posted_at": "2026-08-03T23:16:43+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nالمركز الوطني لسلامة النقل يعلن عن فتح باب التقديم في برنامج التدريب التعاوني (COOP) وتمهير لطلاب وطالبات الجامعات السعوديين.\n\nالتخصصات المستهدفة:\n\nلغات وترجمه (لغه إنجليزيه)\n\nالمتطلبات\nيشترط ألا يقل المعدل التراكمي عن:\n\n* 2.50 من 4.00 أو\n* 3.50 من 5.00\n\nللتقديمـــــــــــــــــــــــــــــــــ\n\nhttps://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNTE3WTAyVkVTUUVBMDY2Qkw5WFE4RUZIUi4u\n\nاو عن طريق البريد الالكتروني\n\nTraining@ntsc.gov.sa\n\n🎓 #التدريب_التعاوني | #الرياض"
+    }
+  },
   "nobthacv1:2050": {
     "decision": {
       "action": "add",
@@ -730,6 +775,48 @@
       "permalink": "https://t.me/nobthacv1/2053",
       "posted_at": "2026-08-04T21:16:39+00:00",
       "text": "📢 | #التدريب_التعاوني\n#جدة\n\nتعلن شركة عبداللطيف جميل عن فتح باب التقديم على برنامج التدريب التعاوني (COOP) للفصل الدراسي الأول، لطلاب وطالبات الجامعات في مختلف التخصصات.\n\n📍 الموقع: جدة\n🎓 الفئة المستهدفة: طلاب وطالبات الجامعات (التدريب التعاوني)\n📝 التقديم: عبر بوابة التوظيف الخاصة بعبداللطيف جميل.\n\n🔗 رابط التقديم:\nhttps://careers.alj.com/Mobility/job/Jeddah-COOP-Jeddah/857287423/"
+    }
+  },
+  "nobthacv1:2057": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T11:21:00+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "NOV",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "NOV",
+        "deadline": null,
+        "location": "#رأس_الخير"
+      },
+      "is_opportunity": true,
+      "location": "Ras Al Khair",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Coop Electrical Engineer",
+      "type": "coop",
+      "url": "https://egay.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/job/42609/?utm_medium=jobshare"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://egay.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/job/42609/?utm_medium=jobshare"
+      ],
+      "message_id": 2057,
+      "permalink": "https://t.me/nobthacv1/2057",
+      "posted_at": "2026-08-06T04:28:44+00:00",
+      "text": "🎓 #التدريب_التعاوني | #رأس_الخير\nNOV تعلن عن فتح باب التقديم في برنامج التدريب التعاوني Coop Electrical Engineer لطلاب وطالبات الجامعات.\nالتخصصات المستهدفة:\nالهندسة الكهربائية\nالمتطلبات:\nالالتزام بممارسات السلامة الكهربائية\nالاهتمام بأنظمة الكهرباء الصناعية\nالرغبة في اكتساب خبرة عملية في التركيبات الكهربائية واختبار الأنظمة\nالاستعداد للمشاركة في أعمال التشغيل والاختبارات تحت الإشراف\n\nللتقديمــــــــــــــــــــ"
     }
   },
   "nobthacv1:2058": {
