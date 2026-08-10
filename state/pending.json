@@ -613,7 +613,7 @@
     },
     "extracted": {
       "company": "?? BUTTON TEST - edit fields, then press Approve",
-      "confidence": 1.0,
+      "confidence": 1,
       "contact": null,
       "deadline": null,
       "deadline_raw": null,
@@ -649,9 +649,9 @@
     },
     "extracted": {
       "company": "?? BUTTON TEST - press Reject on this card",
-      "confidence": 1.0,
+      "confidence": 1,
       "contact": null,
-      "deadline": null,
+      "deadline": "2026-08-20",
       "deadline_raw": null,
       "evidence": {
         "note": "created manually via Telegram /new"
