@@ -174,8 +174,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T11:12:55+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T11:13:50+00:00",
+      "status": "sent",
+      "telegram_message_id": 43
     },
     "extracted": {
       "company": "Tourism technology company",
@@ -217,8 +218,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T11:13:04+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T11:13:50+00:00",
+      "status": "sent",
+      "telegram_message_id": 44
     },
     "extracted": {
       "company": "إثبات",
@@ -260,8 +262,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T11:13:05+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T11:13:51+00:00",
+      "status": "sent",
+      "telegram_message_id": 45
     },
     "extracted": {
       "company": "Makkah Municipality | أمانة العاصمة المقدسة",
@@ -391,8 +394,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T11:13:49+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T11:13:51+00:00",
+      "status": "sent",
+      "telegram_message_id": 46
     },
     "extracted": {
       "company": "إثبات",
@@ -478,8 +482,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T11:13:06+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T11:13:51+00:00",
+      "status": "sent",
+      "telegram_message_id": 47
     },
     "extracted": {
       "company": "Ministry of Justice | وزارة العدل",
@@ -606,8 +611,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T11:13:20+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T11:13:52+00:00",
+      "status": "sent",
+      "telegram_message_id": 48
     },
     "extracted": {
       "company": "MEMF Electrical Industries Co",
@@ -820,8 +826,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T11:13:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T11:13:52+00:00",
+      "status": "sent",
+      "telegram_message_id": 49
     },
     "extracted": {
       "company": "SAMI | الشركة السعودية للصناعات العسكرية",
