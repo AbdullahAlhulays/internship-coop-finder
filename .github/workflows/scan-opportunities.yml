@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      CHANNELS: "SALTRAI"
+      CHANNELS: "SALTRAI nobthacv1 cooptraning_inksa"
       POST_LIMIT: "20"
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
