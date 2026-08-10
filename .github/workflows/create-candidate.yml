@@ -1,0 +1,135 @@
+# Save this file as .github/workflows/create-candidate.yml, right next
+# to process-approval.yml (same repo, same folder). Triggered by the
+# /new Telegram flow (see telegram-webhook.ts's finishCreation) once
+# all six fields have been collected.
+#
+# Same two-step shape as process-approval.yml, for the same reason:
+# create_candidate.py --defer-send writes state/pending.json but does
+# NOT send the Telegram review card yet, because nothing is real until
+# the commit below is actually pushed. Only the second step, which
+# only runs once the first step has genuinely succeeded, sends it --
+# see create_candidate.py's send_pending_candidate() docstring for the
+# full reasoning (it's the exact same reasoning as process_approval.py's
+# --defer-notice).
+
+name: Create Candidate From Telegram
+
+on:
+  repository_dispatch:
+    types: [telegram-create]
+
+permissions:
+  contents: write # needed to commit and push state/pending.json
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node (create_candidate.py -> read_companies.py shells out to node)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python dependencies
+        run: pip install -r agent/requirements.txt
+
+      - name: Configure git identity
+        run: |
+          git config user.name "opportunity-agent"
+          git config user.email "actions@users.noreply.github.com"
+
+      # Same push-collision retry as process-approval.yml's "Apply the
+      # decision" step, and the same reason: a /new draft finishing at
+      # the same moment an Approve/Reject (or another /new) is being
+      # processed would otherwise silently lose whichever one pushed
+      # second. On a rejected push, reset to the fresh remote and redo
+      # the whole thing against it -- this step only ever writes
+      # state/pending.json, never companies.js, so a clean redo here is
+      # cheap and cannot half-apply anything to the live site.
+      - name: Create the candidate, then commit and push (retrying on collisions)
+        id: create
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRAFT_ID: ${{ github.event.client_payload.draft_id }}
+          COMPANY: ${{ github.event.client_payload.company }}
+          TYPE: ${{ github.event.client_payload.type }}
+          URL: ${{ github.event.client_payload.url }}
+          LOCATION: ${{ github.event.client_payload.location }}
+          DEADLINE: ${{ github.event.client_payload.deadline }}
+          REQUIRES_LETTER: ${{ github.event.client_payload.requires_letter }}
+        run: |
+          set -euo pipefail
+
+          LETTER_FLAG=""
+          if [ "$REQUIRES_LETTER" = "true" ]; then
+            LETTER_FLAG="--requires-letter"
+          fi
+
+          MAX_ATTEMPTS=5
+          for attempt in $(seq 1 $MAX_ATTEMPTS); do
+            echo "::group::Attempt $attempt of $MAX_ATTEMPTS"
+
+            if [ "$attempt" -gt 1 ]; then
+              git fetch origin "$GITHUB_REF_NAME"
+              git reset --hard "origin/$GITHUB_REF_NAME"
+            fi
+
+            # --defer-send: add to state/pending.json, but don't send the
+            # Telegram review card yet -- nothing is real until the push
+            # below succeeds. A genuine problem (duplicate link, invalid
+            # type, read_companies failure) raises here and Abood is
+            # already told why by create_candidate.py itself -- that's
+            # not deferred, since there's nothing to roll back on a
+            # failure that never wrote anything.
+            python agent/create_candidate.py "$DRAFT_ID" "$COMPANY" "$TYPE" "$URL" \
+              --location "$LOCATION" --deadline "$DEADLINE" $LETTER_FLAG --defer-send
+
+            git add -A
+            if git diff --cached --quiet; then
+              echo "Nothing to commit -- unexpected for a successful create, but not fatal."
+              break
+            fi
+
+            git commit -m "Telegram /new: $DRAFT_ID ($COMPANY)"
+            if git push; then
+              echo "Pushed successfully."
+              break
+            fi
+
+            echo "Push rejected -- another approval or creation landed first."
+            if [ "$attempt" -eq "$MAX_ATTEMPTS" ]; then
+              python agent/notify.py "$DRAFT_ID" --failed \
+                --detail "couldn't save after $MAX_ATTEMPTS tries (too much happening at once) -- please try /new again"
+              exit 1
+            fi
+            sleep $(( (RANDOM % 5) + 2 ))
+            echo "::endgroup::"
+          done
+
+      # Only now is the candidate genuinely committed and pushed, so
+      # only now is it honest to show Abood the review card. Reads
+      # state/pending.json straight from this same runner's working
+      # copy -- it already reflects the exact commit that was just
+      # pushed (same checkout, sequential steps in one job), so there's
+      # nothing to re-fetch here.
+      - name: Send the review card, now that it's genuinely pushed
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRAFT_ID: ${{ github.event.client_payload.draft_id }}
+        run: |
+          python agent/create_candidate.py "$DRAFT_ID" --send-only
+
+# FOLDER LAYOUT: identical to process-approval.yml's -- see the note at
+# the bottom of that file. This workflow and create_candidate.py both
+# assume they're running from the repo root, with agent/ holding the
+# Python scripts (same layout, same repo, no new folders needed).
