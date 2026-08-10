@@ -1,42 +1,4 @@
 {
-  "SALTRAI:5493": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "extracted": {
-      "company": "General Authority for Statistics | الهيئة العامة للإحصاء",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "evidence": {
-        "company": "الهيئة العامة للإحصاء",
-        "deadline": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Cooperative Training Program",
-      "type": "coop",
-      "url": "https://www.jobs4.net/31972"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://www.jobs4.net/31972"
-      ],
-      "message_id": 5493,
-      "permalink": "https://t.me/SALTRAI/5493",
-      "posted_at": "2026-08-09T10:43:20+00:00",
-      "text": "(🔴) هام | الهيئة العامة للإحصاء تعلن فتح التقديم في برنامج (التدريب التعاوني) للعام ١٤٤٨هـ (للجنسين):\n\n⭐️ للتخصصات (الإحصاء، الرياضيات، الاقتصاد، تحليل البيانات، الذكاء الاصطناعي، تقنية المعلومات، إدارة الأعمال، الموارد البشرية، المحاسبة، القانون، الإعلام) وغيرها.\n\nhttps://www.jobs4.net/31972"
-    }
-  },
   "SALTRAI:5494": {
     "decision": {
       "action": "add",

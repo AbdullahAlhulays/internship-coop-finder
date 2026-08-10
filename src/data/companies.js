@@ -700,4 +700,10 @@ export const companies = [
   type: "CO-OP Training",
   addedAt: "2026-06-02T00:00:00+03:00",
 },
-];
+
+  {
+    name: "General Authority for Statistics | الهيئة العامة للإحصاء",
+    applicationLink: "https://www.jobs4.net/31972",
+    type: "CO-OP Training",
+    addedAt: "2026-08-10T06:59:34+03:00",
+  },];
