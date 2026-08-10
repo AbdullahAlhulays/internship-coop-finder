@@ -1,4 +1,130 @@
 {
+  "SALTRAI:5478": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:51:05+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "ASAS | اساس",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#اساس",
+        "deadline": null,
+        "location": "#الاحساء"
+      },
+      "is_opportunity": true,
+      "location": "Al-Ahsa, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSd28TF29Dt5-HnR-DUeC_4vN1MZRAArF1ssCwNTysLrFF_YOw/viewform"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSd28TF29Dt5-HnR-DUeC_4vN1MZRAArF1ssCwNTysLrFF_YOw/viewform"
+      ],
+      "message_id": 5478,
+      "permalink": "https://t.me/SALTRAI/5478",
+      "posted_at": "2026-08-07T12:01:12+00:00",
+      "text": "https://docs.google.com/forms/d/e/1FAIpQLSd28TF29Dt5-HnR-DUeC_4vN1MZRAArF1ssCwNTysLrFF_YOw/viewform\n#تدريب_تعاوني #اساس #تسويق #اعلام #الاحساء #تعاوني"
+    }
+  },
+  "SALTRAI:5479": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:51:05+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Ministry of Transport | وزارة النقل",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#وزارة_النقل",
+        "deadline": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://surveys.mot.gov.sa/s/57BF26102AB544F9BE5181ED4CE4D776"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://surveys.mot.gov.sa/s/57BF26102AB544F9BE5181ED4CE4D776"
+      ],
+      "message_id": 5479,
+      "permalink": "https://t.me/SALTRAI/5479",
+      "posted_at": "2026-08-07T12:02:59+00:00",
+      "text": "https://surveys.mot.gov.sa/s/57BF26102AB544F9BE5181ED4CE4D776\n\n#وزارة_النقل #تدريب_تعاوني #طلاب_الجامعة #طلاب #تدريب"
+    }
+  },
+  "SALTRAI:5483": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:51:07+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Ministry of Tourism | وزارة السياحة",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "وزارة السياحة",
+        "deadline": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/"
+      ],
+      "message_id": 5483,
+      "permalink": "https://t.me/SALTRAI/5483",
+      "posted_at": "2026-08-09T10:33:36+00:00",
+      "text": "تدريب تعاوني - وزارة السياحة\n\nالتقديم على الرابط/\nhttps://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/\n\nالفرص موجوده في نفس قائمة تمهير\nولكن اختاروا\n(منتج: التدريب التعاوني)\n\n🔷لازم ترفقون سيرتكم في جدارات\nلانها راح تنعكس في منصة تمهير\n/"
+    }
+  },
   "SALTRAI:5494": {
     "decision": {
       "action": "add",
@@ -35,6 +161,429 @@
       "permalink": "https://t.me/SALTRAI/5494",
       "posted_at": "2026-08-09T10:43:20+00:00",
       "text": "(🔴) صندوق التنمية الوطني يعلن فتح التقديم في (برنامج التدريب التعاوني) لعام ٢٠٢٦م:\n\n⭐️ التخصصات (إدارة الأعمال، إدارة المشاريع، المالية، المحاسبة، القانون، الاقتصاد، الإعلام).\n📍 مكان التدريب (مدينة الرياض).\n🎓 الفئة المستهدفة (طلاب وطالبات مرحلة البكالوريوس).\n\nhttps://www.jobs4.net/31973"
+    }
+  },
+  "cooptraning_inksa:4346": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:52:48+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Daleel Law Firm & Legal Consultations",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "شركة دليل للمحاماة والاستشارات القانونية",
+        "deadline": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://forms.gle/vLpfiDP8DW1zHDXz7"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/vLpfiDP8DW1zHDXz7"
+      ],
+      "message_id": 4346,
+      "permalink": "https://t.me/cooptraning_inksa/4346",
+      "posted_at": "2026-08-09T14:21:15+00:00",
+      "text": "🟡الفرصة رقم ٢٧١١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📣 تعلن شركة دليل للمحاماة والاستشارات القانونية عن فتح باب التسجيل في برنامج التدريب التعاوني الفصل الاول لعام 2026.\n\nيهدف البرنامج إلى تأهيل الطلاب والخريجين وإكسابهم خبرة عملية في بيئة قانونية احترافية من خلال المشاركة في الأعمال القانونية والاستشارية والإدارية تحت إشراف مختصين.\n\n🔹 التخصصات المستهدفة:\n1- القانون أو الانظمة\n2- إدارة الاعمال\n3- تحليل البيانات\n4- تقنية المعلومات IT\n5- تسويق\n6- تصميم جرافيكي\n7- الذكاء اصطناعي AI\n\n🔹 المميزات:\n• خبرة عملية مباشرة.\n• تطوير المهارات المهنية.\n• المشاركة في أعمال ومشاريع حقيقية.\n• شهادة إتمام تدريب معتمدة.\n\n📌 للتسجيل:\nhttps://forms.gle/vLpfiDP8DW1zHDXz7\n\n⏳ المقاعد محدودة، وستتم المفاضلة بين المتقدمين وفقًا للمعايير المعتمدة لدى الشركة."
+    }
+  },
+  "cooptraning_inksa:4349": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:52:55+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Tourism technology company",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "شركة متخصصة في مجال السياحة التقنية",
+        "deadline": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://forms.gle/9Jq5cDjA1e4Ln8kb8"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/9Jq5cDjA1e4Ln8kb8"
+      ],
+      "message_id": 4349,
+      "permalink": "https://t.me/cooptraning_inksa/4349",
+      "posted_at": "2026-08-09T14:22:22+00:00",
+      "text": "🟡الفرصة رقم ٢٧١٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\nيسر شركة متخصصة في مجال السياحة التقنية استقبال طلبات التدريب التعاوني في المجالات التاليه\n\nمحاسبة (Accounting)\nمصمم تجربة وواجهة المستخدم (UX/UI)\n\nللتقديم يرجى تعبئة النموذج عبر الرابط التالي:\nhttps://forms.gle/9Jq5cDjA1e4Ln8kb8"
+    }
+  },
+  "nobthacv1:2042": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:51:15+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Bupa Arabia",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "شركة بوبا العربية",
+        "deadline": null,
+        "location": "#جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://careers.bupa.com.sa/en/saudi-arabia/jobs/trainee-operational-excellence-coop-tamheer-1100087605/"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://careers.bupa.com.sa/en/saudi-arabia/jobs/trainee-operational-excellence-coop-tamheer-1100087605/",
+        "https://careers.bupa.com.sa/en/job-search-results/?keyword=coop&amp;sort=22,d&amp;page=1"
+      ],
+      "message_id": 2042,
+      "permalink": "https://t.me/nobthacv1/2042",
+      "posted_at": "2026-08-01T03:50:34+00:00",
+      "text": "🎓 #التدريب_التعاوني | #جدة #الرياض بس ممكن #الخبر\n\nشركة بوبا العربية\n\n1. Coop - Patient Experience & Operational Analytics\n\n2. Intern (Coop/Tamheer) Financial Planning & Perfo\n\n3. Tamheer / COOP - Digital Marketing\n\nللتقديمـــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2046": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:51:25+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Al Khareef | شركة الخريف",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني",
+        "deadline": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdza_hNJGoRBqJnH4n6D_d5R1Ia-166-cadzMp-CfRN9aFoRw/viewform?pli=1"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSdza_hNJGoRBqJnH4n6D_d5R1Ia-166-cadzMp-CfRN9aFoRw/viewform?pli=1"
+      ],
+      "message_id": 2046,
+      "permalink": "https://t.me/nobthacv1/2046",
+      "posted_at": "2026-08-01T15:22:03+00:00",
+      "text": "#التدريب_التعاوني\n\n#الرياض\n#جدة\n#الدمام\n#حفرالباطن\n#المدينة_المنورة\n#مكة\n#حائل\n#تبوك\n\nيسرنا في شركة الخريف لتقنية المياه والطاقة الإعلان عن بداية التقديم لـ برنامج التدريب التعاوني، لإتاحة الفرصة للطلاب والطالبات في مرحلة #دبلوم #بكالوريوس لاكتساب الخبرة العملية، وتطوير مهاراتهم، والمشاركة في بيئة عمل احترافية تسهم في بناء مستقبلهم المهني.\n\nنتطلع لاستقبال الكفاءات الطموحة والمساهمة في رحلتهم المهنية"
+    }
+  },
+  "nobthacv1:2050": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:51:34+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "National Development Fund | صندوق التنمية الوطني",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني | #الرياض",
+        "deadline": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "COOP-2026",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4447920287/"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4447920287/"
+      ],
+      "message_id": 2050,
+      "permalink": "https://t.me/nobthacv1/2050",
+      "posted_at": "2026-08-04T06:59:32+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nصندوق التنمية الوطني (NDF)تعلن عن فتح باب التقديم في برنامج التدريب التعاوني COOP-2026 لطلاب وطالبات الجامعات السعوديين.\nالتخصصات المستهدفة:\nإدارة الأعمال\nإدارة المشاريع\nالمالية\nالمحاسبة\nالقانون\nالاقتصاد\nالإعلام\nالمتطلبات:\nسعودي الجنسية\nدرجة البكالوريوس\nاجتياز المقابلة الشخصية\nمعدل تراكمي لا يقل عن 3.00 من 4.00 أو 3.75 من 5.00\n\nللتقديمــــــــــــــــــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2052": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:51:47+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "General Authority for Statistics | الهيئة العامة للاحصاء",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني الهيئة العامة للاحصاء",
+        "deadline": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": null,
+      "type": "coop",
+      "url": "https://www.stats.gov.sa/ar/cooperative-training"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.stats.gov.sa/ar/cooperative-training"
+      ],
+      "message_id": 2052,
+      "permalink": "https://t.me/nobthacv1/2052",
+      "posted_at": "2026-08-04T10:44:43+00:00",
+      "text": "#التدريب_التعاوني\n\nالهيئة العامة للاحصاء تعلن بدء التقديم على برنامج التدريب التعاوني للفصل الدراسي الأول لعام 1448هـ (2026م).\n\nشروط القبول\n1 أن لا يقل المعدل عن 3.75 من 5 أو 2.75 من 4 في درجة البكالوريوس.\n2 أن لا يكون المتقدم قد تخرج وحقق متطلبات برنامج التدريب التعاوني.\n3 يجب على المتقدم إتمام فترة التدريب كاملة.\n4 اجتياز المقابلة الشخصية.\n5 أن يكون المتقدم سعودي/ سعودية الجنسية.\n6 اشتراط الجامعة التدريب العملي كمتطلب للتخرج.\n\nالوثائق المطلوبة\nصورة من بطاقة الأحوال المدنية\nخطاب من الجامعة يبين أن برنامج التدريب التعاوني من متطلبات التخرج مع توضيح تاريخ بداية ونهاية التدريب\nالسجل الأكاديمي\n\nرابط التقديم_______________"
+    }
+  },
+  "nobthacv1:2053": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:51:54+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Abdul Latif Jameel",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني تعلن شركة عبداللطيف جميل",
+        "deadline": null,
+        "location": "#جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://careers.alj.com/Mobility/job/Jeddah-COOP-Jeddah/857287423/"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://careers.alj.com/Mobility/job/Jeddah-COOP-Jeddah/857287423/"
+      ],
+      "message_id": 2053,
+      "permalink": "https://t.me/nobthacv1/2053",
+      "posted_at": "2026-08-04T21:16:39+00:00",
+      "text": "📢 | #التدريب_التعاوني\n#جدة\n\nتعلن شركة عبداللطيف جميل عن فتح باب التقديم على برنامج التدريب التعاوني (COOP) للفصل الدراسي الأول، لطلاب وطالبات الجامعات في مختلف التخصصات.\n\n📍 الموقع: جدة\n🎓 الفئة المستهدفة: طلاب وطالبات الجامعات (التدريب التعاوني)\n📝 التقديم: عبر بوابة التوظيف الخاصة بعبداللطيف جميل.\n\n🔗 رابط التقديم:\nhttps://careers.alj.com/Mobility/job/Jeddah-COOP-Jeddah/857287423/"
+    }
+  },
+  "nobthacv1:2058": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:52:07+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Aon",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني | #الرياض Aon",
+        "deadline": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Co-op Graphic Designer Trainee 2026",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4449462878"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4449462878"
+      ],
+      "message_id": 2058,
+      "permalink": "https://t.me/nobthacv1/2058",
+      "posted_at": "2026-08-06T04:29:52+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\nAon تعلن عن فتح باب التقديم في برنامج التدريب التعاوني Co-op Graphic Designer Trainee 2026 لطلاب وطالبات الجامعات السعوديين.\nالتخصصات المستهدفة:\nالتصميم الجرافيكي\nأو تخصصات ذات صلة\nالمتطلبات:\nطالب جامعي في تخصص التصميم الجرافيكي أو تخصص ذي صلة\nسعودي الجنسية\nإجادة استخدام Adobe Creative Cloud (Photoshop، Illustrator، InDesign)\nوجود معرض أعمال (Portfolio)\nخبرة من خلال المشاريع الأكاديمية أو التدريب\nإجادة اللغة الإنجليزية\nمهارات إبداعية، والالتزام بمعايير الهوية البصرية، والتواصل والعمل الجماعي\n\nللتقديم،ـــــــــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2059": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:52:14+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "MRSOOL",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني | MRSOOL",
+        "deadline": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Co-op Intern – Procurement",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4448845754"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4448845754"
+      ],
+      "message_id": 2059,
+      "permalink": "https://t.me/nobthacv1/2059",
+      "posted_at": "2026-08-06T04:32:19+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\nMRSOOL تعلن عن فتح باب التقديم في برنامج التدريب التعاوني Co-op Intern – Procurement لطلاب وطالبات الجامعات السعوديين.\nالتخصصات المستهدفة:\nإدارة الأعمال\nإدارة سلاسل الإمداد\nالخدمات اللوجستية\nالهندسة الصناعية\nأو تخصصات ذات صلة\nالمتطلبات:\nطالب بكالوريوس ويشترط أن يكون التدريب التعاوني متطلبًا للتخرج\nمهارات تواصل وعلاقات جيدة\nمهارات تنظيمية والاهتمام بالتفاصيل\nإجادة استخدام Microsoft Office، خاصة Excel\nإجادة اللغتين العربية والإنجليزية\nالرغبة في التعلم والعمل ضمن فريق\n\nللتقديمـــــــــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2063": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T09:52:27+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Lumi",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "شركة لومي Lumi",
+        "deadline": null,
+        "location": "📍ممكن عدة مدن"
+      },
+      "is_opportunity": true,
+      "location": "several cities",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "Co-op Internship Program 2026",
+      "type": "coop",
+      "url": "https://careers.lumirental.com/job/Co-op-Trainee/857246923/"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://careers.lumirental.com/job/Co-op-Trainee/857246923/"
+      ],
+      "message_id": 2063,
+      "permalink": "https://t.me/nobthacv1/2063",
+      "posted_at": "2026-08-10T01:44:42+00:00",
+      "text": "🎓 #التدريب_التعاوني |\n\n📍ممكن عدة مدن\n\nشركة لومي Lumi\n\nتعلن عن فتح التقديم على Co-op Internship Program 2026.\n\nالتخصصات :\nلم يتم تحديد تخصصات معينة\n\nالمتطلبات :\nسعودي الجنسية\nطالب متوقع تخرجه\nمعدل تراكمي جيد جدًا\nخطاب من الجامعة\nأن يكون التدريب التعاوني في الفصل الأول أو الثاني أو الصيفي\n\nمدة التدريب:\nحسب الفصل الأكاديمي (أول / ثاني / صيفي)\n\nالمزايا:\nمكافأة شهرية 1,500 ريال\nتوفير جهاز Laptop/PC طوال فترة التدريب\nشهادة خبرة من لومي بعد إتمام التدريب\n\nللتقديم_____________"
     }
   }
 }
