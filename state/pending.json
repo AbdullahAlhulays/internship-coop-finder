@@ -1,42 +1,4 @@
 {
-  "SALTRAI:5492": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "extracted": {
-      "company": "Ministry of Tourism | وزارة السياحة",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "evidence": {
-        "company": "وزارة السياحة",
-        "deadline": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://www.jobs2.net/31967"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://www.jobs2.net/31967"
-      ],
-      "message_id": 5492,
-      "permalink": "https://t.me/SALTRAI/5492",
-      "posted_at": "2026-08-09T10:43:20+00:00",
-      "text": "(🔴) وزارة السياحة تعلن بدء التقديم في برنامج (التدريب التعاوني) للطلاب والطالبات بالتعاون مع صندوق (هدف):\n\n⭐️ الفئة المستهدفة (طلاب وطالبات الدبلوم والبكالوريوس).\n📍 بداية التدريب (السبت ١٤٤٨/٣/١٦هـ).\n\nhttps://www.jobs2.net/31967"
-    }
-  },
   "SALTRAI:5493": {
     "decision": {
       "action": "add",
