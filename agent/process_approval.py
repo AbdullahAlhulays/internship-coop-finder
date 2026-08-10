@@ -30,7 +30,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from extract import to_card
-from notify import send_rejected, send_result
+from notify import is_test_candidate, send_rejected, send_result, send_test_result
 from publish import apply_decision, bump_last_updated, validate_js_syntax
 from state import PENDING_PATH, PUBLISHED_PATH, StateError, pop_pending, record_published, record_to_decision, record_to_extracted
 
@@ -61,6 +61,7 @@ def process_approval(
     pop_pending_fn=pop_pending,
     send_result_fn=send_result,
     send_rejected_fn=send_rejected,
+    send_test_result_fn=send_test_result,
     record_published_fn=record_published,
 ) -> None:
     """The injectable *_fn parameters exist so this can be tested
@@ -87,6 +88,15 @@ def process_approval(
     except StateError as exc:
         send_result_fn(candidate_id, applied=False, detail=f"couldn't find this candidate — {exc}")
         raise
+
+    # Synthetic test cards exercise the real Telegram webhook, GitHub
+    # dispatch, workflow, state removal, collision retries, and outcome
+    # delivery. They stop here deliberately: neither decision may read
+    # or write companies.js, App.jsx, or the published ledger.
+    if is_test_candidate(candidate_id):
+        if not defer_notice:
+            send_test_result_fn(candidate_id, action)
+        return
 
     if action == "reject":
         if not defer_notice:

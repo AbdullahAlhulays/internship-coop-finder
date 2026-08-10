@@ -33,6 +33,8 @@ RIYADH = timezone(timedelta(hours=3))
 API_ROOT = "https://api.telegram.org"
 REQUEST_TIMEOUT = 15
 CALLBACK_LIMIT = 64  # Telegram's hard limit on callback_data length in bytes
+TEST_CANDIDATE_PREFIX = "test:"
+TEST_CARD_BANNER = "🧪 <b>TEST MODE</b> — Approve and Reject are simulated; the website will not change."
 
 TYPE_LABELS = {
     "internship": "Internship",
@@ -164,6 +166,18 @@ def format_card_message(extracted, post: dict | None = None) -> str:
     return "\n".join(lines)
 
 
+def is_test_candidate(candidate_id: str) -> bool:
+    return candidate_id.startswith(TEST_CANDIDATE_PREFIX)
+
+
+def format_candidate_message(extracted, candidate_id: str, post: dict | None = None) -> str:
+    """Add a persistent safety banner to synthetic test cards. The
+    candidate id, not an editable company/title field, controls the
+    banner so it cannot disappear when Abood exercises Edit a field."""
+    text = format_card_message(extracted, post)
+    return f"{TEST_CARD_BANNER}\n\n{text}" if is_test_candidate(candidate_id) else text
+
+
 # ------------------------------------------------------------ buttons
 
 
@@ -216,7 +230,7 @@ def send_candidate(
     includes the message_id -- useful later for editing this message
     in place once he taps a button, instead of sending a new one."""
     token, chat_id = _resolve_auth(token, chat_id)
-    text = format_card_message(extracted, post)
+    text = format_candidate_message(extracted, candidate_id, post)
     keyboard = approval_keyboard(candidate_id, current_deadline=extracted.deadline)
     payload = {
         "chat_id": chat_id,
@@ -262,6 +276,27 @@ def send_rejected(
     return _call("sendMessage", payload, token, transport=transport)
 
 
+def send_test_result(
+    candidate_id: str,
+    action: str,
+    transport: Transport = _default_transport,
+    token: str | None = None,
+    chat_id: str | None = None,
+) -> dict:
+    """Confirmation for a synthetic test decision. It deliberately
+    never says Applied/Live: test candidates are removed from pending
+    state without touching companies.js, App.jsx, or published.json."""
+    if action not in ("approve", "reject"):
+        raise NotifyError(f"unknown test action {action!r}")
+    token, chat_id = _resolve_auth(token, chat_id)
+    label = "Approve" if action == "approve" else "Reject"
+    payload = {
+        "chat_id": chat_id,
+        "text": f"🧪 Test {label} worked: {_esc(candidate_id)}\nNo website data was changed.",
+    }
+    return _call("sendMessage", payload, token, transport=transport)
+
+
 # ---------------------------------------------------------------- cli
 
 # Exists so the GitHub Actions workflow can send the outcome message
@@ -280,6 +315,8 @@ def main() -> int:
     group.add_argument("--applied", action="store_true", help="the change is live on the site")
     group.add_argument("--rejected", action="store_true", help="Abood said no")
     group.add_argument("--failed", action="store_true", help="something went wrong")
+    group.add_argument("--test-approved", action="store_true", help="test Approve worked; nothing was published")
+    group.add_argument("--test-rejected", action="store_true", help="test Reject worked; nothing was published")
     parser.add_argument("--detail", default="", help="reason, for --failed")
     args = parser.parse_args()
 
@@ -288,6 +325,10 @@ def main() -> int:
             send_result(args.candidate_id, applied=True)
         elif args.rejected:
             send_rejected(args.candidate_id)
+        elif args.test_approved:
+            send_test_result(args.candidate_id, "approve")
+        elif args.test_rejected:
+            send_test_result(args.candidate_id, "reject")
         else:
             send_result(args.candidate_id, applied=False, detail=args.detail)
     except NotifyError as exc:

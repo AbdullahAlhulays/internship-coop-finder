@@ -12,7 +12,18 @@ import os
 from unittest.mock import patch
 
 from extract import Extracted
-from notify import NotifyError, approval_keyboard, deadline_warning, format_card_message, send_candidate, send_result
+from notify import (
+    NotifyError,
+    approval_keyboard,
+    deadline_warning,
+    format_candidate_message,
+    format_card_message,
+    is_test_candidate,
+    main as notify_main,
+    send_candidate,
+    send_result,
+    send_test_result,
+)
 
 from _console import use_utf8_stdout
 
@@ -122,6 +133,14 @@ tricky_text = format_card_message(tricky)
 check("ampersand escaped", "&amp;" in tricky_text)
 check("angle brackets escaped, not left as raw HTML tags", "&lt;Test&gt;" in tricky_text)
 
+print("\ntest-card safety banner")
+test_text = format_candidate_message(ARAMCO, "test:123", post={"channel": "manual"})
+normal_text = format_candidate_message(ARAMCO, "manual:123", post={"channel": "manual"})
+check("test ids are recognized only by the dedicated prefix", is_test_candidate("test:123") and not is_test_candidate("manual:test-123"))
+check("test card has an unmistakable persistent banner", test_text.startswith("🧪 <b>TEST MODE</b>"))
+check("banner explicitly promises no website change", "website will not change" in test_text)
+check("normal cards never receive the test banner", "TEST MODE" not in normal_text)
+
 
 print("\napproval_keyboard")
 # 2026-08-09: the deadline button is now ALWAYS present, even when the
@@ -165,6 +184,22 @@ check("success message uses a checkmark", "✅" in sent2[0]["payload"]["text"])
 sent3: list[dict] = []
 send_result("SSCL:99", applied=False, detail="node --check failed: unexpected token", transport=stub_transport(sent3), token="fake-token", chat_id="724474114")
 check("failure message uses an X and includes the reason", "❌" in sent3[0]["payload"]["text"] and "unexpected token" in sent3[0]["payload"]["text"])
+
+print("\nsend_test_result")
+sent4: list[dict] = []
+send_test_result("test:123", "approve", transport=stub_transport(sent4), token="fake", chat_id="999")
+send_test_result("test:124", "reject", transport=stub_transport(sent4), token="fake", chat_id="999")
+check("test Approve says it worked without claiming it is live", "Test Approve worked" in sent4[0]["payload"]["text"] and "No website data was changed" in sent4[0]["payload"]["text"])
+check("test Reject has its own success confirmation", "Test Reject worked" in sent4[1]["payload"]["text"])
+check_raises("unknown test action fails closed", lambda: send_test_result("test:125", "maybe", transport=stub_transport(sent4), token="fake", chat_id="999"))
+
+with patch("notify.send_test_result") as mocked_test_result:
+    with patch("sys.argv", ["notify.py", "test:200", "--test-approved"]):
+        approved_exit = notify_main()
+    with patch("sys.argv", ["notify.py", "test:201", "--test-rejected"]):
+        rejected_exit = notify_main()
+check("workflow CLI routes --test-approved exactly", approved_exit == 0 and mocked_test_result.call_args_list[0].args == ("test:200", "approve"))
+check("workflow CLI routes --test-rejected exactly", rejected_exit == 0 and mocked_test_result.call_args_list[1].args == ("test:201", "reject"))
 
 
 print("\nerror handling")

@@ -113,7 +113,11 @@ jobs:
           CANDIDATE_ID: ${{ github.event.client_payload.candidate_id }}
           ACTION: ${{ github.event.client_payload.action }}
         run: |
-          if [ "$ACTION" = "approve" ]; then
+          if [[ "$CANDIDATE_ID" == test:* ]] && [ "$ACTION" = "approve" ]; then
+            python agent/notify.py "$CANDIDATE_ID" --test-approved
+          elif [[ "$CANDIDATE_ID" == test:* ]] && [ "$ACTION" = "reject" ]; then
+            python agent/notify.py "$CANDIDATE_ID" --test-rejected
+          elif [ "$ACTION" = "approve" ]; then
             python agent/notify.py "$CANDIDATE_ID" --applied
           else
             python agent/notify.py "$CANDIDATE_ID" --rejected

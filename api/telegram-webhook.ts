@@ -64,7 +64,7 @@ import {
   EDIT_ACTIONS,
   EditableField,
   FIELD_LABELS,
-  formatPendingCardMessage,
+  formatCandidateCardMessage,
   formatIsoDate,
   isCancelCommand,
   isConstrainedField,
@@ -273,7 +273,7 @@ async function refreshPendingCard(
     token,
     chatId,
     messageId,
-    formatPendingCardMessage(record.extracted, record.post),
+    formatCandidateCardMessage(candidateId, record.extracted, record.post),
     buildApprovalKeyboard(candidateId, currentDeadlineOf(pending, candidateId)),
   );
 }

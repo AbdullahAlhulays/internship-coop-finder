@@ -376,6 +376,13 @@ const TYPE_LABELS: Record<string, string> = {
   internship_or_coop: "Internship / CO-OP Training",
 };
 
+export const TEST_CANDIDATE_PREFIX = "test:";
+export const TEST_CARD_BANNER = "🧪 <b>TEST MODE</b> — Approve and Reject are simulated; the website will not change.";
+
+export function isTestCandidateId(candidateId: string): boolean {
+  return candidateId.startsWith(TEST_CANDIDATE_PREFIX);
+}
+
 /** Telegram uses HTML parse mode for review cards. Every editable and
  * source-derived value must be escaped before it is inserted into the
  * message, including URL attributes. */
@@ -473,6 +480,16 @@ export function formatPendingCardMessage(
   if (channel) lines.push(`From: ${escapeTelegramHtml(channel)}`);
 
   return lines.join("\n");
+}
+
+export function formatCandidateCardMessage(
+  candidateId: string,
+  extracted: Record<string, unknown>,
+  post: Record<string, unknown> = {},
+  todayIso?: string,
+): string {
+  const text = formatPendingCardMessage(extracted, post, todayIso);
+  return isTestCandidateId(candidateId) ? `${TEST_CARD_BANNER}\n\n${text}` : text;
 }
 
 // -------------------------------------------------------- back-to-normal

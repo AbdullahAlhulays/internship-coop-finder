@@ -256,6 +256,54 @@ with tmp:
           calls["result"] and calls["result"][0]["applied"] is False)
 
 
+print("\ntest-mode decisions exercise state but can never publish")
+for test_action in ("approve", "reject"):
+    tmp, companies_path, app_path, pending_path, ledger_path = make_temp_repo()
+    with tmp:
+        candidate_id = f"test:{test_action}-1"
+        add_pending(
+            candidate_id,
+            ARAMCO,
+            {"channel": "manual", "message_id": None},
+            Decision("add", "synthetic test"),
+            path=pending_path,
+        )
+        companies_before = companies_path.read_bytes()
+        app_before = app_path.read_bytes()
+        calls, send_result_fn, send_rejected_fn, record_published_fn = stub_calls()
+        test_results = []
+
+        process_approval(
+            candidate_id,
+            test_action,
+            companies_js_path=str(companies_path), app_jsx_path=str(app_path),
+            pending_path=str(pending_path), ledger_path=str(ledger_path),
+            send_result_fn=send_result_fn, send_rejected_fn=send_rejected_fn,
+            send_test_result_fn=lambda cid, action: test_results.append((cid, action)),
+            record_published_fn=record_published_fn,
+        )
+
+        from state import load_pending
+        check(f"test {test_action} removes the pending card", candidate_id not in load_pending(pending_path))
+        check(f"test {test_action} leaves companies.js byte-for-byte unchanged", companies_path.read_bytes() == companies_before)
+        check(f"test {test_action} leaves App.jsx byte-for-byte unchanged", app_path.read_bytes() == app_before)
+        check(f"test {test_action} never creates or edits the published ledger", not ledger_path.exists() and calls["published"] == [])
+        check(f"test {test_action} uses only the explicit test confirmation", test_results == [(candidate_id, test_action)] and calls["result"] == [] and calls["rejected"] == [])
+
+print("\ntest-mode defer_notice waits for the workflow push")
+tmp, companies_path, app_path, pending_path, ledger_path = make_temp_repo()
+with tmp:
+    add_pending("test:deferred", ARAMCO, {"channel": "manual"}, Decision("add", "synthetic test"), path=pending_path)
+    test_results = []
+    process_approval(
+        "test:deferred", "approve", defer_notice=True,
+        companies_js_path=str(companies_path), app_jsx_path=str(app_path),
+        pending_path=str(pending_path), ledger_path=str(ledger_path),
+        send_test_result_fn=lambda cid, action: test_results.append((cid, action)),
+    )
+    check("test confirmation is deferred until after the state-removal push", test_results == [])
+
+
 print("\nmany independent candidates: answering one never disturbs the others")
 tmp, companies_path, app_path, pending_path, ledger_path = make_temp_repo()
 with tmp:
