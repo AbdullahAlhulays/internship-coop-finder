@@ -51,9 +51,9 @@
     },
     "extracted": {
       "company": "Test Company",
-      "confidence": 1.0,
+      "confidence": 1,
       "contact": null,
-      "deadline": null,
+      "deadline": "2027-01-13",
       "deadline_raw": null,
       "evidence": {
         "note": "created manually via Telegram /new"
