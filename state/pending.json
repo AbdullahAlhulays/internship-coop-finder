@@ -634,5 +634,40 @@
       "permalink": null,
       "posted_at": "2026-08-10T12:59:17+03:00"
     }
+  },
+  "test:reject-1786356015821": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-10T10:00:32+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "?? BUTTON TEST - press Reject on this card",
+      "confidence": 1.0,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "note": "created manually via Telegram /new"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah - safe test",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": null,
+      "type": "coop",
+      "url": "https://example.com/codex-telegram-test/reject-1786356015821"
+    },
+    "post": {
+      "channel": "manual",
+      "message_id": null,
+      "permalink": null,
+      "posted_at": "2026-08-10T13:00:32+03:00"
+    }
   }
 }
