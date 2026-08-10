@@ -24,6 +24,16 @@ export interface PendingRecord {
   post: Record<string, unknown>;
   decision: Record<string, unknown>;
   awaiting_edit?: { field: string };
+  // If Telegram retries a free-text edit after the GitHub write
+  // succeeded but the confirmation message failed, recognize the
+  // update and re-send the confirmation instead of silently ignoring
+  // it (awaiting_edit has already been cleared by then).
+  last_edit?: { message_id: number; field: string };
+  // Telegram retries the exact same update when a webhook returns a
+  // 5xx. Remember the last applied text message so that a retry
+  // re-sends the next prompt instead of applying the same text to the
+  // next field (e.g. accidentally using the URL as the location).
+  last_message_id?: number;
   // Present only while a /new draft is being built step by step;
   // removed once all fields are collected and the draft is handed
   // off to create-candidate.yml. A record with creating_step set is
@@ -154,10 +164,23 @@ export function applyAwaitingEditPatch(data: PendingFile, candidateId: string, f
   return { ...data, [candidateId]: { ...record, awaiting_edit: { field } } };
 }
 
-export function applyFieldValuePatch(data: PendingFile, candidateId: string, field: string, value: unknown): PendingFile {
+export function applyFieldValuePatch(
+  data: PendingFile,
+  candidateId: string,
+  field: string,
+  value: unknown,
+  lastMessageId?: number,
+): PendingFile {
   const record = requireRecord(data, candidateId);
   const { awaiting_edit, ...rest } = record;
-  return { ...data, [candidateId]: { ...rest, extracted: { ...record.extracted, [field]: value } } };
+  return {
+    ...data,
+    [candidateId]: {
+      ...rest,
+      extracted: { ...record.extracted, [field]: value },
+      ...(lastMessageId === undefined ? {} : { last_edit: { message_id: lastMessageId, field } }),
+    },
+  };
 }
 
 export function clearAwaitingEdit(data: PendingFile, candidateId: string): PendingFile {
@@ -198,6 +221,10 @@ export function newDraftId(): string {
 }
 
 export function createDraft(data: PendingFile, draftId: string): PendingFile {
+  const existing = findAwaitingCreation(data);
+  if (existing.status !== "none") {
+    throw new PatchError("a card is already being created -- continue or cancel it before starting another");
+  }
   if (data[draftId]) {
     throw new PatchError(`${draftId} already exists -- draft id collision, extremely unlikely, try again`);
   }
@@ -221,6 +248,7 @@ export function applyCreationFieldAndAdvance(
   field: string,
   value: unknown,
   nextStep: string,
+  lastMessageId?: number,
 ): PendingFile {
   const record = requireRecord(data, draftId);
   return {
@@ -229,7 +257,43 @@ export function applyCreationFieldAndAdvance(
       ...record,
       extracted: { ...record.extracted, [field]: value },
       creating_step: nextStep,
+      ...(lastMessageId === undefined ? {} : { last_message_id: lastMessageId }),
     },
+  };
+}
+
+export type AppliedEditRetryLookup =
+  | { status: "none" }
+  | { status: "ambiguous"; candidateIds: string[] }
+  | { status: "found"; candidateId: string; field: string; value: unknown };
+
+/** Locate an edit whose state write already succeeded for this exact
+ * Telegram message. Message ids are unique within the authorized chat,
+ * so matching them is a safe idempotency key. */
+export function findAppliedEditRetry(data: PendingFile, messageId: number): AppliedEditRetryLookup {
+  const matches = Object.entries(data).filter(([, record]) => record.last_edit?.message_id === messageId);
+  if (matches.length === 0) return { status: "none" };
+  if (matches.length > 1) return { status: "ambiguous", candidateIds: matches.map(([id]) => id) };
+  const [candidateId, record] = matches[0];
+  const field = record.last_edit!.field;
+  return { status: "found", candidateId, field, value: record.extracted[field] };
+}
+
+/** Recreate a completed draft when repository_dispatch itself fails.
+ * The old flow deleted the user's six collected fields before the
+ * dispatch and lost them permanently on a transient GitHub outage.
+ * Restoring at the final button step makes that failure retryable. */
+export function restoreDraft(
+  data: PendingFile,
+  draftId: string,
+  extracted: Record<string, unknown>,
+): PendingFile {
+  const existing = data[draftId];
+  if (existing?.creating_step) return data; // idempotent webhook retry
+  if (existing) throw new PatchError(`${draftId} is already a real pending candidate and cannot be restored as a draft`);
+  return {
+    ...data,
+    [draftId]: { extracted: { ...extracted }, post: {}, decision: {}, creating_step: "letter" },
   };
 }
 
@@ -241,7 +305,13 @@ export function discardDraft(data: PendingFile, draftId: string): PendingFile {
 export type AwaitingCreationLookup =
   | { status: "none" }
   | { status: "ambiguous"; draftIds: string[] }
-  | { status: "found"; draftId: string; step: string; extracted: Record<string, unknown> };
+  | {
+      status: "found";
+      draftId: string;
+      step: string;
+      extracted: Record<string, unknown>;
+      lastMessageId?: number;
+    };
 
 /** Parallel to findAwaitingEdit -- scans for a draft currently waiting
  * on a text reply (the company/link/location steps; type/deadline/
@@ -253,5 +323,11 @@ export function findAwaitingCreation(data: PendingFile): AwaitingCreationLookup 
   if (matches.length === 0) return { status: "none" };
   if (matches.length > 1) return { status: "ambiguous", draftIds: matches.map(([id]) => id) };
   const [draftId, record] = matches[0];
-  return { status: "found", draftId, step: record.creating_step!, extracted: record.extracted };
+  return {
+    status: "found",
+    draftId,
+    step: record.creating_step!,
+    extracted: record.extracted,
+    lastMessageId: record.last_message_id,
+  };
 }

@@ -68,6 +68,18 @@ export function isFromTelegram(providedSecret: string | null, expectedSecret: st
   return Boolean(expectedSecret) && providedSecret === expectedSecret;
 }
 
+/** The webhook secret proves the request came through Telegram, but
+ * it does not prove it came from Abood's chat. Keep the bot private:
+ * an arbitrary Telegram user who discovers the bot username must
+ * never be able to create/edit/approve repository state. */
+export function isAuthorizedChat(
+  chatId: number | string | undefined,
+  expectedChatId: string | undefined,
+): boolean {
+  const expected = expectedChatId?.trim();
+  return Boolean(expected) && chatId !== undefined && String(chatId) === expected;
+}
+
 // ------------------------------------------------------------- calendar
 //
 // Encoding: after parseCallbackData() strips the leading "action:",
@@ -384,14 +396,33 @@ export function buildApprovalKeyboard(candidateId: string, currentDeadline: stri
   };
 }
 
-/** Very light validation for the free-text fields -- just enough to
- * refuse an empty reply or a URL that obviously isn't one, without
- * pretending to be a real validator. extract.py's own validate() is
- * still the final word on whether a card is publishable; this only
- * protects against an obviously-wrong tap-of-the-wrong-key reply. */
+const FREE_TEXT_LIMITS = {
+  company: 200,
+  location: 300,
+  url: 2048,
+} as const;
+
+function tooLongMessage(label: string, limit: number, cancelInstruction: string): string {
+  return `${label} is too long (maximum ${limit} characters) -- shorten it and try again, ${cancelInstruction}`;
+}
+
+/** Refuse empty, malformed, or unreasonably large free-text values.
+ * Telegram messages can be thousands of characters long, but the
+ * resulting review-card text and GitHub dispatch must stay comfortably
+ * within their API limits. extract.py's validate() remains the final
+ * word on whether a card is publishable. */
 export function validateFieldValue(field: EditableField, value: string): string | null {
   const trimmed = value.trim();
   if (!trimmed) return "That's empty -- reply with the new value, or tap Back to cancel.";
+  if (field === "company" && trimmed.length > FREE_TEXT_LIMITS.company) {
+    return tooLongMessage("Company name", FREE_TEXT_LIMITS.company, "or tap Back to cancel.");
+  }
+  if (field === "location" && trimmed.length > FREE_TEXT_LIMITS.location) {
+    return tooLongMessage("Location", FREE_TEXT_LIMITS.location, "or tap Back to cancel.");
+  }
+  if (field === "url" && trimmed.length > FREE_TEXT_LIMITS.url) {
+    return tooLongMessage("Application link", FREE_TEXT_LIMITS.url, "or tap Back to cancel.");
+  }
   if (field === "url" && !/^https?:\/\/\S+$/i.test(trimmed)) {
     return "That doesn't look like a link (should start with http:// or https://) -- try again, or tap Back to cancel.";
   }
@@ -526,11 +557,20 @@ export function buildLocationPromptKeyboard(draftId: string): InlineKeyboard {
   };
 }
 
-/** Same rule as validateFieldValue, plus company/link can never be
- * empty -- unlike an edit, a draft has nothing to fall back to. */
-export function validateCreationValue(step: "company" | "link", value: string): string | null {
+/** Same rules as validateFieldValue, plus creation values can never
+ * be empty -- unlike an edit, a draft has nothing to fall back to. */
+export function validateCreationValue(step: "company" | "link" | "location", value: string): string | null {
   const trimmed = value.trim();
   if (!trimmed) return "That's empty -- please reply with a value, or send /cancel to abandon this card.";
+  if (step === "company" && trimmed.length > FREE_TEXT_LIMITS.company) {
+    return tooLongMessage("Company name", FREE_TEXT_LIMITS.company, "or send /cancel.");
+  }
+  if (step === "location" && trimmed.length > FREE_TEXT_LIMITS.location) {
+    return tooLongMessage("Location", FREE_TEXT_LIMITS.location, "or send /cancel.");
+  }
+  if (step === "link" && trimmed.length > FREE_TEXT_LIMITS.url) {
+    return tooLongMessage("Application link", FREE_TEXT_LIMITS.url, "or send /cancel.");
+  }
   if (step === "link" && !/^https?:\/\/\S+$/i.test(trimmed)) {
     return "That doesn't look like a link (should start with http:// or https://) -- try again, or send /cancel.";
   }

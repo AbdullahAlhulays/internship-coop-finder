@@ -243,11 +243,38 @@ export default function App() {
   };
 
   const cityCounts = useMemo(() => {
+    const normalizedSearch = searchTerm.trim().toLowerCase();
+
     return companies.reduce(
       (counts, company) => {
         const status = getCompanyStatus(company, currentTime);
+        const isClosed = status.key === "closed";
+        const isApplied = appliedLinksSet.has(company.applicationLink);
+        const matchesFilter =
+          activeFilter === "closed"
+            ? isClosed
+            : activeFilter === "applied"
+              ? !isClosed && isApplied
+              : !isClosed && !isApplied;
+        const matchesSearch = getSortLabel(company)
+          .toLowerCase()
+          .includes(normalizedSearch);
+        const matchesLetterFilter =
+          !showNoLetterOnly || !company.requiresLetter;
+
+        // City labels describe the cards reachable in the current
+        // view. The old implementation counted closed/applied cards
+        // while "All Cities" counted only the active view, producing
+        // impossible labels such as Riyadh (69) with 50 visible cards.
+        // Deliberately ignore activeCity here so selecting one city
+        // does not erase the counts for all the other choices.
+        if (!matchesFilter || !matchesSearch || !matchesLetterFilter) {
+          return counts;
+        }
 
         const cities = getCompanyCities(company);
+
+        counts.all += 1;
 
         cities.forEach((city) => {
           counts[city] = (counts[city] ?? 0) + 1;
@@ -256,10 +283,17 @@ export default function App() {
         return counts;
       },
       {
-        all: opportunityCounts.all,
+        all: 0,
       },
     );
-  }, [companies, currentTime, opportunityCounts.all]);
+  }, [
+    activeFilter,
+    appliedLinksSet,
+    companies,
+    currentTime,
+    searchTerm,
+    showNoLetterOnly,
+  ]);
 
   const cityOptions = useMemo(() => {
     return Object.keys(cityCounts)

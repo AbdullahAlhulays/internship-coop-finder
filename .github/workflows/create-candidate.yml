@@ -93,9 +93,12 @@ jobs:
             python agent/create_candidate.py "$DRAFT_ID" "$COMPANY" "$TYPE" "$URL" \
               --location "$LOCATION" --deadline "$DEADLINE" $LETTER_FLAG --defer-send
 
-            git add -A
+            # Stage only the file this command is allowed to change.
+            # This prevents Python bytecode or other runner-generated
+            # files from leaking into production commits.
+            git add -- state/pending.json
             if git diff --cached --quiet; then
-              echo "Nothing to commit -- unexpected for a successful create, but not fatal."
+              echo "Nothing to commit -- this draft was already saved by an earlier attempt."
               break
             fi
 

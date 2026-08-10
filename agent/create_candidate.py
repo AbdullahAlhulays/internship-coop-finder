@@ -65,6 +65,7 @@ def create_candidate(
     ledger_path: str = PUBLISHED_PATH,
     read_companies_fn=read_companies,
     load_ledger_fn=load_ledger,
+    load_pending_fn=load_pending,
     decide_fn=decide,
     add_pending_fn=add_pending,
     send_candidate_fn=send_candidate,
@@ -104,10 +105,36 @@ def create_candidate(
     # Raises ValueError if type_ isn't one of the three real site
     # values -- shouldn't happen, since the bot only ever offers those
     # three via buttons, never free text (see webhook-logic.ts's
-    # CONSTRAINED_CHOICES). Not caught here on purpose: a ValueError
-    # escaping uncaught would be a real bug worth seeing loudly, not
-    # something to paper over with a generic failure message.
+    # CONSTRAINED_CHOICES). Validate even on an idempotent workflow
+    # rerun so corrupted saved state cannot turn invalid input into a
+    # false success.
     card = to_card(extracted)
+
+    # A workflow can be re-run after its first step committed the
+    # candidate but the second (Telegram delivery) step failed. Treat
+    # the exact same draft and fields as an idempotent success so the
+    # workflow reaches --send-only again. A reused id with different
+    # fields is still a hard failure; never overwrite or guess.
+    try:
+        existing_record = load_pending_fn(pending_path).get(draft_id)
+    except StateError as exc:
+        detail = f"couldn't read {pending_path}: {exc}"
+        send_result_fn(draft_id, applied=False, detail=detail)
+        raise CreateError(detail) from exc
+    if existing_record is not None:
+        try:
+            existing_extracted = record_to_extracted(existing_record)
+        except Exception as exc:
+            detail = f"{draft_id} already exists but its saved data is invalid: {exc}"
+            send_result_fn(draft_id, applied=False, detail=detail)
+            raise CreateError(detail) from exc
+        if existing_extracted != extracted:
+            detail = f"{draft_id} already exists with different fields -- refusing to overwrite it"
+            send_result_fn(draft_id, applied=False, detail=detail)
+            raise CreateError(detail)
+        if not defer_send:
+            send_candidate_fn(existing_extracted, draft_id, post=existing_record.get("post"))
+        return
 
     try:
         existing = read_companies_fn(companies_js_path)

@@ -23,6 +23,8 @@
 //
 // ENV VARS needed in Vercel (Project -> Settings -> Environment Variables):
 //   TELEGRAM_BOT_TOKEN       same bot token used everywhere else
+//   TELEGRAM_CHAT_ID         the only chat allowed to use this bot; must
+//                            match the GitHub Actions secret of the same name
 //   TELEGRAM_WEBHOOK_SECRET  a random string YOU make up (e.g. a long
 //                            password) -- proves a request really came
 //                            from Telegram, not a random POST to a
@@ -68,6 +70,7 @@ import {
   isCreationCommand,
   isCreationStep,
   isEditableField,
+  isAuthorizedChat,
   isFromTelegram,
   isHandledAction,
   nextCreationStep,
@@ -88,16 +91,20 @@ import {
   clearAwaitingEdit,
   createDraft,
   discardDraft,
+  findAppliedEditRetry,
   findAwaitingCreation,
   findAwaitingEdit,
   newDraftId,
   patchPending,
   PatchError,
   readPending,
+  restoreDraft,
   type PendingFile,
 } from "./github-state";
 
 const TELEGRAM_API = "https://api.telegram.org";
+
+class TelegramApiError extends Error {}
 
 interface TelegramUpdate {
   callback_query?: {
@@ -106,6 +113,7 @@ interface TelegramUpdate {
     message?: { chat: { id: number | string }; message_id: number };
   };
   message?: {
+    message_id?: number;
     text?: string;
     chat: { id: number | string };
   };
@@ -129,24 +137,39 @@ async function editMessageReplyMarkup(
   messageId: number,
   replyMarkup: unknown,
 ): Promise<void> {
-  const response = await fetch(`${TELEGRAM_API}/bot${token}/editMessageReplyMarkup`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ chat_id: chatId, message_id: messageId, reply_markup: replyMarkup }),
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${TELEGRAM_API}/bot${token}/editMessageReplyMarkup`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: chatId, message_id: messageId, reply_markup: replyMarkup }),
+    });
+  } catch (err) {
+    throw new TelegramApiError(`Telegram editMessageReplyMarkup network failure: ${String(err)}`);
+  }
   if (!response.ok) {
-    console.error("telegram-webhook: editMessageReplyMarkup failed", await response.text());
+    const detail = await response.text();
+    // A webhook retry can legitimately ask Telegram to apply the same
+    // keyboard twice after the first edit succeeded but the following
+    // prompt failed. Telegram reports that idempotent replay as 400.
+    if (response.status === 400 && detail.toLowerCase().includes("message is not modified")) return;
+    throw new TelegramApiError(`Telegram editMessageReplyMarkup failed (${response.status}): ${detail}`);
   }
 }
 
 async function sendPlainMessage(token: string, chatId: number | string, text: string): Promise<void> {
-  const response = await fetch(`${TELEGRAM_API}/bot${token}/sendMessage`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ chat_id: chatId, text }),
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${TELEGRAM_API}/bot${token}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: chatId, text }),
+    });
+  } catch (err) {
+    throw new TelegramApiError(`Telegram sendMessage network failure: ${String(err)}`);
+  }
   if (!response.ok) {
-    console.error("telegram-webhook: sendMessage failed", await response.text());
+    throw new TelegramApiError(`Telegram sendMessage failed (${response.status}): ${await response.text()}`);
   }
 }
 
@@ -155,13 +178,18 @@ async function sendPlainMessage(token: string, chatId: number | string, text: st
  * as opposed to editMessageReplyMarkup, which only changes the
  * keyboard on a message that's already there. */
 async function sendMessageWithKeyboard(token: string, chatId: number | string, text: string, replyMarkup: unknown): Promise<void> {
-  const response = await fetch(`${TELEGRAM_API}/bot${token}/sendMessage`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ chat_id: chatId, text, reply_markup: replyMarkup }),
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${TELEGRAM_API}/bot${token}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: chatId, text, reply_markup: replyMarkup }),
+    });
+  } catch (err) {
+    throw new TelegramApiError(`Telegram sendMessage with keyboard network failure: ${String(err)}`);
+  }
   if (!response.ok) {
-    console.error("telegram-webhook: sendMessage (with keyboard) failed", await response.text());
+    throw new TelegramApiError(`Telegram sendMessage with keyboard failed (${response.status}): ${await response.text()}`);
   }
 }
 
@@ -374,6 +402,13 @@ async function handleLocalAction(
         return new Response("ok", { status: 200 });
     }
   } catch (err) {
+    if (err instanceof TelegramApiError) {
+      // A 5xx makes Telegram retry the exact same update. Every local
+      // state transition above is idempotent, including the special
+      // "message is not modified" handling in editMessageReplyMarkup.
+      console.error("telegram-webhook: Telegram delivery failed; requesting update retry", action, err);
+      return new Response("Telegram delivery failed", { status: 502 });
+    }
     const message = err instanceof PatchError
       ? err.message
       : "Something went wrong saving that — please try again, or reject and re-check the source post.";
@@ -445,10 +480,11 @@ async function advanceCreationAndPrompt(
   token: string,
   repo: string,
   ghToken: string,
+  messageId?: number,
 ): Promise<void> {
   const next = nextCreationStep(step);
   await patchPending(repo, ghToken, `Telegram: /new ${step} for ${draftId}`, (data) =>
-    applyCreationFieldAndAdvance(data, draftId, CREATION_STEP_FIELD[step], value, next));
+    applyCreationFieldAndAdvance(data, draftId, CREATION_STEP_FIELD[step], value, next, messageId));
   if (next === "done") {
     // Unreachable given CREATION_STEPS' fixed order (company/link/location
     // are never last) -- logged rather than silently ignored in case that
@@ -465,7 +501,8 @@ async function advanceCreationAndPrompt(
  * behind would collide with create_candidate.py's add_pending() call,
  * which refuses to overwrite an existing id), then hands the whole
  * card to create-candidate.yml the same way approve/reject hands off
- * to process-approval.yml. */
+ * to process-approval.yml. If dispatch fails, the draft is restored at
+ * the letter step so no typed answers are lost. */
 async function finishCreation(
   draftId: string,
   requiresLetterValue: string,
@@ -505,24 +542,55 @@ async function finishCreation(
   try {
     await postDispatch(repo, ghToken, buildCreateDispatchPayload(draftId, fields));
   } catch (err) {
-    // The draft was already removed from pending.json above -- if this
-    // dispatch fails, the fields Abood typed in are gone and there's no
-    // automatic retry, same risk profile as a failed approve/reject
-    // dispatch (see the catch around dispatchToGitHub below). Logged
-    // for Abood to see in Vercel's function logs; told to just try
-    // /new again rather than silently losing the card.
+    // The draft was already removed above so create_candidate.py can
+    // claim the same id. Restore it before returning, making a transient
+    // GitHub failure retryable without asking Abood to retype six fields.
     console.error("telegram-webhook: /new dispatch to GitHub failed", err);
-    await sendPlainMessage(token, chatId, "Couldn't submit that card to GitHub — please try /new again.");
+    try {
+      await patchPending(repo, ghToken, `Telegram: restore /new draft ${draftId} after dispatch failure`, (data) =>
+        restoreDraft(data, draftId, captured!),
+      );
+    } catch (restoreErr) {
+      console.error("telegram-webhook: failed to restore /new draft after dispatch failure", restoreErr);
+      await sendPlainMessage(
+        token,
+        chatId,
+        "Couldn't submit that card, and automatic draft recovery also failed. Please check Vercel logs before trying again.",
+      );
+      return;
+    }
+    await sendMessageWithKeyboard(
+      token,
+      chatId,
+      "GitHub couldn't accept that card just now. Your answers were saved — tap the letter choice again to retry.",
+      buildLetterChoiceKeyboard(draftId),
+    );
     return;
   }
-  await sendPlainMessage(token, chatId, `Creating card for "${fields.company}"… you'll get the review card shortly.`);
+  try {
+    await sendPlainMessage(token, chatId, `Creating card for "${fields.company}"… you'll get the review card shortly.`);
+  } catch (err) {
+    // repository_dispatch already succeeded and cannot be rolled back.
+    // Do not ask Telegram to replay the final button (which could send
+    // the dispatch twice); the Actions workflow will deliver the real
+    // review card shortly even if this courtesy message was lost.
+    console.error("telegram-webhook: post-dispatch confirmation failed", err);
+  }
 }
 
 async function handleNewCommand(chatId: number | string, token: string, repo: string, ghToken: string): Promise<Response> {
   const pending = await readPending(repo, ghToken);
   const existing = findAwaitingCreation(pending);
-  if (existing.status !== "none") {
-    await sendPlainMessage(token, chatId, "Already creating a card — reply to continue, or send /cancel to start over.");
+  if (existing.status === "found") {
+    if (isCreationStep(existing.step)) {
+      await promptForStep(existing.draftId, existing.step, chatId, token);
+    } else {
+      await sendPlainMessage(token, chatId, "A saved draft is in an invalid state. Send /cancel before trying again.");
+    }
+    return new Response("ok", { status: 200 });
+  }
+  if (existing.status === "ambiguous") {
+    await sendPlainMessage(token, chatId, "More than one draft exists. Check state/pending.json before creating another card.");
     return new Response("ok", { status: 200 });
   }
   const draftId = newDraftId();
@@ -565,6 +633,7 @@ async function handleCreationTextReply(
   ghToken: string,
   step: string,
   draftId: string,
+  lastMessageId?: number,
 ): Promise<Response> {
   const chatId = message.chat.id;
   const text = (message.text ?? "").trim();
@@ -581,6 +650,14 @@ async function handleCreationTextReply(
     return new Response("ok", { status: 200 }); // defensive; shouldn't happen -- creating_step is only ever set by this same code
   }
 
+  // Telegram is retrying a text update whose state write succeeded
+  // but whose next prompt failed. Re-send the current prompt; never
+  // reinterpret that same text as the next field.
+  if (message.message_id !== undefined && message.message_id === lastMessageId) {
+    await promptForStep(draftId, step, chatId, token);
+    return new Response("ok", { status: 200 });
+  }
+
   if (step === "type" || step === "letter") {
     await sendPlainMessage(token, chatId, "Please use the buttons above to answer this one, or send /cancel to abandon this card.");
     return new Response("ok", { status: 200 });
@@ -591,11 +668,12 @@ async function handleCreationTextReply(
   }
 
   if (step === "location") {
-    if (!text) {
-      await sendPlainMessage(token, chatId, "That's empty — reply with a location, tap Skip above, or send /cancel.");
+    const error = validateCreationValue("location", text);
+    if (error) {
+      await sendPlainMessage(token, chatId, error);
       return new Response("ok", { status: 200 });
     }
-    await advanceCreationAndPrompt(draftId, "location", text, chatId, token, repo, ghToken);
+    await advanceCreationAndPrompt(draftId, "location", text, chatId, token, repo, ghToken, message.message_id);
     return new Response("ok", { status: 200 });
   }
 
@@ -605,7 +683,7 @@ async function handleCreationTextReply(
     await sendPlainMessage(token, chatId, error);
     return new Response("ok", { status: 200 });
   }
-  await advanceCreationAndPrompt(draftId, step, text, chatId, token, repo, ghToken);
+  await advanceCreationAndPrompt(draftId, step, text, chatId, token, repo, ghToken, message.message_id);
   return new Response("ok", { status: 200 });
 }
 
@@ -643,7 +721,15 @@ async function handleTextMessage(update: TelegramUpdate, token: string): Promise
 
   const creationLookup = findAwaitingCreation(pending);
   if (creationLookup.status === "found") {
-    return handleCreationTextReply(message, token, repo, ghToken, creationLookup.step, creationLookup.draftId);
+    return handleCreationTextReply(
+      message,
+      token,
+      repo,
+      ghToken,
+      creationLookup.step,
+      creationLookup.draftId,
+      creationLookup.lastMessageId,
+    );
   }
   if (creationLookup.status === "ambiguous") {
     await sendPlainMessage(token, message.chat.id, "More than one card is currently being created — this shouldn't normally happen. Send /cancel and try /new again.");
@@ -651,6 +737,22 @@ async function handleTextMessage(update: TelegramUpdate, token: string): Promise
   }
 
   const lookup = findAwaitingEdit(pending);
+
+  if (message.message_id !== undefined) {
+    const appliedRetry = findAppliedEditRetry(pending, message.message_id);
+    if (appliedRetry.status === "found" && isEditableField(appliedRetry.field)) {
+      await sendPlainMessage(
+        token,
+        message.chat.id,
+        `Updated. ${FIELD_LABELS[appliedRetry.field]}: "${String(appliedRetry.value ?? "")}"`,
+      );
+      return new Response("ok", { status: 200 });
+    }
+    if (appliedRetry.status === "ambiguous") {
+      await sendPlainMessage(token, message.chat.id, "That edit retry matches more than one pending card. Check state/pending.json before editing again.");
+      return new Response("ok", { status: 200 });
+    }
+  }
 
   if (lookup.status === "none") {
     return new Response("ok", { status: 200 });
@@ -672,12 +774,18 @@ async function handleTextMessage(update: TelegramUpdate, token: string): Promise
 
   const value = message.text.trim();
   try {
-    await patchPending(repo, ghToken, `Telegram edit: ${field} for ${candidateId}`, (data) => applyFieldValuePatch(data, candidateId, field, value));
-    await sendPlainMessage(token, message.chat.id, `Updated. ${FIELD_LABELS[field]}: "${value}"`);
+    await patchPending(repo, ghToken, `Telegram edit: ${field} for ${candidateId}`, (data) =>
+      applyFieldValuePatch(data, candidateId, field, value, message.message_id),
+    );
   } catch (err) {
     const detail = err instanceof PatchError ? err.message : "please try again";
     await sendPlainMessage(token, message.chat.id, `Couldn't save that — ${detail}`);
+    return new Response("ok", { status: 200 });
   }
+  // Keep delivery outside the write-error catch. If Telegram is down,
+  // let the webhook return 5xx; the retry is recognized by last_edit
+  // above and only re-sends this confirmation (never writes twice).
+  await sendPlainMessage(token, message.chat.id, `Updated. ${FIELD_LABELS[field]}: "${value}"`);
   return new Response("ok", { status: 200 });
 }
 
@@ -702,6 +810,18 @@ export default async function handler(request: Request): Promise<Response> {
     update = await request.json();
   } catch {
     return new Response("Bad request: not valid JSON", { status: 400 });
+  }
+
+  const expectedChatId = process.env.TELEGRAM_CHAT_ID;
+  if (!expectedChatId) {
+    return new Response("Server misconfigured: TELEGRAM_CHAT_ID not set", { status: 500 });
+  }
+  const updateChatId = update.callback_query?.message?.chat.id ?? update.message?.chat.id;
+  if (!isAuthorizedChat(updateChatId, expectedChatId)) {
+    // Always acknowledge unauthorized Telegram updates with 200 so
+    // Telegram does not retry them. Crucially, perform no GitHub or
+    // Telegram side effect for that chat.
+    return new Response("ok", { status: 200 });
   }
 
   const callbackQuery = update.callback_query;
