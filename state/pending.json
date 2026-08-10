@@ -306,8 +306,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T13:48:03+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T13:48:14+00:00",
+      "status": "sent",
+      "telegram_message_id": 60
     },
     "extracted": {
       "company": "Azm Al-Eenjaz",
