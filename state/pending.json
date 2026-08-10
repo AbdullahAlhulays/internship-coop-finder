@@ -643,8 +643,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T10:00:32+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T10:00:34+00:00",
+      "status": "sent",
+      "telegram_message_id": 32
     },
     "extracted": {
       "company": "?? BUTTON TEST - press Reject on this card",
