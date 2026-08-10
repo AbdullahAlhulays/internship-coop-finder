@@ -435,6 +435,10 @@ class ValidationError(ValueError):
     """The model's JSON does not match the shape we require."""
 
 
+class UnpublishableError(ValidationError):
+    """The model returned valid data that still cannot make a safe card."""
+
+
 def strip_code_fences(raw: str) -> str:
     """Models sometimes wrap JSON in ```json ... ``` even when told not to."""
     text = raw.strip()
@@ -487,7 +491,7 @@ def validate(payload: dict) -> Extracted:
     # a normal, common case (see route(): it just means the result
     # never becomes a card, since there's nothing to skip about it).
     if payload["is_opportunity"] and not payload["company"]:
-        raise ValidationError("opportunity has no company name")
+        raise UnpublishableError("opportunity has no company name")
 
     return Extracted(
         is_opportunity=payload["is_opportunity"],

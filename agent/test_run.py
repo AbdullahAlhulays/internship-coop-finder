@@ -308,6 +308,25 @@ with tempfile.TemporaryDirectory() as tmp:
     check("failed extraction is not marked seen, so the next hourly run retries it", load_seen(tmpp / "s.json") == {})
 
 
+print("\nrun: consistently missing an essential company field is handled once, not retried forever")
+with tempfile.TemporaryDirectory() as tmp:
+    tmpp = Path(tmp)
+    companies = write_companies(tmpp)
+    model_calls = []
+    summary = run(
+        "@SALTRAI", [POST], str(companies),
+        pending_path=str(tmpp / "p.json"), ledger_path=str(tmpp / "l.json"), seen_path=str(tmpp / "s.json"),
+        model_fn=lambda prompt: model_calls.append(prompt) or json.dumps(
+            opportunity_json(company=None), ensure_ascii=False
+        ),
+        extraction_attempts=3,
+    )
+    check("the model gets multiple chances before the post is skipped", len(model_calls) == 3)
+    check("consistently unpublishable data is not a provider failure", summary["failed"] == 0)
+    check("the unsafe card is counted as unpublishable", summary["unpublishable"] == 1)
+    check("the post is marked handled so it cannot consume quota every hour", load_seen(tmpp / "s.json") == {"SALTRAI": [5478]})
+
+
 print("\nas_plain_text: the dry-run preview is readable in a terminal")
 sample = 'Name: A &amp; B\nLink: <a href="https://x.example.com/a">https://x.example.com/a</a>\n⚠️ check this'
 plain = as_plain_text(sample)

@@ -16,7 +16,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 from dedupe import decide
-from extract import ModelError, ValidationError, extract_opportunity, to_card
+from extract import ModelError, UnpublishableError, ValidationError, extract_opportunity, to_card
 from notify import format_card_message, send_candidate
 from read_companies import ReadCompaniesError, read_companies
 from _console import use_utf8_stdout
@@ -170,6 +170,7 @@ def run(
             continue
 
         extracted = None
+        extraction_errors: list[Exception] = []
         for extraction_attempt in range(1, extraction_attempts + 1):
             try:
                 kwargs = {"model_fn": model_fn} if model_fn else {}
@@ -178,8 +179,10 @@ def run(
                 )
                 break
             except (ModelError, ValidationError) as exc:
+                extraction_errors.append(exc)
                 if extraction_attempt == extraction_attempts:
-                    print(f"  [failed]  {candidate_id} after {extraction_attempts} attempt(s): {exc}")
+                    outcome = "invalid" if isinstance(exc, UnpublishableError) else "failed"
+                    print(f"  [{outcome}]  {candidate_id} after {extraction_attempts} attempt(s): {exc}")
                     break
                 print(f"  [retry]   {candidate_id}: extraction attempt {extraction_attempt} failed: {exc}")
                 # Tests inject a deterministic model and should remain
@@ -189,10 +192,19 @@ def run(
                     time.sleep(retry_delay_seconds(exc, extraction_attempt))
 
         if extracted is None:
+            if extraction_errors and all(isinstance(exc, UnpublishableError) for exc in extraction_errors):
+                # The provider answered successfully every time, but the
+                # post never yielded the minimum safe card fields. Retrying
+                # it every hour would waste quota and keep the workflow red.
+                print(f"  [skip]    {candidate_id}: consistently unpublishable; marked handled")
+                summary["unpublishable"] += 1
+                processed_ids.append(message_id)
+                continue
+
             summary["failed"] += 1
-            # Do NOT mark a failed extraction as seen. A transient Groq
-            # outage or malformed response must be retried next hour,
-            # never silently discard a real opportunity forever.
+            # Do NOT mark provider failures or malformed model replies as
+            # seen. A later hourly run must retry transient failures rather
+            # than silently discard a real opportunity forever.
             continue
 
         if not extracted.is_opportunity:
