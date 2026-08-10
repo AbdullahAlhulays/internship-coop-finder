@@ -713,4 +713,11 @@ export const companies = [
     applicationLink: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNTE3WTAyVkVTUUVBMDY2Qkw5WFE4RUZIUi4u",
     type: "CO-OP Training",
     addedAt: "2026-08-10T14:30:35+03:00",
+  },
+  {
+    name: "NOV",
+    location: "Al Jubail",
+    applicationLink: "https://egay.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/job/42609/?utm_medium=jobshare",
+    type: "CO-OP Training",
+    addedAt: "2026-08-10T14:32:20+03:00",
   },];

@@ -732,54 +732,6 @@
       "text": "📢 | #التدريب_التعاوني\n#جدة\n\nتعلن شركة عبداللطيف جميل عن فتح باب التقديم على برنامج التدريب التعاوني (COOP) للفصل الدراسي الأول، لطلاب وطالبات الجامعات في مختلف التخصصات.\n\n📍 الموقع: جدة\n🎓 الفئة المستهدفة: طلاب وطالبات الجامعات (التدريب التعاوني)\n📝 التقديم: عبر بوابة التوظيف الخاصة بعبداللطيف جميل.\n\n🔗 رابط التقديم:\nhttps://careers.alj.com/Mobility/job/Jeddah-COOP-Jeddah/857287423/"
     }
   },
-  "nobthacv1:2057": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-10T11:21:04+00:00",
-      "status": "sent",
-      "telegram_message_id": 51
-    },
-    "extracted": {
-      "company": "NOV",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "evidence": {
-        "company": "NOV",
-        "deadline": null,
-        "location": "#رأس_الخير"
-      },
-      "is_opportunity": true,
-      "location": "Al Jubail",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Coop Electrical Engineer",
-      "type": "coop",
-      "url": "https://egay.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/job/42609/?utm_medium=jobshare"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://egay.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/job/42609/?utm_medium=jobshare"
-      ],
-      "message_id": 2057,
-      "permalink": "https://t.me/nobthacv1/2057",
-      "posted_at": "2026-08-06T04:28:44+00:00",
-      "text": "🎓 #التدريب_التعاوني | #رأس_الخير\nNOV تعلن عن فتح باب التقديم في برنامج التدريب التعاوني Coop Electrical Engineer لطلاب وطالبات الجامعات.\nالتخصصات المستهدفة:\nالهندسة الكهربائية\nالمتطلبات:\nالالتزام بممارسات السلامة الكهربائية\nالاهتمام بأنظمة الكهرباء الصناعية\nالرغبة في اكتساب خبرة عملية في التركيبات الكهربائية واختبار الأنظمة\nالاستعداد للمشاركة في أعمال التشغيل والاختبارات تحت الإشراف\n\nللتقديمــــــــــــــــــــ"
-    },
-    "last_edit": {
-      "message_id": 53,
-      "field": "location",
-      "card_message_id": 51
-    }
-  },
   "nobthacv1:2058": {
     "decision": {
       "action": "add",
