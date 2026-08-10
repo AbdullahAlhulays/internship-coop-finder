@@ -179,7 +179,7 @@ check("parse_mode is HTML", sent[0]["payload"]["parse_mode"] == "HTML")
 print("\nsend_result")
 sent2: list[dict] = []
 send_result("SALTRAI:5478", applied=True, transport=stub_transport(sent2), token="fake-token", chat_id="724474114")
-check("success message uses a checkmark", "✅" in sent2[0]["payload"]["text"])
+check("success message uses the requested wording", sent2[0]["payload"]["text"] == "Yes Boss! Applied: SALTRAI:5478")
 
 sent3: list[dict] = []
 send_result("SSCL:99", applied=False, detail="node --check failed: unexpected token", transport=stub_transport(sent3), token="fake-token", chat_id="724474114")
