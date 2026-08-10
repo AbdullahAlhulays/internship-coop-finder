@@ -7,8 +7,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:51:05+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:03+00:00",
+      "status": "sent",
+      "telegram_message_id": 18
     },
     "extracted": {
       "company": "ASAS | اساس",
@@ -49,8 +50,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:51:05+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:04+00:00",
+      "status": "sent",
+      "telegram_message_id": 19
     },
     "extracted": {
       "company": "Ministry of Transport | وزارة النقل",
@@ -91,8 +93,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:51:07+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:04+00:00",
+      "status": "sent",
+      "telegram_message_id": 20
     },
     "extracted": {
       "company": "Ministry of Tourism | وزارة السياحة",
@@ -171,8 +174,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:52:48+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:05+00:00",
+      "status": "sent",
+      "telegram_message_id": 21
     },
     "extracted": {
       "company": "Daleel Law Firm & Legal Consultations",
@@ -214,8 +218,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:52:55+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:05+00:00",
+      "status": "sent",
+      "telegram_message_id": 22
     },
     "extracted": {
       "company": "Tourism technology company",
@@ -257,8 +262,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:51:15+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:06+00:00",
+      "status": "sent",
+      "telegram_message_id": 23
     },
     "extracted": {
       "company": "Bupa Arabia",
@@ -300,8 +306,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:51:25+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:06+00:00",
+      "status": "sent",
+      "telegram_message_id": 24
     },
     "extracted": {
       "company": "Al Khareef | شركة الخريف",
@@ -342,8 +349,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:51:34+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:07+00:00",
+      "status": "sent",
+      "telegram_message_id": 25
     },
     "extracted": {
       "company": "National Development Fund | صندوق التنمية الوطني",
@@ -384,8 +392,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:51:47+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:07+00:00",
+      "status": "sent",
+      "telegram_message_id": 26
     },
     "extracted": {
       "company": "General Authority for Statistics | الهيئة العامة للاحصاء",
@@ -426,8 +435,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:51:54+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:08+00:00",
+      "status": "sent",
+      "telegram_message_id": 27
     },
     "extracted": {
       "company": "Abdul Latif Jameel",
@@ -468,8 +478,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:52:07+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:08+00:00",
+      "status": "sent",
+      "telegram_message_id": 28
     },
     "extracted": {
       "company": "Aon",
@@ -510,8 +521,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:52:14+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:08+00:00",
+      "status": "sent",
+      "telegram_message_id": 29
     },
     "extracted": {
       "company": "MRSOOL",
@@ -552,8 +564,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-10T09:52:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-10T09:53:09+00:00",
+      "status": "sent",
+      "telegram_message_id": 30
     },
     "extracted": {
       "company": "Lumi",
