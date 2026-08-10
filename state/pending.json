@@ -298,50 +298,6 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
-  "cooptraning_inksa:4341": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-10T13:48:14+00:00",
-      "status": "sent",
-      "telegram_message_id": 60
-    },
-    "extracted": {
-      "company": "Azm Al-Eenjaz",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "evidence": {
-        "company": "شركة عزم الإنجاز",
-        "deadline": null,
-        "location": "الرياض، حي الوزارات"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSetTK8egtVpHXbHaJZRuBXla9UkVV_cy9oit9ttKzn9Ne067A/viewform"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": false,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://docs.google.com/forms/d/e/1FAIpQLSetTK8egtVpHXbHaJZRuBXla9UkVV_cy9oit9ttKzn9Ne067A/viewform"
-      ],
-      "message_id": 4341,
-      "permalink": "https://t.me/cooptraning_inksa/4341",
-      "posted_at": "2026-08-09T14:16:08+00:00",
-      "text": "🟡الفرصة رقم ٢٧٠٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\nإعلان تدريب تعاوني\n\nتعلن شركة عزم الإنجاز عن فتح باب التقديم لبرنامج التدريب التعاوني لطلاب وطالبات الجامعات للفصل التدريبي القادم.\n\n🎓 التخصصات المستهدفة:\n• التسويق\n• العلاقات العامة\n• الإدارة المكتبية\n\n🎯 مزايا التدريب:\n✅ اكتساب خبرة عملية في بيئة عمل احترافية.\n✅ المشاركة في مشاريع ومهام حقيقية مرتبطة بالتخصص.\n✅ إشراف وتوجيه مهني مستمر.\n✅ تطوير المهارات المهنية والإدارية.\n✅ شهادة تدريب تعاوني بعد إتمام البرنامج بنجاح.\n✅ إمكانية الترشيح للفرص الوظيفية المستقبلية للمتميزين.\n\n📍 موقع التدريب: الرياض، حي الوزارات\n\nللتقديم:\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSetTK8egtVpHXbHaJZRuBXla9UkVV_cy9oit9ttKzn9Ne067A/viewform\n\nنتطلع لاستقبال الكفاءات الطموحة والمتميزة."
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
