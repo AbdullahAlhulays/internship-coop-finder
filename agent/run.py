@@ -38,10 +38,21 @@ from state import (
 use_utf8_stdout()
 
 FETCH_TIMEOUT = 60
+MAX_PROVIDER_RETRY_DELAY_SECONDS = 60
 
 
 class RunError(RuntimeError):
     ...
+
+
+def retry_delay_seconds(exc: Exception, extraction_attempt: int) -> float:
+    """Choose a bounded retry delay, honoring Groq's 429 guidance."""
+    fallback = min(2 ** extraction_attempt, 8)
+    if isinstance(exc, ModelError) and exc.retry_after_seconds is not None:
+        # One safety second prevents retrying on the exact reset boundary.
+        advised = exc.retry_after_seconds + 1
+        return min(max(advised, fallback), MAX_PROVIDER_RETRY_DELAY_SECONDS)
+    return fallback
 
 
 TELEGRAM_LINK_HOSTS = {"t.me", "telegram.me"}
@@ -172,9 +183,10 @@ def run(
                     break
                 print(f"  [retry]   {candidate_id}: extraction attempt {extraction_attempt} failed: {exc}")
                 # Tests inject a deterministic model and should remain
-                # instant. Live provider retries get a short backoff.
+                # instant. Live provider retries honor Groq's Retry-After
+                # header, with a bounded exponential fallback.
                 if model_fn is None:
-                    time.sleep(min(2 ** extraction_attempt, 8))
+                    time.sleep(retry_delay_seconds(exc, extraction_attempt))
 
         if extracted is None:
             summary["failed"] += 1

@@ -18,9 +18,11 @@ Run with:
 """
 
 import json
+import os
 from dataclasses import replace
 
-from extract import ValidationError, extract_opportunity, to_card
+import extract as extract_module
+from extract import ModelError, ValidationError, extract_opportunity, to_card
 
 from _console import use_utf8_stdout
 
@@ -322,6 +324,59 @@ try:
     check("raised ValidationError", False)
 except ValidationError:
     check("raised ValidationError", True)
+
+
+print("\nGroq 429 response exposes the provider's exact retry delay")
+
+
+class RateLimitResponse:
+    status_code = 429
+    headers = {"retry-after": "17.25"}
+    ok = False
+    text = "rate limited"
+
+
+original_post = extract_module.requests.post
+original_key = os.environ.get("GROQ_API_KEY")
+try:
+    os.environ["GROQ_API_KEY"] = "test-only-key"
+    extract_module.requests.post = lambda *args, **kwargs: RateLimitResponse()
+    try:
+        extract_module.call_model("test prompt")
+        check("429 raises ModelError", False)
+    except ModelError as exc:
+        check("429 raises ModelError", True)
+        check("Retry-After is preserved as seconds", exc.retry_after_seconds == 17.25)
+finally:
+    extract_module.requests.post = original_post
+    if original_key is None:
+        os.environ.pop("GROQ_API_KEY", None)
+    else:
+        os.environ["GROQ_API_KEY"] = original_key
+
+
+print("\nGroq transport failures become retryable pipeline errors")
+original_post = extract_module.requests.post
+original_key = os.environ.get("GROQ_API_KEY")
+try:
+    os.environ["GROQ_API_KEY"] = "test-only-key"
+
+    def raise_timeout(*args, **kwargs):
+        raise extract_module.requests.Timeout("temporary timeout")
+
+    extract_module.requests.post = raise_timeout
+    try:
+        extract_module.call_model("test prompt")
+        check("network timeout raises ModelError", False)
+    except ModelError as exc:
+        check("network timeout raises ModelError", True)
+        check("network error is safe to show in logs", "Could not reach Groq" in str(exc))
+finally:
+    extract_module.requests.post = original_post
+    if original_key is None:
+        os.environ.pop("GROQ_API_KEY", None)
+    else:
+        os.environ["GROQ_API_KEY"] = original_key
 
 print("\nbroken output — missing required keys")
 try:

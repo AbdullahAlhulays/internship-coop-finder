@@ -13,8 +13,9 @@ import json
 import tempfile
 from pathlib import Path
 
+from extract import ModelError
 from read_companies import ReadCompaniesError, read_companies
-from run import as_plain_text, has_usable_external_link, is_usable_external_link, run
+from run import as_plain_text, has_usable_external_link, is_usable_external_link, retry_delay_seconds, run
 from state import DELIVERY_QUEUED, DELIVERY_SENT, delivery_status_of, load_pending, load_seen
 
 from _console import use_utf8_stdout
@@ -36,6 +37,18 @@ def check_raises(label: str, exc_type, fn) -> None:
         check(label, False)
     except exc_type:
         check(label, True)
+
+
+print("retry timing: provider guidance is honored without unbounded waits")
+check("ordinary failures use exponential fallback", retry_delay_seconds(ValueError("bad JSON"), 2) == 4)
+check(
+    "Groq Retry-After gets one safety second",
+    retry_delay_seconds(ModelError("rate limited", retry_after_seconds=17.25), 1) == 18.25,
+)
+check(
+    "provider delays are capped to keep the hourly job bounded",
+    retry_delay_seconds(ModelError("rate limited", retry_after_seconds=3600), 1) == 60,
+)
 
 
 # Deliberately awkward: a trailing comma, a URL containing brackets and

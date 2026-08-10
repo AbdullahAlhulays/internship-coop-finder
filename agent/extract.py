@@ -65,6 +65,10 @@ REQUEST_TIMEOUT = 30
 class ModelError(RuntimeError):
     """The provider could not be reached or refused the request."""
 
+    def __init__(self, message: str, retry_after_seconds: float | None = None):
+        super().__init__(message)
+        self.retry_after_seconds = retry_after_seconds
+
 
 def _auth_headers() -> dict:
     key = os.environ.get("GROQ_API_KEY")
@@ -84,25 +88,40 @@ def call_model(prompt: str) -> str:
     providers again later means rewriting this one function and
     list_models() below, nothing else.
     """
-    response = requests.post(
-        CHAT_URL,
-        headers=_auth_headers(),
-        json={
-            "model": DEFAULT_MODEL,
-            "temperature": 0,
-            "response_format": {"type": "json_object"},
-            "messages": [
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": prompt},
-            ],
-        },
-        timeout=REQUEST_TIMEOUT,
-    )
+    try:
+        response = requests.post(
+            CHAT_URL,
+            headers=_auth_headers(),
+            json={
+                "model": DEFAULT_MODEL,
+                "temperature": 0,
+                "response_format": {"type": "json_object"},
+                "messages": [
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": prompt},
+                ],
+            },
+            timeout=REQUEST_TIMEOUT,
+        )
+    except requests.RequestException as exc:
+        raise ModelError(f"Could not reach Groq: {exc}") from exc
 
     if response.status_code == 401:
         raise ModelError("Groq rejected the API key. Check it was copied correctly and hasn't been revoked.")
     if response.status_code == 429:
-        raise ModelError("Rate limit hit. Groq's free tier is generous but not infinite — wait a bit and retry.")
+        retry_after = None
+        try:
+            retry_after = float(response.headers.get("retry-after", ""))
+            if retry_after < 0:
+                retry_after = None
+        except (TypeError, ValueError):
+            retry_after = None
+        delay_text = f" Retry after {retry_after:g} seconds." if retry_after is not None else ""
+        raise ModelError(
+            "Rate limit hit. Groq's free tier is generous but not infinite."
+            f"{delay_text}",
+            retry_after_seconds=retry_after,
+        )
     if response.status_code in (404, 410):
         raise ModelError(
             f"Model {DEFAULT_MODEL!r} is not available (HTTP {response.status_code}). "
