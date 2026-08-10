@@ -151,6 +151,24 @@ with tempfile.TemporaryDirectory() as tmp:
     check("still only one message ever sent", sent == ["SALTRAI:5478"])
 
 
+print("\nrun --defer-send: state is durable before any Telegram message")
+with tempfile.TemporaryDirectory() as tmp:
+    tmpp = Path(tmp)
+    companies = write_companies(tmpp)
+    sent = []
+    summary = run(
+        "@SALTRAI", [POST], str(companies), defer_send=True,
+        pending_path=str(tmpp / "pending.json"), ledger_path=str(tmpp / "published.json"),
+        seen_path=str(tmpp / "seen.json"),
+        model_fn=stub_model(opportunity_json()),
+        send_fn=lambda extracted, cid, post=None: sent.append(cid),
+    )
+    check("deferred run sends nothing before the git push", sent == [] and summary["sent"] == 0)
+    check("deferred run reports the queued candidate", summary["queued"] == 1 and summary["candidate_ids"] == ["SALTRAI:5478"])
+    check("queued candidate is already durable in pending state", "SALTRAI:5478" in load_pending(tmpp / "pending.json"))
+    check("queued post is marked seen in the same transaction", load_seen(tmpp / "seen.json") == {"SALTRAI": [5478]})
+
+
 print("\nrun: an opportunity already published under the same link is a duplicate, not re-sent")
 with tempfile.TemporaryDirectory() as tmp:
     tmpp = Path(tmp)
@@ -198,14 +216,18 @@ with tempfile.TemporaryDirectory() as tmp:
     tmpp = Path(tmp)
     companies = write_companies(tmpp)
     sent = []
+    model_calls = []
     summary = run(
         "@SALTRAI", [POST], str(companies),
         pending_path=str(tmpp / "p.json"), ledger_path=str(tmpp / "l.json"), seen_path=str(tmpp / "s.json"),
-        model_fn=lambda prompt: "this isn't json at all",
+        model_fn=lambda prompt: model_calls.append(prompt) or "this isn't json at all",
         send_fn=lambda e, c, post=None: sent.append(c),
+        extraction_attempts=2,
     )
     check("nothing sent", sent == [])
     check("counted as failed", summary["failed"] == 1)
+    check("retried extraction before giving up", len(model_calls) == 2)
+    check("failed extraction is not marked seen, so the next hourly run retries it", load_seen(tmpp / "s.json") == {})
 
 
 print("\nas_plain_text: the dry-run preview is readable in a terminal")

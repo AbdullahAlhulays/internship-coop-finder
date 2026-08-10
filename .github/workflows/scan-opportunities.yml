@@ -1,0 +1,153 @@
+name: Scan Telegram Opportunities
+
+on:
+  schedule:
+    # Hourly, offset from the top of the hour to avoid GitHub's busiest
+    # scheduler minute. GitHub Actions cron uses UTC.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      CHANNELS: "SALTRAI"
+      POST_LIMIT: "20"
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node (run.py validates companies.js with Node)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python dependencies
+        run: pip install -r agent/requirements.txt
+
+      - name: Configure git identity
+        run: |
+          git config user.name "opportunity-agent"
+          git config user.email "actions@users.noreply.github.com"
+
+      # The scanner writes pending.json and seen.json first, but defers
+      # Telegram delivery until that state is committed and pushed. If
+      # an approval or /new card lands at the same time, reset to the
+      # new remote state and rerun without ever sending a phantom card.
+      - name: Scan channels, then commit and push state
+        id: scan
+        run: |
+          set -euo pipefail
+          : "${GROQ_API_KEY:?GROQ_API_KEY is missing}"
+          : "${TELEGRAM_BOT_TOKEN:?TELEGRAM_BOT_TOKEN is missing}"
+          : "${TELEGRAM_CHAT_ID:?TELEGRAM_CHAT_ID is missing}"
+
+          CREATED_IDS_FILE="$RUNNER_TEMP/created-ids.txt"
+          FAILURE_COUNT_FILE="$RUNNER_TEMP/extraction-failures.txt"
+          MAX_ATTEMPTS=5
+
+          for attempt in $(seq 1 "$MAX_ATTEMPTS"); do
+            echo "::group::Attempt $attempt of $MAX_ATTEMPTS"
+
+            if [ "$attempt" -gt 1 ]; then
+              git fetch origin "$GITHUB_REF_NAME"
+              git reset --hard "origin/$GITHUB_REF_NAME"
+            fi
+
+            : > "$CREATED_IDS_FILE"
+            echo 0 > "$FAILURE_COUNT_FILE"
+
+            for channel in $CHANNELS; do
+              if [[ ! "$channel" =~ ^[A-Za-z0-9_]+$ ]]; then
+                echo "Invalid Telegram channel username: $channel" >&2
+                exit 1
+              fi
+
+              ids_json="$RUNNER_TEMP/${channel}-created.json"
+              summary_json="$RUNNER_TEMP/${channel}-summary.json"
+              python agent/run.py \
+                --channel "$channel" \
+                --limit "$POST_LIMIT" \
+                --defer-send \
+                --extraction-attempts 3 \
+                --created-ids-file "$ids_json" \
+                --summary-file "$summary_json"
+
+              jq -r '.[]' "$ids_json" >> "$CREATED_IDS_FILE"
+              current_failures=$(cat "$FAILURE_COUNT_FILE")
+              channel_failures=$(jq -r '.failed' "$summary_json")
+              echo $((current_failures + channel_failures)) > "$FAILURE_COUNT_FILE"
+            done
+
+            sort -u "$CREATED_IDS_FILE" -o "$CREATED_IDS_FILE"
+            git add -- state/pending.json state/seen.json
+
+            if git diff --cached --quiet; then
+              echo "No new scanner state to commit."
+              echo "::endgroup::"
+              break
+            fi
+
+            git commit -m "Hourly opportunity scan: $GITHUB_RUN_ID"
+            if git push; then
+              echo "Scanner state pushed successfully."
+              echo "::endgroup::"
+              break
+            fi
+
+            echo "Push rejected because another workflow updated state first."
+            echo "::endgroup::"
+            if [ "$attempt" -eq "$MAX_ATTEMPTS" ]; then
+              echo "Scanner could not save state after $MAX_ATTEMPTS attempts." >&2
+              exit 1
+            fi
+            sleep $(( (RANDOM % 5) + 2 ))
+          done
+
+          echo "created_count=$(grep -c . "$CREATED_IDS_FILE" || true)" >> "$GITHUB_OUTPUT"
+          echo "extraction_failures=$(cat "$FAILURE_COUNT_FILE")" >> "$GITHUB_OUTPUT"
+
+      - name: Send committed candidates to Telegram
+        if: steps.scan.outputs.created_count != '0'
+        run: |
+          set -u
+          failed=0
+
+          while IFS= read -r candidate_id; do
+            sent=0
+            for attempt in 1 2 3; do
+              if python agent/create_candidate.py "$candidate_id" --send-only; then
+                sent=1
+                break
+              fi
+              echo "Telegram delivery attempt $attempt failed for $candidate_id." >&2
+              sleep $((attempt * 3))
+            done
+
+            if [ "$sent" -ne 1 ]; then
+              echo "Could not deliver $candidate_id after 3 attempts." >&2
+              failed=1
+            fi
+          done < "$RUNNER_TEMP/created-ids.txt"
+
+          exit "$failed"
+
+      - name: Report extraction failures
+        if: steps.scan.outputs.extraction_failures != '0'
+        run: |
+          echo "${{ steps.scan.outputs.extraction_failures }} post(s) could not be extracted after retries." >&2
+          echo "They were deliberately left unseen and will be retried next hour." >&2
+          exit 1

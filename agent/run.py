@@ -11,6 +11,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 from dedupe import decide
@@ -80,14 +81,20 @@ def run(
     seen_path: str = SEEN_PATH,
     model_fn=None,
     send_fn=send_candidate,
+    defer_send: bool = False,
+    extraction_attempts: int = 3,
 ) -> dict:
     existing = read_companies(companies_path)
     ledger = load_ledger(ledger_path)
     pending = load_pending(pending_path)
     seen = load_seen(seen_path)
 
+    if extraction_attempts < 1:
+        raise ValueError("extraction_attempts must be at least 1")
+
     summary = {"read": len(posts), "skipped_seen": 0, "not_opportunity": 0,
-               "unpublishable": 0, "duplicate": 0, "failed": 0, "sent": 0}
+               "unpublishable": 0, "duplicate": 0, "failed": 0,
+               "queued": 0, "sent": 0, "candidate_ids": []}
     processed_ids: list[int] = []
 
     for post in posts:
@@ -101,15 +108,29 @@ def run(
             summary["skipped_seen"] += 1
             continue
 
-        try:
-            kwargs = {"model_fn": model_fn} if model_fn else {}
-            extracted = extract_opportunity(
-                post.get("text", ""), post.get("posted_at"), post.get("links"), **kwargs
-            )
-        except (ModelError, ValidationError) as exc:
-            print(f"  [failed]  {candidate_id}: {exc}")
+        extracted = None
+        for extraction_attempt in range(1, extraction_attempts + 1):
+            try:
+                kwargs = {"model_fn": model_fn} if model_fn else {}
+                extracted = extract_opportunity(
+                    post.get("text", ""), post.get("posted_at"), post.get("links"), **kwargs
+                )
+                break
+            except (ModelError, ValidationError) as exc:
+                if extraction_attempt == extraction_attempts:
+                    print(f"  [failed]  {candidate_id} after {extraction_attempts} attempt(s): {exc}")
+                    break
+                print(f"  [retry]   {candidate_id}: extraction attempt {extraction_attempt} failed: {exc}")
+                # Tests inject a deterministic model and should remain
+                # instant. Live provider retries get a short backoff.
+                if model_fn is None:
+                    time.sleep(min(2 ** extraction_attempt, 8))
+
+        if extracted is None:
             summary["failed"] += 1
-            processed_ids.append(message_id)
+            # Do NOT mark a failed extraction as seen. A transient Groq
+            # outage or malformed response must be retried next hour,
+            # never silently discard a real opportunity forever.
             continue
 
         if not extracted.is_opportunity:
@@ -144,9 +165,14 @@ def run(
             continue
 
         add_pending(candidate_id, extracted, post, decision, path=pending_path)
-        send_fn(extracted, candidate_id, post=post)
-        print(f"  [sent]    {candidate_id}: {extracted.company} ({decision.action})")
-        summary["sent"] += 1
+        summary["candidate_ids"].append(candidate_id)
+        if defer_send:
+            print(f"  [queued]  {candidate_id}: {extracted.company} ({decision.action})")
+            summary["queued"] += 1
+        else:
+            send_fn(extracted, candidate_id, post=post)
+            print(f"  [sent]    {candidate_id}: {extracted.company} ({decision.action})")
+            summary["sent"] += 1
         processed_ids.append(message_id)
 
     if processed_ids and not dry_run:
@@ -163,6 +189,13 @@ def main() -> int:
     parser.add_argument("--companies", default="src/data/companies.js", help="path to the site's companies.js")
     parser.add_argument("--dry-run", action="store_true", help="print what would be sent; send and save nothing")
     parser.add_argument("--ignore-seen", action="store_true", help="re-process posts already handled before")
+    parser.add_argument(
+        "--defer-send", action="store_true",
+        help="write pending/seen state but send no Telegram cards yet; the workflow sends them only after git push succeeds",
+    )
+    parser.add_argument("--created-ids-file", help="write the newly queued candidate ids as a JSON array")
+    parser.add_argument("--summary-file", help="write the run summary as JSON for workflow reporting")
+    parser.add_argument("--extraction-attempts", type=int, default=3, help="attempt each Groq extraction this many times")
     args = parser.parse_args()
 
     if not args.channel and not args.posts_file:
@@ -180,10 +213,21 @@ def main() -> int:
         summary = run(
             channel, posts, args.companies,
             dry_run=args.dry_run, ignore_seen=args.ignore_seen,
+            defer_send=args.defer_send,
+            extraction_attempts=args.extraction_attempts,
         )
     except (RunError, ReadCompaniesError) as exc:
         print(f"FAILED: {exc}", file=sys.stderr)
         return 1
+
+    if args.created_ids_file:
+        Path(args.created_ids_file).write_text(
+            json.dumps(summary["candidate_ids"], ensure_ascii=False) + "\n", encoding="utf-8"
+        )
+    if args.summary_file:
+        Path(args.summary_file).write_text(
+            json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
 
     print(
         f"\nread {summary['read']}"
@@ -192,6 +236,7 @@ def main() -> int:
         f" | unpublishable {summary['unpublishable']}"
         f" | duplicates {summary['duplicate']}"
         f" | failed {summary['failed']}"
+        f" | queued {summary['queued']}"
         f" | {'would send' if args.dry_run else 'sent'} {summary['sent']}"
     )
     return 0
