@@ -1044,8 +1044,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-11T17:15:20+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-11T17:15:23+00:00",
+      "status": "sent",
+      "telegram_message_id": 65
     },
     "extracted": {
       "company": "National Transport Safety Center | المركز الوطني لسلامة النقل",
