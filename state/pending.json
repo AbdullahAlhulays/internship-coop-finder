@@ -298,50 +298,6 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
-  "SALTRAI:5519": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-11T13:46:26+00:00",
-      "status": "sent",
-      "telegram_message_id": 64
-    },
-    "extracted": {
-      "company": "General Authority for Statistics | الهيئة العامة للإحصاء",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "evidence": {
-        "company": "الهيئة العامة للإحصاء",
-        "deadline": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": true,
-      "title": "Cooperative Training Program",
-      "type": "coop",
-      "url": "https://www.stats.gov.sa/ar/cooperative-training"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://www.stats.gov.sa/ar/cooperative-training",
-        "https://www.linkedin.com/posts/aepaesaevaeyaeoaerabraepaesaehaepaetaerabraesaesaenaevaedaepaej-share-7490329741187579905-CTTT/"
-      ],
-      "message_id": 5519,
-      "permalink": "https://t.me/SALTRAI/5519",
-      "posted_at": "2026-08-11T12:14:03+00:00",
-      "text": "(🔴) هام | الهيئة العامة للإحصاء تعلن فتح التقديم في برنامج (التدريب التعاوني) للعام ١٤٤٨هـ (للجنسين):\n\n⭐️ للتخصصات (الإحصاء، الرياضيات، الاقتصاد، تحليل البيانات، الذكاء الاصطناعي، تقنية المعلومات، إدارة الأعمال، الموارد البشرية، المحاسبة، القانون، الإعلام) وغيرها.\n\n✅ رابط مباشر: https://www.stats.gov.sa/ar/cooperative-training\n\nالمصدر: https://www.linkedin.com/posts/aepaesaevaeyaeoaerabraepaesaehaepaetaerabraesaesaenaevaedaepaej-share-7490329741187579905-CTTT/"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",

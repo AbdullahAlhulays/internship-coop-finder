@@ -733,4 +733,11 @@ export const companies = [
     applicationLink: "https://bit.ly/4fAKTdy",
     type: "CO-OP Training",
     addedAt: "2026-08-11T20:55:09+03:00",
+  },
+  {
+    name: "General Authority for Statistics | الهيئة العامة للإحصاء",
+    applicationLink: "https://www.stats.gov.sa/ar/cooperative-training",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-08-11T20:56:15+03:00",
   },];
