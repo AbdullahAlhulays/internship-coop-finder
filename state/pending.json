@@ -324,7 +324,7 @@
       "is_opportunity": true,
       "location": null,
       "reason_excluded": null,
-      "requires_letter": false,
+      "requires_letter": true,
       "title": "Cooperative Training Program",
       "type": "coop",
       "url": "https://www.stats.gov.sa/ar/cooperative-training"
