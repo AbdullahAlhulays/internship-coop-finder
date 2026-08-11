@@ -903,51 +903,5 @@
       "posted_at": "2026-08-10T01:44:42+00:00",
       "text": "🎓 #التدريب_التعاوني |\n\n📍ممكن عدة مدن\n\nشركة لومي Lumi\n\nتعلن عن فتح التقديم على Co-op Internship Program 2026.\n\nالتخصصات :\nلم يتم تحديد تخصصات معينة\n\nالمتطلبات :\nسعودي الجنسية\nطالب متوقع تخرجه\nمعدل تراكمي جيد جدًا\nخطاب من الجامعة\nأن يكون التدريب التعاوني في الفصل الأول أو الثاني أو الصيفي\n\nمدة التدريب:\nحسب الفصل الأكاديمي (أول / ثاني / صيفي)\n\nالمزايا:\nمكافأة شهرية 1,500 ريال\nتوفير جهاز Laptop/PC طوال فترة التدريب\nشهادة خبرة من لومي بعد إتمام التدريب\n\nللتقديم_____________"
     }
-  },
-  "nobthacv1:2068": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-11T17:15:23+00:00",
-      "status": "sent",
-      "telegram_message_id": 65
-    },
-    "extracted": {
-      "company": "National Transport Safety Center | المركز الوطني لسلامة النقل",
-      "confidence": 0.9,
-      "contact": {
-        "type": "email",
-        "value": "Training@ntsc.gov.sa"
-      },
-      "deadline": null,
-      "deadline_raw": null,
-      "evidence": {
-        "company": "#التدريب_التعاوني | #الرياض المركز الوطني لسلامة النقل",
-        "deadline": null,
-        "location": "#الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNlBNUkVORk5URE5LRENSU0xMNjI3VUtXSC4u"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": false,
-      "links": [
-        "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNlBNUkVORk5URE5LRENSU0xMNjI3VUtXSC4u"
-      ],
-      "message_id": 2068,
-      "permalink": "https://t.me/nobthacv1/2068",
-      "posted_at": "2026-08-11T16:35:20+00:00",
-      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nالمركز الوطني لسلامة النقل يعلن عن فتح باب التقديم في برنامج التدريب التعاوني (COOP) وتمهير لطلاب وطالبات الجامعات السعوديين.\n\nالتخصصات المستهدفة:\n\nقانون\n\nموارد بشريه\n\nسكرتاريه تنفيذيه\n\nالمتطلبات\nيشترط ألا يقل المعدل التراكمي عن:\n\n* 2.50 من 4.00 أو\n* 3.50 من 5.00\n\nللتقديمـــــــــــــــــــــــــــــــــ\nhttps://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNlBNUkVORk5URE5LRENSU0xMNjI3VUtXSC4u\nاو عن طريق البريد الالكتروني\n\nTraining@ntsc.gov.sa"
-    }
   }
 }
