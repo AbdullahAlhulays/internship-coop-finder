@@ -306,8 +306,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-11T13:46:09+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-11T13:46:25+00:00",
+      "status": "sent",
+      "telegram_message_id": 62
     },
     "extracted": {
       "company": "Roshan Development | شركة روشن للتطوير العقاري",
@@ -349,8 +350,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-11T13:46:12+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-11T13:46:26+00:00",
+      "status": "sent",
+      "telegram_message_id": 63
     },
     "extracted": {
       "company": "Ministry of Tourism | وزارة السياحة",
@@ -392,8 +394,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-11T13:46:12+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-11T13:46:26+00:00",
+      "status": "sent",
+      "telegram_message_id": 64
     },
     "extracted": {
       "company": "General Authority for Statistics | الهيئة العامة للإحصاء",
