@@ -298,50 +298,6 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
-  "SALTRAI:5518": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-11T13:46:26+00:00",
-      "status": "sent",
-      "telegram_message_id": 63
-    },
-    "extracted": {
-      "company": "Ministry of Tourism | وزارة السياحة",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "evidence": {
-        "company": "وزارة السياحة",
-        "deadline": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "التدريب التعاوني",
-      "type": "coop",
-      "url": "https://bit.ly/4fAKTdy"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://bit.ly/4fAKTdy",
-        "https://x.com/Saudi_MT/status/2084376834322432055"
-      ],
-      "message_id": 5518,
-      "permalink": "https://t.me/SALTRAI/5518",
-      "posted_at": "2026-08-11T12:14:03+00:00",
-      "text": "(🔴) وزارة السياحة تعلن بدء التقديم في برنامج (التدريب التعاوني) للطلاب والطالبات بالتعاون مع صندوق (هدف):\n\n⭐️ الفئة المستهدفة (طلاب وطالبات الدبلوم والبكالوريوس).\n📍 بداية التدريب (السبت ١٤٤٨/٣/١٦هـ).\n\n✅ رابط مباشر: https://bit.ly/4fAKTdy\n\nالمصدر: https://x.com/Saudi_MT/status/2084376834322432055"
-    }
-  },
   "SALTRAI:5519": {
     "decision": {
       "action": "add",

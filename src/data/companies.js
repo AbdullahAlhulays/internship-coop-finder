@@ -727,4 +727,10 @@ export const companies = [
     deadline: "2026-08-15",
     type: "CO-OP Training",
     addedAt: "2026-08-11T20:53:20+03:00",
+  },
+  {
+    name: "Ministry of Tourism | وزارة السياحة",
+    applicationLink: "https://bit.ly/4fAKTdy",
+    type: "CO-OP Training",
+    addedAt: "2026-08-11T20:55:09+03:00",
   },];
