@@ -720,4 +720,11 @@ export const companies = [
     applicationLink: "https://egay.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/job/42609/?utm_medium=jobshare",
     type: "CO-OP Training",
     addedAt: "2026-08-10T14:32:20+03:00",
+  },
+  {
+    name: "Roshan Development | شركة روشن للتطوير العقاري",
+    applicationLink: "https://wdeftksa.com/sa/jobs/100455",
+    deadline: "2026-08-15",
+    type: "CO-OP Training",
+    addedAt: "2026-08-11T20:53:20+03:00",
   },];
