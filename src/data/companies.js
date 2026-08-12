@@ -740,4 +740,12 @@ export const companies = [
     type: "CO-OP Training",
     requiresLetter: true,
     addedAt: "2026-08-11T20:56:15+03:00",
+  },
+  {
+    name: "ROSHN Group | روشن",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://fa-epph-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2323/",
+    deadline: "2026-08-15",
+    type: "CO-OP Training",
+    addedAt: "2026-08-12T06:07:53+03:00",
   },];
