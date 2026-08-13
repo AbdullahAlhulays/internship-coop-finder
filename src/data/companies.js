@@ -748,4 +748,12 @@ export const companies = [
     deadline: "2026-08-15",
     type: "CO-OP Training",
     addedAt: "2026-08-12T06:07:53+03:00",
+  },
+  {
+    name: "Ram World | عالم رام",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://hub.ramworld.net/apply/",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-08-13T09:23:37+03:00",
   },];
