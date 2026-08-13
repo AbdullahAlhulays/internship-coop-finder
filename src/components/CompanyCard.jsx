@@ -1,18 +1,52 @@
-import { useState } from "react";
+import CompanyLogo from "./CompanyLogo.jsx";
 import {
-  formatCountdown,
+  getCompanyDisplayName,
+  getOpportunityTypeLabel,
+} from "../data/companyLogos.js";
+import {
   formatDeadline,
   getCompanyStatus,
-  getDeadlineCountdown,
-  getOpeningCountdown,
   isDeadlineUrgent,
-  isOpportunityNew,
 } from "../utils/status.js";
 
-function getWhatsAppShareUrl(company) {
-  const message = `Check out this student opportunity from ${company.name}: ${company.applicationLink}`;
+function getDeadlineContent(company, status, isUrgent) {
+  if (status.key === "closed") {
+    return {
+      label: null,
+      value: "Applications closed",
+    };
+  }
 
-  return `https://wa.me/?text=${encodeURIComponent(message)}`;
+  if (status.key === "open-soon" && company.openingDate) {
+    return {
+      label: "Applications open",
+      value: formatDeadline(company.openingDate),
+    };
+  }
+
+  if (!company.deadline) {
+    return {
+      label: null,
+      value: "Open until filled",
+    };
+  }
+
+  if (isUrgent) {
+    if (status.daysLeft <= 0) {
+      return { label: null, value: "Closes today" };
+    }
+
+    if (status.daysLeft === 1) {
+      return { label: null, value: "Closes tomorrow" };
+    }
+
+    return { label: null, value: `Closes in ${status.daysLeft} days` };
+  }
+
+  return {
+    label: "Deadline",
+    value: formatDeadline(company.deadline, company.deadlineTime),
+  };
 }
 
 export default function CompanyCard({
@@ -26,93 +60,46 @@ export default function CompanyCard({
   const isClosed = status.key === "closed";
   const canApply = status.key === "open";
   const isUrgent = isDeadlineUrgent(company, currentTime);
-  const isNew = isOpportunityNew(company, currentTime);
   const requiresLetter = Boolean(company.requiresLetter);
-  const hasBio = Boolean(company.bio?.trim());
   const hasLocation = Boolean(company.location?.trim());
-  const hasDeadline = Boolean(company.deadline?.trim());
-  const deadlineCountdown = getDeadlineCountdown(
-    company.deadline,
-    currentTime,
-    company.deadlineTime,
-  );
-  const openingCountdown =
-    isOpenSoon && company.openingDate
-      ? getOpeningCountdown(company.openingDate, currentTime)
-      : null;
-  const whatsappShareUrl = getWhatsAppShareUrl(company);
-  const [showBio, setShowBio] = useState(false);
+  const deadlineContent = getDeadlineContent(company, status, isUrgent);
+  const displayName = getCompanyDisplayName(company.name);
 
   return (
     <article
       className={`company-card ${isOpenSoon ? "is-open-soon" : ""} ${
         isUrgent ? "is-urgent" : ""
-      } ${isClosed ? "is-closed" : ""}`}
+      } ${isClosed ? "is-closed" : ""} ${isApplied ? "is-applied" : ""}`}
     >
-      <div className="card-topline">
-        <div className="card-badges">
-          <span className="opportunity-type">{company.type}</span>
-          {requiresLetter && (
-            <span className="letter-badge" title="Requires a training letter">
+      <div className="company-identity">
+        <CompanyLogo company={company} />
+        <div className="company-heading">
+          <h2 dir="auto" title={company.name} aria-label={company.name}>
+            {displayName}
+          </h2>
+          {hasLocation && <p className="location">{company.location}</p>}
+        </div>
+      </div>
+
+      <div className="opportunity-meta">
+        <span className="opportunity-type">
+          {getOpportunityTypeLabel(company.type)}
+        </span>
+        {requiresLetter && (
+          <>
+            <span className="meta-separator" aria-hidden="true">•</span>
+            <span className="letter-requirement">
               <span className="letter-badge-icon" aria-hidden="true" />
-              Letter
+              Letter required
             </span>
-          )}
-          {isNew && <span className="new-badge">New</span>}
-        </div>
-        <div className="card-status-actions">
-          <span className={`status status-${status.key}`}>{status.label}</span>
-        </div>
-      </div>
-
-      <div>
-        <h2>{company.name}</h2>
-        {hasLocation && <p className="location">{company.location}</p>}
-        {hasBio && (
-          <button
-            type="button"
-            className="bio-toggle"
-            aria-expanded={showBio}
-            onClick={() => setShowBio((current) => !current)}
-          >
-            {showBio ? "Hide bio" : "About company"}
-          </button>
-        )}
-        {hasBio && showBio && <p className="bio">{company.bio}</p>}
-      </div>
-
-      <div className="deadline-box">
-        {isClosed && (
-          <>
-            <span>Status</span>
-            <strong>Closed</strong>
-            <small>Applications are no longer accepting submissions.</small>
           </>
         )}
-        {!isClosed && isOpenSoon && company.openingDate && (
-          <>
-            <span>Opens</span>
-            <strong>{formatDeadline(company.openingDate)}</strong>
-            <small className="live-countdown">
-              Opens in {formatCountdown(openingCountdown)}
-            </small>
-          </>
-        )}
-        {!isClosed && <span>Deadline</span>}
-        {!isClosed && (
-          <strong>{formatDeadline(company.deadline, company.deadlineTime)}</strong>
-        )}
-        {!isClosed && canApply && isUrgent && (
-          <small className="deadline-alert">Less than 48 hours left</small>
-        )}
-        {!isClosed && canApply && hasDeadline && (
-          <small className="live-countdown">
-            Closes in {formatCountdown(deadlineCountdown)}
-          </small>
-        )}
-        {!isClosed && canApply && !hasDeadline && (
-          <small>No deadline specified</small>
-        )}
+      </div>
+
+      <div className="deadline-line" aria-label={deadlineContent.value}>
+        <span className="deadline-dot" aria-hidden="true" />
+        {deadlineContent.label && <span>{deadlineContent.label}</span>}
+        <strong>{deadlineContent.value}</strong>
       </div>
 
       <div className="card-actions">
@@ -124,18 +111,16 @@ export default function CompanyCard({
           aria-disabled={!canApply}
           tabIndex={canApply ? 0 : -1}
         >
-          {isClosed ? "Closed" : isOpenSoon ? "Open soon" : "Apply now"}
+          {isClosed
+            ? "Closed"
+            : isOpenSoon
+              ? "Opens soon"
+              : isApplied
+                ? "View application"
+                : "Apply now"}
         </a>
-        <div className="secondary-actions">
-          <a
-            className="whatsapp-share"
-            href={whatsappShareUrl}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Share ${company.name} on WhatsApp`}
-          >
-            WhatsApp
-          </a>
+
+        {canApply && (
           <button
             type="button"
             className={isApplied ? "applied-button active" : "applied-button"}
@@ -143,9 +128,9 @@ export default function CompanyCard({
             aria-pressed={isApplied}
             onClick={() => onAppliedToggle(company.applicationLink)}
           >
-            {isApplied ? "Applied" : "Mark applied"}
+            {isApplied ? "✓ Applied" : "Mark applied"}
           </button>
-        </div>
+        )}
       </div>
     </article>
   );

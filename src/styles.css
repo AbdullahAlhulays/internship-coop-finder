@@ -496,6 +496,7 @@ select {
 .company-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
   gap: 16px;
 }
 
@@ -875,6 +876,246 @@ select {
   cursor: not-allowed;
 }
 
+/* Simplified opportunity card */
+.company-card {
+  min-height: 0;
+  justify-content: flex-start;
+  gap: 14px;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.company-card::before {
+  display: none;
+}
+
+.company-identity {
+  display: flex;
+  min-width: 0;
+  min-height: 66px;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.company-logo {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #ffffff;
+  color: #31523a;
+  font-size: 0.94rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.company-logo img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.company-logo--taibah-valley {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: #4d6d74;
+}
+
+.company-heading {
+  min-width: 0;
+}
+
+.company-card .company-heading h2 {
+  margin: 0 0 5px;
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 850;
+  line-height: 1.28;
+  overflow-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.company-card .location {
+  overflow: hidden;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.opportunity-meta {
+  display: flex;
+  width: fit-content;
+  min-height: 34px;
+  max-width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  border-radius: 12px;
+  background: var(--deadline-bg);
+  color: var(--leaf-deep);
+  font-size: 0.74rem;
+  font-weight: 850;
+  line-height: 1.15;
+  padding: 8px 10px;
+}
+
+.opportunity-meta .opportunity-type {
+  display: inline;
+  min-height: 0;
+  max-width: none;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  text-overflow: clip;
+  white-space: normal;
+}
+
+.meta-separator {
+  color: var(--muted);
+}
+
+.letter-requirement {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--status-open-soon-text);
+  font: inherit;
+}
+
+.opportunity-meta .letter-badge-icon {
+  width: 11px;
+  height: 14px;
+  border-width: 1.5px;
+  border-radius: 2px;
+}
+
+.opportunity-meta .letter-badge-icon::before {
+  content: none;
+}
+
+.deadline-line {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.84rem;
+  padding-top: 12px;
+}
+
+.deadline-dot {
+  width: 9px;
+  height: 9px;
+  flex: 0 0 9px;
+  border-radius: 50%;
+  background: var(--leaf-deep);
+}
+
+.deadline-line strong {
+  color: var(--heading);
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.company-card.is-open-soon .deadline-dot {
+  background: var(--status-open-soon-text);
+}
+
+.company-card.is-urgent .deadline-line,
+.company-card.is-closed .deadline-line {
+  margin-right: -8px;
+  margin-left: -8px;
+  border: 0;
+  border-radius: 13px;
+  padding: 12px;
+}
+
+.company-card.is-urgent .deadline-line {
+  background: var(--urgent-bg);
+  color: var(--urgent);
+}
+
+.company-card.is-urgent .deadline-dot,
+.company-card.is-closed .deadline-dot {
+  background: var(--urgent);
+}
+
+.company-card.is-urgent .deadline-line strong,
+.company-card.is-closed .deadline-line strong {
+  color: var(--urgent);
+}
+
+.company-card.is-closed {
+  border-color: var(--urgent-line);
+  background: var(--paper);
+}
+
+:root[data-theme="dark"] .company-card.is-closed {
+  background: var(--paper);
+}
+
+.company-card.is-closed .deadline-line {
+  background: var(--urgent-bg);
+  color: var(--urgent);
+}
+
+.company-card .card-actions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  margin-top: 0;
+}
+
+.company-card.is-closed .card-actions,
+.company-card.is-open-soon .card-actions {
+  grid-template-columns: 1fr;
+}
+
+.company-card .apply-button,
+.company-card .applied-button {
+  min-height: 44px;
+  border-radius: 13px;
+  font-size: 0.82rem;
+  line-height: 1;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+.company-card .applied-button {
+  background: transparent;
+}
+
+.company-card .applied-button.active {
+  border-color: var(--line);
+  background: var(--deadline-bg);
+  color: var(--heading);
+}
+
+.company-card.is-closed .apply-button.disabled {
+  background: var(--urgent);
+  color: var(--button-text);
+}
+
+.company-card.is-open-soon .apply-button.disabled {
+  border: 1px solid var(--line);
+  background: var(--deadline-bg);
+  color: var(--muted);
+}
+
 .empty-state {
   border: 1px dashed var(--hover-line);
   border-radius: 24px;
@@ -990,6 +1231,18 @@ select {
   display: none;
 }
 
+@media (min-width: 1500px) {
+  .header-content,
+  .page-shell,
+  .site-footer {
+    width: min(1600px, calc(100% - 48px));
+  }
+
+  .company-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 1120px) {
   .controls {
     flex-wrap: wrap;
@@ -997,6 +1250,12 @@ select {
 
   .search-bar {
     flex-basis: 100%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .company-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

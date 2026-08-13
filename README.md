@@ -77,8 +77,8 @@ Expired opportunities are hidden automatically when their deadline passes.
 
 `openingDate` is optional. Add it only when an opportunity should appear as `Open Soon` before applications begin.
 
-`bio` and `location` are optional. Add them only when you want those details to appear on the card.
+`location` is optional. Add it when you want that detail to appear on the card. `bio` is accepted as legacy source data but is not displayed in the simplified card design.
 
 `deadlineTime` is optional. Add it in 24-hour `HH:mm` format when the posting includes an exact apply-before time.
 
-`addedAt` is optional. Add an ISO timestamp when an opportunity is first provided, and the app will show the `New` badge for 48 hours.
+`addedAt` is optional source metadata. It can be kept for maintenance and duplicate-resolution history, but it is not displayed on the card.
