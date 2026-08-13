@@ -21,6 +21,7 @@ export const companies = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4414437424/",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-15T00:00:00+03:00",
   },
   {
@@ -45,6 +46,7 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4412211034/",
     type: "CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
     addedAt: "2026-05-19T00:00:00+03:00",
   },
   {
@@ -52,6 +54,7 @@ export const companies = [
     location: "Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4414475883/",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-19T00:00:00+03:00",
   },
   {
@@ -69,6 +72,7 @@ export const companies = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4415445206",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-19T00:00:00+03:00",
   },
   {
@@ -76,6 +80,7 @@ export const companies = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4413693267",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-21T00:00:00+03:00",
   },
   {
@@ -101,6 +106,7 @@ export const companies = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4413406552",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-13T00:00:00+03:00",
   },
   {
@@ -129,6 +135,7 @@ export const companies = [
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4399533706/",
     type: "Internship",
+    isClosed: true,
     addedAt: "2026-05-07T00:00:00+03:00",
   },
   {
@@ -136,6 +143,7 @@ export const companies = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://jobs.cliffordchance.com/job/summer-internship-summer-2026-in-riyadh-jid-3165",
     type: "Internship",
+    isClosed: true,
     addedAt: "2026-05-07T00:00:00+03:00",
   },
   {
@@ -172,6 +180,7 @@ export const companies = [
     location: "Al Khobar, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4409234938",
     type: "Internship",
+    isClosed: true,
     addedAt: "2026-05-09T00:00:00+03:00",
   },
   {
@@ -180,6 +189,7 @@ export const companies = [
     applicationLink: "https://www.linkedin.com/jobs/view/4413011097",
     type: "CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
     addedAt: "2026-05-12T00:00:00+03:00",
   },
   {
@@ -187,6 +197,7 @@ export const companies = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4408288248/",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-04T00:00:00+03:00",
   },
   {
@@ -259,12 +270,14 @@ export const companies = [
     location: "Rabigh, Saudi Arabia",
     applicationLink: "https://careers.petrorabigh.com/jobs/6110058-university-internship-program-coop/2a4c5574-d92e-4e2c-b529-e8ba40696c14",
     type: "CO-OP Training",
+    isClosed: true,
   },
   {
     name: "GE VERNOVA",
     location: "Dammam, Saudi Arabia",
     applicationLink: "https://careers.gevernova.com/co-op-internship-program/job/R5037595",
     type: "Internship",
+    isClosed: true,
   },
   {
     name: "Madinah Municipality",
@@ -273,12 +286,6 @@ export const companies = [
     deadline: "2026-05-02",
     type: "CO-OP Training",
     isClosed: true,
-  },
-  {
-    name: "Riyadh Air",
-    location: "Riyadh, Saudi Arabia",
-    applicationLink: "https://careers-riyadhair.icims.com/jobs/2540/co-op/login?mobile=false&width=1024&height=500&bga=true&needsRedirect=false&jan1offset=180&jun1offset=180",
-    type: "CO-OP Training",
   },
   {
     name: "SPARK",
@@ -319,16 +326,11 @@ export const companies = [
     type: "Internship",
   },
   {
-    name: "Lumi",
-    location: "Riyadh, Saudi Arabia",
-    applicationLink: "https://www.linkedin.com/jobs/view/4404038529/",
-    type: "Internship / CO-OP Training",
-  },
-  {
     name: "Alfanar",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://jobs.alfanar.com/alfanar/job/Riyadh-COOP-Training-Program%2C-Engineering-alfanar-Electric/1382939433/?utm_campaign=LinkedinJobPostings&utm_source=LinkedinJobPostings&applySourceOverride=LinkedIn",
     type: "CO-OP Training",
+    isClosed: true,
   },
   {
     name: "Public Health Authority",
@@ -353,6 +355,7 @@ export const companies = [
     location: "Al Khobar, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4289263334/",
     type: "Internship",
+    isClosed: true,
   },
   {
     name: "Osool",
@@ -365,6 +368,7 @@ export const companies = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4398271155/",
     type: "Internship",
+    isClosed: true,
   },
   {
     name: "Digital Government Authority",
@@ -404,23 +408,10 @@ export const companies = [
     isClosed: true,
   },
   {
-    name: "SAP",
-    location: "Jeddah, Makkah, Saudi Arabia",
-    applicationLink: "https://www.linkedin.com/jobs/view/4368740142/",
-    type: "Internship",
-  },
-  {
     name: "R&D",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4374719492/",
     type: "Internship",
-    isClosed: true,
-  },
-  {
-    name: "TAWAL",
-    location: "Riyadh, Saudi Arabia",
-    applicationLink: "https://www.linkedin.com/jobs/view/4395054461",
-    type: "CO-OP Training",
     isClosed: true,
   },
   {
@@ -435,12 +426,14 @@ export const companies = [
   location: "Jeddah, Saudi Arabia",
   applicationLink: "https://career23.sapsf.com/career?career_ns=job_listing&company=saudiara08&career_job_req_id=906",
   type: "CO-OP Training",
+  isClosed: true,
 },
   {
   name: "WEBOOK",
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.linkedin.com/jobs/view/4361522849/",
   type: "CO-OP Training",
+  isClosed: true,
 },
  {
   name: "Tamara",
@@ -471,18 +464,21 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://jobs.smartrecruiters.com/RolandBerger/744000121683137-asas-internship",
   type: "Internship / CO-OP Training",
+  isClosed: true,
 },
  {
   name: "Ministry of Hajj & Umrah",
   location: "Saudi Arabia",
   applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=fmixyQTDhEaVc9y5ctH4Hje8bJStXz5Nikt8bd1Waa9UNkUzVFUwNU41VUZIVlBKTkpTTEtNTklKSC4u&route=shorturl",
   type: "Internship",
+  isClosed: true,
 },
  {
   name: "Al Rugaib",
   location: "Jeddah, Saudi Arabia",
   applicationLink: "https://careers.alrugaibsa.com/jobs/7488678-co-op-summer-internship",
   type: "Internship / CO-OP Training",
+  isClosed: true,
 },
  {
   name: "SAMI | الشركة السعودية للصناعات العسكرية",
@@ -497,6 +493,7 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.linkedin.com/jobs/view/4399235532/",
   type: "CO-OP Training",
+  isClosed: true,
 },
  {
   name: "TCC | شركة تحكم التقنية",
@@ -504,6 +501,7 @@ export const companies = [
   applicationLink: "https://tcc-ict-registration.limesurvey.net/438578?lang=en",
   deadline: "2026-12-31",
   type: "CO-OP Training",
+  isClosed: true,
 },
  {
   name: "SIDF | صندوق التنمية الصناعية السعودي",
@@ -516,6 +514,7 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.linkedin.com/jobs/search/?currentJobId=4344433208&f_C=2041&geoId=100459316&keywords=Co-op&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true&trk=d_flagship3_company",
   type: "CO-OP Training",
+  isClosed: true,
 },
  {
   name: "Motor Vehicle Periodic Inspection",
@@ -528,6 +527,7 @@ export const companies = [
   location: "Many, Saudi Arabia",
   applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdte2jeSOCjiYLcdTwShwNcT7SRbAR8zVprE0nPjfNXkTsM5w/viewform",
   type: "Internship / CO-OP Training",
+  isClosed: true,
 },
  {
   name: "Ministry of Justice | وزارة العدل",
@@ -565,6 +565,7 @@ export const companies = [
   location: "Many, Saudi Arabia",
   applicationLink: "https://coop.mim.gov.sa/",
   type: "Internship / CO-OP Training",
+  isClosed: true,
 },
 {
   name: "AlFalak",
@@ -577,6 +578,7 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.linkedin.com/jobs/view/4404095961/",
   type: "Internship",
+  isClosed: true,
 },
 {
   name: "Sarj.ai",
@@ -597,6 +599,7 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://careers.fedex.com/m00i0-intern-professional/job/DD4D3D398F6CAC6D986084069947E1A2",
   type: "Internship",
+  isClosed: true,
 },
 {
   name: "Emdad",
@@ -623,6 +626,7 @@ export const companies = [
   location: "Jubail, Saudi Arabia",
   applicationLink: "https://career-sa20.hr.cloud.sap/career?career%5fns=job%5flisting&company=SATORPPROD&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=en%5fUS&career_job_req_id=7845&selected_lang=en_US&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=Asia/Riyadh&_s.crb=f1Ic7brlkcAq93gtXURyVgxp0bm8fk3rV%2bXXPbd6ox4%3d",
   type: "CO-OP Training",
+  isClosed: true,
 },
 {
   name: "CAMCO",
@@ -644,14 +648,6 @@ export const companies = [
   isClosed: true,
 },
 {
-  name: "Bupa",
-  location: "Jeddah, Saudi Arabia",
-  applicationLink: "https://careers.bupa.com.sa/en/job-search-results/?keyword=coop&sort=22,d&page=1&view=grid",
-  deadline: "2026-05-13",
-  type: "Internship",
-  isClosed: true,
-},
-{
   name: "Barakah",
   location: "Jeddah, Saudi Arabia",
   applicationLink: "https://tally.so/r/Me8KZl",
@@ -664,6 +660,7 @@ export const companies = [
   location: "Jeddah, Madinah, Riyadh, Taif, and Thuwal, Saudi Arabia",
   applicationLink: "https://pure-consulting.com/job-opportunities/888/internship",
   type: "Internship",
+  isClosed: true,
 },
 {
   name: "NHC",
@@ -684,6 +681,7 @@ export const companies = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://azmtalent.recruitee.com/o/azem-internship-program-50?source=LinkedIn",
   type: "Internship",
+  isClosed: true,
   addedAt: "2026-05-05T00:00:00+03:00",
 },
 {
@@ -756,4 +754,144 @@ export const companies = [
     type: "CO-OP Training",
     requiresLetter: true,
     addedAt: "2026-08-13T09:23:37+03:00",
-  },];
+  },
+  {
+    name: "Air Products",
+    location: "Dhahran, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4438674076/",
+    type: "Internship",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Panda Retail Company",
+    location: "Jeddah, Makkah, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4426852775/",
+    type: "Internship",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Devoteam",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4327760747/",
+    type: "Internship",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Riyadh Air | طيران الرياض",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4311872699/",
+    type: "CO-OP Training",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Lucidya | لوسيديا",
+    location: "Jeddah, Makkah, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4408842452/",
+    type: "Internship",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "National Development Fund (NDF)",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4447920287/",
+    type: "CO-OP Training",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Amana Cooperative Insurance",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4446587752/",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Tatweer Education Holding Company | شركة تطوير التعليم القابضة",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4444128129/",
+    type: "CO-OP Training",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Center for National Health Insurance (CNHI)",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4440145347/",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Bupa Arabia",
+    location: "Jeddah, Makkah, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4452739028/",
+    type: "CO-OP Training",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Lumi | لومي",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4452465800/",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Insurance Authority | هيئة التأمين",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4444892519/",
+    type: "CO-OP Training",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "TAWAL",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4443362182/",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Hassan Allam Holding",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4440172101/",
+    type: "CO-OP Training",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "National Medical Care",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4449547087/",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Hewlett Packard Enterprise",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4409882454/",
+    type: "CO-OP Training",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Gulf Insulation Group",
+    location: "Riyadh, Dammam, and Al Khobar, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4434998655/",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Apex Group Ltd",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4441062021/",
+    type: "CO-OP Training",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+  {
+    name: "Ektis",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4429065414/",
+    type: "CO-OP Training",
+    addedAt: "2026-08-13T00:00:00+03:00",
+  },
+];
