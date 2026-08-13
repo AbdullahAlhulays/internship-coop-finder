@@ -903,5 +903,49 @@
       "posted_at": "2026-08-10T01:44:42+00:00",
       "text": "🎓 #التدريب_التعاوني |\n\n📍ممكن عدة مدن\n\nشركة لومي Lumi\n\nتعلن عن فتح التقديم على Co-op Internship Program 2026.\n\nالتخصصات :\nلم يتم تحديد تخصصات معينة\n\nالمتطلبات :\nسعودي الجنسية\nطالب متوقع تخرجه\nمعدل تراكمي جيد جدًا\nخطاب من الجامعة\nأن يكون التدريب التعاوني في الفصل الأول أو الثاني أو الصيفي\n\nمدة التدريب:\nحسب الفصل الأكاديمي (أول / ثاني / صيفي)\n\nالمزايا:\nمكافأة شهرية 1,500 ريال\nتوفير جهاز Laptop/PC طوال فترة التدريب\nشهادة خبرة من لومي بعد إتمام التدريب\n\nللتقديم_____________"
     }
+  },
+  "nobthacv1:2074": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-13T03:02:25+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Ram World | عالم رام",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني #الرياض العليا تعلن شركة عالم رام لحلول التقنية",
+        "deadline": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Cooperative Training for Web Development Specialist",
+      "type": "coop",
+      "url": "https://hub.ramworld.net/apply/"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://hub.ramworld.net/apply/",
+        "https://hub.ramworld.net/",
+        "https://hub.ramworld.net"
+      ],
+      "message_id": 2074,
+      "permalink": "https://t.me/nobthacv1/2074",
+      "posted_at": "2026-08-13T02:29:47+00:00",
+      "text": "#التدريب_التعاوني #الرياض العليا\n\nتعلن شركة عالم رام لحلول التقنية عن بدء استقبال طلبات التدريب التعاوني لمسار (أخصائية تطوير مواقعWeb_Development_Specialist#) عبر منصة رام_أكاديمي (Ram Hub) للفصل الدراسي الأول 2026/2027م 🌟\n\n💡 ماذا يقدّم لكِ البرنامج؟\n١- تدريب عملي مباشر على مشاريع حقيقية.\n٢- إشراف وتوجيه من خبراء التقنية وإدارة المشاريع.\nبيئة_عمل_نسائية محفزة للإبداع.\n\n📋 شروط القبول:\n١- مخصص لطالبات البكالوريس في التخصصات التقنية.\n٢- المفاضلة بناءً على المعدل التراكمي والمهارات التقنية.\n\n🔗 سجّلي الآن (الأماكن محدودة):\n* رابط التسجيل: https://hub.ramworld.net/apply/\n* منصة رام أكاديمي: https://hub.ramworld.net"
+    }
   }
 }
