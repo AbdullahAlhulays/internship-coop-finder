@@ -930,7 +930,7 @@
       "is_opportunity": true,
       "location": "Riyadh, Saudi Arabia",
       "reason_excluded": null,
-      "requires_letter": false,
+      "requires_letter": true,
       "title": "Cooperative Training for Web Development Specialist",
       "type": "coop",
       "url": "https://hub.ramworld.net/apply/"
