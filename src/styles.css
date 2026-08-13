@@ -335,8 +335,8 @@ select {
 .city-select {
   display: grid;
   gap: 8px;
-  flex: 0 0 156px;
-  min-width: 144px;
+  flex: 0 0 190px;
+  min-width: 190px;
 }
 
 .city-select span,
@@ -360,6 +360,10 @@ select {
   padding: 0 34px 0 12px;
   outline: none;
   box-shadow: var(--control-shadow);
+}
+
+.city-select select {
+  padding-right: 30px;
 }
 
 .city-select select:focus {
