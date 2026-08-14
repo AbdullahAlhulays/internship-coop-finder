@@ -232,11 +232,12 @@ select {
   letter-spacing: 0;
 }
 
-.intro p {
+.intro h2 {
   max-width: 580px;
   margin: 14px auto 0;
   color: var(--muted);
   font-size: 1rem;
+  font-weight: 700;
   line-height: 1.7;
 }
 

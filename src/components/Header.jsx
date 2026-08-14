@@ -34,6 +34,7 @@ export default function Header({ theme, onThemeToggle }) {
             </span>
             <h1>Fursati</h1>
           </div>
+          <h2>Internships &amp; CO-OP Opportunities for Students</h2>
         </div>
       </div>
     </header>
