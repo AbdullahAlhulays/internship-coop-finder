@@ -873,4 +873,12 @@ export const companies = [
     type: "CO-OP Training",
     addedAt: "2026-08-13T00:00:00+03:00",
   },
-];
+
+  {
+    name: "رعاية الطبية | Medical Care",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://care.talentera.com/en/job-search-results/",
+    type: "CO-OP Training",
+    requiresLetter: true,
+    addedAt: "2026-08-14T12:21:16+03:00",
+  },];
