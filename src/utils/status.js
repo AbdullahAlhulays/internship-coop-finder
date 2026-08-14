@@ -50,6 +50,50 @@ function getOpeningDate(openingDate) {
   return getLocalDate(openingDate, "00:00:00");
 }
 
+export function getNextStatusChangeTime(companies, now = new Date()) {
+  const nowTime = now.getTime();
+  const nextMidnight = new Date(now);
+  nextMidnight.setHours(24, 0, 0, 0);
+
+  let nextChangeTime = nextMidnight.getTime();
+
+  companies.forEach((company) => {
+    if (company.isClosed) {
+      return;
+    }
+
+    const openingDate = getOpeningDate(company.openingDate);
+    const openingTime = openingDate?.getTime();
+
+    if (openingTime > nowTime && openingTime < nextChangeTime) {
+      nextChangeTime = openingTime;
+    }
+
+    const deadlineDate = getDeadlineDate(company.deadline, company.deadlineTime);
+    const deadlineTime = deadlineDate?.getTime();
+
+    if (!deadlineTime || deadlineTime <= nowTime) {
+      return;
+    }
+
+    const urgentTime = deadlineTime - URGENT_DEADLINE_MS;
+
+    if (urgentTime > nowTime && urgentTime < nextChangeTime) {
+      nextChangeTime = urgentTime;
+    }
+
+    // getCompanyStatus considers the exact deadline instant open, so refresh
+    // immediately after it to move the opportunity into the closed view.
+    const closedTime = deadlineTime + 1;
+
+    if (closedTime < nextChangeTime) {
+      nextChangeTime = closedTime;
+    }
+  });
+
+  return nextChangeTime;
+}
+
 export function getApplicationStatus(deadline, now = new Date(), deadlineTime) {
   if (!deadline) {
     return {

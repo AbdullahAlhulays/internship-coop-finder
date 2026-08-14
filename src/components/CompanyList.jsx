@@ -1,12 +1,12 @@
+import { memo } from "react";
 import CompanyCard from "./CompanyCard.jsx";
 
-export default function CompanyList({
-  companies,
-  currentTime,
+function CompanyList({
+  records,
   appliedLinks,
   onAppliedToggle,
 }) {
-  if (companies.length === 0) {
+  if (records.length === 0) {
     return (
       <div className="empty-state">
         <h2>No opportunities found</h2>
@@ -17,11 +17,13 @@ export default function CompanyList({
 
   return (
     <section className="company-grid" aria-label="Company opportunities">
-      {companies.map((company) => (
+      {records.map(({ company, statusKey, statusDaysLeft, isUrgent }) => (
         <CompanyCard
           key={company.applicationLink}
           company={company}
-          currentTime={currentTime}
+          statusKey={statusKey}
+          statusDaysLeft={statusDaysLeft}
+          isUrgent={isUrgent}
           isApplied={appliedLinks.has(company.applicationLink)}
           onAppliedToggle={onAppliedToggle}
         />
@@ -29,3 +31,5 @@ export default function CompanyList({
     </section>
   );
 }
+
+export default memo(CompanyList);

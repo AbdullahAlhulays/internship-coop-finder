@@ -1,6 +1,21 @@
 import { companies as fallbackCompanies } from "../data/companies.js";
 
 const DATA_URL = import.meta.env.VITE_COMPANIES_DATA_URL;
+const COMPANY_FIELDS = [
+  "name",
+  "addedAt",
+  "bio",
+  "isClosed",
+  "requiresLetter",
+  "location",
+  "openingDate",
+  "deadlineTime",
+  "applicationLink",
+  "deadline",
+  "type",
+];
+
+export const hasRemoteCompanies = Boolean(DATA_URL);
 
 function isValidCompany(company) {
   return (
@@ -20,7 +35,7 @@ function isValidCompany(company) {
   );
 }
 
-export async function getCompanies() {
+export async function getCompanies({ signal } = {}) {
   if (!DATA_URL) {
     return fallbackCompanies;
   }
@@ -29,7 +44,8 @@ export async function getCompanies() {
     headers: {
       Accept: "application/json",
     },
-    cache: "no-store",
+    cache: "no-cache",
+    signal,
   });
 
   if (!response.ok) {
@@ -44,4 +60,27 @@ export async function getCompanies() {
   }
 
   return companies;
+}
+
+export function haveSameCompanies(firstCompanies, secondCompanies) {
+  if (firstCompanies === secondCompanies) {
+    return true;
+  }
+
+  if (firstCompanies.length !== secondCompanies.length) {
+    return false;
+  }
+
+  const firstCompaniesByLink = new Map(
+    firstCompanies.map((company) => [company.applicationLink, company]),
+  );
+
+  return secondCompanies.every((company) => {
+    const matchingCompany = firstCompaniesByLink.get(company.applicationLink);
+
+    return (
+      matchingCompany &&
+      COMPANY_FIELDS.every((field) => matchingCompany[field] === company[field])
+    );
+  });
 }

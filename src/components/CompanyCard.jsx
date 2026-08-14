@@ -1,23 +1,20 @@
+import { memo } from "react";
 import CompanyLogo from "./CompanyLogo.jsx";
 import {
   getCompanyDisplayName,
   getOpportunityTypeLabel,
 } from "../data/companyLogos.js";
-import {
-  formatDeadline,
-  getCompanyStatus,
-  isDeadlineUrgent,
-} from "../utils/status.js";
+import { formatDeadline } from "../utils/status.js";
 
-function getDeadlineContent(company, status, isUrgent) {
-  if (status.key === "closed") {
+function getDeadlineContent(company, statusKey, statusDaysLeft, isUrgent) {
+  if (statusKey === "closed") {
     return {
       label: null,
       value: "Applications closed",
     };
   }
 
-  if (status.key === "open-soon" && company.openingDate) {
+  if (statusKey === "open-soon" && company.openingDate) {
     return {
       label: "Applications open",
       value: formatDeadline(company.openingDate),
@@ -32,15 +29,15 @@ function getDeadlineContent(company, status, isUrgent) {
   }
 
   if (isUrgent) {
-    if (status.daysLeft <= 0) {
+    if (statusDaysLeft <= 0) {
       return { label: null, value: "Closes today" };
     }
 
-    if (status.daysLeft === 1) {
+    if (statusDaysLeft === 1) {
       return { label: null, value: "Closes tomorrow" };
     }
 
-    return { label: null, value: `Closes in ${status.daysLeft} days` };
+    return { label: null, value: `Closes in ${statusDaysLeft} days` };
   }
 
   return {
@@ -49,20 +46,25 @@ function getDeadlineContent(company, status, isUrgent) {
   };
 }
 
-export default function CompanyCard({
+function CompanyCard({
   company,
-  currentTime,
+  statusKey,
+  statusDaysLeft,
+  isUrgent,
   isApplied = false,
-  onAppliedToggle = () => {},
+  onAppliedToggle,
 }) {
-  const status = getCompanyStatus(company, currentTime);
-  const isOpenSoon = status.key === "open-soon";
-  const isClosed = status.key === "closed";
-  const canApply = status.key === "open";
-  const isUrgent = isDeadlineUrgent(company, currentTime);
+  const isOpenSoon = statusKey === "open-soon";
+  const isClosed = statusKey === "closed";
+  const canApply = statusKey === "open";
   const requiresLetter = Boolean(company.requiresLetter);
   const hasLocation = Boolean(company.location?.trim());
-  const deadlineContent = getDeadlineContent(company, status, isUrgent);
+  const deadlineContent = getDeadlineContent(
+    company,
+    statusKey,
+    statusDaysLeft,
+    isUrgent,
+  );
   const displayName = getCompanyDisplayName(company.name);
 
   return (
@@ -135,3 +137,5 @@ export default function CompanyCard({
     </article>
   );
 }
+
+export default memo(CompanyCard);

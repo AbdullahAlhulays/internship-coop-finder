@@ -118,6 +118,16 @@ const COMPANY_LOGO_DOMAINS = {
   "Ektis": "ektis.com",
 };
 
+const SVG_LOGO_KEYS = new Set([
+  "ardara",
+  "insurance-authority",
+  "ministry-of-communications-and-information-technology",
+  "saudi-air-navigation-services-sans",
+]);
+
+const WEBP_LOGO_KEYS = new Set(["sami", "sami-autonomous"]);
+const PNG_LOGO_KEYS = new Set(["taibah-valley"]);
+
 function getEnglishCompanyName(name = "") {
   const parts = name.split("|").map((part) => part.trim()).filter(Boolean);
   const englishPart = parts.find((part) => /[A-Za-z]/.test(part));
@@ -153,6 +163,13 @@ export function getCompanyLogo(company) {
   const englishName = getEnglishCompanyName(company.name);
   const domain = COMPANY_LOGO_DOMAINS[englishName];
   const key = getLogoFileName(englishName);
+  const extension = SVG_LOGO_KEYS.has(key)
+    ? "svg"
+    : WEBP_LOGO_KEYS.has(key)
+      ? "webp"
+      : PNG_LOGO_KEYS.has(key)
+        ? "png"
+        : "jpg";
 
   return {
     alt: `${englishName} logo`,
@@ -166,7 +183,7 @@ export function getCompanyLogo(company) {
       .map((word) => word[0])
       .join("")
       .toUpperCase(),
-    url: domain ? `/company-logos/${key}.svg` : null,
+    url: domain ? `/company-logos/${key}.${extension}` : null,
   };
 }
 

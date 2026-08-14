@@ -1,4 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import {
+  useCallback,
+  useDeferredValue,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header.jsx";
 import SearchBar from "./components/SearchBar.jsx";
@@ -10,12 +17,21 @@ import CompanyList from "./components/CompanyList.jsx";
 import Footer from "./components/Footer.jsx";
 import MobileBottomNav from "./components/MobileBottomNav.jsx";
 import { companies as fallbackCompanies } from "./data/companies.js";
-import { getCompanies } from "./services/companiesApi.js";
+import {
+  getCompanies,
+  hasRemoteCompanies,
+  haveSameCompanies,
+} from "./services/companiesApi.js";
 import { getCompanyCities } from "./utils/cities.js";
-import { getCompanyStatus, getDeadlineSortTime } from "./utils/status.js";
+import {
+  getCompanyStatus,
+  getDeadlineSortTime,
+  getNextStatusChangeTime,
+  isDeadlineUrgent,
+} from "./utils/status.js";
 
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
-const CLOCK_INTERVAL_MS = 1000;
+const MIN_REFRESH_GAP_MS = 60 * 1000;
 const THEME_STORAGE_KEY = "internship-coop-theme";
 const APPLIED_STORAGE_KEY = "internship-coop-applied";
 const LAST_UPDATED = "August 14, 2026";
@@ -73,11 +89,10 @@ export default function App() {
     getStoredLinks(APPLIED_STORAGE_KEY),
   );
   const [companies, setCompanies] = useState(fallbackCompanies);
-  const [isLoading, setIsLoading] = useState(
-    Boolean(import.meta.env.VITE_COMPANIES_DATA_URL),
-  );
   const [dataError, setDataError] = useState("");
-  const [currentTime, setCurrentTime] = useState(() => new Date());
+  const [statusTime, setStatusTime] = useState(() => new Date());
+  const companiesRef = useRef(fallbackCompanies);
+  const deferredSearchTerm = useDeferredValue(searchTerm);
   const appliedLinksSet = useMemo(() => new Set(appliedLinks), [appliedLinks]);
 
   useEffect(() => {
@@ -95,35 +110,65 @@ export default function App() {
   }, [appliedLinks]);
 
   useEffect(() => {
-    let isMounted = true;
+    if (!hasRemoteCompanies) {
+      return undefined;
+    }
 
-    async function loadCompanies({ showLoading = false } = {}) {
-      if (showLoading) {
-        setIsLoading(true);
+    let isMounted = true;
+    let requestInFlight = false;
+    let lastRequestTime = 0;
+    let requestController;
+
+    async function loadCompanies({ force = false } = {}) {
+      const requestTime = Date.now();
+
+      if (
+        requestInFlight ||
+        (!force && requestTime - lastRequestTime < MIN_REFRESH_GAP_MS)
+      ) {
+        return;
       }
 
+      requestInFlight = true;
+      lastRequestTime = requestTime;
+      requestController = new AbortController();
+
       try {
-        const latestCompanies = await getCompanies();
+        const latestCompanies = await getCompanies({
+          signal: requestController.signal,
+        });
 
         if (isMounted) {
-          setCompanies(latestCompanies);
+          if (!haveSameCompanies(companiesRef.current, latestCompanies)) {
+            companiesRef.current = latestCompanies;
+            setCompanies(latestCompanies);
+            setStatusTime(new Date());
+          }
+
           setDataError("");
         }
       } catch (error) {
-        if (isMounted) {
+        if (isMounted && error.name !== "AbortError") {
           setDataError(error.message);
-          setCompanies(fallbackCompanies);
+
+          if (!haveSameCompanies(companiesRef.current, fallbackCompanies)) {
+            companiesRef.current = fallbackCompanies;
+            setCompanies(fallbackCompanies);
+            setStatusTime(new Date());
+          }
         }
       } finally {
-        if (isMounted) {
-          setIsLoading(false);
-        }
+        requestInFlight = false;
       }
     }
 
-    loadCompanies({ showLoading: true });
+    loadCompanies({ force: true });
 
-    const intervalId = window.setInterval(loadCompanies, REFRESH_INTERVAL_MS);
+    const intervalId = window.setInterval(() => {
+      if (!document.hidden) {
+        loadCompanies();
+      }
+    }, REFRESH_INTERVAL_MS);
 
     function refreshWhenVisible() {
       if (!document.hidden) {
@@ -135,39 +180,83 @@ export default function App() {
 
     return () => {
       isMounted = false;
+      requestController?.abort();
       window.clearInterval(intervalId);
       document.removeEventListener("visibilitychange", refreshWhenVisible);
     };
   }, []);
 
   useEffect(() => {
-    const clockId = window.setInterval(() => {
-      setCurrentTime(new Date());
-    }, CLOCK_INTERVAL_MS);
+    let timeoutId;
+    let nextChangeTime = 0;
 
-    return () => window.clearInterval(clockId);
-  }, []);
+    function scheduleNextStatusChange() {
+      window.clearTimeout(timeoutId);
 
-  const filteredCompanies = useMemo(() => {
-    const normalizedSearch = searchTerm.trim().toLowerCase();
+      const now = new Date();
+      nextChangeTime = getNextStatusChangeTime(companies, now);
+      const delay = Math.max(nextChangeTime - now.getTime() + 25, 1000);
 
-    return companies
-      .filter((company) => {
-        const status = getCompanyStatus(company, currentTime);
-        const isClosed = status.key === "closed";
+      timeoutId = window.setTimeout(() => {
+        const updatedTime = new Date();
+        setStatusTime(updatedTime);
+        scheduleNextStatusChange();
+      }, delay);
+    }
+
+    function refreshStatusWhenVisible() {
+      if (!document.hidden && Date.now() >= nextChangeTime) {
+        setStatusTime(new Date());
+        scheduleNextStatusChange();
+      }
+    }
+
+    scheduleNextStatusChange();
+    document.addEventListener("visibilitychange", refreshStatusWhenVisible);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      document.removeEventListener(
+        "visibilitychange",
+        refreshStatusWhenVisible,
+      );
+    };
+  }, [companies]);
+
+  const companyRecords = useMemo(() => {
+    return companies.map((company) => {
+      const status = getCompanyStatus(company, statusTime);
+
+      return {
+        company,
+        searchLabel: getSortLabel(company).toLowerCase(),
+        cities: getCompanyCities(company),
+        deadlineSortTime: getDeadlineSortTime(company),
+        statusKey: status.key,
+        statusDaysLeft: status.daysLeft,
+        isUrgent:
+          status.key === "open" && isDeadlineUrgent(company, statusTime),
+      };
+    });
+  }, [companies, statusTime]);
+
+  const filteredRecords = useMemo(() => {
+    const normalizedSearch = deferredSearchTerm.trim().toLowerCase();
+
+    return companyRecords
+      .filter((record) => {
+        const { company, cities, searchLabel, statusKey } = record;
+        const isClosed = statusKey === "closed";
         const isApplied = appliedLinksSet.has(company.applicationLink);
-        const isOpen = status.key !== "closed" && !isApplied;
-        const isAppliedVisible = status.key !== "closed" && isApplied;
-        const matchesSearch = getSortLabel(company)
-          .toLowerCase()
-          .includes(normalizedSearch);
+        const isOpen = !isClosed && !isApplied;
+        const isAppliedVisible = !isClosed && isApplied;
+        const matchesSearch = searchLabel.includes(normalizedSearch);
         const matchesFilter =
           activeFilter === "closed"
             ? isClosed
             : activeFilter === "applied"
               ? isAppliedVisible
               : isOpen;
-        const cities = getCompanyCities(company);
         const matchesCity = activeCity === "all" || cities.includes(activeCity);
         const matchesLetterFilter =
           !showNoLetterOnly || !company.requiresLetter;
@@ -179,18 +268,22 @@ export default function App() {
           matchesLetterFilter
         );
       })
-      .sort((firstCompany, secondCompany) => {
-        const labelSort = getSortLabel(firstCompany).localeCompare(getSortLabel(secondCompany), "en", {
-          numeric: true,
-          sensitivity: "base",
-        });
+      .sort((firstRecord, secondRecord) => {
+        const labelSort = firstRecord.searchLabel.localeCompare(
+          secondRecord.searchLabel,
+          "en",
+          {
+            numeric: true,
+            sensitivity: "base",
+          },
+        );
 
         if (!sortByDeadline) {
           return labelSort;
         }
 
         const deadlineSort =
-          getDeadlineSortTime(firstCompany) - getDeadlineSortTime(secondCompany);
+          firstRecord.deadlineSortTime - secondRecord.deadlineSortTime;
 
         return deadlineSort || labelSort;
       });
@@ -198,19 +291,16 @@ export default function App() {
     activeCity,
     activeFilter,
     appliedLinksSet,
-    companies,
-    currentTime,
-    searchTerm,
+    companyRecords,
+    deferredSearchTerm,
     showNoLetterOnly,
     sortByDeadline,
   ]);
 
   const opportunityCounts = useMemo(() => {
-    return companies.reduce(
-      (counts, company) => {
-        const status = getCompanyStatus(company, currentTime);
-
-        if (status.key === "closed") {
+    return companyRecords.reduce(
+      (counts, { company, statusKey }) => {
+        if (statusKey === "closed") {
           counts.closed += 1;
           return counts;
         }
@@ -234,21 +324,26 @@ export default function App() {
         applied: 0,
       },
     );
-  }, [appliedLinksSet, companies, currentTime]);
+  }, [appliedLinksSet, companyRecords]);
 
-  const handleAppliedToggle = (applicationLink) => {
+  const handleAppliedToggle = useCallback((applicationLink) => {
     setAppliedLinks((currentLinks) =>
       toggleStoredLink(applicationLink, currentLinks),
     );
-  };
+  }, []);
+
+  const handleThemeToggle = useCallback(() => {
+    setTheme((currentTheme) =>
+      currentTheme === "dark" ? "light" : "dark",
+    );
+  }, []);
 
   const cityCounts = useMemo(() => {
-    const normalizedSearch = searchTerm.trim().toLowerCase();
+    const normalizedSearch = deferredSearchTerm.trim().toLowerCase();
 
-    return companies.reduce(
-      (counts, company) => {
-        const status = getCompanyStatus(company, currentTime);
-        const isClosed = status.key === "closed";
+    return companyRecords.reduce(
+      (counts, { company, cities, searchLabel, statusKey }) => {
+        const isClosed = statusKey === "closed";
         const isApplied = appliedLinksSet.has(company.applicationLink);
         const matchesFilter =
           activeFilter === "closed"
@@ -256,9 +351,7 @@ export default function App() {
             : activeFilter === "applied"
               ? !isClosed && isApplied
               : !isClosed && !isApplied;
-        const matchesSearch = getSortLabel(company)
-          .toLowerCase()
-          .includes(normalizedSearch);
+        const matchesSearch = searchLabel.includes(normalizedSearch);
         const matchesLetterFilter =
           !showNoLetterOnly || !company.requiresLetter;
 
@@ -271,8 +364,6 @@ export default function App() {
         if (!matchesFilter || !matchesSearch || !matchesLetterFilter) {
           return counts;
         }
-
-        const cities = getCompanyCities(company);
 
         counts.all += 1;
 
@@ -289,9 +380,8 @@ export default function App() {
   }, [
     activeFilter,
     appliedLinksSet,
-    companies,
-    currentTime,
-    searchTerm,
+    companyRecords,
+    deferredSearchTerm,
     showNoLetterOnly,
   ]);
 
@@ -309,14 +399,7 @@ export default function App() {
 
   return (
     <>
-      <Header
-        theme={theme}
-        onThemeToggle={() =>
-          setTheme((currentTheme) =>
-            currentTheme === "dark" ? "light" : "dark",
-          )
-        }
-      />
+      <Header theme={theme} onThemeToggle={handleThemeToggle} />
 
       <main className="page-shell">
         <p className="last-updated">Last updated: {LAST_UPDATED}</p>
@@ -350,7 +433,6 @@ export default function App() {
           </div>
         </section>
 
-        {isLoading && <p className="data-note">Loading latest opportunities...</p>}
         {dataError && (
           <p className="data-note error">
             Using local backup data. {dataError}
@@ -358,8 +440,7 @@ export default function App() {
         )}
 
         <CompanyList
-          companies={filteredCompanies}
-          currentTime={currentTime}
+          records={filteredRecords}
           appliedLinks={appliedLinksSet}
           onAppliedToggle={handleAppliedToggle}
         />
