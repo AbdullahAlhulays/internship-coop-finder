@@ -1,4 +1,4 @@
-export default function ThemeToggle({ theme, onToggle }) {
+export default function ThemeToggle({ theme, onToggle, messages }) {
   const isDark = theme === "dark";
 
   return (
@@ -8,7 +8,7 @@ export default function ThemeToggle({ theme, onToggle }) {
       aria-pressed={isDark}
       onClick={onToggle}
     >
-      {isDark ? "Light mode" : "Dark mode"}
+      {isDark ? messages.theme.light : messages.theme.dark}
     </button>
   );
 }

@@ -17,6 +17,19 @@ npm run build
 
 Vercel will automatically detect this as a Vite React project.
 
+## English and Arabic Routes
+
+English remains the default at `/`. The Arabic RTL version is available at `/ar`.
+
+Company pages use the same stable slug in both languages:
+
+```text
+/companies/company-slug
+/ar/companies/company-slug
+```
+
+The language switcher preserves the current page. Build-time generation creates localized HTML metadata for both versions, and the sitemap includes every English and Arabic route automatically.
+
 ## Updating Companies
 
 Edit `src/data/companies.js`.
@@ -37,6 +50,10 @@ That URL must return JSON in either format:
 [
   {
     "name": "Company Name",
+    "description": {
+      "en": "Optional verified English company description.",
+      "ar": "Optional verified Arabic company description."
+    },
     "bio": "Optional short description about the company.",
     "location": "Riyadh / Remote",
     "applicationLink": "https://example.com",
@@ -56,6 +73,10 @@ or:
   "companies": [
     {
       "name": "Company Name",
+      "description": {
+        "en": "Optional verified English company description.",
+        "ar": "Optional verified Arabic company description."
+      },
       "bio": "Optional short description about the company.",
       "location": "Riyadh / Remote",
       "applicationLink": "https://example.com",
@@ -77,7 +98,9 @@ Expired opportunities are hidden automatically when their deadline passes.
 
 `openingDate` is optional. Add it only when an opportunity should appear as `Open Soon` before applications begin.
 
-`location` is optional. Add it when you want that detail to appear on the card. `bio` is accepted as legacy source data but is not displayed in the simplified card design.
+`location` is optional. Add it when you want that detail to appear on the card.
+
+`description` is optional. Store localized text as `{ "en": "...", "ar": "..." }` and add only text you have verified. Either language can be omitted; its company page keeps the description area intentionally blank until that translation is provided. Company page URLs and sitemap entries are generated automatically from this same list. A legacy string is treated as English only. `bio` is accepted as legacy source data but is not displayed in the simplified card design.
 
 `deadlineTime` is optional. Add it in 24-hour `HH:mm` format when the posting includes an exact apply-before time.
 

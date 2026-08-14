@@ -14,15 +14,37 @@ import CitySelect from "./components/CitySelect.jsx";
 import DeadlineSortToggle from "./components/DeadlineSortToggle.jsx";
 import LetterRequirementToggle from "./components/LetterRequirementToggle.jsx";
 import CompanyList from "./components/CompanyList.jsx";
+import CompanyPage from "./components/CompanyPage.jsx";
+import NotFoundPage from "./components/NotFoundPage.jsx";
 import Footer from "./components/Footer.jsx";
 import MobileBottomNav from "./components/MobileBottomNav.jsx";
 import { companies as fallbackCompanies } from "./data/companies.js";
+import { getMessages } from "./locales/messages.js";
+import useClientRoute from "./hooks/useClientRoute.js";
+import useDocumentMetadata from "./hooks/useDocumentMetadata.js";
 import {
   getCompanies,
   hasRemoteCompanies,
   haveSameCompanies,
 } from "./services/companiesApi.js";
 import { getCompanyCities } from "./utils/cities.js";
+import {
+  getCanonicalUrl,
+  getCompanyPageDescription,
+  getCompanyPageEntries,
+  getCompanyPageTitle,
+  getCompanyPath,
+  getCompanySlugFromPathname,
+  getHomePageDescription,
+  getHomePageTitle,
+  isCompanyPath,
+} from "./utils/companyRoutes.js";
+import {
+  getHomePath,
+  getLanguageSwitchPath,
+  getLocaleFromPathname,
+  normalizePathname,
+} from "./utils/locale.js";
 import {
   getCompanyStatus,
   getDeadlineSortTime,
@@ -78,7 +100,29 @@ function toggleStoredLink(link, links) {
   return [...links, link];
 }
 
+function formatLastUpdated(locale) {
+  const date = new Date(`${LAST_UPDATED} 12:00:00`);
+
+  if (Number.isNaN(date.getTime())) {
+    return LAST_UPDATED;
+  }
+
+  const dateLocale =
+    locale === "ar" ? "ar-SA-u-ca-gregory-nu-arab" : "en-US";
+
+  return new Intl.DateTimeFormat(dateLocale, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(date);
+}
+
 export default function App() {
+  const { pathname, navigate, returnTo } = useClientRoute();
+  const locale = getLocaleFromPathname(pathname);
+  const messages = getMessages(locale);
+  const homeHref = getHomePath(locale);
+  const languageHref = getLanguageSwitchPath(pathname);
   const [searchTerm, setSearchTerm] = useState("");
   const [activeFilter, setActiveFilter] = useState("open");
   const [activeCity, setActiveCity] = useState("all");
@@ -94,6 +138,10 @@ export default function App() {
   const companiesRef = useRef(fallbackCompanies);
   const deferredSearchTerm = useDeferredValue(searchTerm);
   const appliedLinksSet = useMemo(() => new Set(appliedLinks), [appliedLinks]);
+  const companyEntries = useMemo(
+    () => getCompanyPageEntries(companies),
+    [companies],
+  );
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -224,11 +272,12 @@ export default function App() {
   }, [companies]);
 
   const companyRecords = useMemo(() => {
-    return companies.map((company) => {
+    return companyEntries.map(({ company, slug }) => {
       const status = getCompanyStatus(company, statusTime);
 
       return {
         company,
+        slug,
         searchLabel: getSortLabel(company).toLowerCase(),
         cities: getCompanyCities(company),
         deadlineSortTime: getDeadlineSortTime(company),
@@ -238,7 +287,82 @@ export default function App() {
           status.key === "open" && isDeadlineUrgent(company, statusTime),
       };
     });
-  }, [companies, statusTime]);
+  }, [companyEntries, statusTime]);
+
+  const companySlug = getCompanySlugFromPathname(pathname);
+  const activeCompanyRecord = useMemo(
+    () => companyRecords.find((record) => record.slug === companySlug),
+    [companyRecords, companySlug],
+  );
+  const isHomePage = normalizePathname(pathname) === homeHref;
+  const isCompanyRoute = isCompanyPath(pathname);
+  const isKnownCompanyPage = isCompanyRoute && Boolean(activeCompanyRecord);
+  const metadata = useMemo(() => {
+    if (isKnownCompanyPage) {
+      const englishPath = getCompanyPath(activeCompanyRecord.slug, "en");
+      const arabicPath = getCompanyPath(activeCompanyRecord.slug, "ar");
+
+      return {
+        title: getCompanyPageTitle(activeCompanyRecord.company, locale),
+        description: getCompanyPageDescription(
+          activeCompanyRecord.company,
+          locale,
+        ),
+        canonicalUrl: getCanonicalUrl(
+          getCompanyPath(activeCompanyRecord.slug, locale),
+        ),
+        alternateUrls: {
+          en: getCanonicalUrl(englishPath),
+          ar: getCanonicalUrl(arabicPath),
+          "x-default": getCanonicalUrl(englishPath),
+        },
+        noIndex: false,
+      };
+    }
+
+    if (isHomePage) {
+      return {
+        title: getHomePageTitle(locale),
+        description: getHomePageDescription(locale),
+        canonicalUrl: getCanonicalUrl(homeHref),
+        alternateUrls: {
+          en: getCanonicalUrl("/"),
+          ar: getCanonicalUrl("/ar"),
+          "x-default": getCanonicalUrl("/"),
+        },
+        noIndex: false,
+      };
+    }
+
+    return {
+      title: messages.seo.notFoundTitle,
+      description: messages.seo.notFoundDescription,
+      canonicalUrl: getCanonicalUrl(pathname),
+      alternateUrls: null,
+      noIndex: true,
+    };
+  }, [
+    activeCompanyRecord,
+    homeHref,
+    isHomePage,
+    isKnownCompanyPage,
+    locale,
+    messages,
+    pathname,
+  ]);
+
+  useDocumentMetadata(metadata);
+
+  useEffect(() => {
+    document.documentElement.lang = locale;
+    document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
+  }, [locale]);
+
+  useEffect(() => {
+    document.body.classList.toggle("has-detail-page", !isHomePage);
+
+    return () => document.body.classList.remove("has-detail-page");
+  }, [isHomePage]);
 
   const filteredRecords = useMemo(() => {
     const normalizedSearch = deferredSearchTerm.trim().toLowerCase();
@@ -338,6 +462,10 @@ export default function App() {
     );
   }, []);
 
+  const handleReturnToHome = useCallback(() => {
+    returnTo(homeHref);
+  }, [homeHref, returnTo]);
+
   const cityCounts = useMemo(() => {
     const normalizedSearch = deferredSearchTerm.trim().toLowerCase();
 
@@ -397,20 +525,72 @@ export default function App() {
     }
   }, [activeCity, cityOptions]);
 
+  if (isKnownCompanyPage) {
+    return (
+      <>
+        <CompanyPage
+          company={activeCompanyRecord.company}
+          statusKey={activeCompanyRecord.statusKey}
+          theme={theme}
+          onThemeToggle={handleThemeToggle}
+          navigate={navigate}
+          onReturnToHome={handleReturnToHome}
+          locale={locale}
+          messages={messages}
+          homeHref={homeHref}
+          languageHref={languageHref}
+        />
+        <Analytics />
+      </>
+    );
+  }
+
+  if (!isHomePage) {
+    return (
+      <>
+        <NotFoundPage
+          theme={theme}
+          onThemeToggle={handleThemeToggle}
+          navigate={navigate}
+          locale={locale}
+          messages={messages}
+          homeHref={homeHref}
+          languageHref={languageHref}
+        />
+        <Analytics />
+      </>
+    );
+  }
+
   return (
     <>
-      <Header theme={theme} onThemeToggle={handleThemeToggle} />
+      <Header
+        theme={theme}
+        onThemeToggle={handleThemeToggle}
+        locale={locale}
+        messages={messages}
+        languageHref={languageHref}
+        navigate={navigate}
+      />
 
       <main className="page-shell">
-        <p className="last-updated">Last updated: {LAST_UPDATED}</p>
+        <p className="last-updated">
+          {messages.lastUpdated}: {formatLastUpdated(locale)}
+        </p>
 
-        <section className="controls" aria-label="Search and filters">
-          <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+        <section className="controls" aria-label={messages.filters.controlsLabel}>
+          <SearchBar
+            searchTerm={searchTerm}
+            onSearchChange={setSearchTerm}
+            messages={messages}
+          />
           <div className="filter-panel">
             <FilterButtons
               activeFilter={activeFilter}
               counts={opportunityCounts}
               onFilterChange={setActiveFilter}
+              locale={locale}
+              messages={messages}
             />
             <div className="filter-pair">
               <CitySelect
@@ -418,15 +598,19 @@ export default function App() {
                 cities={cityOptions}
                 counts={cityCounts}
                 onCityChange={setActiveCity}
+                locale={locale}
+                messages={messages}
               />
               <div className="filter-toggles">
                 <DeadlineSortToggle
                   checked={sortByDeadline}
                   onChange={setSortByDeadline}
+                  messages={messages}
                 />
                 <LetterRequirementToggle
                   checked={showNoLetterOnly}
                   onChange={setShowNoLetterOnly}
+                  messages={messages}
                 />
               </div>
             </div>
@@ -435,7 +619,8 @@ export default function App() {
 
         {dataError && (
           <p className="data-note error">
-            Using local backup data. {dataError}
+            {messages.dataError}
+            {locale === "en" ? ` ${dataError}` : ""}
           </p>
         )}
 
@@ -443,14 +628,19 @@ export default function App() {
           records={filteredRecords}
           appliedLinks={appliedLinksSet}
           onAppliedToggle={handleAppliedToggle}
+          navigate={navigate}
+          locale={locale}
+          messages={messages}
         />
       </main>
 
-      <Footer />
+      <Footer messages={messages} />
       <MobileBottomNav
         activeFilter={activeFilter}
         counts={opportunityCounts}
         onFilterChange={setActiveFilter}
+        locale={locale}
+        messages={messages}
       />
       <Analytics />
     </>

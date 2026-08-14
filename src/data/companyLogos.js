@@ -128,7 +128,7 @@ const SVG_LOGO_KEYS = new Set([
 const WEBP_LOGO_KEYS = new Set(["sami", "sami-autonomous"]);
 const PNG_LOGO_KEYS = new Set(["taibah-valley"]);
 
-function getEnglishCompanyName(name = "") {
+export function getEnglishCompanyName(name = "") {
   const parts = name.split("|").map((part) => part.trim()).filter(Boolean);
   const englishPart = parts.find((part) => /[A-Za-z]/.test(part));
 
@@ -188,10 +188,14 @@ export function getCompanyLogo(company) {
 }
 
 export function getOpportunityTypeLabel(type = "") {
+  return getOpportunityTypeKey(type) === "coop" ? "COOP" : "Internship";
+}
+
+export function getOpportunityTypeKey(type = "") {
   const normalizedType = type.toLowerCase();
   const isCoop = normalizedType.includes("coop") || normalizedType.includes("co-op");
 
-  return isCoop ? "COOP" : "Internship";
+  return isCoop ? "coop" : "internship";
 }
 
 export { COMPANY_LOGO_DOMAINS };

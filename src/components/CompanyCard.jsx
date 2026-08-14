@@ -1,58 +1,79 @@
 import { memo } from "react";
 import CompanyLogo from "./CompanyLogo.jsx";
+import InternalLink from "./InternalLink.jsx";
 import {
   getCompanyDisplayName,
-  getOpportunityTypeLabel,
+  getOpportunityTypeKey,
 } from "../data/companyLogos.js";
+import { getCompanyPath } from "../utils/companyRoutes.js";
+import {
+  formatNumber,
+  getLocalizedCompanyDescription,
+  getLocalizedLocation,
+} from "../utils/locale.js";
 import { formatDeadline } from "../utils/status.js";
 
-function getDeadlineContent(company, statusKey, statusDaysLeft, isUrgent) {
+function getDeadlineContent(
+  company,
+  statusKey,
+  statusDaysLeft,
+  isUrgent,
+  locale,
+  messages,
+) {
   if (statusKey === "closed") {
-    return {
-      label: null,
-      value: "Applications closed",
-    };
+    return { label: null, value: messages.card.applicationsClosed };
   }
 
   if (statusKey === "open-soon" && company.openingDate) {
     return {
-      label: "Applications open",
-      value: formatDeadline(company.openingDate),
+      label: messages.card.applicationsOpen,
+      value:
+        formatDeadline(company.openingDate, undefined, locale) ||
+        messages.card.deadlineUnavailable,
     };
   }
 
   if (!company.deadline) {
-    return {
-      label: null,
-      value: "Open until filled",
-    };
+    return { label: null, value: messages.card.openUntilFilled };
   }
 
   if (isUrgent) {
     if (statusDaysLeft <= 0) {
-      return { label: null, value: "Closes today" };
+      return { label: null, value: messages.card.closesToday };
     }
 
     if (statusDaysLeft === 1) {
-      return { label: null, value: "Closes tomorrow" };
+      return { label: null, value: messages.card.closesTomorrow };
     }
 
-    return { label: null, value: `Closes in ${statusDaysLeft} days` };
+    return {
+      label: null,
+      value: messages.card.closesInDays(
+        formatNumber(statusDaysLeft, locale),
+      ),
+    };
   }
 
   return {
-    label: "Deadline",
-    value: formatDeadline(company.deadline, company.deadlineTime),
+    label: messages.card.deadline,
+    value:
+      formatDeadline(company.deadline, company.deadlineTime, locale) ||
+      messages.card.deadlineUnavailable,
   };
 }
 
 function CompanyCard({
   company,
+  slug,
   statusKey,
   statusDaysLeft,
   isUrgent,
   isApplied = false,
   onAppliedToggle,
+  navigate,
+  locale,
+  messages,
 }) {
   const isOpenSoon = statusKey === "open-soon";
   const isClosed = statusKey === "closed";
@@ -64,8 +85,14 @@ function CompanyCard({
     statusKey,
     statusDaysLeft,
     isUrgent,
+    locale,
+    messages,
   );
   const displayName = getCompanyDisplayName(company.name);
+  const opportunityType = getOpportunityTypeKey(company.type);
+  const hasDescription = Boolean(
+    getLocalizedCompanyDescription(company, locale),
+  );
 
   return (
     <article
@@ -74,25 +101,31 @@ function CompanyCard({
       } ${isClosed ? "is-closed" : ""} ${isApplied ? "is-applied" : ""}`}
     >
       <div className="company-identity">
-        <CompanyLogo company={company} />
+        <CompanyLogo company={company} messages={messages} />
         <div className="company-heading">
           <h2 dir="auto" title={company.name} aria-label={company.name}>
             {displayName}
           </h2>
-          {hasLocation && <p className="location">{company.location}</p>}
+          {hasLocation && (
+            <p className="location" dir="auto">
+              {getLocalizedLocation(company.location, locale)}
+            </p>
+          )}
         </div>
       </div>
 
       <div className="opportunity-meta">
         <span className="opportunity-type">
-          {getOpportunityTypeLabel(company.type)}
+          {messages.opportunityTypes[opportunityType]}
         </span>
         {requiresLetter && (
           <>
-            <span className="meta-separator" aria-hidden="true">•</span>
+            <span className="meta-separator" aria-hidden="true">
+              {"\u2022"}
+            </span>
             <span className="letter-requirement">
               <span className="letter-badge-icon" aria-hidden="true" />
-              Letter required
+              {messages.card.letterRequired}
             </span>
           </>
         )}
@@ -114,23 +147,39 @@ function CompanyCard({
           tabIndex={canApply ? 0 : -1}
         >
           {isClosed
-            ? "Closed"
+            ? messages.card.closed
             : isOpenSoon
-              ? "Opens soon"
+              ? messages.card.opensSoon
               : isApplied
-                ? "View application"
-                : "Apply now"}
+                ? messages.card.viewApplication
+                : messages.card.applyNow}
         </a>
+
+        {hasDescription ? (
+          <InternalLink
+            className="description-button"
+            href={getCompanyPath(slug, locale)}
+            navigate={navigate}
+            aria-label={messages.card.descriptionLabel(displayName)}
+          >
+            {messages.card.description}
+          </InternalLink>
+        ) : (
+          <span className="description-button unavailable" aria-disabled="true">
+            {messages.card.descriptionUnavailable}
+          </span>
+        )}
 
         {canApply && (
           <button
             type="button"
             className={isApplied ? "applied-button active" : "applied-button"}
-            disabled={!canApply}
             aria-pressed={isApplied}
             onClick={() => onAppliedToggle(company.applicationLink)}
           >
-            {isApplied ? "✓ Applied" : "Mark applied"}
+            {isApplied
+              ? `\u2713 ${messages.card.applied}`
+              : messages.card.markApplied}
           </button>
         )}
       </div>

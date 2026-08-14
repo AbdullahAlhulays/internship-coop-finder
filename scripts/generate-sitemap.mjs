@@ -1,9 +1,21 @@
 import { writeFile } from "node:fs/promises";
+import { companies } from "../src/data/companies.js";
+import {
+  getCompanyPageEntries,
+  getCompanyPath,
+  SITE_ORIGIN,
+} from "../src/utils/companyRoutes.js";
 
-const SITE_ORIGIN = "https://internship-coop-finder.vercel.app";
-
-// Add future public routes here. The sitemap is regenerated before every build.
-const routes = ["/"];
+// All company routes come from the same source as the UI. Add future standalone
+// public routes to this array; company pages need no manual sitemap maintenance.
+const routes = [
+  "/",
+  "/ar",
+  ...getCompanyPageEntries(companies).flatMap(({ slug }) => [
+    getCompanyPath(slug, "en"),
+    getCompanyPath(slug, "ar"),
+  ]),
+];
 
 const lastModified = new Date().toISOString().slice(0, 10);
 const urlEntries = routes

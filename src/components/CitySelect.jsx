@@ -1,23 +1,41 @@
-export default function CitySelect({ activeCity, cities, counts, onCityChange }) {
+import {
+  formatNumber,
+  getLocalizedCity,
+} from "../utils/locale.js";
+
+export default function CitySelect({
+  activeCity,
+  cities,
+  counts,
+  onCityChange,
+  locale,
+  messages,
+}) {
   const hasCities = cities.length > 0;
 
   return (
     <label className="city-select">
-      <span>City</span>
+      <span>{messages.filters.city}</span>
       <select
         value={activeCity}
         onChange={(event) => onCityChange(event.target.value)}
         disabled={!hasCities}
-        aria-label={hasCities ? "Filter by city" : "No cities available"}
+        aria-label={
+          hasCities ? messages.filters.filterByCity : messages.filters.noCities
+        }
       >
-        <option value="all">All Cities ({counts.all})</option>
+        <option value="all">
+          {messages.filters.allCities(formatNumber(counts.all, locale))}
+        </option>
         {cities.map((city) => (
           <option key={city} value={city}>
-            {city} ({counts[city]})
+            {messages.filters.cityOption(
+              getLocalizedCity(city, locale),
+              formatNumber(counts[city], locale),
+            )}
           </option>
         ))}
       </select>
     </label>
   );
 }
-

@@ -265,9 +265,9 @@ export function formatCountdown(countdown) {
   return `${paddedHours}h ${paddedMinutes}m ${paddedSeconds}s`;
 }
 
-export function formatDeadline(deadline, deadlineTime) {
+export function formatDeadline(deadline, deadlineTime, locale = "en") {
   if (!deadline) {
-    return "Open until filled - apply early";
+    return "";
   }
 
   const options = {
@@ -284,8 +284,11 @@ export function formatDeadline(deadline, deadlineTime) {
   const displayDate = getDisplayDate(deadline, deadlineTime);
 
   if (!displayDate) {
-    return "Deadline not available";
+    return "";
   }
 
-  return new Intl.DateTimeFormat("en", options).format(displayDate);
+  const dateLocale =
+    locale === "ar" ? "ar-SA-u-ca-gregory-nu-arab" : "en-US";
+
+  return new Intl.DateTimeFormat(dateLocale, options).format(displayDate);
 }

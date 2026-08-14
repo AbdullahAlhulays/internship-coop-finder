@@ -1,21 +1,39 @@
+import LanguageSwitcher from "./LanguageSwitcher.jsx";
 import ThemeToggle from "./ThemeToggle.jsx";
 
-export default function Header({ theme, onThemeToggle }) {
+export default function Header({
+  theme,
+  onThemeToggle,
+  locale,
+  messages,
+  languageHref,
+  navigate,
+}) {
   return (
     <header className="site-header">
       <div className="header-content">
         <div className="header-actions">
-          <ThemeToggle theme={theme} onToggle={onThemeToggle} />
+          <LanguageSwitcher
+            href={languageHref}
+            locale={locale}
+            messages={messages}
+            navigate={navigate}
+          />
+          <ThemeToggle
+            theme={theme}
+            onToggle={onThemeToggle}
+            messages={messages}
+          />
         </div>
 
         <div className="quote-wrap">
           <p className="arabic-quote" lang="ar" dir="rtl">
-            {"{ والذي نفسُ مُحَمَّدٍ بيدِهِ لا يُؤْمِنُ أحدُكُم حتى يُحِبَّ لِأَخِيهِ ما يُحِبُّ لنفسِهِ من الخيرِ }"}
+            {messages.quote}
           </p>
         </div>
 
         <div className="intro">
-          <div className="brand-lockup" aria-label="Fursati">
+          <div className="brand-lockup" aria-label={messages.siteName}>
             <span className="brand-mark" aria-hidden="true">
               <svg viewBox="0 0 48 48" focusable="false">
                 <path
@@ -32,9 +50,9 @@ export default function Header({ theme, onThemeToggle }) {
                 />
               </svg>
             </span>
-            <h1>Fursati</h1>
+            <h1>{messages.siteName}</h1>
           </div>
-          <h2>Internships &amp; CO-OP Opportunities for Students</h2>
+          <h2>{messages.heroSubtitle}</h2>
         </div>
       </div>
     </header>

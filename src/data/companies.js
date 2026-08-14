@@ -1,3 +1,5 @@
+import { getCompanyDescription } from "./companyDescriptions.js";
+
 // Add, remove, or edit company opportunities here.
 // The app automatically calculates each status from the deadline date.
 // Keep dates in YYYY-MM-DD format so filtering and deadline logic stay reliable.
@@ -7,7 +9,9 @@
 // The openingDate field is optional. Use it for opportunities that should show "Open Soon".
 // The isClosed field is optional. Set it to true to keep a closed opportunity visible.
 // The addedAt field is optional source metadata and is not displayed on the card.
-export const companies = [
+// The description field is optional. Use { en: "...", ar: "..." } and add only verified text.
+// Either language may be omitted until its description is provided; never invent company details.
+const companyRecords = [
   {
     name: "SSCL | إس إس سي إل",
     location: "Jeddah, Riyadh, Hail, Abha, and more, Saudi Arabia",
@@ -739,6 +743,10 @@ export const companies = [
     location: "Dhahran, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4438674076/",
     type: "Internship",
+    description: {
+      en: "Role\nJoin the technology team at Air Products' new technology center in Dhahran Techno Valley. The work focuses on data science, machine learning, and deep learning for chemical engineering and smart-sensor applications, including sound and image processing.\n\nKey responsibilities\n• Validate DS/ML/DL methods for industrial applications.\n• Help troubleshoot firmware installation and data-pipeline setup.\n• Test open-source algorithms and evaluate new developments.\n• Record and preprocess field data, including sound and images, and integrate it into application software.\n• Apply algorithms to field data, measure performance, and identify improvements.\n• Document and present test cases and best practices.\n\nRequirements\n• Familiarity with numerical methods, deep learning, machine learning, or data science.\n• Hands-on Python coding experience, or alternative coding experience in C, C++, VBA, or R.\n• Previous experience applying AI algorithms to data, sound or image processing, data fusion, or software-system integration.",
+      ar: "الدور\nالانضمام إلى فريق التقنية في مركز Air Products التقني الجديد بوادي الظهران للتقنية. يركز العمل على علوم البيانات والتعلم الآلي والتعلم العميق لتطبيقات الهندسة الكيميائية والمستشعرات الذكية، بما يشمل معالجة الصوت والصور.\n\nالمهام الرئيسية\n• فهم أساليب علوم البيانات والتعلم الآلي والتعلم العميق والتحقق من ملاءمتها للتطبيقات الصناعية.\n• المساعدة في معالجة مشكلات تثبيت البرامج الثابتة وإعداد مسارات البيانات.\n• اختبار الخوارزميات مفتوحة المصدر وتقييم التطورات الجديدة.\n• تسجيل البيانات الميدانية، بما فيها الصوت والصور، ومعالجتها مسبقًا ودمجها في برمجيات التطبيقات.\n• تطبيق الخوارزميات على البيانات الميدانية وقياس الأداء وتحديد سبل تحسينه.\n• توثيق حالات الاختبار وأفضل الممارسات وعرضها.\n\nالمتطلبات\n• الإلمام بالطرق العددية أو التعلم العميق أو التعلم الآلي أو علوم البيانات.\n• خبرة عملية في البرمجة بلغة Python، أو خبرة برمجية بديلة في C أو C++ أو VBA أو R.\n• خبرة سابقة في تطبيق خوارزميات الذكاء الاصطناعي على معالجة البيانات أو الصوت أو الصور، أو دمج البيانات، أو تكامل الأنظمة البرمجية.",
+    },
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -882,3 +890,10 @@ export const companies = [
     requiresLetter: true,
     addedAt: "2026-08-14T12:21:16+03:00",
   },];
+
+export const companies = companyRecords.map((company) => {
+  const description =
+    company.description ?? getCompanyDescription(company.name);
+
+  return description ? { ...company, description } : company;
+});

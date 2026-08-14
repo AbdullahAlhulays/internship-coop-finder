@@ -1,30 +1,38 @@
-const filters = [
-  { label: "Open", value: "open" },
-  { label: "Closed", value: "closed" },
-  { label: "Applied", value: "applied" },
-];
+import { formatNumber } from "../utils/locale.js";
 
-export default function FilterButtons({ activeFilter, counts, onFilterChange }) {
+const filterValues = ["open", "closed", "applied"];
+
+export default function FilterButtons({
+  activeFilter,
+  counts,
+  onFilterChange,
+  locale,
+  messages,
+}) {
   return (
     <div className="filter-group">
-      <span className="filter-label">View</span>
-      <div className="filters" aria-label="Choose opportunity view">
-        {filters.map((filter) => (
-          <button
-            key={filter.value}
-            type="button"
-            className={activeFilter === filter.value ? "filter active" : "filter"}
-            onClick={() => onFilterChange(filter.value)}
-          >
-            <span>{filter.label}</span>
-            <span
-              className="filter-count"
-              aria-label={`${counts[filter.value] ?? 0} opportunities`}
+      <span className="filter-label">{messages.filters.view}</span>
+      <div className="filters" aria-label={messages.filters.chooseView}>
+        {filterValues.map((value) => {
+          const count = formatNumber(counts[value] ?? 0, locale);
+
+          return (
+            <button
+              key={value}
+              type="button"
+              className={activeFilter === value ? "filter active" : "filter"}
+              onClick={() => onFilterChange(value)}
             >
-              {counts[filter.value] ?? 0}
-            </span>
-          </button>
-        ))}
+              <span>{messages.filters[value]}</span>
+              <span
+                className="filter-count"
+                aria-label={messages.filters.count(count)}
+              >
+                {count}
+              </span>
+            </button>
+          );
+        })}
       </div>
     </div>
   );

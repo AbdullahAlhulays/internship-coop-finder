@@ -5,6 +5,7 @@ const COMPANY_FIELDS = [
   "name",
   "addedAt",
   "bio",
+  "description",
   "isClosed",
   "requiresLetter",
   "location",
@@ -17,12 +18,24 @@ const COMPANY_FIELDS = [
 
 export const hasRemoteCompanies = Boolean(DATA_URL);
 
+function isValidDescription(description) {
+  return (
+    description === undefined ||
+    typeof description === "string" ||
+    (description !== null &&
+      typeof description === "object" &&
+      (description.en === undefined || typeof description.en === "string") &&
+      (description.ar === undefined || typeof description.ar === "string"))
+  );
+}
+
 function isValidCompany(company) {
   return (
     company &&
     typeof company.name === "string" &&
     (company.addedAt === undefined || typeof company.addedAt === "string") &&
     (company.bio === undefined || typeof company.bio === "string") &&
+    isValidDescription(company.description) &&
     (company.isClosed === undefined || typeof company.isClosed === "boolean") &&
     (company.requiresLetter === undefined ||
       typeof company.requiresLetter === "boolean") &&
@@ -80,7 +93,16 @@ export function haveSameCompanies(firstCompanies, secondCompanies) {
 
     return (
       matchingCompany &&
-      COMPANY_FIELDS.every((field) => matchingCompany[field] === company[field])
+      COMPANY_FIELDS.every((field) => {
+        if (field === "description") {
+          return (
+            JSON.stringify(matchingCompany[field]) ===
+            JSON.stringify(company[field])
+          );
+        }
+
+        return matchingCompany[field] === company[field];
+      })
     );
   });
 }
