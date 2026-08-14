@@ -903,5 +903,47 @@
       "posted_at": "2026-08-10T01:44:42+00:00",
       "text": "🎓 #التدريب_التعاوني |\n\n📍ممكن عدة مدن\n\nشركة لومي Lumi\n\nتعلن عن فتح التقديم على Co-op Internship Program 2026.\n\nالتخصصات :\nلم يتم تحديد تخصصات معينة\n\nالمتطلبات :\nسعودي الجنسية\nطالب متوقع تخرجه\nمعدل تراكمي جيد جدًا\nخطاب من الجامعة\nأن يكون التدريب التعاوني في الفصل الأول أو الثاني أو الصيفي\n\nمدة التدريب:\nحسب الفصل الأكاديمي (أول / ثاني / صيفي)\n\nالمزايا:\nمكافأة شهرية 1,500 ريال\nتوفير جهاز Laptop/PC طوال فترة التدريب\nشهادة خبرة من لومي بعد إتمام التدريب\n\nللتقديم_____________"
     }
+  },
+  "nobthacv1:2077": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-14T16:07:59+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Mazid Investment Group | مجموعة مزيد الاستثمارية",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "مجموعة مزيد الاستثمارية",
+        "deadline": null,
+        "location": "الموقع: الرياض / حي النزهة (حضورياً في مقر الشركة)"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Practical Training Opportunity in Digital Marketing and Sales",
+      "type": "internship",
+      "url": "https://forms.gle/r4VGSii1tjsjASQy8"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/r4VGSii1tjsjASQy8"
+      ],
+      "message_id": 2077,
+      "permalink": "https://t.me/nobthacv1/2077",
+      "posted_at": "2026-08-14T15:25:15+00:00",
+      "text": "مجموعة مزيد الاستثمارية\n\nفرصة تدريب عملي في قسم التسويق الرقمي والمبيعات\nالموقع: الرياض / حي النزهة (حضورياً في مقر الشركة)\n\nالتخصصات\nالتسويق\nالمبيعات\nالإعلام\nالهندسة\nالتصميم\n\nالشروط:\nالتفرغ الكامل خلال فترة التدريب.\nالجدية والالتزام والرغبة في التعلم والتطوير.\nالشغف بالعمل الجماعي واكتساب الخبرة العملية.\nامتلاك مهارات تواصل فعّالة.\n\nالمميزات:\nشهادة تدريب معتمدة.\nفرصة للتوظيف بعد انتهاء فترة التدريب (وفق الأداء والاحتياج).\nالعمل على مشاريع حقيقية تمنحك خبرة عملية قيّمة.\nبيئة عمل احترافية داعمة للتعلم والتطوير.\n\nللتقديم:\nhttps://forms.gle/r4VGSii1tjsjASQy8"
+    }
   }
 }
