@@ -119,15 +119,9 @@ function CompanyCard({
           {messages.opportunityTypes[opportunityType]}
         </span>
         {requiresLetter && (
-          <>
-            <span className="meta-separator" aria-hidden="true">
-              {"\u2022"}
-            </span>
-            <span className="letter-requirement">
-              <span className="letter-badge-icon" aria-hidden="true" />
-              {messages.card.letterRequired}
-            </span>
-          </>
+          <span className="letter-requirement">
+            {messages.card.letterRequired}
+          </span>
         )}
       </div>
 
@@ -136,6 +130,22 @@ function CompanyCard({
         {deadlineContent.label && <span>{deadlineContent.label}</span>}
         <strong>{deadlineContent.value}</strong>
       </div>
+
+      {hasDescription ? (
+        <InternalLink
+          className="card-details-link"
+          href={getCompanyPath(slug, locale)}
+          navigate={navigate}
+          aria-label={messages.card.descriptionLabel(displayName)}
+        >
+          <span>{messages.card.details}</span>
+          <span aria-hidden="true">{locale === "ar" ? "\u2190" : "\u2192"}</span>
+        </InternalLink>
+      ) : (
+        <span className="card-details-link unavailable" aria-disabled="true">
+          <span>{messages.card.detailsUnavailable}</span>
+        </span>
+      )}
 
       <div className="card-actions">
         <a
@@ -154,21 +164,6 @@ function CompanyCard({
                 ? messages.card.viewApplication
                 : messages.card.applyNow}
         </a>
-
-        {hasDescription ? (
-          <InternalLink
-            className="description-button"
-            href={getCompanyPath(slug, locale)}
-            navigate={navigate}
-            aria-label={messages.card.descriptionLabel(displayName)}
-          >
-            {messages.card.description}
-          </InternalLink>
-        ) : (
-          <span className="description-button unavailable" aria-disabled="true">
-            {messages.card.descriptionUnavailable}
-          </span>
-        )}
 
         {canApply && (
           <button

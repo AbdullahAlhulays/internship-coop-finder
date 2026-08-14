@@ -606,8 +606,7 @@ select {
   pointer-events: none;
 }
 
-.applied-button,
-.description-button {
+.applied-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -629,15 +628,13 @@ select {
     transform 180ms ease;
 }
 
-.applied-button:hover:not(:disabled),
-.description-button:hover:not(.unavailable) {
+.applied-button:hover:not(:disabled) {
   transform: translateY(-1px);
   border-color: var(--hover-line);
   background: var(--control-bg-strong);
 }
 
-.applied-button:focus-visible,
-.description-button:focus-visible {
+.applied-button:focus-visible {
   border-color: var(--focus-line);
   outline: none;
   box-shadow: 0 0 0 5px var(--focus-ring);
@@ -724,54 +721,34 @@ select {
 
 .opportunity-meta {
   display: flex;
-  width: fit-content;
-  min-height: 34px;
+  width: 100%;
+  min-height: 0;
   max-width: 100%;
   align-items: center;
   flex-wrap: wrap;
   gap: 7px;
-  border-radius: 12px;
-  background: var(--deadline-bg);
-  color: var(--leaf-deep);
   font-size: 0.74rem;
   font-weight: 850;
   line-height: 1.15;
-  padding: 8px 10px;
+  padding: 0;
 }
 
-.opportunity-meta .opportunity-type {
-  display: inline;
-  min-height: 0;
+.opportunity-meta .opportunity-type,
+.opportunity-meta .letter-requirement {
+  display: inline-flex;
+  min-height: 34px;
   max-width: none;
-  overflow: visible;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  color: inherit;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--deadline-bg);
+  color: var(--leaf-deep);
   font: inherit;
-  padding: 0;
-  text-overflow: clip;
+  padding: 8px 10px;
   white-space: normal;
 }
 
-.meta-separator {
-  color: var(--muted);
-}
-
-.letter-requirement {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+.opportunity-meta .letter-requirement {
   color: var(--status-open-soon-text);
-  font: inherit;
-}
-
-.opportunity-meta .letter-badge-icon {
-  position: relative;
-  width: 11px;
-  height: 14px;
-  border: 1.5px solid currentColor;
-  border-radius: 2px;
 }
 
 .deadline-line {
@@ -841,20 +818,50 @@ select {
   color: var(--urgent);
 }
 
+.card-details-link {
+  display: flex;
+  min-width: 0;
+  min-height: 28px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--leaf-deep);
+  font-size: 0.82rem;
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.card-details-link:hover:not(.unavailable) {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.card-details-link:focus-visible {
+  border-radius: 6px;
+  outline: 2px solid var(--focus-line);
+  outline-offset: 4px;
+}
+
+.card-details-link.unavailable {
+  color: var(--muted);
+  cursor: default;
+  font-weight: 700;
+  opacity: 0.72;
+}
+
 .company-card .card-actions {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 9px;
   margin-top: 0;
 }
 
 .company-card.is-closed .card-actions,
 .company-card.is-open-soon .card-actions {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .company-card .apply-button,
-.company-card .applied-button,
-.company-card .description-button {
+.company-card .applied-button {
   min-width: 0;
   min-height: 44px;
   border-radius: 13px;
@@ -864,23 +871,8 @@ select {
   white-space: nowrap;
 }
 
-.company-card .applied-button,
-.company-card .description-button {
+.company-card .applied-button {
   background: transparent;
-}
-
-.company-card .description-button.unavailable {
-  width: 100%;
-  overflow: hidden;
-  border-color: var(--line);
-  background: var(--deadline-bg);
-  color: var(--muted);
-  cursor: not-allowed;
-  font-size: 0.76rem;
-  opacity: 0.72;
-  padding-inline: 6px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .company-card .applied-button.active {
@@ -1537,16 +1529,6 @@ select {
 
   .mobile-nav-item.active strong {
     color: var(--action-text);
-  }
-}
-
-@media (max-width: 440px) {
-  .company-card .card-actions {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .company-card .applied-button {
-    grid-column: 1 / -1;
   }
 }
 
