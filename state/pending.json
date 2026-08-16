@@ -973,7 +973,7 @@
       "is_opportunity": true,
       "location": "Makkah, Saudi Arabia",
       "reason_excluded": null,
-      "requires_letter": false,
+      "requires_letter": true,
       "title": null,
       "type": "coop",
       "url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=fmixyQTDhEaVc9y5ctH4Hje8bJStXz5Nikt8bd1Waa9URDBWMUk4TVNQTDhLREVBTTY1UlhPR01MUiQlQCNjPTEu&origin=QRCode"
