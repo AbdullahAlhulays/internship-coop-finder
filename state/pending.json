@@ -1032,5 +1032,47 @@
       "posted_at": "2026-08-16T05:46:26+00:00",
       "text": "#التدريب_التعاوني #الرياض\n\nشركة الثلج الناصع\n\n#بكالوريوس\n\nنبحث عن متدربين في مجال الموارد البشرية والتسويق\n\nللتقديمـــــــــــــــــــــــــــــــــ"
     }
+  },
+  "nobthacv1:2084": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-16T10:42:58+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Green Group",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "شركة Green Group",
+        "deadline": null,
+        "location": "📍 الموقع: الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "متدرب موارد بشرية",
+      "type": "coop",
+      "url": "https://zrec.sa/a2jwT?source=CareerSite"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://zrec.sa/a2jwT?source=CareerSite"
+      ],
+      "message_id": 2084,
+      "permalink": "https://t.me/nobthacv1/2084",
+      "posted_at": "2026-08-16T10:15:41+00:00",
+      "text": "📢 فرصة تدريب تعاوني | متدرب موارد بشرية\n\nتعلن شركة Green Group عن توفر فرصة تدريب تعاوني في قسم الموارد البشرية بمدينة الرياض.\n\nالمتطلبات:\n\n• طالب/ـة في تخصص الموارد البشرية، إدارة الأعمال، أو تخصص ذي صلة.\n• أن يكون التدريب التعاوني متطلبًا جامعيًا.\n• مهارات جيدة في التواصل والتنظيم.\n• إجادة استخدام برامج Microsoft Office.\n• الرغبة في التعلم والتطوير في مجال الموارد البشرية.\n\n📍 الموقع: الرياض\n🔗 [للتقديم على فرصة التدريب اضغط هنا](https://zrec.sa/a2jwT?source=CareerSite)"
+    }
   }
 }
