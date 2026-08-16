@@ -989,5 +989,47 @@
       "posted_at": "2026-08-16T00:43:23+00:00",
       "text": "#التدريب_التعاوني\n\n#مكة #جدة #المدينة_المنورة\n\nلتطبيق المعرفة الأكاديمية في بيئة عمل مهنية، تعلن الوزارة إطلاق برنامج التدريب التعاوني للفصل الدراسي الأول 2026/2027م\n\nتاريخ التسجيل 16 – 20 أغسطس 2026م.\n\nالتسجيل متاح من خلال الرابط"
     }
+  },
+  "nobthacv1:2082": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-16T05:46:28+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Thuluj Alnasea | شركة الثلج الناصع",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "#التدريب_التعاوني #الرياض\nشركة الثلج الناصع",
+        "deadline": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://forms.gle/hNd5EvQ5hSTTn5XB7"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/hNd5EvQ5hSTTn5XB7"
+      ],
+      "message_id": 2082,
+      "permalink": "https://t.me/nobthacv1/2082",
+      "posted_at": "2026-08-16T05:46:26+00:00",
+      "text": "#التدريب_التعاوني #الرياض\n\nشركة الثلج الناصع\n\n#بكالوريوس\n\nنبحث عن متدربين في مجال الموارد البشرية والتسويق\n\nللتقديمـــــــــــــــــــــــــــــــــ"
+    }
   }
 }
