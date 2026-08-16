@@ -946,5 +946,47 @@
       "posted_at": "2026-08-14T15:25:15+00:00",
       "text": "مجموعة مزيد الاستثمارية\n\nفرصة تدريب عملي في قسم التسويق الرقمي والمبيعات\nالموقع: الرياض / حي النزهة (حضورياً في مقر الشركة)\n\nالتخصصات\nالتسويق\nالمبيعات\nالإعلام\nالهندسة\nالتصميم\n\nالشروط:\nالتفرغ الكامل خلال فترة التدريب.\nالجدية والالتزام والرغبة في التعلم والتطوير.\nالشغف بالعمل الجماعي واكتساب الخبرة العملية.\nامتلاك مهارات تواصل فعّالة.\n\nالمميزات:\nشهادة تدريب معتمدة.\nفرصة للتوظيف بعد انتهاء فترة التدريب (وفق الأداء والاحتياج).\nالعمل على مشاريع حقيقية تمنحك خبرة عملية قيّمة.\nبيئة عمل احترافية داعمة للتعلم والتطوير.\n\nللتقديم:\nhttps://forms.gle/r4VGSii1tjsjASQy8"
     }
+  },
+  "nobthacv1:2078": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-16T01:59:16+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Ministry of Education | وزارة التعليم",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": "2026-08-20",
+      "deadline_raw": "16 – 20 أغسطس 2026م",
+      "evidence": {
+        "company": "#التدريب_التعاوني",
+        "deadline": "16 – 20 أغسطس 2026م",
+        "location": "#مكة #جدة #المدينة_المنورة"
+      },
+      "is_opportunity": true,
+      "location": "Makkah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=fmixyQTDhEaVc9y5ctH4Hje8bJStXz5Nikt8bd1Waa9URDBWMUk4TVNQTDhLREVBTTY1UlhPR01MUiQlQCNjPTEu&origin=QRCode"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=fmixyQTDhEaVc9y5ctH4Hje8bJStXz5Nikt8bd1Waa9URDBWMUk4TVNQTDhLREVBTTY1UlhPR01MUiQlQCNjPTEu&amp;origin=QRCode"
+      ],
+      "message_id": 2078,
+      "permalink": "https://t.me/nobthacv1/2078",
+      "posted_at": "2026-08-16T00:43:23+00:00",
+      "text": "#التدريب_التعاوني\n\n#مكة #جدة #المدينة_المنورة\n\nلتطبيق المعرفة الأكاديمية في بيئة عمل مهنية، تعلن الوزارة إطلاق برنامج التدريب التعاوني للفصل الدراسي الأول 2026/2027م\n\nتاريخ التسجيل 16 – 20 أغسطس 2026م.\n\nالتسجيل متاح من خلال الرابط"
+    }
   }
 }
