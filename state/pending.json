@@ -998,8 +998,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-16T05:46:28+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-16T05:46:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 82
     },
     "extracted": {
       "company": "Thuluj Alnasea | شركة الثلج الناصع",
