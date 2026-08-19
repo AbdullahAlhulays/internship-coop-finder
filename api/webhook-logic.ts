@@ -244,13 +244,22 @@ export function formatIsoDate(year: number, month: number, day: number): string 
 // "edit:candidateId" -> show the field-choice keyboard.
 // "editfield:FIELD:candidateId" -> either shows a constrained-choice
 //   keyboard (type, requiresLetter) or starts a free-text prompt
-//   (name, location, url) by writing awaiting_edit into pending.json.
+//   (name, location, url, localized descriptions) by writing
+//   awaiting_edit into pending.json.
 // "editset:FIELD:VALUE:candidateId" -> commits a constrained choice
 //   directly, no free text involved, so it can never hold an invalid
 //   value.
 // "editcancel:candidateId" -> back to the normal keyboard, no change.
 
-export const EDITABLE_FIELDS = ["company", "type", "location", "url", "requires_letter"] as const;
+export const EDITABLE_FIELDS = [
+  "company",
+  "type",
+  "location",
+  "url",
+  "description_en",
+  "description_ar",
+  "requires_letter",
+] as const;
 export type EditableField = (typeof EDITABLE_FIELDS)[number];
 
 export const FIELD_LABELS: Record<EditableField, string> = {
@@ -258,6 +267,8 @@ export const FIELD_LABELS: Record<EditableField, string> = {
   type: "Type",
   location: "Location",
   url: "Application link",
+  description_en: "Description (English)",
+  description_ar: "Description (Arabic)",
   requires_letter: "Requires enrollment letter",
 };
 
@@ -406,6 +417,14 @@ function objectValue(value: unknown): Record<string, unknown> | null {
     : null;
 }
 
+const DESCRIPTION_PREVIEW_LIMIT = 600;
+
+function descriptionPreview(value: string): string {
+  return value.length <= DESCRIPTION_PREVIEW_LIMIT
+    ? value
+    : `${value.slice(0, DESCRIPTION_PREVIEW_LIMIT).trimEnd()}… (preview truncated)`;
+}
+
 function riyadhTodayIso(): string {
   // Riyadh is UTC+03 year-round (no daylight-saving changes).
   return new Date(Date.now() + 3 * 60 * 60 * 1000).toISOString().slice(0, 10);
@@ -429,6 +448,9 @@ export function formatPendingCardMessage(
   const rawType = nonEmptyString(extracted.type) ?? "unknown";
   const typeLabel = TYPE_LABELS[rawType] ?? rawType;
   const location = nonEmptyString(extracted.location);
+  const description = objectValue(extracted.description);
+  const englishDescription = description && nonEmptyString(description.en);
+  const arabicDescription = description && nonEmptyString(description.ar);
   const url = nonEmptyString(extracted.url);
   const deadline = nonEmptyString(extracted.deadline);
   const deadlineRaw = nonEmptyString(extracted.deadline_raw);
@@ -438,6 +460,15 @@ export function formatPendingCardMessage(
   ];
 
   if (location) lines.push(`Location: ${escapeTelegramHtml(location)}`);
+  if (englishDescription) {
+    lines.push(`Description (English): ${escapeTelegramHtml(descriptionPreview(englishDescription))}`);
+  }
+  if (arabicDescription) {
+    lines.push(`Description (Arabic): ${escapeTelegramHtml(descriptionPreview(arabicDescription))}`);
+  }
+  if (!englishDescription && !arabicDescription) {
+    lines.push("Description: not found — use Edit a field to add it");
+  }
   if (url) {
     const escapedUrl = escapeTelegramHtml(url);
     lines.push(`Link: <a href="${escapedUrl}">${escapedUrl}</a>`);
@@ -524,6 +555,7 @@ const FREE_TEXT_LIMITS = {
   company: 200,
   location: 300,
   url: 2048,
+  description: 3000,
 } as const;
 
 function tooLongMessage(label: string, limit: number, cancelInstruction: string): string {
@@ -546,6 +578,9 @@ export function validateFieldValue(field: EditableField, value: string): string 
   }
   if (field === "url" && trimmed.length > FREE_TEXT_LIMITS.url) {
     return tooLongMessage("Application link", FREE_TEXT_LIMITS.url, "or tap Back to cancel.");
+  }
+  if ((field === "description_en" || field === "description_ar") && trimmed.length > FREE_TEXT_LIMITS.description) {
+    return tooLongMessage(FIELD_LABELS[field], FREE_TEXT_LIMITS.description, "or tap Back to cancel.");
   }
   if (field === "url" && !/^https?:\/\/\S+$/i.test(trimmed)) {
     return "That doesn't look like a link (should start with http:// or https://) -- try again, or tap Back to cancel.";

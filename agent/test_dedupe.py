@@ -90,6 +90,19 @@ check("only the deadline changes", d.changes == {"deadline": "2026-09-01"})
 check("existing_index points at SSCL (index 0)", d.existing_index == 0)
 
 
+print("\nexact same link, existing has no description, new post provides verified text")
+verified_description = {"en": "Role\nSupport the operations team."}
+d = decide(
+    {"name": "SSCL", "applicationLink": EXISTING[0]["applicationLink"], "type": "CO-OP Training",
+     "description": verified_description},
+    new_posted_at="2026-08-09T10:00:00+00:00",
+    existing_cards=EXISTING,
+    ledger={},
+)
+check("missing description can be safely filled", d.action == "update")
+check("only the verified localized description changes", d.changes == {"description": verified_description})
+
+
 print("\nexact same link, existing already has a deadline, no ledger entry (not a known repost)")
 d = decide(
     {"name": "Saudi Water Authority | الهيئة السعودية للمياه",

@@ -31,6 +31,7 @@ use_utf8_stdout()
 
 def stub(response_json: dict):
     """Build a model_fn that always returns this one canned reply."""
+    response_json = {"description": None, **response_json}
     def _fn(prompt: str) -> str:
         return json.dumps(response_json, ensure_ascii=False)
     return _fn
@@ -288,6 +289,40 @@ check("card: missing deadline is OMITTED, never emitted as null",
       "deadline" not in card_no_deadline)
 check("card: requiresLetter omitted when false, matching real file style",
       "requiresLetter" not in card_no_deadline)
+check("card: missing description is omitted rather than invented",
+      "description" not in card_no_deadline)
+
+
+print("\npost with explicit English description — preserve verified source text")
+POST_WITH_DESCRIPTION = (
+    "Acme is offering a cooperative internship in Riyadh.\n"
+    "Role\nBuild weekly dashboards from operational data.\n\n"
+    "Requirements\n• Current university student\n• Familiarity with Python\n"
+    "Apply: https://example.com/acme-coop"
+)
+verified_description = (
+    "Role\nBuild weekly dashboards from operational data.\n\n"
+    "Requirements\n• Current university student\n• Familiarity with Python"
+)
+result_with_description = extract_opportunity(
+    POST_WITH_DESCRIPTION,
+    posted_at="2026-08-19T12:00:00+03:00",
+    links=["https://example.com/acme-coop"],
+    model_fn=stub({
+        "is_opportunity": True, "reason_excluded": None,
+        "type": "coop", "company": "Acme", "title": "Cooperative internship",
+        "description": {"en": verified_description, "ar": None},
+        "url": "https://example.com/acme-coop", "contact": None,
+        "requires_letter": False, "deadline": None, "deadline_raw": None,
+        "location": "Riyadh, Saudi Arabia", "confidence": 0.95,
+        "evidence": {"description": verified_description},
+    }),
+)
+check("explicit description is kept in its source language",
+      result_with_description.description == {"en": verified_description})
+description_card = to_card(result_with_description)
+check("localized description reaches the site card",
+      description_card["description"] == {"en": verified_description})
 
 
 # ---------------------------------------------------------------------
@@ -392,6 +427,20 @@ try:
         "type": "part-time-remote-hybrid",  # not a real value
         "company": "X", "title": "Y", "url": "https://example.com",
         "contact": None, "requires_letter": False,
+        "deadline": None, "deadline_raw": None,
+        "location": None, "confidence": 0.9, "evidence": {},
+    }))
+    check("raised ValidationError", False)
+except ValidationError:
+    check("raised ValidationError", True)
+
+print("\nbroken output — description is not a localized en/ar object")
+try:
+    extract_opportunity("some post", model_fn=stub({
+        "is_opportunity": True, "reason_excluded": None,
+        "type": "internship", "company": "X", "title": "Y",
+        "description": "invented plain text",
+        "url": "https://example.com", "contact": None, "requires_letter": False,
         "deadline": None, "deadline_raw": None,
         "location": None, "confidence": 0.9, "evidence": {},
     }))

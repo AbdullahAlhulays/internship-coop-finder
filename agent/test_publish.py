@@ -122,6 +122,7 @@ new_card = {
     "applicationLink": "https://newtestco.example.com/apply",
     "type": "Internship",
     "location": "Riyadh, Saudi Arabia",
+    "description": {"en": "Role\nSupport the engineering team."},
 }
 add_decision = Decision("add", "no existing card has this application link")
 result = apply_decision(COMPANIES_JS, add_decision, new_card)
@@ -135,6 +136,8 @@ check("original SSCL block is byte-for-byte unchanged", '''  {
     addedAt: "2026-06-04T00:00:00+03:00",
   },''' in result)
 check("array still closes properly", result.rstrip().endswith("];"))
+check("localized description is serialized into the new card",
+      'description: {"en": "Role\\nSupport the engineering team."},' in result)
 
 try:
     validate_js_syntax(result)

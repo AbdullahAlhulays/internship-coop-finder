@@ -189,6 +189,35 @@ export function applyAwaitingEditPatch(
   };
 }
 
+function applyExtractedFieldValue(
+  extracted: Record<string, unknown>,
+  field: string,
+  value: unknown,
+): Record<string, unknown> {
+  const descriptionMatch = field.match(/^description_(en|ar)$/);
+  if (!descriptionMatch) return { ...extracted, [field]: value };
+
+  const currentDescription = (
+    typeof extracted.description === "object" &&
+    extracted.description !== null &&
+    !Array.isArray(extracted.description)
+  ) ? extracted.description as Record<string, unknown> : {};
+
+  return {
+    ...extracted,
+    description: { ...currentDescription, [descriptionMatch[1]]: value },
+  };
+}
+
+function extractedFieldValue(extracted: Record<string, unknown>, field: string): unknown {
+  const descriptionMatch = field.match(/^description_(en|ar)$/);
+  if (!descriptionMatch) return extracted[field];
+  if (typeof extracted.description !== "object" || extracted.description === null || Array.isArray(extracted.description)) {
+    return undefined;
+  }
+  return (extracted.description as Record<string, unknown>)[descriptionMatch[1]];
+}
+
 export function applyFieldValuePatch(
   data: PendingFile,
   candidateId: string,
@@ -207,7 +236,7 @@ export function applyFieldValuePatch(
     ...data,
     [candidateId]: {
       ...rest,
-      extracted: { ...record.extracted, [field]: value },
+      extracted: applyExtractedFieldValue(record.extracted, field, value),
       ...(lastMessageId === undefined
         ? {}
         : {
@@ -323,7 +352,7 @@ export function findAppliedEditRetry(data: PendingFile, messageId: number): Appl
     status: "found",
     candidateId,
     field,
-    value: record.extracted[field],
+    value: extractedFieldValue(record.extracted, field),
     cardMessageId: record.last_edit!.card_message_id ?? record.delivery?.telegram_message_id ?? undefined,
   };
 }

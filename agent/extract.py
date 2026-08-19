@@ -182,6 +182,7 @@ Return ONLY a single JSON object, no other text, matching this shape:
   "type": "internship" | "coop" | "internship_or_coop" | "job" | "training" | null,
   "company": string or null,
   "title": string or null,
+  "description": {"en": string or null, "ar": string or null} or null,
   "url": string or null,
   "contact": {"type": "whatsapp" | "phone" | "email", "value": string} or null,
   "requires_letter": boolean,
@@ -189,7 +190,7 @@ Return ONLY a single JSON object, no other text, matching this shape:
   "deadline_raw": string or null,
   "location": string or null,
   "confidence": number,
-  "evidence": {"company": string or null, "deadline": string or null, "location": string or null}
+  "evidence": {"company": string or null, "deadline": string or null, "location": string or null, "description": string or null}
 }
 
 Rules, in order of importance:
@@ -222,7 +223,7 @@ Rules, in order of importance:
    When a deadline IS stated, deadline must be exactly "YYYY-MM-DD"
    (Gregorian calendar), never any other format, and never the raw
    wording — put the raw wording in deadline_raw instead, unchanged
-   except for digit normalization (rule 10).
+   except for digit normalization (rule 11).
 
    Posts very often give only a day and month with no year (e.g.
    "آخر موعد ١٥ سبتمبر" / "deadline: Sept 15") — you must still
@@ -271,14 +272,25 @@ Rules, in order of importance:
        given, use the best short description available (for example
        "Tourism hospitality company, Riyadh")
 
-8. Location formatting — always translate to English, "City, Country"
+8. Description is optional and must contain only meaningful descriptive
+   details explicitly written in the post, such as the role overview,
+   responsibilities, requirements, qualifications, or program details.
+   Do not create a description from the company name, title, location,
+   deadline, hashtags, or application instructions alone. Do not
+   translate, paraphrase, summarize, or add facts. Preserve the source
+   wording and useful line breaks/bullets. Put explicitly English text in
+   description.en and explicitly Arabic text in description.ar. If only
+   one language is present, the other value must be null. If the post has
+   no meaningful descriptive details, description must be null.
+
+9. Location formatting — always translate to English, "City, Country"
    (or "City, Saudi Arabia" for Saudi cities), matching this exact
    style even when the post is in Arabic: "الظهران" -> "Dhahran, Saudi
    Arabia", "الرياض" -> "Riyadh, Saudi Arabia". Use "Remote" alone if
    the post says the role is remote. Leave null if no location is
    given anywhere, including hashtags.
 
-9. requires_letter is true only if the post explicitly asks for a
+10. requires_letter is true only if the post explicitly asks for a
    letter, proof of enrollment, or similar document from the
    applicant's university (Arabic: "خطاب تدريب", "خطاب من الجهة
    التعليمية", "إثبات قيد", "شهادة قيد"; English: "letter from your
@@ -286,10 +298,10 @@ Rules, in order of importance:
    nothing like this is mentioned, requires_letter is false — do not
    assume it is required just because the post is about a co-op.
 
-10. Normalize Arabic-Indic digits (٠١٢٣٤٥٦٧٨٩) to Western digits
+11. Normalize Arabic-Indic digits (٠١٢٣٤٥٦٧٨٩) to Western digits
    everywhere, including inside deadline_raw.
 
-11. confidence is your own estimate, 0 to 1, of how complete and
+12. confidence is your own estimate, 0 to 1, of how complete and
    certain the extracted fields are. evidence holds the exact
    substring each field came from, or null if the field is null.
 
@@ -309,7 +321,7 @@ def build_user_prompt(text: str, posted_at: str | None, links: list[str] | None)
 VALID_TYPES = {"internship", "coop", "internship_or_coop", "job", "training", None}
 VALID_CONTACT_TYPES = {"whatsapp", "phone", "email"}
 REQUIRED_KEYS = {
-    "is_opportunity", "reason_excluded", "type", "company", "title", "url",
+    "is_opportunity", "reason_excluded", "type", "company", "title", "description", "url",
     "contact", "requires_letter", "deadline", "deadline_raw", "location",
     "confidence", "evidence",
 }
@@ -347,6 +359,7 @@ class Extracted:
     deadline_raw: str | None
     location: str | None
     confidence: float
+    description: dict[str, str] | None = None
     evidence: dict[str, Any] = field(default_factory=dict)
 
     @property
@@ -425,6 +438,14 @@ def to_card(extracted: Extracted, added_at: str | None = None) -> dict:
         card["deadline"] = extracted.deadline
     if extracted.requires_letter:
         card["requiresLetter"] = True
+    if extracted.description:
+        localized_description = {
+            language: text.strip()
+            for language, text in extracted.description.items()
+            if language in {"en", "ar"} and isinstance(text, str) and text.strip()
+        }
+        if localized_description:
+            card["description"] = localized_description
     if added_at:
         card["addedAt"] = added_at
     return card
@@ -485,6 +506,26 @@ def validate(payload: dict) -> Extracted:
                 f"(deadline_raw was {payload.get('deadline_raw')!r})"
             )
 
+    description = payload["description"]
+    if description is not None:
+        if not isinstance(description, dict):
+            raise ValidationError("description must be null or an object with en/ar text")
+        unexpected_languages = set(description) - {"en", "ar"}
+        if unexpected_languages:
+            raise ValidationError(
+                f"description has unsupported language keys: {sorted(unexpected_languages)}"
+            )
+        normalized_description: dict[str, str] = {}
+        for language in ("en", "ar"):
+            value = description.get(language)
+            if value is None:
+                continue
+            if not isinstance(value, str):
+                raise ValidationError(f"description.{language} must be a string or null")
+            if value.strip():
+                normalized_description[language] = value.strip()
+        description = normalized_description or None
+
     # A card with no name isn't valid on the site (name is a required
     # field there). A missing url/contact is NOT an error though — it's
     # a normal, common case (see route(): it just means the result
@@ -505,6 +546,7 @@ def validate(payload: dict) -> Extracted:
         deadline_raw=payload["deadline_raw"],
         location=payload["location"],
         confidence=float(confidence),
+        description=description,
         evidence=payload.get("evidence") or {},
     )
 

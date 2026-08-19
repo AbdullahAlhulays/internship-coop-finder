@@ -35,6 +35,7 @@ REQUEST_TIMEOUT = 15
 CALLBACK_LIMIT = 64  # Telegram's hard limit on callback_data length in bytes
 TEST_CANDIDATE_PREFIX = "test:"
 TEST_CARD_BANNER = "🧪 <b>TEST MODE</b> — Approve and Reject are simulated; the website will not change."
+DESCRIPTION_PREVIEW_LIMIT = 600
 
 TYPE_LABELS = {
     "internship": "Internship",
@@ -92,6 +93,14 @@ def _esc(value: Any) -> str:
     return html.escape(str(value)) if value is not None else ""
 
 
+def _description_preview(value: str) -> str:
+    """Keep review cards within Telegram's message limit while the full
+    verified text remains stored in pending.json and companies.js."""
+    if len(value) <= DESCRIPTION_PREVIEW_LIMIT:
+        return value
+    return value[:DESCRIPTION_PREVIEW_LIMIT].rstrip() + "… (preview truncated)"
+
+
 def _reference_date(post: dict | None) -> date:
     """The date to judge 'is this deadline plausible' against: the
     post's own published date if we have it, otherwise today (Riyadh
@@ -134,6 +143,15 @@ def format_card_message(extracted, post: dict | None = None) -> str:
     ]
     if extracted.location:
         lines.append(f"Location: {_esc(extracted.location)}")
+    descriptions = extracted.description or {}
+    english_description = descriptions.get("en")
+    arabic_description = descriptions.get("ar")
+    if english_description:
+        lines.append(f"Description (English): {_esc(_description_preview(english_description))}")
+    if arabic_description:
+        lines.append(f"Description (Arabic): {_esc(_description_preview(arabic_description))}")
+    if not english_description and not arabic_description:
+        lines.append("Description: not found — use Edit a field to add it")
     if extracted.url:
         lines.append(f'Link: <a href="{_esc(extracted.url)}">{_esc(extracted.url)}</a>')
     if extracted.deadline:

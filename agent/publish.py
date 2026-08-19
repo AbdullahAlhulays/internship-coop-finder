@@ -95,7 +95,10 @@ def bump_last_updated(app_jsx_source: str, today: datetime) -> str:
 # exactly once -- see module docstring.
 ARRAY_START_PATTERN = re.compile(r"(?:export\s+)?const\s+companies\s*=\s*\[")
 
-_FIELD_ORDER = ("name", "location", "applicationLink", "deadline", "type", "requiresLetter", "addedAt")
+_FIELD_ORDER = (
+    "name", "location", "applicationLink", "deadline", "type",
+    "description", "requiresLetter", "addedAt",
+)
 
 
 def _to_js_literal(value) -> str:

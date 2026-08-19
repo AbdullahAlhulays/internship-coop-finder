@@ -91,6 +91,7 @@ def opportunity_json(**overrides) -> dict:
     base = {
         "is_opportunity": True, "reason_excluded": None, "type": "internship",
         "company": "New Co", "title": "Summer Internship",
+        "description": None,
         "url": "https://newco.example.com/apply", "contact": None,
         "requires_letter": False, "deadline": None, "deadline_raw": None,
         "location": "Riyadh, Saudi Arabia", "confidence": 0.9, "evidence": {},

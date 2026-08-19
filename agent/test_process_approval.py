@@ -58,7 +58,8 @@ ARAMCO = Extracted(
     company="Saudi Aramco", title="Summer Internship",
     url="https://careers.aramco.com/job/999", contact=None,
     requires_letter=False, deadline="2026-09-15", deadline_raw="١٥ سبتمبر",
-    location="Dhahran, Saudi Arabia", confidence=0.95, evidence={},
+    location="Dhahran, Saudi Arabia", confidence=0.95,
+    description={"en": "Role\nSupport the engineering team."}, evidence={},
 )
 
 APP_JSX = '''import React from "react";
@@ -126,6 +127,7 @@ with tmp:
 
     new_companies = companies_path.read_text(encoding="utf-8")
     check("new card was actually added to companies.js", "Saudi Aramco" in new_companies)
+    check("approved description was published with the card", 'description: {"en": "Role\\nSupport the engineering team."},' in new_companies)
     check("original SSCL card is untouched", "SSCL" in new_companies)
 
     new_app = app_path.read_text(encoding="utf-8")

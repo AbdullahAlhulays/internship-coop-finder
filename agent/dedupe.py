@@ -28,16 +28,17 @@ The rules (2026-08-09, from a real conversation about this problem):
 
   1. No existing card with this exact link -> add it.
   2. Same link found:
-       a. existing card has no deadline, new one does -> fill it in.
+       a. existing card has no deadline or verified description and the
+          new post provides it -> fill the missing field in.
        b. this Telegram post is confirmed newer than whatever produced
           the existing card (per the ledger) -> refresh the other
           fields that differ (location, type, requiresLetter) too —
           never the link itself.
        c. neither -> nothing new, skip.
      A card the ledger doesn't recognize (hand-added by Abood, not by
-     this pipeline) can only ever have its deadline filled in (2a) —
-     never a full refresh (2b) — since there's no evidence a bot's
-     read of it is actually more current than a human's.
+     this pipeline) can only ever have a missing deadline or description
+     filled in (2a) — never a full refresh (2b) — since there's no
+     evidence a bot's read of it is actually more current than a human's.
 
 Nothing here writes to the site's data directly — it only decides.
 The caller applies the decision inside the review/PR step.
@@ -53,7 +54,7 @@ from dataclasses import dataclass, field
 # in this list — the link must never change (see module docstring),
 # and if the name legitimately changed the link would usually have
 # changed too, so treat that as suspicious rather than auto-applying.
-REFRESHABLE_FIELDS = ("location", "deadline", "type", "requiresLetter")
+REFRESHABLE_FIELDS = ("location", "deadline", "type", "description", "requiresLetter")
 
 
 @dataclass
@@ -95,6 +96,8 @@ def decide(
 
     if not existing.get("deadline") and new_card.get("deadline"):
         changes["deadline"] = new_card["deadline"]
+    if not existing.get("description") and new_card.get("description"):
+        changes["description"] = new_card["description"]
 
     known_posted_at = ledger.get(link, {}).get("posted_at")
     if known_posted_at and new_posted_at > known_posted_at:
@@ -104,11 +107,14 @@ def decide(
                 changes[f] = new_value
 
     if changes:
-        reason = (
-            "existing card has no deadline, this post has one"
-            if set(changes) == {"deadline"}
-            else "a newer repost of this exact posting has different details"
-        )
+        if set(changes) == {"deadline"}:
+            reason = "existing card has no deadline, this post has one"
+        elif set(changes) == {"description"}:
+            reason = "existing card has no description, this post provides verified details"
+        elif set(changes).issubset({"deadline", "description"}):
+            reason = "existing card is missing verified details this post provides"
+        else:
+            reason = "a newer repost of this exact posting has different details"
         return Decision("update", reason, existing_index=match_idx, changes=changes)
 
     return Decision("skip", "already published under this exact link, nothing new")

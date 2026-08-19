@@ -70,6 +70,7 @@ ARAMCO = Extracted(
     deadline_raw="١٥ سبتمبر",
     location="Dhahran, Saudi Arabia",
     confidence=0.95,
+    description={"en": "Role\nWork with the data science team."},
     evidence={"note": "explicit تدريب صيفي framing with a real application link"},
 )
 
@@ -109,10 +110,12 @@ check("application link present as a clickable href", 'href="https://careers.ara
 check("source post link included for click-through verification", "https://t.me/SALTRAI/5478" in text)
 check("confidence shown as a percentage", "95%" in text)
 check("letter requirement explicitly shown as No, not hidden, when false", "Requires enrollment letter: No" in text)
+check("verified description is visible for review", "Description (English): Role" in text and "data science team" in text)
 
 text_no_deadline = format_card_message(NO_DEADLINE)
 check("missing deadline says so plainly instead of a blank", "not found" in text_no_deadline)
 check("letter requirement shown as Yes when true", "Requires enrollment letter: Yes" in text_no_deadline)
+check("missing description is explicit and points to the editor", "Description: not found" in text_no_deadline and "Edit a field" in text_no_deadline)
 
 print("\ndeadline_warning (catches the real 2024-vs-2026 bug)")
 check("no warning for a deadline that's genuinely in the future", deadline_warning(ARAMCO) is None)
@@ -127,11 +130,13 @@ print("\nHTML escaping (a company/location containing special characters must no
 tricky = Extracted(
     is_opportunity=True, reason_excluded=None, type="job", company="A & B <Test> Co",
     title=None, url="https://example.com/a&b", contact=None, requires_letter=False,
-    deadline=None, deadline_raw=None, location=None, confidence=0.5, evidence={},
+    deadline=None, deadline_raw=None, location=None, confidence=0.5,
+    description={"en": "Role\nUse <safe> tools & document results."}, evidence={},
 )
 tricky_text = format_card_message(tricky)
 check("ampersand escaped", "&amp;" in tricky_text)
 check("angle brackets escaped, not left as raw HTML tags", "&lt;Test&gt;" in tricky_text)
+check("description HTML is escaped too", "&lt;safe&gt;" in tricky_text)
 
 print("\ntest-card safety banner")
 test_text = format_candidate_message(ARAMCO, "test:123", post={"channel": "manual"})
