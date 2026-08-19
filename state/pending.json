@@ -1084,8 +1084,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-19T17:43:48+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-19T17:44:18+00:00",
+      "status": "sent",
+      "telegram_message_id": 84
     },
     "extracted": {
       "company": "المركز الوطني لسلامة النقل",
@@ -1129,8 +1130,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-19T17:43:49+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-19T17:44:19+00:00",
+      "status": "sent",
+      "telegram_message_id": 85
     },
     "extracted": {
       "company": "Court of Appeals | ديوان المظالم",
@@ -1171,8 +1173,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-19T17:43:51+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-19T17:44:19+00:00",
+      "status": "sent",
+      "telegram_message_id": 86
     },
     "extracted": {
       "company": "Owais Capital | شركة أويس المالية",
@@ -1213,8 +1216,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-19T17:44:16+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-19T17:44:19+00:00",
+      "status": "sent",
+      "telegram_message_id": 87
     },
     "extracted": {
       "company": "Smart Code | شركة Smart Code",
