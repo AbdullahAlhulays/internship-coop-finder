@@ -55,10 +55,9 @@ except ImportError:
 # touches the network.
 CHAT_URL = "https://api.groq.com/openai/v1/chat/completions"
 CATALOG_URL = "https://api.groq.com/openai/v1/models"
-# llama-3.3-70b-versatile is a stable "production" model on Groq (not
-# a "preview" one, which can be pulled with little notice). If it ever
-# stops working, run: python extract.py --list-models
-DEFAULT_MODEL = os.environ.get("EXTRACT_MODEL", "llama-3.3-70b-versatile")
+# openai/gpt-oss-20b supports the JSON response mode used by the extractor.
+# If it stops working, run: python extract.py --list-models
+DEFAULT_MODEL = os.environ.get("EXTRACT_MODEL", "openai/gpt-oss-20b")
 REQUEST_TIMEOUT = 30
 
 
