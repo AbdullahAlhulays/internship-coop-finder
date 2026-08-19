@@ -1075,5 +1075,176 @@
       "posted_at": "2026-08-16T10:15:41+00:00",
       "text": "📢 فرصة تدريب تعاوني | متدرب موارد بشرية\n\nتعلن شركة Green Group عن توفر فرصة تدريب تعاوني في قسم الموارد البشرية بمدينة الرياض.\n\nالمتطلبات:\n\n• طالب/ـة في تخصص الموارد البشرية، إدارة الأعمال، أو تخصص ذي صلة.\n• أن يكون التدريب التعاوني متطلبًا جامعيًا.\n• مهارات جيدة في التواصل والتنظيم.\n• إجادة استخدام برامج Microsoft Office.\n• الرغبة في التعلم والتطوير في مجال الموارد البشرية.\n\n📍 الموقع: الرياض\n🔗 [للتقديم على فرصة التدريب اضغط هنا](https://zrec.sa/a2jwT?source=CareerSite)"
     }
+  },
+  "nobthacv1:2087": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-19T17:43:48+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "المركز الوطني لسلامة النقل",
+      "confidence": 0.95,
+      "contact": {
+        "type": "email",
+        "value": "Training@ntsc.gov.sa"
+      },
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "المركز الوطني لسلامة النقل",
+        "deadline": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني (COOP)",
+      "type": "coop",
+      "url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNzBKOEhQOU8wOEY3UE01OEdQRldOUlo0RS4u"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNzBKOEhQOU8wOEY3UE01OEdQRldOUlo0RS4u"
+      ],
+      "message_id": 2087,
+      "permalink": "https://t.me/nobthacv1/2087",
+      "posted_at": "2026-08-17T17:12:59+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nالمركز الوطني لسلامة النقل يعلن عن فتح باب التقديم في برنامج التدريب التعاوني (COOP) وتمهير لطلاب وطالبات الجامعات السعوديين.\n\nالتخصصات المستهدفة:\n\nادارة أعمال مكتبيه\n\nسكرتاريه تنفيذيه\n\nالمتطلبات\nيشترط ألا يقل المعدل التراكمي عن:\n\n* 2.50 من 4.00 أو\n* 3.50 من 5.00\n\nللتقديمـــــــــــــــــــــــــــــــــ\n\nhttps://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DsIdjVa4ZEueClpuMIZg-UdDAlsmj65LvzdFTK0MgWlUNzBKOEhQOU8wOEY3UE01OEdQRldOUlo0RS4u\n\nاو عن طريق البريد الالكتروني\n\nTraining@ntsc.gov.sa\n\n🎓 #التدريب_التعاوني | #الرياض"
+    }
+  },
+  "nobthacv1:2088": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-19T17:43:49+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Court of Appeals | ديوان المظالم",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "ديوان المظالم",
+        "deadline": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني عبر منصة خبير الرقمية",
+      "type": "coop",
+      "url": "https://khabeer.bog.gov.sa/cotraining/Register"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://khabeer.bog.gov.sa/cotraining/Register"
+      ],
+      "message_id": 2088,
+      "permalink": "https://t.me/nobthacv1/2088",
+      "posted_at": "2026-08-19T00:50:58+00:00",
+      "text": "#التدريب_التعاوني\n\n📍 اماكن كثير\n\n#دبلوم #بكالوريوس\n\nديوان المظالم⁩ يتيح لطلبة الجامعات التدريب التعاوني عبر منصة خبير الرقمية\n\nللتقديم___________________"
+    }
+  },
+  "nobthacv1:2090": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-19T17:43:51+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Owais Capital | شركة أويس المالية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "شركة أويس المالية (Owais Capital)",
+        "deadline": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Investor Relations Co-op/Intern",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4347589064"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4347589064"
+      ],
+      "message_id": 2090,
+      "permalink": "https://t.me/nobthacv1/2090",
+      "posted_at": "2026-08-19T07:00:16+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nشركة أويس المالية (Owais Capital) تعلن عن فتح باب التقديم في برنامج التدريب التعاوني Investor Relations Co-op/Intern لطلاب وطالبات الجامعات السعوديين.\nالتخصصات المستهدفة:\nالمالية\nالاستثمار\nإدارة الأعمال\nالاقتصاد\nالمحاسبة\nأو تخصصات ذات صلة\nالمتطلبات:\nطالب بكالوريوس في أحد التخصصات المطلوبة\nمؤهل للمشاركة في برنامج التدريب التعاوني أو التدريب الجامعي\nفهم أساسي للمفاهيم المالية والاستثمارية\nمهارات تحليلية وحل المشكلات\nإجادة استخدام Excel وPowerPoint\nإجادة التواصل باللغة العربية والإنجليزية\nمهارات تنظيمية واهتمام بالتفاصيل\nالقدرة على العمل في بيئة سريعة وتعاونية\n\nللتقديمــــــــــــــــــــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2092": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-19T17:44:16+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Smart Code | شركة Smart Code",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "evidence": {
+        "company": "شركة Smart Code",
+        "deadline": null,
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://smartcode.sa/training"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://smartcode.sa/training"
+      ],
+      "message_id": 2092,
+      "permalink": "https://t.me/nobthacv1/2092",
+      "posted_at": "2026-08-19T13:43:16+00:00",
+      "text": "📢 فرصة تدريب تعاوني | Smart Code\n\nتعلن شركة Smart Code عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n• التسويق الرقمي\n• العلاقات العامة\n\nانضم إلى فريقنا واكتسب خبرة عملية في بيئة عمل إبداعية ومحفزة، تتيح لك فرصة التعلم والتطور واكتساب مهارات جديدة.\n\n📍 الموقع: الرياض\n\n🔗 للتقديم: https://smartcode.sa/training"
+    }
   }
 }
