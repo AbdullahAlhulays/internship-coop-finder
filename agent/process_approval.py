@@ -33,6 +33,7 @@ from extract import to_card
 from notify import is_test_candidate, send_rejected, send_result, send_test_result
 from publish import apply_decision, bump_last_updated, validate_js_syntax
 from state import PENDING_PATH, PUBLISHED_PATH, StateError, pop_pending, record_published, record_to_decision, record_to_extracted
+from translate_description import translate_missing_description
 
 from _console import use_utf8_stdout
 
@@ -63,6 +64,7 @@ def process_approval(
     send_rejected_fn=send_rejected,
     send_test_result_fn=send_test_result,
     record_published_fn=record_published,
+    translate_description_fn=translate_missing_description,
 ) -> None:
     """The injectable *_fn parameters exist so this can be tested
     offline against temp files and a stub Telegram transport, the
@@ -107,11 +109,20 @@ def process_approval(
     # with the real reason before it's re-raised.
     try:
         extracted = record_to_extracted(record)
+        # This is intentionally after Telegram review and immediately
+        # before publishing: translate the final human-edited source
+        # text, not the model's first draft.
+        extracted = translate_description_fn(extracted)
         decision = record_to_decision(record)
         post = record["post"]
 
         now = datetime.now(RIYADH)
         card = to_card(extracted, added_at=now.isoformat(timespec="seconds"))
+        # Dedupe decided what was safe to update before the missing
+        # language existed. Carry the approval-time translation into
+        # that same verified description update.
+        if decision.action == "update" and "description" in decision.changes and card.get("description"):
+            decision.changes["description"] = card["description"]
 
         companies_js_source = Path(companies_js_path).read_text(encoding="utf-8")
         new_companies_js = apply_decision(companies_js_source, decision, card)

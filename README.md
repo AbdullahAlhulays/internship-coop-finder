@@ -102,7 +102,7 @@ Expired opportunities are hidden automatically when their deadline passes.
 
 `description` is optional. Store localized text as `{ "en": "...", "ar": "..." }` and add only text you have verified. Either language can be omitted; its company page keeps the description area intentionally blank until that translation is provided. Company page URLs and sitemap entries are generated automatically from this same list. A legacy string is treated as English only. `bio` is accepted as legacy source data but is not displayed in the simplified card design.
 
-The Telegram agent copies a description only when the source post explicitly includes meaningful role, responsibility, requirement, or program details. It never translates or invents missing text. Before approval, **Edit a field** offers separate English and Arabic description fields so either language can be added or corrected manually.
+The Telegram agent copies one source-language description only when the post explicitly includes meaningful role, responsibility, requirement, or program details. It never asks the LLM to translate or invent missing text. Before approval, **Edit a field** lets that source text be corrected. On approval, the lightweight `deep-translator` library translates the final edited text into the missing English or Arabic version, and both versions are published together. If both languages were entered manually, they are preserved and translation is skipped; if translation fails, approval stops instead of publishing a half-localized card.
 
 `deadlineTime` is optional. Add it in 24-hour `HH:mm` format when the posting includes an exact apply-before time.
 

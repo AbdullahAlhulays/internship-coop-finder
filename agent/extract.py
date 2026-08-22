@@ -278,10 +278,13 @@ Rules, in order of importance:
    Do not create a description from the company name, title, location,
    deadline, hashtags, or application instructions alone. Do not
    translate, paraphrase, summarize, or add facts. Preserve the source
-   wording and useful line breaks/bullets. Put explicitly English text in
-   description.en and explicitly Arabic text in description.ar. If only
-   one language is present, the other value must be null. If the post has
-   no meaningful descriptive details, description must be null.
+   wording and useful line breaks/bullets. Return only ONE language
+   version: use description.en for English source text or description.ar
+   for Arabic source text, and set the other value to null. If the post
+   repeats the same details bilingually, choose the more complete source
+   version and still return only that one; do not translate the missing
+   version. If the post has no meaningful descriptive details,
+   description must be null.
 
 9. Location formatting — always translate to English, "City, Country"
    (or "City, Saudi Arabia" for Saudi cities), matching this exact
@@ -524,6 +527,20 @@ def validate(payload: dict) -> Extracted:
                 raise ValidationError(f"description.{language} must be a string or null")
             if value.strip():
                 normalized_description[language] = value.strip()
+        # The model is instructed to return one source-language version.
+        # If it nevertheless copies a bilingual post into both fields,
+        # deterministically keep the more complete source version so the
+        # Telegram review still has exactly one text to edit. Manual edits
+        # do not pass through model validation, so a human-supplied pair is
+        # preserved later by the approval translator.
+        if len(normalized_description) == 2:
+            source_language = max(
+                ("en", "ar"),
+                key=lambda language: len(normalized_description[language]),
+            )
+            normalized_description = {
+                source_language: normalized_description[source_language]
+            }
         description = normalized_description or None
 
     # A card with no name isn't valid on the site (name is a required

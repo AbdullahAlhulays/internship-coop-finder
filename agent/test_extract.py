@@ -53,6 +53,14 @@ def check(label: str, condition: bool) -> None:
     results.append(condition)
 
 
+print("description contract — extraction returns source text in one language only")
+check(
+    "prompt reserves translation for the approval stage",
+    "Return only ONE language" in extract_module.SYSTEM_PROMPT
+    and "do not translate the missing" in extract_module.SYSTEM_PROMPT,
+)
+
+
 # ---------------------------------------------------------------------
 # Real post #5475 — a paid certification course being advertised.
 # Registration fee, "seats limited" as a sales pitch, a marketing
@@ -323,6 +331,26 @@ check("explicit description is kept in its source language",
 description_card = to_card(result_with_description)
 check("localized description reaches the site card",
       description_card["description"] == {"en": verified_description})
+
+
+print("\nbilingual model output — keep one complete source version for Telegram review")
+longer_arabic_description = "المتطلبات التفصيلية: طالب جامعي، وإجادة التواصل والعمل ضمن فريق."
+bilingual_result = extract_opportunity(
+    POST_WITH_DESCRIPTION,
+    model_fn=stub({
+        "is_opportunity": True, "reason_excluded": None,
+        "type": "coop", "company": "Acme", "title": "Cooperative internship",
+        "description": {"en": "Requirements: student.", "ar": longer_arabic_description},
+        "url": "https://example.com/acme-coop", "contact": None,
+        "requires_letter": False, "deadline": None, "deadline_raw": None,
+        "location": "Riyadh, Saudi Arabia", "confidence": 0.95,
+        "evidence": {"description": longer_arabic_description},
+    }),
+)
+check(
+    "only the more complete source-language description survives model validation",
+    bilingual_result.description == {"ar": longer_arabic_description},
+)
 
 
 # ---------------------------------------------------------------------

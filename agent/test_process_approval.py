@@ -8,6 +8,7 @@ Run with:
 """
 
 import tempfile
+from dataclasses import replace
 from pathlib import Path
 
 from dedupe import Decision
@@ -59,7 +60,10 @@ ARAMCO = Extracted(
     url="https://careers.aramco.com/job/999", contact=None,
     requires_letter=False, deadline="2026-09-15", deadline_raw="١٥ سبتمبر",
     location="Dhahran, Saudi Arabia", confidence=0.95,
-    description={"en": "Role\nSupport the engineering team."}, evidence={},
+    description={
+        "en": "Role\nSupport the engineering team.",
+        "ar": "الدور\nدعم الفريق الهندسي.",
+    }, evidence={},
 )
 
 APP_JSX = '''import React from "react";
@@ -127,7 +131,11 @@ with tmp:
 
     new_companies = companies_path.read_text(encoding="utf-8")
     check("new card was actually added to companies.js", "Saudi Aramco" in new_companies)
-    check("approved description was published with the card", 'description: {"en": "Role\\nSupport the engineering team."},' in new_companies)
+    check(
+        "two manually supplied descriptions are preserved",
+        '"en": "Role\\nSupport the engineering team."' in new_companies
+        and '"ar": "الدور\\nدعم الفريق الهندسي."' in new_companies,
+    )
     check("original SSCL card is untouched", "SSCL" in new_companies)
 
     new_app = app_path.read_text(encoding="utf-8")
@@ -136,6 +144,84 @@ with tmp:
     check("success was reported for this candidate", calls["result"] == [{"candidate_id": "SALTRAI:2", "applied": True, "detail": ""}])
     check("published ledger got exactly one entry, for the right link",
           len(calls["published"]) == 1 and calls["published"][0]["link"] == "https://careers.aramco.com/job/999")
+
+
+print("\napprove translates the final Telegram-edited source text before publishing")
+tmp, companies_path, app_path, pending_path, ledger_path = make_temp_repo()
+with tmp:
+    edited = replace(
+        ARAMCO,
+        company="Edited Description Co",
+        url="https://example.com/edited-description",
+        description={"en": "Final text after my Telegram edit."},
+    )
+    decision = Decision("add", "no existing card has this application link")
+    add_pending("SALTRAI:translated", edited, {"channel": "@SALTRAI", "message_id": 22}, decision, path=pending_path)
+    calls, send_result_fn, send_rejected_fn, record_published_fn = stub_calls()
+    translation_inputs = []
+
+    def translate_description_fn(extracted):
+        translation_inputs.append(extracted.description)
+        return replace(
+            extracted,
+            description={
+                "en": extracted.description["en"],
+                "ar": "النص النهائي بعد تعديلي في تيليجرام.",
+            },
+        )
+
+    process_approval(
+        "SALTRAI:translated", "approve",
+        companies_js_path=str(companies_path), app_jsx_path=str(app_path),
+        pending_path=str(pending_path), ledger_path=str(ledger_path),
+        send_result_fn=send_result_fn, send_rejected_fn=send_rejected_fn,
+        record_published_fn=record_published_fn,
+        translate_description_fn=translate_description_fn,
+    )
+
+    new_companies = companies_path.read_text(encoding="utf-8")
+    check(
+        "translator receives the final pending value",
+        translation_inputs == [{"en": "Final text after my Telegram edit."}],
+    )
+    check(
+        "both final language versions reach the website",
+        'description: {"en": "Final text after my Telegram edit.", "ar": "النص النهائي بعد تعديلي في تيليجرام."},' in new_companies,
+    )
+
+
+print("\napprove stops safely when the final description cannot be translated")
+tmp, companies_path, app_path, pending_path, ledger_path = make_temp_repo()
+with tmp:
+    single_language = replace(
+        ARAMCO,
+        company="Translation Failure Co",
+        url="https://example.com/translation-failure",
+        description={"en": "Final reviewed description."},
+    )
+    decision = Decision("add", "no existing card has this application link")
+    add_pending("SALTRAI:translation-failure", single_language, {"channel": "@SALTRAI", "message_id": 23}, decision, path=pending_path)
+    calls, send_result_fn, send_rejected_fn, record_published_fn = stub_calls()
+
+    check_raises(
+        "translation failure aborts approval",
+        ApprovalError,
+        lambda: process_approval(
+            "SALTRAI:translation-failure", "approve",
+            companies_js_path=str(companies_path), app_jsx_path=str(app_path),
+            pending_path=str(pending_path), ledger_path=str(ledger_path),
+            send_result_fn=send_result_fn, send_rejected_fn=send_rejected_fn,
+            record_published_fn=record_published_fn,
+            translate_description_fn=lambda _extracted: (_ for _ in ()).throw(RuntimeError("translator unavailable")),
+        ),
+    )
+    check("companies.js remains unchanged", companies_path.read_text(encoding="utf-8") == COMPANIES_JS)
+    check("App.jsx remains unchanged", app_path.read_text(encoding="utf-8") == APP_JSX)
+    check(
+        "Telegram receives the translation failure reason",
+        calls["result"] and calls["result"][0]["applied"] is False
+        and "translator unavailable" in calls["result"][0]["detail"],
+    )
 
 
 print("\napprove (update): fills in a missing deadline on an existing card")
@@ -161,6 +247,51 @@ with tmp:
     check("deadline was filled in on the existing SSCL card", 'deadline: "2026-09-01",' in new_companies)
     check("no second SSCL card was created", new_companies.count('name: "SSCL"') == 1)
     check("success reported", calls["result"][0]["applied"] is True)
+
+
+print("\napprove (update): approval-time translation is included in a description update")
+tmp, companies_path, app_path, pending_path, ledger_path = make_temp_repo()
+with tmp:
+    arabic_description = "المتطلبات: طالب جامعي ومهارات تواصل جيدة."
+    sscl_extracted = Extracted(
+        is_opportunity=True, reason_excluded=None, type="coop",
+        company="SSCL", title=None, url="https://forms.office.com/pages/abc",
+        contact=None, requires_letter=False, deadline=None, deadline_raw=None,
+        location=None, confidence=0.95,
+        description={"ar": arabic_description}, evidence={},
+    )
+    decision = Decision(
+        "update",
+        "existing card has no description, this post provides verified details",
+        existing_index=0,
+        changes={"description": {"ar": arabic_description}},
+    )
+    add_pending("SALTRAI:description-update", sscl_extracted, {"channel": "@SALTRAI", "message_id": 33}, decision, path=pending_path)
+    calls, send_result_fn, send_rejected_fn, record_published_fn = stub_calls()
+
+    def translate_description_fn(extracted):
+        return replace(
+            extracted,
+            description={
+                "ar": extracted.description["ar"],
+                "en": "Requirements: university student with good communication skills.",
+            },
+        )
+
+    process_approval(
+        "SALTRAI:description-update", "approve",
+        companies_js_path=str(companies_path), app_jsx_path=str(app_path),
+        pending_path=str(pending_path), ledger_path=str(ledger_path),
+        send_result_fn=send_result_fn, send_rejected_fn=send_rejected_fn,
+        record_published_fn=record_published_fn,
+        translate_description_fn=translate_description_fn,
+    )
+
+    new_companies = companies_path.read_text(encoding="utf-8")
+    check(
+        "translated pair replaces the original one-language dedupe change",
+        'description: {"ar": "المتطلبات: طالب جامعي ومهارات تواصل جيدة.", "en": "Requirements: university student with good communication skills."},' in new_companies,
+    )
 
 
 print("\napprove, but companies.js doesn't match the expected structure -- must fail loudly, change nothing")
