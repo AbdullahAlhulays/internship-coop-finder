@@ -889,6 +889,14 @@ const companyRecords = [
     type: "CO-OP Training",
     requiresLetter: true,
     addedAt: "2026-08-14T12:21:16+03:00",
+  },
+  {
+    name: "Flyadeal",
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://careers.flyadeal.com/jobs/coop-program-2026-1782287680",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات\nالموارد البشرية\nإدارة الأعمال\nالتسويق والتسويق الرقمي\nالمالية والمحاسبة\nإدارة الطيران\nالهندسة\nتقنية المعلومات وعلوم الحاسب وهندسة البرمجيات\nالأمن السيبراني\nالذكاء الاصطناعي وعلوم البيانات\nالإحصاء\nنظم المعلومات الإدارية\nإدارة المخاطر والامتثال\nسلاسل الإمداد واللوجستيات\nالإعلام والعلاقات العامة والإعلان\n\nالمتطلبات:\nأن يكون التدريب التعاوني متطلبًا أساسيًا للتخرج من جامعة أو كلية معتمدة في السعودية\n#دبلوم #بكالوريوس\n\nسعودي الجنسية\nإجادة اللغتين العربية والإنجليزية تحدثًا وكتابة\nمهارات التواصل والعمل ضمن فريق\nالرغبة في التعلم والتطور والمساهمة الفعالة", "en": "Specialties\nHuman resources\nBusiness Administration\nMarketing and digital marketing\nFinance and accounting\nAviation management\nEngineering\nInformation technology, computer science and software engineering\nCyber security\nArtificial intelligence and data science\nStatistics\nManagement information systems\nRisk management and compliance\nSupply chains and logistics\nMedia, public relations and advertising\n\nRequirements:\nCooperative training must be a basic requirement for graduation from an accredited university or college in Saudi Arabia\n#Diploma #Bachelor's Degree\n\nSaudi nationality\nProficiency in Arabic and English, spoken and written\nCommunication skills and working within a team\nDesire to learn, develop and contribute effectively"},
+    addedAt: "2026-08-23T00:06:07+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {

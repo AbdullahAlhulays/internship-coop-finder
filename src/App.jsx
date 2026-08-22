@@ -56,7 +56,7 @@ const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const MIN_REFRESH_GAP_MS = 60 * 1000;
 const THEME_STORAGE_KEY = "internship-coop-theme";
 const APPLIED_STORAGE_KEY = "internship-coop-applied";
-const LAST_UPDATED = "August 14, 2026";
+const LAST_UPDATED = "August 23, 2026";
 
 function getSortLabel(company) {
   return company.name || company.title || company.type || "";
