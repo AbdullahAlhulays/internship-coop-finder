@@ -276,7 +276,9 @@ def send_result(
         text = f"❌ Failed: {_esc(candidate_id)}"
         if detail:
             text += f"\n{_esc(detail)}"
-    payload = {"chat_id": chat_id, "text": text}
+    # Dynamic values above are HTML-escaped. Tell Telegram to decode those
+    # entities instead of visibly showing strings such as &#x27; and &gt;.
+    payload = {"chat_id": chat_id, "text": text, "parse_mode": "HTML"}
     return _call("sendMessage", payload, token, transport=transport)
 
 

@@ -190,6 +190,21 @@ sent3: list[dict] = []
 send_result("SSCL:99", applied=False, detail="node --check failed: unexpected token", transport=stub_transport(sent3), token="fake-token", chat_id="724474114")
 check("failure message uses an X and includes the reason", "❌" in sent3[0]["payload"]["text"] and "unexpected token" in sent3[0]["payload"]["text"])
 
+sent_entities: list[dict] = []
+send_result(
+    "SSCL:100",
+    applied=False,
+    detail="couldn't translate --> unavailable",
+    transport=stub_transport(sent_entities),
+    token="fake-token",
+    chat_id="724474114",
+)
+check(
+    "failure details use HTML mode so escaped entities render normally",
+    sent_entities[0]["payload"]["parse_mode"] == "HTML"
+    and "couldn&#x27;t translate --&gt; unavailable" in sent_entities[0]["payload"]["text"],
+)
+
 print("\nsend_test_result")
 sent4: list[dict] = []
 send_test_result("test:123", "approve", transport=stub_transport(sent4), token="fake", chat_id="999")

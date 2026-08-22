@@ -4,7 +4,12 @@
 from dataclasses import replace
 
 from extract import Extracted
-from translate_description import DescriptionTranslationError, translate_missing_description
+from translate_description import (
+    DescriptionTranslationError,
+    _split_translation_chunks,
+    _translate_with_fallbacks,
+    translate_missing_description,
+)
 
 from _console import use_utf8_stdout
 
@@ -103,6 +108,66 @@ try:
     check("service failure is wrapped clearly", False)
 except DescriptionTranslationError as exc:
     check("service failure is wrapped clearly", "service unavailable" in str(exc) and "en to ar" in str(exc))
+
+
+print("\nDefault translator: retry Google, then use a non-LLM fallback")
+fallback_calls = []
+sleeps = []
+
+
+def failing_google(text: str, source: str, target: str) -> str:
+    fallback_calls.append(("google", text, source, target))
+    raise RuntimeError("temporary Google failure containing private source text")
+
+
+def working_mymemory(text: str, source: str, target: str) -> str:
+    fallback_calls.append(("mymemory", text, source, target))
+    return "Fallback translation"
+
+
+fallback_result = _translate_with_fallbacks(
+    "Final reviewed source",
+    "ar",
+    "en",
+    google_fn=failing_google,
+    mymemory_fn=working_mymemory,
+    sleep_fn=sleeps.append,
+)
+check(
+    "Google is retried before fallback",
+    [call[0] for call in fallback_calls] == ["google", "google", "mymemory"],
+)
+check("retry uses one short bounded delay", sleeps == [1])
+check("MyMemory result is returned without an LLM call", fallback_result == "Fallback translation")
+
+try:
+    _translate_with_fallbacks(
+        "SECRET SOURCE MUST NOT APPEAR",
+        "ar",
+        "en",
+        google_fn=failing_google,
+        mymemory_fn=lambda *_args: (_ for _ in ()).throw(RuntimeError("also failed")),
+        sleep_fn=lambda _seconds: None,
+    )
+    check("two-backend failure is concise and source-safe", False)
+except DescriptionTranslationError as exc:
+    detail = str(exc)
+    check(
+        "two-backend failure is concise and source-safe",
+        "Google and MyMemory both failed" in detail
+        and "SECRET SOURCE" not in detail
+        and "private source text" not in detail,
+    )
+
+chunks = _split_translation_chunks("word " * 250)
+check(
+    "fallback chunks stay below the service limit",
+    bool(chunks) and all(len(chunk) <= 450 for chunk in chunks),
+)
+check(
+    "fallback chunking preserves all words",
+    " ".join(chunks).split() == ("word " * 250).split(),
+)
 
 
 passed = sum(results)
