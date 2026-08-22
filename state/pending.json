@@ -1250,52 +1250,5 @@
       "posted_at": "2026-08-19T13:43:16+00:00",
       "text": "📢 فرصة تدريب تعاوني | Smart Code\n\nتعلن شركة Smart Code عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n• التسويق الرقمي\n• العلاقات العامة\n\nانضم إلى فريقنا واكتسب خبرة عملية في بيئة عمل إبداعية ومحفزة، تتيح لك فرصة التعلم والتطور واكتساب مهارات جديدة.\n\n📍 الموقع: الرياض\n\n🔗 للتقديم: https://smartcode.sa/training"
     }
-  },
-  "nobthacv1:2094": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-22T10:43:19+00:00",
-      "status": "sent",
-      "telegram_message_id": 89
-    },
-    "extracted": {
-      "company": "Up Marketing Group",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n🎯 التسويق\n🎨 التصميم الجرافيكي\n\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية."
-      },
-      "evidence": {
-        "company": "Up Marketing Group",
-        "deadline": null,
-        "description": "تعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n🎯 التسويق\n🎨 التصميم الجرافيكي\n\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية.",
-        "location": "الرياض - شارع أنس بن مالك"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://forms.gle/LJJMhKatDvWoGZQk6"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": false,
-      "links": [
-        "https://forms.gle/LJJMhKatDvWoGZQk6"
-      ],
-      "message_id": 2094,
-      "permalink": "https://t.me/nobthacv1/2094",
-      "posted_at": "2026-08-22T10:38:02+00:00",
-      "text": "📢 فرص تدريب تعاوني\n\nتعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n🎯 التسويق\n🎨 التصميم الجرافيكي\n\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية.\n\n📍 مقر التدريب:\nالرياض - شارع أنس بن مالك\n\n(التدريب غير مدفوع)\n\n📩 للتقديم:\nhttps://forms.gle/LJJMhKatDvWoGZQk6\n\nبالتوفيق للجميع 🤍"
-    }
   }
 }

@@ -897,6 +897,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "التخصصات\nالموارد البشرية\nإدارة الأعمال\nالتسويق والتسويق الرقمي\nالمالية والمحاسبة\nإدارة الطيران\nالهندسة\nتقنية المعلومات وعلوم الحاسب وهندسة البرمجيات\nالأمن السيبراني\nالذكاء الاصطناعي وعلوم البيانات\nالإحصاء\nنظم المعلومات الإدارية\nإدارة المخاطر والامتثال\nسلاسل الإمداد واللوجستيات\nالإعلام والعلاقات العامة والإعلان\n\nالمتطلبات:\nأن يكون التدريب التعاوني متطلبًا أساسيًا للتخرج من جامعة أو كلية معتمدة في السعودية\n#دبلوم #بكالوريوس\n\nسعودي الجنسية\nإجادة اللغتين العربية والإنجليزية تحدثًا وكتابة\nمهارات التواصل والعمل ضمن فريق\nالرغبة في التعلم والتطور والمساهمة الفعالة", "en": "Specialties\nHuman resources\nBusiness Administration\nMarketing and digital marketing\nFinance and accounting\nAviation management\nEngineering\nInformation technology, computer science and software engineering\nCyber security\nArtificial intelligence and data science\nStatistics\nManagement information systems\nRisk management and compliance\nSupply chains and logistics\nMedia, public relations and advertising\n\nRequirements:\nCooperative training must be a basic requirement for graduation from an accredited university or college in Saudi Arabia\n#Diploma #Bachelor's Degree\n\nSaudi nationality\nProficiency in Arabic and English, spoken and written\nCommunication skills and working within a team\nDesire to learn, develop and contribute effectively"},
     addedAt: "2026-08-23T00:06:07+03:00",
+  },
+  {
+    name: "Up Marketing Group",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://forms.gle/LJJMhKatDvWoGZQk6",
+    type: "CO-OP Training",
+    description: {"ar": "تعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n🎯 التسويق\n🎨 التصميم الجرافيكي\n\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية.", "en": "Up Marketing Group announces the availability of cooperative training opportunities in the following specializations:\n\n🎯 Marketing\n🎨 Graphic design\n\nWe provide a professional and supportive work environment, and the opportunity to learn, develop and participate in real practical projects and experiences."},
+    addedAt: "2026-08-23T00:06:19+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
