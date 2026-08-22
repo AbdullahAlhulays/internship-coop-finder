@@ -76,6 +76,23 @@ COMPANIES_JS = '''export const companies = [
 ];
 '''
 
+CURRENT_COMPANIES_JS = '''import { getCompanyDescription } from "./companyDescriptions.js";
+
+const companyRecords = [
+  {
+    name: "SSCL",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://example.com/sscl",
+    type: "CO-OP Training",
+  },
+];
+
+export const companies = companyRecords.map((company) => {
+  const description = company.description ?? getCompanyDescription(company.name);
+  return description ? { ...company, description } : company;
+});
+'''
+
 
 # ------------------------------------------------------------- format
 
@@ -146,6 +163,26 @@ except PublishError as e:
     check(f"result is valid JavaScript (node --check) -- {e}", False)
 
 
+print("\napply_decision: current companyRecords structure")
+current_result = apply_decision(CURRENT_COMPANIES_JS, add_decision, new_card)
+raw_array_end = current_result.index("];")
+derived_export_start = current_result.index("export const companies")
+check(
+    "new card is inserted into companyRecords",
+    current_result.index(new_card["applicationLink"]) < raw_array_end,
+)
+check(
+    "derived companies export remains byte-for-byte unchanged",
+    current_result[derived_export_start:]
+    == CURRENT_COMPANIES_JS[CURRENT_COMPANIES_JS.index("export const companies"):],
+)
+try:
+    validate_js_syntax(current_result)
+    check("current website structure remains valid JavaScript", True)
+except PublishError as e:
+    check(f"current website structure remains valid JavaScript -- {e}", False)
+
+
 # ------------------------------------------------------------ update
 
 print("\napply_decision: update (fill in a missing deadline)")
@@ -210,6 +247,14 @@ check_raises(
 check_raises(
     "raises rather than guessing when the array declaration appears twice",
     lambda: apply_decision(COMPANIES_JS + "\nconst companies = [];\n", add_decision, new_card),
+)
+check_raises(
+    "raises rather than guessing when both supported raw arrays exist",
+    lambda: apply_decision(
+        CURRENT_COMPANIES_JS + "\nexport const companies = [];\n",
+        add_decision,
+        new_card,
+    ),
 )
 check_raises(
     "raises when the target applicationLink can't be found for an update",

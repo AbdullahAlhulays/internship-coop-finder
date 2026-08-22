@@ -20,12 +20,10 @@ the whole build. Two rules, no exceptions:
      with a string built from a fixed, quote-free character set (see
      format_last_updated), so it cannot introduce a syntax error.
 
-NOTE: the anchor patterns below (the "const companies = [" line, the
-per-field regexes) are built from the real schema Abood's own AI
-confirmed, but have not yet been run against the actual files on
-disk. Before this touches the real repo, run it against a *copy* of
-the real companies.js and App.jsx and diff the result by eye --
-that's the "end-to-end dry run" step in the project plan.
+NOTE: the anchor patterns below (the raw card-array declaration and
+the per-field regexes) mirror the live source layout. Keep the
+current-layout regression test and a no-write dry run against the real
+companies.js whenever that layout changes.
 """
 
 from __future__ import annotations
@@ -91,9 +89,14 @@ def bump_last_updated(app_jsx_source: str, today: datetime) -> str:
 
 # ------------------------------------------------------- companies.js
 
-# "const companies = [" or "export const companies = [". Must match
-# exactly once -- see module docstring.
-ARRAY_START_PATTERN = re.compile(r"(?:export\s+)?const\s+companies\s*=\s*\[")
+# The current site keeps editable source cards in `companyRecords` and
+# exports a derived `companies` array after filling fallback descriptions.
+# Older revisions exported the editable array directly as `companies`.
+# Accept either shape, but still require exactly one matching raw array so
+# a future refactor cannot make us guess which collection to modify.
+ARRAY_START_PATTERN = re.compile(
+    r"(?:export\s+)?const\s+(?:companyRecords|companies)\s*=\s*\["
+)
 
 _FIELD_ORDER = (
     "name", "location", "applicationLink", "deadline", "type",
@@ -117,7 +120,8 @@ def _find_array_bounds(source: str) -> tuple[int, int]:
     starts = list(ARRAY_START_PATTERN.finditer(source))
     if len(starts) != 1:
         raise PublishError(
-            f"expected exactly one 'const companies = [' declaration, "
+            f"expected exactly one editable 'companyRecords = [' or "
+            f"'companies = [' declaration, "
             f"found {len(starts)}. Refusing to guess which one is the "
             f"real data array."
         )
