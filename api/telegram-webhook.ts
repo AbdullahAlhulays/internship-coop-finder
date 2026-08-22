@@ -208,6 +208,50 @@ async function sendPlainMessage(token: string, chatId: number | string, text: st
   }
 }
 
+/** Open Telegram's composer for a free-text field edit instead of
+ * relying on a short-lived callback toast. Replying to this prompt is
+ * still handled by the same awaiting_edit state in pending.json, but
+ * ForceReply makes the required next action visible and immediate. */
+async function sendEditReplyPrompt(
+  token: string,
+  chatId: number | string,
+  cardMessageId: number,
+  fieldLabel: string,
+): Promise<void> {
+  let response: Response;
+  try {
+    response = await fetch(`${TELEGRAM_API}/bot${token}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: `Send the new ${fieldLabel.toLowerCase()} below. To cancel, tap Back on the card.`,
+        reply_parameters: {
+          message_id: cardMessageId,
+          allow_sending_without_reply: true,
+        },
+        reply_markup: {
+          force_reply: true,
+          selective: true,
+          input_field_placeholder: `New ${fieldLabel}`.slice(0, 64),
+        },
+      }),
+    });
+  } catch (err) {
+    throw new TelegramApiError(`Telegram edit prompt network failure: ${String(err)}`);
+  }
+  if (!response.ok) {
+    throw new TelegramApiError(`Telegram edit prompt failed (${response.status}): ${await response.text()}`);
+  }
+}
+
+function editStateFailureMessage(err: unknown): string {
+  if (err instanceof PatchError) return `Couldn't open the editor — ${err.message}`;
+  const status = err instanceof Error ? err.message.match(/\((\d{3})\)/)?.[1] : undefined;
+  const statusText = status ? ` (GitHub returned ${status})` : "";
+  return `Couldn't open the editor${statusText}. Please try again. If it keeps happening, check GITHUB_DISPATCH_TOKEN in Vercel.`;
+}
+
 /** Same as sendPlainMessage, but attaches a keyboard -- used to open a
  * NEW prompt message for a /new step (type/location/deadline/letter),
  * as opposed to editMessageReplyMarkup, which only changes the
@@ -398,9 +442,18 @@ async function handleLocalAction(
           await answerCallbackQuery(token, callbackQueryId);
           await editMessageReplyMarkup(token, chatId, messageId, buildConstrainedChoiceKeyboard(field, candidateId));
         } else {
-          await patchPending(repo, ghToken, `Telegram: awaiting ${field} for ${candidateId}`, (data) =>
-            applyAwaitingEditPatch(data, candidateId, field, messageId));
-          await answerCallbackQuery(token, callbackQueryId, `Reply to this chat with the new ${FIELD_LABELS[field].toLowerCase()}.`);
+          // Unstick the button immediately. The previous flow waited for
+          // GitHub before acknowledging the tap, so a slow/failed state
+          // write looked exactly like a broken Telegram button.
+          await answerCallbackQuery(token, callbackQueryId);
+          try {
+            await patchPending(repo, ghToken, `Telegram: awaiting ${field} for ${candidateId}`, (data) =>
+              applyAwaitingEditPatch(data, candidateId, field, messageId));
+          } catch (err) {
+            await sendPlainMessage(token, chatId, editStateFailureMessage(err));
+            return new Response("ok", { status: 200 });
+          }
+          await sendEditReplyPrompt(token, chatId, messageId, FIELD_LABELS[field]);
         }
         return new Response("ok", { status: 200 });
       }
@@ -410,9 +463,15 @@ async function handleLocalAction(
         if (!parsed || !isEditableField(parsed.field)) throw new Error("malformed edit-set button");
         const { field, value, candidateId } = parsed;
         const typedValue: unknown = field === "requires_letter" ? value === "true" : value;
-        const pending = await patchPending(repo, ghToken, `Telegram: set ${field} for ${candidateId}`, (data) =>
-          applyFieldValuePatch(data, candidateId, field, typedValue, undefined, messageId));
-        await answerCallbackQuery(token, callbackQueryId, "Updated.");
+        await answerCallbackQuery(token, callbackQueryId);
+        let pending: PendingFile;
+        try {
+          pending = await patchPending(repo, ghToken, `Telegram: set ${field} for ${candidateId}`, (data) =>
+            applyFieldValuePatch(data, candidateId, field, typedValue, undefined, messageId));
+        } catch (err) {
+          await sendPlainMessage(token, chatId, editStateFailureMessage(err));
+          return new Response("ok", { status: 200 });
+        }
         await refreshPendingCard(token, chatId, messageId, candidateId, pending);
         return new Response("ok", { status: 200 });
       }
