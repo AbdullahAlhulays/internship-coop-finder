@@ -298,6 +298,53 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
+  "SALTRAI:5521": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-24T15:03:32+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Ministry of Hajj and Umrah | وزارة الحج والعمرة",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": "2026-11-07",
+      "deadline_raw": "الخميس 1448/3/8هـ",
+      "description": {
+        "ar": "التخصصات (إدارة الأعمال، الحاسب الآلي، الهندسة الصناعية، نظم المعلومات، تحليل البيانات، اللغات والترجمة، التصميم الجرافيكي، إدارة الحشود) وغيرها."
+      },
+      "evidence": {
+        "company": "وزارة الحج والعمرة",
+        "deadline": "الخميس ١٤٤٨/٣/٨هـ",
+        "description": "التخصصات (إدارة الأعمال، الحاسب الآلي، الهندسة الصناعية، نظم المعلومات، تحليل البيانات، اللغات والترجمة، التصميم الجرافيكي، إدارة الحشود) وغيرها.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://lik.ad/sbc2w"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://lik.ad/sbc2w",
+        "https://lik.ad/otcls"
+      ],
+      "message_id": 5521,
+      "permalink": "https://t.me/SALTRAI/5521",
+      "posted_at": "2026-08-24T11:16:36+00:00",
+      "text": "(🔴) وزارة الحج والعمرة تعلن فتح باب التقديم في (برنامج التدريب التعاوني) للطلاب والطالبات:\n\n⭐️ التخصصات (إدارة الأعمال، الحاسب الآلي، الهندسة الصناعية، نظم المعلومات، تحليل البيانات، اللغات والترجمة، التصميم الجرافيكي، إدارة الحشود) وغيرها.\n🗓 يبدأ التقديم الأحد ١٤٤٨/٣/٤هـ وينتهي الخميس ١٤٤٨/٣/٨هـ.\n\n✅ بوابة التسجيل لدى الوزارة (مباشرة): https://lik.ad/sbc2w\n\nالمصدر: https://lik.ad/otcls"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
