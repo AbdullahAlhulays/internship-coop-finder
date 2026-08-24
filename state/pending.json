@@ -346,58 +346,6 @@
       "text": "(🔴) بدأ التقديم الآن ✅ ديوان المظالم يعلن فتح باب التقديم في برنامج (التدريب التعاوني) عبر منصة (خبير):\n\n▪️ يستهدف طلاب وطالبات الجامعات الحكومية ومعهد الإدارة العامة.\n▪️ تشمل تخصصات (القانون، الشريعة، الموارد البشرية، الأمن السيبراني، المحاسبة، السكرتارية) وغيرها.\n\n✅ رابط التسجيل الرسمي للجهة: https://www.bog.gov.sa/EServices/Pages/khabeer.aspx\n\nالمصدر: https://x.com/saudibogrv/status/2089593176805810389"
     }
   },
-  "SALTRAI:5531": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-24T11:47:58+00:00",
-      "status": "sent",
-      "telegram_message_id": 97
-    },
-    "extracted": {
-      "company": "MyTrip",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "فتحنا باب التسجيل لفرص التدريب في MyTrip 🚀\nفي مجالات التقنية، التشغيل والشراكات، والتسويق والمحتوى."
-      },
-      "evidence": {
-        "company": "MyTrip",
-        "deadline": null,
-        "description": "فتحنا باب التسجيل لفرص التدريب في MyTrip 🚀\nفي مجالات التقنية، التشغيل والشراكات، والتسويق والمحتوى.\n\nتخصصك الجامعي مو شرط يكون مرتبط بالمجال؛ الأهم شغفك، مهاراتك، واستعدادك للتعلّم والتجربة! ✨",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://forms.fillout.com/t/c8DySBfgBpus"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://forms.fillout.com/t/c8DySBfgBpus"
-      ],
-      "message_id": 5531,
-      "permalink": "https://t.me/SALTRAI/5531",
-      "posted_at": "2026-08-24T11:18:23+00:00",
-      "text": "#تدريب #تدريب_تعاوني\n\nفتحنا باب التسجيل لفرص التدريب في MyTrip 🚀\nفي مجالات التقنية، التشغيل والشراكات، والتسويق والمحتوى.\n\nتخصصك الجامعي مو شرط يكون مرتبط بالمجال؛ الأهم شغفك، مهاراتك، واستعدادك للتعلّم والتجربة! ✨\n\nقدّم الآن:\n\nhttps://forms.fillout.com/t/c8DySBfgBpus"
-    },
-    "last_edit": {
-      "message_id": 100,
-      "field": "description_ar",
-      "card_message_id": 97
-    }
-  },
   "SALTRAI:5532": {
     "decision": {
       "action": "add",
@@ -433,6 +381,11 @@
       "type": "coop",
       "url": "https://forms.gle/KpvJcVDXpBEoqai66"
     },
+    "last_edit": {
+      "card_message_id": 98,
+      "field": "description_ar",
+      "message_id": 103
+    },
     "post": {
       "channel": "SALTRAI",
       "has_media": false,
@@ -443,11 +396,6 @@
       "permalink": "https://t.me/SALTRAI/5532",
       "posted_at": "2026-08-24T12:38:38+00:00",
       "text": "🎓 فرصة تدريب تعاوني | شركة مقاولات\n\nتعلن شركة مقاولات في الرياض عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:\n\n🔹الماليه\n🔹 الموارد البشرية\n\nالمتطلبات:\n• أن يكون التدريب التعاوني متطلبًا من متطلبات التخرج.\n• أن يكون المتقدم/ـة طالبًا على رأس الدراسة.\n• الالتزام والجدية وتحمل المسؤولية.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n• إجادة استخدام برامج Microsoft Office.\n• يشترط توفر جهاز لابتوب شخصي لدى المتقدم/ـة.\n\n📍 الموقع: الرياض\n🏢 القطاع: المقاولات\n📅 مدة التدريب: حسب متطلبات الجامعة\n\n📩 للتقديم:\nhttps://forms.gle/KpvJcVDXpBEoqai66"
-    },
-    "last_edit": {
-      "message_id": 103,
-      "field": "description_ar",
-      "card_message_id": 98
     }
   },
   "cooptraning_inksa:4346": {

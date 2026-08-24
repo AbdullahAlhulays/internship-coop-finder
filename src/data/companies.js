@@ -905,6 +905,13 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "تعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n🎯 التسويق\n🎨 التصميم الجرافيكي\n\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية.", "en": "Up Marketing Group announces the availability of cooperative training opportunities in the following specializations:\n\n🎯 Marketing\n🎨 Graphic design\n\nWe provide a professional and supportive work environment, and the opportunity to learn, develop and participate in real practical projects and experiences."},
     addedAt: "2026-08-23T00:06:19+03:00",
+  },
+  {
+    name: "MyTrip",
+    applicationLink: "https://forms.fillout.com/t/c8DySBfgBpus",
+    type: "CO-OP Training",
+    description: {"ar": "فتحنا باب التسجيل لفرص التدريب في MyTrip 🚀\nفي مجالات التقنية، التشغيل والشراكات، والتسويق والمحتوى.", "en": "We have opened registration for training opportunities at MyTrip 🚀\nIn the areas of technology, operations, partnerships, marketing and content."},
+    addedAt: "2026-08-24T16:59:29+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
