@@ -401,8 +401,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-24T13:17:42+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-24T13:17:46+00:00",
+      "status": "sent",
+      "telegram_message_id": 98
     },
     "extracted": {
       "company": "شركة مقاولات",
