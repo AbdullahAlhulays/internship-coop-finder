@@ -920,6 +920,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "برنامج (التدريب التعاوني) عبر منصة (خبير):\n▪️ يستهدف طلاب وطالبات الجامعات الحكومية ومعهد الإدارة العامة.\n▪️ تشمل تخصصات (القانون، الشريعة، الموارد البشرية، الأمن السيبراني، المحاسبة، السكرتارية) وغيرها.", "en": "(Cooperative Training) program via the (Khabir) platform:\n▪️ It targets male and female students of public universities and the Institute of Public Administration.\n▪️ Specializations include (law, Sharia, human resources, cybersecurity, accounting, secretarial) and others."},
     addedAt: "2026-08-24T16:59:33+03:00",
+  },
+  {
+    name: "شركة مقاولات",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://forms.gle/KpvJcVDXpBEoqai66",
+    type: "CO-OP Training",
+    description: {"ar": "🔹الماليه\n🔹 الموارد البشرية\n\nالمتطلبات:\n• أن يكون التدريب التعاوني متطلبًا من متطلبات التخرج.\n• أن يكون المتقدم/ـة طالبًا على رأس الدراسة.\n• الالتزام والجدية وتحمل المسؤولية.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n• إجادة استخدام برامج Microsoft Office.\n• يشترط توفر جهاز لابتوب شخصي لدى المتقدم/ـة.\n\n📍 الموقع: الرياض\n🏢 القطاع: المقاولات\n📅 مدة التدريب: حسب متطلبات الجامعة", "en": "🔹Finance\n🔹 Human resources\n\nRequirements:\n• Cooperative training must be a graduation requirement.\n• The applicant must be a current student.\n• Commitment, seriousness and responsibility.\n• Good skills in communication and working within a team.\n• Proficiency in using Microsoft Office programs.\n• The applicant must have a personal laptop.\n\n📍 Location: Riyadh\n🏢 Sector: Contracting\n📅 Training duration: According to university requirements"},
+    addedAt: "2026-08-24T16:59:37+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {

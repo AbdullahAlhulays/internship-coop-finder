@@ -298,58 +298,6 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
-  "SALTRAI:5532": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-24T13:17:46+00:00",
-      "status": "sent",
-      "telegram_message_id": 98
-    },
-    "extracted": {
-      "company": "شركة مقاولات",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "🔹الماليه\n🔹 الموارد البشرية\n\nالمتطلبات:\n• أن يكون التدريب التعاوني متطلبًا من متطلبات التخرج.\n• أن يكون المتقدم/ـة طالبًا على رأس الدراسة.\n• الالتزام والجدية وتحمل المسؤولية.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n• إجادة استخدام برامج Microsoft Office.\n• يشترط توفر جهاز لابتوب شخصي لدى المتقدم/ـة.\n\n📍 الموقع: الرياض\n🏢 القطاع: المقاولات\n📅 مدة التدريب: حسب متطلبات الجامعة"
-      },
-      "evidence": {
-        "company": "شركة مقاولات",
-        "deadline": null,
-        "description": "تعلن شركة مقاولات في الرياض عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:\n\n🔹الماليه\n🔹 الموارد البشرية\n\nالمتطلبات:\n• أن يكون التدريب التعاوني متطلبًا من متطلبات التخرج.\n• أن يكون المتقدم/ـة طالبًا على رأس الدراسة.\n• الالتزام والجدية وتحمل المسؤولية.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n• إجادة استخدام برامج Microsoft Office.\n• يشترط توفر جهاز لابتوب شخصي لدى المتقدم/ـة.\n\n📍 الموقع: الرياض\n🏢 القطاع: المقاولات\n📅 مدة التدريب: حسب متطلبات الجامعة\n\n📩 للتقديم:\nhttps://forms.gle/KpvJcVDXpBEoqai66",
-        "location": "الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "فرصة تدريب تعاوني",
-      "type": "coop",
-      "url": "https://forms.gle/KpvJcVDXpBEoqai66"
-    },
-    "last_edit": {
-      "card_message_id": 98,
-      "field": "description_ar",
-      "message_id": 103
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://forms.gle/KpvJcVDXpBEoqai66"
-      ],
-      "message_id": 5532,
-      "permalink": "https://t.me/SALTRAI/5532",
-      "posted_at": "2026-08-24T12:38:38+00:00",
-      "text": "🎓 فرصة تدريب تعاوني | شركة مقاولات\n\nتعلن شركة مقاولات في الرياض عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:\n\n🔹الماليه\n🔹 الموارد البشرية\n\nالمتطلبات:\n• أن يكون التدريب التعاوني متطلبًا من متطلبات التخرج.\n• أن يكون المتقدم/ـة طالبًا على رأس الدراسة.\n• الالتزام والجدية وتحمل المسؤولية.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n• إجادة استخدام برامج Microsoft Office.\n• يشترط توفر جهاز لابتوب شخصي لدى المتقدم/ـة.\n\n📍 الموقع: الرياض\n🏢 القطاع: المقاولات\n📅 مدة التدريب: حسب متطلبات الجامعة\n\n📩 للتقديم:\nhttps://forms.gle/KpvJcVDXpBEoqai66"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
