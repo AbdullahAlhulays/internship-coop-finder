@@ -912,6 +912,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "فتحنا باب التسجيل لفرص التدريب في MyTrip 🚀\nفي مجالات التقنية، التشغيل والشراكات، والتسويق والمحتوى.", "en": "We have opened registration for training opportunities at MyTrip 🚀\nIn the areas of technology, operations, partnerships, marketing and content."},
     addedAt: "2026-08-24T16:59:29+03:00",
+  },
+  {
+    name: "Ministry of Justice | وزارة العدل",
+    applicationLink: "https://www.bog.gov.sa/EServices/Pages/khabeer.aspx",
+    deadline: "2026-08-27",
+    type: "CO-OP Training",
+    description: {"ar": "برنامج (التدريب التعاوني) عبر منصة (خبير):\n▪️ يستهدف طلاب وطالبات الجامعات الحكومية ومعهد الإدارة العامة.\n▪️ تشمل تخصصات (القانون، الشريعة، الموارد البشرية، الأمن السيبراني، المحاسبة، السكرتارية) وغيرها.", "en": "(Cooperative Training) program via the (Khabir) platform:\n▪️ It targets male and female students of public universities and the Institute of Public Administration.\n▪️ Specializations include (law, Sharia, human resources, cybersecurity, accounting, secretarial) and others."},
+    addedAt: "2026-08-24T16:59:33+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {

@@ -298,54 +298,6 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
-  "SALTRAI:5523": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-24T11:47:57+00:00",
-      "status": "sent",
-      "telegram_message_id": 96
-    },
-    "extracted": {
-      "company": "Ministry of Justice | وزارة العدل",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": "2026-08-27",
-      "deadline_raw": null,
-      "description": {
-        "ar": "برنامج (التدريب التعاوني) عبر منصة (خبير):\n▪️ يستهدف طلاب وطالبات الجامعات الحكومية ومعهد الإدارة العامة.\n▪️ تشمل تخصصات (القانون، الشريعة، الموارد البشرية، الأمن السيبراني، المحاسبة، السكرتارية) وغيرها."
-      },
-      "evidence": {
-        "company": "ديوان المظالم",
-        "deadline": null,
-        "description": "برنامج (التدريب التعاوني) عبر منصة (خبير):\n▪️ يستهدف طلاب وطالبات الجامعات الحكومية ومعهد الإدارة العامة.\n▪️ تشمل تخصصات (القانون، الشريعة، الموارد البشرية، الأمن السيبراني، المحاسبة، السكرتارية) وغيرها.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "تدريب تعاوني",
-      "type": "coop",
-      "url": "https://www.bog.gov.sa/EServices/Pages/khabeer.aspx"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://www.bog.gov.sa/EServices/Pages/khabeer.aspx",
-        "https://x.com/saudibogrv/status/2089593176805810389"
-      ],
-      "message_id": 5523,
-      "permalink": "https://t.me/SALTRAI/5523",
-      "posted_at": "2026-08-24T11:16:37+00:00",
-      "text": "(🔴) بدأ التقديم الآن ✅ ديوان المظالم يعلن فتح باب التقديم في برنامج (التدريب التعاوني) عبر منصة (خبير):\n\n▪️ يستهدف طلاب وطالبات الجامعات الحكومية ومعهد الإدارة العامة.\n▪️ تشمل تخصصات (القانون، الشريعة، الموارد البشرية، الأمن السيبراني، المحاسبة، السكرتارية) وغيرها.\n\n✅ رابط التسجيل الرسمي للجهة: https://www.bog.gov.sa/EServices/Pages/khabeer.aspx\n\nالمصدر: https://x.com/saudibogrv/status/2089593176805810389"
-    }
-  },
   "SALTRAI:5532": {
     "decision": {
       "action": "add",
