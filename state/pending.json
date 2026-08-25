@@ -298,6 +298,196 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
+  "SALTRAI:5534": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-25T15:08:28+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "أكاديمية واس",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "برنامج تدريب تعاوني نوعي.\nحضور دورات قصيرة داعمة.\nبيئة تطويرية محفزة.\nشهادة إتمام البرنامج."
+      },
+      "evidence": {
+        "company": "أكاديمية واس",
+        "deadline": null,
+        "description": "برنامج تدريب تعاوني نوعي.\nحضور دورات قصيرة داعمة.\nبيئة تطويرية محفزة.\nشهادة إتمام البرنامج.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "الدفعة الثالثة للتدريب التعاوني ٢٠٢٦",
+      "type": "coop",
+      "url": "https://wdeftksa.com/sa/jobs/100538"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://api.whatsapp.com/send?text=%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9+%D9%88%D8%A7%D8%B3+%D8%AA%D8%B9%D9%84%D9%86+%D8%A8%D8%AF%D8%A1+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85+%D8%B9%D9%86+%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC+%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A+%D9%84%D8%B9%D8%A7%D9%85+1448%D9%87%D9%80+-+https%3A%2F%2Fwww.wdeftksa.com%2Fsa%2Fjobs%2F100538+-+%D8%B1%D8%A7%D8%A8%D8%B7+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85%3A+https%3A%2F%2Ft.me%2Fcd4cd",
+        "https://wdeftksa.com/sa/jobs/100538"
+      ],
+      "message_id": 5534,
+      "permalink": "https://t.me/SALTRAI/5534",
+      "posted_at": "2026-08-25T14:24:11+00:00",
+      "text": "🚨 فرصة ذهبية مع شهادة إتمام وخبرة حقيقية لدى (أكاديمية واس) بدء التقديم للدفعة الثالثة للتدريب التعاوني ٢٠٢٦ في مختلف التخصصات\n\n🌟برنامج تدريب تعاوني نوعي.\n🌟حضور دورات قصيرة داعمة.\n🌟بيئة تطويرية محفزة.\n🌟شهادة إتمام البرنامج.\n\n🔗 انشر الخبر عبر (whatsapp):\nاضغط هنا\n\n↩️ للتقديم (https://wdeftksa.com/sa/jobs/100538)"
+    }
+  },
+  "SALTRAI:5535": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "⭐️ للتخصصات (الإحصاء، الرياضيات، الاقتصاد، تحليل البيانات، الذكاء الاصطناعي، تقنية المعلومات، إدارة الأعمال، الموارد البشرية، المحاسبة، القانون، الإعلام) وغيرها."
+        }
+      },
+      "existing_index": 97,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-08-25T15:08:29+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Saudi General Authority for Statistics | الهيئة العامة للإحصاء",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "⭐️ للتخصصات (الإحصاء، الرياضيات، الاقتصاد، تحليل البيانات، الذكاء الاصطناعي، تقنية المعلومات، إدارة الأعمال، الموارد البشرية، المحاسبة، القانون، الإعلام) وغيرها."
+      },
+      "evidence": {
+        "company": "الهيئة العامة للإحصاء",
+        "deadline": null,
+        "description": "⭐️ للتخصصات (الإحصاء، الرياضيات، الاقتصاد، تحليل البيانات، الذكاء الاصطناعي، تقنية المعلومات، إدارة الأعمال، الموارد البشرية، المحاسبة، القانون، الإعلام) وغيرها.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Cooperative Training Program 1448H",
+      "type": "coop",
+      "url": "https://www.stats.gov.sa/ar/cooperative-training"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://www.stats.gov.sa/ar/cooperative-training",
+        "https://www.linkedin.com/posts/aepaesaevaeyaeoaerabraepaesaehaepaetaerabraesaesaenaevaedaepaej-share-7490329741187579905-CTTT/"
+      ],
+      "message_id": 5535,
+      "permalink": "https://t.me/SALTRAI/5535",
+      "posted_at": "2026-08-25T14:34:39+00:00",
+      "text": "(🔴) هام | الهيئة العامة للإحصاء تعلن فتح التقديم في برنامج (التدريب التعاوني) للعام ١٤٤٨هـ (للجنسين):\n\n⭐️ للتخصصات (الإحصاء، الرياضيات، الاقتصاد، تحليل البيانات، الذكاء الاصطناعي، تقنية المعلومات، إدارة الأعمال، الموارد البشرية، المحاسبة، القانون، الإعلام) وغيرها.\n\n✅ رابط مباشر: https://www.stats.gov.sa/ar/cooperative-training\n\nالمصدر: https://www.linkedin.com/posts/aepaesaevaeyaeoaerabraepaesaehaepaetaerabraesaesaenaevaedaepaej-share-7490329741187579905-CTTT/"
+    }
+  },
+  "SALTRAI:5538": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-25T15:08:58+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Raneen Development | شركة رنين التنمية لخدمات الأعمال",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن *شركة رنين التنمية لخدمات الأعمال* عن استقبال طلبات طلاب وطالبات الجامعات والكليات الراغبين في الالتحاق ببرنامج التدريب التعاوني، بما يتوافق مع تخصصاتهم الأكاديمية والخطة الدراسية المعتمدة لدى جهاتهم التعليمية.\n\n📍 *مقر التدريب:* الرياض – حي الربيع\n📅 *أيام التدريب:* من الأحد إلى الخميس\n🕘 *الوقت:* من الساعة 9:00 صباحًا إلى 5:00 مساءً، وتتخللها فترة الراحة المعتمدة."
+      },
+      "evidence": {
+        "company": "شركة رنين التنمية لخدمات الأعمال",
+        "deadline": null,
+        "description": "تعلن *شركة رنين التنمية لخدمات الأعمال* عن استقبال طلبات طلاب وطالبات الجامعات والكليات الراغبين في الالتحاق ببرنامج التدريب التعاوني، بما يتوافق مع تخصصاتهم الأكاديمية والخطة الدراسية المعتمدة لدى جهاتهم التعليمية.\n\n📍 *مقر التدريب:* الرياض – حي الربيع\n📅 *أيام التدريب:* من الأحد إلى الخميس\n🕘 *الوقت:* من الساعة 9:00 صباحًا إلى 5:00 مساءً، وتتخللها فترة الراحة المعتمدة.",
+        "location": "الرياض – حي الربيع"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فتح باب التقديم على برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://forms.gle/d532WDxoyqMapgnp6"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/d532WDxoyqMapgnp6"
+      ],
+      "message_id": 5538,
+      "permalink": "https://t.me/SALTRAI/5538",
+      "posted_at": "2026-08-25T14:34:39+00:00",
+      "text": "🎓 *فتح باب التقديم على برنامج التدريب التعاوني*\n\nتعلن *شركة رنين التنمية لخدمات الأعمال* عن استقبال طلبات طلاب وطالبات الجامعات والكليات الراغبين في الالتحاق ببرنامج التدريب التعاوني، بما يتوافق مع تخصصاتهم الأكاديمية والخطة الدراسية المعتمدة لدى جهاتهم التعليمية.\n\n📍 *مقر التدريب:* الرياض – حي الربيع\n📅 *أيام التدريب:* من الأحد إلى الخميس\n🕘 *الوقت:* من الساعة 9:00 صباحًا إلى 5:00 مساءً، وتتخللها فترة الراحة المعتمدة.\n\nيخضع الترشيح لمتطلبات الجهة التعليمية، ومدى توافق التخصص والمهارات، واحتياج الشركة، وتوفر المقاعد التدريبية. وسيتم تنظيم تدريب المقبولين بموجب اتفاقية تدريب مكتوبة تحدد المجال والمدة والخطة التدريبية وحقوق والتزامات الطرفين، وفق الضوابط المنظمة للتدريب التعاوني.\n\nللتقديم والاطلاع على التفاصيل:\nhttps://forms.gle/d532WDxoyqMapgnp6\n\n*تعبئة النموذج لا تعني القبول النهائي، ولا تُعد وعدًا بالتوظيف بعد انتهاء التدريب.*\n\nمع تمنياتنا للجميع بالتوفيق 💙"
+    }
+  },
+  "SALTRAI:5546": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-25T15:10:22+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "تمهير",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصص المطلوب:\n• التصميم الداخلي\n\nالمسمّى التدريبي:\n• مصمم داخلي\n\nمدة البرنامج:\nمن 3 إلى 6 أشهر"
+      },
+      "evidence": {
+        "company": "تمهير",
+        "deadline": null,
+        "description": "التخصص المطلوب:\n• التصميم الداخلي\n\nالمسمّى التدريبي:\n• مصمم داخلي\n\nمدة البرنامج:\nمن 3 إلى 6 أشهر",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "مصمم داخلي",
+      "type": "coop",
+      "url": "https://forms.clickup.com/9018385172/f/8crk8rm-11358/W29BI26NT1CMB31IC1"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.clickup.com/9018385172/f/8crk8rm-11358/W29BI26NT1CMB31IC1"
+      ],
+      "message_id": 5546,
+      "permalink": "https://t.me/SALTRAI/5546",
+      "posted_at": "2026-08-25T14:40:23+00:00",
+      "text": "يسرّنا الإعلان عن فتح باب القبول في برامج التدريب التعاوني والتدريب المنتهي بالتوظيف( تمهير)\n\n📚 التخصص المطلوب:\n• التصميم الداخلي\n\n🎨 المسمّى التدريبي:\n• مصمم داخلي\n\n🗓️ مدة البرنامج:\nمن 3 إلى 6 أشهر\n\n💼 انضم الآن وابدأ رحلتك المهنية معنا!\n🔗 للتقديم، يرجى تعبئة النموذج عبر الرابط التالي:\nhttps://forms.clickup.com/9018385172/f/8crk8rm-11358/W29BI26NT1CMB31IC1"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
