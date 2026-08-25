@@ -602,6 +602,7 @@ const companyRecords = [
   location: "Jeddah, Saudi Arabia",
   applicationLink: "https://people-ksa.com/job/725",
   type: "CO-OP Training",
+  isClosed: true,
 },
 {
   name: "Saudi Railway Polytechnic | المعهد السعودي التقني للخطوط الحديدية",
