@@ -306,8 +306,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-25T15:08:28+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-25T15:10:26+00:00",
+      "status": "sent",
+      "telegram_message_id": 114
     },
     "extracted": {
       "company": "أكاديمية واس",
@@ -357,8 +358,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-08-25T15:08:29+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-25T15:10:27+00:00",
+      "status": "sent",
+      "telegram_message_id": 115
     },
     "extracted": {
       "company": "Saudi General Authority for Statistics | الهيئة العامة للإحصاء",
@@ -404,8 +406,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-25T15:08:58+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-25T15:10:28+00:00",
+      "status": "sent",
+      "telegram_message_id": 116
     },
     "extracted": {
       "company": "Raneen Development | شركة رنين التنمية لخدمات الأعمال",
@@ -450,8 +453,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-25T15:10:22+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-25T15:10:28+00:00",
+      "status": "sent",
+      "telegram_message_id": 117
     },
     "extracted": {
       "company": "تمهير",
