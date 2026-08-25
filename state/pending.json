@@ -1250,5 +1250,97 @@
       "posted_at": "2026-08-19T13:43:16+00:00",
       "text": "📢 فرصة تدريب تعاوني | Smart Code\n\nتعلن شركة Smart Code عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n• التسويق الرقمي\n• العلاقات العامة\n\nانضم إلى فريقنا واكتسب خبرة عملية في بيئة عمل إبداعية ومحفزة، تتيح لك فرصة التعلم والتطور واكتساب مهارات جديدة.\n\n📍 الموقع: الرياض\n\n🔗 للتقديم: https://smartcode.sa/training"
     }
+  },
+  "nobthacv1:2102": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-25T03:14:44+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Nexo",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "* ادارة الموارد البشرية.\n* فريق التصميم .\n* فريق التصوير والمونتاج\n\nمدة التدريب: 3 أشهر.\nنوع التدريب: مهني.\nقد تتوفر مكافأة مالية حسب الأداء وطبيعة التدريب."
+      },
+      "evidence": {
+        "company": "شركة Nexo",
+        "deadline": null,
+        "description": "* ادارة الموارد البشرية.\n* فريق التصميم .\n* فريق التصوير والمونتاج\n\nمدة التدريب: 3 أشهر.\nنوع التدريب: مهني.\nقد تتوفر مكافأة مالية حسب الأداء وطبيعة التدريب.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج تدريب",
+      "type": "internship_or_coop",
+      "url": "https://forms.gle/7ApEmV9eDjhJ5S1i6"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/7ApEmV9eDjhJ5S1i6"
+      ],
+      "message_id": 2102,
+      "permalink": "https://t.me/nobthacv1/2102",
+      "posted_at": "2026-08-25T02:42:55+00:00",
+      "text": "برنامج تدريب في شركة Nexo\nمرحبًا بك في برنامج التدريب لدى NEXO.\nنسعى إلى استقطاب متدربين للمشاركة في مشاريع حقيقية في قطاع الألعاب والرياضات الإلكترونية، وتشمل:\n\n* ادارة الموارد البشرية.\n* فريق التصميم .\n* فريق التصوير والمونتاج\n\nمدة التدريب: 3 أشهر.\nنوع التدريب: مهني.\nقد تتوفر مكافأة مالية حسب الأداء وطبيعة التدريب.\n\nللتقديم__________________"
+    }
+  },
+  "nobthacv1:2104": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-25T03:15:26+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "MEMF Electrical Industries Co.",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات المستهدفة:\nالهندسة الكهربائية\nالتسويق\nتقنية المعلومات\nالمالية\nالمحاسبة\nالموارد البشرية\n\nالمتطلبات:\nطالب في جامعة أو كلية معتمدة\nأن يكون التدريب التعاوني متطلبًا إلزاميًا للتخرج\nأن يكون التخصص مناسبًا للفرصة التدريبية\nالقدرة على الحضور في مقر التدريب بالرياض\nتقديم خطاب تدريب تعاوني رسمي من الجامعة أو الكلية\n\nالمزايا:\nساعات التدريب: 6 ساعات يوميًا\nالتدريب في القسم المرتبط بالتخصص\nتنفيذ مشروع نهائي خلال آخر شهرين من البرنامج"
+      },
+      "evidence": {
+        "company": "شركة MEMF Electrical Industries Co.",
+        "deadline": null,
+        "description": "التخصصات المستهدفة:\nالهندسة الكهربائية\nالتسويق\nتقنية المعلومات\nالمالية\nالمحاسبة\nالموارد البشرية\n\nالمتطلبات:\nطالب في جامعة أو كلية معتمدة\nأن يكون التدريب التعاوني متطلبًا إلزاميًا للتخرج\nأن يكون التخصص مناسبًا للفرصة التدريبية\nالقدرة على الحضور في مقر التدريب بالرياض\nتقديم خطاب تدريب تعاوني رسمي من الجامعة أو الكلية\n\nالمزايا:\nساعات التدريب: 6 ساعات يوميًا\nالتدريب في القسم المرتبط بالتخصص\nتنفيذ مشروع نهائي خلال آخر شهرين من البرنامج",
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "COOP Training Program",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4455074817"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4455074817"
+      ],
+      "message_id": 2104,
+      "permalink": "https://t.me/nobthacv1/2104",
+      "posted_at": "2026-08-25T02:46:57+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nشركة MEMF Electrical Industries Co. تعلن عن فتح باب التقديم في برنامج التدريب التعاوني COOP Training Program لطلاب وطالبات الجامعات والكليات.\n\nالتخصصات المستهدفة:\nالهندسة الكهربائية\nالتسويق\nتقنية المعلومات\nالمالية\nالمحاسبة\nالموارد البشرية\n\nالمتطلبات:\nطالب في جامعة أو كلية معتمدة\nأن يكون التدريب التعاوني متطلبًا إلزاميًا للتخرج\nأن يكون التخصص مناسبًا للفرصة التدريبية\nالقدرة على الحضور في مقر التدريب بالرياض\nتقديم خطاب تدريب تعاوني رسمي من الجامعة أو الكلية\n\nالمزايا:\nساعات التدريب: 6 ساعات يوميًا\nالتدريب في القسم المرتبط بالتخصص\nتنفيذ مشروع نهائي خلال آخر شهرين من البرنامج\n\nللتقديم__________________"
+    }
   }
 }
