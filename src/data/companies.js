@@ -935,6 +935,15 @@ const companyRecords = [
     type: "Internship / CO-OP Training",
     description: {"ar": "* ادارة الموارد البشرية.\n* فريق التصميم .\n* فريق التصوير والمونتاج\n\nمدة التدريب: 3 أشهر.\nنوع التدريب: مهني.\nقد تتوفر مكافأة مالية حسب الأداء وطبيعة التدريب.", "en": "* Human resources management.\n* Design team.\n* Photography and editing team\n\nTraining duration: 3 months.\nType of training: vocational.\nFinancial compensation may be available depending on performance and nature of training."},
     addedAt: "2026-08-25T13:52:27+03:00",
+  },
+  {
+    name: "MEMF Electrical Industries Co.",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4455074817",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات المستهدفة:\nالهندسة الكهربائية\nالتسويق\nتقنية المعلومات\nالمالية\nالمحاسبة\nالموارد البشرية\n\nالمتطلبات:\nطالب في جامعة أو كلية معتمدة\nأن يكون التدريب التعاوني متطلبًا إلزاميًا للتخرج\nأن يكون التخصص مناسبًا للفرصة التدريبية\nالقدرة على الحضور في مقر التدريب بالرياض\nتقديم خطاب تدريب تعاوني رسمي من الجامعة أو الكلية\n\nالمزايا:\nساعات التدريب: 6 ساعات يوميًا\nالتدريب في القسم المرتبط بالتخصص\nتنفيذ مشروع نهائي خلال آخر شهرين من البرنامج", "en": "Target disciplines:\nElectrical Engineering\nMarketing\nInformation Technology\nFinance\nAccounting\nHuman Resources\n\nRequirements:\nStudent at an accredited university or college\nCooperative training is a mandatory requirement for graduation\nThe specialization should be suitable for the training opportunity\nAbility to attend the training headquarters in Riyadh\nProvide a formal cooperative training letter from the university or college\n\nAdvantages:\nTraining Hours: 6 hours per day\nTraining in the department related to the specialization\nImplementing a final project during the last two months of the program"},
+    requiresLetter: true,
+    addedAt: "2026-08-25T13:53:10+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
