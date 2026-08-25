@@ -928,6 +928,13 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "🔹الماليه\n🔹 الموارد البشرية\n\nالمتطلبات:\n• أن يكون التدريب التعاوني متطلبًا من متطلبات التخرج.\n• أن يكون المتقدم/ـة طالبًا على رأس الدراسة.\n• الالتزام والجدية وتحمل المسؤولية.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n• إجادة استخدام برامج Microsoft Office.\n• يشترط توفر جهاز لابتوب شخصي لدى المتقدم/ـة.\n\n📍 الموقع: الرياض\n🏢 القطاع: المقاولات\n📅 مدة التدريب: حسب متطلبات الجامعة", "en": "🔹Finance\n🔹 Human resources\n\nRequirements:\n• Cooperative training must be a graduation requirement.\n• The applicant must be a current student.\n• Commitment, seriousness and responsibility.\n• Good skills in communication and working within a team.\n• Proficiency in using Microsoft Office programs.\n• The applicant must have a personal laptop.\n\n📍 Location: Riyadh\n🏢 Sector: Contracting\n📅 Training duration: According to university requirements"},
     addedAt: "2026-08-24T16:59:37+03:00",
+  },
+  {
+    name: "Nexo",
+    applicationLink: "https://forms.gle/7ApEmV9eDjhJ5S1i6",
+    type: "Internship / CO-OP Training",
+    description: {"ar": "* ادارة الموارد البشرية.\n* فريق التصميم .\n* فريق التصوير والمونتاج\n\nمدة التدريب: 3 أشهر.\nنوع التدريب: مهني.\nقد تتوفر مكافأة مالية حسب الأداء وطبيعة التدريب.", "en": "* Human resources management.\n* Design team.\n* Photography and editing team\n\nTraining duration: 3 months.\nType of training: vocational.\nFinancial compensation may be available depending on performance and nature of training."},
+    addedAt: "2026-08-25T13:52:27+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
