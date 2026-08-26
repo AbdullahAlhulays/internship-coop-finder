@@ -146,6 +146,60 @@ with tmp:
           len(calls["published"]) == 1 and calls["published"][0]["link"] == "https://careers.aramco.com/job/999")
 
 
+print("\napprove adds verified logo metadata without trusting the model for an image")
+tmp, companies_path, app_path, pending_path, ledger_path = make_temp_repo()
+with tmp:
+    decision = Decision("add", "no existing card has this application link")
+    add_pending("SALTRAI:logo", ARAMCO, {"channel": "@SALTRAI", "message_id": 24}, decision, path=pending_path)
+    calls, send_result_fn, send_rejected_fn, record_published_fn = stub_calls()
+    logo_calls = []
+    logos_dir = Path(tmp.name) / "public" / "company-logos"
+
+    def resolve_logo_fn(company, application_url, *, output_dir):
+        logo_calls.append((company, application_url, output_dir))
+        return {"domain": "aramco.com", "file": "saudi-aramco.png"}
+
+    process_approval(
+        "SALTRAI:logo", "approve",
+        companies_js_path=str(companies_path), app_jsx_path=str(app_path),
+        pending_path=str(pending_path), ledger_path=str(ledger_path),
+        send_result_fn=send_result_fn, send_rejected_fn=send_rejected_fn,
+        record_published_fn=record_published_fn,
+        resolve_logo_fn=resolve_logo_fn, logos_dir=str(logos_dir),
+    )
+
+    new_companies = companies_path.read_text(encoding="utf-8")
+    check(
+        "resolver receives only the reviewed company and application URL",
+        logo_calls == [("Saudi Aramco", "https://careers.aramco.com/job/999", str(logos_dir))],
+    )
+    check(
+        "logo metadata reaches the published company card",
+        'logo: {"domain": "aramco.com", "file": "saudi-aramco.png"},' in new_companies,
+    )
+
+
+print("\nlogo lookup failure never blocks an approved opportunity")
+tmp, companies_path, app_path, pending_path, ledger_path = make_temp_repo()
+with tmp:
+    decision = Decision("add", "no existing card has this application link")
+    add_pending("SALTRAI:no-logo", ARAMCO, {"channel": "@SALTRAI", "message_id": 25}, decision, path=pending_path)
+    calls, send_result_fn, send_rejected_fn, record_published_fn = stub_calls()
+
+    process_approval(
+        "SALTRAI:no-logo", "approve",
+        companies_js_path=str(companies_path), app_jsx_path=str(app_path),
+        pending_path=str(pending_path), ledger_path=str(ledger_path),
+        send_result_fn=send_result_fn, send_rejected_fn=send_rejected_fn,
+        record_published_fn=record_published_fn,
+        resolve_logo_fn=lambda *_args, **_kwargs: (_ for _ in ()).throw(RuntimeError("logo host offline")),
+    )
+
+    new_companies = companies_path.read_text(encoding="utf-8")
+    check("approved company is still published", "Saudi Aramco" in new_companies)
+    check("failed lookup leaves logo metadata out", "logo:" not in new_companies)
+
+
 print("\napprove translates the final Telegram-edited source text before publishing")
 tmp, companies_path, app_path, pending_path, ledger_path = make_temp_repo()
 with tmp:

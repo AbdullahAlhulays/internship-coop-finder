@@ -3,6 +3,7 @@ import { companies as fallbackCompanies } from "../data/companies.js";
 const DATA_URL = import.meta.env.VITE_COMPANIES_DATA_URL;
 const COMPANY_FIELDS = [
   "name",
+  "logo",
   "addedAt",
   "bio",
   "description",
@@ -29,10 +30,21 @@ function isValidDescription(description) {
   );
 }
 
+function isValidLogo(logo) {
+  return (
+    logo === undefined ||
+    (logo !== null &&
+      typeof logo === "object" &&
+      typeof logo.domain === "string" &&
+      typeof logo.file === "string")
+  );
+}
+
 function isValidCompany(company) {
   return (
     company &&
     typeof company.name === "string" &&
+    isValidLogo(company.logo) &&
     (company.addedAt === undefined || typeof company.addedAt === "string") &&
     (company.bio === undefined || typeof company.bio === "string") &&
     isValidDescription(company.description) &&
@@ -94,7 +106,7 @@ export function haveSameCompanies(firstCompanies, secondCompanies) {
     return (
       matchingCompany &&
       COMPANY_FIELDS.every((field) => {
-        if (field === "description") {
+        if (field === "description" || field === "logo") {
           return (
             JSON.stringify(matchingCompany[field]) ===
             JSON.stringify(company[field])

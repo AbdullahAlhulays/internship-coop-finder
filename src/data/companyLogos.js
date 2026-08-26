@@ -195,9 +195,20 @@ function getLogoFileName(name = "") {
 export function getCompanyLogo(company) {
   const englishName = getEnglishCompanyName(company.name);
   const override = COMPANY_LOGO_OVERRIDES[englishName];
-  const domain = override?.domain ?? COMPANY_LOGO_DOMAINS[englishName];
-  const key = override?.key ?? getLogoFileName(englishName);
+  const providedLogo =
+    company.logo &&
+    typeof company.logo.domain === "string" &&
+    typeof company.logo.file === "string" &&
+    /^[a-z0-9][a-z0-9._-]*\.(?:ico|jpe?g|png|webp)$/i.test(company.logo.file)
+      ? company.logo
+      : null;
+  const domain =
+    providedLogo?.domain ?? override?.domain ?? COMPANY_LOGO_DOMAINS[englishName];
+  const providedFileParts = providedLogo?.file.match(/^(.+)\.([^.]+)$/);
+  const key =
+    providedFileParts?.[1] ?? override?.key ?? getLogoFileName(englishName);
   const extension =
+    providedFileParts?.[2] ??
     override?.extension ??
     (SVG_LOGO_KEYS.has(key)
       ? "svg"
@@ -219,7 +230,11 @@ export function getCompanyLogo(company) {
       .map((word) => word[0])
       .join("")
       .toUpperCase(),
-    url: domain ? `/company-logos/${key}.${extension}` : null,
+    url: providedLogo
+      ? `/company-logos/${providedLogo.file}`
+      : domain
+        ? `/company-logos/${key}.${extension}`
+        : null,
   };
 }
 

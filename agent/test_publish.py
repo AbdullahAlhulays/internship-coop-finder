@@ -136,6 +136,7 @@ check_raises(
 print("\napply_decision: add")
 new_card = {
     "name": "New Test Co",
+    "logo": {"domain": "newtestco.example.com", "file": "new-test-co.png"},
     "applicationLink": "https://newtestco.example.com/apply",
     "type": "Internship",
     "location": "Riyadh, Saudi Arabia",
@@ -155,6 +156,10 @@ check("original SSCL block is byte-for-byte unchanged", '''  {
 check("array still closes properly", result.rstrip().endswith("];"))
 check("localized description is serialized into the new card",
       'description: {"en": "Role\\nSupport the engineering team."},' in result)
+check(
+    "verified logo metadata is serialized into the new card",
+    'logo: {"domain": "newtestco.example.com", "file": "new-test-co.png"},' in result,
+)
 
 try:
     validate_js_syntax(result)

@@ -30,6 +30,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from extract import to_card
+from company_logo import LOGOS_DIR, resolve_company_logo
 from notify import is_test_candidate, send_rejected, send_result, send_test_result
 from publish import apply_decision, bump_last_updated, validate_js_syntax
 from state import PENDING_PATH, PUBLISHED_PATH, StateError, pop_pending, record_published, record_to_decision, record_to_extracted
@@ -65,6 +66,8 @@ def process_approval(
     send_test_result_fn=send_test_result,
     record_published_fn=record_published,
     translate_description_fn=translate_missing_description,
+    resolve_logo_fn=None,
+    logos_dir: str = LOGOS_DIR,
 ) -> None:
     """The injectable *_fn parameters exist so this can be tested
     offline against temp files and a stub Telegram transport, the
@@ -118,6 +121,23 @@ def process_approval(
 
         now = datetime.now(RIYADH)
         card = to_card(extracted, added_at=now.isoformat(timespec="seconds"))
+        if resolve_logo_fn is not None:
+            try:
+                logo = resolve_logo_fn(
+                    card["name"],
+                    card["applicationLink"],
+                    output_dir=logos_dir,
+                )
+            except Exception as logo_exc:
+                # A logo is presentation metadata, not an opportunity fact.
+                # Never lose an approved listing because a site, model, or
+                # image endpoint was temporarily unavailable.
+                print(f"Logo lookup failed; publishing with initials: {logo_exc}")
+                logo = None
+            if logo:
+                card["logo"] = logo
+                if decision.action == "update":
+                    decision.changes["logo"] = logo
         # Dedupe decided what was safe to update before the missing
         # language existed. Carry the approval-time translation into
         # that same verified description update.
@@ -161,7 +181,12 @@ def main() -> int:
     args = parser.parse_args()
 
     try:
-        process_approval(args.candidate_id, args.action, defer_notice=args.defer_notice)
+        process_approval(
+            args.candidate_id,
+            args.action,
+            defer_notice=args.defer_notice,
+            resolve_logo_fn=resolve_company_logo,
+        )
     except (ApprovalError, StateError) as exc:
         print(f"FAILED: {exc}", file=sys.stderr)
         return 1

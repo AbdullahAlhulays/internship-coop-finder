@@ -79,7 +79,7 @@ def _auth_headers() -> dict:
     return {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
 
 
-def call_model(prompt: str) -> str:
+def call_model(prompt: str, *, system_prompt: str | None = None) -> str:
     """Send one prompt to Groq, return the raw text reply.
 
     This is the only function in the codebase that talks to an AI
@@ -96,7 +96,7 @@ def call_model(prompt: str) -> str:
                 "temperature": 0,
                 "response_format": {"type": "json_object"},
                 "messages": [
-                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "system", "content": system_prompt or SYSTEM_PROMPT},
                     {"role": "user", "content": prompt},
                 ],
             },

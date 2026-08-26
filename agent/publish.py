@@ -99,7 +99,7 @@ ARRAY_START_PATTERN = re.compile(
 )
 
 _FIELD_ORDER = (
-    "name", "location", "applicationLink", "deadline", "type",
+    "name", "logo", "location", "applicationLink", "deadline", "type",
     "description", "requiresLetter", "addedAt",
 )
 

@@ -50,6 +50,10 @@ That URL must return JSON in either format:
 [
   {
     "name": "Company Name",
+    "logo": {
+      "domain": "example.com",
+      "file": "company-name.png"
+    },
     "description": {
       "en": "Optional verified English company description.",
       "ar": "Optional verified Arabic company description."
@@ -73,6 +77,10 @@ or:
   "companies": [
     {
       "name": "Company Name",
+      "logo": {
+        "domain": "example.com",
+        "file": "company-name.png"
+      },
       "description": {
         "en": "Optional verified English company description.",
         "ar": "Optional verified Arabic company description."
@@ -103,6 +111,10 @@ Expired opportunities are hidden automatically when their deadline passes.
 `description` is optional. Store localized text as `{ "en": "...", "ar": "..." }` and add only text you have verified. A company receives standalone English and Arabic pages, internal detail links, and sitemap entries only after both localized descriptions are available. Until then, the opportunity remains a homepage card without an indexable detail page. A legacy string is treated as English only. `bio` is accepted as legacy source data but is not displayed in the simplified card design.
 
 The Telegram agent copies one source-language description only when the post explicitly includes meaningful role, responsibility, requirement, or program details. It never asks the LLM to translate or invent missing text. Before approval, **Edit a field** lets that source text be corrected. On approval, the lightweight `deep-translator` library translates the final edited text into the missing English or Arabic version, and both versions are published together. Google Translate is retried once and MyMemory is used as a chunked non-LLM fallback if Google is temporarily unavailable. If both languages were entered manually, they are preserved and translation is skipped; if both translation services fail, approval stops instead of publishing a half-localized card.
+
+After a Telegram opportunity is approved, the agent also attempts to add its logo. It first checks whether the application is hosted on a verifiable official company domain. For generic forms, social links, and recruiting platforms, the LLM may suggest an official domain, but the agent accepts it only when the live page matches the reviewed company name. The logo must be discoverable on that verified page and pass file type and size checks before it is stored locally in `public/company-logos`. The LLM never generates the logo. If any step is uncertain or unavailable, the opportunity is still published and the UI safely falls back to company initials.
+
+`logo` is optional verified metadata. `domain` records the official domain used for verification and `file` names the locally stored PNG, JPEG, WebP, or ICO asset.
 
 `deadlineTime` is optional. Add it in 24-hour `HH:mm` format when the posting includes an exact apply-before time.
 
