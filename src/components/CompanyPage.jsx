@@ -4,11 +4,53 @@ import PageHeader from "./PageHeader.jsx";
 import {
   getCompanyDisplayName,
   getEnglishCompanyName,
+  getOpportunityTypeKey,
 } from "../data/companyLogos.js";
 import {
   getLocalizedCompanyDescription,
   getLocalizedLocation,
 } from "../utils/locale.js";
+import { formatDeadline } from "../utils/status.js";
+
+const detailLabels = {
+  en: {
+    details: "Announcement details",
+    source: "Application source",
+    added: "Added to Fursati",
+    lastVerified: "Last verified",
+    notSpecified: "Not specified",
+    notRequired: "Not specified as required",
+    sourceNote:
+      "Requirements and role details are organized from the linked announcement. Confirm the latest terms at the source before applying.",
+  },
+  ar: {
+    details: "تفاصيل الإعلان المتاحة",
+    source: "مصدر التقديم",
+    added: "تاريخ الإضافة إلى فرصتي",
+    lastVerified: "آخر تحقق",
+    notSpecified: "غير محدد",
+    notRequired: "لم يُذكر أنه مطلوب",
+    sourceNote:
+      "نُظمت المتطلبات وتفاصيل الدور من الإعلان المرتبط. تأكد من أحدث الشروط في المصدر قبل التقديم.",
+  },
+};
+
+function formatSourceDate(value, locale) {
+  if (!value) {
+    return "";
+  }
+
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return "";
+  }
+
+  return new Intl.DateTimeFormat(
+    locale === "ar" ? "ar-SA-u-ca-gregory-nu-arab" : "en-US",
+    { day: "numeric", month: "long", year: "numeric" },
+  ).format(date);
+}
 
 function CompanyDescription({ description }) {
   const sections = description
@@ -62,6 +104,21 @@ export default function CompanyPage({
   const isOpenSoon = statusKey === "open-soon";
   const isClosed = statusKey === "closed";
   const description = getLocalizedCompanyDescription(company, locale);
+  const labels = detailLabels[locale] ?? detailLabels.en;
+  const opportunityType = getOpportunityTypeKey(company.type);
+  const deadline = company.deadline
+    ? formatDeadline(company.deadline, company.deadlineTime, locale)
+    : messages.companyPage.openUntilFilled;
+  const sourceDateValue = company.lastVerifiedAt ?? company.addedAt;
+  const sourceDate = formatSourceDate(sourceDateValue, locale);
+  const sourceDateLabel = company.lastVerifiedAt
+    ? labels.lastVerified
+    : labels.added;
+  const statusLabel = isClosed
+    ? messages.companyPage.closed
+    : isOpenSoon
+      ? messages.companyPage.opensSoon
+      : messages.companyPage.open;
 
   return (
     <div className="company-page">
@@ -114,6 +171,51 @@ export default function CompanyPage({
             </div>
           </header>
 
+          <section className="company-facts" aria-label={labels.details}>
+            <h2>{labels.details}</h2>
+            <dl>
+              <div>
+                <dt>{messages.companyPage.type}</dt>
+                <dd>{messages.opportunityTypes[opportunityType]}</dd>
+              </div>
+              <div>
+                <dt>{messages.companyPage.status}</dt>
+                <dd>{statusLabel}</dd>
+              </div>
+              <div>
+                <dt>{messages.companyPage.deadline}</dt>
+                <dd>{deadline || labels.notSpecified}</dd>
+              </div>
+              <div>
+                <dt>{messages.companyPage.universityLetter}</dt>
+                <dd>
+                  {company.requiresLetter
+                    ? messages.companyPage.required
+                    : labels.notRequired}
+                </dd>
+              </div>
+              {sourceDate && (
+                <div>
+                  <dt>{sourceDateLabel}</dt>
+                  <dd>{sourceDate}</dd>
+                </div>
+              )}
+              <div>
+                <dt>{labels.source}</dt>
+                <dd>
+                  <a
+                    href={company.applicationLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {labels.source}
+                  </a>
+                </dd>
+              </div>
+            </dl>
+            <p>{labels.sourceNote}</p>
+          </section>
+
           <section
             className={`company-description-panel ${
               description ? "has-description" : "is-empty"
@@ -146,7 +248,7 @@ export default function CompanyPage({
         </article>
       </main>
 
-      <Footer messages={messages} />
+      <Footer messages={messages} locale={locale} navigate={navigate} />
     </div>
   );
 }

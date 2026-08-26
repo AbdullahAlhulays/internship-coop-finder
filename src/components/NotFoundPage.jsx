@@ -38,7 +38,7 @@ export default function NotFoundPage({
         </section>
       </main>
 
-      <Footer messages={messages} />
+      <Footer messages={messages} locale={locale} navigate={navigate} />
     </div>
   );
 }

@@ -1,17 +1,19 @@
 import { writeFile } from "node:fs/promises";
 import { companies } from "../src/data/companies.js";
 import {
-  getCompanyPageEntries,
+  getPublishableCompanyPageEntries,
   getCompanyPath,
   SITE_ORIGIN,
 } from "../src/utils/companyRoutes.js";
+import { getSitePageEntries } from "../src/utils/siteRoutes.js";
 
 // All company routes come from the same source as the UI. Add future standalone
 // public routes to this array; company pages need no manual sitemap maintenance.
 const routes = [
   "/",
   "/ar",
-  ...getCompanyPageEntries(companies).flatMap(({ slug }) => [
+  ...getSitePageEntries().map(({ path }) => path),
+  ...getPublishableCompanyPageEntries(companies).flatMap(({ slug }) => [
     getCompanyPath(slug, "en"),
     getCompanyPath(slug, "ar"),
   ]),

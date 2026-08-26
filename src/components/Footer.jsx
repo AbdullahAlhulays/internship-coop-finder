@@ -1,4 +1,8 @@
-export default function Footer({ messages }) {
+import { getLocalizedSitePage, sitePages } from "../data/siteContent.js";
+import { getSitePagePath } from "../utils/siteRoutes.js";
+import InternalLink from "./InternalLink.jsx";
+
+export default function Footer({ messages, locale = "en", navigate }) {
   return (
     <footer className="site-footer">
       <div className="footer-card">
@@ -37,6 +41,23 @@ export default function Footer({ messages }) {
           </nav>
         </div>
       </div>
+
+      <nav
+        className="footer-policy-links"
+        aria-label={
+          locale === "ar" ? "صفحات التعريف والسياسات" : "About and policy pages"
+        }
+      >
+        {sitePages.map((page) => (
+          <InternalLink
+            key={page.slug}
+            href={getSitePagePath(page.slug, locale)}
+            navigate={navigate}
+          >
+            {getLocalizedSitePage(page.slug, locale).title}
+          </InternalLink>
+        ))}
+      </nav>
 
       <p className="footer-note">{messages.footer.note}</p>
     </footer>

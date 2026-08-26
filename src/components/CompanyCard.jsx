@@ -5,7 +5,10 @@ import {
   getCompanyDisplayName,
   getOpportunityTypeKey,
 } from "../data/companyLogos.js";
-import { getCompanyPath } from "../utils/companyRoutes.js";
+import {
+  getCompanyPath,
+  hasPublishableCompanyContent,
+} from "../utils/companyRoutes.js";
 import {
   formatNumber,
   getLocalizedCompanyDescription,
@@ -90,9 +93,9 @@ function CompanyCard({
   );
   const displayName = getCompanyDisplayName(company.name);
   const opportunityType = getOpportunityTypeKey(company.type);
-  const hasDescription = Boolean(
-    getLocalizedCompanyDescription(company, locale),
-  );
+  const hasDescription =
+    hasPublishableCompanyContent(company) &&
+    Boolean(getLocalizedCompanyDescription(company, locale));
 
   return (
     <article

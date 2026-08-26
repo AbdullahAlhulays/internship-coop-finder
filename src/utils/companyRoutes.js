@@ -37,6 +37,18 @@ export function getCompanyPageEntries(companies = []) {
   });
 }
 
+export function hasPublishableCompanyContent(company) {
+  return ["en", "ar"].every((locale) =>
+    Boolean(getLocalizedCompanyDescription(company, locale)),
+  );
+}
+
+export function getPublishableCompanyPageEntries(companies = []) {
+  return getCompanyPageEntries(companies).filter(({ company }) =>
+    hasPublishableCompanyContent(company),
+  );
+}
+
 export function getCompanySlugFromPathname(pathname = "/") {
   const match = stripLocaleFromPathname(pathname).match(
     /^\/companies\/([^/]+)$/,

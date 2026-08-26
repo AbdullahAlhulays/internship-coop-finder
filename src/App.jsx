@@ -8,6 +8,7 @@ import {
 } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header.jsx";
+import InformationPage from "./components/InformationPage.jsx";
 import SearchBar from "./components/SearchBar.jsx";
 import FilterButtons from "./components/FilterButtons.jsx";
 import CitySelect from "./components/CitySelect.jsx";
@@ -19,6 +20,7 @@ import NotFoundPage from "./components/NotFoundPage.jsx";
 import Footer from "./components/Footer.jsx";
 import MobileBottomNav from "./components/MobileBottomNav.jsx";
 import { companies as fallbackCompanies } from "./data/companies.js";
+import { getLocalizedSitePage } from "./data/siteContent.js";
 import { getMessages } from "./locales/messages.js";
 import useClientRoute from "./hooks/useClientRoute.js";
 import useDocumentMetadata from "./hooks/useDocumentMetadata.js";
@@ -37,6 +39,7 @@ import {
   getCompanySlugFromPathname,
   getHomePageDescription,
   getHomePageTitle,
+  hasPublishableCompanyContent,
   isCompanyPath,
 } from "./utils/companyRoutes.js";
 import {
@@ -51,6 +54,10 @@ import {
   getNextStatusChangeTime,
   isDeadlineUrgent,
 } from "./utils/status.js";
+import {
+  getSitePagePath,
+  getSitePageSlugFromPathname,
+} from "./utils/siteRoutes.js";
 
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const MIN_REFRESH_GAP_MS = 60 * 1000;
@@ -296,8 +303,33 @@ export default function App() {
   );
   const isHomePage = normalizePathname(pathname) === homeHref;
   const isCompanyRoute = isCompanyPath(pathname);
-  const isKnownCompanyPage = isCompanyRoute && Boolean(activeCompanyRecord);
+  const isKnownCompanyPage =
+    isCompanyRoute &&
+    Boolean(activeCompanyRecord) &&
+    hasPublishableCompanyContent(activeCompanyRecord.company);
+  const sitePageSlug = getSitePageSlugFromPathname(pathname);
+  const sitePageContent = getLocalizedSitePage(sitePageSlug, locale);
+  const isInformationPage = Boolean(sitePageContent);
   const metadata = useMemo(() => {
+    if (isInformationPage) {
+      const englishPath = getSitePagePath(sitePageSlug, "en");
+      const arabicPath = getSitePagePath(sitePageSlug, "ar");
+
+      return {
+        title: `${sitePageContent.title} | ${messages.siteName}`,
+        description: sitePageContent.description,
+        canonicalUrl: getCanonicalUrl(
+          getSitePagePath(sitePageSlug, locale),
+        ),
+        alternateUrls: {
+          en: getCanonicalUrl(englishPath),
+          ar: getCanonicalUrl(arabicPath),
+          "x-default": getCanonicalUrl(englishPath),
+        },
+        noIndex: false,
+      };
+    }
+
     if (isKnownCompanyPage) {
       const englishPath = getCompanyPath(activeCompanyRecord.slug, "en");
       const arabicPath = getCompanyPath(activeCompanyRecord.slug, "ar");
@@ -345,10 +377,13 @@ export default function App() {
     activeCompanyRecord,
     homeHref,
     isHomePage,
+    isInformationPage,
     isKnownCompanyPage,
     locale,
     messages,
     pathname,
+    sitePageContent,
+    sitePageSlug,
   ]);
 
   useDocumentMetadata(metadata);
@@ -545,6 +580,24 @@ export default function App() {
     );
   }
 
+  if (isInformationPage) {
+    return (
+      <>
+        <InformationPage
+          content={sitePageContent}
+          theme={theme}
+          onThemeToggle={handleThemeToggle}
+          navigate={navigate}
+          locale={locale}
+          messages={messages}
+          homeHref={homeHref}
+          languageHref={languageHref}
+        />
+        <Analytics />
+      </>
+    );
+  }
+
   if (!isHomePage) {
     return (
       <>
@@ -634,7 +687,7 @@ export default function App() {
         />
       </main>
 
-      <Footer messages={messages} />
+      <Footer messages={messages} locale={locale} navigate={navigate} />
       <MobileBottomNav
         activeFilter={activeFilter}
         counts={opportunityCounts}

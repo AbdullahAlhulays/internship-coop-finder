@@ -2,15 +2,21 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { companies } from "../src/data/companies.js";
+import { getLocalizedSitePage } from "../src/data/siteContent.js";
+import { getMessages } from "../src/locales/messages.js";
 import {
   getCanonicalUrl,
   getCompanyPageDescription,
-  getCompanyPageEntries,
   getCompanyPageTitle,
+  getPublishableCompanyPageEntries,
   getCompanyPath,
   getHomePageDescription,
   getHomePageTitle,
 } from "../src/utils/companyRoutes.js";
+import {
+  getSitePageEntries,
+  getSitePagePath,
+} from "../src/utils/siteRoutes.js";
 
 const distDirectory = fileURLToPath(new URL("../dist", import.meta.url));
 const template = await readFile(path.join(distDirectory, "index.html"), "utf8");
@@ -97,7 +103,31 @@ await writeLocalizedPage(
 );
 
 await Promise.all(
-  getCompanyPageEntries(companies).flatMap(({ company, slug }) => {
+  getSitePageEntries().map(({ locale, page, path: pagePath }) => {
+    const content = getLocalizedSitePage(page.slug, locale);
+    const englishPath = getSitePagePath(page.slug, "en");
+    const arabicPath = getSitePagePath(page.slug, "ar");
+    const relativeFilePath =
+      locale === "ar"
+        ? path.join("ar", `${page.slug}.html`)
+        : `${page.slug}.html`;
+
+    return writeLocalizedPage(
+      relativeFilePath,
+      renderDocument({
+        locale,
+        title: `${content.title} | ${getMessages(locale).siteName}`,
+        description: content.description,
+        canonicalPath: pagePath,
+        englishPath,
+        arabicPath,
+      }),
+    );
+  }),
+);
+
+await Promise.all(
+  getPublishableCompanyPageEntries(companies).flatMap(({ company, slug }) => {
     const englishPath = getCompanyPath(slug, "en");
     const arabicPath = getCompanyPath(slug, "ar");
 
