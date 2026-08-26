@@ -343,53 +343,6 @@
       "text": "https://nahjerp.com/jobdetail/vdo9C4PqEf6a8e94b97a89c?source=headhunted\n\nتدريب تعاوني ( علاقات عامة ، ماركتنق )"
     }
   },
-  "SALTRAI:5557": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-26T20:06:02+00:00",
-      "status": "sent",
-      "telegram_message_id": 127
-    },
-    "extracted": {
-      "company": "Marquee",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "التسويق، التسويق الرقمي، وإدارة المشاريع ، التصميم."
-      },
-      "evidence": {
-        "company": "شركة Marquee",
-        "deadline": null,
-        "description": "التسويق، التسويق الرقمي، وإدارة المشاريع ، التصميم.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "فرص تدريب تعاوني",
-      "type": "coop",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSezxT8y_ghT6KWFINQ0BSam4tSwUlXl2dRq8DWMVVpFOK1EPQ/viewform?usp=header"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://docs.google.com/forms/d/e/1FAIpQLSezxT8y_ghT6KWFINQ0BSam4tSwUlXl2dRq8DWMVVpFOK1EPQ/viewform?usp=header"
-      ],
-      "message_id": 5557,
-      "permalink": "https://t.me/SALTRAI/5557",
-      "posted_at": "2026-08-26T19:20:29+00:00",
-      "text": "السلام عليكم،\n\nنعلن عن توفر فرص تدريب تعاوني في شركة Marquee في عدد من المجالات، تشمل التسويق، التسويق الرقمي، وإدارة المشاريع ، التصميم.\n\nللمهتمين بالتقديم، يرجى تعبئة النموذج عبر الرابط:\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSezxT8y_ghT6KWFINQ0BSam4tSwUlXl2dRq8DWMVVpFOK1EPQ/viewform?usp=header\n\nبالتوفيق للجميع"
-    }
-  },
   "SALTRAI:5560": {
     "decision": {
       "action": "add",
