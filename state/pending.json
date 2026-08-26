@@ -343,51 +343,6 @@
       "text": "https://nahjerp.com/jobdetail/vdo9C4PqEf6a8e94b97a89c?source=headhunted\n\nتدريب تعاوني ( علاقات عامة ، ماركتنق )"
     }
   },
-  "SALTRAI:5560": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-26T20:06:02+00:00",
-      "status": "sent",
-      "telegram_message_id": 128
-    },
-    "extracted": {
-      "company": "معهد تأسيس العالي للتدريب",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "معهد تأسيس العالي للتدريب",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب تعاوني",
-      "type": "coop",
-      "url": "https://forms.gle/xSgLTKANj9Zk6KoN8"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://forms.gle/xSgLTKANj9Zk6KoN8"
-      ],
-      "message_id": 5560,
-      "permalink": "https://t.me/SALTRAI/5560",
-      "posted_at": "2026-08-26T19:20:29+00:00",
-      "text": "يعلن معهد تأسيس العالي للتدريب عن توفر فرص لبرنامج التدريب تعاوني\nللفصل الدراسي الأول للطلاب والطالبات\n\nقدم الان\nhttps://forms.gle/xSgLTKANj9Zk6KoN8"
-    }
-  },
   "SALTRAI:5561": {
     "decision": {
       "action": "add",
