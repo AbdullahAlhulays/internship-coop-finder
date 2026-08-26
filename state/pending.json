@@ -343,6 +343,184 @@
       "text": "https://nahjerp.com/jobdetail/vdo9C4PqEf6a8e94b97a89c?source=headhunted\n\nتدريب تعاوني ( علاقات عامة ، ماركتنق )"
     }
   },
+  "SALTRAI:5553": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-26T20:04:55+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "SDAIA",
+      "confidence": 0.4,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "https://athkax.sdaia.gov.sa/coop",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://athkax.sdaia.gov.sa/coop"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://athkax.sdaia.gov.sa/coop"
+      ],
+      "message_id": 5553,
+      "permalink": "https://t.me/SALTRAI/5553",
+      "posted_at": "2026-08-26T19:18:22+00:00",
+      "text": "https://athkax.sdaia.gov.sa/coop"
+    }
+  },
+  "SALTRAI:5557": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-26T20:05:17+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Marquee",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التسويق، التسويق الرقمي، وإدارة المشاريع ، التصميم."
+      },
+      "evidence": {
+        "company": "شركة Marquee",
+        "deadline": null,
+        "description": "التسويق، التسويق الرقمي، وإدارة المشاريع ، التصميم.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرص تدريب تعاوني",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSezxT8y_ghT6KWFINQ0BSam4tSwUlXl2dRq8DWMVVpFOK1EPQ/viewform?usp=header"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSezxT8y_ghT6KWFINQ0BSam4tSwUlXl2dRq8DWMVVpFOK1EPQ/viewform?usp=header"
+      ],
+      "message_id": 5557,
+      "permalink": "https://t.me/SALTRAI/5557",
+      "posted_at": "2026-08-26T19:20:29+00:00",
+      "text": "السلام عليكم،\n\nنعلن عن توفر فرص تدريب تعاوني في شركة Marquee في عدد من المجالات، تشمل التسويق، التسويق الرقمي، وإدارة المشاريع ، التصميم.\n\nللمهتمين بالتقديم، يرجى تعبئة النموذج عبر الرابط:\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSezxT8y_ghT6KWFINQ0BSam4tSwUlXl2dRq8DWMVVpFOK1EPQ/viewform?usp=header\n\nبالتوفيق للجميع"
+    }
+  },
+  "SALTRAI:5560": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-26T20:05:34+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "معهد تأسيس العالي للتدريب",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "معهد تأسيس العالي للتدريب",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب تعاوني",
+      "type": "coop",
+      "url": "https://forms.gle/xSgLTKANj9Zk6KoN8"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/xSgLTKANj9Zk6KoN8"
+      ],
+      "message_id": 5560,
+      "permalink": "https://t.me/SALTRAI/5560",
+      "posted_at": "2026-08-26T19:20:29+00:00",
+      "text": "يعلن معهد تأسيس العالي للتدريب عن توفر فرص لبرنامج التدريب تعاوني\nللفصل الدراسي الأول للطلاب والطالبات\n\nقدم الان\nhttps://forms.gle/xSgLTKANj9Zk6KoN8"
+    }
+  },
+  "SALTRAI:5561": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-26T20:05:58+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "معهد تأسيس العالي للتدريب",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "معهد تأسيس العالي للتدريب",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب تعاوني",
+      "type": "coop",
+      "url": "https://forms.gle/xSgLTKANj9Zk6KoN8"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/xSgLTKANj9Zk6KoN8"
+      ],
+      "message_id": 5561,
+      "permalink": "https://t.me/SALTRAI/5561",
+      "posted_at": "2026-08-26T19:20:29+00:00",
+      "text": "يعلن معهد تأسيس العالي للتدريب عن توفر فرص لبرنامج التدريب تعاوني\nللفصل الدراسي الأول للطلاب والطالبات\n\nقدم الان\nhttps://forms.gle/xSgLTKANj9Zk6KoN8"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
