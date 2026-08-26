@@ -298,6 +298,50 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
+  "SALTRAI:5552": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-26T13:20:40+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "nahjerp.com",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "nahjerp.com",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني ( علاقات عامة ، ماركتنق )",
+      "type": "coop",
+      "url": "https://nahjerp.com/jobdetail/vdo9C4PqEf6a8e94b97a89c?source=headhunted"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://nahjerp.com/jobdetail/vdo9C4PqEf6a8e94b97a89c?source=headhunted"
+      ],
+      "message_id": 5552,
+      "permalink": "https://t.me/SALTRAI/5552",
+      "posted_at": "2026-08-26T12:50:53+00:00",
+      "text": "https://nahjerp.com/jobdetail/vdo9C4PqEf6a8e94b97a89c?source=headhunted\n\nتدريب تعاوني ( علاقات عامة ، ماركتنق )"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
