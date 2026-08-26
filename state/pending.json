@@ -298,63 +298,6 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
-  "SALTRAI:5535": {
-    "decision": {
-      "action": "update",
-      "changes": {
-        "description": {
-          "ar": "⭐️ للتخصصات (الإحصاء، الرياضيات، الاقتصاد، تحليل البيانات، الذكاء الاصطناعي، تقنية المعلومات، إدارة الأعمال، الموارد البشرية، المحاسبة، القانون، الإعلام) وغيرها."
-        }
-      },
-      "existing_index": 97,
-      "reason": "existing card has no description, this post provides verified details"
-    },
-    "delivery": {
-      "sent_at": "2026-08-25T15:10:27+00:00",
-      "status": "sent",
-      "telegram_message_id": 115
-    },
-    "extracted": {
-      "company": "Saudi General Authority for Statistics | الهيئة العامة للإحصاء",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": ":\n\n• الإحصاء\n• الرياضيات\n• الاقتصاد\n• علم البيانات وتحليل البيانات\n• الذكاء الاصطناعي\n• نظم المعلومات وتقنية المعلومات\n• المالية والمحاسبة\n• إدارة الأعمال\n• الموارد البشرية\n• القانون\n• الإعلام والتصميم\n\nمتطلبات القبول:\n\n• سعودي/ـة الجنسية\n• إجادة اللغة الإنجليزية\n• اجتياز المقابلة الشخصية\n• إرفاق خطاب من الجهة التعليمية والسيرة الذاتية\n• معدل تراكمي لا يقل عن 3.75 من 5 أو 2 من 4\n• أن يكون التدريب أحد متطلبات التخرج في مرحلة البكالوريوس"
-      },
-      "evidence": {
-        "company": "الهيئة العامة للإحصاء",
-        "deadline": null,
-        "description": "⭐️ للتخصصات (الإحصاء، الرياضيات، الاقتصاد، تحليل البيانات، الذكاء الاصطناعي، تقنية المعلومات، إدارة الأعمال، الموارد البشرية، المحاسبة، القانون، الإعلام) وغيرها.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": true,
-      "title": "Cooperative Training Program 1448H",
-      "type": "coop",
-      "url": "https://www.stats.gov.sa/ar/cooperative-training"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://www.stats.gov.sa/ar/cooperative-training",
-        "https://www.linkedin.com/posts/aepaesaevaeyaeoaerabraepaesaehaepaetaerabraesaesaenaevaedaepaej-share-7490329741187579905-CTTT/"
-      ],
-      "message_id": 5535,
-      "permalink": "https://t.me/SALTRAI/5535",
-      "posted_at": "2026-08-25T14:34:39+00:00",
-      "text": "(🔴) هام | الهيئة العامة للإحصاء تعلن فتح التقديم في برنامج (التدريب التعاوني) للعام ١٤٤٨هـ (للجنسين):\n\n⭐️ للتخصصات (الإحصاء، الرياضيات، الاقتصاد، تحليل البيانات، الذكاء الاصطناعي، تقنية المعلومات، إدارة الأعمال، الموارد البشرية، المحاسبة، القانون، الإعلام) وغيرها.\n\n✅ رابط مباشر: https://www.stats.gov.sa/ar/cooperative-training\n\nالمصدر: https://www.linkedin.com/posts/aepaesaevaeyaeoaerabraepaesaehaepaetaerabraesaesaenaevaedaepaej-share-7490329741187579905-CTTT/"
-    },
-    "last_edit": {
-      "message_id": 120,
-      "field": "description_ar",
-      "card_message_id": 115
-    }
-  },
   "SALTRAI:5538": {
     "decision": {
       "action": "add",
