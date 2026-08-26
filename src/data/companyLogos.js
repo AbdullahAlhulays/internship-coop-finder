@@ -128,6 +128,39 @@ const SVG_LOGO_KEYS = new Set([
 const WEBP_LOGO_KEYS = new Set(["sami", "sami-autonomous"]);
 const PNG_LOGO_KEYS = new Set(["taibah-valley"]);
 
+const COMPANY_LOGO_OVERRIDES = {
+  "Medical Care": {
+    domain: "care.med.sa",
+    key: "national-medical-care",
+    extension: "jpg",
+  },
+  Flyadeal: {
+    domain: "flyadeal.com",
+    key: "flyadeal",
+    extension: "jpg",
+  },
+  "Up Marketing Group": {
+    domain: "upmgsa.com",
+    key: "up-marketing-group",
+    extension: "png",
+  },
+  MyTrip: {
+    domain: "mytrip.company",
+    key: "mytrip",
+    extension: "png",
+  },
+  "MEMF Electrical Industries Co.": {
+    domain: "memf.com.sa",
+    key: "memf-electrical-industries-co",
+    extension: "png",
+  },
+  "أكاديمية واس": {
+    domain: "spanewsacademy.net.sa",
+    key: "was-spa",
+    extension: "jpg",
+  },
+};
+
 export function getEnglishCompanyName(name = "") {
   const parts = name.split("|").map((part) => part.trim()).filter(Boolean);
   const englishPart = parts.find((part) => /[A-Za-z]/.test(part));
@@ -161,15 +194,18 @@ function getLogoFileName(name = "") {
 
 export function getCompanyLogo(company) {
   const englishName = getEnglishCompanyName(company.name);
-  const domain = COMPANY_LOGO_DOMAINS[englishName];
-  const key = getLogoFileName(englishName);
-  const extension = SVG_LOGO_KEYS.has(key)
-    ? "svg"
-    : WEBP_LOGO_KEYS.has(key)
-      ? "webp"
-      : PNG_LOGO_KEYS.has(key)
-        ? "png"
-        : "jpg";
+  const override = COMPANY_LOGO_OVERRIDES[englishName];
+  const domain = override?.domain ?? COMPANY_LOGO_DOMAINS[englishName];
+  const key = override?.key ?? getLogoFileName(englishName);
+  const extension =
+    override?.extension ??
+    (SVG_LOGO_KEYS.has(key)
+      ? "svg"
+      : WEBP_LOGO_KEYS.has(key)
+        ? "webp"
+        : PNG_LOGO_KEYS.has(key)
+          ? "png"
+          : "jpg");
 
   return {
     alt: `${englishName} logo`,
