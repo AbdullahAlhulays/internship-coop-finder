@@ -351,8 +351,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-26T20:04:55+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-26T20:06:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 126
     },
     "extracted": {
       "company": "SDAIA",
@@ -395,8 +396,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-26T20:05:17+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-26T20:06:02+00:00",
+      "status": "sent",
+      "telegram_message_id": 127
     },
     "extracted": {
       "company": "Marquee",
@@ -441,8 +443,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-26T20:05:34+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-26T20:06:02+00:00",
+      "status": "sent",
+      "telegram_message_id": 128
     },
     "extracted": {
       "company": "معهد تأسيس العالي للتدريب",
@@ -485,8 +488,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-26T20:05:58+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-26T20:06:03+00:00",
+      "status": "sent",
+      "telegram_message_id": 129
     },
     "extracted": {
       "company": "معهد تأسيس العالي للتدريب",
