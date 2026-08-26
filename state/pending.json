@@ -343,51 +343,6 @@
       "text": "https://nahjerp.com/jobdetail/vdo9C4PqEf6a8e94b97a89c?source=headhunted\n\nتدريب تعاوني ( علاقات عامة ، ماركتنق )"
     }
   },
-  "SALTRAI:5553": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-26T20:06:01+00:00",
-      "status": "sent",
-      "telegram_message_id": 126
-    },
-    "extracted": {
-      "company": "SDAIA",
-      "confidence": 0.4,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "https://athkax.sdaia.gov.sa/coop",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://athkax.sdaia.gov.sa/coop"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://athkax.sdaia.gov.sa/coop"
-      ],
-      "message_id": 5553,
-      "permalink": "https://t.me/SALTRAI/5553",
-      "posted_at": "2026-08-26T19:18:22+00:00",
-      "text": "https://athkax.sdaia.gov.sa/coop"
-    }
-  },
   "SALTRAI:5557": {
     "decision": {
       "action": "add",
