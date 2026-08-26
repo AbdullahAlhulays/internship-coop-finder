@@ -346,6 +346,7 @@ const companyRecords = [
     location: "King Abdulaziz City, Riyadh, Saudi Arabia",
     applicationLink: "https://kacst.gov.sa/coop/",
     type: "CO-OP Training",
+    isClosed: true,
   },
   {
     name: "Communications, Space and Technology Commission (CST) | هيئة الاتصالات والفضاء والتقنية",
