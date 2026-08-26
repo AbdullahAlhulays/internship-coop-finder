@@ -944,6 +944,13 @@ const companyRecords = [
     description: {"ar": "التخصصات المستهدفة:\nالهندسة الكهربائية\nالتسويق\nتقنية المعلومات\nالمالية\nالمحاسبة\nالموارد البشرية\n\nالمتطلبات:\nطالب في جامعة أو كلية معتمدة\nأن يكون التدريب التعاوني متطلبًا إلزاميًا للتخرج\nأن يكون التخصص مناسبًا للفرصة التدريبية\nالقدرة على الحضور في مقر التدريب بالرياض\nتقديم خطاب تدريب تعاوني رسمي من الجامعة أو الكلية\n\nالمزايا:\nساعات التدريب: 6 ساعات يوميًا\nالتدريب في القسم المرتبط بالتخصص\nتنفيذ مشروع نهائي خلال آخر شهرين من البرنامج", "en": "Target disciplines:\nElectrical Engineering\nMarketing\nInformation Technology\nFinance\nAccounting\nHuman Resources\n\nRequirements:\nStudent at an accredited university or college\nCooperative training is a mandatory requirement for graduation\nThe specialization should be suitable for the training opportunity\nAbility to attend the training headquarters in Riyadh\nProvide a formal cooperative training letter from the university or college\n\nAdvantages:\nTraining Hours: 6 hours per day\nTraining in the department related to the specialization\nImplementing a final project during the last two months of the program"},
     requiresLetter: true,
     addedAt: "2026-08-25T13:53:10+03:00",
+  },
+  {
+    name: "أكاديمية واس",
+    applicationLink: "https://wdeftksa.com/sa/jobs/100538",
+    type: "CO-OP Training",
+    description: {"ar": "برنامج تدريب تعاوني نوعي.\nحضور دورات قصيرة داعمة.\nبيئة تطويرية محفزة.\nشهادة إتمام البرنامج.", "en": "Qualitative cooperative training program.\nAttend short supportive courses.\nA stimulating developmental environment.\nCertificate of completion of the program."},
+    addedAt: "2026-08-26T12:11:42+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {

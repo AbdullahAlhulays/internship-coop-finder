@@ -298,54 +298,6 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
-  "SALTRAI:5534": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-25T15:10:26+00:00",
-      "status": "sent",
-      "telegram_message_id": 114
-    },
-    "extracted": {
-      "company": "أكاديمية واس",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "برنامج تدريب تعاوني نوعي.\nحضور دورات قصيرة داعمة.\nبيئة تطويرية محفزة.\nشهادة إتمام البرنامج."
-      },
-      "evidence": {
-        "company": "أكاديمية واس",
-        "deadline": null,
-        "description": "برنامج تدريب تعاوني نوعي.\nحضور دورات قصيرة داعمة.\nبيئة تطويرية محفزة.\nشهادة إتمام البرنامج.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "الدفعة الثالثة للتدريب التعاوني ٢٠٢٦",
-      "type": "coop",
-      "url": "https://wdeftksa.com/sa/jobs/100538"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://api.whatsapp.com/send?text=%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9+%D9%88%D8%A7%D8%B3+%D8%AA%D8%B9%D9%84%D9%86+%D8%A8%D8%AF%D8%A1+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85+%D8%B9%D9%86+%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC+%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A+%D9%84%D8%B9%D8%A7%D9%85+1448%D9%87%D9%80+-+https%3A%2F%2Fwww.wdeftksa.com%2Fsa%2Fjobs%2F100538+-+%D8%B1%D8%A7%D8%A8%D8%B7+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85%3A+https%3A%2F%2Ft.me%2Fcd4cd",
-        "https://wdeftksa.com/sa/jobs/100538"
-      ],
-      "message_id": 5534,
-      "permalink": "https://t.me/SALTRAI/5534",
-      "posted_at": "2026-08-25T14:24:11+00:00",
-      "text": "🚨 فرصة ذهبية مع شهادة إتمام وخبرة حقيقية لدى (أكاديمية واس) بدء التقديم للدفعة الثالثة للتدريب التعاوني ٢٠٢٦ في مختلف التخصصات\n\n🌟برنامج تدريب تعاوني نوعي.\n🌟حضور دورات قصيرة داعمة.\n🌟بيئة تطويرية محفزة.\n🌟شهادة إتمام البرنامج.\n\n🔗 انشر الخبر عبر (whatsapp):\nاضغط هنا\n\n↩️ للتقديم (https://wdeftksa.com/sa/jobs/100538)"
-    }
-  },
   "SALTRAI:5535": {
     "decision": {
       "action": "update",
