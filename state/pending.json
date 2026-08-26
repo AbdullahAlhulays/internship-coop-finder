@@ -298,53 +298,6 @@
       "text": "(🔴) أمانة العاصمة المقدسة (برنامج التدريب التعاوني):\n\n▪️ الجهة (أمانة العاصمة المقدسة).\n▪️ المستهدفون (طلبة الجامعات والكليات والمعاهد).\n▪️ للفصل الدراسي الأول للعام ١٤٤٨هـ.\n▪️ موعد التسجيل (من الأحد ١٤٤٨/٢/٢٦هـ إلى الخميس ١٤٤٨/٣/٧هـ).\n\n✅ بوابة التقديم للأمانة (مباشر): https://hmm.gov.sa/esrvc/coop.php\n\nالمصدر: https://www.linkedin.com/posts/makkahmunicipality_aepaesaehaepaedaetaerabraepaesaetaeqaexaebaer-activity-7492137887459901440-wj6T"
     }
   },
-  "SALTRAI:5546": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-25T15:10:28+00:00",
-      "status": "sent",
-      "telegram_message_id": 117
-    },
-    "extracted": {
-      "company": "تمهير",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "التخصص المطلوب:\n• التصميم الداخلي\n\nالمسمّى التدريبي:\n• مصمم داخلي\n\nمدة البرنامج:\nمن 3 إلى 6 أشهر"
-      },
-      "evidence": {
-        "company": "تمهير",
-        "deadline": null,
-        "description": "التخصص المطلوب:\n• التصميم الداخلي\n\nالمسمّى التدريبي:\n• مصمم داخلي\n\nمدة البرنامج:\nمن 3 إلى 6 أشهر",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "مصمم داخلي",
-      "type": "coop",
-      "url": "https://forms.clickup.com/9018385172/f/8crk8rm-11358/W29BI26NT1CMB31IC1"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://forms.clickup.com/9018385172/f/8crk8rm-11358/W29BI26NT1CMB31IC1"
-      ],
-      "message_id": 5546,
-      "permalink": "https://t.me/SALTRAI/5546",
-      "posted_at": "2026-08-25T14:40:23+00:00",
-      "text": "يسرّنا الإعلان عن فتح باب القبول في برامج التدريب التعاوني والتدريب المنتهي بالتوظيف( تمهير)\n\n📚 التخصص المطلوب:\n• التصميم الداخلي\n\n🎨 المسمّى التدريبي:\n• مصمم داخلي\n\n🗓️ مدة البرنامج:\nمن 3 إلى 6 أشهر\n\n💼 انضم الآن وابدأ رحلتك المهنية معنا!\n🔗 للتقديم، يرجى تعبئة النموذج عبر الرابط التالي:\nhttps://forms.clickup.com/9018385172/f/8crk8rm-11358/W29BI26NT1CMB31IC1"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
