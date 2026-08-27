@@ -1340,5 +1340,235 @@
       "posted_at": "2026-08-19T13:43:16+00:00",
       "text": "📢 فرصة تدريب تعاوني | Smart Code\n\nتعلن شركة Smart Code عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n• التسويق الرقمي\n• العلاقات العامة\n\nانضم إلى فريقنا واكتسب خبرة عملية في بيئة عمل إبداعية ومحفزة، تتيح لك فرصة التعلم والتطور واكتساب مهارات جديدة.\n\n📍 الموقع: الرياض\n\n🔗 للتقديم: https://smartcode.sa/training"
     }
+  },
+  "nobthacv1:2114": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-27T20:34:04+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "WAS Academy | اكاديمية واس",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "اكاديمية واس تعلن عن بدء التقديم للدفعة الثالثة من برنامج التدريب التعاوني لعام 2026، لطلبة الجامعات في عدد من التخصصات."
+      },
+      "evidence": {
+        "company": "اكاديمية واس",
+        "deadline": null,
+        "description": "اكاديمية واس تعلن عن بدء التقديم للدفعة الثالثة من برنامج التدريب التعاوني لعام 2026، لطلبة الجامعات في عدد من التخصصات.",
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "الدفعة الثالثة من برنامج التدريب التعاوني لعام 2026",
+      "type": "coop",
+      "url": "https://spanewsacademy.edu.sa/ar/portal/survey/3188df87-0840-4bff-8fa9-d9fb523ae6c3"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://spanewsacademy.edu.sa/ar/portal/survey/3188df87-0840-4bff-8fa9-d9fb523ae6c3"
+      ],
+      "message_id": 2114,
+      "permalink": "https://t.me/nobthacv1/2114",
+      "posted_at": "2026-08-27T11:05:26+00:00",
+      "text": "#التدريب_التعاوني #الرياض\n\nاكاديمية واس تعلن عن بدء التقديم للدفعة الثالثة من برنامج التدريب التعاوني لعام 2026، لطلبة الجامعات في عدد من التخصصات.\n\nللتقديمـــــــــــــــــــــــــــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2116": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-27T20:34:06+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Americana Restaurants",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات المستهدفة:\nالموارد البشرية\nالتسويق\nالمالية\nسلاسل الإمداد\nالعمليات\nتقنية المعلومات\nالعلاقات الحكومية\nالمتطلبات:\nسعودي الجنسية\nللتدريب التعاوني: طالب منتظم في الجامعة أو الكلية التقنية مع خطاب رسمي من الجهة التعليمية\nمهارات تواصل جيدة\nالحماس للتعلم والتطور\n\nالمزايا:\nخبرة عملية في قطاع الأغذية والمشروبات\nإشراف وتوجيه مهني\nتطوير المهارات المهنية والشخصية\nفرص وظيفية للمتميزين بعد إتمام التدريب"
+      },
+      "evidence": {
+        "company": "شركة أمريكانا للمطاعم (Americana Restaurants)",
+        "deadline": null,
+        "description": "التخصصات المستهدفة:\nالموارد البشرية\nالتسويق\nالمالية\nسلاسل الإمداد\nالعمليات\nتقنية المعلومات\nالعلاقات الحكومية\nالمتطلبات:\nسعودي الجنسية\nللتدريب التعاوني: طالب منتظم في الجامعة أو الكلية التقنية مع خطاب رسمي من الجهة التعليمية\nمهارات تواصل جيدة\nالحماس للتعلم والتطور\n\nالمزايا:\nخبرة عملية في قطاع الأغذية والمشروبات\nإشراف وتوجيه مهني\nتطوير المهارات المهنية والشخصية\nفرص وظيفية للمتميزين بعد إتمام التدريب",
+        "location": "#الرياض #جدة #الشرقية"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia; Jeddah, Saudi Arabia; Eastern Province, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "تمهير والتدريب التعاوني (Co-op) 2026",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4457760680"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4457760680"
+      ],
+      "message_id": 2116,
+      "permalink": "https://t.me/nobthacv1/2116",
+      "posted_at": "2026-08-27T11:28:14+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض #جدة #الشرقية\n\nشركة أمريكانا للمطاعم (Americana Restaurants) تعلن عن فتح باب التقديم في برنامجي تمهير والتدريب التعاوني (Co-op) لعام 2026 للسعوديين والسعوديات.\n\nالتخصصات المستهدفة:\nالموارد البشرية\nالتسويق\nالمالية\nسلاسل الإمداد\nالعمليات\nتقنية المعلومات\nالعلاقات الحكومية\nالمتطلبات:\nسعودي الجنسية\nللتدريب التعاوني: طالب منتظم في الجامعة أو الكلية التقنية مع خطاب رسمي من الجهة التعليمية\nمهارات تواصل جيدة\nالحماس للتعلم والتطور\n\nالمزايا:\nخبرة عملية في قطاع الأغذية والمشروبات\nإشراف وتوجيه مهني\nتطوير المهارات المهنية والشخصية\nفرص وظيفية للمتميزين بعد إتمام التدريب\n\nللتقديمــــــــــــــــــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2117": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-27T20:34:19+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Waad Education Company | شركة وعد التعليمية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات المستهدفة:\nإدارة الأعمال\nالإدارة العامة\n\nالمتطلبات:\nخطاب رسمي من الجامعة يثبت الحاجة إلى التدريب التعاوني\nأن يكون التدريب التعاوني متطلبًا ضمن متطلبات التخرج\nمهارات جيدة في التنظيم والتواصل\nالقدرة على التنسيق وتنظيم المهام الإدارية وتنفيذ المهام الموكلة"
+      },
+      "evidence": {
+        "company": "شركة وعد التعليمية (Waad Education Company)",
+        "deadline": null,
+        "description": "التخصصات المستهدفة:\nإدارة الأعمال\nالإدارة العامة\n\nالمتطلبات:\nخطاب رسمي من الجامعة يثبت الحاجة إلى التدريب التعاوني\nأن يكون التدريب التعاوني متطلبًا ضمن متطلبات التخرج\nمهارات جيدة في التنظيم والتواصل\nالقدرة على التنسيق وتنظيم المهام الإدارية وتنفيذ المهام الموكلة",
+        "location": "#جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "Cooperative Training",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4459174416"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4459174416"
+      ],
+      "message_id": 2117,
+      "permalink": "https://t.me/nobthacv1/2117",
+      "posted_at": "2026-08-27T11:29:52+00:00",
+      "text": "🎓 #التدريب_التعاوني | #جدة\nشركة وعد التعليمية (Waad Education Company) تعلن عن فتح باب التقديم في فرصة التدريب التعاوني (Cooperative Training) لطلاب وطالبات الجامعات.\nالتخصصات المستهدفة:\nإدارة الأعمال\nالإدارة العامة\nالمتطلبات:\nخطاب رسمي من الجامعة يثبت الحاجة إلى التدريب التعاوني\nأن يكون التدريب التعاوني متطلبًا ضمن متطلبات التخرج\nمهارات جيدة في التنظيم والتواصل\nالقدرة على التنسيق وتنظيم المهام الإدارية وتنفيذ المهام الموكلة\nللتقديمــــــــــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2118": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-27T20:34:24+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "J-B | جيبي",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات المستهدفة:\nالموارد البشرية\nإدارة الأعمال\nأو تخصصات ذات صلة\nالمتطلبات:\nدرجة البكالوريوس في الموارد البشرية أو إدارة الأعمال أو تخصص ذي صلة\nلبرنامج تمهير: خريج حديث ومؤهل للبرنامج\nمهارات جيدة في التواصل والتنظيم\nإجادة اللغة الإنجليزية\nإجادة استخدام Microsoft Office\nاهتمام بمجال استقطاب المواهب والموارد البشرية"
+      },
+      "evidence": {
+        "company": "شركة J-B | جيبي",
+        "deadline": null,
+        "description": "التخصصات المستهدفة:\nالموارد البشرية\nإدارة الأعمال\nأو تخصصات ذات صلة\nالمتطلبات:\nدرجة البكالوريوس في الموارد البشرية أو إدارة الأعمال أو تخصص ذي صلة\nلبرنامج تمهير: خريج حديث ومؤهل للبرنامج\nمهارات جيدة في التواصل والتنظيم\nإجادة اللغة الإنجليزية\nإجادة استخدام Microsoft Office\nاهتمام بمجال استقطاب المواهب والموارد البشرية",
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني (COOP) وتمهير",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4457908500"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4457908500"
+      ],
+      "message_id": 2118,
+      "permalink": "https://t.me/nobthacv1/2118",
+      "posted_at": "2026-08-27T11:31:01+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\nشركة J-B | جيبي تعلن عن فتح باب التقديم في برنامجي التدريب التعاوني (COOP) وتمهير في مجال استقطاب المواهب والتهيئة الوظيفية.\nالتخصصات المستهدفة:\nالموارد البشرية\nإدارة الأعمال\nأو تخصصات ذات صلة\nالمتطلبات:\nدرجة البكالوريوس في الموارد البشرية أو إدارة الأعمال أو تخصص ذي صلة\nلبرنامج تمهير: خريج حديث ومؤهل للبرنامج\nمهارات جيدة في التواصل والتنظيم\nإجادة اللغة الإنجليزية\nإجادة استخدام Microsoft Office\nاهتمام بمجال استقطاب المواهب والموارد البشرية\n\nللتقديمــــــــــــــــــــــــ"
+    }
+  },
+  "nobthacv1:2119": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-27T20:34:53+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Impact46",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات المستهدفة:\nالمالية\nالمحاسبة\nإدارة الأعمال\nأو تخصصات ذات صلة\n\nالمتطلبات:\nطالب جامعي في السنة الأخيرة\nاهتمام حقيقي بمجال الاستثمار وإدارة الصناديق\nمهارات تواصل قوية\nإجادة اللغتين العربية والإنجليزية"
+      },
+      "evidence": {
+        "company": "Impact46",
+        "deadline": null,
+        "description": "التخصصات المستهدفة:\nالمالية\nالمحاسبة\nإدارة الأعمال\nأو تخصصات ذات صلة\n\nالمتطلبات:\nطالب جامعي في السنة الأخيرة\nاهتمام حقيقي بمجال الاستثمار وإدارة الصناديق\nمهارات تواصل قوية\nإجادة اللغتين العربية والإنجليزية",
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني COOP",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4456908729"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4456908729"
+      ],
+      "message_id": 2119,
+      "permalink": "https://t.me/nobthacv1/2119",
+      "posted_at": "2026-08-27T11:31:42+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\nشركة Impact46 تعلن عن فتح باب التقديم في برنامج التدريب التعاوني COOP لطلاب وطالبات الجامعات.\nالتخصصات المستهدفة:\nالمالية\nالمحاسبة\nإدارة الأعمال\nأو تخصصات ذات صلة\nالمتطلبات:\nطالب جامعي في السنة الأخيرة\nاهتمام حقيقي بمجال الاستثمار وإدارة الصناديق\nمهارات تواصل قوية\nإجادة اللغتين العربية والإنجليزية\n\nللتقديمــــــــــــــــــــــ"
+    }
   }
 }
