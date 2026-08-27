@@ -1349,8 +1349,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-27T20:34:04+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-27T20:34:56+00:00",
+      "status": "sent",
+      "telegram_message_id": 133
     },
     "extracted": {
       "company": "WAS Academy | اكاديمية واس",
@@ -1395,8 +1396,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-27T20:34:06+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-27T20:34:57+00:00",
+      "status": "sent",
+      "telegram_message_id": 134
     },
     "extracted": {
       "company": "Americana Restaurants",
@@ -1441,8 +1443,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-27T20:34:19+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-27T20:34:57+00:00",
+      "status": "sent",
+      "telegram_message_id": 135
     },
     "extracted": {
       "company": "Waad Education Company | شركة وعد التعليمية",
@@ -1487,8 +1490,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-27T20:34:24+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-27T20:34:58+00:00",
+      "status": "sent",
+      "telegram_message_id": 136
     },
     "extracted": {
       "company": "J-B | جيبي",
@@ -1533,8 +1537,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-27T20:34:53+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-27T20:34:58+00:00",
+      "status": "sent",
+      "telegram_message_id": 137
     },
     "extracted": {
       "company": "Impact46",
