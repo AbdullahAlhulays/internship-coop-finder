@@ -1341,53 +1341,6 @@
       "text": "📢 فرصة تدريب تعاوني | Smart Code\n\nتعلن شركة Smart Code عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n• التسويق الرقمي\n• العلاقات العامة\n\nانضم إلى فريقنا واكتسب خبرة عملية في بيئة عمل إبداعية ومحفزة، تتيح لك فرصة التعلم والتطور واكتساب مهارات جديدة.\n\n📍 الموقع: الرياض\n\n🔗 للتقديم: https://smartcode.sa/training"
     }
   },
-  "nobthacv1:2117": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-27T20:34:57+00:00",
-      "status": "sent",
-      "telegram_message_id": 135
-    },
-    "extracted": {
-      "company": "Waad Education Company | شركة وعد التعليمية",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "التخصصات المستهدفة:\nإدارة الأعمال\nالإدارة العامة\n\nالمتطلبات:\nخطاب رسمي من الجامعة يثبت الحاجة إلى التدريب التعاوني\nأن يكون التدريب التعاوني متطلبًا ضمن متطلبات التخرج\nمهارات جيدة في التنظيم والتواصل\nالقدرة على التنسيق وتنظيم المهام الإدارية وتنفيذ المهام الموكلة"
-      },
-      "evidence": {
-        "company": "شركة وعد التعليمية (Waad Education Company)",
-        "deadline": null,
-        "description": "التخصصات المستهدفة:\nإدارة الأعمال\nالإدارة العامة\n\nالمتطلبات:\nخطاب رسمي من الجامعة يثبت الحاجة إلى التدريب التعاوني\nأن يكون التدريب التعاوني متطلبًا ضمن متطلبات التخرج\nمهارات جيدة في التنظيم والتواصل\nالقدرة على التنسيق وتنظيم المهام الإدارية وتنفيذ المهام الموكلة",
-        "location": "#جدة"
-      },
-      "is_opportunity": true,
-      "location": "Jeddah, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": true,
-      "title": "Cooperative Training",
-      "type": "coop",
-      "url": "https://www.linkedin.com/jobs/view/4459174416"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://www.linkedin.com/jobs/view/4459174416"
-      ],
-      "message_id": 2117,
-      "permalink": "https://t.me/nobthacv1/2117",
-      "posted_at": "2026-08-27T11:29:52+00:00",
-      "text": "🎓 #التدريب_التعاوني | #جدة\nشركة وعد التعليمية (Waad Education Company) تعلن عن فتح باب التقديم في فرصة التدريب التعاوني (Cooperative Training) لطلاب وطالبات الجامعات.\nالتخصصات المستهدفة:\nإدارة الأعمال\nالإدارة العامة\nالمتطلبات:\nخطاب رسمي من الجامعة يثبت الحاجة إلى التدريب التعاوني\nأن يكون التدريب التعاوني متطلبًا ضمن متطلبات التخرج\nمهارات جيدة في التنظيم والتواصل\nالقدرة على التنسيق وتنظيم المهام الإدارية وتنفيذ المهام الموكلة\nللتقديمــــــــــــــــــــــــــــ"
-    }
-  },
   "nobthacv1:2118": {
     "decision": {
       "action": "add",

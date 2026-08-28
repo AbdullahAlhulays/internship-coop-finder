@@ -962,6 +962,15 @@ const companyRecords = [
     description: {"ar": "التخصصات المستهدفة:\nالموارد البشرية\nالتسويق\nالمالية\nسلاسل الإمداد\nالعمليات\nتقنية المعلومات\nالعلاقات الحكومية\nالمتطلبات:\nسعودي الجنسية\nللتدريب التعاوني: طالب منتظم في الجامعة أو الكلية التقنية مع خطاب رسمي من الجهة التعليمية\nمهارات تواصل جيدة\nالحماس للتعلم والتطور\n\nالمزايا:\nخبرة عملية في قطاع الأغذية والمشروبات\nإشراف وتوجيه مهني\nتطوير المهارات المهنية والشخصية\nفرص وظيفية للمتميزين بعد إتمام التدريب", "en": "Target disciplines:\nHuman Resources\nMarketing\nFinance\nSupply Chains\nOperations\nInformation Technology\nGovernment Relations\nRequirements:\nSaudi National\nFor Cooperative Training: A regular student at the university or technical college with an official letter from the educational institution\nGood communication skills\nEnthusiasm to learn and develop\n\nAdvantages:\nPractical experience in the food and beverage sector\nProfessional supervision and guidance\nDevelop professional and personal skills\nCareer opportunities for outstanding people after completing the training"},
     requiresLetter: true,
     addedAt: "2026-08-28T13:12:02+03:00",
+  },
+  {
+    name: "Waad Education Company | شركة وعد التعليمية",
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4459174416",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات المستهدفة:\nإدارة الأعمال\nالإدارة العامة\n\nالمتطلبات:\nخطاب رسمي من الجامعة يثبت الحاجة إلى التدريب التعاوني\nأن يكون التدريب التعاوني متطلبًا ضمن متطلبات التخرج\nمهارات جيدة في التنظيم والتواصل\nالقدرة على التنسيق وتنظيم المهام الإدارية وتنفيذ المهام الموكلة", "en": "Targeted specializations:\nBusiness Administration\nPublic administration\n\nRequirements:\nAn official letter from the university proving the need for cooperative training\nCooperative training must be a requirement for graduation\nGood organization and communication skills\nThe ability to coordinate and organize administrative tasks and implement assigned tasks"},
+    requiresLetter: true,
+    addedAt: "2026-08-28T13:12:27+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
