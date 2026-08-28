@@ -1341,53 +1341,6 @@
       "text": "📢 فرصة تدريب تعاوني | Smart Code\n\nتعلن شركة Smart Code عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n• التسويق الرقمي\n• العلاقات العامة\n\nانضم إلى فريقنا واكتسب خبرة عملية في بيئة عمل إبداعية ومحفزة، تتيح لك فرصة التعلم والتطور واكتساب مهارات جديدة.\n\n📍 الموقع: الرياض\n\n🔗 للتقديم: https://smartcode.sa/training"
     }
   },
-  "nobthacv1:2114": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-27T20:34:56+00:00",
-      "status": "sent",
-      "telegram_message_id": 133
-    },
-    "extracted": {
-      "company": "WAS Academy | اكاديمية واس",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "اكاديمية واس تعلن عن بدء التقديم للدفعة الثالثة من برنامج التدريب التعاوني لعام 2026، لطلبة الجامعات في عدد من التخصصات."
-      },
-      "evidence": {
-        "company": "اكاديمية واس",
-        "deadline": null,
-        "description": "اكاديمية واس تعلن عن بدء التقديم للدفعة الثالثة من برنامج التدريب التعاوني لعام 2026، لطلبة الجامعات في عدد من التخصصات.",
-        "location": "#الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "الدفعة الثالثة من برنامج التدريب التعاوني لعام 2026",
-      "type": "coop",
-      "url": "https://spanewsacademy.edu.sa/ar/portal/survey/3188df87-0840-4bff-8fa9-d9fb523ae6c3"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://spanewsacademy.edu.sa/ar/portal/survey/3188df87-0840-4bff-8fa9-d9fb523ae6c3"
-      ],
-      "message_id": 2114,
-      "permalink": "https://t.me/nobthacv1/2114",
-      "posted_at": "2026-08-27T11:05:26+00:00",
-      "text": "#التدريب_التعاوني #الرياض\n\nاكاديمية واس تعلن عن بدء التقديم للدفعة الثالثة من برنامج التدريب التعاوني لعام 2026، لطلبة الجامعات في عدد من التخصصات.\n\nللتقديمـــــــــــــــــــــــــــــــــــــــــــــ"
-    }
-  },
   "nobthacv1:2116": {
     "decision": {
       "action": "add",
