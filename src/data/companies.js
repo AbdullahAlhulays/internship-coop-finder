@@ -971,6 +971,14 @@ const companyRecords = [
     description: {"ar": "التخصصات المستهدفة:\nإدارة الأعمال\nالإدارة العامة\n\nالمتطلبات:\nخطاب رسمي من الجامعة يثبت الحاجة إلى التدريب التعاوني\nأن يكون التدريب التعاوني متطلبًا ضمن متطلبات التخرج\nمهارات جيدة في التنظيم والتواصل\nالقدرة على التنسيق وتنظيم المهام الإدارية وتنفيذ المهام الموكلة", "en": "Targeted specializations:\nBusiness Administration\nPublic administration\n\nRequirements:\nAn official letter from the university proving the need for cooperative training\nCooperative training must be a requirement for graduation\nGood organization and communication skills\nThe ability to coordinate and organize administrative tasks and implement assigned tasks"},
     requiresLetter: true,
     addedAt: "2026-08-28T13:12:27+03:00",
+  },
+  {
+    name: "J-B | جيبي",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4457908500",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات المستهدفة:\nالموارد البشرية\nإدارة الأعمال\nأو تخصصات ذات صلة\nالمتطلبات:\nدرجة البكالوريوس في الموارد البشرية أو إدارة الأعمال أو تخصص ذي صلة\nلبرنامج تمهير: خريج حديث ومؤهل للبرنامج\nمهارات جيدة في التواصل والتنظيم\nإجادة اللغة الإنجليزية\nإجادة استخدام Microsoft Office\nاهتمام بمجال استقطاب المواهب والموارد البشرية", "en": "Targeted specializations:\nHuman resources\nBusiness Administration\nOr related specializations\nRequirements:\nBachelor's degree in Human Resources, Business Administration, or related field\nFor the Tamheer Program: A recent graduate who is eligible for the program\nGood communication and organization skills\nProficiency in English\nProficiency in using Microsoft Office\nInterest in the field of attracting talent and human resources"},
+    addedAt: "2026-08-28T13:12:49+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
