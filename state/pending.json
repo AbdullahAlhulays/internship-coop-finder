@@ -520,6 +520,54 @@
       "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
     }
   },
+  "cooptraning_inksa:4383": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-29T14:33:52+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "بيت السمعة للعلاقات العامة والاتصال",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة بيت السمعة للعلاقات العامة والاتصال عن توفر فرص تدريب تعاوني لطلاب وطالبات."
+      },
+      "evidence": {
+        "company": "شركة بيت السمعة للعلاقات العامة والاتصال",
+        "deadline": null,
+        "description": "تعلن شركة بيت السمعة للعلاقات العامة والاتصال عن توفر فرص تدريب تعاوني لطلاب وطالبات.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرص تدريب تعاوني لطلاب وطالبات",
+      "type": "coop",
+      "url": "https://forms.gle/vNrCTDQGvcGjbhZ89"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/vNrCTDQGvcGjbhZ89",
+        "https://rhouse.sa/"
+      ],
+      "message_id": 4383,
+      "permalink": "https://t.me/cooptraning_inksa/4383",
+      "posted_at": "2026-08-29T12:13:02+00:00",
+      "text": "🟡الفرصة رقم ٢٧٣٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\nالسلام عليكم ورحمة الله وبركاته،\n\nتعلن شركة بيت السمعة للعلاقات العامة والاتصال عن توفر فرص تدريب تعاوني لطلاب وطالبات.\n\nللراغبين في التقديم، يرجى تعبئة نموذج التسجيل عبر الرابط التالي:\nhttps://forms.gle/vNrCTDQGvcGjbhZ89\n\nولمعرفة المزيد عن الشركة، يمكنكم زيارة موقعها الإلكتروني:\nhttps://rhouse.sa/\n\nمع تمنياتنا للجميع بالتوفيق والنجاح."
+    }
+  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
