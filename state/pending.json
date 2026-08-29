@@ -528,8 +528,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-29T14:33:52+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-29T14:34:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 143
     },
     "extracted": {
       "company": "بيت السمعة للعلاقات العامة والاتصال",
