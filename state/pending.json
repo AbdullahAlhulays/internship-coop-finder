@@ -1402,8 +1402,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-08-30T23:33:46+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-30T23:33:50+00:00",
+      "status": "sent",
+      "telegram_message_id": 144
     },
     "extracted": {
       "company": "SGS",
@@ -1448,8 +1449,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-30T23:33:48+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-30T23:33:51+00:00",
+      "status": "sent",
+      "telegram_message_id": 145
     },
     "extracted": {
       "company": "Arabian Oud | العربية للعود",
