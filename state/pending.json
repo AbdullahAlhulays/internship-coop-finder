@@ -587,8 +587,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T20:09:34+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T20:11:40+00:00",
+      "status": "sent",
+      "telegram_message_id": 153
     },
     "extracted": {
       "company": "الشركة السعودية للخدمات الأرضية",
@@ -814,8 +815,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T20:09:38+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T20:11:41+00:00",
+      "status": "sent",
+      "telegram_message_id": 154
     },
     "extracted": {
       "company": "Raneen Development for Business Services | شركة رنين التنمية لخدمات الأعمال",
@@ -909,8 +911,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T20:09:57+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T20:11:41+00:00",
+      "status": "sent",
+      "telegram_message_id": 155
     },
     "extracted": {
       "company": "Majharr | مجهر للإنتاج الفني",
@@ -956,8 +959,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T20:10:24+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T20:11:41+00:00",
+      "status": "sent",
+      "telegram_message_id": 156
     },
     "extracted": {
       "company": "Smart Code",
@@ -1007,8 +1011,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-08-31T20:10:52+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T20:11:42+00:00",
+      "status": "sent",
+      "telegram_message_id": 157
     },
     "extracted": {
       "company": "Up Marketing Group",
@@ -1054,8 +1059,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T20:11:15+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T20:11:42+00:00",
+      "status": "sent",
+      "telegram_message_id": 158
     },
     "extracted": {
       "company": "WAS Academy | أكاديمية واس",
@@ -1099,8 +1105,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T20:11:38+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T20:11:43+00:00",
+      "status": "sent",
+      "telegram_message_id": 159
     },
     "extracted": {
       "company": "Marquee",
