@@ -981,6 +981,15 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "التخصصات المستهدفة:\nالموارد البشرية\nإدارة الأعمال\nأو تخصصات ذات صلة\nالمتطلبات:\nدرجة البكالوريوس في الموارد البشرية أو إدارة الأعمال أو تخصص ذي صلة\nلبرنامج تمهير: خريج حديث ومؤهل للبرنامج\nمهارات جيدة في التواصل والتنظيم\nإجادة اللغة الإنجليزية\nإجادة استخدام Microsoft Office\nاهتمام بمجال استقطاب المواهب والموارد البشرية", "en": "Targeted specializations:\nHuman resources\nBusiness Administration\nOr related specializations\nRequirements:\nBachelor's degree in Human Resources, Business Administration, or related field\nFor the Tamheer Program: A recent graduate who is eligible for the program\nGood communication and organization skills\nProficiency in English\nProficiency in using Microsoft Office\nInterest in the field of attracting talent and human resources"},
     addedAt: "2026-08-28T13:12:49+03:00",
+  },
+  {
+    name: "Arabian Oud | العربية للعود",
+    logo: {"domain": "arabianoud.com", "file": "arabian-oud.png"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4458830578",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات المستهدفة: مختلف التخصصات ذات الصلة\n\nالمتطلبات:\nطالب بكالوريوس حاليًا في تخصص ذي صلة\nأن يكون التدريب التعاوني متطلبًا للتخرج من الجامعة\nالقدرة على إكمال فترة التدريب المطلوبة\nإجادة اللغة الإنجليزية\nإجادة استخدام Microsoft Office (Excel، Word، PowerPoint)", "en": "Targeted specializations: various related specializations\n\nRequirements:\nCurrently a Bachelor's degree student in a related discipline\nCooperative training must be a requirement for university graduation\nAbility to complete the required training period\nProficiency in English\nProficiency in using Microsoft Office (Excel, Word, PowerPoint)"},
+    addedAt: "2026-08-31T11:03:54+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
