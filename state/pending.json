@@ -579,6 +579,52 @@
       "text": "🔴 | السعودية للخدمات الأرضية تعلن برنامج التدريب التعاوني لعام 1448هـ (رجال / نساء) بمختلف التخصصات في:\n\n📍الرياض.\n📍جدة.\n\n🔗 انشر الخبر عبر (whatsapp):\nاضغط هنا\n\n↩️ للتقديم (https://wdeftksa.com/sa/jobs/100564)"
     }
   },
+  "SALTRAI:5620": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-31T20:09:34+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "الشركة السعودية للخدمات الأرضية",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر)."
+      },
+      "evidence": {
+        "company": "الشركة السعودية للخدمات الأرضية",
+        "deadline": null,
+        "description": "▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر).",
+        "location": "الرياض - جدة - وادي الدواسر"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia; Jeddah, Saudi Arabia; Wadi Al-Dawasir, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "وظائف وبرنامج تدريب تعاوني",
+      "type": "coop",
+      "url": "https://www.jobs4.net/32172"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://www.jobs4.net/32172"
+      ],
+      "message_id": 5620,
+      "permalink": "https://t.me/SALTRAI/5620",
+      "posted_at": "2026-08-31T14:21:00+00:00",
+      "text": "(🔴) وظائف وبرنامج تدريب تعاوني لدى (الشركة السعودية للخدمات الأرضية):\n\n▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر).\n\nhttps://www.jobs4.net/32172"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
@@ -760,6 +806,53 @@
       "text": "🟡الفرصة رقم ٢٧٣٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\nالسلام عليكم ورحمة الله وبركاته،\n\nتعلن شركة بيت السمعة للعلاقات العامة والاتصال عن توفر فرص تدريب تعاوني لطلاب وطالبات.\n\nللراغبين في التقديم، يرجى تعبئة نموذج التسجيل عبر الرابط التالي:\nhttps://forms.gle/vNrCTDQGvcGjbhZ89\n\nولمعرفة المزيد عن الشركة، يمكنكم زيارة موقعها الإلكتروني:\nhttps://rhouse.sa/\n\nمع تمنياتنا للجميع بالتوفيق والنجاح."
     }
   },
+  "cooptraning_inksa:4395": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-31T20:09:38+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Raneen Development for Business Services | شركة رنين التنمية لخدمات الأعمال",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة رنين التنمية لخدمات الأعمال عن استقبال طلبات طلاب وطالبات الجامعات والكليات الراغبين في الالتحاق ببرنامج التدريب التعاوني، بما يتوافق مع تخصصاتهم الأكاديمية والخطة الدراسية المعتمدة لدى جهاتهم التعليمية.\nمقر التدريب: الرياض – حي الربيع\nأيام التدريب: من الأحد إلى الخميس\nالوقت: من الساعة 9:00 صباحًا إلى 5:00 مساءً، وتتخللها فترة الراحة المعتمدة.\nيخضع الترشيح لمتطلبات الجهة التعليمية، ومدى توافق التخصص والمهارات، واحتياج الشركة، وتوفر المقاعد التدريبية. وسيتم تنظيم تدريب المقبولين بموجب اتفاقية تدريب مكتوبة تحدد المجال والمدة والخطة التدريبية وحقوق والتزامات الطرفين، وفق الضوابط المنظمة للتدريب التعاوني."
+      },
+      "evidence": {
+        "company": "شركة رنين التنمية لخدمات الأعمال",
+        "deadline": null,
+        "description": "تعلن شركة رنين التنمية لخدمات الأعمال عن استقبال طلبات طلاب وطالبات الجامعات والكليات الراغبين في الالتحاق ببرنامج التدريب التعاوني، بما يتوافق مع تخصصاتهم الأكاديمية والخطة الدراسية المعتمدة لدى جهاتهم التعليمية.\nمقر التدريب: الرياض – حي الربيع\nأيام التدريب: من الأحد إلى الخميس\nالوقت: من الساعة 9:00 صباحًا إلى 5:00 مساءً، وتتخللها فترة الراحة المعتمدة.\nيخضع الترشيح لمتطلبات الجهة التعليمية، ومدى توافق التخصص والمهارات، واحتياج الشركة، وتوفر المقاعد التدريبية. وسيتم تنظيم تدريب المقبولين بموجب اتفاقية تدريب مكتوبة تحدد المجال والمدة والخطة التدريبية وحقوق والتزامات الطرفين، وفق الضوابط المنظمة للتدريب التعاوني.",
+        "location": "الرياض – حي الربيع"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://forms.gle/d532WDxoyqMapgnp6"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/d532WDxoyqMapgnp6"
+      ],
+      "message_id": 4395,
+      "permalink": "https://t.me/cooptraning_inksa/4395",
+      "posted_at": "2026-08-31T09:39:08+00:00",
+      "text": "🟡الفرصة رقم ٢٧٤٣\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n🎓 *فتح باب التقديم على برنامج التدريب التعاوني*\n\nتعلن *شركة رنين التنمية لخدمات الأعمال* عن استقبال طلبات طلاب وطالبات الجامعات والكليات الراغبين في الالتحاق ببرنامج التدريب التعاوني، بما يتوافق مع تخصصاتهم الأكاديمية والخطة الدراسية المعتمدة لدى جهاتهم التعليمية.\n\n📍 *مقر التدريب:* الرياض – حي الربيع\n📅 *أيام التدريب:* من الأحد إلى الخميس\n🕘 *الوقت:* من الساعة 9:00 صباحًا إلى 5:00 مساءً، وتتخللها فترة الراحة المعتمدة.\n\nيخضع الترشيح لمتطلبات الجهة التعليمية، ومدى توافق التخصص والمهارات، واحتياج الشركة، وتوفر المقاعد التدريبية. وسيتم تنظيم تدريب المقبولين بموجب اتفاقية تدريب مكتوبة تحدد المجال والمدة والخطة التدريبية وحقوق والتزامات الطرفين، وفق الضوابط المنظمة للتدريب التعاوني.\n\nللتقديم والاطلاع على التفاصيل:\nhttps://forms.gle/d532WDxoyqMapgnp6\n\n*تعبئة النموذج لا تعني القبول النهائي، ولا تُعد وعدًا بالتوظيف بعد انتهاء التدريب.*\n\nمع تمنياتنا للجميع بالتوفيق 💙"
+    }
+  },
   "cooptraning_inksa:4397": {
     "decision": {
       "action": "add",
@@ -806,6 +899,243 @@
       "permalink": "https://t.me/cooptraning_inksa/4397",
       "posted_at": "2026-08-31T09:45:27+00:00",
       "text": "🟡الفرصة رقم ٢٧٤٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📣 تعلن شركة دليل للمحاماة والاستشارات القانونية- فرع الرياض عن فتح باب التسجيل في برنامج التدريب التعاوني الفصل الاول لعام 2026.\n\nيهدف البرنامج إلى تأهيل الطلاب والخريجين وإكسابهم خبرة عملية في بيئة قانونية احترافية من خلال المشاركة في الأعمال القانونية والاستشارية والإدارية تحت إشراف مختصين.\n\n🔹 التخصصات المستهدفة:\n1- القانون أو الانظمة\n2- إدارة الاعمال\n3- تحليل البيانات\n4- تقنية المعلومات IT\n5- تسويق\n6- تصميم جرافيكي\n7- الذكاء اصطناعي AI\n\n🔹 المميزات:\n• خبرة عملية مباشرة.\n• تطوير المهارات المهنية.\n• المشاركة في أعمال ومشاريع حقيقية.\n• شهادة إتمام تدريب معتمدة.\n\n📌 للتسجيل:\nhttps://forms.gle/vLpfiDP8DW1zHDXz7\n\n⏳ المقاعد محدودة، وستتم المفاضلة بين المتقدمين وفقًا للمعايير المعتمدة لدى الشركة."
+    }
+  },
+  "cooptraning_inksa:4404": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-31T20:09:57+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Majharr | مجهر للإنتاج الفني",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "شركة مجهر للإنتاج الفني، شركة رائدة في إنتاج الإعلانات والتصوير الفوتوغرافي، تفتح أبوابها لطلاب الجامعات المتحمسين لاكتساب خبرة عملية في مجالات:\n\n📸 المبيعات والتسويق الابداعي\n✍️ كتابة السيناريو والأفكار الإبداعية\n🎬 التصوير والإعلانات\n\nانضموا لفريقنا المبدع وطوروا مهاراتكم في بيئة عمل محترفة."
+      },
+      "evidence": {
+        "company": "شركة مجهر للإنتاج الفني",
+        "deadline": null,
+        "description": "شركة مجهر للإنتاج الفني، شركة رائدة في إنتاج الإعلانات والتصوير الفوتوغرافي، تفتح أبوابها لطلاب الجامعات المتحمسين لاكتساب خبرة عملية في مجالات:\n\n📸 المبيعات والتسويق الابداعي\n✍️ كتابة السيناريو والأفكار الإبداعية\n🎬 التصوير والإعلانات\n\nانضموا لفريقنا المبدع وطوروا مهاراتكم في بيئة عمل محترفة.",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني",
+      "type": "coop",
+      "url": "https://forms.gle/6W8pgyT38E7sUciN8"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/6W8pgyT38E7sUciN8"
+      ],
+      "message_id": 4404,
+      "permalink": "https://t.me/cooptraning_inksa/4404",
+      "posted_at": "2026-08-31T14:04:47+00:00",
+      "text": "🟡الفرصة رقم ٢٧٥١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرصة تدريب تعاوني مميزة في الرياض! 📢\n\nشركة مجهر للإنتاج الفني، شركة رائدة في إنتاج الإعلانات والتصوير الفوتوغرافي، تفتح أبوابها لطلاب الجامعات المتحمسين لاكتساب خبرة عملية في مجالات:\n\n📸 المبيعات والتسويق الابداعي\n✍️ كتابة السيناريو والأفكار الإبداعية\n🎬 التصوير والإعلانات\n\nانضموا لفريقنا المبدع وطوروا مهاراتكم في بيئة عمل محترفة.\n\nللمهتمين، يرجى التقديم عبر الرابط التالي:\nhttps://forms.gle/6W8pgyT38E7sUciN8"
+    }
+  },
+  "cooptraning_inksa:4405": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-31T20:10:24+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Smart Code",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة Smart Code عن فرص تدريب تعاوني في تخصصات التالية :\n*التسويق*\n*كتابة المحتوى*\n*علاقات العامة*\nانضم إلينا لتكتسب خبرة عملية في بيئة عمل إبداعية، محفزة، ومليئة بالتحديات."
+      },
+      "evidence": {
+        "company": "شركة Smart Code",
+        "deadline": null,
+        "description": "تعلن شركة Smart Code عن فرص تدريب تعاوني في تخصصات التالية :\n*التسويق*\n*كتابة المحتوى*\n*علاقات العامة*\nانضم إلينا لتكتسب خبرة عملية في بيئة عمل إبداعية، محفزة، ومليئة بالتحديات.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://smartcode.sa/training"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://smartcode.sa/training"
+      ],
+      "message_id": 4405,
+      "permalink": "https://t.me/cooptraning_inksa/4405",
+      "posted_at": "2026-08-31T14:05:22+00:00",
+      "text": "🟡الفرصة رقم ٢٧٥٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن شركة Smart Code عن فرص\nتدريب تعاوني في تخصصات التالية :\n*التسويق*\n*كتابة المحتوى*\n*علاقات العامة*\nانضم إلينا لتكتسب خبرة عملية في بيئة عمل إبداعية، محفزة، ومليئة بالتحديات.\nللتقديم:\nhttps://smartcode.sa/training"
+    }
+  },
+  "cooptraning_inksa:4407": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "تعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n🎯 التسويق\n🎨 التصميم الجرافيكي\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية."
+        }
+      },
+      "existing_index": 121,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-08-31T20:10:52+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Up Marketing Group",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n🎯 التسويق\n🎨 التصميم الجرافيكي\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية."
+      },
+      "evidence": {
+        "company": "Up Marketing Group",
+        "deadline": null,
+        "description": "تعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n🎯 التسويق\n🎨 التصميم الجرافيكي\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية.",
+        "location": "الرياض - شارع أنس بن مالك"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://forms.gle/LJJMhKatDvWoGZQk6"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/LJJMhKatDvWoGZQk6"
+      ],
+      "message_id": 4407,
+      "permalink": "https://t.me/cooptraning_inksa/4407",
+      "posted_at": "2026-08-31T14:06:59+00:00",
+      "text": "🟡الفرصة رقم ٢٧٥٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرص تدريب تعاوني\n\nتعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n🎯 التسويق\n🎨 التصميم الجرافيكي\n\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية.\n\n📍 مقر التدريب:\nالرياض - شارع أنس بن مالك\n\n(التدريب غير مدفوع)\n\n📩 للتقديم:\nhttps://forms.gle/LJJMhKatDvWoGZQk6\n\nبالتوفيق للجميع 🤍"
+    }
+  },
+  "cooptraning_inksa:4409": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-31T20:11:15+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "WAS Academy | أكاديمية واس",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "أكاديمية واس",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني للعام 2026م",
+      "type": "coop",
+      "url": "http://t.co/FOw90hMsmq"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "http://t.co/FOw90hMsmq"
+      ],
+      "message_id": 4409,
+      "permalink": "https://t.me/cooptraning_inksa/4409",
+      "posted_at": "2026-08-31T14:10:06+00:00",
+      "text": "🟡الفرصة رقم ٢٧٥٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن أكاديمية واس التابعة (لوكالة الأنباء السعودية واس) تعلن عن بدء التقديم في برنامج التدريب التعاوني للعام 2026م، لطلاب وطالبات الجامعات بعدة مزايا\n\nرابط التقديم المباشر: t.co/FOw90hMsmq"
+    }
+  },
+  "cooptraning_inksa:4410": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-08-31T20:11:38+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Marquee",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "نعلن عن توفر فرص تدريب تعاوني في شركة Marquee في عدد من المجالات، تشمل التسويق، التسويق الرقمي، وإدارة المشاريع ، التصميم."
+      },
+      "evidence": {
+        "company": "Marquee",
+        "deadline": null,
+        "description": "نعلن عن توفر فرص تدريب تعاوني في شركة Marquee في عدد من المجالات، تشمل التسويق، التسويق الرقمي، وإدارة المشاريع ، التصميم.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSezxT8y_ghT6KWFINQ0BSam4tSwUlXl2dRq8DWMVVpFOK1EPQ/viewform?usp=header"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://docs.google.com/forms/d/e/1FAIpQLSezxT8y_ghT6KWFINQ0BSam4tSwUlXl2dRq8DWMVVpFOK1EPQ/viewform?usp=header"
+      ],
+      "message_id": 4410,
+      "permalink": "https://t.me/cooptraning_inksa/4410",
+      "posted_at": "2026-08-31T14:11:43+00:00",
+      "text": "🟡الفرصة رقم ٢٧٥٧\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nالسلام عليكم،\n\nنعلن عن توفر فرص تدريب تعاوني في شركة Marquee في عدد من المجالات، تشمل التسويق، التسويق الرقمي، وإدارة المشاريع ، التصميم.\n\nللمهتمين بالتقديم، يرجى تعبئة النموذج عبر الرابط:\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSezxT8y_ghT6KWFINQ0BSam4tSwUlXl2dRq8DWMVVpFOK1EPQ/viewform?usp=header\n\nبالتوفيق للجميع"
     }
   },
   "nobthacv1:2042": {
