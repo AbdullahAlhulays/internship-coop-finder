@@ -246,6 +246,8 @@ const companyRecords = [
     type: "Internship / CO-OP Training",
   },
   {
+    logo: {"domain": "175102.jobs2web.com", "file": "sgs.jpg"},
+    description: {"ar": "التخصصات المستهدفة:\n\nإدارة الموارد البشرية\nنظم المعلومات الإدارية\nإدارة الأعمال\nالمالية\nالهندسة\nتقنية المعلومات\nالتصميم الجرافيكي والإعلان\n\nالمتطلبات:\n\nأن يكون التدريب التعاوني متطلبًا للتخرج من جامعة أو كلية معتمدة\nمعدل تراكمي لا يقل عن 2.5 من 4 أو 3.5 من 5\nإجادة اللغتين العربية والإنجليزية تحدثًا وكتابة\nمهارات ممتازة في التواصل والعمل الجماعي\nالرغبة في التعلم والتطور\n\nللتفديم_________________", "en": "Targeted specializations:\n\nHuman resources management\nManagement information systems\nBusiness Administration\nFinance\nEngineering\nInformation technology\nGraphic design and advertising\n\nRequirements:\n\nCooperative training must be a requirement for graduation from an accredited university or college\nA cumulative GPA of at least 2.5 out of 4 or 3.5 out of 5\nProficiency in Arabic and English, spoken and written\nExcellent communication and teamwork skills\nDesire to learn and develop\n\nTo apply_________________"},
     name: "SGS | إس جي إس",
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://175102.jobs2web.com/job/Jeddah-%28Headquarter%29-COOP-Program-1-0/794146502/",
