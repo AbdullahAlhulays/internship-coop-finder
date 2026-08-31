@@ -396,8 +396,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T13:59:25+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T14:01:28+00:00",
+      "status": "sent",
+      "telegram_message_id": 148
     },
     "extracted": {
       "company": "مجهر للإنتاج الفني",
@@ -442,8 +443,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T13:59:31+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T14:01:29+00:00",
+      "status": "sent",
+      "telegram_message_id": 149
     },
     "extracted": {
       "company": "Raneen Development | شركة رنين التنمية لخدمات الأعمال",
@@ -489,8 +491,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T13:59:50+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T14:01:29+00:00",
+      "status": "sent",
+      "telegram_message_id": 150
     },
     "extracted": {
       "company": "دليل للمحاماة والاستشارات القانونية- فرع الرياض",
@@ -536,8 +539,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T14:01:00+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T14:01:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 151
     },
     "extracted": {
       "company": "السعودية للخدمات الأرضية",
@@ -764,8 +768,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-08-31T14:01:26+00:00",
-      "status": "queued"
+      "sent_at": "2026-08-31T14:01:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 152
     },
     "extracted": {
       "company": "دليل للمحاماة والاستشارات القانونية- فرع الرياض",
