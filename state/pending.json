@@ -482,54 +482,6 @@
       "text": "(🔴) وظائف وبرنامج تدريب تعاوني لدى (الشركة السعودية للخدمات الأرضية):\n\n▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر).\n\nhttps://www.jobs4.net/32172"
     }
   },
-  "SALTRAI:5628": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-01T14:58:01+00:00",
-      "status": "sent",
-      "telegram_message_id": 162
-    },
-    "extracted": {
-      "company": "Saif Security Services | شركة سيف للخدمات الأمنية",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": "2026-10-01",
-      "deadline_raw": null,
-      "description": {
-        "ar": "✨التخصصات:\n▪️الموارد البشرية.\n▪️إدارة الأعمال.\n▪️المالية والمحاسبة.\n▪️نظم وتقنية المعلومات."
-      },
-      "evidence": {
-        "company": "شركة سيف للخدمات الأمنية",
-        "deadline": null,
-        "description": "✨التخصصات:\n▪️الموارد البشرية.\n▪️إدارة الأعمال.\n▪️المالية والمحاسبة.\n▪️نظم وتقنية المعلومات.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج سيف للتدريب التعاوني",
-      "type": "coop",
-      "url": "https://wdeftksa.com/sa/jobs/100575"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://api.whatsapp.com/send?text=%D8%B4%D8%B1%D9%83%D8%A9+%D8%B3%D9%8A%D9%81+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%A3%D9%85%D9%86%D9%8A%D8%A9+%D8%AA%D8%B9%D9%84%D9%86+%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC+%D8%B3%D9%8A%D9%81+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A+%D9%84%D8%B7%D9%84%D8%A7%D8%A8+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A7%D8%AA+%D8%A8%D8%B9%D8%AF%D8%A9+%D8%AA%D8%AE%D8%B5%D8%B5%D8%A7%D8%AA+-+https%3A%2F%2Fwww.wdeftksa.com%2Fsa%2Fjobs%2F100575+-+%D8%B1%D8%A7%D8%A8%D8%B7+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85%3A+https%3A%2F%2Ft.me%2Fcd4cd",
-        "https://wdeftksa.com/sa/jobs/100575"
-      ],
-      "message_id": 5628,
-      "permalink": "https://t.me/SALTRAI/5628",
-      "posted_at": "2026-09-01T14:10:00+00:00",
-      "text": "⭕️ | شركة سيف للخدمات الأمنية (إحدى شركات الصندوق) تعلن بدء التقديم على برنامج سيف للتدريب التعاوني لطلاب وطالبات الجامعات\n\n✨التخصصات:\n▪️الموارد البشرية.\n▪️إدارة الأعمال.\n▪️المالية والمحاسبة.\n▪️نظم وتقنية المعلومات.\n\n🔗 انشر الخبر عبر (whatsapp):\nاضغط هنا\n\n↩️ للتقديم (https://wdeftksa.com/sa/jobs/100575)"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",

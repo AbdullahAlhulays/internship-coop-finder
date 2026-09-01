@@ -998,6 +998,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "يهدف البرنامج إلى تأهيل الطلاب والخريجين وإكسابهم خبرة عملية في بيئة قانونية احترافية من خلال المشاركة في الأعمال القانونية والاستشارية والإدارية تحت إشراف مختصين.\n\n🔹 التخصصات المستهدفة:\n1- القانون أو الانظمة\n2- إدارة الاعمال\n3- تحليل البيانات\n4- تقنية المعلومات IT\n5- تسويق\n6- تصميم جرافيكي\n7- الذكاء الاصطناعي AI\n\n🔹 المميزات:\n• خبرة عملية مباشرة.\n• تطوير المهارات المهنية.\n• المشاركة في أعمال ومشاريع حقيقية.\n• شهادة إتمام تدريب معتمدة.", "en": "The program aims to qualify students and graduates and provide them with practical experience in a professional legal environment by participating in legal, advisory, and administrative work under the supervision of specialists.\n\n🔹Targeted specializations:\n1- Law or regulations\n2- Business Administration\n3- Data analysis\n4- Information Technology\n5- Marketing\n6- Graphic design\n7- Artificial Intelligence AI\n\n🔹Features:\n• Direct practical experience.\n• Developing professional skills.\n• Participate in real work and projects.\n• An accredited training completion certificate."},
     addedAt: "2026-09-01T23:59:20+03:00",
+  },
+  {
+    name: "Saif Security Services | شركة سيف للخدمات الأمنية",
+    applicationLink: "https://wdeftksa.com/sa/jobs/100575",
+    deadline: "2026-10-01",
+    type: "CO-OP Training",
+    description: {"ar": "✨التخصصات:\n▪️الموارد البشرية.\n▪️إدارة الأعمال.\n▪️المالية والمحاسبة.\n▪️نظم وتقنية المعلومات.", "en": "✨Specializations:\n▪️Human Resources.\n▪️Business management.\n▪️Finance and accounting.\n▪️Information systems and technology."},
+    addedAt: "2026-09-02T00:00:44+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
