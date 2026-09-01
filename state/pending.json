@@ -804,54 +804,6 @@
       "text": "🟡الفرصة رقم ٢٧٥١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرصة تدريب تعاوني مميزة في الرياض! 📢\n\nشركة مجهر للإنتاج الفني، شركة رائدة في إنتاج الإعلانات والتصوير الفوتوغرافي، تفتح أبوابها لطلاب الجامعات المتحمسين لاكتساب خبرة عملية في مجالات:\n\n📸 المبيعات والتسويق الابداعي\n✍️ كتابة السيناريو والأفكار الإبداعية\n🎬 التصوير والإعلانات\n\nانضموا لفريقنا المبدع وطوروا مهاراتكم في بيئة عمل محترفة.\n\nللمهتمين، يرجى التقديم عبر الرابط التالي:\nhttps://forms.gle/6W8pgyT38E7sUciN8"
     }
   },
-  "cooptraning_inksa:4405": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-31T20:11:41+00:00",
-      "status": "sent",
-      "telegram_message_id": 156
-    },
-    "extracted": {
-      "company": "Smart Code",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن شركة Smart Code عن فرص تدريب تعاوني في تخصصات التالية :\n*التسويق*\n*كتابة المحتوى*\n*علاقات العامة*\nانضم إلينا لتكتسب خبرة عملية في بيئة عمل إبداعية، محفزة، ومليئة بالتحديات."
-      },
-      "evidence": {
-        "company": "شركة Smart Code",
-        "deadline": null,
-        "description": "تعلن شركة Smart Code عن فرص تدريب تعاوني في تخصصات التالية :\n*التسويق*\n*كتابة المحتوى*\n*علاقات العامة*\nانضم إلينا لتكتسب خبرة عملية في بيئة عمل إبداعية، محفزة، ومليئة بالتحديات.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "تدريب تعاوني",
-      "type": "coop",
-      "url": "https://smartcode.sa/training"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": false,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://smartcode.sa/training"
-      ],
-      "message_id": 4405,
-      "permalink": "https://t.me/cooptraning_inksa/4405",
-      "posted_at": "2026-08-31T14:05:22+00:00",
-      "text": "🟡الفرصة رقم ٢٧٥٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن شركة Smart Code عن فرص\nتدريب تعاوني في تخصصات التالية :\n*التسويق*\n*كتابة المحتوى*\n*علاقات العامة*\nانضم إلينا لتكتسب خبرة عملية في بيئة عمل إبداعية، محفزة، ومليئة بالتحديات.\nللتقديم:\nhttps://smartcode.sa/training"
-    }
-  },
   "cooptraning_inksa:4407": {
     "decision": {
       "action": "update",
