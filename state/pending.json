@@ -756,58 +756,6 @@
       "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
     }
   },
-  "cooptraning_inksa:4407": {
-    "decision": {
-      "action": "update",
-      "changes": {
-        "description": {
-          "ar": "تعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n🎯 التسويق\n🎨 التصميم الجرافيكي\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية."
-        }
-      },
-      "existing_index": 121,
-      "reason": "existing card has no description, this post provides verified details"
-    },
-    "delivery": {
-      "sent_at": "2026-08-31T20:11:42+00:00",
-      "status": "sent",
-      "telegram_message_id": 157
-    },
-    "extracted": {
-      "company": "Up Marketing Group",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n🎯 التسويق\n🎨 التصميم الجرافيكي\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية."
-      },
-      "evidence": {
-        "company": "Up Marketing Group",
-        "deadline": null,
-        "description": "تعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n🎯 التسويق\n🎨 التصميم الجرافيكي\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية.",
-        "location": "الرياض - شارع أنس بن مالك"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "تدريب تعاوني",
-      "type": "coop",
-      "url": "https://forms.gle/LJJMhKatDvWoGZQk6"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": false,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://forms.gle/LJJMhKatDvWoGZQk6"
-      ],
-      "message_id": 4407,
-      "permalink": "https://t.me/cooptraning_inksa/4407",
-      "posted_at": "2026-08-31T14:06:59+00:00",
-      "text": "🟡الفرصة رقم ٢٧٥٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرص تدريب تعاوني\n\nتعلن Up Marketing Group عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n🎯 التسويق\n🎨 التصميم الجرافيكي\n\nنوفر بيئة عمل احترافية وداعمة، وفرصة للتعلم والتطوير والمشاركة في مشاريع وتجارب عملية حقيقية.\n\n📍 مقر التدريب:\nالرياض - شارع أنس بن مالك\n\n(التدريب غير مدفوع)\n\n📩 للتقديم:\nhttps://forms.gle/LJJMhKatDvWoGZQk6\n\nبالتوفيق للجميع 🤍"
-    }
-  },
   "cooptraning_inksa:4409": {
     "decision": {
       "action": "add",
