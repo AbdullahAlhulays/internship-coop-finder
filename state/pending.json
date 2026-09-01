@@ -634,8 +634,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-01T14:57:35+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-01T14:58:00+00:00",
+      "status": "sent",
+      "telegram_message_id": 160
     },
     "extracted": {
       "company": "شركتنا المتخصصة في إدارة وتنظيم الفعاليات والمؤتمرات",
@@ -680,8 +681,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-01T14:57:37+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-01T14:58:00+00:00",
+      "status": "sent",
+      "telegram_message_id": 161
     },
     "extracted": {
       "company": "PwC",
@@ -726,8 +728,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-01T14:57:56+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-01T14:58:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 162
     },
     "extracted": {
       "company": "Saif Security Services | شركة سيف للخدمات الأمنية",
