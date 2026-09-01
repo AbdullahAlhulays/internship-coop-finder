@@ -756,52 +756,6 @@
       "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
     }
   },
-  "cooptraning_inksa:4409": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-31T20:11:42+00:00",
-      "status": "sent",
-      "telegram_message_id": 158
-    },
-    "extracted": {
-      "company": "WAS Academy | أكاديمية واس",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "أكاديمية واس",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني للعام 2026م",
-      "type": "coop",
-      "url": "http://t.co/FOw90hMsmq"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "http://t.co/FOw90hMsmq"
-      ],
-      "message_id": 4409,
-      "permalink": "https://t.me/cooptraning_inksa/4409",
-      "posted_at": "2026-08-31T14:10:06+00:00",
-      "text": "🟡الفرصة رقم ٢٧٥٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن أكاديمية واس التابعة (لوكالة الأنباء السعودية واس) تعلن عن بدء التقديم في برنامج التدريب التعاوني للعام 2026م، لطلاب وطالبات الجامعات بعدة مزايا\n\nرابط التقديم المباشر: t.co/FOw90hMsmq"
-    }
-  },
   "cooptraning_inksa:4410": {
     "decision": {
       "action": "add",
