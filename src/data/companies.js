@@ -990,6 +990,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "التخصصات المستهدفة: مختلف التخصصات ذات الصلة\n\nالمتطلبات:\nطالب بكالوريوس حاليًا في تخصص ذي صلة\nأن يكون التدريب التعاوني متطلبًا للتخرج من الجامعة\nالقدرة على إكمال فترة التدريب المطلوبة\nإجادة اللغة الإنجليزية\nإجادة استخدام Microsoft Office (Excel، Word، PowerPoint)", "en": "Targeted specializations: various related specializations\n\nRequirements:\nCurrently a Bachelor's degree student in a related discipline\nCooperative training must be a requirement for university graduation\nAbility to complete the required training period\nProficiency in English\nProficiency in using Microsoft Office (Excel, Word, PowerPoint)"},
     addedAt: "2026-08-31T11:03:54+03:00",
+  },
+  {
+    name: "دليل للمحاماة والاستشارات القانونية- فرع الرياض",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://forms.gle/vLpfiDP8DW1zHDXz7",
+    type: "CO-OP Training",
+    description: {"ar": "يهدف البرنامج إلى تأهيل الطلاب والخريجين وإكسابهم خبرة عملية في بيئة قانونية احترافية من خلال المشاركة في الأعمال القانونية والاستشارية والإدارية تحت إشراف مختصين.\n\n🔹 التخصصات المستهدفة:\n1- القانون أو الانظمة\n2- إدارة الاعمال\n3- تحليل البيانات\n4- تقنية المعلومات IT\n5- تسويق\n6- تصميم جرافيكي\n7- الذكاء الاصطناعي AI\n\n🔹 المميزات:\n• خبرة عملية مباشرة.\n• تطوير المهارات المهنية.\n• المشاركة في أعمال ومشاريع حقيقية.\n• شهادة إتمام تدريب معتمدة.", "en": "The program aims to qualify students and graduates and provide them with practical experience in a professional legal environment by participating in legal, advisory, and administrative work under the supervision of specialists.\n\n🔹Targeted specializations:\n1- Law or regulations\n2- Business Administration\n3- Data analysis\n4- Information Technology\n5- Marketing\n6- Graphic design\n7- Artificial Intelligence AI\n\n🔹Features:\n• Direct practical experience.\n• Developing professional skills.\n• Participate in real work and projects.\n• An accredited training completion certificate."},
+    addedAt: "2026-09-01T23:59:20+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
