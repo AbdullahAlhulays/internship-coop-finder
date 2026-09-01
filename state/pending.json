@@ -435,54 +435,6 @@
       "text": "📢 فرصة تدريب تعاوني مميزة في الرياض! 📢\n\nشركة مجهر للإنتاج الفني، شركة رائدة في إنتاج الإعلانات والتصوير الفوتوغرافي، تفتح أبوابها لطلاب الجامعات المتحمسين لاكتساب خبرة عملية في مجالات:\n\n📸 المبيعات والتسويق الابداعي\n✍️ كتابة السيناريو والأفكار الإبداعية\n🎬 التصوير والإعلانات\n\nانضموا لفريقنا المبدع وطوروا مهاراتكم في بيئة عمل محترفة.\n\nللمهتمين، يرجى التقديم عبر الرابط التالي:\nhttps://forms.gle/6W8pgyT38E7sUciN8\n\n#تدريب_تعاوني #الرياض #إنتاج_فني #تسويق #إعلانات #فرص_تدريب #خريجين"
     }
   },
-  "SALTRAI:5619": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-08-31T14:01:30+00:00",
-      "status": "sent",
-      "telegram_message_id": 151
-    },
-    "extracted": {
-      "company": "السعودية للخدمات الأرضية",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "برنامج التدريب التعاوني لعام 1448هـ (رجال / نساء) بمختلف التخصصات"
-      },
-      "evidence": {
-        "company": "السعودية للخدمات الأرضية",
-        "deadline": null,
-        "description": "برنامج التدريب التعاوني لعام 1448هـ (رجال / نساء) بمختلف التخصصات",
-        "location": "الرياض, جدة"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia; Jeddah, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني لعام 1448هـ",
-      "type": "coop",
-      "url": "https://wdeftksa.com/sa/jobs/100564"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://api.whatsapp.com/send?text=%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%A3%D8%B1%D8%B6%D9%8A%D8%A9+%D8%AA%D8%B9%D9%84%D9%86+%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC+%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A+%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6+%D9%88%D8%AC%D8%AF%D8%A9+-+https%3A%2F%2Fwww.wdeftksa.com%2Fsa%2Fjobs%2F100564+-+%D8%B1%D8%A7%D8%A8%D8%B7+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85%3A+https%3A%2F%2Ft.me%2Fcd4cd",
-        "https://wdeftksa.com/sa/jobs/100564"
-      ],
-      "message_id": 5619,
-      "permalink": "https://t.me/SALTRAI/5619",
-      "posted_at": "2026-08-31T13:54:10+00:00",
-      "text": "🔴 | السعودية للخدمات الأرضية تعلن برنامج التدريب التعاوني لعام 1448هـ (رجال / نساء) بمختلف التخصصات في:\n\n📍الرياض.\n📍جدة.\n\n🔗 انشر الخبر عبر (whatsapp):\nاضغط هنا\n\n↩️ للتقديم (https://wdeftksa.com/sa/jobs/100564)"
-    }
-  },
   "SALTRAI:5620": {
     "decision": {
       "action": "add",
