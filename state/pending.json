@@ -482,53 +482,6 @@
       "text": "(🔴) وظائف وبرنامج تدريب تعاوني لدى (الشركة السعودية للخدمات الأرضية):\n\n▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر).\n\nhttps://www.jobs4.net/32172"
     }
   },
-  "SALTRAI:5627": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-01T14:58:00+00:00",
-      "status": "sent",
-      "telegram_message_id": 161
-    },
-    "extracted": {
-      "company": "PwC",
-      "confidence": 0.7,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "strategyand.pwc.com",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "COOP Program | Strategy",
-      "type": "coop",
-      "url": "https://www.strategyand.pwc.com/m1/en/careers/available-jobs/job-details.html?gh_jid=4951304101&pTitle=Qadat"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://www.strategyand.pwc.com/m1/en/careers/available-jobs/job-details.html?gh_jid=4951304101&amp;pTitle=Qadat",
-        "https://www.strategyand.pwc.com/m1/en/careers/available-jobs/job-details.html?gh_jid=4952842101&amp;pTitle=Grandes",
-        "https://www.strategyand.pwc.com/m1/en/careers/available-jobs/job-details.html?gh_jid=4951159101&amp;pTitle=KSA"
-      ],
-      "message_id": 5627,
-      "permalink": "https://t.me/SALTRAI/5627",
-      "posted_at": "2026-09-01T14:07:15+00:00",
-      "text": "Qadat GDP | Strategy\n- Registration: Apply Now\nAssociate Consultant | Strategy\n- Registration: Apply Now\nCOOP Program | Strategy\n- Registration: Apply Now"
-    }
-  },
   "SALTRAI:5628": {
     "decision": {
       "action": "add",
