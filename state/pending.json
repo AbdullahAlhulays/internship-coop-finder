@@ -494,8 +494,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-09-03T16:29:52+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-03T16:30:06+00:00",
+      "status": "sent",
+      "telegram_message_id": 184
     },
     "extracted": {
       "company": "شركة مقاولات",
@@ -540,8 +541,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-03T16:29:53+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-03T16:30:07+00:00",
+      "status": "sent",
+      "telegram_message_id": 185
     },
     "extracted": {
       "company": "جمعية نقاء البيئية",
@@ -586,8 +588,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-03T16:30:01+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-03T16:30:08+00:00",
+      "status": "sent",
+      "telegram_message_id": 186
     },
     "extracted": {
       "company": "JP Morgan",
