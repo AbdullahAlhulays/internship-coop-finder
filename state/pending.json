@@ -1434,57 +1434,5 @@
       "posted_at": "2026-08-19T13:43:16+00:00",
       "text": "📢 فرصة تدريب تعاوني | Smart Code\n\nتعلن شركة Smart Code عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n• التسويق الرقمي\n• العلاقات العامة\n\nانضم إلى فريقنا واكتسب خبرة عملية في بيئة عمل إبداعية ومحفزة، تتيح لك فرصة التعلم والتطور واكتساب مهارات جديدة.\n\n📍 الموقع: الرياض\n\n🔗 للتقديم: https://smartcode.sa/training"
     }
-  },
-  "nobthacv1:2124": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-02T19:49:53+00:00",
-      "status": "sent",
-      "telegram_message_id": 179
-    },
-    "extracted": {
-      "company": "الصندوق_الثقافي",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": "2026-09-15",
-      "deadline_raw": null,
-      "description": {
-        "ar": "البرنامج: تدريب تعاوني من صندوق التنمية الثقافي.\n• الفئة: طلاب وطالبات الجامعات.\n• الهدف: اكتساب خبرة عملية والاستعداد لسوق العمل.\n• مدة التدريب: لا تقل عن 8 أسابيع.\n• الشروط: سعودي الجنسية، معدل مناسب، واجتياز المقابلة.\n• آخر موعد للتقديم: 15 سبتمبر 2026"
-      },
-      "evidence": {
-        "company": "الصندوق_الثقافي",
-        "deadline": null,
-        "description": "البرنامج يقدم لكم رحلة من النمو والتطور تؤهلكم لتكونوا جزءًا من مستقبل الثقافة.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني",
-      "type": "coop",
-      "url": "https://interest.cdf.gov.sa/coop/2026?utm_source=LinkedIn&utm_medium=post&utm_campaign=college+Training&utm_id=Training"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://interest.cdf.gov.sa/coop/2026?utm_source=LinkedIn&amp;utm_medium=post&amp;utm_campaign=college+Training&amp;utm_id=Training"
-      ],
-      "message_id": 2124,
-      "permalink": "https://t.me/nobthacv1/2124",
-      "posted_at": "2026-09-02T17:22:45+00:00",
-      "text": "لطلاب وطالبات المرحلة الجامعية..\nندعوكم للتقديم على برنامج التدريب التعاوني لدى الصندوق_الثقافي، الذي يقدم لكم رحلة من النمو والتطور تؤهلكم لتكونوا جزءًا من مستقبل الثقافة.\n\nقدم الآن:______________"
-    },
-    "last_edit": {
-      "message_id": 181,
-      "field": "description_ar",
-      "card_message_id": 179
-    }
   }
 }

@@ -1006,6 +1006,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "✨التخصصات:\n▪️الموارد البشرية.\n▪️إدارة الأعمال.\n▪️المالية والمحاسبة.\n▪️نظم وتقنية المعلومات.", "en": "✨Specializations:\n▪️Human Resources.\n▪️Business management.\n▪️Finance and accounting.\n▪️Information systems and technology."},
     addedAt: "2026-09-02T00:00:44+03:00",
+  },
+  {
+    name: "الصندوق_الثقافي",
+    applicationLink: "https://interest.cdf.gov.sa/coop/2026?utm_source=LinkedIn&utm_medium=post&utm_campaign=college+Training&utm_id=Training",
+    deadline: "2026-09-15",
+    type: "CO-OP Training",
+    description: {"ar": "البرنامج: تدريب تعاوني من صندوق التنمية الثقافي.\n• الفئة: طلاب وطالبات الجامعات.\n• الهدف: اكتساب خبرة عملية والاستعداد لسوق العمل.\n• مدة التدريب: لا تقل عن 8 أسابيع.\n• الشروط: سعودي الجنسية، معدل مناسب، واجتياز المقابلة.\n• آخر موعد للتقديم: 15 سبتمبر 2026", "en": "Programme: Collaborative training from the Cultural Development Fund.\n• Category: University students.\n• Objective: Gain practical experience and prepare for the labor market.\n• Duration of training: not less than 8 weeks.\n• Conditions: Saudi nationality, appropriate rate, and passing the interview.\n• Deadline for submission: September 15, 2026"},
+    addedAt: "2026-09-03T14:38:08+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
