@@ -533,53 +533,6 @@
       "text": "🎓 فرصة تدريب تعاوني | شركة مقاولات\n\nتعلن شركة مقاولات في الرياض عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:\n\n🔹 الموارد البشرية\n\nالمتطلبات:\n\n• أن يكون التدريب التعاوني متطلبًا من متطلبات التخرج.\n• ⁠بكالريوس\n• أن يكون المتقدم/ـة طالبًا على رأس الدراسة.\n• الالتزام والجدية وتحمل المسؤولية.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n• إجادة استخدام برامج Microsoft Office.\n• يشترط توفر جهاز لابتوب شخصي لدى المتقدم/ـة.\n\n📍 الموقع: الرياض\n🏢 القطاع: المقاولات\n📅 مدة التدريب: حسب متطلبات الجامعة\n\n📩 للتقديم:\nhttps://forms.gle/KpvJcVDXpBEoqai66"
     }
   },
-  "SALTRAI:5632": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-03T16:30:07+00:00",
-      "status": "sent",
-      "telegram_message_id": 185
-    },
-    "extracted": {
-      "company": "جمعية نقاء البيئية",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "فرصة تدريب تعاوني مطلوب متدربة تخصص تصميم جرافيك"
-      },
-      "evidence": {
-        "company": "جمعية نقاء البيئية",
-        "deadline": null,
-        "description": "فرصة تدريب تعاوني مطلوب متدربة تخصص تصميم جرافيك",
-        "location": "بريده"
-      },
-      "is_opportunity": true,
-      "location": "Buraidah, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "متدربة تخصص تصميم جرافيك",
-      "type": "coop",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdMV1dYXM5OLN1TGH0C5RbrwH1b0xyTZM8cNTaHGclvIrVaTA/viewform?usp=dialog"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://docs.google.com/forms/d/e/1FAIpQLSdMV1dYXM5OLN1TGH0C5RbrwH1b0xyTZM8cNTaHGclvIrVaTA/viewform?usp=dialog"
-      ],
-      "message_id": 5632,
-      "permalink": "https://t.me/SALTRAI/5632",
-      "posted_at": "2026-09-03T11:35:13+00:00",
-      "text": "السلام عليكم\nجمعية نقاء البيئية في بريده\nعندهم فرصة تدريب تعاوني مطلوب متدربة تخصص تصميم جرافيك\nhttps://docs.google.com/forms/d/e/1FAIpQLSdMV1dYXM5OLN1TGH0C5RbrwH1b0xyTZM8cNTaHGclvIrVaTA/viewform?usp=dialog"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
