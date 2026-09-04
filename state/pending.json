@@ -580,52 +580,6 @@
       "text": "السلام عليكم\nجمعية نقاء البيئية في بريده\nعندهم فرصة تدريب تعاوني مطلوب متدربة تخصص تصميم جرافيك\nhttps://docs.google.com/forms/d/e/1FAIpQLSdMV1dYXM5OLN1TGH0C5RbrwH1b0xyTZM8cNTaHGclvIrVaTA/viewform?usp=dialog"
     }
   },
-  "SALTRAI:5633": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-03T16:30:08+00:00",
-      "status": "sent",
-      "telegram_message_id": 186
-    },
-    "extracted": {
-      "company": "JP Morgan",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "JP Morgan",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Large Cap Analyst - Corporate Banking",
-      "type": "coop",
-      "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs/preview/210775736/?location=Riyadh%2C+Saudi+Arabia&amp;locationId=300000020333142&amp;locationLevel=state&amp;mode=location"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs/preview/210768478/?location=Saudi+Arabia&amp;locationId=300000000289624&amp;locationLevel=country&amp;mode=location",
-        "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs/preview/210775736/?location=Riyadh%2C+Saudi+Arabia&amp;locationId=300000020333142&amp;locationLevel=state&amp;mode=location"
-      ],
-      "message_id": 5633,
-      "permalink": "https://t.me/SALTRAI/5633",
-      "posted_at": "2026-09-03T12:10:13+00:00",
-      "text": "Career Opportunity | JP Morgan\nLarge Cap Analyst - Corporate Banking\n- Registration: Apply Now\nCOOP Program | JP Morgan\n- Registration: Apply Now"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
