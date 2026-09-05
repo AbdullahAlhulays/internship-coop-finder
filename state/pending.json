@@ -1434,5 +1434,51 @@
       "posted_at": "2026-08-19T13:43:16+00:00",
       "text": "📢 فرصة تدريب تعاوني | Smart Code\n\nتعلن شركة Smart Code عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n• التسويق الرقمي\n• العلاقات العامة\n\nانضم إلى فريقنا واكتسب خبرة عملية في بيئة عمل إبداعية ومحفزة، تتيح لك فرصة التعلم والتطور واكتساب مهارات جديدة.\n\n📍 الموقع: الرياض\n\n🔗 للتقديم: https://smartcode.sa/training"
     }
+  },
+  "nobthacv1:2128": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-05T05:49:06+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "معهد طاقات المعتمد للتدريب",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "نرحب بالطلاب والطالبات الباحثين عن فرص التدريب التعاوني. يرجى تعبئة البيانات بدقة وتحديد التخصص المناسب، وسيتم التواصل معكم"
+      },
+      "evidence": {
+        "company": "معهد طاقات المعتمد للتدريب",
+        "deadline": null,
+        "description": "نرحب بالطلاب والطالبات الباحثين عن فرص التدريب التعاوني. يرجى تعبئة البيانات بدقة وتحديد التخصص المناسب، وسيتم التواصل معكم",
+        "location": "#الطايف"
+      },
+      "is_opportunity": true,
+      "location": "Al Taif, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSedu8wwYR5PdjYCwwQYMrEFfjUpy2QOiqQhqxJaRMpDrAWtnA/viewform?pli=1"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSedu8wwYR5PdjYCwwQYMrEFfjUpy2QOiqQhqxJaRMpDrAWtnA/viewform?pli=1"
+      ],
+      "message_id": 2128,
+      "permalink": "https://t.me/nobthacv1/2128",
+      "posted_at": "2026-09-05T03:40:04+00:00",
+      "text": "#التدريب_التعاوني #الطايف\n\nمعهد طاقات المعتمد للتدريب\n\nنرحب بالطلاب والطالبات الباحثين عن فرص التدريب التعاوني. يرجى تعبئة البيانات بدقة وتحديد التخصص المناسب، وسيتم التواصل معكم\n\nللتقديم___________________"
+    }
   }
 }
