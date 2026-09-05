@@ -1481,5 +1481,49 @@
       "posted_at": "2026-09-05T03:40:04+00:00",
       "text": "#التدريب_التعاوني #الطايف\n\nمعهد طاقات المعتمد للتدريب\n\nنرحب بالطلاب والطالبات الباحثين عن فرص التدريب التعاوني. يرجى تعبئة البيانات بدقة وتحديد التخصص المناسب، وسيتم التواصل معكم\n\nللتقديم___________________"
     }
+  },
+  "nobthacv1:2129": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-05T10:41:04+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "شركة سيف الامنية",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "شركة سيف الامنية",
+        "deadline": null,
+        "description": null,
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://fa-esiu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://fa-esiu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs"
+      ],
+      "message_id": 2129,
+      "permalink": "https://t.me/nobthacv1/2129",
+      "posted_at": "2026-09-05T08:15:28+00:00",
+      "text": "#التدريب_التعاوني #الرياض\n\nشركة سيف الامنية تابعة للصندوق\n\nللتقديم______________________"
+    }
   }
 }
