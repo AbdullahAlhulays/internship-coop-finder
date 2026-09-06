@@ -529,6 +529,52 @@
       "text": "📢 فرصة تدريب تعاوني | Smart Code\n\nتعلن شركة Smart Code عن توفر فرص تدريب تعاوني في التخصصات التالية:\n\n• التسويق الرقمي\n• العلاقات العامة\n\nانضم إلى فريقنا واكتسب خبرة عملية في بيئة عمل إبداعية ومحفزة، تتيح لك فرصة التعلم والتطور واكتساب مهارات جديدة.\n\n📍 الموقع: الرياض\n\n🔗 للتقديم: https://smartcode.sa/training"
     }
   },
+  "SALTRAI:5641": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-06T17:06:47+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "جمعية نقاء البيئية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "فرصة تدريب تعاوني مطلوب متدربة تخصص تصميم جرافيك"
+      },
+      "evidence": {
+        "company": "جمعية نقاء البيئية",
+        "deadline": null,
+        "description": "فرصة تدريب تعاوني مطلوب متدربة تخصص تصميم جرافيك",
+        "location": "بريده"
+      },
+      "is_opportunity": true,
+      "location": "Buraidah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "متدربة تخصص تصميم جرافيك",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdMV1dYXM5OLN1TGH0C5RbrwH1b0xyTZM8cNTaHGclvIrVaTA/viewform?usp=dialog"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSdMV1dYXM5OLN1TGH0C5RbrwH1b0xyTZM8cNTaHGclvIrVaTA/viewform?usp=dialog"
+      ],
+      "message_id": 5641,
+      "permalink": "https://t.me/SALTRAI/5641",
+      "posted_at": "2026-09-06T13:26:53+00:00",
+      "text": "السلام عليكم\nجمعية نقاء البيئية في بريده\nعندهم فرصة تدريب تعاوني مطلوب متدربة تخصص تصميم جرافيك\nhttps://docs.google.com/forms/d/e/1FAIpQLSdMV1dYXM5OLN1TGH0C5RbrwH1b0xyTZM8cNTaHGclvIrVaTA/viewform?usp=dialog"
+    }
+  },
   "SALTRAI:5642": {
     "decision": {
       "action": "add",
@@ -575,6 +621,52 @@
       "permalink": "https://t.me/SALTRAI/5642",
       "posted_at": "2026-09-06T13:26:53+00:00",
       "text": "⭐ برنامج التدريب التعاوني في شركة سيف الأمنية:\n\nتعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد\n\nرابط التقديم المباشر: t.co/RHrFPf9yjM\n\nالتفاصيل: wadhefa.com/news/21087\n\nلمشاركة الخبر عبر الواتساب: اضغط هنا"
+    }
+  },
+  "SALTRAI:5643": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-06T17:06:49+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Adventevo",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات المطلوبة: إدارة الأعمال، التسويق، إدارة العمليات، الإدارة، أو التخصصات ذات الصلة.\nمدة التدريب: من شهر إلى 3 أشهر\ntاريخ بداية التدريب: 15 سبتمبر 2026"
+      },
+      "evidence": {
+        "company": "Adventevo",
+        "deadline": null,
+        "description": "التخصصات المطلوبة: إدارة الأعمال، التسويق، إدارة العمليات، الإدارة، أو التخصصات ذات الصلة.\nمدة التدريب: من شهر إلى 3 أشهر\ntاريخ بداية التدريب: 15 سبتمبر 2026",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "متدرب/متدربة تشغيل وتسويق (Operations & Marketing Intern)",
+      "type": "coop",
+      "url": "https://darbak.space/apply/adventevo"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://darbak.space/apply/adventevo"
+      ],
+      "message_id": 5643,
+      "permalink": "https://t.me/SALTRAI/5643",
+      "posted_at": "2026-09-06T13:26:53+00:00",
+      "text": "فرصة تدريب تعاوني🎓\n\nAdventevo\nتدريب تعاوني تشغيل وتسويق\nلمسمى التدريبي: متدرب/متدربة تشغيل وتسويق (Operations & Marketing Intern)\nالتخصصات المطلوبة: إدارة الأعمال، التسويق، إدارة العمليات، الإدارة، أو التخصصات ذات الصلة.\nالمدينة: الرياض\nمدة التدريب: من شهر إلى 3 أشهر\nتاريخ بداية التدريب: 15 سبتمبر 2026\nhttps://darbak.space/apply/adventevo"
     }
   },
   "SALTRAI:5645": {
