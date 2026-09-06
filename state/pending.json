@@ -490,8 +490,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-06T13:42:17+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-06T13:45:59+00:00",
+      "status": "sent",
+      "telegram_message_id": 192
     },
     "extracted": {
       "company": "Smart Code",
@@ -536,8 +537,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-06T13:42:33+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-06T13:45:59+00:00",
+      "status": "sent",
+      "telegram_message_id": 193
     },
     "extracted": {
       "company": "شركة السيف الأمنية",
@@ -583,8 +585,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-06T13:43:16+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-06T13:46:00+00:00",
+      "status": "sent",
+      "telegram_message_id": 194
     },
     "extracted": {
       "company": "Chalhoub Group",
@@ -627,8 +630,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-06T13:43:47+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-06T13:46:00+00:00",
+      "status": "sent",
+      "telegram_message_id": 195
     },
     "extracted": {
       "company": "Adventevo",
@@ -673,8 +677,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-06T13:44:17+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-06T13:46:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 196
     },
     "extracted": {
       "company": "شركة مقاولات",
@@ -719,8 +724,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-06T13:44:48+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-06T13:46:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 197
     },
     "extracted": {
       "company": "Adventevo",
@@ -765,8 +771,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-06T13:45:12+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-06T13:46:02+00:00",
+      "status": "sent",
+      "telegram_message_id": 198
     },
     "extracted": {
       "company": "الصندوق الثقافي",
@@ -816,8 +823,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-09-06T13:45:30+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-06T13:46:02+00:00",
+      "status": "sent",
+      "telegram_message_id": 199
     },
     "extracted": {
       "company": "شركة سيف للخدمات الأمنية (إحدى شركات الصندوق)",
