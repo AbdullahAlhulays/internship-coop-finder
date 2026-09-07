@@ -623,51 +623,6 @@
       "text": "فرصة تدريب تعاوني🎓\n\nAdventevo\nتدريب تعاوني تشغيل وتسويق\nلمسمى التدريبي: متدرب/متدربة تشغيل وتسويق (Operations & Marketing Intern)\nالتخصصات المطلوبة: إدارة الأعمال، التسويق، إدارة العمليات، الإدارة، أو التخصصات ذات الصلة.\nالمدينة: الرياض\nمدة التدريب: من شهر إلى 3 أشهر\nتاريخ بداية التدريب: 15 سبتمبر 2026\nhttps://darbak.space/apply/adventevo"
     }
   },
-  "SALTRAI:5645": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-06T13:46:00+00:00",
-      "status": "sent",
-      "telegram_message_id": 194
-    },
-    "extracted": {
-      "company": "Chalhoub Group",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "Chalhoub Group",
-        "deadline": null,
-        "description": null,
-        "location": "Jeddah"
-      },
-      "is_opportunity": true,
-      "location": "Jeddah, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Cooperative Training Program",
-      "type": "coop",
-      "url": "https://sa.linkedin.com/jobs/view/cooperative-training-program-jeddah-at-chalhoub-group-4401938226"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://sa.linkedin.com/jobs/view/cooperative-training-program-jeddah-at-chalhoub-group-4401938226"
-      ],
-      "message_id": 5645,
-      "permalink": "https://t.me/SALTRAI/5645",
-      "posted_at": "2026-09-06T13:26:53+00:00",
-      "text": "https://sa.linkedin.com/jobs/view/cooperative-training-program-jeddah-at-chalhoub-group-4401938226"
-    }
-  },
   "SALTRAI:5648": {
     "decision": {
       "action": "add",
