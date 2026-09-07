@@ -490,8 +490,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-07T16:30:34+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-07T16:31:52+00:00",
+      "status": "sent",
+      "telegram_message_id": 212
     },
     "extracted": {
       "company": "Bain & Co.",
@@ -536,8 +537,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-07T16:30:35+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-07T16:31:52+00:00",
+      "status": "sent",
+      "telegram_message_id": 213
     },
     "extracted": {
       "company": "Wadi Jeddah | شركة وادي جدة",
@@ -582,8 +584,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-07T16:31:07+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-07T16:31:53+00:00",
+      "status": "sent",
+      "telegram_message_id": 214
     },
     "extracted": {
       "company": "RKIZA",
@@ -626,8 +629,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-07T16:31:23+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-07T16:31:53+00:00",
+      "status": "sent",
+      "telegram_message_id": 215
     },
     "extracted": {
       "company": "Maahed Ta'sis Al'ali Lil Tadreeb | معهد تأسيس العالي للتدريب",
@@ -1717,8 +1721,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-07T16:31:48+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-07T16:31:54+00:00",
+      "status": "sent",
+      "telegram_message_id": 216
     },
     "extracted": {
       "company": "Saqr Alliance for Robotics | تحالف صقر لتقنيات الروبوت",
