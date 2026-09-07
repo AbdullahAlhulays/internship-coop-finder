@@ -482,6 +482,188 @@
       "text": "(🔴) وظائف وبرنامج تدريب تعاوني لدى (الشركة السعودية للخدمات الأرضية):\n\n▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر).\n\nhttps://www.jobs4.net/32172"
     }
   },
+  "SALTRAI:5654": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-07T16:30:34+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Bain & Co.",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "Bain & Co.",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Associate Consultant",
+      "type": "internship_or_coop",
+      "url": "https://www.bain.com/careers/work-with-us/internships-programs/associate-consultant-internship"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://www.bain.com/careers/work-with-us/internships-programs/associate-consultant-internship",
+        "https://www.bain.com/careers/find-a-role/position/?jobid=10397",
+        "https://www.bain.com/careers/work-with-us/internships-programs/coop/"
+      ],
+      "message_id": 5654,
+      "permalink": "https://t.me/SALTRAI/5654",
+      "posted_at": "2026-09-07T12:15:29+00:00",
+      "text": "Internship Program | Bain & Co.\n- Registration: Apply Now\nAssociate Consultant | Bain & Co.\n- Registration: Apply Now\nCOOP Program | Bain & Co.\n- Registration: Apply Now"
+    }
+  },
+  "SALTRAI:5656": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-07T16:30:35+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Wadi Jeddah | شركة وادي جدة",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "نبحث عن المهتمين والمتخصصين في:\n\nالتصميم\nالمونتاج\nالتصوير\nكتابة المحتوى\nإدارة الفعاليات\nالعلاقات العامة\nالتسويق\nهندسة الصوتيات\nاضاءات\nالإخبار الصحفية"
+      },
+      "evidence": {
+        "company": "شركة وادي جدة",
+        "deadline": null,
+        "description": "نبحث عن المهتمين والمتخصصين في:\n\nالتصميم\nالمونتاج\nالتصوير\nكتابة المحتوى\nإدارة الفعاليات\nالعلاقات العامة\nالتسويق\nهندسة الصوتيات\nاضاءات\nالإخبار الصحفية",
+        "location": "شركة وادي جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب لطلاب وطالبات جامعة الملك عبدالعزيز",
+      "type": "internship",
+      "url": "https://forms.gle/EUBQmM2KeyfQYcNE7"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/EUBQmM2KeyfQYcNE7"
+      ],
+      "message_id": 5656,
+      "permalink": "https://t.me/SALTRAI/5656",
+      "posted_at": "2026-09-07T12:17:24+00:00",
+      "text": "تدريب لطلاب وطالبات جامعة الملك عبدالعزيز* 🎓🚀\n\nتستقبل إدارة الاتصال المؤسسي بشركة وادي جدة طلبات الطلاب والطالبات الراغبين في تطوير مهاراتهم واكتساب خبرة عملية في مجالات الإعلام والاتصال المؤسسي.\n\nنبحث عن المهتمين والمتخصصين في:\n\nالتصميم\nالمونتاج\nالتصوير\nكتابة المحتوى\nإدارة الفعاليات\nالعلاقات العامة\nالتسويق\nهندسة الصوتيات\nاضاءات\nالإخبار الصحفية\n\nإذا كان لديك الشغف والمهارة هذا المجال، سجّل بياناتك عبر النموذج التالي، وأرفق نماذج من أعمالك إن وجدت:\n\n🔗 رابط التسجيل:\nhttps://forms.gle/EUBQmM2KeyfQYcNE7\n\n📍 شركة وادي جدة"
+    }
+  },
+  "SALTRAI:5661": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-07T16:31:07+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "RKIZA",
+      "confidence": 0.7,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "RKIZA",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://www.rkiza.sa/careers"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://www.rkiza.sa/careers"
+      ],
+      "message_id": 5661,
+      "permalink": "https://t.me/SALTRAI/5661",
+      "posted_at": "2026-09-07T15:53:42+00:00",
+      "text": "#تدريب #تدريب_تعاوني\n\nhttps://www.rkiza.sa/careers"
+    }
+  },
+  "SALTRAI:5662": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-07T16:31:23+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Maahed Ta'sis Al'ali Lil Tadreeb | معهد تأسيس العالي للتدريب",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "يعلن معهد تأسيس العالي للتدريب عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:\n🎯 التخصصات المطلوبة:\n• خدمة العملاء\n• التسويق\n• السكرتارية\n• إدارة الأعمال\n📍 الموقع: الرياض – حي عريجاء\n⏳ مدة التدريب: 6 أشهر\n✨ فرصة لاكتساب خبرة عملية وتطوير المهارات المهنية ضمن بيئة عمل داعمة."
+      },
+      "evidence": {
+        "company": "معهد تأسيس العالي للتدريب",
+        "deadline": null,
+        "description": "يعلن معهد تأسيس العالي للتدريب عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني في الرياض",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeLKJg6D77fj8S4xlS34DZLjjHBJNl7Wis6sqQ0dG0UJUTw3A/viewform?usp=header"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSeLKJg6D77fj8S4xlS34DZLjjHBJNl7Wis6sqQ0dG0UJUTw3A/viewform?usp=header"
+      ],
+      "message_id": 5662,
+      "permalink": "https://t.me/SALTRAI/5662",
+      "posted_at": "2026-09-07T15:57:42+00:00",
+      "text": "📢 فرصة تدريب تعاوني في الرياض!\n\nيعلن معهد تأسيس العالي للتدريب عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:\n\n🎯 التخصصات المطلوبة:\n• خدمة العملاء\n• التسويق\n• السكرتارية\n• إدارة الأعمال\n\n📍 الموقع: الرياض – حي عريجاء\n⏳ مدة التدريب: 6 أشهر\n\n✨ فرصة لاكتساب خبرة عملية وتطوير المهارات المهنية ضمن بيئة عمل داعمة.\n\n📩 للمهتمين: يرجا تعبئة الاستبيان\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeLKJg6D77fj8S4xlS34DZLjjHBJNl7Wis6sqQ0dG0UJUTw3A/viewform?usp=header"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
@@ -1525,6 +1707,52 @@
       "permalink": "https://t.me/nobthacv1/2129",
       "posted_at": "2026-09-05T08:15:28+00:00",
       "text": "#التدريب_التعاوني #الرياض\n\nشركة سيف الامنية تابعة للصندوق\n\nللتقديم______________________"
+    }
+  },
+  "nobthacv1:2134": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-07T16:31:48+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Saqr Alliance for Robotics | تحالف صقر لتقنيات الروبوت",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "• إدارة الأعمال\n• الهندسة الصناعية\n• هندسة الميكاترونكس\n• تخصصات الحاسب\n• المالية\n• المحاسبة\n• التصميم الجرافيكي\n• التسويق"
+      },
+      "evidence": {
+        "company": "تحالف صقر لتقنيات الروبوت",
+        "deadline": null,
+        "description": "• إدارة الأعمال\n• الهندسة الصناعية\n• هندسة الميكاترونكس\n• تخصصات الحاسب\n• المالية\n• المحاسبة\n• التصميم الجرافيكي\n• التسويق",
+        "location": "#جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Cooperative Training Program",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSf9X_VbHAlaRRLsmen4XVsthA2NwkF7CSjZJmq4eV3SIMq8Cw/viewform"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSf9X_VbHAlaRRLsmen4XVsthA2NwkF7CSjZJmq4eV3SIMq8Cw/viewform"
+      ],
+      "message_id": 2134,
+      "permalink": "https://t.me/nobthacv1/2134",
+      "posted_at": "2026-09-07T14:23:52+00:00",
+      "text": "#التدريب_التعاوني #جدة\n\n| تحالف صقر لتقنيات الروبوت\nتعلن صقر عن فتح باب التقديم لبرنامج التدريب التعاوني لطلاب وطالبات الجامعات في التخصصات التالية:\n• إدارة الأعمال\n• الهندسة الصناعية\n• هندسة الميكاترونكس\n• تخصصات الحاسب\n• المالية\n• المحاسبة\n• التصميم الجرافيكي\n• التسويق\n\nللتقديم_______________"
     }
   }
 }
