@@ -576,54 +576,6 @@
       "text": "السلام عليكم\nجمعية نقاء البيئية في بريده\nعندهم فرصة تدريب تعاوني مطلوب متدربة تخصص تصميم جرافيك\nhttps://docs.google.com/forms/d/e/1FAIpQLSdMV1dYXM5OLN1TGH0C5RbrwH1b0xyTZM8cNTaHGclvIrVaTA/viewform?usp=dialog"
     }
   },
-  "SALTRAI:5642": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-06T13:45:59+00:00",
-      "status": "sent",
-      "telegram_message_id": 193
-    },
-    "extracted": {
-      "company": "شركة السيف الأمنية",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد"
-      },
-      "evidence": {
-        "company": "شركة السيف الأمنية",
-        "deadline": null,
-        "description": "تعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني في شركة سيف الأمنية",
-      "type": "coop",
-      "url": "http://t.co/RHrFPf9yjM"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "http://t.co/RHrFPf9yjM",
-        "http://wadhefa.com/news/21087"
-      ],
-      "message_id": 5642,
-      "permalink": "https://t.me/SALTRAI/5642",
-      "posted_at": "2026-09-06T13:26:53+00:00",
-      "text": "⭐ برنامج التدريب التعاوني في شركة سيف الأمنية:\n\nتعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد\n\nرابط التقديم المباشر: t.co/RHrFPf9yjM\n\nالتفاصيل: wadhefa.com/news/21087\n\nلمشاركة الخبر عبر الواتساب: اضغط هنا"
-    }
-  },
   "SALTRAI:5643": {
     "decision": {
       "action": "add",
