@@ -1023,6 +1023,14 @@ const companyRecords = [
     description: {"ar": "تعلن شركة مقاولات في الرياض عن توفر فرصة تدريب تعاوني (Co-op) للطلاب والطالبات في تخصص التسويق.\n\n📍 الموقع: الرياض – حي المحمدية\n\nالمتطلبات:\n\n* طالب/ـة في مرحلة التدريب التعاوني بتخصص التسويق.\n* وجود خطاب تدريب تعاوني من الجامعة.\n* مهارات جيدة في التواصل والعمل ضمن فريق.\n* الرغبة في التعلم واكتساب الخبرة العملية.\nالمهام:\n\nإدارة وتنشيط حسابات السوشال ميديا بشكل مستمر.\n* ابتكار أفكار محتوى جديدة ومتنوعة تناسب هوية الشركة.\n* تصوير وإعداد ومونتاج Reels وفيديوهات قصيرة.\n* تحويل المشاريع والأحداث اليومية إلى محتوى جذاب، وليس الاكتفاء بنشر الصور فقط.\n* استخدام أدوات الذكاء الاصطناعي في تطوير الأفكار وصناعة المحتوى.\n* كتابة وتجهيز المحتوى بالعربي والإنجليزي.\n* الحفاظ على الحسابات نشطة\nومتجددة بشكل مستمر\n\nنبحث عن شخصية إبداعية، مبادرة، لديها حس بصري قوي، وتجيد صناعة ومونتاج الفيديو واستخدام أدوات AI في المحتوى\n\n📩 للمهتمين:\nhttps://forms.gle/AehnYHQPZipi2BVw7", "en": "A contracting company in Riyadh announces the availability of a cooperative training opportunity (Co-op) for male and female students majoring in marketing.\n\n📍 Location: Riyadh - Al-Muhammadiyah district\n\nRequirements:\n\n* A student in the cooperative training stage specializing in marketing.\n* The presence of a cooperative training letter from the university.\n* Good skills in communication and working within a team.\n* Desire to learn and gain practical experience.\nTasks:\n\nManage and activate social media accounts on an ongoing basis.\n* Creating new and diverse content ideas that fit the company’s identity.\n* Filming, preparing and editing reels and short videos.\n* Transform daily projects and events into attractive content, not just publishing pictures.\n* Using artificial intelligence tools to develop ideas and create content.\n* Writing and preparing content in Arabic and English.\n* Keep accounts active\nAnd constantly renewed\n\nWe are looking for a creative, proactive personality, who has a strong visual sense, and is proficient in video making and editing and using AI tools in content\n\n📩 For those interested:\nhttps://forms.gle/AehnYHQPZipi2BVw7"},
     requiresLetter: true,
     addedAt: "2026-09-07T16:43:17+03:00",
+  },
+  {
+    name: "الصندوق الثقافي",
+    applicationLink: "https://wdeftksa.com/sa/jobs/100593",
+    deadline: "2026-09-15",
+    type: "CO-OP Training",
+    description: {"ar": "المجالات المستهدفة:\n▪️المالية والمحاسبة.\n▪️إدارة الأعمال.\n▪️الإعلام والتسويق.\n▪️تقنية المعلومات.\n▪️الموارد البشرية.", "en": "Target areas:\n▪️Finance and accounting.\n▪️Business management.\n▪️Media and marketing.\n▪️Information technology.\n▪️Human Resources."},
+    addedAt: "2026-09-07T16:43:37+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {

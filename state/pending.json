@@ -623,54 +623,6 @@
       "text": "فرصة تدريب تعاوني🎓\n\nAdventevo\nتدريب تعاوني تشغيل وتسويق\nلمسمى التدريبي: متدرب/متدربة تشغيل وتسويق (Operations & Marketing Intern)\nالتخصصات المطلوبة: إدارة الأعمال، التسويق، إدارة العمليات، الإدارة، أو التخصصات ذات الصلة.\nالمدينة: الرياض\nمدة التدريب: من شهر إلى 3 أشهر\nتاريخ بداية التدريب: 15 سبتمبر 2026\nhttps://darbak.space/apply/adventevo"
     }
   },
-  "SALTRAI:5652": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-06T13:46:02+00:00",
-      "status": "sent",
-      "telegram_message_id": 198
-    },
-    "extracted": {
-      "company": "الصندوق الثقافي",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": "2026-09-15",
-      "deadline_raw": null,
-      "description": {
-        "ar": "المجالات المستهدفة:\n▪️المالية والمحاسبة.\n▪️إدارة الأعمال.\n▪️الإعلام والتسويق.\n▪️تقنية المعلومات.\n▪️الموارد البشرية."
-      },
-      "evidence": {
-        "company": "الصندوق الثقافي",
-        "deadline": null,
-        "description": "المجالات المستهدفة:\n▪️المالية والمحاسبة.\n▪️إدارة الأعمال.\n▪️الإعلام والتسويق.\n▪️تقنية المعلومات.\n▪️الموارد البشرية.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني لعام 1448هـ",
-      "type": "coop",
-      "url": "https://wdeftksa.com/sa/jobs/100593"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://api.whatsapp.com/send?text=%D8%A7%D9%84%D8%B5%D9%86%D8%AF%D9%88%D9%82+%D8%A7%D9%84%D8%AB%D9%82%D8%A7%D9%81%D9%8A+%D9%8A%D8%B9%D9%84%D9%86+%D8%A8%D8%AF%D8%A1+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85+%D8%B9%D9%84%D9%89+%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC+%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A+%D9%84%D8%B9%D8%A7%D9%85+1448%D9%87%D9%80+-+https%3A%2F%2Fwww.wdeftksa.com%2Fsa%2Fjobs%2F100593+-+%D8%B1%D8%A7%D8%A8%D8%B7+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85%3A+https%3A%2F%2Ft.me%2Fcd4cd",
-        "https://wdeftksa.com/sa/jobs/100593"
-      ],
-      "message_id": 5652,
-      "permalink": "https://t.me/SALTRAI/5652",
-      "posted_at": "2026-09-06T13:28:38+00:00",
-      "text": "🌟‼️ الصندوق الثقافي يعلن بدء التقديم لطلاب وطالبات المرحلة الجامعية على برنامج التدريب التعاوني لعام 1448هـ\n\nالمجالات المستهدفة:\n▪️المالية والمحاسبة.\n▪️إدارة الأعمال.\n▪️الإعلام والتسويق.\n▪️تقنية المعلومات.\n▪️الموارد البشرية.\n\n🔗 انشر الخبر عبر (whatsapp):\nاضغط هنا\n\n↩️ للتقديم (https://wdeftksa.com/sa/jobs/100593)"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
