@@ -482,51 +482,6 @@
       "text": "(🔴) وظائف وبرنامج تدريب تعاوني لدى (الشركة السعودية للخدمات الأرضية):\n\n▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر).\n\nhttps://www.jobs4.net/32172"
     }
   },
-  "SALTRAI:5668": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-08T14:38:16+00:00",
-      "status": "sent",
-      "telegram_message_id": 222
-    },
-    "extracted": {
-      "company": "RKIZA",
-      "confidence": 0.6,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "https://www.rkiza.sa/careers",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://www.rkiza.sa/careers"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://www.rkiza.sa/careers"
-      ],
-      "message_id": 5668,
-      "permalink": "https://t.me/SALTRAI/5668",
-      "posted_at": "2026-09-08T13:26:54+00:00",
-      "text": "#تدريب #تدريب_تعاوني\n\nhttps://www.rkiza.sa/careers"
-    }
-  },
   "SALTRAI:5670": {
     "decision": {
       "action": "add",
