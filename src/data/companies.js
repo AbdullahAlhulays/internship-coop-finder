@@ -1038,6 +1038,14 @@ const companyRecords = [
     applicationLink: "https://www.bain.com/careers/work-with-us/internships-programs/associate-consultant-internship",
     type: "Internship / CO-OP Training",
     addedAt: "2026-09-08T12:04:30+03:00",
+  },
+  {
+    name: "Maahed Ta'sis Al'ali Lil Tadreeb | معهد تأسيس العالي للتدريب",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeLKJg6D77fj8S4xlS34DZLjjHBJNl7Wis6sqQ0dG0UJUTw3A/viewform?usp=header",
+    type: "CO-OP Training",
+    description: {"ar": "يعلن معهد تأسيس العالي للتدريب عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:\n🎯 التخصصات المطلوبة:\n• خدمة العملاء\n• التسويق\n• السكرتارية\n• إدارة الأعمال\n📍 الموقع: الرياض – حي عريجاء\n⏳ مدة التدريب: 6 أشهر\n✨ فرصة لاكتساب خبرة عملية وتطوير المهارات المهنية ضمن بيئة عمل داعمة.", "en": "The Establishment Higher Training Institute announces the availability of cooperative training opportunities for male and female students in the following specializations:\n🎯 Required specializations:\n• Customer service\n• Marketing\n• Secretarial\n• Business management\n📍 Location: Riyadh - Al-Uraija’ neighborhood\n⏳ Training duration: 6 months\n✨ An opportunity to gain practical experience and develop professional skills within a supportive work environment."},
+    addedAt: "2026-09-08T12:05:10+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {

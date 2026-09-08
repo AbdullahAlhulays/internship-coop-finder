@@ -529,53 +529,6 @@
       "text": "تدريب لطلاب وطالبات جامعة الملك عبدالعزيز* 🎓🚀\n\nتستقبل إدارة الاتصال المؤسسي بشركة وادي جدة طلبات الطلاب والطالبات الراغبين في تطوير مهاراتهم واكتساب خبرة عملية في مجالات الإعلام والاتصال المؤسسي.\n\nنبحث عن المهتمين والمتخصصين في:\n\nالتصميم\nالمونتاج\nالتصوير\nكتابة المحتوى\nإدارة الفعاليات\nالعلاقات العامة\nالتسويق\nهندسة الصوتيات\nاضاءات\nالإخبار الصحفية\n\nإذا كان لديك الشغف والمهارة هذا المجال، سجّل بياناتك عبر النموذج التالي، وأرفق نماذج من أعمالك إن وجدت:\n\n🔗 رابط التسجيل:\nhttps://forms.gle/EUBQmM2KeyfQYcNE7\n\n📍 شركة وادي جدة"
     }
   },
-  "SALTRAI:5662": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-07T16:31:53+00:00",
-      "status": "sent",
-      "telegram_message_id": 215
-    },
-    "extracted": {
-      "company": "Maahed Ta'sis Al'ali Lil Tadreeb | معهد تأسيس العالي للتدريب",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "يعلن معهد تأسيس العالي للتدريب عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:\n🎯 التخصصات المطلوبة:\n• خدمة العملاء\n• التسويق\n• السكرتارية\n• إدارة الأعمال\n📍 الموقع: الرياض – حي عريجاء\n⏳ مدة التدريب: 6 أشهر\n✨ فرصة لاكتساب خبرة عملية وتطوير المهارات المهنية ضمن بيئة عمل داعمة."
-      },
-      "evidence": {
-        "company": "معهد تأسيس العالي للتدريب",
-        "deadline": null,
-        "description": "يعلن معهد تأسيس العالي للتدريب عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:",
-        "location": "الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "فرصة تدريب تعاوني في الرياض",
-      "type": "coop",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeLKJg6D77fj8S4xlS34DZLjjHBJNl7Wis6sqQ0dG0UJUTw3A/viewform?usp=header"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://docs.google.com/forms/d/e/1FAIpQLSeLKJg6D77fj8S4xlS34DZLjjHBJNl7Wis6sqQ0dG0UJUTw3A/viewform?usp=header"
-      ],
-      "message_id": 5662,
-      "permalink": "https://t.me/SALTRAI/5662",
-      "posted_at": "2026-09-07T15:57:42+00:00",
-      "text": "📢 فرصة تدريب تعاوني في الرياض!\n\nيعلن معهد تأسيس العالي للتدريب عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:\n\n🎯 التخصصات المطلوبة:\n• خدمة العملاء\n• التسويق\n• السكرتارية\n• إدارة الأعمال\n\n📍 الموقع: الرياض – حي عريجاء\n⏳ مدة التدريب: 6 أشهر\n\n✨ فرصة لاكتساب خبرة عملية وتطوير المهارات المهنية ضمن بيئة عمل داعمة.\n\n📩 للمهتمين: يرجا تعبئة الاستبيان\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeLKJg6D77fj8S4xlS34DZLjjHBJNl7Wis6sqQ0dG0UJUTw3A/viewform?usp=header"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
