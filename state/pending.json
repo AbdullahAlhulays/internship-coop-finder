@@ -490,8 +490,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-08T14:37:18+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-08T14:38:16+00:00",
+      "status": "sent",
+      "telegram_message_id": 222
     },
     "extracted": {
       "company": "RKIZA",
@@ -534,8 +535,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-08T14:37:45+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-08T14:38:17+00:00",
+      "status": "sent",
+      "telegram_message_id": 223
     },
     "extracted": {
       "company": "JISR",
