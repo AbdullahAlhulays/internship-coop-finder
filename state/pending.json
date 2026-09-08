@@ -482,53 +482,6 @@
       "text": "(🔴) وظائف وبرنامج تدريب تعاوني لدى (الشركة السعودية للخدمات الأرضية):\n\n▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر).\n\nhttps://www.jobs4.net/32172"
     }
   },
-  "SALTRAI:5670": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-08T14:38:17+00:00",
-      "status": "sent",
-      "telegram_message_id": 223
-    },
-    "extracted": {
-      "company": "JISR",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "عن البرنامج : برنامج تطبيقي داخل برنامج اخصائي النمو ، يتيح لطالب الجامعة ممارسة أعمال حقيقية مرتبطة بنمو المتاجر الالكترونية ، تحت اشراف منظم وبمستهدفات أداء قابلة للقياس\nالتخصصات المطلوبه:\nالتجارة الالكترونية\n⁠التسويق والمبيعات\n⁠تطوير الاعمال وادارة المشاريع\n⁠تحليل البيانات والتخصصات ذات الصلة"
-      },
-      "evidence": {
-        "company": "https://www.jisr.net",
-        "deadline": null,
-        "description": "عن البرنامج : برنامج تطبيقي داخل برنامج اخصائي النمو ، يتيح لطالب الجامعة ممارسة أعمال حقيقية مرتبطة بنمو المتاجر الالكترونية ، تحت اشراف منظم وبمستهدفات أداء قابلة للقياس\nالتخصصات المطلوبه:\nالتجارة الالكترونية\n⁠التسويق والمبيعات\n⁠تطوير الاعمال وادارة المشاريع\n⁠تحليل البيانات والتخصصات ذات الصلة",
-        "location": "عن بعد"
-      },
-      "is_opportunity": true,
-      "location": "Remote",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج أخصائي النمو",
-      "type": "coop",
-      "url": "https://www.jisr.net/ar/zid/careers/e46331df-a23e-4f8a-a8cc-62f429d76d9d?host=1"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://www.jisr.net/ar/zid/careers/e46331df-a23e-4f8a-a8cc-62f429d76d9d?host=1"
-      ],
-      "message_id": 5670,
-      "permalink": "https://t.me/SALTRAI/5670",
-      "posted_at": "2026-09-08T13:33:16+00:00",
-      "text": "فرصة تدريب تعاوني عن بعد | برنامج أخصائي النمو\nعن البرنامج : برنامج تطبيقي داخل برنامج اخصائي النمو ، يتيح لطالب الجامعة ممارسة أعمال حقيقية مرتبطة بنمو المتاجر الالكترونية ، تحت اشراف منظم وبمستهدفات أداء قابلة للقياس\nالتخصصات المطلوبه:\nالتجارة الالكترونية\n⁠التسويق والمبيعات\n⁠تطوير الاعمال وادارة المشاريع\n⁠تحليل البيانات والتخصصات ذات الصلة\nللتقديم https://www.jisr.net/ar/zid/careers/e46331df-a23e-4f8a-a8cc-62f429d76d9d?host=1"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
