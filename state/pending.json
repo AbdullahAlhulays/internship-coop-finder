@@ -482,53 +482,6 @@
       "text": "(🔴) وظائف وبرنامج تدريب تعاوني لدى (الشركة السعودية للخدمات الأرضية):\n\n▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر).\n\nhttps://www.jobs4.net/32172"
     }
   },
-  "SALTRAI:5656": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-07T16:31:52+00:00",
-      "status": "sent",
-      "telegram_message_id": 213
-    },
-    "extracted": {
-      "company": "Wadi Jeddah | شركة وادي جدة",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "نبحث عن المهتمين والمتخصصين في:\n\nالتصميم\nالمونتاج\nالتصوير\nكتابة المحتوى\nإدارة الفعاليات\nالعلاقات العامة\nالتسويق\nهندسة الصوتيات\nاضاءات\nالإخبار الصحفية"
-      },
-      "evidence": {
-        "company": "شركة وادي جدة",
-        "deadline": null,
-        "description": "نبحث عن المهتمين والمتخصصين في:\n\nالتصميم\nالمونتاج\nالتصوير\nكتابة المحتوى\nإدارة الفعاليات\nالعلاقات العامة\nالتسويق\nهندسة الصوتيات\nاضاءات\nالإخبار الصحفية",
-        "location": "شركة وادي جدة"
-      },
-      "is_opportunity": true,
-      "location": "Jeddah, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "تدريب لطلاب وطالبات جامعة الملك عبدالعزيز",
-      "type": "internship",
-      "url": "https://forms.gle/EUBQmM2KeyfQYcNE7"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://forms.gle/EUBQmM2KeyfQYcNE7"
-      ],
-      "message_id": 5656,
-      "permalink": "https://t.me/SALTRAI/5656",
-      "posted_at": "2026-09-07T12:17:24+00:00",
-      "text": "تدريب لطلاب وطالبات جامعة الملك عبدالعزيز* 🎓🚀\n\nتستقبل إدارة الاتصال المؤسسي بشركة وادي جدة طلبات الطلاب والطالبات الراغبين في تطوير مهاراتهم واكتساب خبرة عملية في مجالات الإعلام والاتصال المؤسسي.\n\nنبحث عن المهتمين والمتخصصين في:\n\nالتصميم\nالمونتاج\nالتصوير\nكتابة المحتوى\nإدارة الفعاليات\nالعلاقات العامة\nالتسويق\nهندسة الصوتيات\nاضاءات\nالإخبار الصحفية\n\nإذا كان لديك الشغف والمهارة هذا المجال، سجّل بياناتك عبر النموذج التالي، وأرفق نماذج من أعمالك إن وجدت:\n\n🔗 رابط التسجيل:\nhttps://forms.gle/EUBQmM2KeyfQYcNE7\n\n📍 شركة وادي جدة"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",

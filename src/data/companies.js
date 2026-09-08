@@ -1046,6 +1046,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "يعلن معهد تأسيس العالي للتدريب عن توفر فرص تدريب تعاوني للطلاب والطالبات في التخصصات التالية:\n🎯 التخصصات المطلوبة:\n• خدمة العملاء\n• التسويق\n• السكرتارية\n• إدارة الأعمال\n📍 الموقع: الرياض – حي عريجاء\n⏳ مدة التدريب: 6 أشهر\n✨ فرصة لاكتساب خبرة عملية وتطوير المهارات المهنية ضمن بيئة عمل داعمة.", "en": "The Establishment Higher Training Institute announces the availability of cooperative training opportunities for male and female students in the following specializations:\n🎯 Required specializations:\n• Customer service\n• Marketing\n• Secretarial\n• Business management\n📍 Location: Riyadh - Al-Uraija’ neighborhood\n⏳ Training duration: 6 months\n✨ An opportunity to gain practical experience and develop professional skills within a supportive work environment."},
     addedAt: "2026-09-08T12:05:10+03:00",
+  },
+  {
+    name: "Wadi Jeddah | شركة وادي جدة",
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://forms.gle/EUBQmM2KeyfQYcNE7",
+    type: "Internship",
+    description: {"ar": "نبحث عن المهتمين والمتخصصين في:\n\nالتصميم\nالمونتاج\nالتصوير\nكتابة المحتوى\nإدارة الفعاليات\nالعلاقات العامة\nالتسويق\nهندسة الصوتيات\nاضاءات\nالإخبار الصحفية", "en": "We are looking for those interested and specialized in:\n\nDesign\nMontage\nPhotography\nContent writing\nEvent management\nPublic relations\nMarketing\nAcoustics engineering\nIlluminations\nPress releases"},
+    addedAt: "2026-09-08T12:05:27+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
