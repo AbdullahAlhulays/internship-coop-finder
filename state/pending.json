@@ -1573,52 +1573,5 @@
       "posted_at": "2026-09-05T08:15:28+00:00",
       "text": "#التدريب_التعاوني #الرياض\n\nشركة سيف الامنية تابعة للصندوق\n\nللتقديم______________________"
     }
-  },
-  "nobthacv1:2134": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-07T16:31:54+00:00",
-      "status": "sent",
-      "telegram_message_id": 216
-    },
-    "extracted": {
-      "company": "Saqr Alliance for Robotics | تحالف صقر لتقنيات الروبوت",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "• إدارة الأعمال\n• الهندسة الصناعية\n• هندسة الميكاترونكس\n• تخصصات الحاسب\n• المالية\n• المحاسبة\n• التصميم الجرافيكي\n• التسويق"
-      },
-      "evidence": {
-        "company": "تحالف صقر لتقنيات الروبوت",
-        "deadline": null,
-        "description": "• إدارة الأعمال\n• الهندسة الصناعية\n• هندسة الميكاترونكس\n• تخصصات الحاسب\n• المالية\n• المحاسبة\n• التصميم الجرافيكي\n• التسويق",
-        "location": "#جدة"
-      },
-      "is_opportunity": true,
-      "location": "Jeddah, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Cooperative Training Program",
-      "type": "coop",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSf9X_VbHAlaRRLsmen4XVsthA2NwkF7CSjZJmq4eV3SIMq8Cw/viewform"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": false,
-      "links": [
-        "https://docs.google.com/forms/d/e/1FAIpQLSf9X_VbHAlaRRLsmen4XVsthA2NwkF7CSjZJmq4eV3SIMq8Cw/viewform"
-      ],
-      "message_id": 2134,
-      "permalink": "https://t.me/nobthacv1/2134",
-      "posted_at": "2026-09-07T14:23:52+00:00",
-      "text": "#التدريب_التعاوني #جدة\n\n| تحالف صقر لتقنيات الروبوت\nتعلن صقر عن فتح باب التقديم لبرنامج التدريب التعاوني لطلاب وطالبات الجامعات في التخصصات التالية:\n• إدارة الأعمال\n• الهندسة الصناعية\n• هندسة الميكاترونكس\n• تخصصات الحاسب\n• المالية\n• المحاسبة\n• التصميم الجرافيكي\n• التسويق\n\nللتقديم_______________"
-    }
   }
 }
