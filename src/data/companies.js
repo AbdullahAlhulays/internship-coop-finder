@@ -1031,6 +1031,13 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "المجالات المستهدفة:\n▪️المالية والمحاسبة.\n▪️إدارة الأعمال.\n▪️الإعلام والتسويق.\n▪️تقنية المعلومات.\n▪️الموارد البشرية.", "en": "Target areas:\n▪️Finance and accounting.\n▪️Business management.\n▪️Media and marketing.\n▪️Information technology.\n▪️Human Resources."},
     addedAt: "2026-09-07T16:43:37+03:00",
+  },
+  {
+    name: "Bain & Co.",
+    logo: {"domain": "bain.com", "file": "bain-co.png"},
+    applicationLink: "https://www.bain.com/careers/work-with-us/internships-programs/associate-consultant-internship",
+    type: "Internship / CO-OP Training",
+    addedAt: "2026-09-08T12:04:30+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
