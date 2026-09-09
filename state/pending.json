@@ -622,8 +622,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-09T16:43:44+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-09T16:44:27+00:00",
+      "status": "sent",
+      "telegram_message_id": 226
     },
     "extracted": {
       "company": "حديقة الملك سلمان المكافاة 3500",
@@ -669,8 +670,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-09T16:44:14+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-09T16:44:27+00:00",
+      "status": "sent",
+      "telegram_message_id": 227
     },
     "extracted": {
       "company": "السيف الأمنية",
@@ -716,8 +718,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-09T16:44:25+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-09T16:44:27+00:00",
+      "status": "sent",
+      "telegram_message_id": 228
     },
     "extracted": {
       "company": "Mabdaat Al-Mustaqbal | مجموعة مبادرات المستقبل",
