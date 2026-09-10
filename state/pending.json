@@ -614,54 +614,6 @@
       "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
     }
   },
-  "cooptraning_inksa:4425": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-09T16:44:27+00:00",
-      "status": "sent",
-      "telegram_message_id": 227
-    },
-    "extracted": {
-      "company": "السيف الأمنية",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد"
-      },
-      "evidence": {
-        "company": "شركة السيف الأمنية",
-        "deadline": null,
-        "description": "تعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني",
-      "type": "coop",
-      "url": "http://t.co/RHrFPf9yjM"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "http://t.co/RHrFPf9yjM"
-      ],
-      "message_id": 4425,
-      "permalink": "https://t.me/cooptraning_inksa/4425",
-      "posted_at": "2026-09-09T16:16:56+00:00",
-      "text": "🟡الفرصة رقم ٢٧٦٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n⭐ برنامج التدريب التعاوني في شركة سيف الأمنية:\n\nتعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد\n\nرابط التقديم المباشر: t.co/RHrFPf9yjM"
-    }
-  },
   "cooptraning_inksa:4427": {
     "decision": {
       "action": "add",
