@@ -614,54 +614,6 @@
       "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
     }
   },
-  "cooptraning_inksa:4427": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-09T16:44:27+00:00",
-      "status": "sent",
-      "telegram_message_id": 228
-    },
-    "extracted": {
-      "company": "Mabdaat Al-Mustaqbal | مجموعة مبادرات المستقبل",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن."
-      },
-      "evidence": {
-        "company": "مجموعة مبادرات المستقبل",
-        "deadline": null,
-        "description": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "فرصة تدريب تعاوني للطالبات",
-      "type": "coop",
-      "url": "https://forms.gle/1dkwgYcSuH7p8qF29"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": false,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://forms.gle/1dkwgYcSuH7p8qF29"
-      ],
-      "message_id": 4427,
-      "permalink": "https://t.me/cooptraning_inksa/4427",
-      "posted_at": "2026-09-09T16:19:45+00:00",
-      "text": "🟡الفرصة رقم ٢٧٦٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
-    }
-  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
