@@ -530,6 +530,237 @@
       "text": "#تدريب #تدريب_تعاوني\n\nhr@apt-watch.com\n\nhttps://lnkd.in/p/d6UQVQY9"
     }
   },
+  "SALTRAI:5683": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T16:23:49+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Majmouat Mabadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن."
+      },
+      "evidence": {
+        "company": "مجموعة مبادرات المستقبل",
+        "deadline": null,
+        "description": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.",
+        "location": "المدينة : جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني للطالبات",
+      "type": "coop",
+      "url": "https://forms.gle/1dkwgYcSuH7p8qF29"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/1dkwgYcSuH7p8qF29"
+      ],
+      "message_id": 5683,
+      "permalink": "https://t.me/SALTRAI/5683",
+      "posted_at": "2026-09-13T12:06:05+00:00",
+      "text": "📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالمدينة : جدة\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
+    }
+  },
+  "SALTRAI:5686": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T16:24:42+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "شركة السيف الأمنية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد"
+      },
+      "evidence": {
+        "company": "شركة السيف الأمنية",
+        "deadline": null,
+        "description": "تعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "http://t.co/RHrFPf9yjM"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "http://t.co/RHrFPf9yjM"
+      ],
+      "message_id": 5686,
+      "permalink": "https://t.me/SALTRAI/5686",
+      "posted_at": "2026-09-13T12:06:06+00:00",
+      "text": "🟡الفرصة رقم ٢٧٦٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n⭐ برنامج التدريب التعاوني في شركة سيف الأمنية:\n\nتعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد\n\nرابط التقديم المباشر: t.co/RHrFPf9yjM"
+    }
+  },
+  "SALTRAI:5688": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T16:25:18+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "شركة التنفيذى",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "يوجد فرصه تدريب موسمي لدى شركة التنفيذى في مطار الملك خالد بالرياض الي تخصصهم سياحة او ماشابه والتقديم متاح حالياً في صفحتهم على لنكدان"
+      },
+      "evidence": {
+        "company": "شركة التنفيذى",
+        "deadline": null,
+        "description": "يوجد فرصه تدريب موسمي لدى شركة التنفيذى في مطار الملك خالد بالرياض الي تخصصهم سياحة او ماشابه والتقديم متاح حالياً في صفحتهم على لنكدان",
+        "location": "مطار الملك خالد بالرياض"
+      },
+      "is_opportunity": true,
+      "location": "King Khalid Airport, Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "internship",
+      "url": "https://www.linkedin.com/jobs/view/4460710853/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4460710853/"
+      ],
+      "message_id": 5688,
+      "permalink": "https://t.me/SALTRAI/5688",
+      "posted_at": "2026-09-13T12:06:06+00:00",
+      "text": "يوجد فرصه تدريب موسمي لدى شركة التنفيذى في مطار الملك خالد بالرياض الي تخصصهم سياحة او ماشابه والتقديم متاح حالياً في صفحتهم على لنكدان\n\nhttps://www.linkedin.com/jobs/view/4460710853/"
+    }
+  },
+  "SALTRAI:5689": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T16:25:41+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "مجموعة مبادرات المستقبل",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن."
+      },
+      "evidence": {
+        "company": "مجموعة مبادرات المستقبل",
+        "deadline": null,
+        "description": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.",
+        "location": "جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني للطالبات",
+      "type": "coop",
+      "url": "https://forms.gle/1dkwgYcSuH7p8qF29"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/1dkwgYcSuH7p8qF29"
+      ],
+      "message_id": 5689,
+      "permalink": "https://t.me/SALTRAI/5689",
+      "posted_at": "2026-09-13T12:06:06+00:00",
+      "text": "📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالمكان: جدة\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
+    }
+  },
+  "SALTRAI:5692": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T16:25:59+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Mubadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن."
+      },
+      "evidence": {
+        "company": "مجموعة مبادرات المستقبل",
+        "deadline": null,
+        "description": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.",
+        "location": "بجدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني للطالبات",
+      "type": "coop",
+      "url": "https://forms.gle/1dkwgYcSuH7p8qF29"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/1dkwgYcSuH7p8qF29"
+      ],
+      "message_id": 5692,
+      "permalink": "https://t.me/SALTRAI/5692",
+      "posted_at": "2026-09-13T12:06:06+00:00",
+      "text": "📢 فرصة تدريب تعاوني للطالبات\nبجدة\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
