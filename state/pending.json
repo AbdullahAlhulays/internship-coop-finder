@@ -538,8 +538,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T16:23:49+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T16:26:29+00:00",
+      "status": "sent",
+      "telegram_message_id": 238
     },
     "extracted": {
       "company": "Majmouat Mabadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
@@ -584,8 +585,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T16:24:42+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T16:26:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 239
     },
     "extracted": {
       "company": "شركة السيف الأمنية",
@@ -631,8 +633,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T16:25:18+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T16:26:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 240
     },
     "extracted": {
       "company": "شركة التنفيذى",
@@ -677,8 +680,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T16:25:41+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T16:26:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 241
     },
     "extracted": {
       "company": "مجموعة مبادرات المستقبل",
@@ -723,8 +727,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T16:25:59+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T16:26:31+00:00",
+      "status": "sent",
+      "telegram_message_id": 242
     },
     "extracted": {
       "company": "Mubadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
