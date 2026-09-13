@@ -1526,5 +1526,189 @@
       "posted_at": "2026-09-05T08:15:28+00:00",
       "text": "#التدريب_التعاوني #الرياض\n\nشركة سيف الامنية تابعة للصندوق\n\nللتقديم______________________"
     }
+  },
+  "nobthacv1:2147": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T06:17:19+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "moneymoon | موني مون",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات المستهدفة:\nتصميم المنتجات وتجربة المستخدم UX/UI\nالبرمجة\nتخصصات تقنية ذات صلة\nالمتطلبات:\nأن يكون التدريب ضمن برنامج COOP.\nالتخصص المناسب لطبيعة الفرصة."
+      },
+      "evidence": {
+        "company": "موني مون | moneymoon",
+        "deadline": null,
+        "description": "التخصصات المستهدفة:\nتصميم المنتجات وتجربة المستخدم UX/UI\nالبرمجة\nتخصصات تقنية ذات صلة\nالمتطلبات:\nأن يكون التدريب ضمن برنامج COOP.\nالتخصص المناسب لطبيعة الفرصة.",
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني في مجالات التصميم وتجربة المستخدم والبرمجة",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4463536571&f_C=93377757&geoId=92000000&keywords=Coop&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true&trk=job-results_see-all-jobs-link"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/search/?currentJobId=4463536571&amp;f_C=93377757&amp;geoId=92000000&amp;keywords=Coop&amp;origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&amp;refresh=true&amp;trk=job-results_see-all-jobs-link"
+      ],
+      "message_id": 2147,
+      "permalink": "https://t.me/nobthacv1/2147",
+      "posted_at": "2026-09-13T04:55:36+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\nشركة موني مون | moneymoon\nتعلن عن فرص تدريب تعاوني في مجالات التصميم وتجربة المستخدم والبرمجة.\nالتخصصات المستهدفة:\nتصميم المنتجات وتجربة المستخدم UX/UI\nالبرمجة\nتخصصات تقنية ذات صلة\nالمتطلبات:\nأن يكون التدريب ضمن برنامج COOP.\nالتخصص المناسب لطبيعة الفرصة.\n\nرابط التقديم____________"
+    }
+  },
+  "nobthacv1:2148": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T06:17:43+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Riyadh Air | شركة طيران الرياض",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "برنامج التدريب التعاوني (COOP Training) لطلاب وطالبات الجامعات السعوديين، بهدف اكتساب خبرة عملية حقيقية والمشاركة في مشاريع وطنية ضمن بيئة عمل احترافية وديناميكية.\n\nالتخصصات المستهدفة:\n• لم تُحدد تخصصات معينة\n\nالمتطلبات:\n• سعودي/سعودية الجنسية\n• طالب مسجل في برنامج يتطلب تدريبًا تعاونيًا\n• معدل تراكمي لا يقل عن 3 من 5 أو 2 من 4\n• تقديم خطاب تدريب من الجامعة\n• التفرغ الكامل للعمل في الرياض (9 صباحًا – 5 مساءً، من الأحد إلى الخميس)\n• إجادة اللغتين العربية والإنجليزية\n• الجدية، الاحترافية، والرغبة في التعلم والتطور"
+      },
+      "evidence": {
+        "company": "شركة طيران الرياض (Riyadh Air)",
+        "deadline": null,
+        "description": "برنامج التدريب التعاوني (COOP Training) لطلاب وطالبات الجامعات السعوديين، بهدف اكتساب خبرة عملية حقيقية والمشاركة في مشاريع وطنية ضمن بيئة عمل احترافية وديناميكية.\n\nالتخصصات المستهدفة:\n• لم تُحدد تخصصات معينة\n\nالمتطلبات:\n• سعودي/سعودية الجنسية\n• طالب مسجل في برنامج يتطلب تدريبًا تعاونيًا\n• معدل تراكمي لا يقل عن 3 من 5 أو 2 من 4\n• تقديم خطاب تدريب من الجامعة\n• التفرغ الكامل للعمل في الرياض (9 صباحًا – 5 مساءً، من الأحد إلى الخميس)\n• إجادة اللغتين العربية والإنجليزية\n• الجدية، الاحترافية، والرغبة في التعلم والتطور",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "برنامج التدريب التعاوني (COOP Training)",
+      "type": "coop",
+      "url": "https://careers-riyadhair.icims.com/jobs/2540/co-op/login"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://careers-riyadhair.icims.com/jobs/2540/co-op/login"
+      ],
+      "message_id": 2148,
+      "permalink": "https://t.me/nobthacv1/2148",
+      "posted_at": "2026-09-13T04:57:20+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\n\n⚠️ البرنامج ممكن يقبل دبلوم و بكالوريوس\n\nلان كاتبين في الشروط\na degree program\n\nوفي باقي الاعلان كتبو متطلبات الجامعة\n————————————\nشركة طيران الرياض (Riyadh Air) تعلن عن فتح باب التقديم في برنامج التدريب التعاوني (COOP Training) لطلاب وطالبات الجامعات السعوديين، بهدف اكتساب خبرة عملية حقيقية والمشاركة في مشاريع وطنية ضمن بيئة عمل احترافية وديناميكية.\n\nالتخصصات المستهدفة:\n• لم تُحدد تخصصات معينة\n\nالمتطلبات:\n• سعودي/سعودية الجنسية\n• طالب مسجل في برنامج يتطلب تدريبًا تعاونيًا\n• معدل تراكمي لا يقل عن 3 من 5 أو 2 من 4\n• تقديم خطاب تدريب من الجامعة\n• التفرغ الكامل للعمل في الرياض (9 صباحًا – 5 مساءً، من الأحد إلى الخميس)\n• إجادة اللغتين العربية والإنجليزية\n• الجدية، الاحترافية، والرغبة في التعلم والتطور\n\nللتقديم🔗🔗"
+    }
+  },
+  "nobthacv1:2150": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T06:18:23+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "WSP in the Middle East",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات المستهدفة:\nالهندسة الميكانيكية\nهندسة تنسيق المواقع\nالهندسة المعمارية\nا لهندسة الكهربائية\nالهندسة الزراعية\n\nالمتطلبات:\n\nسعودي الجنسية.\nطالب بكالوريوس حالي في الهندسة الميكانيكية.\nالتدريب التعاوني متطلب إلزامي للتخرج.\nخطاب رسمي من الجامعة يثبت متطلب التدريب وفترته.\nالسجل الأكاديمي.\nإجادة Microsoft Office.\nمهارات تواصل وعلاقات جيدة.\nمستوى أكاديمي جيد.\nالأهلية للتسجيل في برنامج COOP عبر Qiwa/HRDF حيثما ينطبق.\n\nمدة التدريب: 3 أشهر، وفق متطلبات الجامعة."
+      },
+      "evidence": {
+        "company": "WSP in the Middle East",
+        "deadline": null,
+        "description": "التخصصات المستهدفة:\nالهندسة الميكانيكية\nهندسة تنسيق المواقع\nالهندسة المعمارية\nا لهندسة الكهربائية\nالهندسة الزراعية\n\nالمتطلبات:\n\nسعودي الجنسية.\nطالب بكالوريوس حالي في الهندسة الميكانيكية.\nالتدريب التعاوني متطلب إلزامي للتخرج.\nخطاب رسمي من الجامعة يثبت متطلب التدريب وفترته.\nالسجل الأكاديمي.\nإجادة Microsoft Office.\nمهارات تواصل وعلاقات جيدة.\nمستوى أكاديمي جيد.\nالأهلية للتسجيل في برنامج COOP عبر Qiwa/HRDF حيثما ينطبق.\n\nمدة التدريب: 3 أشهر، وفق متطلبات الجامعة.",
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4461168411&f_C=3882285&f_E=1&geoId=92000000&keywords=Coop&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true&sortBy=R&trk=top-card_top-card-secondary-button-top-card-secondary-cta"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.linkedin.com/jobs/search/?currentJobId=4461168411&amp;f_C=3882285&amp;f_E=1&amp;geoId=92000000&amp;keywords=Coop&amp;origin=JOB_SEARCH_PAGE_JOB_FILTER&amp;refresh=true&amp;sortBy=R&amp;trk=top-card_top-card-secondary-button-top-card-secondary-cta"
+      ],
+      "message_id": 2150,
+      "permalink": "https://t.me/nobthacv1/2150",
+      "posted_at": "2026-09-13T05:01:53+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nWSP in the Middle East تعلن عن برنامج التدريب التعاوني\n\nالتخصصات المستهدفة:\nالهندسة الميكانيكية\nهندسة تنسيق المواقع\nالهندسة المعمارية\nا لهندسة الكهربائية\nالهندسة الزراعية\n\nالمتطلبات:\n\nسعودي الجنسية.\nطالب بكالوريوس حالي في الهندسة الميكانيكية.\nالتدريب التعاوني متطلب إلزامي للتخرج.\nخطاب رسمي من الجامعة يثبت متطلب التدريب وفترته.\nالسجل الأكاديمي.\nإجادة Microsoft Office.\nمهارات تواصل وعلاقات جيدة.\nمستوى أكاديمي جيد.\nالأهلية للتسجيل في برنامج COOP عبر Qiwa/HRDF حيثما ينطبق.\n\nمدة التدريب: 3 أشهر، وفق متطلبات الجامعة.\n\nرابط التقديم________________"
+    }
+  },
+  "nobthacv1:2151": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T06:18:50+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Cognna",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تخصصات المستهدفة:\n\nتخصصات الأمن السيبراني والتخصصات التقنية ذات الصلة.\n\nالمتطلبات:\n\nالقدرة على الالتزام بتدريب تعاوني متواصل لمدة 6 أشهر، بدوام كامل أو قريب من الكامل حسب أنظمة الجامعة.\nمعرفة أساسية بالبرمجة والـ Scripting.\nمعرفة أساسية بالسجلات والأنظمة مثل Windows Event Logs وSyslog.\nالاهتمام بتحليل التهديدات والبيانات.\nمعرفة MITRE ATT&CK تعتبر ميزة.\nخبرة باستخدام SIEM/XDR أو بناء Home Lab تعتبر ميزة.\nمهارات تحليلية وكتابية جيدة.\n\nمدة التدريب: 6 أشهر.\n\nالمزايا:\n\nالعمل على منتجات أمن سيبراني حقيقية.\nالعمل الحضوري في مكتب المدينة المنورة.\nشهادات وتدريبات وفرص لتطوير المهارات.\nالعمل مع فرق Threat Intelligence وIncident Response وPlatform Engineering"
+      },
+      "evidence": {
+        "company": "Cognna",
+        "deadline": null,
+        "description": "تخصصات المستهدفة:\n\nتخصصات الأمن السيبراني والتخصصات التقنية ذات الصلة.\n\nالمتطلبات:\n\nالقدرة على الالتزام بتدريب تعاوني متواصل لمدة 6 أشهر، بدوام كامل أو قريب من الكامل حسب أنظمة الجامعة.\nمعرفة أساسية بالبرمجة والـ Scripting.\nمعرفة أساسية بالسجلات والأنظمة مثل Windows Event Logs وSyslog.\nالاهتمام بتحليل التهديدات والبيانات.\nمعرفة MITRE ATT&CK تعتبر ميزة.\nخبرة باستخدام SIEM/XDR أو بناء Home Lab تعتبر ميزة.\nمهارات تحليلية وكتابية جيدة.\n\nمدة التدريب: 6 أشهر.\n\nالمزايا:\n\nالعمل على منتجات أمن سيبراني حقيقية.\nالعمل الحضوري في مكتب المدينة المنورة.\nشهادات وتدريبات وفرص لتطوير المهارات.\nالعمل مع فرق Threat Intelligence وIncident Response وPlatform Engineering",
+        "location": "#المدينة_المنورة"
+      },
+      "is_opportunity": true,
+      "location": "Medina, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Threat Detection Co-op",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/threat-detection-coop-at-cognna-4464619040/"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://www.linkedin.com/jobs/view/threat-detection-coop-at-cognna-4464619040/"
+      ],
+      "message_id": 2151,
+      "permalink": "https://t.me/nobthacv1/2151",
+      "posted_at": "2026-09-13T05:10:11+00:00",
+      "text": "🎓 #التدريب_التعاوني | #المدينة_المنورة\n\nCOGNNA تعلن عن فرصة تدريب تعاوني في مجال اكتشاف التهديدات السيبرانية.\n\nالتخصصات المستهدفة:\n\nتخصصات الأمن السيبراني والتخصصات التقنية ذات الصلة.\n\nالمتطلبات:\n\nالقدرة على الالتزام بتدريب تعاوني متواصل لمدة 6 أشهر، بدوام كامل أو قريب من الكامل حسب أنظمة الجامعة.\nمعرفة أساسية بالبرمجة والـ Scripting.\nمعرفة أساسية بالسجلات والأنظمة مثل Windows Event Logs وSyslog.\nالاهتمام بتحليل التهديدات والبيانات.\nمعرفة MITRE ATT&CK تعتبر ميزة.\nخبرة باستخدام SIEM/XDR أو بناء Home Lab تعتبر ميزة.\nمهارات تحليلية وكتابية جيدة.\n\nمدة التدريب: 6 أشهر.\n\nالمزايا:\n\nالعمل على منتجات أمن سيبراني حقيقية.\nالعمل الحضوري في مكتب المدينة المنورة.\nشهادات وتدريبات وفرص لتطوير المهارات.\nالعمل مع فرق Threat Intelligence وIncident Response وPlatform Engineering\n\nللتقديم ________________]___"
+    }
   }
 }
