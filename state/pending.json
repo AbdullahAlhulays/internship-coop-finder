@@ -1535,8 +1535,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T06:17:19+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T06:19:18+00:00",
+      "status": "sent",
+      "telegram_message_id": 232
     },
     "extracted": {
       "company": "moneymoon | موني مون",
@@ -1581,8 +1582,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T06:17:43+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T06:19:19+00:00",
+      "status": "sent",
+      "telegram_message_id": 233
     },
     "extracted": {
       "company": "Riyadh Air | شركة طيران الرياض",
@@ -1627,8 +1629,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T06:18:23+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T06:19:19+00:00",
+      "status": "sent",
+      "telegram_message_id": 234
     },
     "extracted": {
       "company": "WSP in the Middle East",
@@ -1673,8 +1676,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T06:18:50+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T06:19:20+00:00",
+      "status": "sent",
+      "telegram_message_id": 235
     },
     "extracted": {
       "company": "Cognna",
