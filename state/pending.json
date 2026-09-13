@@ -490,8 +490,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T12:04:37+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T12:05:26+00:00",
+      "status": "sent",
+      "telegram_message_id": 236
     },
     "extracted": {
       "company": "apt-watch.com",
@@ -1676,8 +1677,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-13T12:05:23+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-13T12:05:26+00:00",
+      "status": "sent",
+      "telegram_message_id": 237
     },
     "extracted": {
       "company": "Visa",
