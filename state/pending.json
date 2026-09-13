@@ -482,6 +482,53 @@
       "text": "(🔴) وظائف وبرنامج تدريب تعاوني لدى (الشركة السعودية للخدمات الأرضية):\n\n▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر).\n\nhttps://www.jobs4.net/32172"
     }
   },
+  "SALTRAI:5672": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T12:04:37+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "apt-watch.com",
+      "confidence": 0.8,
+      "contact": {
+        "type": "email",
+        "value": "hr@apt-watch.com"
+      },
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "hr@apt-watch.com",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://lnkd.in/p/d6UQVQY9"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://lnkd.in/p/d6UQVQY9"
+      ],
+      "message_id": 5672,
+      "permalink": "https://t.me/SALTRAI/5672",
+      "posted_at": "2026-09-13T10:24:04+00:00",
+      "text": "#تدريب #تدريب_تعاوني\n\nhr@apt-watch.com\n\nhttps://lnkd.in/p/d6UQVQY9"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
@@ -1619,6 +1666,52 @@
       "permalink": "https://t.me/nobthacv1/2148",
       "posted_at": "2026-09-13T04:57:20+00:00",
       "text": "🎓 #التدريب_التعاوني | #الرياض\n\n⚠️ البرنامج ممكن يقبل دبلوم و بكالوريوس\n\nلان كاتبين في الشروط\na degree program\n\nوفي باقي الاعلان كتبو متطلبات الجامعة\n————————————\nشركة طيران الرياض (Riyadh Air) تعلن عن فتح باب التقديم في برنامج التدريب التعاوني (COOP Training) لطلاب وطالبات الجامعات السعوديين، بهدف اكتساب خبرة عملية حقيقية والمشاركة في مشاريع وطنية ضمن بيئة عمل احترافية وديناميكية.\n\nالتخصصات المستهدفة:\n• لم تُحدد تخصصات معينة\n\nالمتطلبات:\n• سعودي/سعودية الجنسية\n• طالب مسجل في برنامج يتطلب تدريبًا تعاونيًا\n• معدل تراكمي لا يقل عن 3 من 5 أو 2 من 4\n• تقديم خطاب تدريب من الجامعة\n• التفرغ الكامل للعمل في الرياض (9 صباحًا – 5 مساءً، من الأحد إلى الخميس)\n• إجادة اللغتين العربية والإنجليزية\n• الجدية، الاحترافية، والرغبة في التعلم والتطور\n\nللتقديم🔗🔗"
+    }
+  },
+  "nobthacv1:2149": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-13T12:05:23+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Visa",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "Visa تعلن عن برنامج التدريب التعاوني للطلاب السعوديين، ويبدأ في يناير 2027.\n\nالتخصصات المستهدفة:\n\nالاقتصاد / الاقتصاد المالي\nالتسويق\nإدارة الأعمال\nالمالية\nتقنية المعلومات / MIS\nالهندسة\n\nالمتطلبات:\n\nطالب بكالوريوس حالي.\nمتوقع التخرج في 2027.\nمتاح للتدريب التعاوني بدوام كامل ابتداءً من يناير 2027.\nسعودي الجنسية.\nسجل أكاديمي ممتاز.\nإجادة Excel وWord وPowerPoint.\nمعرفة واهتمام بأدوات الذكاء الاصطناعي.\nالتدريب يتطلب الحضور للمكتب 3 أيام على الأقل أسبوعيًا.\n\nمجالات التدريب:\n\nالاستشارات\nتطوير الأعمال\nالمالية\nالتسويق"
+      },
+      "evidence": {
+        "company": "Visa",
+        "deadline": null,
+        "description": "Visa تعلن عن برنامج التدريب التعاوني للطلاب السعوديين، ويبدأ في يناير 2027.\n\nالتخصصات المستهدفة:\n\nالاقتصاد / الاقتصاد المالي\nالتسويق\nإدارة الأعمال\nالمالية\nتقنية المعلومات / MIS\nالهندسة\n\nالمتطلبات:\n\nطالب بكالوريوس حالي.\nمتوقع التخرج في 2027.\nمتاح للتدريب التعاوني بدوام كامل ابتداءً من يناير 2027.\nسعودي الجنسية.\nسجل أكاديمي ممتاز.\nإجادة Excel وWord وPowerPoint.\nمعرفة واهتمام بأدوات الذكاء الاصطناعي.\nالتدريب يتطلب الحضور للمكتب 3 أيام على الأقل أسبوعيًا.\n\nمجالات التدريب:\n\nالاستشارات\nتطوير الأعمال\nالمالية\nالتسويق",
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Cooperative Training Program",
+      "type": "coop",
+      "url": "https://sa.linkedin.com/jobs/view/coop-trainee-for-current-students-second-semester-coop-starting-in-january-2027-at-visa-4464024283"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://sa.linkedin.com/jobs/view/coop-trainee-for-current-students-second-semester-coop-starting-in-january-2027-at-visa-4464024283"
+      ],
+      "message_id": 2149,
+      "permalink": "https://t.me/nobthacv1/2149",
+      "posted_at": "2026-09-13T04:59:49+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nVisa تعلن عن برنامج التدريب التعاوني للطلاب السعوديين، ويبدأ في يناير 2027.\n\nالتخصصات المستهدفة:\n\nالاقتصاد / الاقتصاد المالي\nالتسويق\nإدارة الأعمال\nالمالية\nتقنية المعلومات / MIS\nالهندسة\n\nالمتطلبات:\n\nطالب بكالوريوس حالي.\nمتوقع التخرج في 2027.\nمتاح للتدريب التعاوني بدوام كامل ابتداءً من يناير 2027.\nسعودي الجنسية.\nسجل أكاديمي ممتاز.\nإجادة Excel وWord وPowerPoint.\nمعرفة واهتمام بأدوات الذكاء الاصطناعي.\nالتدريب يتطلب الحضور للمكتب 3 أيام على الأقل أسبوعيًا.\n\nمجالات التدريب:\n\nالاستشارات\nتطوير الأعمال\nالمالية\nالتسويق\n\nرابط التقديم ________________⁠"
     }
   },
   "nobthacv1:2150": {
