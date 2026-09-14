@@ -1811,53 +1811,6 @@
       "text": "#التدريب_التعاوني #الرياض\n\nشركة سيف الامنية تابعة للصندوق\n\nللتقديم______________________"
     }
   },
-  "nobthacv1:2147": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-13T06:19:18+00:00",
-      "status": "sent",
-      "telegram_message_id": 232
-    },
-    "extracted": {
-      "company": "moneymoon | موني مون",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "التخصصات المستهدفة:\nتصميم المنتجات وتجربة المستخدم UX/UI\nالبرمجة\nتخصصات تقنية ذات صلة\nالمتطلبات:\nأن يكون التدريب ضمن برنامج COOP.\nالتخصص المناسب لطبيعة الفرصة."
-      },
-      "evidence": {
-        "company": "موني مون | moneymoon",
-        "deadline": null,
-        "description": "التخصصات المستهدفة:\nتصميم المنتجات وتجربة المستخدم UX/UI\nالبرمجة\nتخصصات تقنية ذات صلة\nالمتطلبات:\nأن يكون التدريب ضمن برنامج COOP.\nالتخصص المناسب لطبيعة الفرصة.",
-        "location": "#الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "تدريب تعاوني في مجالات التصميم وتجربة المستخدم والبرمجة",
-      "type": "coop",
-      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4463536571&f_C=93377757&geoId=92000000&keywords=Coop&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true&trk=job-results_see-all-jobs-link"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://www.linkedin.com/jobs/search/?currentJobId=4463536571&amp;f_C=93377757&amp;geoId=92000000&amp;keywords=Coop&amp;origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&amp;refresh=true&amp;trk=job-results_see-all-jobs-link"
-      ],
-      "message_id": 2147,
-      "permalink": "https://t.me/nobthacv1/2147",
-      "posted_at": "2026-09-13T04:55:36+00:00",
-      "text": "🎓 #التدريب_التعاوني | #الرياض\nشركة موني مون | moneymoon\nتعلن عن فرص تدريب تعاوني في مجالات التصميم وتجربة المستخدم والبرمجة.\nالتخصصات المستهدفة:\nتصميم المنتجات وتجربة المستخدم UX/UI\nالبرمجة\nتخصصات تقنية ذات صلة\nالمتطلبات:\nأن يكون التدريب ضمن برنامج COOP.\nالتخصص المناسب لطبيعة الفرصة.\n\nرابط التقديم____________"
-    }
-  },
   "nobthacv1:2148": {
     "decision": {
       "action": "add",

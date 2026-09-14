@@ -1054,6 +1054,14 @@ const companyRecords = [
     type: "Internship",
     description: {"ar": "نبحث عن المهتمين والمتخصصين في:\n\nالتصميم\nالمونتاج\nالتصوير\nكتابة المحتوى\nإدارة الفعاليات\nالعلاقات العامة\nالتسويق\nهندسة الصوتيات\nاضاءات\nالإخبار الصحفية", "en": "We are looking for those interested and specialized in:\n\nDesign\nMontage\nPhotography\nContent writing\nEvent management\nPublic relations\nMarketing\nAcoustics engineering\nIlluminations\nPress releases"},
     addedAt: "2026-09-08T12:05:27+03:00",
+  },
+  {
+    name: "moneymoon | موني مون",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/search/?currentJobId=4463536571&f_C=93377757&geoId=92000000&keywords=Coop&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true&trk=job-results_see-all-jobs-link",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات المستهدفة:\nتصميم المنتجات وتجربة المستخدم UX/UI\nالبرمجة\nتخصصات تقنية ذات صلة\nالمتطلبات:\nأن يكون التدريب ضمن برنامج COOP.\nالتخصص المناسب لطبيعة الفرصة.", "en": "Target disciplines:\nProduct design and UX/UI\nProgramming\nRelevant technical disciplines\nRequirements:\nThe training should be within the Coop program.\nThe right specialization for the nature of the opportunity."},
+    addedAt: "2026-09-14T09:51:38+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
