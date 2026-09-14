@@ -1526,52 +1526,5 @@
       "posted_at": "2026-09-05T08:15:28+00:00",
       "text": "#التدريب_التعاوني #الرياض\n\nشركة سيف الامنية تابعة للصندوق\n\nللتقديم______________________"
     }
-  },
-  "nobthacv1:2149": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-13T12:05:26+00:00",
-      "status": "sent",
-      "telegram_message_id": 237
-    },
-    "extracted": {
-      "company": "Visa",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "Visa تعلن عن برنامج التدريب التعاوني للطلاب السعوديين، ويبدأ في يناير 2027.\n\nالتخصصات المستهدفة:\n\nالاقتصاد / الاقتصاد المالي\nالتسويق\nإدارة الأعمال\nالمالية\nتقنية المعلومات / MIS\nالهندسة\n\nالمتطلبات:\n\nطالب بكالوريوس حالي.\nمتوقع التخرج في 2027.\nمتاح للتدريب التعاوني بدوام كامل ابتداءً من يناير 2027.\nسعودي الجنسية.\nسجل أكاديمي ممتاز.\nإجادة Excel وWord وPowerPoint.\nمعرفة واهتمام بأدوات الذكاء الاصطناعي.\nالتدريب يتطلب الحضور للمكتب 3 أيام على الأقل أسبوعيًا.\n\nمجالات التدريب:\n\nالاستشارات\nتطوير الأعمال\nالمالية\nالتسويق"
-      },
-      "evidence": {
-        "company": "Visa",
-        "deadline": null,
-        "description": "Visa تعلن عن برنامج التدريب التعاوني للطلاب السعوديين، ويبدأ في يناير 2027.\n\nالتخصصات المستهدفة:\n\nالاقتصاد / الاقتصاد المالي\nالتسويق\nإدارة الأعمال\nالمالية\nتقنية المعلومات / MIS\nالهندسة\n\nالمتطلبات:\n\nطالب بكالوريوس حالي.\nمتوقع التخرج في 2027.\nمتاح للتدريب التعاوني بدوام كامل ابتداءً من يناير 2027.\nسعودي الجنسية.\nسجل أكاديمي ممتاز.\nإجادة Excel وWord وPowerPoint.\nمعرفة واهتمام بأدوات الذكاء الاصطناعي.\nالتدريب يتطلب الحضور للمكتب 3 أيام على الأقل أسبوعيًا.\n\nمجالات التدريب:\n\nالاستشارات\nتطوير الأعمال\nالمالية\nالتسويق",
-        "location": "#الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Cooperative Training Program",
-      "type": "coop",
-      "url": "https://sa.linkedin.com/jobs/view/coop-trainee-for-current-students-second-semester-coop-starting-in-january-2027-at-visa-4464024283"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://sa.linkedin.com/jobs/view/coop-trainee-for-current-students-second-semester-coop-starting-in-january-2027-at-visa-4464024283"
-      ],
-      "message_id": 2149,
-      "permalink": "https://t.me/nobthacv1/2149",
-      "posted_at": "2026-09-13T04:59:49+00:00",
-      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nVisa تعلن عن برنامج التدريب التعاوني للطلاب السعوديين، ويبدأ في يناير 2027.\n\nالتخصصات المستهدفة:\n\nالاقتصاد / الاقتصاد المالي\nالتسويق\nإدارة الأعمال\nالمالية\nتقنية المعلومات / MIS\nالهندسة\n\nالمتطلبات:\n\nطالب بكالوريوس حالي.\nمتوقع التخرج في 2027.\nمتاح للتدريب التعاوني بدوام كامل ابتداءً من يناير 2027.\nسعودي الجنسية.\nسجل أكاديمي ممتاز.\nإجادة Excel وWord وPowerPoint.\nمعرفة واهتمام بأدوات الذكاء الاصطناعي.\nالتدريب يتطلب الحضور للمكتب 3 أيام على الأقل أسبوعيًا.\n\nمجالات التدريب:\n\nالاستشارات\nتطوير الأعمال\nالمالية\nالتسويق\n\nرابط التقديم ________________⁠"
-    }
   }
 }
