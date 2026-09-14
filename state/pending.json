@@ -1526,5 +1526,51 @@
       "posted_at": "2026-09-05T08:15:28+00:00",
       "text": "#التدريب_التعاوني #الرياض\n\nشركة سيف الامنية تابعة للصندوق\n\nللتقديم______________________"
     }
+  },
+  "nobthacv1:2153": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-14T14:09:30+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Jasara | جسارة",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "يمنح برنامج التدريب التعاوني في جسارة الطلاب فرصة لاكتساب خبرة عملية تدعم مسيرتهم المهنية"
+      },
+      "evidence": {
+        "company": "جسارة",
+        "deadline": null,
+        "description": "يمنح برنامج التدريب التعاوني في جسارة الطلاب فرصة لاكتساب خبرة عملية تدعم مسيرتهم المهنية",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://jasarapmc.com/ar/careers/"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://jasarapmc.com/ar/careers/"
+      ],
+      "message_id": 2153,
+      "permalink": "https://t.me/nobthacv1/2153",
+      "posted_at": "2026-09-14T10:53:02+00:00",
+      "text": "بالمعرفة.. والتجربة تُصنع الخبرة ✨\n\nيمنح برنامج التدريب التعاوني في جسارة الطلاب فرصة لاكتساب خبرة عملية تدعم مسيرتهم المهنية !\n\nللتقديم_________________"
+    }
   }
 }
