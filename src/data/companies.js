@@ -1071,6 +1071,16 @@ const companyRecords = [
     description: {"ar": "التخصصات المستهدفة:\nالهندسة الميكانيكية\nهندسة تنسيق المواقع\nالهندسة المعمارية\nا لهندسة الكهربائية\nالهندسة الزراعية\n\nالمتطلبات:\n\nسعودي الجنسية.\nطالب بكالوريوس حالي في الهندسة الميكانيكية.\nالتدريب التعاوني متطلب إلزامي للتخرج.\nخطاب رسمي من الجامعة يثبت متطلب التدريب وفترته.\nالسجل الأكاديمي.\nإجادة Microsoft Office.\nمهارات تواصل وعلاقات جيدة.\nمستوى أكاديمي جيد.\nالأهلية للتسجيل في برنامج COOP عبر Qiwa/HRDF حيثما ينطبق.\n\nمدة التدريب: 3 أشهر، وفق متطلبات الجامعة.", "en": "Target disciplines:\nMechanical Engineering\nLandscape Architecture\nArchitecture\nElectrical Engineering\nAgricultural Engineering\n\nPrerequisite:\n\nSaudi National.\nA current bachelor's student in mechanical engineering.\nCooperative training is a mandatory requirement for graduation.\nAn official letter from the university proving the training requirement and duration.\nAcademic record.\nProficiency in Microsoft Office.\nGood communication and relationship skills.\nGood academic level.\nEligibility to enroll in the COOP program via Qiwa/HRDF where applicable.\n\nDuration of the training: 3 months, according to the requirements of the university."},
     requiresLetter: true,
     addedAt: "2026-09-14T09:52:05+03:00",
+  },
+  {
+    name: "Riyadh Air | شركة طيران الرياض",
+    logo: {"domain": "careers-riyadhair.icims.com", "file": "riyadh-air.jpg"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://careers-riyadhair.icims.com/jobs/2540/co-op/login",
+    type: "CO-OP Training",
+    description: {"ar": "برنامج التدريب التعاوني (COOP Training) لطلاب وطالبات الجامعات السعوديين، بهدف اكتساب خبرة عملية حقيقية والمشاركة في مشاريع وطنية ضمن بيئة عمل احترافية وديناميكية.\n\nالتخصصات المستهدفة:\n• لم تُحدد تخصصات معينة\n\nالمتطلبات:\n• سعودي/سعودية الجنسية\n• طالب مسجل في برنامج يتطلب تدريبًا تعاونيًا\n• معدل تراكمي لا يقل عن 3 من 5 أو 2 من 4\n• تقديم خطاب تدريب من الجامعة\n• التفرغ الكامل للعمل في الرياض (9 صباحًا – 5 مساءً، من الأحد إلى الخميس)\n• إجادة اللغتين العربية والإنجليزية\n• الجدية، الاحترافية، والرغبة في التعلم والتطور", "en": "Cooperative Training Program (Coop Training) for Saudi university students, with the aim of gaining real practical experience and participating in national projects within a professional and dynamic work environment.\n\nTarget disciplines:\n• No specific specializations have been identified\n\nRequirements:\n• Saudi National\n• A student enrolled in a program that requires collaborative training\n• A minimum GPA of 3 out of 5 or 2 out of 4\n• Provide a letter of training from the university\n• Full time in Riyadh (9am – 5pm, Sunday to Thursday)\n• Fluency in Arabic and English\n• Seriousness, professionalism, and the desire to learn and develop"},
+    requiresLetter: true,
+    addedAt: "2026-09-14T09:52:22+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
