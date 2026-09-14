@@ -482,54 +482,6 @@
       "text": "(🔴) وظائف وبرنامج تدريب تعاوني لدى (الشركة السعودية للخدمات الأرضية):\n\n▪️ الشواغر (دوام كامل - دوام جزئي - تدريب تعاوني).\n▪️ المؤهلات (الدبلوم - البكالوريوس).\n📍 أماكن العمل (الرياض - جدة - وادي الدواسر).\n\nhttps://www.jobs4.net/32172"
     }
   },
-  "SALTRAI:5686": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-13T16:26:30+00:00",
-      "status": "sent",
-      "telegram_message_id": 239
-    },
-    "extracted": {
-      "company": "شركة السيف الأمنية",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد"
-      },
-      "evidence": {
-        "company": "شركة السيف الأمنية",
-        "deadline": null,
-        "description": "تعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني",
-      "type": "coop",
-      "url": "http://t.co/RHrFPf9yjM"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "http://t.co/RHrFPf9yjM"
-      ],
-      "message_id": 5686,
-      "permalink": "https://t.me/SALTRAI/5686",
-      "posted_at": "2026-09-13T12:06:06+00:00",
-      "text": "🟡الفرصة رقم ٢٧٦٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n⭐ برنامج التدريب التعاوني في شركة سيف الأمنية:\n\nتعلن شركة السيف الأمنية (شركة حكومية مملوكة لصندوق الاستثمارات) عن إطلاق برنامج التدريب التعاوني للطلاب والطالبات, لتطبيق معارفهم الأكاديمية، واكسابهم خبرة عملية، وتطوير مهاراتهم للانطلاق نحو مستقبل مهني واعد\n\nرابط التقديم المباشر: t.co/RHrFPf9yjM"
-    }
-  },
   "SALTRAI:5688": {
     "decision": {
       "action": "add",
