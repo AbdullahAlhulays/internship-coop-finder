@@ -529,53 +529,6 @@
       "text": "📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالمكان: جدة\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
     }
   },
-  "SALTRAI:5692": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-09-13T16:26:31+00:00",
-      "status": "sent",
-      "telegram_message_id": 242
-    },
-    "extracted": {
-      "company": "Mubadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن."
-      },
-      "evidence": {
-        "company": "مجموعة مبادرات المستقبل",
-        "deadline": null,
-        "description": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.",
-        "location": "بجدة"
-      },
-      "is_opportunity": true,
-      "location": "Jeddah, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "فرصة تدريب تعاوني للطالبات",
-      "type": "coop",
-      "url": "https://forms.gle/1dkwgYcSuH7p8qF29"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://forms.gle/1dkwgYcSuH7p8qF29"
-      ],
-      "message_id": 5692,
-      "permalink": "https://t.me/SALTRAI/5692",
-      "posted_at": "2026-09-13T12:06:06+00:00",
-      "text": "📢 فرصة تدريب تعاوني للطالبات\nبجدة\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
