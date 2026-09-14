@@ -1062,6 +1062,15 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "التخصصات المستهدفة:\nتصميم المنتجات وتجربة المستخدم UX/UI\nالبرمجة\nتخصصات تقنية ذات صلة\nالمتطلبات:\nأن يكون التدريب ضمن برنامج COOP.\nالتخصص المناسب لطبيعة الفرصة.", "en": "Target disciplines:\nProduct design and UX/UI\nProgramming\nRelevant technical disciplines\nRequirements:\nThe training should be within the Coop program.\nThe right specialization for the nature of the opportunity."},
     addedAt: "2026-09-14T09:51:38+03:00",
+  },
+  {
+    name: "WSP in the Middle East",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/search/?currentJobId=4461168411&f_C=3882285&f_E=1&geoId=92000000&keywords=Coop&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true&sortBy=R&trk=top-card_top-card-secondary-button-top-card-secondary-cta",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات المستهدفة:\nالهندسة الميكانيكية\nهندسة تنسيق المواقع\nالهندسة المعمارية\nا لهندسة الكهربائية\nالهندسة الزراعية\n\nالمتطلبات:\n\nسعودي الجنسية.\nطالب بكالوريوس حالي في الهندسة الميكانيكية.\nالتدريب التعاوني متطلب إلزامي للتخرج.\nخطاب رسمي من الجامعة يثبت متطلب التدريب وفترته.\nالسجل الأكاديمي.\nإجادة Microsoft Office.\nمهارات تواصل وعلاقات جيدة.\nمستوى أكاديمي جيد.\nالأهلية للتسجيل في برنامج COOP عبر Qiwa/HRDF حيثما ينطبق.\n\nمدة التدريب: 3 أشهر، وفق متطلبات الجامعة.", "en": "Target disciplines:\nMechanical Engineering\nLandscape Architecture\nArchitecture\nElectrical Engineering\nAgricultural Engineering\n\nPrerequisite:\n\nSaudi National.\nA current bachelor's student in mechanical engineering.\nCooperative training is a mandatory requirement for graduation.\nAn official letter from the university proving the training requirement and duration.\nAcademic record.\nProficiency in Microsoft Office.\nGood communication and relationship skills.\nGood academic level.\nEligibility to enroll in the COOP program via Qiwa/HRDF where applicable.\n\nDuration of the training: 3 months, according to the requirements of the university."},
+    requiresLetter: true,
+    addedAt: "2026-09-14T09:52:05+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
