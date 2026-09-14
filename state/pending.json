@@ -1535,8 +1535,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-14T14:09:30+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-14T14:09:33+00:00",
+      "status": "sent",
+      "telegram_message_id": 255
     },
     "extracted": {
       "company": "Jasara | جسارة",
