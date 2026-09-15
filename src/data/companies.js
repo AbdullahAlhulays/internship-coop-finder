@@ -41,6 +41,7 @@ const companyRecords = [
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://form.typeform.com/to/WTXF0llW?typeform-source=qrcode-button",
     type: "Internship / CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-14T00:00:00+03:00",
   },
   {
@@ -176,6 +177,7 @@ const companyRecords = [
     location: "Many, Saudi Arabia",
     applicationLink: "https://forms.cloud.microsoft/pages/responsepage.aspx?id=PZi0yEa5vEuSLWvzlfhsNQ-_7ACZHS5Nujqqnqbnj-NURFVHOFI3N0k5NjZLVkoyQkIyMldZNUFBSC4u&origin=lprLink&route=shorturl",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-05-09T00:00:00+03:00",
   },
   {
@@ -368,6 +370,7 @@ const companyRecords = [
     location: "Riyadh Province, Saudi Arabia",
     applicationLink: "https://apply.workable.com/osool-1/j/F8E636FF44/",
     type: "CO-OP Training",
+    isClosed: true,
   },
   {
     name: "Mnzil | منزل",
@@ -439,6 +442,7 @@ const companyRecords = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://job-boards.eu.greenhouse.io/tamara/jobs/4792932101",
   type: "Internship / CO-OP Training",
+  isClosed: true,
 },
  {
   name: "Saudi Geological Survey | هيئة المساحة الجيولوجية السعودية",
@@ -558,6 +562,7 @@ const companyRecords = [
   location: "Jeddah and Riyadh, Saudi Arabia",
   applicationLink: "https://www.channels.com.sa/career",
   type: "Internship / CO-OP Training",
+  isClosed: true,
 },
 {
   name: "Ministry of Industry and Mineral Resources | وزارة الصناعة والثروة المعدنية",
@@ -584,6 +589,7 @@ const companyRecords = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://www.linkedin.com/jobs/view/4401003576/",
   type: "Internship",
+  isClosed: true,
 },
 {
   name: "ELM | علـم",
@@ -633,6 +639,7 @@ const companyRecords = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://forms.office.com/pages/responsepage.aspx?id=ZsJ8uMQJzECN-skuCL-ctOj-cRqbkBBKpFmiyr5xz85UM1A1VEMyUklZUDNTRFpBNkJHM1RJNjg2RC4u&route=shorturl",
   type: "CO-OP Training",
+  isClosed: true,
 },
 {
   name: "NESR | نسر",
@@ -689,6 +696,7 @@ const companyRecords = [
   location: "Riyadh, Saudi Arabia",
   applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSflG6jSvC96h7xp3gcBckHg9CJ3Haj-Yo8ByBg87k6VMc2DGw/viewform",
   type: "Internship / CO-OP Training",
+  isClosed: true,
   addedAt: "2026-05-05T00:00:00+03:00",
 },
 {
@@ -747,6 +755,7 @@ const companyRecords = [
     location: "Dhahran, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4438674076/",
     type: "Internship",
+    isClosed: true,
     description: {
       en: "Role\nJoin the technology team at Air Products' new technology center in Dhahran Techno Valley. The work focuses on data science, machine learning, and deep learning for chemical engineering and smart-sensor applications, including sound and image processing.\n\nKey responsibilities\n• Validate DS/ML/DL methods for industrial applications.\n• Help troubleshoot firmware installation and data-pipeline setup.\n• Test open-source algorithms and evaluate new developments.\n• Record and preprocess field data, including sound and images, and integrate it into application software.\n• Apply algorithms to field data, measure performance, and identify improvements.\n• Document and present test cases and best practices.\n\nRequirements\n• Familiarity with numerical methods, deep learning, machine learning, or data science.\n• Hands-on Python coding experience, or alternative coding experience in C, C++, VBA, or R.\n• Previous experience applying AI algorithms to data, sound or image processing, data fusion, or software-system integration.",
       ar: "الدور\nالانضمام إلى فريق التقنية في مركز Air Products التقني الجديد بوادي الظهران للتقنية. يركز العمل على علوم البيانات والتعلم الآلي والتعلم العميق لتطبيقات الهندسة الكيميائية والمستشعرات الذكية، بما يشمل معالجة الصوت والصور.\n\nالمهام الرئيسية\n• فهم أساليب علوم البيانات والتعلم الآلي والتعلم العميق والتحقق من ملاءمتها للتطبيقات الصناعية.\n• المساعدة في معالجة مشكلات تثبيت البرامج الثابتة وإعداد مسارات البيانات.\n• اختبار الخوارزميات مفتوحة المصدر وتقييم التطورات الجديدة.\n• تسجيل البيانات الميدانية، بما فيها الصوت والصور، ومعالجتها مسبقًا ودمجها في برمجيات التطبيقات.\n• تطبيق الخوارزميات على البيانات الميدانية وقياس الأداء وتحديد سبل تحسينه.\n• توثيق حالات الاختبار وأفضل الممارسات وعرضها.\n\nالمتطلبات\n• الإلمام بالطرق العددية أو التعلم العميق أو التعلم الآلي أو علوم البيانات.\n• خبرة عملية في البرمجة بلغة Python، أو خبرة برمجية بديلة في C أو C++ أو VBA أو R.\n• خبرة سابقة في تطبيق خوارزميات الذكاء الاصطناعي على معالجة البيانات أو الصوت أو الصور، أو دمج البيانات، أو تكامل الأنظمة البرمجية.",
@@ -765,6 +774,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4327760747/",
     type: "Internship",
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -772,6 +782,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4311872699/",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -786,6 +797,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4447920287/",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -794,6 +806,7 @@ const companyRecords = [
     applicationLink: "https://www.linkedin.com/jobs/view/4446587752/",
     type: "CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -801,6 +814,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4444128129/",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -809,6 +823,7 @@ const companyRecords = [
     applicationLink: "https://www.linkedin.com/jobs/view/4440145347/",
     type: "CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -816,6 +831,7 @@ const companyRecords = [
     location: "Jeddah, Makkah, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4452739028/",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -824,6 +840,7 @@ const companyRecords = [
     applicationLink: "https://www.linkedin.com/jobs/view/4452465800/",
     type: "CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -831,6 +848,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4444892519/",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -839,6 +857,7 @@ const companyRecords = [
     applicationLink: "https://www.linkedin.com/jobs/view/4443362182/",
     type: "CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -846,6 +865,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4440172101/",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -854,6 +874,7 @@ const companyRecords = [
     applicationLink: "https://www.linkedin.com/jobs/view/4449547087/",
     type: "CO-OP Training",
     requiresLetter: true,
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
   {
@@ -883,6 +904,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4429065414/",
     type: "CO-OP Training",
+    isClosed: true,
     addedAt: "2026-08-13T00:00:00+03:00",
   },
 
@@ -899,6 +921,7 @@ const companyRecords = [
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://careers.flyadeal.com/jobs/coop-program-2026-1782287680",
     type: "CO-OP Training",
+    isClosed: true,
     description: {"ar": "التخصصات\nالموارد البشرية\nإدارة الأعمال\nالتسويق والتسويق الرقمي\nالمالية والمحاسبة\nإدارة الطيران\nالهندسة\nتقنية المعلومات وعلوم الحاسب وهندسة البرمجيات\nالأمن السيبراني\nالذكاء الاصطناعي وعلوم البيانات\nالإحصاء\nنظم المعلومات الإدارية\nإدارة المخاطر والامتثال\nسلاسل الإمداد واللوجستيات\nالإعلام والعلاقات العامة والإعلان\n\nالمتطلبات:\nأن يكون التدريب التعاوني متطلبًا أساسيًا للتخرج من جامعة أو كلية معتمدة في السعودية\n#دبلوم #بكالوريوس\n\nسعودي الجنسية\nإجادة اللغتين العربية والإنجليزية تحدثًا وكتابة\nمهارات التواصل والعمل ضمن فريق\nالرغبة في التعلم والتطور والمساهمة الفعالة", "en": "Specialties\nHuman resources\nBusiness Administration\nMarketing and digital marketing\nFinance and accounting\nAviation management\nEngineering\nInformation technology, computer science and software engineering\nCyber security\nArtificial intelligence and data science\nStatistics\nManagement information systems\nRisk management and compliance\nSupply chains and logistics\nMedia, public relations and advertising\n\nRequirements:\nCooperative training must be a basic requirement for graduation from an accredited university or college in Saudi Arabia\n#Diploma #Bachelor's Degree\n\nSaudi nationality\nProficiency in Arabic and English, spoken and written\nCommunication skills and working within a team\nDesire to learn, develop and contribute effectively"},
     addedAt: "2026-08-23T00:06:07+03:00",
   },
@@ -914,6 +937,7 @@ const companyRecords = [
     name: "MyTrip",
     applicationLink: "https://forms.fillout.com/t/c8DySBfgBpus",
     type: "CO-OP Training",
+    isClosed: true,
     description: {"ar": "فتحنا باب التسجيل لفرص التدريب في MyTrip 🚀\nفي مجالات التقنية، التشغيل والشراكات، والتسويق والمحتوى.", "en": "We have opened registration for training opportunities at MyTrip 🚀\nIn the areas of technology, operations, partnerships, marketing and content."},
     addedAt: "2026-08-24T16:59:29+03:00",
   },
@@ -945,6 +969,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4455074817",
     type: "CO-OP Training",
+    isClosed: true,
     description: {"ar": "التخصصات المستهدفة:\nالهندسة الكهربائية\nالتسويق\nتقنية المعلومات\nالمالية\nالمحاسبة\nالموارد البشرية\n\nالمتطلبات:\nطالب في جامعة أو كلية معتمدة\nأن يكون التدريب التعاوني متطلبًا إلزاميًا للتخرج\nأن يكون التخصص مناسبًا للفرصة التدريبية\nالقدرة على الحضور في مقر التدريب بالرياض\nتقديم خطاب تدريب تعاوني رسمي من الجامعة أو الكلية\n\nالمزايا:\nساعات التدريب: 6 ساعات يوميًا\nالتدريب في القسم المرتبط بالتخصص\nتنفيذ مشروع نهائي خلال آخر شهرين من البرنامج", "en": "Target disciplines:\nElectrical Engineering\nMarketing\nInformation Technology\nFinance\nAccounting\nHuman Resources\n\nRequirements:\nStudent at an accredited university or college\nCooperative training is a mandatory requirement for graduation\nThe specialization should be suitable for the training opportunity\nAbility to attend the training headquarters in Riyadh\nProvide a formal cooperative training letter from the university or college\n\nAdvantages:\nTraining Hours: 6 hours per day\nTraining in the department related to the specialization\nImplementing a final project during the last two months of the program"},
     requiresLetter: true,
     addedAt: "2026-08-25T13:53:10+03:00",
@@ -979,6 +1004,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4457908500",
     type: "CO-OP Training",
+    isClosed: true,
     description: {"ar": "التخصصات المستهدفة:\nالموارد البشرية\nإدارة الأعمال\nأو تخصصات ذات صلة\nالمتطلبات:\nدرجة البكالوريوس في الموارد البشرية أو إدارة الأعمال أو تخصص ذي صلة\nلبرنامج تمهير: خريج حديث ومؤهل للبرنامج\nمهارات جيدة في التواصل والتنظيم\nإجادة اللغة الإنجليزية\nإجادة استخدام Microsoft Office\nاهتمام بمجال استقطاب المواهب والموارد البشرية", "en": "Targeted specializations:\nHuman resources\nBusiness Administration\nOr related specializations\nRequirements:\nBachelor's degree in Human Resources, Business Administration, or related field\nFor the Tamheer Program: A recent graduate who is eligible for the program\nGood communication and organization skills\nProficiency in English\nProficiency in using Microsoft Office\nInterest in the field of attracting talent and human resources"},
     addedAt: "2026-08-28T13:12:49+03:00",
   },
@@ -988,6 +1014,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4458830578",
     type: "CO-OP Training",
+    isClosed: true,
     description: {"ar": "التخصصات المستهدفة: مختلف التخصصات ذات الصلة\n\nالمتطلبات:\nطالب بكالوريوس حاليًا في تخصص ذي صلة\nأن يكون التدريب التعاوني متطلبًا للتخرج من الجامعة\nالقدرة على إكمال فترة التدريب المطلوبة\nإجادة اللغة الإنجليزية\nإجادة استخدام Microsoft Office (Excel، Word، PowerPoint)", "en": "Targeted specializations: various related specializations\n\nRequirements:\nCurrently a Bachelor's degree student in a related discipline\nCooperative training must be a requirement for university graduation\nAbility to complete the required training period\nProficiency in English\nProficiency in using Microsoft Office (Excel, Word, PowerPoint)"},
     addedAt: "2026-08-31T11:03:54+03:00",
   },
@@ -1078,6 +1105,7 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://careers-riyadhair.icims.com/jobs/2540/co-op/login",
     type: "CO-OP Training",
+    isClosed: true,
     description: {"ar": "برنامج التدريب التعاوني (COOP Training) لطلاب وطالبات الجامعات السعوديين، بهدف اكتساب خبرة عملية حقيقية والمشاركة في مشاريع وطنية ضمن بيئة عمل احترافية وديناميكية.\n\nالتخصصات المستهدفة:\n• لم تُحدد تخصصات معينة\n\nالمتطلبات:\n• سعودي/سعودية الجنسية\n• طالب مسجل في برنامج يتطلب تدريبًا تعاونيًا\n• معدل تراكمي لا يقل عن 3 من 5 أو 2 من 4\n• تقديم خطاب تدريب من الجامعة\n• التفرغ الكامل للعمل في الرياض (9 صباحًا – 5 مساءً، من الأحد إلى الخميس)\n• إجادة اللغتين العربية والإنجليزية\n• الجدية، الاحترافية، والرغبة في التعلم والتطور", "en": "Cooperative Training Program (Coop Training) for Saudi university students, with the aim of gaining real practical experience and participating in national projects within a professional and dynamic work environment.\n\nTarget disciplines:\n• No specific specializations have been identified\n\nRequirements:\n• Saudi National\n• A student enrolled in a program that requires collaborative training\n• A minimum GPA of 3 out of 5 or 2 out of 4\n• Provide a letter of training from the university\n• Full time in Riyadh (9am – 5pm, Sunday to Thursday)\n• Fluency in Arabic and English\n• Seriousness, professionalism, and the desire to learn and develop"},
     requiresLetter: true,
     addedAt: "2026-09-14T09:52:22+03:00",
