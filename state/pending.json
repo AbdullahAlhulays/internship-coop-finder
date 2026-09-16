@@ -1582,8 +1582,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-16T22:59:41+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-16T22:59:44+00:00",
+      "status": "sent",
+      "telegram_message_id": 258
     },
     "extracted": {
       "company": "TKE ALAT",
