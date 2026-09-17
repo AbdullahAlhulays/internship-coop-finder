@@ -1629,8 +1629,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-17T18:18:14+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-17T18:18:34+00:00",
+      "status": "sent",
+      "telegram_message_id": 259
     },
     "extracted": {
       "company": "Mrsool | مرسول",
@@ -1675,8 +1676,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-17T18:18:31+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-17T18:18:35+00:00",
+      "status": "sent",
+      "telegram_message_id": 260
     },
     "extracted": {
       "company": "Ministry of Economy and Planning | وزارة الاقتصاد والتخطيط",
