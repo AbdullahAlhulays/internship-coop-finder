@@ -537,8 +537,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-18T16:29:14+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-18T16:29:35+00:00",
+      "status": "sent",
+      "telegram_message_id": 263
     },
     "extracted": {
       "company": "Aramco",
@@ -583,8 +584,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-18T16:29:15+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-18T16:29:35+00:00",
+      "status": "sent",
+      "telegram_message_id": 264
     },
     "extracted": {
       "company": "Majmouat Mabadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
