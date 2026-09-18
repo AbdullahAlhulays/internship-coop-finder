@@ -529,6 +529,98 @@
       "text": "📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالمكان: جدة\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
     }
   },
+  "SALTRAI:5705": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-18T16:29:14+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Aramco",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "المزايا (مكافأة شهرية - سكن مجاني أو بدل سكن - تأمين طبي - مواصلات). يبدأ التسجيل الإثنين 1448/5/15هـ."
+      },
+      "evidence": {
+        "company": "أرامكو السعودية",
+        "deadline": null,
+        "description": "المزايا (مكافأة شهرية - سكن مجاني أو بدل سكن - تأمين طبي - مواصلات). يبدأ التسجيل الإثنين ١٤٤٨/٥/١٥هـ.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برامج التدريب (الجامعي والمهني)",
+      "type": "internship_or_coop",
+      "url": "https://www.jobs4.net/32303"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.jobs4.net/32303"
+      ],
+      "message_id": 5705,
+      "permalink": "https://t.me/SALTRAI/5705",
+      "posted_at": "2026-09-18T11:30:32+00:00",
+      "text": "(🔴) عاجل | أرامكو السعودية تعلن فتح باب التسجيل في برامج التدريب (الجامعي والمهني):\n\n▪️ برنامج التدريب الجامعي.\n▪️ برنامج التدريب لطلبة الكليات المهنية.\n⭐️ المزايا (مكافأة شهرية - سكن مجاني أو بدل سكن - تأمين طبي - مواصلات).\n🗓 يبدأ التسجيل الإثنين ١٤٤٨/٥/١٥هـ.\n\nhttps://www.jobs4.net/32303"
+    }
+  },
+  "SALTRAI:5708": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-18T16:29:15+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Majmouat Mabadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن."
+      },
+      "evidence": {
+        "company": "مجموعة مبادرات المستقبل",
+        "deadline": null,
+        "description": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.",
+        "location": "جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني للطالبات",
+      "type": "coop",
+      "url": "https://forms.gle/1dkwgYcSuH7p8qF29"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/1dkwgYcSuH7p8qF29"
+      ],
+      "message_id": 5708,
+      "permalink": "https://t.me/SALTRAI/5708",
+      "posted_at": "2026-09-18T11:31:47+00:00",
+      "text": "📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالموقع: جدة.\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
