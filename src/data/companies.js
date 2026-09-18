@@ -1145,6 +1145,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "التخصصات\nالتصميم الجرافيكي.\nالاتصال البصري.\nالفنون البصرية.\nتخصصات إبداعية ذات صلة.\n\nالمتطلبات:\nأن يكون المتقدم سعودي الجنسية.\nأن يكون طالب بكالوريوس على رأس الدراسة ولم يتخرج بعد.\nأن يكون التخصص في التصميم الجرافيكي أو مجال ذي صلة.\nالحصول على تقدير تراكمي لا يقل عن جيد جدًا:\n2.75 من 4.\n3.75 من 5.\nاستيفاء متطلبات التدريب التعاوني الخاصة بالجامعة.\nاجتياز عملية الاختيار والمقابلة الشخصية.\nإتقان اللغة الإنجليزية مهنيًا.\nاللغة العربية هي اللغة الأم.", "en": "Specialties\nGraphic Design.\nEye contact.\nVisual Arts.\nRelevant creative disciplines.\n\nRequirements:\nThe applicant must be a Saudi national.\nTo be a bachelor's student at the top of the study and has not yet graduated.\nThe specialization should be in graphic design or a related field.\nGaining a cumulative grade of at least very good:\n2.75 out of 4.\n3.75 out of 5.\nMeeting the cooperative training requirements of the university.\nPass the selection and interview process.\nProfessional English proficiency.\nArabic is the mother tongue."},
     addedAt: "2026-09-17T21:19:58+03:00",
+  },
+  {
+    name: "ZORY AI",
+    location: "Remote",
+    applicationLink: "https://tally.so/r/pbgbyb",
+    type: "CO-OP Training",
+    description: {"ar": "📣 عن بُعد\nتعلن ZORY AI عن توفر فرص تدريب للطلاب والطالبات الراغبين في اكتساب خبرة عملية والعمل على منتجات ومشاريع حقيقية في المجالات التالية:\n🤖 الذكاء الاصطناعي AI\n💻 تقنية المعلومات IT\n🏠 التصميم الداخلي Interior Design\nالمتطلبات:\n•⁠ ⁠أن يكون المتقدم طالبًا أو طالبة جامعية، ويفضل من يبحث عن تدريب تعاوني COOP.\n•⁠ ⁠يمكن أيضًا للخريجين الجدد التقديم.\n•⁠ ⁠مستوى جيد جدًا إلى ممتاز في اللغة الإنجليزية\n•⁠ ⁠الرغبة في التعلم، التطور، والعمل ضمن فريق.\n•⁠ ⁠يفضل توفر خطاب تدريب من الجامعة إن أمكن\n•⁠ ⁠التدريب عن بُعد بالكامل (Remote).\nإذا كنت مهتمًا وتبحث عن فرصة تساعدك على تطوير مهاراتك واكتساب خبرة عملية، يمكنك التقديم من خلال الرابط:\n\n🔗 رابط التقديم https://tally.so/r/pbgbyb", "en": "📣 Remote\nZory AI announces the availability of internship opportunities for students who want to gain practical experience and work on real products and projects in the following areas:\n🤖 Artificial Intelligence AI\n💻 IT\n🏠 Interior Design\nRequirements:\n• The applicant must be a male or female university student, preferably one who is looking for a cooperative training (Coop).\n• New graduates can also apply.\n• A very good to excellent level of English\n• Desire to learn, develop, and work in a team.\n•⁠\nIt is preferable to have a letter of training from the university if possible\n• Fully remote training.\nIf you are interested and looking for an opportunity that will help you develop your skills and gain practical experience, you can apply through the link:\n\nApplication 🔗 link https://tally.so/r/pbgbyb"},
+    addedAt: "2026-09-18T22:44:54+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
