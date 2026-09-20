@@ -1162,6 +1162,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "تفاصيل التدريب\nالمسمى: متدرب تعاوني\nمدة التدريب: 3-6 شهور\nالمدينة: الرياض\nالموقع: وزارة الاتصالات وتقنية المعلومات\n\nمتطلبات الوظيفة\n\nأن يكون المتقدم سعودي الجنسية\nأن يكون المتقدم طالبًا أو طالبة في مرحلة البكالوريوس أو أعلى في أحد التخصصات ذات الصلة\nأن يكون التدريب التعاوني متطلبًا للتخرج من الجامعة\nمهارات تواصل فعّالة والعمل ضمن فريق\nالقدرة على التعلم السريع وتحمل المسؤولية\nالالتزام والانضباط في بيئة العمل\nالمجالات المطلوبة\nالذكاء الاصطناعي\nالحاسب الآلي\nالهندسة\nالإدارة\nالامن السيبراني\n\nالاعلان قديم شوي بس ارفعو بياناتكم دام التقديم مفتوح\n\nللتقديم_____________________", "en": "Training Details\nTitle: Cooperative Trainee\nDuration of training: 3-6 months\nCity: Riyadh\nLocation: Ministry of Communications and Information Technology\n\nJob Requirement\n\nThe applicant must be a Saudi national\nThe applicant must be a student at the undergraduate level or above in one of the relevant disciplines\nCollaborative training should be a requirement for graduation from university\nEffective communication skills and teamwork\nAbility to learn quickly and take responsibility\nCommitment and discipline in the work environment\nRequired areas\nArtificial Intelligence\nComputer\nEngineering\nManagement\nCybersecurity\n\nThe advertisement is a little old, but upload your data as long as the application is open\n\nTo Apply"},
     addedAt: "2026-09-20T16:34:30+03:00",
+  },
+  {
+    name: "Baqi | بقيق",
+    applicationLink: "https://career.spark.sa/jobs/details/6a5dae3859ebc0267612ec24",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات:\nالموارد البشرية.\nإدارة الأعمال.\nالهندسة.\nتقنية المعلومات.\nالمالية.\nالاتصال الجماهيري.\nتخصصات ذات صلة.\n\nالمتطلبات:\nخطاب تدريب تعاوني من الجامعة.\nمهارات قوية في التواصل والعمل الجماعي.\nإدارة فعالة للوقت والقدرة على التعامل مع عدة مهام.\nإجادة أساسية لاستخدام الحاسب وبرامج MS Office والبريد الإلكتروني وأدوات البحث.\nالاستعداد للتعلم والتكيف والمساهمة في بيئة عمل مهنية.\n\nللتقديم______________", "en": "Specialties:\nHuman Resources.\nBusiness Administration.\nEngineering.\nInformation Technology.\nFinance.\nMass communication.\nRelevant disciplines.\n\nRequirements:\nCooperative training letter from the university.\nStrong communication and teamwork skills.\nEffective time management and ability to handle multiple tasks.\nBasic proficiency in using computers, MS Office software, email and research tools.\nWillingness to learn, adapt and contribute to a professional work environment.\n\nTo Apply"},
+    requiresLetter: true,
+    addedAt: "2026-09-20T16:34:45+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
