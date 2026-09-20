@@ -1723,8 +1723,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-20T06:24:04+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-20T06:24:09+00:00",
+      "status": "sent",
+      "telegram_message_id": 267
     },
     "extracted": {
       "company": "Ministry of Communications and Information Technology | وزارة الاتصالات وتقنية المعلومات",
@@ -1769,8 +1770,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-20T06:24:06+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-20T06:24:09+00:00",
+      "status": "sent",
+      "telegram_message_id": 268
     },
     "extracted": {
       "company": "Baqi | بقيق",
