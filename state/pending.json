@@ -631,8 +631,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-21T14:15:43+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-21T14:17:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 271
     },
     "extracted": {
       "company": "Majmouat Mabadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
@@ -681,8 +682,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-09-21T14:15:45+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-21T14:17:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 272
     },
     "extracted": {
       "company": "ZORY AI",
@@ -727,8 +729,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-21T14:16:43+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-21T14:17:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 273
     },
     "extracted": {
       "company": "Latham & Watkins",
