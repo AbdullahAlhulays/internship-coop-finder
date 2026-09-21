@@ -623,6 +623,147 @@
       "text": "📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالموقع: جدة.\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
     }
   },
+  "SALTRAI:5713": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-21T14:15:43+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Majmouat Mabadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن."
+      },
+      "evidence": {
+        "company": "مجموعة مبادرات المستقبل",
+        "deadline": null,
+        "description": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.",
+        "location": "جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني للطالبات",
+      "type": "coop",
+      "url": "https://forms.gle/1dkwgYcSuH7p8qF29"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/1dkwgYcSuH7p8qF29"
+      ],
+      "message_id": 5713,
+      "permalink": "https://t.me/SALTRAI/5713",
+      "posted_at": "2026-09-21T13:35:20+00:00",
+      "text": "📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالموقع: جدة.\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
+    }
+  },
+  "SALTRAI:5715": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "📣 عن بُعد\nتعلن ZORY AI عن توفر فرص تدريب للطلاب والطالبات الراغبين في اكتساب خبرة عملية والعمل على منتجات ومشاريع حقيقية في المجالات التالية:\n🤖 الذكاء الاصطناعي AI\n💻 تقنية المعلومات IT\n🏠 التصميم الداخلي Interior Design\nالمتطلبات:\n•⁠ ⁠أن يكون المتقدم طالبًا أو طالبة جامعية، ويفضل من يبحث عن تدريب تعاوني COOP.\n•⁠ ⁠يمكن أيضًا للخريجين الجدد التقديم.\n•⁠ ⁠مستوى جيد جدًا إلى ممتاز في اللغة الإنجليزية\n•⁠ ⁠الرغبة في التعلم، التطور، والعمل ضمن فريق.\n•⁠ ⁠يفضل توفر خطاب تدريب من الجامعة إن أمكن\n•⁠ ⁠التدريب عن بُعد بالكامل (Remote)."
+        }
+      },
+      "existing_index": 147,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-09-21T14:15:45+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "ZORY AI",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "📣 عن بُعد\nتعلن ZORY AI عن توفر فرص تدريب للطلاب والطالبات الراغبين في اكتساب خبرة عملية والعمل على منتجات ومشاريع حقيقية في المجالات التالية:\n🤖 الذكاء الاصطناعي AI\n💻 تقنية المعلومات IT\n🏠 التصميم الداخلي Interior Design\nالمتطلبات:\n•⁠ ⁠أن يكون المتقدم طالبًا أو طالبة جامعية، ويفضل من يبحث عن تدريب تعاوني COOP.\n•⁠ ⁠يمكن أيضًا للخريجين الجدد التقديم.\n•⁠ ⁠مستوى جيد جدًا إلى ممتاز في اللغة الإنجليزية\n•⁠ ⁠الرغبة في التعلم، التطور، والعمل ضمن فريق.\n•⁠ ⁠يفضل توفر خطاب تدريب من الجامعة إن أمكن\n•⁠ ⁠التدريب عن بُعد بالكامل (Remote)."
+      },
+      "evidence": {
+        "company": "ZORY AI",
+        "deadline": null,
+        "description": "📣 عن بُعد\nتعلن ZORY AI عن توفر فرص تدريب للطلاب والطالبات الراغبين في اكتساب خبرة عملية والعمل على منتجات ومشاريع حقيقية في المجالات التالية:\n🤖 الذكاء الاصطناعي AI\n💻 تقنية المعلومات IT\n🏠 التصميم الداخلي Interior Design\nالمتطلبات:\n•⁠ ⁠أن يكون المتقدم طالبًا أو طالبة جامعية، ويفضل من يبحث عن تدريب تعاوني COOP.\n•⁠ ⁠يمكن أيضًا للخريجين الجدد التقديم.\n•⁠ ⁠مستوى جيد جدًا إلى ممتاز في اللغة الإنجليزية\n•⁠ ⁠الرغبة في التعلم، التطور، والعمل ضمن فريق.\n•⁠ ⁠يفضل توفر خطاب تدريب من الجامعة إن أمكن\n•⁠ ⁠التدريب عن بُعد بالكامل (Remote).",
+        "location": "عن بُعد"
+      },
+      "is_opportunity": true,
+      "location": "Remote",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني",
+      "type": "coop",
+      "url": "https://tally.so/r/pbgbyb"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://tally.so/r/pbgbyb"
+      ],
+      "message_id": 5715,
+      "permalink": "https://t.me/SALTRAI/5715",
+      "posted_at": "2026-09-21T13:35:21+00:00",
+      "text": "فرصة تدريب تعاوني\n📣 عن بُعد\nتعلن ZORY AI عن توفر فرص تدريب للطلاب والطالبات الراغبين في اكتساب خبرة عملية والعمل على منتجات ومشاريع حقيقية في المجالات التالية:\n🤖 الذكاء الاصطناعي AI\n💻 تقنية المعلومات IT\n🏠 التصميم الداخلي Interior Design\nالمتطلبات:\n•⁠ ⁠أن يكون المتقدم طالبًا أو طالبة جامعية، ويفضل من يبحث عن تدريب تعاوني COOP.\n•⁠ ⁠يمكن أيضًا للخريجين الجدد التقديم.\n•⁠ ⁠مستوى جيد جدًا إلى ممتاز في اللغة الإنجليزية\n•⁠ ⁠الرغبة في التعلم، التطور، والعمل ضمن فريق.\n•⁠ ⁠يفضل توفر خطاب تدريب من الجامعة إن أمكن\n•⁠ ⁠التدريب عن بُعد بالكامل (Remote).\nإذا كنت مهتمًا وتبحث عن فرصة تساعدك على تطوير مهاراتك واكتساب خبرة عملية، يمكنك التقديم من خلال الرابط:\n\n🔗 رابط التقديم https://tally.so/r/pbgbyb"
+    }
+  },
+  "SALTRAI:5721": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-09-21T14:16:43+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Latham & Watkins",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "Latham & Watkins",
+        "deadline": null,
+        "description": null,
+        "location": "riyadh"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "COOP Program",
+      "type": "coop",
+      "url": "https://eume-earlyassociatecareers-lw.icims.com/jobs/11016/general-opportunity%3a-graduate-training-program-%28coop%29---riyadh/job"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://eume-earlyassociatecareers-lw.icims.com/jobs/11015/general-opportunity%3a-trainee-associate---riyadh/job",
+        "https://eume-earlyassociatecareers-lw.icims.com/jobs/11016/general-opportunity%3a-graduate-training-program-%28coop%29---riyadh/job"
+      ],
+      "message_id": 5721,
+      "permalink": "https://t.me/SALTRAI/5721",
+      "posted_at": "2026-09-21T13:41:35+00:00",
+      "text": "Law GDP | Latham & Watkins\n- Registration: Apply Now\nCOOP Program | Latham & Watkins\n- Registration: Apply Now"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
