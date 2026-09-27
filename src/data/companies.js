@@ -1170,6 +1170,17 @@ const companyRecords = [
     description: {"ar": "التخصصات:\nالموارد البشرية.\nإدارة الأعمال.\nالهندسة.\nتقنية المعلومات.\nالمالية.\nالاتصال الجماهيري.\nتخصصات ذات صلة.\n\nالمتطلبات:\nخطاب تدريب تعاوني من الجامعة.\nمهارات قوية في التواصل والعمل الجماعي.\nإدارة فعالة للوقت والقدرة على التعامل مع عدة مهام.\nإجادة أساسية لاستخدام الحاسب وبرامج MS Office والبريد الإلكتروني وأدوات البحث.\nالاستعداد للتعلم والتكيف والمساهمة في بيئة عمل مهنية.\n\nللتقديم______________", "en": "Specialties:\nHuman Resources.\nBusiness Administration.\nEngineering.\nInformation Technology.\nFinance.\nMass communication.\nRelevant disciplines.\n\nRequirements:\nCooperative training letter from the university.\nStrong communication and teamwork skills.\nEffective time management and ability to handle multiple tasks.\nBasic proficiency in using computers, MS Office software, email and research tools.\nWillingness to learn, adapt and contribute to a professional work environment.\n\nTo Apply"},
     requiresLetter: true,
     addedAt: "2026-09-20T16:34:45+03:00",
+  },
+  {
+    name: "Aramco",
+    logo: {"domain": "aramco.com", "file": "aramco.webp"},
+    location: "Dhahran, Saudi Arabia",
+    applicationLink: "https://www.aramco.com/ar/careers/for-saudi-applicants/student-opportunities/university-and-vocational-college-internship-programs/university-internship-program",
+    deadline: "2026-11-02",
+    type: "CO-OP Training",
+    description: {"ar": "• أن يكون المتقدم سعودي الجنسية.\n• أن يكون طالبًا منتظمًا في جامعة أو كلية معترف بها.\n• أن يكون التدريب مطلوبًا للتخرج من المؤسسة التعليمية.\n• تقديم خطاب من الجامعة أو الكلية يوضح مدة التدريب المطلوبة وتاريخها.\n• معدل تراكمي لا يقل عن جيد (2.0 من 4 أو 3.0 من 5).\n• إجادة اللغة الإنجليزية تحدثًا وكتابة(ممكن يكون فيه اختبار تحديد مستوى بسيط).\n\nالمزايا:\n• إشراف مباشر من مختصين وخبراء في الشركة.\n• تطوير مهارات العمل ضمن فرق متعددة التخصصات.\n• شهادة إنهاء تدريب معتمدة من أرامكو.\n• مكافأة شهرية أثناء فترة التدريب.\n• تأمين طبي خلال فترة البرنامج.\n• سكن مجاني (حسب التوفر في مواقع الشركة).\n• فرصة مستقبلية للالتحاق ببرامج الخريجين.", "en": "• The applicant must be a Saudi national.\n• Be a regular student at a recognized university or college.\n• The training is required for graduation from the educational institution.\n• Submit a letter from the university or college indicating the duration and date of the required training.\n• A GPA of at least good (2.0 out of 4 or 3.0 out of 5).\n• Fluency in spoken and written English (possibly a simple placement test).\n\nAdvantages:\n• Direct supervision by specialists and experts in the company.\n• Developing work skills within multidisciplinary teams.\n• Training completion certificate approved by Aramco.\n• Monthly bonus during the training period.\n• Medical insurance during the program period.\n• Free accommodation (subject to availability at company locations).\n• A future opportunity to enroll in graduate programs."},
+    requiresLetter: true,
+    addedAt: "2026-09-27T15:03:09+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
