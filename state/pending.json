@@ -779,8 +779,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-09-29T08:38:01+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-29T08:40:12+00:00",
+      "status": "sent",
+      "telegram_message_id": 276
     },
     "extracted": {
       "company": "Aramco",
@@ -826,8 +827,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-09-29T08:40:08+00:00",
-      "status": "queued"
+      "sent_at": "2026-09-29T08:40:13+00:00",
+      "status": "sent",
+      "telegram_message_id": 277
     },
     "extracted": {
       "company": "Ministry of Tourism | وزارة السياحة",
