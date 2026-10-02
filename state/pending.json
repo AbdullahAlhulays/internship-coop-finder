@@ -1106,8 +1106,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-02T23:02:59+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-02T23:03:00+00:00",
+      "status": "sent",
+      "telegram_message_id": 285
     },
     "extracted": {
       "company": "الأولى الإبداعية",
