@@ -1045,6 +1045,53 @@
       "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
     }
   },
+  "cooptraning_inksa:4444": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-03T13:29:20+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Training cooperative program",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تم فتح باب التدريب التعاوني لطلاب وطالبات الجامعات والكليات والمعاهد، ضمن جهودنا لدعم وتأهيل الكفاءات الشابة لسوق العمل من خلال بيئة عمل احترافية وتدريب عملي مميز."
+      },
+      "evidence": {
+        "company": "Training cooperative program",
+        "deadline": null,
+        "description": "تم فتح باب التدريب التعاوني لطلاب وطالبات الجامعات والكليات والمعاهد، ضمن جهودنا لدعم وتأهيل الكفاءات الشابة لسوق العمل من خلال بيئة عمل احترافية وتدريب عملي مميز.",
+        "location": "Riyadh, Saudi Arabia"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/1CslxWaJq1oH1eNQXgEGpozEFFVktgUOYblVMCezghMU/edit#question=1795050495&field=1000057"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://docs.google.com/forms/d/1CslxWaJq1oH1eNQXgEGpozEFFVktgUOYblVMCezghMU/edit#question=1795050495&field=1000057"
+      ],
+      "message_id": 4444,
+      "permalink": "https://t.me/cooptraning_inksa/4444",
+      "posted_at": "2026-10-02T10:41:00+00:00",
+      "text": "🟡الفرصة رقم ٢٧٧٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nفرصة تدريب تعاوني 💼\n\nتم فتح باب التدريب التعاوني لطلاب وطالبات الجامعات والكليات والمعاهد، ضمن جهودنا لدعم وتأهيل الكفاءات الشابة لسوق العمل من خلال بيئة عمل احترافية وتدريب عملي مميز.\n\n📌 عدة أقسام متاحة للتدريب\n\n🕒 مدة التدريب: حسب متطلبات الجامعة\n📍موقع التدريب: الرياض\n\n🎯 شروط التقديم:\n\nأن يكون الطالب/ـة في مرحلة التدريب التعاوني\n\nالالتزام والانضباط طوال فترة التدريب\n\nتعبئة نموذج التسجيل بالرابط أدناه\n\n🔗 للتقديم، يرجى تعبئة النموذج عبر الرابط التالي:\n\nhttps://docs.google.com/forms/d/1CslxWaJq1oH1eNQXgEGpozEFFVktgUOYblVMCezghMU/edit#question=1795050495&field=1000057"
+    }
+  },
   "cooptraning_inksa:4447": {
     "decision": {
       "action": "update",
