@@ -2010,52 +2010,5 @@
       "posted_at": "2026-10-04T07:00:53+00:00",
       "text": "🎓 #التدريب_التعاوني | #الرياض\n\nشركة توال - TAWAL (تابعة لــ صندوق الاستثمارات العامة PIF و شركة STC)\n\nالتخصصات:\nالهندسة الصناعية\nهندسة الحاسب\nهندسة البرمجيات\nالهندسة الكهربائية\nهندسة الاتصالات\nالهندسة المدنية\nعلوم الحاسب\nالمالية\nالمحاسبة\nالقانون\nالتسويق\nالموارد البشرية\nنظم المعلومات الإدارية\nإدارة الأعمال\nالمتطلبات:\nمعدل تراكمي لا يقل عن 3 من 4 أو 4 من 5\nالسيرة الذاتية (CV)\nالسجل الأكاديمي الحديث\nخطاب من الجامعة يفيد بأهلية التدريب التعاوني موجه إلى TAWAL\n\nللتقديمـــــــــــــــــــــــــــــــ"
     }
-  },
-  "nobthacv1:2172": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-04T13:19:06+00:00",
-      "status": "sent",
-      "telegram_message_id": 292
-    },
-    "extracted": {
-      "company": "الصندوق_الصناعي",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "يعلن الصندوق_الصناعي عن فتح باب التقديم في برنامج التدريب_التعاوني، لمنح الطلبة فرصة تطبيق معارفهم الأكاديمية، وتنمية مهاراتهم العملية، واكتساب خبرة مهنية في بيئة تدعم نمو الصناعة."
-      },
-      "evidence": {
-        "company": "الصندوق_الصناعي",
-        "deadline": null,
-        "description": "يعلن الصندوق_الصناعي عن فتح باب التقديم في برنامج التدريب_التعاوني، لمنح الطلبة فرصة تطبيق معارفهم الأكاديمية، وتنمية مهاراتهم العملية، واكتساب خبرة مهنية في بيئة تدعم نمو الصناعة.",
-        "location": "#الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://www.linkedin.com/safety/go?url=https%3A%2F%2Fbit.ly%2FSIDFCo-op%3Ftrk%3Dfeed-detail_main-feed-card-text"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://www.linkedin.com/safety/go?url=https%3A%2F%2Fbit.ly%2FSIDFCo-op%3Ftrk%3Dfeed-detail_main-feed-card-text"
-      ],
-      "message_id": 2172,
-      "permalink": "https://t.me/nobthacv1/2172",
-      "posted_at": "2026-10-04T09:53:17+00:00",
-      "text": "#التدريب_التعاوني #الرياض\n\nيعلن الصندوق_الصناعي عن فتح باب التقديم في برنامج التدريب_التعاوني، لمنح الطلبة فرصة تطبيق معارفهم الأكاديمية، وتنمية مهاراتهم العملية، واكتساب خبرة مهنية في بيئة تدعم نمو الصناعة.\n\nللتقديم_________________"
-    }
   }
 }
