@@ -819,52 +819,6 @@
       "text": "#التدريب_التعاوني | #السعودية\n\nمواعيد التدريب التعاوني للفصل الاول في شركة أرامكو السعودية 🇸🇦\n\n1. برنامج التدريب الجامعي (University Internship Program)\nموجّه لطلبة البكالوريوس في التخصصات الهندسية، الإدارية، التقنية، والمالية وغيرها.\n\n2. برنامج التدريب لطلبة الكليات المهنية (Vocational College Internship Program)\nمخصص لطلبة الكليات التقنية والمهنية في التخصصات الفنية أو التشغيلية أو الصناعية.\n\n📍 مكان التدريب:\nمقر الشركة الرئيسي في الظهران، مع احتمالية توزيع المتدربين في مواقع أرامكو المختلفة داخل المملكة.\n\nمدة التدريب:\nتختلف حسب متطلبات الجامعة أو الكلية (عادة من 8 إلى 15 أسبوعًا).\n\nالشروط العامة:\n• أن يكون المتقدم سعودي الجنسية.\n• أن يكون طالبًا منتظمًا في جامعة أو كلية معترف بها.\n• أن يكون التدريب مطلوبًا للتخرج من المؤسسة التعليمية.\n• تقديم خطاب من الجامعة أو الكلية يوضح مدة التدريب المطلوبة وتاريخها.\n• معدل تراكمي لا يقل عن جيد (2.0 من 4 أو 3.0 من 5).\n• إجادة اللغة الإنجليزية تحدثًا وكتابة(ممكن يكون فيه اختبار تحديد مستوى بسيط).\n\nالمزايا:\n• إشراف مباشر من مختصين وخبراء في الشركة.\n• تطوير مهارات العمل ضمن فرق متعددة التخصصات.\n• شهادة إنهاء تدريب معتمدة من أرامكو.\n• مكافأة شهرية أثناء فترة التدريب.\n• تأمين طبي خلال فترة البرنامج.\n• سكن مجاني (حسب التوفر في مواقع الشركة).\n• فرصة مستقبلية للالتحاق ببرامج الخريجين.\n\n📅 فترة التقديم:\nسيتم فتح بوابة التسجيل الساعة 08:00 صباحاً يوم الإثنين 26 أكتوبر 2026م،\n\nوينتهي الساعة 3:00 مساءً يوم الإثنين 2 نوفمبر 2026م.\n\nإجراءات ما بعد التقديم\nمطابقة بيانات المتقدمين والتأكد من استيفائهم لشروط البرنامج.\nفي حال ترشيحك المبدئي للبرنامج سيتم تحديد موعد لك لاستكمال الإجراءات التالية:\n\nإكمال إجراءات توقيع العقد وإصدار البطاقات.\nحضور اللقاء التعريفي والذي سيقام في 17 يناير 2027م.\nمباشرة برنامجك التدريبي يوم 18 يناير 2027م.\n\nللتقديم والتفاصيل:\n\nبرنامج التدريب الجامعي\n\nبرنامج التدريب للكليات المهنية"
     }
   },
-  "SALTRAI:5765": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-04T13:19:05+00:00",
-      "status": "sent",
-      "telegram_message_id": 289
-    },
-    "extracted": {
-      "company": "Al Rajhi Bank",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "https://careers.alrajhibank.com.sa/ar/saudi-arabia/jobs/coop-training-التدريب-التعاوني-1100037814/",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Coop Training",
-      "type": "coop",
-      "url": "https://careers.alrajhibank.com.sa/ar/saudi-arabia/jobs/coop-training-التدريب-التعاوني-1100037814/"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://careers.alrajhibank.com.sa/ar/saudi-arabia/jobs/coop-training-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-1100037814/",
-        "https://careers.alrajhibank.com.sa/ar/saudi-arabia/jobs/coop-training-التدريب-التعاوني-1100037814/"
-      ],
-      "message_id": 5765,
-      "permalink": "https://t.me/SALTRAI/5765",
-      "posted_at": "2026-10-04T10:42:38+00:00",
-      "text": "https://careers.alrajhibank.com.sa/ar/saudi-arabia/jobs/coop-training-التدريب-التعاوني-1100037814/"
-    }
-  },
   "SALTRAI:5769": {
     "decision": {
       "action": "add",

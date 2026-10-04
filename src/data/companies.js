@@ -1196,6 +1196,13 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "التخصصات المستهدفة:\nهندسة البرمجيات.\nعلوم الحاسب.\nالهندسة الصناعية.\nالتصميم الجرافيكي.\nإدارة المنتجات.\nالمالية.\nالموارد البشرية.\nإدارة الأعمال.\nالذكاء الاصطناعي.\nالخدمات اللوجستية.\nالتسويق.\nالمتطلبات:\nطلاب حاليون أو خريجون حديثًا.\nمهارات قوية في التواصل والعمل الجماعي.\nالرغبة في التعلم والتطور.\nمستوى أكاديمي جيد.", "en": "Target disciplines:\nSoftware Engineering.\nComputer Science.\nIndustrial Engineering.\nGraphic Design.\nProduct Management.\nFinance.\nHuman Resources.\nBusiness Administration.\nArtificial Intelligence.\nLogistics.\nMarketing.\nRequirements:\nCurrent students or recent graduates.\nStrong communication and teamwork skills.\nDesire to learn and develop.\nGood academic level."},
     addedAt: "2026-10-04T16:57:31+03:00",
+  },
+  {
+    name: "Al Rajhi Bank",
+    logo: {"domain": "careers.alrajhibank.com.sa", "file": "al-rajhi-bank.png"},
+    applicationLink: "https://careers.alrajhibank.com.sa/ar/saudi-arabia/jobs/coop-training-التدريب-التعاوني-1100037814/",
+    type: "CO-OP Training",
+    addedAt: "2026-10-04T16:58:01+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
