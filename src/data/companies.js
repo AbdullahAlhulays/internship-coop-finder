@@ -1203,6 +1203,15 @@ const companyRecords = [
     applicationLink: "https://careers.alrajhibank.com.sa/ar/saudi-arabia/jobs/coop-training-التدريب-التعاوني-1100037814/",
     type: "CO-OP Training",
     addedAt: "2026-10-04T16:58:01+03:00",
+  },
+  {
+    name: "TAWAL",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4472935381",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات:\nالهندسة الصناعية\nهندسة الحاسب\nهندسة البرمجيات\nالهندسة الكهربائية\nهندسة الاتصالات\nالهندسة المدنية\nعلوم الحاسب\nالمالية\nالمحاسبة\nالقانون\nالتسويق\nالموارد البشرية\nنظم المعلومات الإدارية\nإدارة الأعمال\nالمتطلبات:\nمعدل تراكمي لا يقل عن 3 من 4 أو 4 من 5\nالسيرة الذاتية (CV)\nالسجل الأكاديمي الحديث\nخطاب من الجامعة يفيد بأهلية التدريب التعاوني موجه إلى TAWAL", "en": "Specialties:\nIndustrial Engineering\nComputer Engineering\nSoftware Engineering\nElectrical Engineering\nTelecommunication Engineering\nCivil Engineering\nComputer Science\nFinance\nAccounting\nLaw\nMarketing\nHuman Resources\nManagement Information Systems\nBusiness Administration\nRequirements:\nGPA of at least 3 out of 4 or 4 out of 5\nCurriculum Vitae (CV)\nRecent Academic Record\nLetter from the University stating eligibility for cooperative training addressed to Tawal"},
+    requiresLetter: true,
+    addedAt: "2026-10-04T16:58:30+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
