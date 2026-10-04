@@ -925,8 +925,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-10-04T13:15:32+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-04T13:19:04+00:00",
+      "status": "sent",
+      "telegram_message_id": 287
     },
     "extracted": {
       "company": "ZORY AI",
@@ -972,8 +973,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-04T13:16:12+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-04T13:19:04+00:00",
+      "status": "sent",
+      "telegram_message_id": 288
     },
     "extracted": {
       "company": "Al Awla Al Ibda'iya | الأولى الإبداعية",
@@ -1019,8 +1021,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-04T13:16:37+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-04T13:19:05+00:00",
+      "status": "sent",
+      "telegram_message_id": 289
     },
     "extracted": {
       "company": "Al Rajhi Bank",
@@ -1064,8 +1067,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-04T13:16:58+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-04T13:19:05+00:00",
+      "status": "sent",
+      "telegram_message_id": 290
     },
     "extracted": {
       "company": "الصندوق الصناعي",
@@ -2399,8 +2403,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-04T13:18:01+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-04T13:19:05+00:00",
+      "status": "sent",
+      "telegram_message_id": 291
     },
     "extracted": {
       "company": "TAWAL",
@@ -2445,8 +2450,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-04T13:18:26+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-04T13:19:06+00:00",
+      "status": "sent",
+      "telegram_message_id": 292
     },
     "extracted": {
       "company": "الصندوق_الصناعي",
