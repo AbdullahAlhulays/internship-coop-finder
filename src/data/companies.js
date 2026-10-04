@@ -1188,6 +1188,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "لطلاب الجامعات الراغبين في تطوير مهاراتهم وتطبيق معارفهم الأكاديمية في بيئة عمل احترافية.", "en": "For university students wishing to develop their skills and apply their academic knowledge in a professional work environment."},
     addedAt: "2026-09-30T02:19:09+03:00",
+  },
+  {
+    name: "Aya | ايا",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfdJjdus8QCVPSYJbDB_YZwe4mauxBfeWKL5zae9kLeL2wD6Q/viewform",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات المستهدفة:\nهندسة البرمجيات.\nعلوم الحاسب.\nالهندسة الصناعية.\nالتصميم الجرافيكي.\nإدارة المنتجات.\nالمالية.\nالموارد البشرية.\nإدارة الأعمال.\nالذكاء الاصطناعي.\nالخدمات اللوجستية.\nالتسويق.\nالمتطلبات:\nطلاب حاليون أو خريجون حديثًا.\nمهارات قوية في التواصل والعمل الجماعي.\nالرغبة في التعلم والتطور.\nمستوى أكاديمي جيد.", "en": "Target disciplines:\nSoftware Engineering.\nComputer Science.\nIndustrial Engineering.\nGraphic Design.\nProduct Management.\nFinance.\nHuman Resources.\nBusiness Administration.\nArtificial Intelligence.\nLogistics.\nMarketing.\nRequirements:\nCurrent students or recent graduates.\nStrong communication and teamwork skills.\nDesire to learn and develop.\nGood academic level."},
+    addedAt: "2026-10-04T16:57:31+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
