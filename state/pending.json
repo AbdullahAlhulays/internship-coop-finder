@@ -827,8 +827,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-05T16:07:17+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T16:10:51+00:00",
+      "status": "sent",
+      "telegram_message_id": 308
     },
     "extracted": {
       "company": "مجموعة مبادرات المستقبل",
@@ -878,8 +879,9 @@
       "reason": "existing card is missing verified details this post provides"
     },
     "delivery": {
-      "queued_at": "2026-10-05T16:07:43+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T16:10:51+00:00",
+      "status": "sent",
+      "telegram_message_id": 309
     },
     "extracted": {
       "company": "Industrial Development Fund | الصندوق الصناعي",
@@ -924,8 +926,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-05T16:08:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T16:10:51+00:00",
+      "status": "sent",
+      "telegram_message_id": 310
     },
     "extracted": {
       "company": "شركة عزم الإنجاز",
@@ -970,8 +973,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-05T16:08:52+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T16:10:52+00:00",
+      "status": "sent",
+      "telegram_message_id": 311
     },
     "extracted": {
       "company": "AT Group | مجموعة آت",
@@ -1148,8 +1152,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-05T16:09:35+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T16:10:52+00:00",
+      "status": "sent",
+      "telegram_message_id": 312
     },
     "extracted": {
       "company": "مجموعة مبادرات المستقبل",
@@ -1195,8 +1200,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-05T16:09:57+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T16:10:53+00:00",
+      "status": "sent",
+      "telegram_message_id": 313
     },
     "extracted": {
       "company": "شركة عزم الإنجاز",
@@ -1242,8 +1248,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-05T16:10:24+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T16:10:54+00:00",
+      "status": "sent",
+      "telegram_message_id": 314
     },
     "extracted": {
       "company": "AT Group | مجموعة آت",
@@ -1289,8 +1296,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-05T16:10:47+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T16:10:55+00:00",
+      "status": "sent",
+      "telegram_message_id": 315
     },
     "extracted": {
       "company": "Mahroon Al-Inara | ماهرون للإنارة",
