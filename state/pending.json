@@ -1919,8 +1919,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-05T07:08:24+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T07:08:35+00:00",
+      "status": "sent",
+      "telegram_message_id": 307
     },
     "extracted": {
       "company": "Tawarrud Al-Hay | شركة تطوير الحي",
