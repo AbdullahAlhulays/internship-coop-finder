@@ -926,8 +926,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-05T22:42:32+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T22:42:39+00:00",
+      "status": "sent",
+      "telegram_message_id": 316
     },
     "extracted": {
       "company": "Al Awla Al Ibdaha | الأولى الإبداعية",
@@ -1198,8 +1199,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-05T22:42:37+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-05T22:42:40+00:00",
+      "status": "sent",
+      "telegram_message_id": 317
     },
     "extracted": {
       "company": "RevOps",
