@@ -1256,8 +1256,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-06T17:15:04+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-06T17:15:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 325
     },
     "extracted": {
       "company": "Kerten Hospitality",
@@ -1440,8 +1441,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-06T17:15:26+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-06T17:15:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 326
     },
     "extracted": {
       "company": "مجموعة قابضة رائدة في مجالات العقارات والفنادق",
