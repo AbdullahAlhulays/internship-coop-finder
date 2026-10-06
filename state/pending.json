@@ -1248,6 +1248,52 @@
       "text": "🎓 فرصة تدريب تعاوني\n\nتعلن شركة ماهرون للإنارة عن توفر فرص تدريب تعاوني لعدة تخصصات للطلاب والطالبات الراغبين في اكتساب خبرة عملية حقيقية وتطوير مهاراتهم في بيئة عمل احترافية.\n\n✨ مميزات التدريب:\n• فرص متاحة لعدة تخصصات\n• تدريب عملي واكتساب خبرة مهنية\n• مكافآت وحوافز للمتميزين\n• فرصة للمشاركة في مشاريع وأعمال حقيقية\n• إمكانية التوظيف بعد انتهاء فترة التدريب للمتميزين\n\n📌 للتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/coMjqkaqC2mV87oi9\n\nنبحث عن أشخاص لديهم الشغف بالتعلم والتطور وصناعة أثر حقيقي خلال فترة التدريب.\n\nابدأ مسيرتك المهنية معنا 🚀"
     }
   },
+  "SALTRAI:5794": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-06T17:15:04+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Kerten Hospitality",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات: إدارة الضيافة، إدارة الفعاليات، الإرشاد السياحي، التراث"
+      },
+      "evidence": {
+        "company": "Kerten Hospitality",
+        "deadline": null,
+        "description": "التخصصات: إدارة الضيافة، إدارة الفعاليات، الإرشاد السياحي، التراث",
+        "location": "كل المدن"
+      },
+      "is_opportunity": true,
+      "location": "All cities, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Internship — Remoteship",
+      "type": "internship",
+      "url": "https://darbak.space/where-to-train/opportunity/6ac39ca0fe83b01eb65bb116?source=telegram&type=opportunity"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://darbak.space/where-to-train/opportunity/6ac39ca0fe83b01eb65bb116?source=telegram&amp;type=opportunity"
+      ],
+      "message_id": 5794,
+      "permalink": "https://t.me/SALTRAI/5794",
+      "posted_at": "2026-10-06T10:13:48+00:00",
+      "text": "🎓 فرصة تدريب جديدة\n🌟💸عن بعد + مكافأة مالية\nالجهة: Kerten Hospitality\nالفرصة: Internship — Remoteship\nالمدينة: كل المدن\nالتخصصات: إدارة الضيافة، إدارة الفعاليات، الإرشاد السياحي، التراث\n\nالتفاصيل وطريقة التقديم عبر دربك"
+    }
+  },
   "SALTRAI:5795": {
     "decision": {
       "action": "add",
@@ -1384,6 +1430,52 @@
       "permalink": "https://t.me/SALTRAI/5797",
       "posted_at": "2026-10-06T10:19:57+00:00",
       "text": "🎓 فرصة تدريب جديدة\n\nالجهة: وزارة السياحة وهدف\nالفرصة: التدريب التعاوني في منشآت القطاع السياحي\nالمدينة: كل المدن\nالتخصصات: تخصصات متعددة\n\nالتفاصيل وطريقة التقديم عبر دربك"
+    }
+  },
+  "SALTRAI:5799": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-06T17:15:26+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "مجموعة قابضة رائدة في مجالات العقارات والفنادق",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "الموقع: شمال الرياض\n\nالتخصص: محاسبة، مالية، أو ما يعادلها\n\nالمطلوب:\n- طالب في السنة الأخيرة (مرحلة التدريب)\n- معدل جيد جدًا فأعلى\n- مهارات جيدة في Excel"
+      },
+      "evidence": {
+        "company": "مجموعة قابضة رائدة في مجالات العقارات والفنادق",
+        "deadline": null,
+        "description": "الموقع: شمال الرياض\n\nالتخصص: محاسبة، مالية، أو ما يعادلها\n\nالمطلوب:\n- طالب في السنة الأخيرة (مرحلة التدريب)\n- معدل جيد جدًا فأعلى\n- مهارات جيدة في Excel",
+        "location": "شمال الرياض"
+      },
+      "is_opportunity": true,
+      "location": "North Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني (CO-OP)",
+      "type": "coop",
+      "url": "https://forms.gle/mfYuxUavnBnLAW5v5"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/mfYuxUavnBnLAW5v5"
+      ],
+      "message_id": 5799,
+      "permalink": "https://t.me/SALTRAI/5799",
+      "posted_at": "2026-10-06T10:36:36+00:00",
+      "text": "من الخاص\n\nتعلن مجموعة قابضة رائدة في مجالات العقارات والفنادق عن فتح باب التقديم لبرنامج التدريب التعاوني (CO-OP).\nالموقع: شمال الرياض\n\nالتخصص: محاسبة، مالية، أو ما يعادلها\n\nالمطلوب:\n- طالب في السنة الأخيرة (مرحلة التدريب)\n- معدل جيد جدًا فأعلى\n- مهارات جيدة في Excel\n\nللتقديم: https://forms.gle/mfYuxUavnBnLAW5v5"
     }
   },
   "cooptraning_inksa:4346": {
