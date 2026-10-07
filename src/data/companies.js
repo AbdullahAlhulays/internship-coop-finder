@@ -1221,6 +1221,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "نستقبل طلبات التدريب التعاوني في المسارات التالية:\n• تطوير الأعمال\n• المالية والمحاسبة\n• الإعلام والصحافة\n• التسويق\n• إدارة المشاريع\n• الإنتاج المرئي والموشن جرافيك\n• تحليل البيانات وذكاء الأعمال\n• تطوير المواقع الإلكترونية والبرمجة", "en": "We receive requests for cooperative training in the following tracks:\n• Business Development\n• Finance and Accounting\n• Media and press\n• Marketing\n• Project Management\n• Visual Production and Motion Graphics\n• Data Analysis and Business Intelligence\n• Website development and programming"},
     addedAt: "2026-10-07T12:07:59+03:00",
+  },
+  {
+    name: "شركة عزم الإنجاز",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeaM_67r1ZBQXcIEn9lRhdGjWHi8O-SAwm1wdx_gng4tu3HPw/viewform?usp=publish-editor",
+    type: "CO-OP Training",
+    description: {"ar": "🎓 التخصصات المستهدفة:\n• التسويق\n• الإدارة المكتبية\n\n🎯 مزايا التدريب:\n☑ اكتساب خبرة عملية في بيئة عمل احترافية.\n☑ المشاركة في مشاريع ومهام حقيقية مرتبطة بالتخصص.\n☑ إشراف وتوجيه مهني مستمر.\n☑ تطوير المهارات المهنية والإدارية.\n☑ شهادة تدريب تعاوني بعد إتمام البرنامج بنجاح.\n☑ إمكانية الترشيح للفرص الوظيفية المستقبلية للمتميزين.", "en": "Target 🎓 disciplines:\n• Marketing\n• Office management\n\nTraining 🎯 Advantages:\n☑ Gain hands-on experience in a professional work environment.\n☑ Participate in real projects and tasks related to the specialization.\nOngoing professional ☑ supervision and guidance.\n☑ Develop professional and managerial skills.\n☑ Certificate of cooperative training after successful completion of the program.\n☑ The possibility of nominating for future career opportunities for distinguished people."},
+    addedAt: "2026-10-07T12:08:11+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
