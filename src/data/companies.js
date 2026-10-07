@@ -1236,6 +1236,14 @@ const companyRecords = [
     applicationLink: "https://tamara.co/en-sa/job-detail?gh_jid=4997585101",
     type: "CO-OP Training",
     addedAt: "2026-10-07T12:09:18+03:00",
+  },
+  {
+    name: "Kerten Hospitality",
+    location: "All cities, Saudi Arabia",
+    applicationLink: "https://darbak.space/where-to-train/opportunity/6ac39ca0fe83b01eb65bb116?source=telegram&type=opportunity",
+    type: "Internship",
+    description: {"ar": "التخصصات: إدارة الضيافة، إدارة الفعاليات، الإرشاد السياحي، التراث", "en": "Specialties: Hospitality Management, Event Management, Tourism Guidance, Heritage"},
+    addedAt: "2026-10-07T12:09:54+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
