@@ -913,51 +913,6 @@
       "text": "🎓 فرصة تدريب جديدة\n🌟💸عن بعد + مكافأة مالية\nالجهة: Kerten Hospitality\nالفرصة: Internship — Remoteship\nالمدينة: كل المدن\nالتخصصات: إدارة الضيافة، إدارة الفعاليات، الإرشاد السياحي، التراث\n\nالتفاصيل وطريقة التقديم عبر دربك"
     }
   },
-  "SALTRAI:5797": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-06T10:28:43+00:00",
-      "status": "sent",
-      "telegram_message_id": 324
-    },
-    "extracted": {
-      "company": "Ministry of Tourism | وزارة السياحة وهدف",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "وزارة السياحة وهدف",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "التدريب التعاوني في منشآت القطاع السياحي",
-      "type": "coop",
-      "url": "https://darbak.space/where-to-train/opportunity/6abd0b0ae5d98f0f41f41a2d?source=telegram&type=opportunity"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://darbak.space/where-to-train/opportunity/6abd0b0ae5d98f0f41f41a2d?source=telegram&amp;type=opportunity"
-      ],
-      "message_id": 5797,
-      "permalink": "https://t.me/SALTRAI/5797",
-      "posted_at": "2026-10-06T10:19:57+00:00",
-      "text": "🎓 فرصة تدريب جديدة\n\nالجهة: وزارة السياحة وهدف\nالفرصة: التدريب التعاوني في منشآت القطاع السياحي\nالمدينة: كل المدن\nالتخصصات: تخصصات متعددة\n\nالتفاصيل وطريقة التقديم عبر دربك"
-    }
-  },
   "SALTRAI:5799": {
     "decision": {
       "action": "add",
