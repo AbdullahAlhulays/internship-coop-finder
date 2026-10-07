@@ -959,53 +959,6 @@
       "text": "Builders GDP | Tamara\n- Registration: Apply Now\nCOOP Program | Tamara\n- Registration: Apply Now"
     }
   },
-  "SALTRAI:5796": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-06T10:28:42+00:00",
-      "status": "sent",
-      "telegram_message_id": 323
-    },
-    "extracted": {
-      "company": "عزم الإنجاز",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق."
-      },
-      "evidence": {
-        "company": "شركة عزم الإنجاز",
-        "deadline": null,
-        "description": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.",
-        "location": "الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "تدريب تعاوني | التسويق",
-      "type": "coop",
-      "url": "https://forms.gle/ToZpPYQyiYpmEGFp7"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://forms.gle/ToZpPYQyiYpmEGFp7"
-      ],
-      "message_id": 5796,
-      "permalink": "https://t.me/SALTRAI/5796",
-      "posted_at": "2026-10-06T10:19:57+00:00",
-      "text": "📢 فرصة تدريب تعاوني | التسويق\n\nتعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم وإرفاق السيرة الذاتية من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7\n\n✨ انضم لفريقنا واكتسب خبرة عملية حقيقية."
-    }
-  },
   "SALTRAI:5797": {
     "decision": {
       "action": "add",
