@@ -1212,6 +1212,15 @@ const companyRecords = [
     description: {"ar": "التخصصات:\nالهندسة الصناعية\nهندسة الحاسب\nهندسة البرمجيات\nالهندسة الكهربائية\nهندسة الاتصالات\nالهندسة المدنية\nعلوم الحاسب\nالمالية\nالمحاسبة\nالقانون\nالتسويق\nالموارد البشرية\nنظم المعلومات الإدارية\nإدارة الأعمال\nالمتطلبات:\nمعدل تراكمي لا يقل عن 3 من 4 أو 4 من 5\nالسيرة الذاتية (CV)\nالسجل الأكاديمي الحديث\nخطاب من الجامعة يفيد بأهلية التدريب التعاوني موجه إلى TAWAL", "en": "Specialties:\nIndustrial Engineering\nComputer Engineering\nSoftware Engineering\nElectrical Engineering\nTelecommunication Engineering\nCivil Engineering\nComputer Science\nFinance\nAccounting\nLaw\nMarketing\nHuman Resources\nManagement Information Systems\nBusiness Administration\nRequirements:\nGPA of at least 3 out of 4 or 4 out of 5\nCurriculum Vitae (CV)\nRecent Academic Record\nLetter from the University stating eligibility for cooperative training addressed to Tawal"},
     requiresLetter: true,
     addedAt: "2026-10-04T16:58:30+03:00",
+  },
+  {
+    name: "AT Group | مجموعة آت",
+    logo: {"domain": "training.at-group.me", "file": "at-group.png"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://training.at-group.me/",
+    type: "CO-OP Training",
+    description: {"ar": "نستقبل طلبات التدريب التعاوني في المسارات التالية:\n• تطوير الأعمال\n• المالية والمحاسبة\n• الإعلام والصحافة\n• التسويق\n• إدارة المشاريع\n• الإنتاج المرئي والموشن جرافيك\n• تحليل البيانات وذكاء الأعمال\n• تطوير المواقع الإلكترونية والبرمجة", "en": "We receive requests for cooperative training in the following tracks:\n• Business Development\n• Finance and Accounting\n• Media and press\n• Marketing\n• Project Management\n• Visual Production and Motion Graphics\n• Data Analysis and Business Intelligence\n• Website development and programming"},
+    addedAt: "2026-10-07T12:07:59+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
