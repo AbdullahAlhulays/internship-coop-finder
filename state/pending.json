@@ -1467,54 +1467,6 @@
       "text": "🟡الفرصة رقم ٢٧٩٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرصة تدريب – RevOps\nنبحث عن متدربين للانضمام إلى فريق RevOps في:\n• تطوير الأعمال (Business Development)\n• المبيعات (Sales)\n• التسويق (Marketing)\n🎯 فرصة مناسبة لمن يرغب في اكتساب خبرة عملية في بيئة Startup والمشاركة في بناء وتطوير مشروع تقني.\nالمجال: حلول الفوترة والتحصيل الرقمية\nنوع الفرصة: تدريب عملي\n🔗 للتقديم:\nhttps://forms.gle/LHQ3rhbF1nqhjivj7\n📩 شارك الإعلان مع من قد تهمه الفرصة."
     }
   },
-  "cooptraning_inksa:4473": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-05T16:10:54+00:00",
-      "status": "sent",
-      "telegram_message_id": 314
-    },
-    "extracted": {
-      "company": "AT Group | مجموعة آت",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "نستقبل طلبات التدريب التعاوني في المسارات التالية:\n\n• تطوير الأعمال\n• المالية والمحاسبة\n• الإعلام والصحافة\n• التسويق\n• إدارة المشاريع\n• الإنتاج المرئي والموشن جرافيك\n• تحليل البيانات وذكاء الأعمال\n• تطوير المواقع الإلكترونية والبرمجة"
-      },
-      "evidence": {
-        "company": "مجموعة آت",
-        "deadline": null,
-        "description": "نستقبل طلبات التدريب التعاوني في المسارات التالية:\n\n• تطوير الأعمال\n• المالية والمحاسبة\n• الإعلام والصحافة\n• التسويق\n• إدارة المشاريع\n• الإنتاج المرئي والموشن جرافيك\n• تحليل البيانات وذكاء الأعمال\n• تطوير المواقع الإلكترونية والبرمجة",
-        "location": "الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "فرص تدريب تعاوني",
-      "type": "coop",
-      "url": "https://training.at-group.me/"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": false,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://training.at-group.me/"
-      ],
-      "message_id": 4473,
-      "permalink": "https://t.me/cooptraning_inksa/4473",
-      "posted_at": "2026-10-05T12:16:52+00:00",
-      "text": "🟡الفرصة رقم ٢٧٩٩\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nفرص تدريب تعاوني في مجموعة آت\n\nنستقبل طلبات التدريب التعاوني في المسارات التالية:\n\n• تطوير الأعمال\n• المالية والمحاسبة\n• الإعلام والصحافة\n• التسويق\n• إدارة المشاريع\n• الإنتاج المرئي والموشن جرافيك\n• تحليل البيانات وذكاء الأعمال\n• تطوير المواقع الإلكترونية والبرمجة\n\nالتدريب يكون حضوريًا (الرياض) أو عن بُعد حسب طبيعة العمل والتفضيل الشخصي، بالتنسيق مع الفريق.\n\nللاطلاع على التفاصيل والتقديم:\nhttps://training.at-group.me/"
-    }
-  },
   "cooptraning_inksa:4474": {
     "decision": {
       "action": "add",
