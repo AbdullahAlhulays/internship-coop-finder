@@ -913,52 +913,6 @@
       "text": "🎓 فرصة تدريب جديدة\n🌟💸عن بعد + مكافأة مالية\nالجهة: Kerten Hospitality\nالفرصة: Internship — Remoteship\nالمدينة: كل المدن\nالتخصصات: إدارة الضيافة، إدارة الفعاليات، الإرشاد السياحي، التراث\n\nالتفاصيل وطريقة التقديم عبر دربك"
     }
   },
-  "SALTRAI:5795": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-06T10:28:42+00:00",
-      "status": "sent",
-      "telegram_message_id": 322
-    },
-    "extracted": {
-      "company": "Tamara",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "Tamara",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "COOP Program",
-      "type": "coop",
-      "url": "https://tamara.co/en-sa/job-detail?gh_jid=4997585101"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://tamara.co/en-sa/job-detail?gh_jid=4997585101",
-        "https://job-boards.eu.greenhouse.io/tamara/jobs/4996993101"
-      ],
-      "message_id": 5795,
-      "permalink": "https://t.me/SALTRAI/5795",
-      "posted_at": "2026-10-06T10:17:04+00:00",
-      "text": "Builders GDP | Tamara\n- Registration: Apply Now\nCOOP Program | Tamara\n- Registration: Apply Now"
-    }
-  },
   "SALTRAI:5797": {
     "decision": {
       "action": "add",

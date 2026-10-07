@@ -1229,6 +1229,13 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "🎓 التخصصات المستهدفة:\n• التسويق\n• الإدارة المكتبية\n\n🎯 مزايا التدريب:\n☑ اكتساب خبرة عملية في بيئة عمل احترافية.\n☑ المشاركة في مشاريع ومهام حقيقية مرتبطة بالتخصص.\n☑ إشراف وتوجيه مهني مستمر.\n☑ تطوير المهارات المهنية والإدارية.\n☑ شهادة تدريب تعاوني بعد إتمام البرنامج بنجاح.\n☑ إمكانية الترشيح للفرص الوظيفية المستقبلية للمتميزين.", "en": "Target 🎓 disciplines:\n• Marketing\n• Office management\n\nTraining 🎯 Advantages:\n☑ Gain hands-on experience in a professional work environment.\n☑ Participate in real projects and tasks related to the specialization.\nOngoing professional ☑ supervision and guidance.\n☑ Develop professional and managerial skills.\n☑ Certificate of cooperative training after successful completion of the program.\n☑ The possibility of nominating for future career opportunities for distinguished people."},
     addedAt: "2026-10-07T12:08:11+03:00",
+  },
+  {
+    name: "Tamara",
+    logo: {"domain": "tamara.co", "file": "tamara.jpg"},
+    applicationLink: "https://tamara.co/en-sa/job-detail?gh_jid=4997585101",
+    type: "CO-OP Training",
+    addedAt: "2026-10-07T12:09:18+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
