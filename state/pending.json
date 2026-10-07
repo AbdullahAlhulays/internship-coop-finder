@@ -874,8 +874,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-07T16:35:29+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-07T16:35:44+00:00",
+      "status": "sent",
+      "telegram_message_id": 347
     },
     "extracted": {
       "company": "Atkins",
@@ -918,8 +919,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-07T16:35:31+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-07T16:35:44+00:00",
+      "status": "sent",
+      "telegram_message_id": 348
     },
     "extracted": {
       "company": "begroup",
@@ -968,8 +970,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-07T16:35:39+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-07T16:35:45+00:00",
+      "status": "sent",
+      "telegram_message_id": 349
     },
     "extracted": {
       "company": "Tamco",
