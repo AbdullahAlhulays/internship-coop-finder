@@ -2100,5 +2100,97 @@
       "posted_at": "2026-09-16T21:44:24+00:00",
       "text": "🎓 #التدريب_التعاوني | #الرياض\n\nشركة TKE ALAT تعلن عن فتح باب التقديم على برنامج التدريب التعاوني COOP 2026 لطلاب وطالبات الجامعات في السنة الأخيرة، لاكتساب خبرة عملية في صناعة المصاعد وأنظمة النقل العمودي.\n\nالمتطلبات:\nأن يكون المتقدم من طلاب السنة الأخيرة.\nاهتمام حقيقي بصناعة النقل العمودي والمصاعد.\nإجادة التواصل باللغتين العربية والإنجليزية.\nالقدرة على العمل ضمن فريق.\nالرغبة في التعلم والمساهمة في المشاريع.\n\nللتقديم__________________"
     }
+  },
+  "nobthacv1:2174": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-08T09:04:42+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "شركة الرومانسية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "ونرحب بطلبة الجامعات والكليات الراغبين في خوض تجربة مهنية عملية ، وتطوير مهاراتهم وبناء خبراتهم في بيئة عمل احترافية\n\nنتطلع لاستقبال طلباتكم ، وسيتم التواصل مع المرشحين المستوفين لمتطلبات البرنامج"
+      },
+      "evidence": {
+        "company": "شركة الرومانسية",
+        "deadline": null,
+        "description": "ونرحب بطلبة الجامعات والكليات الراغبين في خوض تجربة مهنية عملية ، وتطوير مهاراتهم وبناء خبراتهم في بيئة عمل احترافية\n\nنتطلع لاستقبال طلباتكم ، وسيتم التواصل مع المرشحين المستوفين لمتطلبات البرنامج",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرص للتدريب التعاوني",
+      "type": "coop",
+      "url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=mZWNrSL98k2PL-Kz-46p5RjFIWAtNjBGm7yIc5y-iMdUMUxZMlVSWkFXUEtRNUo3SUw4NzVSUUlGVS4u&route=shorturl"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://forms.cloud.microsoft/pages/responsepage.aspx?id=mZWNrSL98k2PL-Kz-46p5RjFIWAtNjBGm7yIc5y-iMdUMUxZMlVSWkFXUEtRNUo3SUw4NzVSUUlGVS4u&amp;route=shorturl"
+      ],
+      "message_id": 2174,
+      "permalink": "https://t.me/nobthacv1/2174",
+      "posted_at": "2026-10-08T03:55:07+00:00",
+      "text": "توجد لدينا فرص للتدريب التعاوني في شركة الرومانسية\n\nونرحب بطلبة الجامعات والكليات الراغبين في خوض تجربة مهنية عملية ، وتطوير مهاراتهم وبناء خبراتهم في بيئة عمل احترافية\n\nنتطلع لاستقبال طلباتكم ، وسيتم التواصل مع المرشحين المستوفين لمتطلبات البرنامج\n\nللتقديمـــــــــــــــ"
+    }
+  },
+  "nobthacv1:2175": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-08T09:04:44+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "شركة ماهرون للإنارة",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "✨ مميزات التدريب:\n• فرص متاحة لعدة تخصصات\n• تدريب عملي واكتساب خبرة مهنية\n• مكافآت وحوافز للمتميزين\n• فرصة للمشاركة في مشاريع وأعمال حقيقية\n• إمكانية التوظيف بعد انتهاء فترة التدريب للمتميزين"
+      },
+      "evidence": {
+        "company": "شركة ماهرون للإنارة",
+        "deadline": null,
+        "description": "✨ مميزات التدريب:\n• فرص متاحة لعدة تخصصات\n• تدريب عملي واكتساب خبرة مهنية\n• مكافآت وحوافز للمتميزين\n• فرصة للمشاركة في مشاريع وأعمال حقيقية\n• إمكانية التوظيف بعد انتهاء فترة التدريب للمتميزين",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني",
+      "type": "coop",
+      "url": "https://forms.gle/coMjqkaqC2mV87oi9"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/coMjqkaqC2mV87oi9"
+      ],
+      "message_id": 2175,
+      "permalink": "https://t.me/nobthacv1/2175",
+      "posted_at": "2026-10-08T04:01:24+00:00",
+      "text": "🎓 فرصة تدريب تعاوني\n\nتعلن شركة ماهرون للإنارة عن توفر فرص تدريب تعاوني لعدة تخصصات للطلاب والطالبات الراغبين في اكتساب خبرة عملية حقيقية وتطوير مهاراتهم في بيئة عمل احترافية.\n\n✨ مميزات التدريب:\n• فرص متاحة لعدة تخصصات\n• تدريب عملي واكتساب خبرة مهنية\n• مكافآت وحوافز للمتميزين\n• فرصة للمشاركة في مشاريع وأعمال حقيقية\n• إمكانية التوظيف بعد انتهاء فترة التدريب للمتميزين\n\n📌 للتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/coMjqkaqC2mV87oi9\n\nنبحث عن أشخاص لديهم الشغف بالتعلم والتطور وصناعة أثر حقيقي خلال فترة التدريب.\n\nابدأ مسيرتك المهنية معنا 🚀"
+    }
   }
 }
