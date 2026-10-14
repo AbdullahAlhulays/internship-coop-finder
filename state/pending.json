@@ -1017,8 +1017,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-14T20:09:34+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-14T20:11:24+00:00",
+      "status": "sent",
+      "telegram_message_id": 353
     },
     "extracted": {
       "company": "AlFanar | الفنار",
@@ -1064,8 +1065,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-14T20:10:13+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-14T20:11:24+00:00",
+      "status": "sent",
+      "telegram_message_id": 354
     },
     "extracted": {
       "company": "MasterCard",
@@ -1243,8 +1245,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-14T20:10:56+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-14T20:11:25+00:00",
+      "status": "sent",
+      "telegram_message_id": 355
     },
     "extracted": {
       "company": "AlFanar | الفنار",
