@@ -1009,6 +1009,100 @@
       "text": "📢 فرصة تدريب تعاوني\n\nتعلن شركة تامكو عن توفر فرصة تدريب تعاوني.\n\n📍 الموقع: الرياض\n\nالمتطلبات:\n• أن يكون التدريب التعاوني متطلبًا للتخرج.\n• الالتزام بالحضور خلال فترة التدريب.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n\n📩 للتقديم\nhttps://hickory-erica-14c.notion.site/3983c75acad580de9c51d301673af430\nبالتوفيق للجميع 🤍"
     }
   },
+  "SALTRAI:5814": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-14T20:09:34+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "AlFanar | الفنار",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية."
+      },
+      "evidence": {
+        "company": "#الفنار",
+        "deadline": null,
+        "description": "تستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Cooperative Training Program 2026/2027",
+      "type": "coop",
+      "url": "https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
+      ],
+      "message_id": 5814,
+      "permalink": "https://t.me/SALTRAI/5814",
+      "posted_at": "2026-10-12T10:49:21+00:00",
+      "text": "🟡الفرصة رقم ٢٨٠٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n🎓 تعلن شركة ⁧ #الفنار⁩ عن بدء التقديم في برنامج التدريب التعاوني 2026 / 2027 م ⚡️\n\nتستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية.\n\nhttps://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
+    }
+  },
+  "SALTRAI:5817": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-14T20:10:13+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "MasterCard",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "برنامج لمدة 18 شهر في الرياض\nتدريب صيفي يبدأ في يونيو 2027\nمن المسارات:\n📊 تحليلات الأداء\n🧠 الاستراتيجية والتحول\n📣 التسويق\n🚀 التنفيذ\n💼 تجارب الأعمال"
+      },
+      "evidence": {
+        "company": "ماستركارد",
+        "deadline": null,
+        "description": "برنامج لمدة 18 شهر في الرياض\nتدريب صيفي يبدأ في يونيو 2027\nمن المسارات:\n📊 تحليلات الأداء\n🧠 الاستراتيجية والتحول\n📣 التسويق\n🚀 التنفيذ\n💼 تجارب الأعمال",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Launch Program 2027",
+      "type": "internship",
+      "url": "https://x.com/TheFtnSa/status/2107511363677360171?s=20"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://x.com/TheFtnSa/status/2107511363677360171?s=20",
+        "https://linktr.ee/FtnSa"
+      ],
+      "message_id": 5817,
+      "permalink": "https://t.me/SALTRAI/5817",
+      "posted_at": "2026-10-12T10:53:00+00:00",
+      "text": "🚨🚨 عاااجل | رسميًا ماستركارد تفتح فرص 2027 للطلاب وحديثي التخرج في السعودية 🔥\n\nوالأجمل؟ الفرص تبدو متاحة لمختلف التخصصات 👀\n\n🎓 Launch Program 2027 لحديثي التخرج\nبرنامج لمدة 18 شهر في الرياض\n\n☀️ Summer Internship 2027 للطلاب\nتدريب صيفي يبدأ في يونيو 2027\n\nومن المسارات:\n📊 تحليلات الأداء\n🧠 الاستراتيجية والتحول\n📣 التسويق\n🚀 التنفيذ\n💼 تجارب الأعمال\n\nإذا أنت طالب أو خريج، لا تفوتها 👇\n\n🔗 التفاصيل والتقديم من هنا: https://x.com/TheFtnSa/status/2107511363677360171?s=20\n\n————————————————\nتبا فُرص أكثر ؟ تحصلنا في جميع المنصات هنا 🟣 https://linktr.ee/FtnSa"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
@@ -1139,6 +1233,53 @@
       "permalink": "https://t.me/cooptraning_inksa/4351",
       "posted_at": "2026-08-09T14:53:49+00:00",
       "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
+    }
+  },
+  "cooptraning_inksa:4481": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-14T20:10:56+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "AlFanar | الفنار",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية."
+      },
+      "evidence": {
+        "company": "#الفنار",
+        "deadline": null,
+        "description": "تستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني 2026 / 2027",
+      "type": "coop",
+      "url": "https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
+      ],
+      "message_id": 4481,
+      "permalink": "https://t.me/cooptraning_inksa/4481",
+      "posted_at": "2026-10-11T13:09:30+00:00",
+      "text": "🟡الفرصة رقم ٢٨٠٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n🎓 تعلن شركة ⁧ #الفنار⁩ عن بدء التقديم في برنامج التدريب التعاوني 2026 / 2027 م ⚡️\n\nتستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية.\n\nhttps://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
     }
   },
   "nobthacv1:2042": {
