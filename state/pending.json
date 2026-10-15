@@ -1057,54 +1057,6 @@
       "text": "🟡الفرصة رقم ٢٨٠٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n🎓 تعلن شركة ⁧ #الفنار⁩ عن بدء التقديم في برنامج التدريب التعاوني 2026 / 2027 م ⚡️\n\nتستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية.\n\nhttps://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
     }
   },
-  "SALTRAI:5817": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-14T20:11:24+00:00",
-      "status": "sent",
-      "telegram_message_id": 354
-    },
-    "extracted": {
-      "company": "MasterCard",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "برنامج لمدة 18 شهر في الرياض\nتدريب صيفي يبدأ في يونيو 2027\nمن المسارات:\n📊 تحليلات الأداء\n🧠 الاستراتيجية والتحول\n📣 التسويق\n🚀 التنفيذ\n💼 تجارب الأعمال"
-      },
-      "evidence": {
-        "company": "ماستركارد",
-        "deadline": null,
-        "description": "برنامج لمدة 18 شهر في الرياض\nتدريب صيفي يبدأ في يونيو 2027\nمن المسارات:\n📊 تحليلات الأداء\n🧠 الاستراتيجية والتحول\n📣 التسويق\n🚀 التنفيذ\n💼 تجارب الأعمال",
-        "location": "الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Launch Program 2027",
-      "type": "internship",
-      "url": "https://x.com/TheFtnSa/status/2107511363677360171?s=20"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://x.com/TheFtnSa/status/2107511363677360171?s=20",
-        "https://linktr.ee/FtnSa"
-      ],
-      "message_id": 5817,
-      "permalink": "https://t.me/SALTRAI/5817",
-      "posted_at": "2026-10-12T10:53:00+00:00",
-      "text": "🚨🚨 عاااجل | رسميًا ماستركارد تفتح فرص 2027 للطلاب وحديثي التخرج في السعودية 🔥\n\nوالأجمل؟ الفرص تبدو متاحة لمختلف التخصصات 👀\n\n🎓 Launch Program 2027 لحديثي التخرج\nبرنامج لمدة 18 شهر في الرياض\n\n☀️ Summer Internship 2027 للطلاب\nتدريب صيفي يبدأ في يونيو 2027\n\nومن المسارات:\n📊 تحليلات الأداء\n🧠 الاستراتيجية والتحول\n📣 التسويق\n🚀 التنفيذ\n💼 تجارب الأعمال\n\nإذا أنت طالب أو خريج، لا تفوتها 👇\n\n🔗 التفاصيل والتقديم من هنا: https://x.com/TheFtnSa/status/2107511363677360171?s=20\n\n————————————————\nتبا فُرص أكثر ؟ تحصلنا في جميع المنصات هنا 🟣 https://linktr.ee/FtnSa"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
