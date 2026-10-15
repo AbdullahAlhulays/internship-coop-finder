@@ -1244,6 +1244,14 @@ const companyRecords = [
     type: "Internship",
     description: {"ar": "التخصصات: إدارة الضيافة، إدارة الفعاليات، الإرشاد السياحي، التراث", "en": "Specialties: Hospitality Management, Event Management, Tourism Guidance, Heritage"},
     addedAt: "2026-10-07T12:09:54+03:00",
+  },
+  {
+    name: "AlFanar | الفنار",
+    logo: {"domain": "career5.successfactors.eu", "file": "alfanar.jpg"},
+    applicationLink: "https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58",
+    type: "CO-OP Training",
+    description: {"ar": "تستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية.", "en": "Al-Fanar aims to attract students to qualify them for the labor market in various disciplines\n\n🔹Engineering.\n🔹Administrative."},
+    addedAt: "2026-10-15T15:42:46+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
