@@ -1141,54 +1141,6 @@
       "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
     }
   },
-  "cooptraning_inksa:4481": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-14T20:11:25+00:00",
-      "status": "sent",
-      "telegram_message_id": 355
-    },
-    "extracted": {
-      "company": "AlFanar | الفنار",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية."
-      },
-      "evidence": {
-        "company": "#الفنار",
-        "deadline": null,
-        "description": "تستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني 2026 / 2027",
-      "type": "coop",
-      "url": "https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
-      ],
-      "message_id": 4481,
-      "permalink": "https://t.me/cooptraning_inksa/4481",
-      "posted_at": "2026-10-11T13:09:30+00:00",
-      "text": "🟡الفرصة رقم ٢٨٠٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n🎓 تعلن شركة ⁧ #الفنار⁩ عن بدء التقديم في برنامج التدريب التعاوني 2026 / 2027 م ⚡️\n\nتستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية.\n\nhttps://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
-    }
-  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
