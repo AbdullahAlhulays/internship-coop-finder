@@ -1252,6 +1252,16 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "تستهدف شركة الفنار استقطاب الطلاب/ـات لتأهيلهم لسوق العمل في مختلف التخصصات\n\n🔹الهندسية.\n🔹الإدارية.", "en": "Al-Fanar aims to attract students to qualify them for the labor market in various disciplines\n\n🔹Engineering.\n🔹Administrative."},
     addedAt: "2026-10-15T15:42:46+03:00",
+  },
+  {
+    name: "SDAIA",
+    logo: {"domain": "sdaia.gov.sa", "file": "sdaia.jpg"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://athkax.sdaia.gov.sa/coop",
+    deadline: "2026-10-24",
+    type: "CO-OP Training",
+    description: {"ar": "• شروط القبول\nسعودي الجنسية\nأن يكون المتقدم من طلاب الجامعات أو الكليات.\nأن يكون التدريب قبل الحصول على شهادة التخرج.\nأن يكون المتقدم متفرغًا طوال فترة التدريب.\n\nمدة التدريب\n\n8 أسابيع على الأقل\nتُحدد مدة التدريب وفق متطلبات الجامعة.\n\nمقر التدريب\n\nيُنفذ التدريب في مقر سدايا بالرياض.", "en": "• Admission Requirements\nSaudi National\nThe applicant must be a university or college student.\nThe training should be before obtaining the graduation certificate.\nThe applicant must be available throughout the training period.\n\nTraining Duration \n\nAt least 8 weeks\nThe duration of the training shall be determined according to the requirements of the university.\n\nTraining Facility\n\nThe training shall be carried out at Sedaya headquarters in Riyadh."},
+    addedAt: "2026-10-18T14:17:19+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
