@@ -1017,8 +1017,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-19T17:31:24+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-19T17:33:47+00:00",
+      "status": "sent",
+      "telegram_message_id": 362
     },
     "extracted": {
       "company": "Elm | علم",
@@ -1064,8 +1065,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-19T17:33:22+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-19T17:33:47+00:00",
+      "status": "sent",
+      "telegram_message_id": 363
     },
     "extracted": {
       "company": "Azm Al Injaz | عزم الإنجاز",
@@ -1110,8 +1112,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-19T17:33:43+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-19T17:33:48+00:00",
+      "status": "sent",
+      "telegram_message_id": 364
     },
     "extracted": {
       "company": "Government entity",
