@@ -1009,6 +1009,145 @@
       "text": "📢 فرصة تدريب تعاوني\n\nتعلن شركة تامكو عن توفر فرصة تدريب تعاوني.\n\n📍 الموقع: الرياض\n\nالمتطلبات:\n• أن يكون التدريب التعاوني متطلبًا للتخرج.\n• الالتزام بالحضور خلال فترة التدريب.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n\n📩 للتقديم\nhttps://hickory-erica-14c.notion.site/3983c75acad580de9c51d301673af430\nبالتوفيق للجميع 🤍"
     }
   },
+  "SALTRAI:5820": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-19T17:31:24+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Elm | علم",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "في ⁧ #علم⁩، تلتقي الطموحات بالفرص، وتتحوّل الأفكار إلى مشاريع، والمتدرّب إلى خبير يحمل قصّة نجاح يرويها. انضم إلى برنامج التدريب التعاوني وانطلق نحو مستقبل مهني واعد.."
+      },
+      "evidence": {
+        "company": "#علم",
+        "deadline": null,
+        "description": "في ⁧ #علم⁩، تلتقي الطموحات بالفرص، وتتحوّل الأفكار إلى مشاريع، والمتدرّب إلى خبير يحمل قصّة نجاح يرويها. انضم إلى برنامج التدريب التعاوني وانطلق نحو مستقبل مهني واعد..",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://career.elm.sa/elm/go/Coop-Trainee-and-Training-Programs/7792200/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://career.elm.sa/elm/go/Coop-Trainee-and-Training-Programs/7792200/",
+        "https://x.com/elm/status/2111774389435797592?s=46"
+      ],
+      "message_id": 5820,
+      "permalink": "https://t.me/SALTRAI/5820",
+      "posted_at": "2026-10-19T10:58:50+00:00",
+      "text": "#تدريب #تدريب_تعاوني\n\nفي ⁧ #علم⁩، تلتقي الطموحات بالفرص، وتتحوّل الأفكار إلى مشاريع، والمتدرّب إلى خبير يحمل قصّة نجاح يرويها. انضم إلى برنامج التدريب التعاوني وانطلق نحو مستقبل مهني واعد..\n\nhttps://career.elm.sa/elm/go/Coop-Trainee-and-Training-Programs/7792200/\n\nhttps://x.com/elm/status/2111774389435797592?s=46"
+    }
+  },
+  "SALTRAI:5833": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-19T17:33:22+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Azm Al Injaz | عزم الإنجاز",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع"
+      },
+      "evidence": {
+        "company": "عزم الإنجاز",
+        "deadline": null,
+        "description": "تعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني | التسويق وإدارة المشاريع",
+      "type": "coop",
+      "url": "https://forms.gle/ToZpPYQyiYpmEGFp7"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://forms.gle/ToZpPYQyiYpmEGFp7"
+      ],
+      "message_id": 5833,
+      "permalink": "https://t.me/SALTRAI/5833",
+      "posted_at": "2026-10-19T11:45:19+00:00",
+      "text": "📢 فرصة تدريب تعاوني | التسويق وإدارة المشاريع\n\nتعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7\n✨ انضم لفريقنا واكتسب خبرة عملية حقيقية."
+    }
+  },
+  "SALTRAI:5839": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-19T17:33:43+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Government entity",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية."
+      },
+      "evidence": {
+        "company": "جهة حكومية",
+        "deadline": null,
+        "description": "تتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني",
+      "type": "coop",
+      "url": "https://forms.cloud.microsoft/r/iBQ74mY2Wp"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.cloud.microsoft/r/iBQ74mY2Wp"
+      ],
+      "message_id": 5839,
+      "permalink": "https://t.me/SALTRAI/5839",
+      "posted_at": "2026-10-19T11:45:19+00:00",
+      "text": "فرصة تدريب تعاوني في جهة حكومية\n\nتتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية.\n\nللمهتمين، يرجى تعبئة نموذج التقديم عبر الرابط التالي:\n\nhttps://forms.cloud.microsoft/r/iBQ74mY2Wp\n\nنتمنى التوفيق للجميع، ونأمل مشاركة الفرصة مع المهتمين."
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
