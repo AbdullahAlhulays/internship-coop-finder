@@ -1039,7 +1039,7 @@
       "is_opportunity": true,
       "location": null,
       "reason_excluded": null,
-      "requires_letter": false,
+      "requires_letter": true,
       "title": "برنامج التدريب التعاوني",
       "type": "coop",
       "url": "https://career.elm.sa/elm/go/Coop-Trainee-and-Training-Programs/7792200/"
