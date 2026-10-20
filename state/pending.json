@@ -1159,8 +1159,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-20T13:36:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-20T13:36:55+00:00",
+      "status": "sent",
+      "telegram_message_id": 365
     },
     "extracted": {
       "company": "شركة الفنار",
