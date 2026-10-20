@@ -1151,6 +1151,53 @@
       "text": "فرصة تدريب تعاوني في جهة حكومية\n\nتتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية.\n\nللمهتمين، يرجى تعبئة نموذج التقديم عبر الرابط التالي:\n\nhttps://forms.cloud.microsoft/r/iBQ74mY2Wp\n\nنتمنى التوفيق للجميع، ونأمل مشاركة الفرصة مع المهتمين."
     }
   },
+  "SALTRAI:5841": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-20T13:36:27+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "شركة الفنار",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات (الهندسة الكهربائية، الميكانيكية، الصناعية، الموارد البشرية، المحاسبة، التسويق)."
+      },
+      "evidence": {
+        "company": "شركة الفنار",
+        "deadline": null,
+        "description": "التخصصات (الهندسة الكهربائية، الميكانيكية، الصناعية، الموارد البشرية، المحاسبة، التسويق).",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://lik.ad/tv31w"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://lik.ad/tv31w",
+        "https://lik.ad/dpatj"
+      ],
+      "message_id": 5841,
+      "permalink": "https://t.me/SALTRAI/5841",
+      "posted_at": "2026-10-20T10:49:25+00:00",
+      "text": "(🔴) تدريب تعاوني | شركة الفنار تعلن بدء التقديم في برنامج التدريب التعاوني (للجنسين):\n\n⭐️ التخصصات (الهندسة الكهربائية، الميكانيكية، الصناعية، الموارد البشرية، المحاسبة، التسويق).\n\n✅ رابط التقديم عبر بوابة الشركة: https://lik.ad/tv31w\n\nالمصدر: https://lik.ad/dpatj"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
