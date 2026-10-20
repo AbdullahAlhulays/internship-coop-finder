@@ -1056,51 +1056,6 @@
       "text": "📢 فرصة تدريب تعاوني | التسويق وإدارة المشاريع\n\nتعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7\n✨ انضم لفريقنا واكتسب خبرة عملية حقيقية."
     }
   },
-  "SALTRAI:5844": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-20T18:30:28+00:00",
-      "status": "sent",
-      "telegram_message_id": 366
-    },
-    "extracted": {
-      "company": "Microsoft",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=ZZFXcYk-PUGC12qXIsGZ_AKWhVqsd3VPvcbv23deR-5UODk3SklLQVBWT1kzOEtFSElMVkdQWEczNC4u",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "internship",
-      "url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=ZZFXcYk-PUGC12qXIsGZ_AKWhVqsd3VPvcbv23deR-5UODk3SklLQVBWT1kzOEtFSElMVkdQWEczNC4u"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=ZZFXcYk-PUGC12qXIsGZ_AKWhVqsd3VPvcbv23deR-5UODk3SklLQVBWT1kzOEtFSElMVkdQWEczNC4u"
-      ],
-      "message_id": 5844,
-      "permalink": "https://t.me/SALTRAI/5844",
-      "posted_at": "2026-10-20T10:57:39+00:00",
-      "text": "#تدريب_تعاوني #تدريب\n#صيفي\n\nhttps://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=ZZFXcYk-PUGC12qXIsGZ_AKWhVqsd3VPvcbv23deR-5UODk3SklLQVBWT1kzOEtFSElMVkdQWEczNC4u"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
