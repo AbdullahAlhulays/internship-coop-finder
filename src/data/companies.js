@@ -1262,6 +1262,16 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "• شروط القبول\nسعودي الجنسية\nأن يكون المتقدم من طلاب الجامعات أو الكليات.\nأن يكون التدريب قبل الحصول على شهادة التخرج.\nأن يكون المتقدم متفرغًا طوال فترة التدريب.\n\nمدة التدريب\n\n8 أسابيع على الأقل\nتُحدد مدة التدريب وفق متطلبات الجامعة.\n\nمقر التدريب\n\nيُنفذ التدريب في مقر سدايا بالرياض.", "en": "• Admission Requirements\nSaudi National\nThe applicant must be a university or college student.\nThe training should be before obtaining the graduation certificate.\nThe applicant must be available throughout the training period.\n\nTraining Duration \n\nAt least 8 weeks\nThe duration of the training shall be determined according to the requirements of the university.\n\nTraining Facility\n\nThe training shall be carried out at Sedaya headquarters in Riyadh."},
     addedAt: "2026-10-18T14:17:19+03:00",
+  },
+  {
+    name: "المركز_الوطني_لنظم الموارد الحكومية",
+    logo: {"domain": "career-sa20.hr.cloud.sap", "file": "career-sa20.ico"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://career-sa20.hr.cloud.sap/sfcareer/jobreqcareer?jobId=1462&company=national15",
+    deadline: "2026-10-31",
+    type: "CO-OP Training",
+    description: {"ar": "يعلن المركز_الوطني_لنظم الموارد الحكومية عن بدء التسجيل في برنامج التدريب التعاوني \"استكشف\" لعام 2027م؛ للإسهام في تعزيز الجاهزية المهنية للكفاءات الوطنية.\n\n:التخصصات المطلوبة\nعلوم الكمبيوتر، تكنولوجيا المعلومات، الأمن السيبراني، نظم المعلومات، نظم المعلومات الإدارية، الموارد البشرية، التسويق،\n\nالعلاقات العامة، التصميم الجرافيكي، إدارة الأعمال، القانون\n\n:الشروط\nمواطن سعودي\nيجب ألا يقل المتوسط التراكمي عن (3.5) من (5) أو (2.5) من (4)\n. لاجتياز جميع المواد والتدريب بدوام كامل\nيجب أن تكون مدة التدريب شهرين بحد أدنى ستة أشهر كحد أقصى\nيجب أن يكون التدريب 8 ساعات في اليوم، 5 أيام في الأسبوع\n• اجتياز المقابلة الشخصية بنجاح", "en": "The National Center for Government Resource Systems announces the start of registration in the cooperative training program \"Explore\" for the year 2027AD; to contribute to enhancing the professional readiness of national competencies.\n\nRequiredmajors:\nComputer Science, Information Technology, Cybersecurity, Information Systems, Management Information Systems, Human Resources, Marketing,\n\nPublic Relations, Graphic Design, Business Administration, Law\n\n:Conditions\nSaudi National\nThe cumulative average must not be less than (3.5) out of (5) or (2.5) out of (4)\n. to pass all subjects and full-time training\nThe duration of the training should be a minimum of two months and a maximum of six months\nTraining should be 8 hours a day, 5 days a week\n• Successfully pass the interview"},
+    addedAt: "2026-10-21T02:15:40+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
