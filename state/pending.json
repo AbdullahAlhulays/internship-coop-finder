@@ -1009,53 +1009,6 @@
       "text": "📢 فرصة تدريب تعاوني\n\nتعلن شركة تامكو عن توفر فرصة تدريب تعاوني.\n\n📍 الموقع: الرياض\n\nالمتطلبات:\n• أن يكون التدريب التعاوني متطلبًا للتخرج.\n• الالتزام بالحضور خلال فترة التدريب.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n\n📩 للتقديم\nhttps://hickory-erica-14c.notion.site/3983c75acad580de9c51d301673af430\nبالتوفيق للجميع 🤍"
     }
   },
-  "SALTRAI:5833": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-19T17:33:47+00:00",
-      "status": "sent",
-      "telegram_message_id": 363
-    },
-    "extracted": {
-      "company": "Azm Al Injaz | عزم الإنجاز",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع"
-      },
-      "evidence": {
-        "company": "عزم الإنجاز",
-        "deadline": null,
-        "description": "تعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع",
-        "location": "الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "فرصة تدريب تعاوني | التسويق وإدارة المشاريع",
-      "type": "coop",
-      "url": "https://forms.gle/ToZpPYQyiYpmEGFp7"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://forms.gle/ToZpPYQyiYpmEGFp7"
-      ],
-      "message_id": 5833,
-      "permalink": "https://t.me/SALTRAI/5833",
-      "posted_at": "2026-10-19T11:45:19+00:00",
-      "text": "📢 فرصة تدريب تعاوني | التسويق وإدارة المشاريع\n\nتعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7\n✨ انضم لفريقنا واكتسب خبرة عملية حقيقية."
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",

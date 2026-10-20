@@ -1282,6 +1282,14 @@ const companyRecords = [
     description: {"ar": "برنامج التدريب التعاوني 2027 – شركة علم\n\nأعلنت شركة علم عن فتح باب التقديم لبرنامج التدريب التعاوني لعام 2027، بهدف تأهيل طلاب وطالبات الجامعات وإكسابهم الخبرة العملية في بيئة مهنية.\n\nالتخصصات المطلوبة: علوم الحاسب، تقنية المعلومات، هندسة البرمجيات، إدارة المشاريع، الموارد البشرية، القانون، المحاسبة، التسويق، المالية، الهندسة الصناعية، نظم المعلومات ونظم المعلومات الإدارية.\n\nالشروط: معدل لا يقل عن 3.2 من 4 أو 4 من 5، مدة تدريب 4–7 أشهر، إجادة اللغة الإنجليزية، وأن يكون التدريب متطلبًا جامعيًا للتخرج.\n\nفترة التقديم: من 18 أكتوبر إلى 4 نوفمبر 2026.\n\nإعلان النتائج: 24 نوفمبر 2026.\n\nبداية التدريب: يناير 2027.", "en": "Cooperative Training Program 2027 – Elm Company\n\nElm announced the opening of the 2027 Cooperative Training Program, with the aim of qualifying university students and providing them with practical experience in a professional environment.\n\nRequired majors: Computer Science, Information Technology, Software Engineering, Project Management, Human Resources, Law, Accounting, Marketing, Finance, Industrial Engineering, Information Systems and Management Information Systems.\n\nRequirements: A minimum average of 3.2 out of 4 or 4 out of 5, a duration of 4–7 months training, English proficiency, and that the training is a university requirement for graduation.\n\nSubmission period: October 18 to November 4, 2026.\n\nAnnouncement of results: November 24, 2026.\n\nStart of training: January 2027."},
     requiresLetter: true,
     addedAt: "2026-10-21T02:17:34+03:00",
+  },
+  {
+    name: "Azm Al Injaz | عزم الإنجاز",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://forms.gle/ToZpPYQyiYpmEGFp7",
+    type: "CO-OP Training",
+    description: {"ar": "تعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع", "en": "Momentum for Achievement announces the availability of a collaborative training opportunity for university students interested in the field of marketing and project management."},
+    addedAt: "2026-10-21T02:18:15+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
