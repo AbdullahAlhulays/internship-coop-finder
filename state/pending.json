@@ -1056,54 +1056,6 @@
       "text": "📢 فرصة تدريب تعاوني | التسويق وإدارة المشاريع\n\nتعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7\n✨ انضم لفريقنا واكتسب خبرة عملية حقيقية."
     }
   },
-  "SALTRAI:5841": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-20T13:36:55+00:00",
-      "status": "sent",
-      "telegram_message_id": 365
-    },
-    "extracted": {
-      "company": "شركة الفنار",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "التخصصات (الهندسة الكهربائية، الميكانيكية، الصناعية، الموارد البشرية، المحاسبة، التسويق)."
-      },
-      "evidence": {
-        "company": "شركة الفنار",
-        "deadline": null,
-        "description": "التخصصات (الهندسة الكهربائية، الميكانيكية، الصناعية، الموارد البشرية، المحاسبة، التسويق).",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني",
-      "type": "coop",
-      "url": "https://lik.ad/tv31w"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://lik.ad/tv31w",
-        "https://lik.ad/dpatj"
-      ],
-      "message_id": 5841,
-      "permalink": "https://t.me/SALTRAI/5841",
-      "posted_at": "2026-10-20T10:49:25+00:00",
-      "text": "(🔴) تدريب تعاوني | شركة الفنار تعلن بدء التقديم في برنامج التدريب التعاوني (للجنسين):\n\n⭐️ التخصصات (الهندسة الكهربائية، الميكانيكية، الصناعية، الموارد البشرية، المحاسبة، التسويق).\n\n✅ رابط التقديم عبر بوابة الشركة: https://lik.ad/tv31w\n\nالمصدر: https://lik.ad/dpatj"
-    }
-  },
   "SALTRAI:5844": {
     "decision": {
       "action": "add",
