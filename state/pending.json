@@ -1056,53 +1056,6 @@
       "text": "📢 فرصة تدريب تعاوني | التسويق وإدارة المشاريع\n\nتعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7\n✨ انضم لفريقنا واكتسب خبرة عملية حقيقية."
     }
   },
-  "SALTRAI:5839": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-19T17:33:48+00:00",
-      "status": "sent",
-      "telegram_message_id": 364
-    },
-    "extracted": {
-      "company": "Government entity",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية."
-      },
-      "evidence": {
-        "company": "جهة حكومية",
-        "deadline": null,
-        "description": "تتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "فرصة تدريب تعاوني",
-      "type": "coop",
-      "url": "https://forms.cloud.microsoft/r/iBQ74mY2Wp"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://forms.cloud.microsoft/r/iBQ74mY2Wp"
-      ],
-      "message_id": 5839,
-      "permalink": "https://t.me/SALTRAI/5839",
-      "posted_at": "2026-10-19T11:45:19+00:00",
-      "text": "فرصة تدريب تعاوني في جهة حكومية\n\nتتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية.\n\nللمهتمين، يرجى تعبئة نموذج التقديم عبر الرابط التالي:\n\nhttps://forms.cloud.microsoft/r/iBQ74mY2Wp\n\nنتمنى التوفيق للجميع، ونأمل مشاركة الفرصة مع المهتمين."
-    }
-  },
   "SALTRAI:5841": {
     "decision": {
       "action": "add",
