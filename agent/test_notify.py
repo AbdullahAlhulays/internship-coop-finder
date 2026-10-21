@@ -118,12 +118,14 @@ check("letter requirement shown as Yes when true", "Requires enrollment letter: 
 check("missing description is explicit and points to the editor", "Description: not found" in text_no_deadline and "Edit a field" in text_no_deadline)
 
 print("\ndeadline_warning (catches the real 2024-vs-2026 bug)")
-check("no warning for a deadline that's genuinely in the future", deadline_warning(ARAMCO) is None)
+source_post = {"posted_at": "2026-08-09T12:00:00+00:00"}
+check("no warning for a deadline that's genuinely in the future", deadline_warning(ARAMCO, source_post) is None)
 check(
     "flags a deadline that's already in the past as likely wrong",
-    deadline_warning(WRONG_YEAR) is not None and "2024-09-15" in deadline_warning(WRONG_YEAR),
+    deadline_warning(WRONG_YEAR, source_post) is not None
+    and "2024-09-15" in deadline_warning(WRONG_YEAR, source_post),
 )
-wrong_year_text = format_card_message(WRONG_YEAR)
+wrong_year_text = format_card_message(WRONG_YEAR, source_post)
 check("the warning actually shows up in the message Abood receives", "⚠️" in wrong_year_text and "likely wrong" in wrong_year_text)
 
 print("\nHTML escaping (a company/location containing special characters must not break parse_mode=HTML)")

@@ -309,6 +309,26 @@ with tempfile.TemporaryDirectory() as tmp:
     check("failed extraction is not marked seen, so the next hourly run retries it", load_seen(tmpp / "s.json") == {})
 
 
+print("\nrun: permanent provider errors stop further model calls but leave posts unseen")
+with tempfile.TemporaryDirectory() as tmp:
+    tmpp = Path(tmp)
+    companies = write_companies(tmpp)
+    model_calls = []
+
+    def denied_model(prompt):
+        model_calls.append(prompt)
+        raise ModelError("Groq rejected GROQ_API_KEY (HTTP 401)", retryable=False)
+
+    summary = run(
+        "@SALTRAI", [POST, {**POST, "message_id": 5479}], str(companies),
+        pending_path=str(tmpp / "p.json"), ledger_path=str(tmpp / "l.json"), seen_path=str(tmpp / "s.json"),
+        model_fn=denied_model, extraction_attempts=3,
+    )
+    check("only one provider request was made", len(model_calls) == 1)
+    check("the provider block is reported", summary["provider_blocked"] and summary["failed"] == 1)
+    check("both posts remain eligible after the key is fixed", load_seen(tmpp / "s.json") == {})
+
+
 print("\nrun: consistently missing an essential company field is handled once, not retried forever")
 with tempfile.TemporaryDirectory() as tmp:
     tmpp = Path(tmp)

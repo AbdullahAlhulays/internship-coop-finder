@@ -64,9 +64,13 @@ REQUEST_TIMEOUT = 30
 class ModelError(RuntimeError):
     """The provider could not be reached or refused the request."""
 
-    def __init__(self, message: str, retry_after_seconds: float | None = None):
+    def __init__(
+        self, message: str, retry_after_seconds: float | None = None,
+        retryable: bool = True,
+    ):
         super().__init__(message)
         self.retry_after_seconds = retry_after_seconds
+        self.retryable = retryable
 
 
 def _auth_headers() -> dict:
@@ -74,7 +78,8 @@ def _auth_headers() -> dict:
     if not key:
         raise ModelError(
             "GROQ_API_KEY is not set. See TOKEN_SETUP.md for how to create one — "
-            "it's free, takes about a minute, no credit card."
+            "it's free, takes about a minute, no credit card.",
+            retryable=False,
         )
     return {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
 
@@ -106,7 +111,12 @@ def call_model(prompt: str, *, system_prompt: str | None = None) -> str:
         raise ModelError(f"Could not reach Groq: {exc}") from exc
 
     if response.status_code == 401:
-        raise ModelError("Groq rejected the API key. Check it was copied correctly and hasn't been revoked.")
+        raise ModelError(
+            "Groq rejected GROQ_API_KEY (HTTP 401). Replace the repository secret with a valid key.",
+            retryable=False,
+        )
+    if response.status_code == 403:
+        raise ModelError("Groq denied access (HTTP 403). Check the API key and account permissions.", retryable=False)
     if response.status_code == 429:
         retry_after = None
         try:
@@ -126,10 +136,14 @@ def call_model(prompt: str, *, system_prompt: str | None = None) -> str:
             f"Model {DEFAULT_MODEL!r} is not available (HTTP {response.status_code}). "
             "Run this to see what's currently live:\n"
             "    python extract.py --list-models\n"
-            'Then: $env:EXTRACT_MODEL = "the-id-you-found"'
+            'Then: $env:EXTRACT_MODEL = "the-id-you-found"',
+            retryable=False,
         )
     if not response.ok:
-        raise ModelError(f"Groq returned HTTP {response.status_code}: {response.text[:300]}")
+        raise ModelError(
+            f"Groq returned HTTP {response.status_code}: {response.text[:300]}",
+            retryable=response.status_code >= 500 or response.status_code == 408,
+        )
 
     data = response.json()
     return data["choices"][0]["message"]["content"]

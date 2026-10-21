@@ -137,7 +137,7 @@ def run(
 
     summary = {"read": len(posts), "skipped_seen": 0, "skipped_no_link": 0, "not_opportunity": 0,
                "unpublishable": 0, "duplicate": 0, "failed": 0,
-               "queued": 0, "sent": 0, "candidate_ids": []}
+               "queued": 0, "sent": 0, "candidate_ids": [], "provider_blocked": False}
     processed_ids: list[int] = []
 
     for post in posts:
@@ -180,6 +180,11 @@ def run(
                 break
             except (ModelError, ValidationError) as exc:
                 extraction_errors.append(exc)
+                if isinstance(exc, ModelError) and not exc.retryable:
+                    print(f"  [blocked] {candidate_id}: {exc}; stopping this scan until the provider is fixed")
+                    summary["failed"] += 1
+                    summary["provider_blocked"] = True
+                    break
                 if extraction_attempt == extraction_attempts:
                     outcome = "invalid" if isinstance(exc, UnpublishableError) else "failed"
                     print(f"  [{outcome}]  {candidate_id} after {extraction_attempts} attempt(s): {exc}")
@@ -192,6 +197,8 @@ def run(
                     time.sleep(retry_delay_seconds(exc, extraction_attempt))
 
         if extracted is None:
+            if summary["provider_blocked"]:
+                break
             if extraction_errors and all(isinstance(exc, UnpublishableError) for exc in extraction_errors):
                 # The provider answered successfully every time, but the
                 # post never yielded the minimum safe card fields. Retrying

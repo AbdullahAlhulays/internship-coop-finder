@@ -20,6 +20,8 @@ Run with:
 import json
 import os
 from dataclasses import replace
+from types import SimpleNamespace
+from unittest.mock import patch
 
 import extract as extract_module
 from extract import ModelError, ValidationError, extract_opportunity, to_card
@@ -51,6 +53,22 @@ def check(label: str, condition: bool) -> None:
     mark = "pass" if condition else "FAIL"
     print(f"  [{mark}] {label}")
     results.append(condition)
+
+
+print("provider errors: invalid credentials are permanent, rate limits are retryable")
+with patch.dict(os.environ, {"GROQ_API_KEY": "test-key"}):
+    with patch.object(extract_module.requests, "post", return_value=SimpleNamespace(status_code=401)):
+        try:
+            extract_module.call_model("test")
+            check("401 raises a model error", False)
+        except ModelError as exc:
+            check("401 stops retries and names the secret", not exc.retryable and "GROQ_API_KEY" in str(exc))
+    with patch.object(extract_module.requests, "post", return_value=SimpleNamespace(status_code=429, headers={"retry-after": "4"})):
+        try:
+            extract_module.call_model("test")
+            check("429 raises a model error", False)
+        except ModelError as exc:
+            check("429 keeps the provider retry delay", exc.retryable and exc.retry_after_seconds == 4)
 
 
 print("description contract — extraction returns source text in one language only")

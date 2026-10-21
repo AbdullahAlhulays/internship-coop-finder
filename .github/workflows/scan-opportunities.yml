@@ -91,6 +91,10 @@ jobs:
               current_failures=$(cat "$FAILURE_COUNT_FILE")
               channel_failures=$(jq -r '.failed' "$summary_json")
               echo $((current_failures + channel_failures)) > "$FAILURE_COUNT_FILE"
+              if [ "$(jq -r '.provider_blocked' "$summary_json")" = "true" ]; then
+                echo "Provider configuration failed; preserving scan state and skipping remaining channels." >&2
+                break
+              fi
             done
 
             sort -u "$CREATED_IDS_FILE" -o "$CREATED_IDS_FILE"
