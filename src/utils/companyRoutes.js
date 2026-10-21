@@ -3,12 +3,30 @@ import { getMessages } from "../locales/messages.js";
 import {
   DEFAULT_LOCALE,
   getLocalizedCompanyDescription,
+  getLocalizedLocation,
   localizePathname,
   normalizePathname,
   stripLocaleFromPathname,
 } from "./locale.js";
 
 export const SITE_ORIGIN = "https://internship-coop-finder.vercel.app";
+
+// These existing listings had indexed detail URLs before the bilingual
+// description requirement. Their recorded facts support a concise page.
+const RESTORED_COMPANY_SLUGS = new Set([
+  "tamara",
+  "ministry-of-tourism",
+  "petro-rabigh",
+  "emdad",
+  "sami",
+  "alfalak",
+  "saudi-railway-polytechnic",
+  "roland-berger",
+  "saudi-azm",
+  "al-rajhi-takaful",
+  "barakah",
+  "saudi-power-procurement-company-sppc",
+]);
 
 export function createCompanySlug(name = "") {
   const englishName = getEnglishCompanyName(name);
@@ -38,8 +56,29 @@ export function getCompanyPageEntries(companies = []) {
 }
 
 export function hasPublishableCompanyContent(company) {
-  return ["en", "ar"].every((locale) =>
+  const hasBilingualDescription = ["en", "ar"].every((locale) =>
     Boolean(getLocalizedCompanyDescription(company, locale)),
+  );
+
+  return (
+    hasBilingualDescription ||
+    (RESTORED_COMPANY_SLUGS.has(createCompanySlug(company?.name)) &&
+      Boolean(company?.type) &&
+      Boolean(company?.applicationLink))
+  );
+}
+
+export function hasRestoredCompanyPage(company) {
+  return RESTORED_COMPANY_SLUGS.has(createCompanySlug(company?.name));
+}
+
+export function getRestoredArabicCompanyName(company) {
+  return (
+    company?.name
+      ?.split("|")
+      .map((part) => part.trim())
+      .find((part) => /[\u0600-\u06ff]/.test(part)) ??
+    getEnglishCompanyName(company?.name)
   );
 }
 
@@ -79,7 +118,7 @@ export function getCompanyPageTitle(company, locale = DEFAULT_LOCALE) {
   return getMessages(locale).seo.companyTitle(name);
 }
 
-function trimDescription(description, maxLength = 158) {
+function trimDescription(description, maxLength = 160) {
   const normalized = description.replace(/\s+/g, " ").trim();
 
   if (normalized.length <= maxLength) {
@@ -93,6 +132,20 @@ function trimDescription(description, maxLength = 158) {
   return `${shortened.slice(0, endIndex)}\u2026`;
 }
 
+function getDescriptionDetail(description) {
+  const lines = description
+    .split(/\n+/)
+    .map((line) => line.replace(/^[\s\u2022\-]+/, "").trim())
+    .filter(Boolean);
+
+  return (
+    lines.find((line) => line.length >= 45 && /[.!?\u061f\u3002]$/.test(line)) ??
+    lines.find((line) => line.length >= 45) ??
+    lines.find((line) => line.length >= 20) ??
+    ""
+  );
+}
+
 export function getCompanyPageDescription(
   company,
   locale = DEFAULT_LOCALE,
@@ -100,7 +153,77 @@ export function getCompanyPageDescription(
   const description = getLocalizedCompanyDescription(company, locale);
 
   if (description) {
-    return trimDescription(description);
+    const englishDetail = getDescriptionDetail(
+      getLocalizedCompanyDescription(company, "en"),
+    );
+    const sourceMentionsCoop = /\b(?:co-op|coop|cooperative training)\b/i.test(
+      englishDetail,
+    );
+    const sourceMentionsInternship = /\binternship\b/i.test(englishDetail);
+    const statedType =
+      company.type === "Internship" && sourceMentionsCoop
+        ? sourceMentionsInternship
+          ? "Internship / CO-OP Training"
+          : "CO-OP Training"
+        : company.type;
+    const name =
+      locale === "ar"
+        ? company.name
+            .split("|")
+            .map((part) => part.trim())
+            .find((part) => /[\u0600-\u06ff]/.test(part)) ??
+          getEnglishCompanyName(company.name)
+        : getEnglishCompanyName(company.name);
+    const type =
+      locale === "ar"
+        ? statedType?.toLowerCase().includes("internship")
+          ? statedType?.toLowerCase().includes("co-op")
+            ? "تدريب وتدريب تعاوني"
+            : "تدريب"
+          : "تدريب تعاوني"
+        : statedType || "training";
+    const location =
+      locale === "en" && company.location?.trim()
+        ? ` in ${company.location.trim()}`
+        : "";
+    const detail = getDescriptionDetail(description).replace(/[.!?\u061f\u3002]+$/, "");
+    const intro =
+      locale === "ar"
+        ? `${type} لدى ${name}. `
+        : `${name} ${type}${location}. `;
+
+    return trimDescription(`${intro}${detail}.`);
+  }
+
+  if (hasRestoredCompanyPage(company)) {
+    const name =
+      locale === "ar"
+        ? getRestoredArabicCompanyName(company)
+        : getEnglishCompanyName(company.name);
+    const type =
+      locale === "ar"
+        ? company.type.includes("CO-OP") && company.type.includes("Internship")
+          ? "تدريب وتدريب تعاوني"
+          : company.type.includes("CO-OP")
+            ? "تدريب تعاوني"
+            : "تدريب"
+        : company.type;
+    const location = company.location?.trim()
+      ? locale === "ar"
+        ? ` في ${getLocalizedLocation(company.location, locale)}`
+        : ` in ${company.location.trim()}`
+      : "";
+    const status = company.isClosed
+      ? locale === "ar"
+        ? "التقديم مغلق. "
+        : "Applications are marked closed. "
+      : "";
+
+    return trimDescription(
+      locale === "ar"
+        ? `${type} لدى ${name}${location}. ${status}اطلع على التفاصيل المتاحة ومصدر التقديم في فرصتي.`
+        : `${name}: ${type}${location}. ${status}View recorded details and the application source on Fursati.`,
+    );
   }
 
   const name = getEnglishCompanyName(company?.name);

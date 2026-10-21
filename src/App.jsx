@@ -20,7 +20,7 @@ import NotFoundPage from "./components/NotFoundPage.jsx";
 import Footer from "./components/Footer.jsx";
 import MobileBottomNav from "./components/MobileBottomNav.jsx";
 import { companies as fallbackCompanies } from "./data/companies.js";
-import { getLocalizedSitePage } from "./data/siteContent.js";
+import { getLocalizedSitePage, SITE_CONTENT_UPDATED } from "./data/siteContent.js";
 import { getMessages } from "./locales/messages.js";
 import useClientRoute from "./hooks/useClientRoute.js";
 import useDocumentMetadata from "./hooks/useDocumentMetadata.js";
@@ -63,7 +63,6 @@ const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const MIN_REFRESH_GAP_MS = 60 * 1000;
 const THEME_STORAGE_KEY = "internship-coop-theme";
 const APPLIED_STORAGE_KEY = "internship-coop-applied";
-const LAST_UPDATED = "September 14, 2026";
 
 function getSortLabel(company) {
   return company.name || company.title || company.type || "";
@@ -107,12 +106,19 @@ function toggleStoredLink(link, links) {
   return [...links, link];
 }
 
-function formatLastUpdated(locale) {
-  const date = new Date(`${LAST_UPDATED} 12:00:00`);
+function formatLastUpdated(locale, companyRecords) {
+  const timestamps = companyRecords
+    .flatMap((company) => [
+      company.contentUpdatedAt,
+      company.lastVerifiedAt,
+      company.addedAt,
+    ])
+    .filter(Boolean)
+    .map((value) => new Date(value).getTime())
+    .filter(Number.isFinite);
+  if (!timestamps.length) return "";
 
-  if (Number.isNaN(date.getTime())) {
-    return LAST_UPDATED;
-  }
+  const date = new Date(Math.max(...timestamps));
 
   const dateLocale =
     locale === "ar" ? "ar-SA-u-ca-gregory-nu-arab" : "en-US";
@@ -327,6 +333,7 @@ export default function App() {
           "x-default": getCanonicalUrl(englishPath),
         },
         noIndex: false,
+        modifiedAt: SITE_CONTENT_UPDATED,
       };
     }
 
@@ -349,6 +356,7 @@ export default function App() {
           "x-default": getCanonicalUrl(englishPath),
         },
         noIndex: false,
+        modifiedAt: activeCompanyRecord.company.contentUpdatedAt,
       };
     }
 
@@ -363,6 +371,7 @@ export default function App() {
           "x-default": getCanonicalUrl("/"),
         },
         noIndex: false,
+        websiteSchema: true,
       };
     }
 
@@ -574,6 +583,15 @@ export default function App() {
           messages={messages}
           homeHref={homeHref}
           languageHref={languageHref}
+          relatedCompanies={companyRecords
+            .filter(
+              (record) =>
+                record.slug !== activeCompanyRecord.slug &&
+                record.company.location &&
+                record.company.location === activeCompanyRecord.company.location &&
+                hasPublishableCompanyContent(record.company),
+            )
+            .slice(0, 3)}
         />
         <Analytics />
       </>
@@ -628,7 +646,7 @@ export default function App() {
 
       <main className="page-shell">
         <p className="last-updated">
-          {messages.lastUpdated}: {formatLastUpdated(locale)}
+          {messages.lastUpdated}: {formatLastUpdated(locale, companies)}
         </p>
 
         <section className="controls" aria-label={messages.filters.controlsLabel}>

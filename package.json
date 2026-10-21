@@ -6,9 +6,10 @@
   "scripts": {
     "prebuild": "node scripts/generate-sitemap.mjs",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --configLoader runner",
     "postbuild": "node scripts/generate-company-pages.mjs",
-    "preview": "vite preview"
+    "check:seo": "node scripts/verify-seo.mjs",
+    "preview": "vite preview --configLoader runner"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

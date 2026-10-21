@@ -28,7 +28,17 @@ Company pages use the same stable slug in both languages:
 /ar/companies/company-slug
 ```
 
-The language switcher preserves the current page. Build-time generation creates localized HTML metadata for both versions, and the sitemap includes every English and Arabic route automatically.
+The language switcher preserves the current page. Build-time generation creates localized HTML metadata and readable page content for both versions, and the sitemap includes every English and Arabic route automatically.
+
+## Search and Sharing Metadata
+
+Run `npm run build` and then `npm run check:seo` to verify generated routes, titles, descriptions, canonicals, hreflang links, sitemap entries, structured data, and image dimensions. The homepage declares `Fursati` in `WebSite` JSON-LD and `og:site_name`. Detailed company pages receive descriptions drawn from their own verified bilingual listing text.
+
+The brand assets are `public/fursati-icon-512.png`, `public/favicon-48.png`, `public/favicon.ico`, and `public/fursati-preview.png`. The preview is 1200 × 630. Source layouts are in `scripts/brand-icon.html` and `scripts/brand-preview.html`; `scripts/generate-favicons.ps1` resizes the rendered 512px icon. After deployment, check `/sitemap.xml` and `/robots.txt`, and test the homepage URL in [Schema Markup Validator](https://validator.schema.org/).
+
+The directory's visible “Last updated” date comes from listing `addedAt`, `lastVerifiedAt`, and `contentUpdatedAt` timestamps. It does not advance merely because the site was built. Set `contentUpdatedAt` when a listing's content materially changes. The sitemap's `PAGE_TEMPLATE_UPDATED` value should change only after a meaningful update to generated page content or metadata; it also considers listing timestamps. Information pages use `SITE_CONTENT_UPDATED` for their editorial date.
+
+If `VITE_COMPANIES_DATA_URL` supplies new listings after deployment, rebuild and redeploy to give those listings generated HTML and sitemap entries. The live data refresh alone updates the app but cannot update static SEO files.
 
 ## Updating Companies
 
@@ -108,7 +118,7 @@ Expired opportunities are hidden automatically when their deadline passes.
 
 `location` is optional. Add it when you want that detail to appear on the card.
 
-`description` is optional. Store localized text as `{ "en": "...", "ar": "..." }` and add only text you have verified. A company receives standalone English and Arabic pages, internal detail links, and sitemap entries only after both localized descriptions are available. Until then, the opportunity remains a homepage card without an indexable detail page. A legacy string is treated as English only. `bio` is accepted as legacy source data but is not displayed in the simplified card design.
+`description` is optional. Store localized text as `{ "en": "...", "ar": "..." }` and add only text you have verified. Normally, a company receives standalone English and Arabic pages, internal detail links, and sitemap entries only after both localized descriptions are available. The 12 restored legacy slugs in `src/utils/companyRoutes.js` are a limited exception: their pages show only recorded facts and application sources. Other incomplete listings remain homepage cards without indexable detail pages. A legacy string is treated as English only. `bio` is accepted as legacy source data but is not displayed in the simplified card design.
 
 The Telegram agent copies one source-language description only when the post explicitly includes meaningful role, responsibility, requirement, or program details. It never asks the LLM to translate or invent missing text. Before approval, **Edit a field** lets that source text be corrected. On approval, the lightweight `deep-translator` library translates the final edited text into the missing English or Arabic version, and both versions are published together. Google Translate is retried once and MyMemory is used as a chunked non-LLM fallback if Google is temporarily unavailable. If both languages were entered manually, they are preserved and translation is skipped; if both translation services fail, approval stops instead of publishing a half-localized card.
 

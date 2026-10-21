@@ -11,7 +11,6 @@ import {
 } from "../utils/companyRoutes.js";
 import {
   formatNumber,
-  getLocalizedCompanyDescription,
   getLocalizedLocation,
 } from "../utils/locale.js";
 import { formatDeadline } from "../utils/status.js";
@@ -93,9 +92,7 @@ function CompanyCard({
   );
   const displayName = getCompanyDisplayName(company.name);
   const opportunityType = getOpportunityTypeKey(company.type);
-  const hasDescription =
-    hasPublishableCompanyContent(company) &&
-    Boolean(getLocalizedCompanyDescription(company, locale));
+  const hasDescription = hasPublishableCompanyContent(company);
 
   return (
     <article

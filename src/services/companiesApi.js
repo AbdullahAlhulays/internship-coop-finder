@@ -5,6 +5,8 @@ const COMPANY_FIELDS = [
   "name",
   "logo",
   "addedAt",
+  "contentUpdatedAt",
+  "lastVerifiedAt",
   "bio",
   "description",
   "isClosed",
@@ -46,6 +48,10 @@ function isValidCompany(company) {
     typeof company.name === "string" &&
     isValidLogo(company.logo) &&
     (company.addedAt === undefined || typeof company.addedAt === "string") &&
+    (company.contentUpdatedAt === undefined ||
+      typeof company.contentUpdatedAt === "string") &&
+    (company.lastVerifiedAt === undefined ||
+      typeof company.lastVerifiedAt === "string") &&
     (company.bio === undefined || typeof company.bio === "string") &&
     isValidDescription(company.description) &&
     (company.isClosed === undefined || typeof company.isClosed === "boolean") &&

@@ -1,6 +1,12 @@
 import CompanyLogo from "./CompanyLogo.jsx";
 import Footer from "./Footer.jsx";
+import InternalLink from "./InternalLink.jsx";
 import PageHeader from "./PageHeader.jsx";
+import {
+  getCompanyPath,
+  getRestoredArabicCompanyName,
+  hasRestoredCompanyPage,
+} from "../utils/companyRoutes.js";
 import {
   getCompanyDisplayName,
   getEnglishCompanyName,
@@ -96,10 +102,16 @@ export default function CompanyPage({
   messages,
   homeHref,
   languageHref,
+  relatedCompanies = [],
 }) {
   const englishName = getEnglishCompanyName(company.name);
   const displayName = getCompanyDisplayName(company.name);
-  const headingName = locale === "ar" ? displayName : englishName;
+  const headingName =
+    locale === "ar"
+      ? hasRestoredCompanyPage(company)
+        ? getRestoredArabicCompanyName(company)
+        : displayName
+      : englishName;
   const canApply = statusKey === "open";
   const isOpenSoon = statusKey === "open-soon";
   const isClosed = statusKey === "closed";
@@ -216,14 +228,14 @@ export default function CompanyPage({
             <p>{labels.sourceNote}</p>
           </section>
 
-          <section
-            className={`company-description-panel ${
-              description ? "has-description" : "is-empty"
-            }`}
-            aria-label={messages.companyPage.descriptionArea(headingName)}
-          >
-            {description && <CompanyDescription description={description} />}
-          </section>
+          {description && (
+            <section
+              className="company-description-panel has-description"
+              aria-label={messages.companyPage.descriptionArea(headingName)}
+            >
+              <CompanyDescription description={description} />
+            </section>
+          )}
 
           <div className="company-detail-actions">
             <a
@@ -245,6 +257,24 @@ export default function CompanyPage({
                   : messages.companyPage.applyOfficial}
             </a>
           </div>
+
+          {relatedCompanies.length > 0 && (
+            <nav className="company-related" aria-label={locale === "ar" ? "فرص ذات صلة" : "Related opportunities"}>
+              <h2>{locale === "ar" ? "فرص ذات صلة" : "Related opportunities"}</h2>
+              <ul>
+                {relatedCompanies.map(({ company: related, slug }) => (
+                  <li key={slug}>
+                    <InternalLink
+                      href={getCompanyPath(slug, locale)}
+                      navigate={navigate}
+                    >
+                      {getCompanyDisplayName(related.name)}
+                    </InternalLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
         </article>
       </main>
 

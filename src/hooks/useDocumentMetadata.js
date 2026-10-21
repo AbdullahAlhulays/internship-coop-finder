@@ -12,6 +12,18 @@ function ensureMeta(name) {
   return element;
 }
 
+function ensureProperty(property) {
+  let element = document.head.querySelector(`meta[property="${property}"]`);
+
+  if (!element) {
+    element = document.createElement("meta");
+    element.setAttribute("property", property);
+    document.head.append(element);
+  }
+
+  return element;
+}
+
 function ensureCanonicalLink() {
   let element = document.head.querySelector('link[rel="canonical"]');
 
@@ -45,11 +57,59 @@ export default function useDocumentMetadata({
   canonicalUrl,
   alternateUrls,
   noIndex = false,
+  websiteSchema = false,
+  modifiedAt,
 }) {
   useEffect(() => {
     document.title = title;
     ensureMeta("description").content = description;
     ensureCanonicalLink().href = canonicalUrl;
+    ensureProperty("og:site_name").content = "Fursati";
+    ensureProperty("og:type").content = "website";
+    ensureProperty("og:title").content = title;
+    ensureProperty("og:description").content = description;
+    ensureProperty("og:url").content = canonicalUrl;
+    ensureProperty("og:locale").content =
+      new URL(canonicalUrl).pathname.startsWith("/ar") ? "ar_SA" : "en_US";
+    ensureMeta("twitter:card").content = "summary_large_image";
+    ensureMeta("twitter:title").content = title;
+    ensureMeta("twitter:description").content = description;
+
+    const schema = document.getElementById("website-schema");
+    if (websiteSchema && !schema) {
+      const element = document.createElement("script");
+      element.id = "website-schema";
+      element.type = "application/ld+json";
+      element.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Fursati",
+        url: "https://internship-coop-finder.vercel.app/",
+      });
+      document.head.append(element);
+    } else if (!websiteSchema) {
+      schema?.remove();
+    }
+
+    let pageSchema = document.getElementById("page-schema");
+    if (modifiedAt) {
+      if (!pageSchema) {
+        pageSchema = document.createElement("script");
+        pageSchema.id = "page-schema";
+        pageSchema.type = "application/ld+json";
+        document.head.append(pageSchema);
+      }
+      pageSchema.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: title,
+        url: canonicalUrl,
+        inLanguage: new URL(canonicalUrl).pathname.startsWith("/ar") ? "ar" : "en",
+        dateModified: modifiedAt,
+      });
+    } else {
+      pageSchema?.remove();
+    }
 
     const robots = ensureMeta("robots");
     robots.content = noIndex ? "noindex, nofollow" : "index, follow";
@@ -66,5 +126,5 @@ export default function useDocumentMetadata({
         existingLink?.remove();
       }
     });
-  }, [alternateUrls, canonicalUrl, description, noIndex, title]);
+  }, [alternateUrls, canonicalUrl, description, modifiedAt, noIndex, title, websiteSchema]);
 }
