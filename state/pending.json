@@ -1304,8 +1304,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-21T22:24:48+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-21T22:24:53+00:00",
+      "status": "sent",
+      "telegram_message_id": 386
     },
     "extracted": {
       "company": "مجموعة مبادرات المستقبل",
@@ -1483,8 +1484,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-21T22:24:51+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-21T22:24:53+00:00",
+      "status": "sent",
+      "telegram_message_id": 387
     },
     "extracted": {
       "company": "government entity",
