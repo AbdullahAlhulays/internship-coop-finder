@@ -90,8 +90,17 @@ for (const homepage of ["index.html", "ar.html"]) {
   const schema = JSON.parse(html.match(/<script type="application\/ld\+json" id="website-schema">(.*?)<\/script>/s)?.[1] ?? "null");
   assert.equal(schema["@type"], "WebSite");
   assert.equal(schema.name, "Fursati");
+  assert.deepEqual(schema.alternateName, ["فرصتي"]);
   assert.equal(schema.url, getCanonicalUrl("/"));
+  assert.ok(html.includes(`hreflang="en" href="${getCanonicalUrl("/")}"`));
+  assert.ok(html.includes(`hreflang="ar" href="${getCanonicalUrl("/ar")}"`));
 }
+const arabicHome = await readFile(path.join(dist, "ar.html"), "utf8");
+assert.ok(arabicHome.includes("<title>فرصتي | التدريب التعاوني والصيفي في السعودية</title>"));
+assert.ok(arabicHome.includes(`<link rel="canonical" href="${getCanonicalUrl("/ar")}" />`));
+assert.ok(!/<meta[^>]+name="robots"[^>]+noindex/i.test(arabicHome));
+assert.ok(arabicHome.includes("طلاب الجامعات في السعودية"));
+assert.ok(arabicHome.includes("التدريب العملي والتدريب التعاوني"));
 
 const preview = await readFile(path.join(dist, "fursati-preview.png"));
 assert.equal(preview.readUInt32BE(16), 1200);

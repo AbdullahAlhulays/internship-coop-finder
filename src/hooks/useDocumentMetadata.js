@@ -84,6 +84,7 @@ export default function useDocumentMetadata({
         "@context": "https://schema.org",
         "@type": "WebSite",
         name: "Fursati",
+        alternateName: ["فرصتي"],
         url: "https://internship-coop-finder.vercel.app/",
       });
       document.head.append(element);
