@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>document.documentElement.classList.add("js-enabled");</script>
+    <style>
+      #app-loading { display: none; }
+      .js-enabled #root > .seo-fallback { display: none; }
+      .js-enabled #app-loading {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        display: grid;
+        place-items: center;
+        background: #fbf8f0;
+        color: #31523a;
+        font: 700 1.5rem/1.3 system-ui, sans-serif;
+      }
+    </style>
     <meta
       name="description"
       content="Find internship and CO-OP opportunities in Saudi Arabia. Browse application links and discover training opportunities for university students in one place."
@@ -50,6 +65,7 @@
     <title>Fursati | Internships &amp; CO-OP Opportunities for Students</title>
   </head>
   <body>
+    <div id="app-loading" role="status" aria-live="polite">Fursati</div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

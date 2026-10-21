@@ -185,7 +185,10 @@ function renderDocument({
       /<link\s+rel="canonical"\s+href="[^"]*"\s*\/>/s,
       `<link rel="canonical" href="${escapeHtml(canonicalUrl)}" />`,
     )
-    .replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
+    .replace(
+      '<div id="root"></div>',
+      `<div id="root"><div class="seo-fallback">${bodyHtml}</div></div>`,
+    );
 
   for (const [property, value] of [
     ["og:title", title],
