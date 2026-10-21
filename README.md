@@ -124,7 +124,7 @@ The Telegram agent copies one source-language description only when the post exp
 
 After a Telegram opportunity is approved, the agent also attempts to add its logo. It first checks whether the application is hosted on a verifiable official company domain. For generic forms, social links, and recruiting platforms, the LLM may suggest an official domain, but the agent accepts it only when the live page matches the reviewed company name. The logo must be discoverable on that verified page and pass file type and size checks before it is stored locally in `public/company-logos`. The LLM never generates the logo. If any step is uncertain or unavailable, the opportunity is still published and the UI safely falls back to company initials.
 
-`logo` is optional verified metadata. `domain` records the official domain used for verification and `file` names the locally stored PNG, JPEG, WebP, or ICO asset.
+`logo` is optional verified metadata. `domain` records the source used to verify the company logo (an official company site or a manually checked LinkedIn employer page), and `file` names the locally stored PNG, JPEG, WebP, or ICO asset. The automated Telegram logo lookup continues to require an official company domain.
 
 `deadlineTime` is optional. Add it in 24-hour `HH:mm` format when the posting includes an exact apply-before time.
 

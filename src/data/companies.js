@@ -993,6 +993,7 @@ const companyRecords = [
   },
   {
     name: "Americana Restaurants",
+    logo: {"domain":"linkedin.com","file":"americana-restaurants.jpg"},
     location: "Riyadh, Saudi Arabia; Jeddah, Saudi Arabia; Eastern Province, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4457760680",
     type: "CO-OP Training",
@@ -1003,6 +1004,7 @@ const companyRecords = [
   },
   {
     name: "Waad Education Company | شركة وعد التعليمية",
+    logo: {"domain":"linkedin.com","file":"waad-education-company.jpg"},
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4459174416",
     type: "CO-OP Training",
@@ -1012,6 +1014,7 @@ const companyRecords = [
   },
   {
     name: "J-B | جيبي",
+    logo: {"domain":"linkedin.com","file":"j-b.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4457908500",
     type: "CO-OP Training",
@@ -1039,6 +1042,7 @@ const companyRecords = [
   },
   {
     name: "Saif Security Services | شركة سيف للخدمات الأمنية",
+    logo: {"domain":"safesecurity.sa","file":"saif-security-services.png"},
     applicationLink: "https://wdeftksa.com/sa/jobs/100575",
     deadline: "2026-10-01",
     type: "CO-OP Training",
@@ -1047,6 +1051,7 @@ const companyRecords = [
   },
   {
     name: "الصندوق_الثقافي",
+    logo: {"domain":"linkedin.com","file":"cultural-development-fund.jpg"},
     applicationLink: "https://interest.cdf.gov.sa/coop/2026?utm_source=LinkedIn&utm_medium=post&utm_campaign=college+Training&utm_id=Training",
     deadline: "2026-09-15",
     type: "CO-OP Training",
@@ -1064,6 +1069,7 @@ const companyRecords = [
   },
   {
     name: "الصندوق الثقافي",
+    logo: {"domain":"linkedin.com","file":"cultural-development-fund.jpg"},
     applicationLink: "https://wdeftksa.com/sa/jobs/100593",
     deadline: "2026-09-15",
     type: "CO-OP Training",
@@ -1079,6 +1085,7 @@ const companyRecords = [
   },
   {
     name: "Maahed Ta'sis Al'ali Lil Tadreeb | معهد تأسيس العالي للتدريب",
+    logo: {"domain":"tasis.edu.sa","file":"maahed-tasis-alali-lil-tadreeb.png"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeLKJg6D77fj8S4xlS34DZLjjHBJNl7Wis6sqQ0dG0UJUTw3A/viewform?usp=header",
     type: "CO-OP Training",
@@ -1087,6 +1094,7 @@ const companyRecords = [
   },
   {
     name: "Wadi Jeddah | شركة وادي جدة",
+    logo: {"domain":"wadi-jeddah.com.sa","file":"wadi-jeddah.png"},
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://forms.gle/EUBQmM2KeyfQYcNE7",
     type: "Internship",
@@ -1095,6 +1103,7 @@ const companyRecords = [
   },
   {
     name: "moneymoon | موني مون",
+    logo: {"domain":"linkedin.com","file":"moneymoon.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/search/?currentJobId=4463536571&f_C=93377757&geoId=92000000&keywords=Coop&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true&trk=job-results_see-all-jobs-link",
     type: "CO-OP Training",
@@ -1104,6 +1113,7 @@ const companyRecords = [
   },
   {
     name: "WSP in the Middle East",
+    logo: {"domain":"linkedin.com","file":"wsp-in-the-middle-east.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/search/?currentJobId=4461168411&f_C=3882285&f_E=1&geoId=92000000&keywords=Coop&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true&sortBy=R&trk=top-card_top-card-secondary-button-top-card-secondary-cta",
     type: "CO-OP Training",
@@ -1163,6 +1173,7 @@ const companyRecords = [
   },
   {
     name: "ZORY AI",
+    logo: {"domain":"linkedin.com","file":"zory-ai.jpg"},
     location: "Remote",
     applicationLink: "https://tally.so/r/pbgbyb",
     type: "CO-OP Training",
@@ -1241,6 +1252,7 @@ const companyRecords = [
   },
   {
     name: "شركة عزم الإنجاز",
+    logo: {"domain":"linkedin.com","file":"azm-al-injaz.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeaM_67r1ZBQXcIEn9lRhdGjWHi8O-SAwm1wdx_gng4tu3HPw/viewform?usp=publish-editor",
     type: "CO-OP Training",
@@ -1256,6 +1268,7 @@ const companyRecords = [
   },
   {
     name: "Kerten Hospitality",
+    logo: {"domain":"linkedin.com","file":"kerten-hospitality.jpg"},
     location: "All cities, Saudi Arabia",
     applicationLink: "https://darbak.space/where-to-train/opportunity/6ac39ca0fe83b01eb65bb116?source=telegram&type=opportunity",
     type: "Internship",
@@ -1302,6 +1315,7 @@ const companyRecords = [
   },
   {
     name: "Azm Al Injaz | عزم الإنجاز",
+    logo: {"domain":"linkedin.com","file":"azm-al-injaz.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://forms.gle/ToZpPYQyiYpmEGFp7",
     type: "CO-OP Training",
@@ -1310,6 +1324,7 @@ const companyRecords = [
   },
   {
     name: "Siemens Energy",
+    logo: {"domain":"linkedin.com","file":"siemens-energy.jpg"},
     location: "Jeddah and Dammam, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4481112273/",
     type: "Graduate Internship",
@@ -1320,6 +1335,7 @@ const companyRecords = [
   },
   {
     name: "Seara International",
+    logo: {"domain":"linkedin.com","file":"seara-international.jpg"},
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4476403977/",
     type: "Internship",
@@ -1330,6 +1346,7 @@ const companyRecords = [
   },
   {
     name: "Sarj | سرج",
+    logo: {"domain":"sarj.ai","file":"sarj-ai.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4478548117/",
     type: "Internship",
@@ -1340,6 +1357,7 @@ const companyRecords = [
   },
   {
     name: "Help AG",
+    logo: {"domain":"linkedin.com","file":"help-ag.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4470475527/",
     type: "Internship",
@@ -1350,6 +1368,7 @@ const companyRecords = [
   },
   {
     name: "SiFi",
+    logo: {"domain":"linkedin.com","file":"sifi.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4480954966/",
     type: "Internship",
@@ -1360,6 +1379,7 @@ const companyRecords = [
   },
   {
     name: "Lean Technologies",
+    logo: {"domain":"linkedin.com","file":"lean-technologies.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4478746991/",
     type: "Internship",
@@ -1380,6 +1400,7 @@ const companyRecords = [
   },
   {
     name: "Impact46",
+    logo: {"domain":"linkedin.com","file":"impact46.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4456908729/",
     type: "CO-OP Training",
@@ -1390,6 +1411,7 @@ const companyRecords = [
   },
   {
     name: "AtkinsRéalis",
+    logo: {"domain":"linkedin.com","file":"atkinsre-alis.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4467725700/",
     type: "CO-OP Training",
@@ -1410,6 +1432,7 @@ const companyRecords = [
   },
   {
     name: "COGNNA",
+    logo: {"domain":"cognna.com","file":"cognna.png"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4479830811/",
     type: "Internship",
@@ -1420,6 +1443,7 @@ const companyRecords = [
   },
   {
     name: "Imploy",
+    logo: {"domain":"linkedin.com","file":"imploy.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4478099540/",
     type: "Internship",
@@ -1430,6 +1454,7 @@ const companyRecords = [
   },
   {
     name: "Amgen",
+    logo: {"domain":"linkedin.com","file":"amgen.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4479806181/",
     type: "Graduate Internship",
@@ -1440,6 +1465,7 @@ const companyRecords = [
   },
   {
     name: "Airbus Defence and Space",
+    logo: {"domain":"linkedin.com","file":"airbus-defence-and-space.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4465939394/",
     type: "Apprenticeship",
@@ -1450,6 +1476,7 @@ const companyRecords = [
   },
   {
     name: "BCG X",
+    logo: {"domain":"linkedin.com","file":"bcg-x.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4455467747/",
     type: "Internship",
@@ -1460,6 +1487,7 @@ const companyRecords = [
   },
   {
     name: "ArabyAds",
+    logo: {"domain":"linkedin.com","file":"arabyads.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4476682019/",
     type: "Graduate Internship",
@@ -1470,6 +1498,7 @@ const companyRecords = [
   },
   {
     name: "BlackRock",
+    logo: {"domain":"linkedin.com","file":"blackrock.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4435569752/",
     deadline: "2027-01-31",
@@ -1481,6 +1510,7 @@ const companyRecords = [
   },
   {
     name: "Medtronic",
+    logo: {"domain":"linkedin.com","file":"medtronic.jpg"},
     location: "Taif, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4477804421/",
     type: "Internship",
@@ -1491,6 +1521,7 @@ const companyRecords = [
   },
   {
     name: "Meituan",
+    logo: {"domain":"linkedin.com","file":"meituan.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4479311542/",
     type: "Internship",
@@ -1501,6 +1532,7 @@ const companyRecords = [
   },
   {
     name: "KFM",
+    logo: {"domain":"linkedin.com","file":"kfm.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4478681004/",
     type: "Internship",
@@ -1511,6 +1543,7 @@ const companyRecords = [
   },
   {
     name: "ZainTECH",
+    logo: {"domain":"linkedin.com","file":"zaintech.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4477170450/",
     type: "Internship",
@@ -1521,6 +1554,7 @@ const companyRecords = [
   },
   {
     name: "Ecolab",
+    logo: {"domain":"linkedin.com","file":"ecolab.jpg"},
     location: "Dammam, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4478323750/",
     type: "Tamheer",
