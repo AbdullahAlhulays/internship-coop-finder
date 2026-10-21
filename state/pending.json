@@ -529,6 +529,486 @@
       "text": "📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالمكان: جدة\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
     }
   },
+  "SALTRAI:5705": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-09-18T16:29:35+00:00",
+      "status": "sent",
+      "telegram_message_id": 263
+    },
+    "extracted": {
+      "company": "Aramco",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "المزايا (مكافأة شهرية - سكن مجاني أو بدل سكن - تأمين طبي - مواصلات). يبدأ التسجيل الإثنين 1448/5/15هـ."
+      },
+      "evidence": {
+        "company": "أرامكو السعودية",
+        "deadline": null,
+        "description": "المزايا (مكافأة شهرية - سكن مجاني أو بدل سكن - تأمين طبي - مواصلات). يبدأ التسجيل الإثنين ١٤٤٨/٥/١٥هـ.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برامج التدريب (الجامعي والمهني)",
+      "type": "internship_or_coop",
+      "url": "https://www.jobs4.net/32303"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.jobs4.net/32303"
+      ],
+      "message_id": 5705,
+      "permalink": "https://t.me/SALTRAI/5705",
+      "posted_at": "2026-09-18T11:30:32+00:00",
+      "text": "(🔴) عاجل | أرامكو السعودية تعلن فتح باب التسجيل في برامج التدريب (الجامعي والمهني):\n\n▪️ برنامج التدريب الجامعي.\n▪️ برنامج التدريب لطلبة الكليات المهنية.\n⭐️ المزايا (مكافأة شهرية - سكن مجاني أو بدل سكن - تأمين طبي - مواصلات).\n🗓 يبدأ التسجيل الإثنين ١٤٤٨/٥/١٥هـ.\n\nhttps://www.jobs4.net/32303"
+    }
+  },
+  "SALTRAI:5708": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-09-18T16:29:35+00:00",
+      "status": "sent",
+      "telegram_message_id": 264
+    },
+    "extracted": {
+      "company": "Majmouat Mabadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن."
+      },
+      "evidence": {
+        "company": "مجموعة مبادرات المستقبل",
+        "deadline": null,
+        "description": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.",
+        "location": "جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني للطالبات",
+      "type": "coop",
+      "url": "https://forms.gle/1dkwgYcSuH7p8qF29"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/1dkwgYcSuH7p8qF29"
+      ],
+      "message_id": 5708,
+      "permalink": "https://t.me/SALTRAI/5708",
+      "posted_at": "2026-09-18T11:31:47+00:00",
+      "text": "📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالموقع: جدة.\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
+    }
+  },
+  "SALTRAI:5713": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-09-21T14:17:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 271
+    },
+    "extracted": {
+      "company": "Majmouat Mabadarat Al-Mustaqbal | مجموعة مبادرات المستقبل",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن."
+      },
+      "evidence": {
+        "company": "مجموعة مبادرات المستقبل",
+        "deadline": null,
+        "description": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.",
+        "location": "جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني للطالبات",
+      "type": "coop",
+      "url": "https://forms.gle/1dkwgYcSuH7p8qF29"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/1dkwgYcSuH7p8qF29"
+      ],
+      "message_id": 5713,
+      "permalink": "https://t.me/SALTRAI/5713",
+      "posted_at": "2026-09-21T13:35:20+00:00",
+      "text": "📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالموقع: جدة.\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
+    }
+  },
+  "SALTRAI:5715": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "📣 عن بُعد\nتعلن ZORY AI عن توفر فرص تدريب للطلاب والطالبات الراغبين في اكتساب خبرة عملية والعمل على منتجات ومشاريع حقيقية في المجالات التالية:\n🤖 الذكاء الاصطناعي AI\n💻 تقنية المعلومات IT\n🏠 التصميم الداخلي Interior Design\nالمتطلبات:\n•⁠ ⁠أن يكون المتقدم طالبًا أو طالبة جامعية، ويفضل من يبحث عن تدريب تعاوني COOP.\n•⁠ ⁠يمكن أيضًا للخريجين الجدد التقديم.\n•⁠ ⁠مستوى جيد جدًا إلى ممتاز في اللغة الإنجليزية\n•⁠ ⁠الرغبة في التعلم، التطور، والعمل ضمن فريق.\n•⁠ ⁠يفضل توفر خطاب تدريب من الجامعة إن أمكن\n•⁠ ⁠التدريب عن بُعد بالكامل (Remote)."
+        }
+      },
+      "existing_index": 147,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "sent_at": "2026-09-21T14:17:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 272
+    },
+    "extracted": {
+      "company": "ZORY AI",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "📣 عن بُعد\nتعلن ZORY AI عن توفر فرص تدريب للطلاب والطالبات الراغبين في اكتساب خبرة عملية والعمل على منتجات ومشاريع حقيقية في المجالات التالية:\n🤖 الذكاء الاصطناعي AI\n💻 تقنية المعلومات IT\n🏠 التصميم الداخلي Interior Design\nالمتطلبات:\n•⁠ ⁠أن يكون المتقدم طالبًا أو طالبة جامعية، ويفضل من يبحث عن تدريب تعاوني COOP.\n•⁠ ⁠يمكن أيضًا للخريجين الجدد التقديم.\n•⁠ ⁠مستوى جيد جدًا إلى ممتاز في اللغة الإنجليزية\n•⁠ ⁠الرغبة في التعلم، التطور، والعمل ضمن فريق.\n•⁠ ⁠يفضل توفر خطاب تدريب من الجامعة إن أمكن\n•⁠ ⁠التدريب عن بُعد بالكامل (Remote)."
+      },
+      "evidence": {
+        "company": "ZORY AI",
+        "deadline": null,
+        "description": "📣 عن بُعد\nتعلن ZORY AI عن توفر فرص تدريب للطلاب والطالبات الراغبين في اكتساب خبرة عملية والعمل على منتجات ومشاريع حقيقية في المجالات التالية:\n🤖 الذكاء الاصطناعي AI\n💻 تقنية المعلومات IT\n🏠 التصميم الداخلي Interior Design\nالمتطلبات:\n•⁠ ⁠أن يكون المتقدم طالبًا أو طالبة جامعية، ويفضل من يبحث عن تدريب تعاوني COOP.\n•⁠ ⁠يمكن أيضًا للخريجين الجدد التقديم.\n•⁠ ⁠مستوى جيد جدًا إلى ممتاز في اللغة الإنجليزية\n•⁠ ⁠الرغبة في التعلم، التطور، والعمل ضمن فريق.\n•⁠ ⁠يفضل توفر خطاب تدريب من الجامعة إن أمكن\n•⁠ ⁠التدريب عن بُعد بالكامل (Remote).",
+        "location": "عن بُعد"
+      },
+      "is_opportunity": true,
+      "location": "Remote",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني",
+      "type": "coop",
+      "url": "https://tally.so/r/pbgbyb"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://tally.so/r/pbgbyb"
+      ],
+      "message_id": 5715,
+      "permalink": "https://t.me/SALTRAI/5715",
+      "posted_at": "2026-09-21T13:35:21+00:00",
+      "text": "فرصة تدريب تعاوني\n📣 عن بُعد\nتعلن ZORY AI عن توفر فرص تدريب للطلاب والطالبات الراغبين في اكتساب خبرة عملية والعمل على منتجات ومشاريع حقيقية في المجالات التالية:\n🤖 الذكاء الاصطناعي AI\n💻 تقنية المعلومات IT\n🏠 التصميم الداخلي Interior Design\nالمتطلبات:\n•⁠ ⁠أن يكون المتقدم طالبًا أو طالبة جامعية، ويفضل من يبحث عن تدريب تعاوني COOP.\n•⁠ ⁠يمكن أيضًا للخريجين الجدد التقديم.\n•⁠ ⁠مستوى جيد جدًا إلى ممتاز في اللغة الإنجليزية\n•⁠ ⁠الرغبة في التعلم، التطور، والعمل ضمن فريق.\n•⁠ ⁠يفضل توفر خطاب تدريب من الجامعة إن أمكن\n•⁠ ⁠التدريب عن بُعد بالكامل (Remote).\nإذا كنت مهتمًا وتبحث عن فرصة تساعدك على تطوير مهاراتك واكتساب خبرة عملية، يمكنك التقديم من خلال الرابط:\n\n🔗 رابط التقديم https://tally.so/r/pbgbyb"
+    }
+  },
+  "SALTRAI:5721": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-09-21T14:17:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 273
+    },
+    "extracted": {
+      "company": "Latham & Watkins",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "Latham & Watkins",
+        "deadline": null,
+        "description": null,
+        "location": "riyadh"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "COOP Program",
+      "type": "coop",
+      "url": "https://eume-earlyassociatecareers-lw.icims.com/jobs/11016/general-opportunity%3a-graduate-training-program-%28coop%29---riyadh/job"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://eume-earlyassociatecareers-lw.icims.com/jobs/11015/general-opportunity%3a-trainee-associate---riyadh/job",
+        "https://eume-earlyassociatecareers-lw.icims.com/jobs/11016/general-opportunity%3a-graduate-training-program-%28coop%29---riyadh/job"
+      ],
+      "message_id": 5721,
+      "permalink": "https://t.me/SALTRAI/5721",
+      "posted_at": "2026-09-21T13:41:35+00:00",
+      "text": "Law GDP | Latham & Watkins\n- Registration: Apply Now\nCOOP Program | Latham & Watkins\n- Registration: Apply Now"
+    }
+  },
+  "SALTRAI:5726": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "مواعيد التدريب التعاوني للفصل الاول في شركة أرامكو السعودية 🇸🇦\n\n1. برنامج التدريب الجامعي (University Internship Program)\nموجّه لطلبة البكالوريوس في التخصصات الهندسية، الإدارية، التقنية، والمالية وغيرها.\n\n2. برنامج التدريب لطلبة الكليات المهنية (Vocational College Internship Program)\nمخصص لطلبة الكليات التقنية والمهنية في التخصصات الفنية أو التشغيلية أو الصناعية.\n\n📍 مكان التدريب:\nمقر الشركة الرئيسي في الظهران، مع احتمالية توزيع المتدربين في مواقع أرامكو المختلفة داخل المملكة.\n\nمدة التدريب:\nتختلف حسب متطلبات الجامعة أو الكلية (عادة من 8 إلى 15 أسبوعًا).\n\nالشروط العامة:\n• أن يكون المتقدم سعودي الجنسية.\n• أن يكون طالبًا منتظمًا في جامعة أو كلية معترف بها.\n• أن يكون التدريب مطلوبًا للتخرج من المؤسسة التعليمية.\n• تقديم خطاب من الجامعة أو الكلية يوضح مدة التدريب المطلوبة وتاريخها.\n• معدل تراكمي لا يقل عن جيد (2.0 من 4 أو 3.0 من 5).\n• إجادة اللغة الإنجليزية تحدثًا وكتابة(ممكن يكون فيه اختبار تحديد مستوى بسيط).\n\nالمزايا:\n• إشراف مباشر من مختصين وخبراء في الشركة.\n• تطوير مهارات العمل ضمن فرق متعددة التخصصات.\n• شهادة إنهاء تدريب معتمدة من أرامكو.\n• مكافأة شهرية أثناء فترة التدريب.\n• تأمين طبي خلال فترة البرنامج.\n• سكن مجاني (حسب التوفر في مواقع الشركة).\n• فرصة مستقبلية للالتحاق ببرامج الخريجين.\n\n📅 فترة التقديم:\nسيتم فتح بوابة التسجيل الساعة 08:00 صباحاً يوم الإثنين 26 أكتوبر 2026م،\nوينتهي الساعة 3:00 مساءً يوم الإثنين 2 نوفمبر 2026م.\n\nإجراءات ما بعد التقديم\nمطابقة بيانات المتقدمين والتأكد من استيفائهم لشروط البرنامج.\nفي حال ترشيحك المبدئي للبرنامج سيتم تحديد موعد لك لاستكمال الإجراءات التالية:\n\nإكمال إجراءات توقيع العقد وإصدار البطاقات.\nحضور اللقاء التعريفي والذي سيقام في 17 يناير 2027م.\nمباشرة برنامجك التدريبي يوم 18 يناير 2027م.\n\nللتقديم والتفاصيل:\n\nبرنامج التدريب الجامعي\n\nبرنامج التدريب للكليات المهنية"
+        }
+      },
+      "existing_index": 150,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "sent_at": "2026-09-29T08:40:12+00:00",
+      "status": "sent",
+      "telegram_message_id": 276
+    },
+    "extracted": {
+      "company": "Aramco",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": "2026-11-02",
+      "deadline_raw": "يوم الإثنين 2 نوفمبر 2026م",
+      "description": {
+        "ar": "مواعيد التدريب التعاوني للفصل الاول في شركة أرامكو السعودية 🇸🇦\n\n1. برنامج التدريب الجامعي (University Internship Program)\nموجّه لطلبة البكالوريوس في التخصصات الهندسية، الإدارية، التقنية، والمالية وغيرها.\n\n2. برنامج التدريب لطلبة الكليات المهنية (Vocational College Internship Program)\nمخصص لطلبة الكليات التقنية والمهنية في التخصصات الفنية أو التشغيلية أو الصناعية.\n\n📍 مكان التدريب:\nمقر الشركة الرئيسي في الظهران، مع احتمالية توزيع المتدربين في مواقع أرامكو المختلفة داخل المملكة.\n\nمدة التدريب:\nتختلف حسب متطلبات الجامعة أو الكلية (عادة من 8 إلى 15 أسبوعًا).\n\nالشروط العامة:\n• أن يكون المتقدم سعودي الجنسية.\n• أن يكون طالبًا منتظمًا في جامعة أو كلية معترف بها.\n• أن يكون التدريب مطلوبًا للتخرج من المؤسسة التعليمية.\n• تقديم خطاب من الجامعة أو الكلية يوضح مدة التدريب المطلوبة وتاريخها.\n• معدل تراكمي لا يقل عن جيد (2.0 من 4 أو 3.0 من 5).\n• إجادة اللغة الإنجليزية تحدثًا وكتابة(ممكن يكون فيه اختبار تحديد مستوى بسيط).\n\nالمزايا:\n• إشراف مباشر من مختصين وخبراء في الشركة.\n• تطوير مهارات العمل ضمن فرق متعددة التخصصات.\n• شهادة إنهاء تدريب معتمدة من أرامكو.\n• مكافأة شهرية أثناء فترة التدريب.\n• تأمين طبي خلال فترة البرنامج.\n• سكن مجاني (حسب التوفر في مواقع الشركة).\n• فرصة مستقبلية للالتحاق ببرامج الخريجين.\n\n📅 فترة التقديم:\nسيتم فتح بوابة التسجيل الساعة 08:00 صباحاً يوم الإثنين 26 أكتوبر 2026م،\nوينتهي الساعة 3:00 مساءً يوم الإثنين 2 نوفمبر 2026م.\n\nإجراءات ما بعد التقديم\nمطابقة بيانات المتقدمين والتأكد من استيفائهم لشروط البرنامج.\nفي حال ترشيحك المبدئي للبرنامج سيتم تحديد موعد لك لاستكمال الإجراءات التالية:\n\nإكمال إجراءات توقيع العقد وإصدار البطاقات.\nحضور اللقاء التعريفي والذي سيقام في 17 يناير 2027م.\nمباشرة برنامجك التدريبي يوم 18 يناير 2027م.\n\nللتقديم والتفاصيل:\n\nبرنامج التدريب الجامعي\n\nبرنامج التدريب للكليات المهنية"
+      },
+      "evidence": {
+        "company": "شركة أرامكو السعودية",
+        "deadline": "يوم الإثنين 2 نوفمبر 2026م",
+        "description": "مواعيد التدريب التعاوني للفصل الاول في شركة أرامكو السعودية 🇸🇦",
+        "location": "الظهران"
+      },
+      "is_opportunity": true,
+      "location": "Dhahran, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": null,
+      "type": "coop",
+      "url": "https://www.aramco.com/ar/careers/for-saudi-applicants/student-opportunities/university-and-vocational-college-internship-programs/university-internship-program"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://www.aramco.com/ar/careers/for-saudi-applicants/student-opportunities/university-and-vocational-college-internship-programs/university-internship-program",
+        "https://www.aramco.com/ar/careers/for-saudi-applicants/student-opportunities/university-and-vocational-college-internship-programs/vocational-college-internship-program"
+      ],
+      "message_id": 5726,
+      "permalink": "https://t.me/SALTRAI/5726",
+      "posted_at": "2026-09-28T10:49:17+00:00",
+      "text": "#التدريب_التعاوني | #السعودية\n\nمواعيد التدريب التعاوني للفصل الاول في شركة أرامكو السعودية 🇸🇦\n\n1. برنامج التدريب الجامعي (University Internship Program)\nموجّه لطلبة البكالوريوس في التخصصات الهندسية، الإدارية، التقنية، والمالية وغيرها.\n\n2. برنامج التدريب لطلبة الكليات المهنية (Vocational College Internship Program)\nمخصص لطلبة الكليات التقنية والمهنية في التخصصات الفنية أو التشغيلية أو الصناعية.\n\n📍 مكان التدريب:\nمقر الشركة الرئيسي في الظهران، مع احتمالية توزيع المتدربين في مواقع أرامكو المختلفة داخل المملكة.\n\nمدة التدريب:\nتختلف حسب متطلبات الجامعة أو الكلية (عادة من 8 إلى 15 أسبوعًا).\n\nالشروط العامة:\n• أن يكون المتقدم سعودي الجنسية.\n• أن يكون طالبًا منتظمًا في جامعة أو كلية معترف بها.\n• أن يكون التدريب مطلوبًا للتخرج من المؤسسة التعليمية.\n• تقديم خطاب من الجامعة أو الكلية يوضح مدة التدريب المطلوبة وتاريخها.\n• معدل تراكمي لا يقل عن جيد (2.0 من 4 أو 3.0 من 5).\n• إجادة اللغة الإنجليزية تحدثًا وكتابة(ممكن يكون فيه اختبار تحديد مستوى بسيط).\n\nالمزايا:\n• إشراف مباشر من مختصين وخبراء في الشركة.\n• تطوير مهارات العمل ضمن فرق متعددة التخصصات.\n• شهادة إنهاء تدريب معتمدة من أرامكو.\n• مكافأة شهرية أثناء فترة التدريب.\n• تأمين طبي خلال فترة البرنامج.\n• سكن مجاني (حسب التوفر في مواقع الشركة).\n• فرصة مستقبلية للالتحاق ببرامج الخريجين.\n\n📅 فترة التقديم:\nسيتم فتح بوابة التسجيل الساعة 08:00 صباحاً يوم الإثنين 26 أكتوبر 2026م،\n\nوينتهي الساعة 3:00 مساءً يوم الإثنين 2 نوفمبر 2026م.\n\nإجراءات ما بعد التقديم\nمطابقة بيانات المتقدمين والتأكد من استيفائهم لشروط البرنامج.\nفي حال ترشيحك المبدئي للبرنامج سيتم تحديد موعد لك لاستكمال الإجراءات التالية:\n\nإكمال إجراءات توقيع العقد وإصدار البطاقات.\nحضور اللقاء التعريفي والذي سيقام في 17 يناير 2027م.\nمباشرة برنامجك التدريبي يوم 18 يناير 2027م.\n\nللتقديم والتفاصيل:\n\nبرنامج التدريب الجامعي\n\nبرنامج التدريب للكليات المهنية"
+    }
+  },
+  "SALTRAI:5782": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-10-05T22:42:39+00:00",
+      "status": "sent",
+      "telegram_message_id": 316
+    },
+    "extracted": {
+      "company": "Al Awla Al Ibdaha | الأولى الإبداعية",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "نبحث عن متدرب/ة طموح/ة للانضمام إلى فريق العمل والمساهمة في تنظيم الأعمال الإدارية، والتنسيق والمتابعة، ودعم الإدارة في المهام اليومية، مع فرصة لتطوير المهارات العملية في بيئة مهنية.\n\nالمهام الرئيسية:\n\n• تنظيم المواعيد والاجتماعات ومتابعتها.\n• إعداد وتجهيز المستندات والمراسلات الإدارية.\n• تنسيق الاجتماعات وكتابة محاضرها عند الحاجة.\n• متابعة المهام والتكليفات والتأكد من إنجازها.\n• تنظيم الملفات والبيانات وتحديثها.\n• إعداد التقارير والجداول باستخدام Microsoft Excel.\n• التنسيق والتواصل مع الإدارات المختلفة.\n• دعم الإدارة في الأعمال والمهام اليومية.\n• استقبال وتنظيم المراسلات والبريد الإلكتروني.\n• المساعدة في إعداد العروض التقديمية والمستندات.\n\nالمؤهلات المطلوبة:\n\n• طالب/ة أو خريج/ة حديث/ة في إدارة الأعمال – بكالوريوس.\n• إجادة استخدام Microsoft Office، وخاصة Excel وWord وPowerPoint.\n• مهارات جيدة في التنظيم وإدارة الوقت.\n• مهارات جيدة في التواصل والتنسيق.\n• القدرة على ترتيب الأولويات ومتابعة المهام.\n• القدرة على العمل ضمن فريق.\n• سرعة التعلم والمبادرة وتحمل المسؤولية.\n\nما يميز المرشح/ة:\n\n• التنظيم والدقة والاهتمام بالتفاصيل.\n• مهارات قوية في التواصل والتنسيق.\n• القدرة على التعامل مع عدة مهام في الوقت نفسه.\n• إجادة استخدام برامج Microsoft Office.\n• المبادرة وسرعة التعلم.\n• الاحترافية في التعامل مع المراسلات والاجتماعات.\n• الرغبة في تطوير المهارات الإدارية والعمل في بيئة مهنية"
+      },
+      "evidence": {
+        "company": "الشركة الأولى الإبداعية",
+        "deadline": null,
+        "description": "نبحث عن متدرب/ة طموح/ة للانضمام إلى فريق العمل والمساهمة في تنظيم الأعمال الإدارية، والتنسيق والمتابعة، ودعم الإدارة في المهام اليومية، مع فرصة لتطوير المهارات العملية في بيئة مهنية.\n\nالمهام الرئيسية:\n\n• تنظيم المواعيد والاجتماعات ومتابعتها.\n• إعداد وتجهيز المستندات والمراسلات الإدارية.\n• تنسيق الاجتماعات وكتابة محاضرها عند الحاجة.\n• متابعة المهام والتكليفات والتأكد من إنجازها.\n• تنظيم الملفات والبيانات وتحديثها.\n• إعداد التقارير والجداول باستخدام Microsoft Excel.\n• التنسيق والتواصل مع الإدارات المختلفة.\n• دعم الإدارة في الأعمال والمهام اليومية.\n• استقبال وتنظيم المراسلات والبريد الإلكتروني.\n• المساعدة في إعداد العروض التقديمية والمستندات.\n\nالمؤهلات المطلوبة:\n\n• طالب/ة أو خريج/ة حديث/ة في إدارة الأعمال – بكالوريوس.\n• إجادة استخدام Microsoft Office، وخاصة Excel وWord وPowerPoint.\n• مهارات جيدة في التنظيم وإدارة الوقت.\n• مهارات جيدة في التواصل والتنسيق.\n• القدرة على ترتيب الأولويات ومتابعة المهام.\n• القدرة على العمل ضمن فريق.\n• سرعة التعلم والمبادرة وتحمل المسؤولية.\n\nما يميز المرشح/ة:\n\n• التنظيم والدقة والاهتمام بالتفاصيل.\n• مهارات قوية في التواصل والتنسيق.\n• القدرة على التعامل مع عدة مهام في الوقت نفسه.\n• إجادة استخدام برامج Microsoft Office.\n• المبادرة وسرعة التعلم.\n• الاحترافية في التعامل مع المراسلات والاجتماعات.\n• الرغبة في تطوير المهارات الإدارية والعمل في بيئة مهنية",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Executive Secretary – Business Administration",
+      "type": "internship",
+      "url": "https://wkf.ms/4aR6D2M"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://wkf.ms/4aR6D2M"
+      ],
+      "message_id": 5782,
+      "permalink": "https://t.me/SALTRAI/5782",
+      "posted_at": "2026-10-05T09:53:49+00:00",
+      "text": "� تعلن شركة الأولى الإبداعية عن فرصة تدريبية في مدينة الرياض\n\nالمسمى التدريبي:\nسكرتير/ة تنفيذي/ة – إدارة أعمال\n(Executive Secretary – Business Administration)\n\n📍 مكان التدريب: الرياض\n\nعن الفرصة\n\nنبحث عن متدرب/ة طموح/ة للانضمام إلى فريق العمل والمساهمة في تنظيم الأعمال الإدارية، والتنسيق والمتابعة، ودعم الإدارة في المهام اليومية، مع فرصة لتطوير المهارات العملية في بيئة مهنية.\n\nالمهام الرئيسية:\n\n• تنظيم المواعيد والاجتماعات ومتابعتها.\n• إعداد وتجهيز المستندات والمراسلات الإدارية.\n• تنسيق الاجتماعات وكتابة محاضرها عند الحاجة.\n• متابعة المهام والتكليفات والتأكد من إنجازها.\n• تنظيم الملفات والبيانات وتحديثها.\n• إعداد التقارير والجداول باستخدام Microsoft Excel.\n• التنسيق والتواصل مع الإدارات المختلفة.\n• دعم الإدارة في الأعمال والمهام اليومية.\n• استقبال وتنظيم المراسلات والبريد الإلكتروني.\n• المساعدة في إعداد العروض التقديمية والمستندات.\n\nالمؤهلات المطلوبة:\n\n• طالب/ة أو خريج/ة حديث/ة في إدارة الأعمال – بكالوريوس.\n• إجادة استخدام Microsoft Office، وخاصة Excel وWord وPowerPoint.\n• مهارات جيدة في التنظيم وإدارة الوقت.\n• مهارات جيدة في التواصل والتنسيق.\n• القدرة على ترتيب الأولويات ومتابعة المهام.\n• القدرة على العمل ضمن فريق.\n• سرعة التعلم والمبادرة وتحمل المسؤولية.\n\nما يميز المرشح/ة:\n\n• التنظيم والدقة والاهتمام بالتفاصيل.\n• مهارات قوية في التواصل والتنسيق.\n• القدرة على التعامل مع عدة مهام في الوقت نفسه.\n• إجادة استخدام برامج Microsoft Office.\n• المبادرة وسرعة التعلم.\n• الاحترافية في التعامل مع المراسلات والاجتماعات.\n• الرغبة في تطوير المهارات الإدارية والعمل في بيئة مهنية\n\nhttps://wkf.ms/4aR6D2M"
+    }
+  },
+  "SALTRAI:5801": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-10-07T16:35:44+00:00",
+      "status": "sent",
+      "telegram_message_id": 347
+    },
+    "extracted": {
+      "company": "Atkins",
+      "confidence": 0.7,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "SARiyadhHamad-Tower-Atkins",
+        "deadline": null,
+        "description": null,
+        "location": "SARiyadhHamad-Tower-Atkins"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Intern – Nationals Only",
+      "type": "internship",
+      "url": "https://slihrms.wd3.myworkdayjobs.com/Careers/job/SARiyadhHamad-Tower-Atkins/Intern--Nationals-Only-_R-163162?utm_source=careers_site&source=careers_site&_gl=1*1g17331*_gcl_au*MTMzMzA5MDYzMS4xNzkxMzI2Njc1*_ga*MjAwOTcyMDczNS4xNzkxMzI2Njcx*_ga_GXW5RHPYK8*czE3OTEzMjY2NzAkbzEkZzEkdDE3OTEzMjcwMTIkajU4JGwwJGgxMjQ1NTI4MTky"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://slihrms.wd3.myworkdayjobs.com/Careers/job/SARiyadhHamad-Tower-Atkins/Intern--Nationals-Only-_R-163162?utm_source=careers_site&source=careers_site&_gl=1*1g17331*_gcl_au*MTMzMzA5MDYzMS4xNzkxMzI2Njc1*_ga*MjAwOTcyMDczNS4xNzkxMzI2Njcx*_ga_GXW5RHPYK8*czE3OTEzMjY2NzAkbzEkZzEkdDE3OTEzMjcwMTIkajU4JGwwJGgxMjQ1NTI4MTky"
+      ],
+      "message_id": 5801,
+      "permalink": "https://t.me/SALTRAI/5801",
+      "posted_at": "2026-10-07T09:53:33+00:00",
+      "text": "https://slihrms.wd3.myworkdayjobs.com/Careers/job/SARiyadhHamad-Tower-Atkins/Intern--Nationals-Only-_R-163162?utm_source=careers_site&source=careers_site&_gl=1*1g17331*_gcl_au*MTMzMzA5MDYzMS4xNzkxMzI2Njc1*_ga*MjAwOTcyMDczNS4xNzkxMzI2Njcx*_ga_GXW5RHPYK8*czE3OTEzMjY2NzAkbzEkZzEkdDE3OTEzMjcwMTIkajU4JGwwJGgxMjQ1NTI4MTky"
+    }
+  },
+  "SALTRAI:5802": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-10-07T16:35:44+00:00",
+      "status": "sent",
+      "telegram_message_id": 348
+    },
+    "extracted": {
+      "company": "begroup",
+      "confidence": 0.95,
+      "contact": {
+        "type": "email",
+        "value": "r.alnasser@begroup.com.sa"
+      },
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "📍 الرياض، المملكة العربية السعودية\n\n🎓 التخصصات المطلوبة:\n🔹 تقنية المعلومات (IT).\n🔹 علوم الحاسب.\n🔹 نظم المعلومات.\n🔹 هندسة البرمجيات.\n🔹 الأمن السيبراني.\n🔹 الشبكات وإدارة أنظمة الشبكات.\n🔹 أي تخصص تقني ذي صلة.\n\n🌟 المتطلبات:\n🔹 أن يكون التدريب التعاوني متطلبًا للتخرج.\n🔹 الالتزام بفترة التدريب المحددة من الجامعة.\n🔹 الرغبة في التعلم والتطبيق العملي.\n🔹 الجدية والالتزام.\n\n📝 ملاحظات:\n🔹 يرجى إرسال السيرة الذاتية المحدثة مع توضيح التخصص وفترة التدريب التعاوني.\n🔹 يرجى كتابة (تدريب تعاوني – تقنية) في عنوان البريد الإلكتروني."
+      },
+      "evidence": {
+        "company": "begroup.com.sa",
+        "deadline": null,
+        "description": "📍 الرياض، المملكة العربية السعودية\n\n🎓 التخصصات المطلوبة:\n🔹 تقنية المعلومات (IT).\n🔹 علوم الحاسب.\n🔹 نظم المعلومات.\n🔹 هندسة البرمجيات.\n🔹 الأمن السيبراني.\n🔹 الشبكات وإدارة أنظمة الشبكات.\n🔹 أي تخصص تقني ذي صلة.\n\n🌟 المتطلبات:\n🔹 أن يكون التدريب التعاوني متطلبًا للتخرج.\n🔹 الالتزام بفترة التدريب المحددة من الجامعة.\n🔹 الرغبة في التعلم والتطبيق العملي.\n🔹 الجدية والالتزام.\n\n📝 ملاحظات:\n🔹 يرجى إرسال السيرة الذاتية المحدثة مع توضيح التخصص وفترة التدريب التعاوني.\n🔹 يرجى كتابة (تدريب تعاوني – تقنية) في عنوان البريد الإلكتروني.",
+        "location": "الرياض، المملكة العربية السعودية"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني | تخصصات تقنية",
+      "type": "coop",
+      "url": "https://begroup.com.sa"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://begroup.com.sa/",
+        "https://begroup.com.sa"
+      ],
+      "message_id": 5802,
+      "permalink": "https://t.me/SALTRAI/5802",
+      "posted_at": "2026-10-07T09:53:33+00:00",
+      "text": "📌 فرصة تدريب تعاوني | تخصصات تقنية\n(Cooperative Training – Technology)\n\n📍 الرياض، المملكة العربية السعودية\n\n🎓 التخصصات المطلوبة:\n🔹 تقنية المعلومات (IT).\n🔹 علوم الحاسب.\n🔹 نظم المعلومات.\n🔹 هندسة البرمجيات.\n🔹 الأمن السيبراني.\n🔹 الشبكات وإدارة أنظمة الشبكات.\n🔹 أي تخصص تقني ذي صلة.\n\n🌟 المتطلبات:\n🔹 أن يكون التدريب التعاوني متطلبًا للتخرج.\n🔹 الالتزام بفترة التدريب المحددة من الجامعة.\n🔹 الرغبة في التعلم والتطبيق العملي.\n🔹 الجدية والالتزام.\n\n📩 للتقديم:\n✉️ r.alnasser@begroup.com.sa\n\n🌐 موقع الشركة:\nhttps://begroup.com.sa\n\n📝 ملاحظات:\n🔹 يرجى إرسال السيرة الذاتية المحدثة مع توضيح التخصص وفترة التدريب التعاوني.\n🔹 يرجى كتابة (تدريب تعاوني – تقنية) في عنوان البريد الإلكتروني."
+    }
+  },
+  "SALTRAI:5803": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-10-07T16:35:45+00:00",
+      "status": "sent",
+      "telegram_message_id": 349
+    },
+    "extracted": {
+      "company": "Tamco",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "المتطلبات:\n• أن يكون التدريب التعاوني متطلبًا للتخرج.\n• الالتزام بالحضور خلال فترة التدريب.\n• مهارات جيدة في التواصل والعمل ضمن فريق."
+      },
+      "evidence": {
+        "company": "شركة تامكو",
+        "deadline": null,
+        "description": "المتطلبات:\n• أن يكون التدريب التعاوني متطلبًا للتخرج.\n• الالتزام بالحضور خلال فترة التدريب.\n• مهارات جيدة في التواصل والعمل ضمن فريق.",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://hickory-erica-14c.notion.site/3983c75acad580de9c51d301673af430"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://hickory-erica-14c.notion.site/3983c75acad580de9c51d301673af430"
+      ],
+      "message_id": 5803,
+      "permalink": "https://t.me/SALTRAI/5803",
+      "posted_at": "2026-10-07T09:53:33+00:00",
+      "text": "📢 فرصة تدريب تعاوني\n\nتعلن شركة تامكو عن توفر فرصة تدريب تعاوني.\n\n📍 الموقع: الرياض\n\nالمتطلبات:\n• أن يكون التدريب التعاوني متطلبًا للتخرج.\n• الالتزام بالحضور خلال فترة التدريب.\n• مهارات جيدة في التواصل والعمل ضمن فريق.\n\n📩 للتقديم\nhttps://hickory-erica-14c.notion.site/3983c75acad580de9c51d301673af430\nبالتوفيق للجميع 🤍"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
@@ -659,6 +1139,103 @@
       "permalink": "https://t.me/cooptraning_inksa/4351",
       "posted_at": "2026-08-09T14:53:49+00:00",
       "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
+    }
+  },
+  "cooptraning_inksa:4499": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-10-21T07:45:39+00:00",
+      "status": "sent",
+      "telegram_message_id": 376
+    },
+    "extracted": {
+      "company": "SDAIA",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن عن فتح باب التسجيل في برنامج التدريب التعاوني، للفصل الدراسي الثاني لعام 1448هـ، بدءاً من اليوم، ويستمر لمدة أسبوع."
+      },
+      "evidence": {
+        "company": "#سدايا",
+        "deadline": null,
+        "description": "تعلن عن فتح باب التسجيل في برنامج التدريب التعاوني، للفصل الدراسي الثاني لعام 1448هـ، بدءاً من اليوم، ويستمر لمدة أسبوع.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "http://athkax.sdaia.gov.sa/coop"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "http://athkax.sdaia.gov.sa/coop"
+      ],
+      "message_id": 4499,
+      "permalink": "https://t.me/cooptraning_inksa/4499",
+      "posted_at": "2026-10-21T05:33:56+00:00",
+      "text": "🟡الفرصة رقم ٢٨٢٠\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n\n⁧ #سدايا⁩ تعلن عن فتح باب التسجيل في برنامج التدريب التعاوني، للفصل الدراسي الثاني لعام 1448هـ، بدءاً من اليوم، ويستمر لمدة أسبوع. ⁧ #عام_الذكاء_الاصطناعي⁩\n\n⁦ athkax.sdaia.gov.sa/coop⁩"
+    }
+  },
+  "cooptraning_inksa:4502": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-10-21T07:45:39+00:00",
+      "status": "sent",
+      "telegram_message_id": 377
+    },
+    "extracted": {
+      "company": "جمعية العمران الخيرية للخدمات الإنسانية",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن جمعية العمران للخدمات الإنسانية عن فتح باب التقديم لفرص التدريب التعاوني لطلاب وطالبات الجامعات في عدد من التخصصات المتاحة بالجمعية.\n\n✨ التخصصات المتاحة:\n🔹 إدارة الأعمال\n🔹 البحث الاجتماعي\n🔹 المحاسبة والمالية\n🔹 الإعلام والعلاقات العامة"
+      },
+      "evidence": {
+        "company": "جمعية العمران الخيرية للخدمات الإنسانية",
+        "deadline": null,
+        "description": "تعلن جمعية العمران للخدمات الإنسانية عن فتح باب التقديم لفرص التدريب التعاوني لطلاب وطالبات الجامعات في عدد من التخصصات المتاحة بالجمعية.\n\n✨ التخصصات المتاحة:\n🔹 إدارة الأعمال\n🔹 البحث الاجتماعي\n🔹 المحاسبة والمالية\n🔹 الإعلام والعلاقات العامة",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصتك للتدريب التعاوني",
+      "type": "coop",
+      "url": "http://docs.google.com/forms/d/1vDvbg"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "http://docs.google.com/forms/d/1vDvbg",
+        "http://linkin1.com/jamomran42?utm"
+      ],
+      "message_id": 4502,
+      "permalink": "https://t.me/cooptraning_inksa/4502",
+      "posted_at": "2026-10-21T05:39:32+00:00",
+      "text": "🟡الفرصة رقم ٢٨٢٣\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرصتك للتدريب التعاوني! 💚\n\nتعلن جمعية العمران للخدمات الإنسانية عن فتح باب التقديم لفرص التدريب التعاوني لطلاب وطالبات الجامعات في عدد من التخصصات المتاحة بالجمعية.\n\n✨ التخصصات المتاحة:\n🔹 إدارة الأعمال\n🔹 البحث الاجتماعي\n🔹 المحاسبة والمالية\n🔹 الإعلام والعلاقات العامة\n\n📌 للتسجيل والتقديم:\n🔗 [⁦ docs.google.com/forms/d/1vDvbg…⁩]\n\nتعرف علينا :\n(⁦ linkin1.com/jamomran42?utm…⁩)\n\nجمعية العمران الخيرية للخدمات الإنسانية\nلا تفوّتوا الفرصة، وابدؤوا رحلتكم المهنية معنا! 🌟"
     }
   },
   "nobthacv1:2042": {
@@ -1572,6 +2149,147 @@
       "permalink": "https://t.me/nobthacv1/2129",
       "posted_at": "2026-09-05T08:15:28+00:00",
       "text": "#التدريب_التعاوني #الرياض\n\nشركة سيف الامنية تابعة للصندوق\n\nللتقديم______________________"
+    }
+  },
+  "nobthacv1:2155": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-09-16T22:59:44+00:00",
+      "status": "sent",
+      "telegram_message_id": 258
+    },
+    "extracted": {
+      "company": "TKE ALAT",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "المتطلبات:\nأن يكون المتقدم من طلاب السنة الأخيرة.\nاهتمام حقيقي بصناعة النقل العمودي والمصاعد.\nإجادة التواصل باللغتين العربية والإنجليزية.\nالقدرة على العمل ضمن فريق.\nالرغبة في التعلم والمساهمة في المشاريع."
+      },
+      "evidence": {
+        "company": "شركة TKE ALAT",
+        "deadline": null,
+        "description": "المتطلبات:\nأن يكون المتقدم من طلاب السنة الأخيرة.\nاهتمام حقيقي بصناعة النقل العمودي والمصاعد.\nإجادة التواصل باللغتين العربية والإنجليزية.\nالقدرة على العمل ضمن فريق.\nالرغبة في التعلم والمساهمة في المشاريع.",
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني COOP 2026",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4467753413"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4467753413"
+      ],
+      "message_id": 2155,
+      "permalink": "https://t.me/nobthacv1/2155",
+      "posted_at": "2026-09-16T21:44:24+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nشركة TKE ALAT تعلن عن فتح باب التقديم على برنامج التدريب التعاوني COOP 2026 لطلاب وطالبات الجامعات في السنة الأخيرة، لاكتساب خبرة عملية في صناعة المصاعد وأنظمة النقل العمودي.\n\nالمتطلبات:\nأن يكون المتقدم من طلاب السنة الأخيرة.\nاهتمام حقيقي بصناعة النقل العمودي والمصاعد.\nإجادة التواصل باللغتين العربية والإنجليزية.\nالقدرة على العمل ضمن فريق.\nالرغبة في التعلم والمساهمة في المشاريع.\n\nللتقديم__________________"
+    }
+  },
+  "nobthacv1:2174": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-10-08T09:04:46+00:00",
+      "status": "sent",
+      "telegram_message_id": 350
+    },
+    "extracted": {
+      "company": "شركة الرومانسية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "ونرحب بطلبة الجامعات والكليات الراغبين في خوض تجربة مهنية عملية ، وتطوير مهاراتهم وبناء خبراتهم في بيئة عمل احترافية\n\nنتطلع لاستقبال طلباتكم ، وسيتم التواصل مع المرشحين المستوفين لمتطلبات البرنامج"
+      },
+      "evidence": {
+        "company": "شركة الرومانسية",
+        "deadline": null,
+        "description": "ونرحب بطلبة الجامعات والكليات الراغبين في خوض تجربة مهنية عملية ، وتطوير مهاراتهم وبناء خبراتهم في بيئة عمل احترافية\n\nنتطلع لاستقبال طلباتكم ، وسيتم التواصل مع المرشحين المستوفين لمتطلبات البرنامج",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرص للتدريب التعاوني",
+      "type": "coop",
+      "url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=mZWNrSL98k2PL-Kz-46p5RjFIWAtNjBGm7yIc5y-iMdUMUxZMlVSWkFXUEtRNUo3SUw4NzVSUUlGVS4u&route=shorturl"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://forms.cloud.microsoft/pages/responsepage.aspx?id=mZWNrSL98k2PL-Kz-46p5RjFIWAtNjBGm7yIc5y-iMdUMUxZMlVSWkFXUEtRNUo3SUw4NzVSUUlGVS4u&amp;route=shorturl"
+      ],
+      "message_id": 2174,
+      "permalink": "https://t.me/nobthacv1/2174",
+      "posted_at": "2026-10-08T03:55:07+00:00",
+      "text": "توجد لدينا فرص للتدريب التعاوني في شركة الرومانسية\n\nونرحب بطلبة الجامعات والكليات الراغبين في خوض تجربة مهنية عملية ، وتطوير مهاراتهم وبناء خبراتهم في بيئة عمل احترافية\n\nنتطلع لاستقبال طلباتكم ، وسيتم التواصل مع المرشحين المستوفين لمتطلبات البرنامج\n\nللتقديمـــــــــــــــ"
+    }
+  },
+  "nobthacv1:2175": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "sent_at": "2026-10-08T09:04:47+00:00",
+      "status": "sent",
+      "telegram_message_id": 351
+    },
+    "extracted": {
+      "company": "شركة ماهرون للإنارة",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "✨ مميزات التدريب:\n• فرص متاحة لعدة تخصصات\n• تدريب عملي واكتساب خبرة مهنية\n• مكافآت وحوافز للمتميزين\n• فرصة للمشاركة في مشاريع وأعمال حقيقية\n• إمكانية التوظيف بعد انتهاء فترة التدريب للمتميزين"
+      },
+      "evidence": {
+        "company": "شركة ماهرون للإنارة",
+        "deadline": null,
+        "description": "✨ مميزات التدريب:\n• فرص متاحة لعدة تخصصات\n• تدريب عملي واكتساب خبرة مهنية\n• مكافآت وحوافز للمتميزين\n• فرصة للمشاركة في مشاريع وأعمال حقيقية\n• إمكانية التوظيف بعد انتهاء فترة التدريب للمتميزين",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني",
+      "type": "coop",
+      "url": "https://forms.gle/coMjqkaqC2mV87oi9"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/coMjqkaqC2mV87oi9"
+      ],
+      "message_id": 2175,
+      "permalink": "https://t.me/nobthacv1/2175",
+      "posted_at": "2026-10-08T04:01:24+00:00",
+      "text": "🎓 فرصة تدريب تعاوني\n\nتعلن شركة ماهرون للإنارة عن توفر فرص تدريب تعاوني لعدة تخصصات للطلاب والطالبات الراغبين في اكتساب خبرة عملية حقيقية وتطوير مهاراتهم في بيئة عمل احترافية.\n\n✨ مميزات التدريب:\n• فرص متاحة لعدة تخصصات\n• تدريب عملي واكتساب خبرة مهنية\n• مكافآت وحوافز للمتميزين\n• فرصة للمشاركة في مشاريع وأعمال حقيقية\n• إمكانية التوظيف بعد انتهاء فترة التدريب للمتميزين\n\n📌 للتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/coMjqkaqC2mV87oi9\n\nنبحث عن أشخاص لديهم الشغف بالتعلم والتطور وصناعة أثر حقيقي خلال فترة التدريب.\n\nابدأ مسيرتك المهنية معنا 🚀"
     }
   }
 }
