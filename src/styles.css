@@ -381,6 +381,8 @@ select {
 }
 
 .city-select select {
+  font-family: inherit;
+  font-size: 0.82rem;
   padding-inline-end: 30px;
 }
 

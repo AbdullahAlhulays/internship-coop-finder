@@ -43,13 +43,28 @@ export function createCompanySlug(name = "") {
 
 export function getCompanyPageEntries(companies = []) {
   const slugCounts = new Map();
+  const usedSlugs = new Set();
 
   return companies.map((company) => {
     const baseSlug = createCompanySlug(company.name);
-    const slugCount = (slugCounts.get(baseSlug) ?? 0) + 1;
-    const slug = slugCount === 1 ? baseSlug : `${baseSlug}-${slugCount}`;
+    let slugCount = (slugCounts.get(baseSlug) ?? 0) + 1;
+    let slug = slugCount === 1 ? baseSlug : `${baseSlug}-${slugCount}`;
+
+    if (company.pageSlug) {
+      slug = company.pageSlug;
+    } else {
+      while (usedSlugs.has(slug)) {
+        slugCount += 1;
+        slug = `${baseSlug}-${slugCount}`;
+      }
+    }
+
+    if (usedSlugs.has(slug)) {
+      throw new Error(`Duplicate company page slug: ${slug}`);
+    }
 
     slugCounts.set(baseSlug, slugCount);
+    usedSlugs.add(slug);
 
     return { company, slug };
   });
