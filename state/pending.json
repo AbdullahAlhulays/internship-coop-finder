@@ -1296,6 +1296,53 @@
       "text": "تعلن شركة الأولى الإبداعية عن توفر فرصتين تدريبيتين في مدينة الرياض\nالمسميات التدريبية:\nمتدرب/ة تقنية المعلومات (IT Trainee).\nمساعد/ة إداري/ة (Administrative Assistant Trainee).\nالتخصصات المطلوبة:\nتقنية المعلومات (IT).\nإدارة الأعمال، الإدارة المكتبية، أو أي تخصص ذي صلة.\n📍 مكان التدريب: الرياض\nللمهتمين، يرجى تعبئة نموذج التقديم عبر الرابط المرفقhttps://forms.monday.com/forms/e796748eeecc33b4072f0f06d1d91bc8?r=use1"
     }
   },
+  "SALTRAI:5861": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-21T22:24:48+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "مجموعة مبادرات المستقبل",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن."
+      },
+      "evidence": {
+        "company": "مجموعة مبادرات المستقبل",
+        "deadline": null,
+        "description": "تعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.",
+        "location": "المكان: جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني للطالبات",
+      "type": "coop",
+      "url": "https://forms.gle/1dkwgYcSuH7p8qF29"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/1dkwgYcSuH7p8qF29"
+      ],
+      "message_id": 5861,
+      "permalink": "https://t.me/SALTRAI/5861",
+      "posted_at": "2026-10-21T14:06:22+00:00",
+      "text": "🟡الفرصة رقم ٢٧٧١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالمكان: جدة\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
@@ -1426,6 +1473,53 @@
       "permalink": "https://t.me/cooptraning_inksa/4351",
       "posted_at": "2026-08-09T14:53:49+00:00",
       "text": "🟡الفرصة رقم ٢٧١٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————-\n📢 إعلان شاغر تدريبي في القصيم (محاسبة).\n\nتعلن شركة إثبات عن توفر شاغر تدريب تعاوني الطالبات.\n\nعلى الراغبين بالتقديم، يرجى تعبئة نموذج التقديم عبر الرابط المرسل.\n\nنتمنى التوفيق للجميع\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeACr_zw3cMpq5tS4psqihxv_8ylBT2_mP7qZEpby27npFjxQ/viewform"
+    }
+  },
+  "cooptraning_inksa:4495": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-21T22:24:51+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "government entity",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية."
+      },
+      "evidence": {
+        "company": "جهة حكومية",
+        "deadline": null,
+        "description": "تتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني في جهة حكومية",
+      "type": "coop",
+      "url": "https://forms.cloud.microsoft/r/iBQ74mY2Wp"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.cloud.microsoft/r/iBQ74mY2Wp"
+      ],
+      "message_id": 4495,
+      "permalink": "https://t.me/cooptraning_inksa/4495",
+      "posted_at": "2026-10-21T05:28:34+00:00",
+      "text": "🟡الفرصة رقم ٢٨١٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nفرصة تدريب تعاوني في جهة حكومية\n\nتتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية.\n\nللمهتمين، يرجى تعبئة نموذج التقديم عبر الرابط التالي:\n\nhttps://forms.cloud.microsoft/r/iBQ74mY2Wp\n\nنتمنى التوفيق للجميع، ونأمل مشاركة الفرصة مع المهتمين."
     }
   },
   "nobthacv1:2042": {
