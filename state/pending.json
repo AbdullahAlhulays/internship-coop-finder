@@ -1352,8 +1352,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-22T13:51:13+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T13:53:46+00:00",
+      "status": "sent",
+      "telegram_message_id": 393
     },
     "extracted": {
       "company": "Smart Code | سمارت كود",
@@ -1398,8 +1399,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-22T13:51:14+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T13:53:46+00:00",
+      "status": "sent",
+      "telegram_message_id": 394
     },
     "extracted": {
       "company": "بارت",
@@ -1444,8 +1446,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-22T13:51:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T13:53:47+00:00",
+      "status": "sent",
+      "telegram_message_id": 395
     },
     "extracted": {
       "company": "Front Line | فرونت لاين للتسويق",
@@ -1490,8 +1493,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-22T13:52:30+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T13:53:47+00:00",
+      "status": "sent",
+      "telegram_message_id": 396
     },
     "extracted": {
       "company": "Visa",
@@ -1537,8 +1541,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-22T13:52:37+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T13:53:47+00:00",
+      "status": "sent",
+      "telegram_message_id": 397
     },
     "extracted": {
       "company": "Dar Al-Bayda Hotel | فندق الدار البيضاء",
@@ -1583,8 +1588,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-22T13:53:12+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T13:53:48+00:00",
+      "status": "sent",
+      "telegram_message_id": 398
     },
     "extracted": {
       "company": "Tamra Capital",
@@ -1857,8 +1863,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-22T13:53:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T13:53:48+00:00",
+      "status": "sent",
+      "telegram_message_id": 399
     },
     "extracted": {
       "company": "Visa",
@@ -1908,8 +1915,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-10-22T13:53:43+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T13:53:49+00:00",
+      "status": "sent",
+      "telegram_message_id": 400
     },
     "extracted": {
       "company": "SDAIA",
