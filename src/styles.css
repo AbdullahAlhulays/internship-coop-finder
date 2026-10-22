@@ -710,6 +710,12 @@ select {
   background: #101728;
 }
 
+.company-logo--visa img {
+  padding: 6px;
+  border-radius: 6px;
+  background: #3039c6;
+}
+
 .company-heading {
   min-width: 0;
 }
