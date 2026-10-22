@@ -139,7 +139,7 @@ with tmp:
     check("original SSCL card is untouched", "SSCL" in new_companies)
 
     new_app = app_path.read_text(encoding="utf-8")
-    check("App.jsx's LAST_UPDATED was bumped off the old placeholder date", "June 2, 2026" not in new_app)
+    check("App.jsx is untouched because its date comes from company records", new_app == APP_JSX)
 
     check("success was reported for this candidate", calls["result"] == [{"candidate_id": "SALTRAI:2", "applied": True, "detail": ""}])
     check("published ledger got exactly one entry, for the right link",
@@ -299,6 +299,7 @@ with tmp:
     )
     new_companies = companies_path.read_text(encoding="utf-8")
     check("deadline was filled in on the existing SSCL card", 'deadline: "2026-09-01",' in new_companies)
+    check("an updated card records a timestamp for the site's Last updated display", 'contentUpdatedAt: "' in new_companies)
     check("no second SSCL card was created", new_companies.count('name: "SSCL"') == 1)
     check("success reported", calls["result"][0]["applied"] is True)
 

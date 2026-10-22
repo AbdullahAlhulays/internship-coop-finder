@@ -6,8 +6,8 @@ This is NOT called by the webhook directly. The webhook (TypeScript,
 on Vercel) only relays the tap to GitHub via repository_dispatch --
 this script is what a GitHub Actions job runs in response, with the
 real repo checked out. Keeping the actual file-editing here, not in
-the webhook, means the only code allowed to touch companies.js /
-App.jsx is the same already-tested Python from publish.py -- nothing
+the webhook, means the only code allowed to touch companies.js is the
+same already-tested Python from publish.py -- nothing
 new to trust in a second language.
 
 This script does NOT run `git commit` / `git push` itself -- that's
@@ -32,7 +32,7 @@ from pathlib import Path
 from extract import to_card
 from company_logo import LOGOS_DIR, resolve_company_logo
 from notify import is_test_candidate, send_rejected, send_result, send_test_result
-from publish import apply_decision, bump_last_updated, validate_js_syntax
+from publish import apply_decision, validate_js_syntax
 from state import PENDING_PATH, PUBLISHED_PATH, StateError, pop_pending, record_published, record_to_decision, record_to_extracted
 from translate_description import translate_missing_description
 
@@ -43,7 +43,7 @@ use_utf8_stdout()
 RIYADH = timezone(timedelta(hours=3))
 
 COMPANIES_JS_PATH = "src/data/companies.js"
-APP_JSX_PATH = "src/App.jsx"
+APP_JSX_PATH = "src/App.jsx"  # retained for callers that pass the former path
 
 
 class ApprovalError(RuntimeError):
@@ -97,7 +97,7 @@ def process_approval(
     # Synthetic test cards exercise the real Telegram webhook, GitHub
     # dispatch, workflow, state removal, collision retries, and outcome
     # delivery. They stop here deliberately: neither decision may read
-    # or write companies.js, App.jsx, or the published ledger.
+    # or write companies.js or the published ledger.
     if is_test_candidate(candidate_id):
         if not defer_notice:
             send_test_result_fn(candidate_id, action)
@@ -143,16 +143,15 @@ def process_approval(
         # that same verified description update.
         if decision.action == "update" and "description" in decision.changes and card.get("description"):
             decision.changes["description"] = card["description"]
+        if decision.action == "update":
+            # App.jsx derives its displayed update date from company records.
+            decision.changes["contentUpdatedAt"] = now.isoformat(timespec="seconds")
 
         companies_js_source = Path(companies_js_path).read_text(encoding="utf-8")
         new_companies_js = apply_decision(companies_js_source, decision, card)
         validate_js_syntax(new_companies_js)
 
-        app_jsx_source = Path(app_jsx_path).read_text(encoding="utf-8")
-        new_app_jsx = bump_last_updated(app_jsx_source, now)
-
         Path(companies_js_path).write_text(new_companies_js, encoding="utf-8")
-        Path(app_jsx_path).write_text(new_app_jsx, encoding="utf-8")
 
         record_published_fn(
             card["applicationLink"],

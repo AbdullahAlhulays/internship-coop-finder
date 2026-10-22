@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Step 4 (site writer): safely apply an approved decision to the real
-site source files -- src/data/companies.js and src/App.jsx.
+site source file -- src/data/companies.js.
 
 This is the highest-stakes file operation in the whole pipeline. These
 are real source files bundled into the live site, not a JSON payload
@@ -11,14 +11,8 @@ the whole build. Two rules, no exceptions:
      must match EXACTLY ONCE. Zero matches or more than one match ->
      raise PublishError and stop, rather than editing the wrong spot
      or silently corrupting something.
-  2. Never let a result out the door without validating it. For
-     companies.js that means running the new text through
-     `node --check` before it's ever written or committed. For
-     App.jsx we don't run a full parse (it's JSX, which plain Node
-     can't parse) -- instead the edit is proven safe by construction:
-     it only ever swaps the text between two existing quote marks
-     with a string built from a fixed, quote-free character set (see
-     format_last_updated), so it cannot introduce a syntax error.
+  2. Never let a result out the door without validating it. Run the
+     new companies.js text through `node --check` before writing it.
 
 NOTE: the anchor patterns below (the raw card-array declaration and
 the per-field regexes) mirror the live source layout. Keep the
@@ -32,59 +26,13 @@ import json
 import re
 import subprocess
 import tempfile
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from dedupe import Decision
 
-RIYADH = timezone(timedelta(hours=3))
-
-MONTHS = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
-]
-
-
 class PublishError(RuntimeError):
     """Something didn't match what we expect closely enough to edit
     safely. Always means: stop, don't guess, tell a human."""
-
-
-# --------------------------------------------------------- LAST_UPDATED
-
-LAST_UPDATED_PATTERN = re.compile(r'const LAST_UPDATED = "([^"]*)";')
-
-
-def format_last_updated(dt: datetime) -> str:
-    """'August 9, 2026' -- full month name, no leading zero on the
-    day, comma, 4-digit year. dt is converted to Saudi Arabia time
-    (UTC+03:00) before formatting, per the spec. Only ever produces
-    letters, digits, a space, and a comma -- never a character that
-    could break out of the surrounding JS string literal."""
-    local = dt.astimezone(RIYADH)
-    return f"{MONTHS[local.month - 1]} {local.day}, {local.year}"
-
-
-def bump_last_updated(app_jsx_source: str, today: datetime) -> str:
-    """Replace the LAST_UPDATED string in App.jsx with today's date.
-    Raises PublishError if the line isn't found exactly once -- e.g.
-    if the variable ever gets renamed or the file restructured, this
-    must stop and ask rather than silently doing nothing or editing
-    the wrong line."""
-    matches = list(LAST_UPDATED_PATTERN.finditer(app_jsx_source))
-    if len(matches) != 1:
-        raise PublishError(
-            f"expected exactly one 'const LAST_UPDATED = \"...\";' line in "
-            f"App.jsx, found {len(matches)}. Refusing to guess -- check "
-            f"the file still matches the expected format."
-        )
-    new_value = format_last_updated(today)
-    match = matches[0]
-    return (
-        app_jsx_source[: match.start()]
-        + f'const LAST_UPDATED = "{new_value}";'
-        + app_jsx_source[match.end() :]
-    )
 
 
 # ------------------------------------------------------- companies.js

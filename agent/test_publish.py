@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Offline tests for publish.py. No network, no real files touched --
 everything runs against small fixture strings that mimic the real
-App.jsx / companies.js structure. The only external dependency is
+companies.js structure. The only external dependency is
 `node --check`, which is used to actually validate JS syntax rather
 than just trusting the string-editing logic.
 
@@ -9,15 +9,11 @@ Run with:
     python test_publish.py
 """
 
-from datetime import datetime, timezone, timedelta
-
 from _console import use_utf8_stdout
 from dedupe import Decision
 from publish import (
     PublishError,
     apply_decision,
-    bump_last_updated,
-    format_last_updated,
     validate_js_syntax,
 )
 
@@ -39,22 +35,6 @@ def check_raises(label: str, fn) -> None:
     except PublishError:
         check(label, True)
 
-
-APP_JSX = '''import React from "react";
-import { useState } from "react";
-
-const LAST_UPDATED = "June 2, 2026";
-
-function App() {
-  return (
-    <div>
-      <p>Last updated: {LAST_UPDATED}</p>
-    </div>
-  );
-}
-
-export default App;
-'''
 
 COMPANIES_JS = '''export const companies = [
   {
@@ -92,43 +72,6 @@ export const companies = companyRecords.map((company) => {
   return description ? { ...company, description } : company;
 });
 '''
-
-
-# ------------------------------------------------------------- format
-
-print("format_last_updated")
-check(
-    "single-digit day has no leading zero",
-    format_last_updated(datetime(2026, 8, 9, 10, 0, tzinfo=timezone.utc)) == "August 9, 2026",
-)
-check(
-    "double-digit day formats normally",
-    format_last_updated(datetime(2026, 12, 21, 10, 0, tzinfo=timezone.utc)) == "December 21, 2026",
-)
-check(
-    "UTC time near midnight rolls to the correct Riyadh-local date",
-    # 2026-08-09 22:30 UTC = 2026-08-10 01:30 in Riyadh (UTC+3)
-    format_last_updated(datetime(2026, 8, 9, 22, 30, tzinfo=timezone.utc)) == "August 10, 2026",
-)
-
-
-# ------------------------------------------------------ bump_last_updated
-
-print("\nbump_last_updated")
-today = datetime(2026, 8, 9, 10, 0, tzinfo=timezone.utc)
-new_app_jsx = bump_last_updated(APP_JSX, today)
-check("old date is gone", "June 2, 2026" not in new_app_jsx)
-check("new date is present in the exact required format", 'const LAST_UPDATED = "August 9, 2026";' in new_app_jsx)
-check("everything else in the file is untouched", new_app_jsx.replace("August 9, 2026", "June 2, 2026") == APP_JSX)
-
-check_raises(
-    "raises if the LAST_UPDATED line is missing entirely (renamed variable etc.)",
-    lambda: bump_last_updated(APP_JSX.replace("LAST_UPDATED", "LAST_UPDATED_AT"), today),
-)
-check_raises(
-    "raises if the line appears twice -- never guesses which one",
-    lambda: bump_last_updated(APP_JSX + '\nconst LAST_UPDATED = "May 1, 2026";\n', today),
-)
 
 
 # ------------------------------------------------------------- add
