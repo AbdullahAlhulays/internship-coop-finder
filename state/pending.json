@@ -1497,8 +1497,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-10-22T18:35:15+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T18:35:20+00:00",
+      "status": "sent",
+      "telegram_message_id": 403
     },
     "extracted": {
       "company": "Azm Al-Injaz | شركة عزم الإنجاز",
