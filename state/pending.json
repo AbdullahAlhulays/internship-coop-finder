@@ -1344,6 +1344,283 @@
       "text": "🟡الفرصة رقم ٢٧٧١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرصة تدريب تعاوني للطالبات\n\nتعلن مجموعة مبادرات المستقبل عن توفر فرص تدريب تعاوني للطالبات الراغبات في اكتساب الخبرة العملية وتطوير مهاراتهن.\n\nالمكان: جدة\n\nللتسجيل والتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/1dkwgYcSuH7p8qF29\n\nنتمنى للجميع التوفيق 🌷"
     }
   },
+  "SALTRAI:5864": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T13:51:13+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Smart Code | سمارت كود",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تستقبل شركة سمارت كود (Smart Code) الكفاءات الواعدة للتدريب التعاوني، وتمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية ✨ 🎯 التخصصات المطلوبة: التسويق، العلاقات العامة، الذكاء الاصطناعي، تقنية المعلومات (IT)، الموارد البشرية (HR)"
+      },
+      "evidence": {
+        "company": "شركة سمارت كود (Smart Code)",
+        "deadline": null,
+        "description": "تستقبل شركة سمارت كود (Smart Code) الكفاءات الواعدة للتدريب التعاوني، وتمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية ✨ 🎯 التخصصات المطلوبة: التسويق، العلاقات العامة، الذكاء الاصطناعي، تقنية المعلومات (IT)، الموارد البشرية (HR)",
+        "location": "📍 مقر التدريب: الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://smartcode.sa/training"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://smartcode.sa/training"
+      ],
+      "message_id": 5864,
+      "permalink": "https://t.me/SALTRAI/5864",
+      "posted_at": "2026-10-22T12:50:12+00:00",
+      "text": "📢 فرصة تدريب تعاوني | Smart Code\nتستقبل شركة سمارت كود (Smart Code) الكفاءات الواعدة للتدريب التعاوني، وتمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية ✨\n🎯 التخصصات المطلوبة:\nالتسويق\nالعلاقات العامة\nالذكاء الاصطناعي\nتقنية المعلومات (IT)\nالموارد البشرية (HR)\n📍 مقر التدريب: الرياض\n📩 للتقديم عبر الرابط: https://smartcode.sa/training\n📅 تاريخ النشر: 21 أكتوبر 2026\n⚠️ تنبيه: مرور أسبوع على تاريخ نشر الإعلان يعني أن التقديم عليه متأخر، وقد لا تكون الفرصة متاحة.\n#كفاءتنا_أولاً"
+    }
+  },
+  "SALTRAI:5865": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T13:51:14+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "بارت",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "في بارت نفتح التدريب لناس تحب الفن والثقافة، وعندها فضول ما يخلص. بتشتغل مع فريقنا على مشاريع فعلية، وتشوف الفكرة من أول ما تنولد لين توصل للعميل. المجالات: تصميم المنتجات · التصميم الجرافيكي · تصميم الأزياء · التسويق · إدارة المشاريع · المحاسبة · الموارد البشرية في الرياض، ويشمل التدريب التعاوني."
+      },
+      "evidence": {
+        "company": "بارت",
+        "deadline": null,
+        "description": "في بارت نفتح التدريب لناس تحب الفن والثقافة، وعندها فضول ما يخلص. بتشتغل مع فريقنا على مشاريع فعلية، وتشوف الفكرة من أول ما تنولد لين توصل للعميل. المجالات: تصميم المنتجات · التصميم الجرافيكي · تصميم الأزياء · التسويق · إدارة المشاريع · المحاسبة · الموارد البشرية في الرياض، ويشمل التدريب التعاوني.",
+        "location": "في الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب",
+      "type": "coop",
+      "url": "https://script.google.com/macros/s/AKfycbxs8muKy-1jAJn_yJxhFBAQqKljsj5v21o6G-pb22-A879iLJ5FZkYvmaDyt2oAOWh6/exec?group=interns"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://script.google.com/macros/s/AKfycbxs8muKy-1jAJn_yJxhFBAQqKljsj5v21o6G-pb22-A879iLJ5FZkYvmaDyt2oAOWh6/exec?group=interns"
+      ],
+      "message_id": 5865,
+      "permalink": "https://t.me/SALTRAI/5865",
+      "posted_at": "2026-10-22T12:52:34+00:00",
+      "text": "*تدرس أو توك متخرج، وتبي تتعلم من مشاريع حقيقية؟*\n\nفي بارت نفتح التدريب لناس تحب الفن والثقافة، وعندها فضول ما يخلص. بتشتغل مع فريقنا على مشاريع فعلية، وتشوف الفكرة من أول ما تنولد لين توصل للعميل.\nالمجالات:\nتصميم المنتجات · التصميم الجرافيكي · تصميم الأزياء · التسويق · إدارة المشاريع · المحاسبة · الموارد البشرية\nفي الرياض، ويشمل التدريب التعاوني.\nاختر مجالك وقدّم من هنا:\nhttps://script.google.com/macros/s/AKfycbxs8muKy-1jAJn_yJxhFBAQqKljsj5v21o6G-pb22-A879iLJ5FZkYvmaDyt2oAOWh6/exec?group=interns\nتعرف أحد يدوّر على تدريب؟ شاركه الرابط."
+    }
+  },
+  "SALTRAI:5868": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T13:51:27+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Front Line | فرونت لاين للتسويق",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة فرونت لاين للتسويق عن توفر فرص تدريب تعاوني للطلاب والطالبات في مجالات التسويق والاعلام والصحافة وغيرها من المجالات المرتبطة. للتسجيل والدخول في مرحلة الفرز والمقابلات، يُرجى تعبئة البيانات عبر النموذج الرسمي:"
+      },
+      "evidence": {
+        "company": "فرونت لاين للتسويق",
+        "deadline": null,
+        "description": "تعلن شركة فرونت لاين للتسويق عن توفر فرص تدريب تعاوني للطلاب والطالبات في مجالات التسويق والاعلام والصحافة وغيرها من المجالات المرتبطة. للتسجيل والدخول في مرحلة الفرز والمقابلات، يُرجى تعبئة البيانات عبر النموذج الرسمي:",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني في مجال التسويق",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScjaWH9WOAeeYr_LSuzZPgApzQtCB9NkU7NJoAMnnSUS_SCRw/viewform?usp=dialog"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLScjaWH9WOAeeYr_LSuzZPgApzQtCB9NkU7NJoAMnnSUS_SCRw/viewform?usp=dialog"
+      ],
+      "message_id": 5868,
+      "permalink": "https://t.me/SALTRAI/5868",
+      "posted_at": "2026-10-22T12:52:34+00:00",
+      "text": "📢 فرصة تدريب تعاوني في مجال التسويق\n\n​تعلن شركة فرونت لاين للتسويق عن توفر فرص تدريب تعاوني للطلاب والطالبات في مجالات التسويق والاعلام والصحافة وغيرها من المجالات المرتبطة.\n​للتسجيل والدخول في مرحلة الفرز والمقابلات، يُرجى تعبئة البيانات عبر النموذج الرسمي:\n🔗\nرابط النموذج"
+    }
+  },
+  "SALTRAI:5872": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T13:52:30+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Visa",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة Visa عن برنامج تدريب تعاوني للطلاب السعوديين المتوقع تخرجهم في 2027."
+      },
+      "evidence": {
+        "company": "Visa",
+        "deadline": null,
+        "description": "تعلن شركة Visa عن برنامج تدريب تعاوني للطلاب السعوديين المتوقع تخرجهم في 2027.",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Cooperative Training",
+      "type": "coop",
+      "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/SA---Riyadh-Saudi-Arabia/COOP-Trainee--For-current-students---second-semester-COOP--starting-in-January-2027-_REF086773W/apply?share_id=LinkedIn_corporate_page"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/SA---Riyadh-Saudi-Arabia/COOP-Trainee--For-current-students---second-semester-COOP--starting-in-January-2027-_REF086773W/apply?share_id=LinkedIn_corporate_page"
+      ],
+      "message_id": 5872,
+      "permalink": "https://t.me/SALTRAI/5872",
+      "posted_at": "2026-10-22T12:52:34+00:00",
+      "text": "🟡الفرصة رقم ٢٨٢٩\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتدريب تعاوني في Visa | الرياض – يناير 2027\n\nتعلن شركة Visa عن برنامج تدريب تعاوني للطلاب السعوديين المتوقع تخرجهم في 2027.\n\nhttps://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/SA---Riyadh-Saudi-Arabia/COOP-Trainee--For-current-students---second-semester-COOP--starting-in-January-2027-_REF086773W/apply?share_id=LinkedIn_corporate_page"
+    }
+  },
+  "SALTRAI:5873": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T13:52:37+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Dar Al-Bayda Hotel | فندق الدار البيضاء",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "نُعلن عن فتح باب التقديم لبرنامج التدريب 2026 في فندق الدار البيضاء ، بعدد من التخصصات الإدارية والتقنية والسياحية."
+      },
+      "evidence": {
+        "company": "فندق الدار البيضاء",
+        "deadline": null,
+        "description": "نُعلن عن فتح باب التقديم لبرنامج التدريب 2026 في فندق الدار البيضاء ، بعدد من التخصصات الإدارية والتقنية والسياحية.",
+        "location": "#جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScEKHVdmcDis0gozv1yADILr6523PK6zuandOldSVOt2hDgCA/viewform?pli=1"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLScEKHVdmcDis0gozv1yADILr6523PK6zuandOldSVOt2hDgCA/viewform?pli=1"
+      ],
+      "message_id": 5873,
+      "permalink": "https://t.me/SALTRAI/5873",
+      "posted_at": "2026-10-22T12:55:14+00:00",
+      "text": "#التدريب_التعاوني #جدة\n\nنُعلن عن فتح باب التقديم لبرنامج التدريب 2026 في فندق الدار البيضاء ، بعدد من التخصصات الإدارية والتقنية والسياحية.\n\nقدّم الآن، وابدأ رحلتك المهنية"
+    }
+  },
+  "SALTRAI:5874": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T13:53:12+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Tamra Capital",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "اللي نبحث عنه:\n- طالب تعاوني أو خريج جديد بتخصص موارد بشرية أو إدارة أعمال.\n- ذكاء وسرعة بديهة في التواصل.\n- حس عالي بالتنظيم والترتيب.\n- فضول للتعلم ومستعد يجرب بيده من أول يوم.\nحتشارك معنا في:\n- تصفية السير الذاتية والمقابلات الأولية.\n- التنسيق مع المرشحين وترتيب مواعيدهم.\n- متابعة مراحل التوظيف لضمان تجربة مرشح ممتازة."
+      },
+      "evidence": {
+        "company": "tamracapital",
+        "deadline": null,
+        "description": "اللي نبحث عنه:\n- طالب تعاوني أو خريج جديد بتخصص موارد بشرية أو إدارة أعمال.\n- ذكاء وسرعة بديهة في التواصل.\n- حس عالي بالتنظيم والترتيب.\n- فضول للتعلم ومستعد يجرب بيده من أول يوم.\nحتشارك معنا في:\n- تصفية السير الذاتية والمقابلات الأولية.\n- التنسيق مع المرشحين وترتيب مواعيدهم.\n- متابعة مراحل التوظيف لضمان تجربة مرشح ممتازة.",
+        "location": "#جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://www.jisr.net/en/tamracapital/careers/0bbd7272-d2b5-4533-8620-4c64996ded7b?host=1"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://www.jisr.net/en/tamracapital/careers/0bbd7272-d2b5-4533-8620-4c64996ded7b?host=1"
+      ],
+      "message_id": 5874,
+      "permalink": "https://t.me/SALTRAI/5874",
+      "posted_at": "2026-10-22T12:55:14+00:00",
+      "text": "#التدريب_التعاوني #جدة\n\nلكل الشباب الي حابين يبدأوا مشوارهم في التوظيف بشكل حقيقي.\n\nما نحتاج خبرة سابقة، ندور على شغف وطاقة شباب يفهموا الناس ويكونوا واجهة ممتازة قدام المرشحين.\n\nاللي نبحث عنه:\n- طالب تعاوني أو خريج جديد بتخصص موارد بشرية أو إدارة أعمال.\n- ذكاء وسرعة بديهة في التواصل.\n- حس عالي بالتنظيم والترتيب.\n- فضول للتعلم ومستعد يجرب بيده من أول يوم.\n\nحتشارك معنا في:\n- تصفية السير الذاتية والمقابلات الأولية.\n- التنسيق مع المرشحين وترتيب مواعيدهم.\n- متابعة مراحل التوظيف لضمان تجربة مرشح ممتازة.\n\nللتقديم__________________"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
@@ -1570,6 +1847,104 @@
       "permalink": "https://t.me/cooptraning_inksa/4504",
       "posted_at": "2026-10-22T05:14:46+00:00",
       "text": "🟡الفرصة رقم ٢٨٢٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nسمارت كود | Smart Code\n\nنستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.\n\nالتخصصات المطلوبة:\n\n• التسويق\n• العلاقات العامة\n• الذكاء الاصطناعي\n• تقنيه المعلومات (IT)\n• الموارد البشرية (HR)\n\n📍مقر التدريب : الرياض\n\n📩 للتقديم : https://smartcode.sa/training"
+    }
+  },
+  "cooptraning_inksa:4509": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T13:53:27+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Visa",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": "يناير 2027",
+      "description": {
+        "ar": "تعلن شركة Visa عن برنامج تدريب تعاوني للطلاب السعوديين المتوقع تخرجهم في 2027."
+      },
+      "evidence": {
+        "company": "Visa",
+        "deadline": "يناير 2027",
+        "description": "تعلن شركة Visa عن برنامج تدريب تعاوني للطلاب السعوديين المتوقع تخرجهم في 2027.",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/SA---Riyadh-Saudi-Arabia/COOP-Trainee--For-current-students---second-semester-COOP--starting-in-January-2027-_REF086773W/apply?share_id=LinkedIn_corporate_page"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/SA---Riyadh-Saudi-Arabia/COOP-Trainee--For-current-students---second-semester-COOP--starting-in-January-2027-_REF086773W/apply?share_id=LinkedIn_corporate_page"
+      ],
+      "message_id": 4509,
+      "permalink": "https://t.me/cooptraning_inksa/4509",
+      "posted_at": "2026-10-22T12:15:23+00:00",
+      "text": "🟡الفرصة رقم ٢٨٢٩\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتدريب تعاوني في Visa | الرياض – يناير 2027\n\nتعلن شركة Visa عن برنامج تدريب تعاوني للطلاب السعوديين المتوقع تخرجهم في 2027.\n\nhttps://visa.wd5.myworkdayjobs.com/Visa_Early_Careers/job/SA---Riyadh-Saudi-Arabia/COOP-Trainee--For-current-students---second-semester-COOP--starting-in-January-2027-_REF086773W/apply?share_id=LinkedIn_corporate_page"
+    }
+  },
+  "cooptraning_inksa:4510": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "فتح التقديم للجنسين في برنامج التدريب التعاوني لطلاب وطالبات الجامعات للفصل الدراسي الثاني لعام 1448هـ، متاح حالياً ويستمر لمدة أسبوع."
+        }
+      },
+      "existing_index": 158,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T13:53:43+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "SDAIA",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "فتح التقديم للجنسين في برنامج التدريب التعاوني لطلاب وطالبات الجامعات للفصل الدراسي الثاني لعام 1448هـ، متاح حالياً ويستمر لمدة أسبوع."
+      },
+      "evidence": {
+        "company": "الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا)",
+        "deadline": null,
+        "description": "فتح التقديم للجنسين في برنامج التدريب التعاوني لطلاب وطالبات الجامعات للفصل الدراسي الثاني لعام 1448هـ، متاح حالياً ويستمر لمدة أسبوع.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://athkax.sdaia.gov.sa/coop"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://athkax.sdaia.gov.sa/coop"
+      ],
+      "message_id": 4510,
+      "permalink": "https://t.me/cooptraning_inksa/4510",
+      "posted_at": "2026-10-22T12:16:48+00:00",
+      "text": "🟡الفرصة رقم ٢٨٣٠\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nالهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا) تعلن فتح التقديم للجنسين في برنامج التدريب التعاوني لطلاب وطالبات الجامعات للفصل الدراسي الثاني لعام 1448هـ، متاح حالياً ويستمر لمدة أسبوع.\n\nhttps://athkax.sdaia.gov.sa/coop"
     }
   },
   "nobthacv1:2042": {
