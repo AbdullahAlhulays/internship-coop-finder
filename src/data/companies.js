@@ -729,12 +729,6 @@ const companyRecords = [
     addedAt: "2026-08-10T14:32:20+03:00",
   },
   {
-    name: "Ministry of Tourism | وزارة السياحة",
-    applicationLink: "https://bit.ly/4fAKTdy",
-    type: "CO-OP Training",
-    addedAt: "2026-08-11T20:55:09+03:00",
-  },
-  {
     name: "General Authority for Statistics | الهيئة العامة للإحصاء",
     applicationLink: "https://www.stats.gov.sa/ar/cooperative-training",
     type: "CO-OP Training",
@@ -968,6 +962,7 @@ const companyRecords = [
   },
   {
     name: "Nexo",
+    logo: { domain: "linkedin.com", file: "nexo.jpg" },
     applicationLink: "https://forms.gle/7ApEmV9eDjhJ5S1i6",
     type: "Internship / CO-OP Training",
     description: {"ar": "* ادارة الموارد البشرية.\n* فريق التصميم .\n* فريق التصوير والمونتاج\n\nمدة التدريب: 3 أشهر.\nنوع التدريب: مهني.\nقد تتوفر مكافأة مالية حسب الأداء وطبيعة التدريب.", "en": "* Human resources management.\n* Design team.\n* Photography and editing team\n\nTraining duration: 3 months.\nType of training: vocational.\nFinancial compensation may be available depending on performance and nature of training."},
@@ -1126,7 +1121,7 @@ const companyRecords = [
   },
   {
     name: "Cognna",
-    logo: {"domain": "cognna.com", "file": "cognna.png"},
+    logo: {"domain": "cognna.com", "file": "cognna.webp"},
     location: "Medina, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/threat-detection-coop-at-cognna-4464619040/",
     type: "CO-OP Training",
@@ -1182,7 +1177,10 @@ const companyRecords = [
     addedAt: "2026-09-20T16:34:30+03:00",
   },
   {
-    name: "Baqi | بقيق",
+    name: "SPARK | مدينة الملك سلمان للطاقة",
+    pageSlug: "baqi",
+    logo: { domain: "spark.sa", file: "spark.jpg" },
+    location: "Abqaiq, Saudi Arabia",
     applicationLink: "https://career.spark.sa/jobs/details/6a5dae3859ebc0267612ec24",
     type: "CO-OP Training",
     description: {"ar": "التخصصات:\nالموارد البشرية.\nإدارة الأعمال.\nالهندسة.\nتقنية المعلومات.\nالمالية.\nالاتصال الجماهيري.\nتخصصات ذات صلة.\n\nالمتطلبات:\nخطاب تدريب تعاوني من الجامعة.\nمهارات قوية في التواصل والعمل الجماعي.\nإدارة فعالة للوقت والقدرة على التعامل مع عدة مهام.\nإجادة أساسية لاستخدام الحاسب وبرامج MS Office والبريد الإلكتروني وأدوات البحث.\nالاستعداد للتعلم والتكيف والمساهمة في بيئة عمل مهنية.\n\nللتقديم______________", "en": "Specialties:\nHuman Resources.\nBusiness Administration.\nEngineering.\nInformation Technology.\nFinance.\nMass communication.\nRelevant disciplines.\n\nRequirements:\nCooperative training letter from the university.\nStrong communication and teamwork skills.\nEffective time management and ability to handle multiple tasks.\nBasic proficiency in using computers, MS Office software, email and research tools.\nWillingness to learn, adapt and contribute to a professional work environment.\n\nTo Apply"},
@@ -1210,6 +1208,7 @@ const companyRecords = [
   },
   {
     name: "Aya | ايا",
+    logo: { domain: "aya.app", file: "aya.png" },
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfdJjdus8QCVPSYJbDB_YZwe4mauxBfeWKL5zae9kLeL2wD6Q/viewform",
     type: "CO-OP Training",
@@ -1425,7 +1424,7 @@ const companyRecords = [
   },
   {
     name: "COGNNA",
-    logo: {"domain":"cognna.com","file":"cognna.png"},
+    logo: {"domain":"cognna.com","file":"cognna.webp"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4479830811/",
     type: "Internship",

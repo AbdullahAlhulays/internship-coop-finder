@@ -704,6 +704,12 @@ select {
   background: #4d6d74;
 }
 
+.company-logo--aya,
+.company-logo--cognna {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: #101728;
+}
+
 .company-heading {
   min-width: 0;
 }
