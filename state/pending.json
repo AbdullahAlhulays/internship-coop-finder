@@ -2586,8 +2586,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-22T01:34:13+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T01:34:17+00:00",
+      "status": "sent",
+      "telegram_message_id": 388
     },
     "extracted": {
       "company": "Dar Al-Bayda Hotel | فندق الدار البيضاء",
@@ -2632,8 +2633,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-22T01:34:14+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-22T01:34:18+00:00",
+      "status": "sent",
+      "telegram_message_id": 389
     },
     "extracted": {
       "company": "Tamra Capital",
