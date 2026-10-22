@@ -271,7 +271,7 @@ def send_result(
     """The short follow-up message after publish.py actually runs."""
     token, chat_id = _resolve_auth(token, chat_id)
     if applied:
-        text = f"Yes Boss! Applied: {_esc(candidate_id)}"
+        text = f"Yes Boss! ahhh: {_esc(candidate_id)}"
     else:
         text = f"❌ Failed: {_esc(candidate_id)}"
         if detail:
