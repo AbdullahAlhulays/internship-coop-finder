@@ -2577,5 +2577,97 @@
       "posted_at": "2026-10-08T04:01:24+00:00",
       "text": "🎓 فرصة تدريب تعاوني\n\nتعلن شركة ماهرون للإنارة عن توفر فرص تدريب تعاوني لعدة تخصصات للطلاب والطالبات الراغبين في اكتساب خبرة عملية حقيقية وتطوير مهاراتهم في بيئة عمل احترافية.\n\n✨ مميزات التدريب:\n• فرص متاحة لعدة تخصصات\n• تدريب عملي واكتساب خبرة مهنية\n• مكافآت وحوافز للمتميزين\n• فرصة للمشاركة في مشاريع وأعمال حقيقية\n• إمكانية التوظيف بعد انتهاء فترة التدريب للمتميزين\n\n📌 للتقديم، يرجى تعبئة النموذج من خلال الرابط التالي:\n\nhttps://forms.gle/coMjqkaqC2mV87oi9\n\nنبحث عن أشخاص لديهم الشغف بالتعلم والتطور وصناعة أثر حقيقي خلال فترة التدريب.\n\nابدأ مسيرتك المهنية معنا 🚀"
     }
+  },
+  "nobthacv1:2192": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T01:34:13+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Dar Al-Bayda Hotel | فندق الدار البيضاء",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "نُعلن عن فتح باب التقديم لبرنامج التدريب 2026 في فندق الدار البيضاء ، بعدد من التخصصات الإدارية والتقنية والسياحية."
+      },
+      "evidence": {
+        "company": "فندق الدار البيضاء",
+        "deadline": null,
+        "description": "نُعلن عن فتح باب التقديم لبرنامج التدريب 2026 في فندق الدار البيضاء ، بعدد من التخصصات الإدارية والتقنية والسياحية.",
+        "location": "#جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب 2026",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScEKHVdmcDis0gozv1yADILr6523PK6zuandOldSVOt2hDgCA/viewform?pli=1"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLScEKHVdmcDis0gozv1yADILr6523PK6zuandOldSVOt2hDgCA/viewform?pli=1"
+      ],
+      "message_id": 2192,
+      "permalink": "https://t.me/nobthacv1/2192",
+      "posted_at": "2026-10-22T01:24:53+00:00",
+      "text": "#التدريب_التعاوني #جدة\n\nنُعلن عن فتح باب التقديم لبرنامج التدريب 2026 في فندق الدار البيضاء ، بعدد من التخصصات الإدارية والتقنية والسياحية.\n\nقدّم الآن، وابدأ رحلتك المهنية"
+    }
+  },
+  "nobthacv1:2193": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T01:34:14+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Tamra Capital",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "اللي نبحث عنه:\n- طالب تعاوني أو خريج جديد بتخصص موارد بشرية أو إدارة أعمال.\n- ذكاء وسرعة بديهة في التواصل.\n- حس عالي بالتنظيم والترتيب.\n- فضول للتعلم ومستعد يجرب بيده من أول يوم."
+      },
+      "evidence": {
+        "company": "tamracapital",
+        "deadline": null,
+        "description": "اللي نبحث عنه:\n- طالب تعاوني أو خريج جديد بتخصص موارد بشرية أو إدارة أعمال.\n- ذكاء وسرعة بديهة في التواصل.\n- حس عالي بالتنظيم والترتيب.\n- فضول للتعلم ومستعد يجرب بيده من أول يوم.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://www.jisr.net/en/tamracapital/careers/0bbd7272-d2b5-4533-8620-4c64996ded7b?host=1"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://www.jisr.net/en/tamracapital/careers/0bbd7272-d2b5-4533-8620-4c64996ded7b?host=1"
+      ],
+      "message_id": 2193,
+      "permalink": "https://t.me/nobthacv1/2193",
+      "posted_at": "2026-10-22T01:24:55+00:00",
+      "text": "لكل الشباب الي حابين يبدأوا مشوارهم في التوظيف بشكل حقيقي.\n\nما نحتاج خبرة سابقة، ندور على شغف وطاقة شباب يفهموا الناس ويكونوا واجهة ممتازة قدام المرشحين.\n\nاللي نبحث عنه:\n- طالب تعاوني أو خريج جديد بتخصص موارد بشرية أو إدارة أعمال.\n- ذكاء وسرعة بديهة في التواصل.\n- حس عالي بالتنظيم والترتيب.\n- فضول للتعلم ومستعد يجرب بيده من أول يوم.\n\nحتشارك معنا في:\n- تصفية السير الذاتية والمقابلات الأولية.\n- التنسيق مع المرشحين وترتيب مواعيدهم.\n- متابعة مراحل التوظيف لضمان تجربة مرشح ممتازة.\n\nللتقديم__________________"
+    }
   }
 }
