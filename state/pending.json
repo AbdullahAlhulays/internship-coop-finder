@@ -1524,6 +1524,53 @@
       "text": "🟡الفرصة رقم ٢٨١٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nفرصة تدريب تعاوني في جهة حكومية\n\nتتوفر فرصة تدريب تعاوني للطلاب والطالبات الراغبين في اكتساب خبرة عملية وتطوير مهاراتهم في بيئة عمل حكومية.\n\nللمهتمين، يرجى تعبئة نموذج التقديم عبر الرابط التالي:\n\nhttps://forms.cloud.microsoft/r/iBQ74mY2Wp\n\nنتمنى التوفيق للجميع، ونأمل مشاركة الفرصة مع المهتمين."
     }
   },
+  "cooptraning_inksa:4504": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-22T07:39:56+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Smart Code | سمارت كود",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "نستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.\n\nالتخصصات المطلوبة:\n\n• التسويق\n• العلاقات العامة\n• الذكاء الاصطناعي\n• تقنيه المعلومات (IT)\n• الموارد البشرية (HR)"
+      },
+      "evidence": {
+        "company": "سمارت كود | Smart Code",
+        "deadline": null,
+        "description": "نستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.\n\nالتخصصات المطلوبة:\n\n• التسويق\n• العلاقات العامة\n• الذكاء الاصطناعي\n• تقنيه المعلومات (IT)\n• الموارد البشرية (HR)",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Cooperative Training",
+      "type": "coop",
+      "url": "https://smartcode.sa/training"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://smartcode.sa/training"
+      ],
+      "message_id": 4504,
+      "permalink": "https://t.me/cooptraning_inksa/4504",
+      "posted_at": "2026-10-22T05:14:46+00:00",
+      "text": "🟡الفرصة رقم ٢٨٢٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nسمارت كود | Smart Code\n\nنستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.\n\nالتخصصات المطلوبة:\n\n• التسويق\n• العلاقات العامة\n• الذكاء الاصطناعي\n• تقنيه المعلومات (IT)\n• الموارد البشرية (HR)\n\n📍مقر التدريب : الرياض\n\n📩 للتقديم : https://smartcode.sa/training"
+    }
+  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
