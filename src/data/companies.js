@@ -1565,7 +1565,16 @@ const companyRecords = [
     isClosed: false,
     addedAt: "2026-10-21T16:30:32.336Z",
   },
-];
+
+  {
+    name: "Smart Code | سمارت كود",
+    logo: {"domain": "smartcode.sa", "file": "smart-code.png"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://smartcode.sa/training",
+    type: "CO-OP Training",
+    description: {"ar": "نستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.\n\nالتخصصات المطلوبة:\n\n• التسويق\n• العلاقات العامة\n• الذكاء الاصطناعي\n• تقنيه المعلومات (IT)\n• الموارد البشرية (HR)", "en": "We receive promising competencies for collaborative training, and give them an opportunity to learn, develop and gain practical experience.\n\nMajors required\n\n• Marketing\n• Public Relations\n• Artificial Intelligence\n• Information Technology (IT)\n• Human Resources (HR)"},
+    addedAt: "2026-10-22T17:28:01+03:00",
+  },];
 
 export const companies = companyRecords.map((company) => {
   const description =
