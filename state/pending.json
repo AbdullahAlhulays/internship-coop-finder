@@ -3105,57 +3105,5 @@
       "posted_at": "2026-10-22T01:24:55+00:00",
       "text": "لكل الشباب الي حابين يبدأوا مشوارهم في التوظيف بشكل حقيقي.\n\nما نحتاج خبرة سابقة، ندور على شغف وطاقة شباب يفهموا الناس ويكونوا واجهة ممتازة قدام المرشحين.\n\nاللي نبحث عنه:\n- طالب تعاوني أو خريج جديد بتخصص موارد بشرية أو إدارة أعمال.\n- ذكاء وسرعة بديهة في التواصل.\n- حس عالي بالتنظيم والترتيب.\n- فضول للتعلم ومستعد يجرب بيده من أول يوم.\n\nحتشارك معنا في:\n- تصفية السير الذاتية والمقابلات الأولية.\n- التنسيق مع المرشحين وترتيب مواعيدهم.\n- متابعة مراحل التوظيف لضمان تجربة مرشح ممتازة.\n\nللتقديم__________________"
     }
-  },
-  "nobthacv1:2194": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-23T07:37:55+00:00",
-      "status": "sent",
-      "telegram_message_id": 404
-    },
-    "extracted": {
-      "company": "National Cybersecurity Authority | الهيئة الوطنية للأمن السيبراني",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": "2026-10-26",
-      "deadline_raw": null,
-      "description": {
-        "en": "National Cybersecurity Authority Training Program – 4th Edition\n\nThe National Cybersecurity Authority (NCA) has launched the fourth edition of its Cybersecurity Training Program for university students in Saudi Arabia. The program aims to equip over 3,000 students with practical cybersecurity skills, enhance their technical knowledge, and prepare them for future careers in the cybersecurity sector.\n\nProgram Duration: 10 months\nTarget Audience: University students majoring in cybersecurity and related fields\nRegistration Deadline: October 26, 2026\nRegistration Website: https://nca.gov.sa\n\nThe program is delivered in collaboration with King Abdullah University of Science and Technology (KAUST) and the Saudi Information Technology Company (SITE)."
-      },
-      "evidence": {
-        "company": "الهيئة_الوطنية_للأمن_السيبراني",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "البرنامج التدريبي للطلاب والطالبات في المرحلة الجامعية المتخصصين في الأمن السيبراني",
-      "type": "internship_or_coop",
-      "url": "https://nca.gov.sa/ar/news/training-program-4/"
-    },
-    "last_edit": {
-      "card_message_id": 404,
-      "field": "description_en",
-      "message_id": 407
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://nca.gov.sa/ar/news/training-program-4/"
-      ],
-      "message_id": 2194,
-      "permalink": "https://t.me/nobthacv1/2194",
-      "posted_at": "2026-10-23T02:14:40+00:00",
-      "text": "برنامج تدريبي تعليمي\n\nالهيئة_الوطنية_للأمن_السيبراني⁩ تطلق النسخة الرابعة من «البرنامج التدريبي للطلاب والطالبات في المرحلة الجامعية المتخصصين في الأمن السيبراني»، وتدعو إلى التسجيل فيه.\n\nللتسجيل ___________________"
-    }
   }
 }

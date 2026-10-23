@@ -1574,6 +1574,15 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "نستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.\n\nالتخصصات المطلوبة:\n\n• التسويق\n• العلاقات العامة\n• الذكاء الاصطناعي\n• تقنيه المعلومات (IT)\n• الموارد البشرية (HR)", "en": "We receive promising competencies for collaborative training, and give them an opportunity to learn, develop and gain practical experience.\n\nMajors required\n\n• Marketing\n• Public Relations\n• Artificial Intelligence\n• Information Technology (IT)\n• Human Resources (HR)"},
     addedAt: "2026-10-22T17:28:01+03:00",
+  },
+  {
+    name: "National Cybersecurity Authority | الهيئة الوطنية للأمن السيبراني",
+    logo: {"domain": "nca.gov.sa", "file": "national-cybersecurity-authority.jpg"},
+    applicationLink: "https://nca.gov.sa/ar/news/training-program-4/",
+    deadline: "2026-10-26",
+    type: "Internship / CO-OP Training",
+    description: {"en": "National Cybersecurity Authority Training Program – 4th Edition\n\nThe National Cybersecurity Authority (NCA) has launched the fourth edition of its Cybersecurity Training Program for university students in Saudi Arabia. The program aims to equip over 3,000 students with practical cybersecurity skills, enhance their technical knowledge, and prepare them for future careers in the cybersecurity sector.\n\nProgram Duration: 10 months\nTarget Audience: University students majoring in cybersecurity and related fields\nRegistration Deadline: October 26, 2026\nRegistration Website: https://nca.gov.sa\n\nThe program is delivered in collaboration with King Abdullah University of Science and Technology (KAUST) and the Saudi Information Technology Company (SITE).", "ar": "البرنامج التدريبي للهيئة الوطنية للأمن السيبراني – الإصدار الرابع\n\nأطلقت الهيئة الوطنية للأمن السيبراني النسخة الرابعة من برنامجها التدريبي للأمن السيبراني لطلاب الجامعات في المملكة العربية السعودية. ويهدف البرنامج إلى تزويد أكثر من 3000 طالب بمهارات الأمن السيبراني العملية، وتعزيز معرفتهم التقنية، وإعدادهم للمهن المستقبلية في قطاع الأمن السيبراني.\n\nمدة البرنامج: 10 أشهر\nالجمهور المستهدف: طلاب الجامعة المتخصصين في الأمن السيبراني والمجالات ذات الصلة\nآخر موعد للتسجيل: 26 أكتوبر 2026\nموقع التسجيل: https://nca.gov.sa\n\nيتم تقديم البرنامج بالتعاون مع جامعة الملك عبد الله للعلوم والتقنية (KAUST) والشركة السعودية لتقنية المعلومات (SITE)."},
+    addedAt: "2026-10-23T13:05:45+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
