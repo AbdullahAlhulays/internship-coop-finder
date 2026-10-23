@@ -3,7 +3,6 @@ import Footer from "./Footer.jsx";
 import InternalLink from "./InternalLink.jsx";
 import PageHeader from "./PageHeader.jsx";
 import {
-  getCompanyPath,
   getRestoredArabicCompanyName,
   hasRestoredCompanyPage,
 } from "../utils/companyRoutes.js";
@@ -102,7 +101,6 @@ export default function CompanyPage({
   messages,
   homeHref,
   languageHref,
-  relatedCompanies = [],
 }) {
   const englishName = getEnglishCompanyName(company.name);
   const displayName = getCompanyDisplayName(company.name);
@@ -258,23 +256,6 @@ export default function CompanyPage({
             </a>
           </div>
 
-          {relatedCompanies.length > 0 && (
-            <nav className="company-related" aria-label={locale === "ar" ? "فرص ذات صلة" : "Related opportunities"}>
-              <h2>{locale === "ar" ? "فرص ذات صلة" : "Related opportunities"}</h2>
-              <ul>
-                {relatedCompanies.map(({ company: related, slug }) => (
-                  <li key={slug}>
-                    <InternalLink
-                      href={getCompanyPath(slug, locale)}
-                      navigate={navigate}
-                    >
-                      {getCompanyDisplayName(related.name)}
-                    </InternalLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          )}
         </article>
       </main>
 

@@ -86,7 +86,7 @@ function renderInformationFallback(content, locale) {
   return `<main><a href="${locale === "ar" ? "/ar" : "/"}">${escapeHtml(getMessages(locale).companyPage.allOpportunities)}</a><article><h1>${escapeHtml(content.title)}</h1><p>${escapeHtml(content.intro)}</p>${sections}</article></main>`;
 }
 
-function renderCompanyFallback(company, slug, locale) {
+function renderCompanyFallback(company, locale) {
   const messages = getMessages(locale);
   const description = getLocalizedCompanyDescription(company, locale);
   const sections = description
@@ -128,21 +128,6 @@ function renderCompanyFallback(company, slug, locale) {
   const application = /^https?:\/\//i.test(company.applicationLink)
     ? `<p><a href="${escapeHtml(company.applicationLink)}" rel="nofollow noopener noreferrer">${escapeHtml(hasRestoredCompanyPage(company) ? (locale === "ar" ? "مصدر التقديم" : "Application source") : messages.companyPage.applyOfficial)}</a></p>`
     : "";
-  const related = publishedCompanies
-    .filter(({ company: other, slug: otherSlug }) =>
-      otherSlug !== slug &&
-      other.location &&
-      company.location &&
-      other.location === company.location,
-    )
-    .slice(0, 3)
-    .map(({ company: other, slug: otherSlug }) =>
-      `<li><a href="${escapeHtml(getCompanyPath(otherSlug, locale))}">${escapeHtml(getEnglishCompanyName(other.name))}</a></li>`,
-    )
-    .join("");
-  const relatedLinks = related
-    ? `<nav aria-label="${locale === "ar" ? "فرص ذات صلة" : "Related opportunities"}"><h2>${locale === "ar" ? "فرص ذات صلة" : "Related opportunities"}</h2><ul>${related}</ul></nav>`
-    : "";
   const name =
     locale === "ar" && hasRestoredCompanyPage(company)
       ? getRestoredArabicCompanyName(company)
@@ -156,7 +141,7 @@ function renderCompanyFallback(company, slug, locale) {
           : "تدريب"
       : company.type || "";
 
-  return `<main><a href="${locale === "ar" ? "/ar" : "/"}">${escapeHtml(messages.companyPage.allOpportunities)}</a><article><h1>${escapeHtml(messages.companyPage.heading(name))}</h1>${location}<p>${escapeHtml(type)}</p>${closed}${deadline}${letter}${verified}${sections}${application}${relatedLinks}</article></main>`;
+  return `<main><a href="${locale === "ar" ? "/ar" : "/"}">${escapeHtml(messages.companyPage.allOpportunities)}</a><article><h1>${escapeHtml(messages.companyPage.heading(name))}</h1>${location}<p>${escapeHtml(type)}</p>${closed}${deadline}${letter}${verified}${sections}${application}</article></main>`;
 }
 
 function renderDocument({
@@ -316,7 +301,7 @@ await Promise.all(
           canonicalPath: englishPath,
           englishPath,
           arabicPath,
-          bodyHtml: renderCompanyFallback(company, slug, "en"),
+          bodyHtml: renderCompanyFallback(company, "en"),
           modifiedAt: company.contentUpdatedAt,
         }),
       ),
@@ -329,7 +314,7 @@ await Promise.all(
           canonicalPath: arabicPath,
           englishPath,
           arabicPath,
-          bodyHtml: renderCompanyFallback(company, slug, "ar"),
+          bodyHtml: renderCompanyFallback(company, "ar"),
           modifiedAt: company.contentUpdatedAt,
         }),
       ),

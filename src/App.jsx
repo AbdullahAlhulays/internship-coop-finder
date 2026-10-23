@@ -583,15 +583,6 @@ export default function App() {
           messages={messages}
           homeHref={homeHref}
           languageHref={languageHref}
-          relatedCompanies={companyRecords
-            .filter(
-              (record) =>
-                record.slug !== activeCompanyRecord.slug &&
-                record.company.location &&
-                record.company.location === activeCompanyRecord.company.location &&
-                hasPublishableCompanyContent(record.company),
-            )
-            .slice(0, 3)}
         />
         <Analytics />
       </>
