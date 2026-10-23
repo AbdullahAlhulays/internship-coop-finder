@@ -3124,7 +3124,9 @@
       "contact": null,
       "deadline": "2026-10-26",
       "deadline_raw": null,
-      "description": null,
+      "description": {
+        "en": "National Cybersecurity Authority Training Program – 4th Edition\n\nThe National Cybersecurity Authority (NCA) has launched the fourth edition of its Cybersecurity Training Program for university students in Saudi Arabia. The program aims to equip over 3,000 students with practical cybersecurity skills, enhance their technical knowledge, and prepare them for future careers in the cybersecurity sector.\n\nProgram Duration: 10 months\nTarget Audience: University students majoring in cybersecurity and related fields\nRegistration Deadline: October 26, 2026\nRegistration Website: https://nca.gov.sa\n\nThe program is delivered in collaboration with King Abdullah University of Science and Technology (KAUST) and the Saudi Information Technology Company (SITE)."
+      },
       "evidence": {
         "company": "الهيئة_الوطنية_للأمن_السيبراني",
         "deadline": null,
@@ -3150,7 +3152,8 @@
       "posted_at": "2026-10-23T02:14:40+00:00",
       "text": "برنامج تدريبي تعليمي\n\nالهيئة_الوطنية_للأمن_السيبراني⁩ تطلق النسخة الرابعة من «البرنامج التدريبي للطلاب والطالبات في المرحلة الجامعية المتخصصين في الأمن السيبراني»، وتدعو إلى التسجيل فيه.\n\nللتسجيل ___________________"
     },
-    "awaiting_edit": {
+    "last_edit": {
+      "message_id": 407,
       "field": "description_en",
       "card_message_id": 404
     }
