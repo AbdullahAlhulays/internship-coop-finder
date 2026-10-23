@@ -3141,6 +3141,11 @@
       "type": "internship_or_coop",
       "url": "https://nca.gov.sa/ar/news/training-program-4/"
     },
+    "last_edit": {
+      "card_message_id": 404,
+      "field": "description_en",
+      "message_id": 407
+    },
     "post": {
       "channel": "nobthacv1",
       "has_media": true,
@@ -3151,56 +3156,6 @@
       "permalink": "https://t.me/nobthacv1/2194",
       "posted_at": "2026-10-23T02:14:40+00:00",
       "text": "برنامج تدريبي تعليمي\n\nالهيئة_الوطنية_للأمن_السيبراني⁩ تطلق النسخة الرابعة من «البرنامج التدريبي للطلاب والطالبات في المرحلة الجامعية المتخصصين في الأمن السيبراني»، وتدعو إلى التسجيل فيه.\n\nللتسجيل ___________________"
-    },
-    "last_edit": {
-      "message_id": 407,
-      "field": "description_en",
-      "card_message_id": 404
-    }
-  },
-  "nobthacv1:2195": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-23T07:37:55+00:00",
-      "status": "sent",
-      "telegram_message_id": 405
-    },
-    "extracted": {
-      "company": "Zid",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "فريق زد",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني",
-      "type": "coop",
-      "url": "https://zid.sa/ar/coop/"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://zid.sa/ar/coop/"
-      ],
-      "message_id": 2195,
-      "permalink": "https://t.me/nobthacv1/2195",
-      "posted_at": "2026-10-23T04:16:00+00:00",
-      "text": "ياهلا ومسهلا، حياك الله 💜\n\nيسعدنا اهتمامك بالانضمام لفريق زد من خلال برنامج التدريب التعاوني 🙏🏻\n\nتقدر تط​لع على تفاصيل البرنامج وتقد​م طلبك مباشرة من خلال الرابط التالي:\n\nhttps://zid.sa/ar/coop/\nنتمنى لك كل التوفيق، وإن شاء الله نشوفك ضمن فريق زد 💜"
     }
   }
 }
