@@ -1770,53 +1770,6 @@
       "text": "تعلن JXTech Studio عن فتح باب التقديم لبرنامج التدريب التقني، المصمم لدعم حديثي التخرج والمبتدئين في تطوير مهاراتهم التخصصية واكتساب خبرة عملية من خلال المشاركة في مشاريع ومنتجات تقنية حقيقية.\nيهدف البرنامج إلى توفير بيئة تطبيقية تتيح للمتدربين تطوير قدراتهم، وتعزيز معارفهم التقنية، واكتساب خبرة في العمل ضمن فريق والمساهمة في تنفيذ المهام والمشاريع.\nالمسارات التدريبية المتاحة:\nSoftware Development\nQuality Assurance (QA)\nProduct Operations\nUX/UI Design\nMarketing\nتفاصيل البرنامج:\nتدريب عن بُعد بالكامل.\nمدة التدريب تصل إلى 3 أشهر.\nالعمل على مشاريع ومنتجات حقيقية ضمن فريق.\nشهادة تدريب عند إكمال البرنامج.\nندعو المهتمين بالتطوير المهني واكتساب الخبرة العملية إلى التقديم عبر نموذج التسجيل:\nرابط التسجيل:\nhttps://docs.google.com/forms/d/e/1FAIpQLSceGkWt92MXZqw1dW5uyWhx7V395ujLoh4NO5Z4Khtus9RZBw/viewform"
     }
   },
-  "SALTRAI:5885": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-25T18:29:36+00:00",
-      "status": "sent",
-      "telegram_message_id": 416
-    },
-    "extracted": {
-      "company": "زد",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "يسعدنا اهتمامك بالانضمام لفريق زد من خلال برنامج التدريب التعاوني"
-      },
-      "evidence": {
-        "company": "زد",
-        "deadline": null,
-        "description": "يسعدنا اهتمامك بالانضمام لفريق زد من خلال برنامج التدريب التعاوني",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني",
-      "type": "coop",
-      "url": "https://zid.sa/ar/coop/"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://zid.sa/ar/coop/"
-      ],
-      "message_id": 5885,
-      "permalink": "https://t.me/SALTRAI/5885",
-      "posted_at": "2026-10-25T15:51:56+00:00",
-      "text": "ياهلا ومسهلا، حياك الله 💜\n\nيسعدنا اهتمامك بالانضمام لفريق زد من خلال برنامج التدريب التعاوني 🙏🏻\n\nتقدر تط​لع على تفاصيل البرنامج وتقد​م طلبك مباشرة من خلال الرابط التالي:\n\nhttps://zid.sa/ar/coop/\nنتمنى لك كل التوفيق، وإن شاء الله نشوفك ضمن فريق زد 💜"
-    }
-  },
   "SALTRAI:5887": {
     "decision": {
       "action": "add",
