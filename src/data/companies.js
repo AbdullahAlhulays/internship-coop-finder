@@ -1614,6 +1614,14 @@ const companyRecords = [
     applicationLink: "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915",
     type: "CO-OP Training",
     addedAt: "2026-10-25T21:32:29+03:00",
+  },
+  {
+    name: "JXTech Studio",
+    location: "Remote",
+    applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSceGkWt92MXZqw1dW5uyWhx7V395ujLoh4NO5Z4Khtus9RZBw/viewform",
+    type: "Internship / CO-OP Training",
+    description: {"ar": "المسارات التدريبية المتاحة:\nSoftware Development\nQuality Assurance (QA)\nProduct Operations\nUX/UI Design\nMarketing\nتفاصيل البرنامج:\nتدريب عن بُعد بالكامل.\nمدة التدريب تصل إلى 3 أشهر.\nالعمل على مشاريع ومنتجات حقيقية ضمن فريق.\nشهادة تدريب عند إكمال البرنامج.", "en": "Available Training Pathways:\nSoftware Development\nQuality Assurance (QA)\nProduct Operations\nUX/UI Design\nMarketing\nProgram Details:\nFully remote training.\nThe duration of the training is up to 3 months.\nWork on real projects and products within a team.\nCertificate of training upon completion of the program."},
+    addedAt: "2026-10-25T21:32:40+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {

@@ -1678,53 +1678,6 @@
       "text": "#التدريب_التعاوني #جدة\n\nلكل الشباب الي حابين يبدأوا مشوارهم في التوظيف بشكل حقيقي.\n\nما نحتاج خبرة سابقة، ندور على شغف وطاقة شباب يفهموا الناس ويكونوا واجهة ممتازة قدام المرشحين.\n\nاللي نبحث عنه:\n- طالب تعاوني أو خريج جديد بتخصص موارد بشرية أو إدارة أعمال.\n- ذكاء وسرعة بديهة في التواصل.\n- حس عالي بالتنظيم والترتيب.\n- فضول للتعلم ومستعد يجرب بيده من أول يوم.\n\nحتشارك معنا في:\n- تصفية السير الذاتية والمقابلات الأولية.\n- التنسيق مع المرشحين وترتيب مواعيدهم.\n- متابعة مراحل التوظيف لضمان تجربة مرشح ممتازة.\n\nللتقديم__________________"
     }
   },
-  "SALTRAI:5878": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-25T18:29:36+00:00",
-      "status": "sent",
-      "telegram_message_id": 415
-    },
-    "extracted": {
-      "company": "JXTech Studio",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "المسارات التدريبية المتاحة:\nSoftware Development\nQuality Assurance (QA)\nProduct Operations\nUX/UI Design\nMarketing\nتفاصيل البرنامج:\nتدريب عن بُعد بالكامل.\nمدة التدريب تصل إلى 3 أشهر.\nالعمل على مشاريع ومنتجات حقيقية ضمن فريق.\nشهادة تدريب عند إكمال البرنامج."
-      },
-      "evidence": {
-        "company": "JXTech Studio",
-        "deadline": null,
-        "description": "المسارات التدريبية المتاحة:\nSoftware Development\nQuality Assurance (QA)\nProduct Operations\nUX/UI Design\nMarketing\nتفاصيل البرنامج:\nتدريب عن بُعد بالكامل.\nمدة التدريب تصل إلى 3 أشهر.\nالعمل على مشاريع ومنتجات حقيقية ضمن فريق.\nشهادة تدريب عند إكمال البرنامج.",
-        "location": "تدريب عن بُعد بالكامل."
-      },
-      "is_opportunity": true,
-      "location": "Remote",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التقني",
-      "type": "internship_or_coop",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSceGkWt92MXZqw1dW5uyWhx7V395ujLoh4NO5Z4Khtus9RZBw/viewform"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://docs.google.com/forms/d/e/1FAIpQLSceGkWt92MXZqw1dW5uyWhx7V395ujLoh4NO5Z4Khtus9RZBw/viewform"
-      ],
-      "message_id": 5878,
-      "permalink": "https://t.me/SALTRAI/5878",
-      "posted_at": "2026-10-25T15:50:10+00:00",
-      "text": "تعلن JXTech Studio عن فتح باب التقديم لبرنامج التدريب التقني، المصمم لدعم حديثي التخرج والمبتدئين في تطوير مهاراتهم التخصصية واكتساب خبرة عملية من خلال المشاركة في مشاريع ومنتجات تقنية حقيقية.\nيهدف البرنامج إلى توفير بيئة تطبيقية تتيح للمتدربين تطوير قدراتهم، وتعزيز معارفهم التقنية، واكتساب خبرة في العمل ضمن فريق والمساهمة في تنفيذ المهام والمشاريع.\nالمسارات التدريبية المتاحة:\nSoftware Development\nQuality Assurance (QA)\nProduct Operations\nUX/UI Design\nMarketing\nتفاصيل البرنامج:\nتدريب عن بُعد بالكامل.\nمدة التدريب تصل إلى 3 أشهر.\nالعمل على مشاريع ومنتجات حقيقية ضمن فريق.\nشهادة تدريب عند إكمال البرنامج.\nندعو المهتمين بالتطوير المهني واكتساب الخبرة العملية إلى التقديم عبر نموذج التسجيل:\nرابط التسجيل:\nhttps://docs.google.com/forms/d/e/1FAIpQLSceGkWt92MXZqw1dW5uyWhx7V395ujLoh4NO5Z4Khtus9RZBw/viewform"
-    }
-  },
   "SALTRAI:5887": {
     "decision": {
       "action": "add",
