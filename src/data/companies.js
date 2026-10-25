@@ -1622,6 +1622,14 @@ const companyRecords = [
     type: "Internship / CO-OP Training",
     description: {"ar": "المسارات التدريبية المتاحة:\nSoftware Development\nQuality Assurance (QA)\nProduct Operations\nUX/UI Design\nMarketing\nتفاصيل البرنامج:\nتدريب عن بُعد بالكامل.\nمدة التدريب تصل إلى 3 أشهر.\nالعمل على مشاريع ومنتجات حقيقية ضمن فريق.\nشهادة تدريب عند إكمال البرنامج.", "en": "Available Training Pathways:\nSoftware Development\nQuality Assurance (QA)\nProduct Operations\nUX/UI Design\nMarketing\nProgram Details:\nFully remote training.\nThe duration of the training is up to 3 months.\nWork on real projects and products within a team.\nCertificate of training upon completion of the program."},
     addedAt: "2026-10-25T21:32:40+03:00",
+  },
+  {
+    name: "Seara International",
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4476403977",
+    type: "CO-OP Training",
+    description: {"ar": "برنامج التدريب Internship Program 2026–2027 للطلاب والخريجين حديثًا، لاكتساب خبرة عملية في المشاريع وتطوير المهارات المهنية.\n\nالتخصصات المستهدفة:\n• الهندسة الصناعية.\n• الهندسة الكهربائية.\n• الهندسة الميكانيكية.\n• علوم الأغذية.\n• الكيمياء.\n\nالمتطلبات:\n• أن يكون المتقدم طالبًا أو خريجًا حديثًا في أحد التخصصات المستهدفة.\n• إجادة التواصل باللغة الإنجليزية.\n• مهارات حل المشكلات والتفكير التحليلي.\n• القدرة على العمل الجماعي والتعاون.\n• الرغبة في التعلم والتطوير.\n\nمدة التدريب:\n• 6 أشهر.", "en": "Internship Program 2026–2027 for students and recent graduates, to gain hands-on project experience and develop professional skills.\n\nTarget disciplines:\n• Industrial Engineering.\n• Electrical Engineering.\n• Mechanical Engineering.\n• Food Science.\n• Chemistry.\n\nRequirements:\n• The applicant must be a student or recent graduate in one of the targeted disciplines.\n• Proficiency in communicating in English.\n• Problem-solving and analytical thinking skills.\n• Ability to work together and collaborate.\n• Desire to learn and develop.\n\nThe internship duration is 6 months."},
+    addedAt: "2026-10-25T21:32:56+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
