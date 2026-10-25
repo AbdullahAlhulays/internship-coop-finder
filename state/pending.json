@@ -1678,51 +1678,6 @@
       "text": "#التدريب_التعاوني #جدة\n\nلكل الشباب الي حابين يبدأوا مشوارهم في التوظيف بشكل حقيقي.\n\nما نحتاج خبرة سابقة، ندور على شغف وطاقة شباب يفهموا الناس ويكونوا واجهة ممتازة قدام المرشحين.\n\nاللي نبحث عنه:\n- طالب تعاوني أو خريج جديد بتخصص موارد بشرية أو إدارة أعمال.\n- ذكاء وسرعة بديهة في التواصل.\n- حس عالي بالتنظيم والترتيب.\n- فضول للتعلم ومستعد يجرب بيده من أول يوم.\n\nحتشارك معنا في:\n- تصفية السير الذاتية والمقابلات الأولية.\n- التنسيق مع المرشحين وترتيب مواعيدهم.\n- متابعة مراحل التوظيف لضمان تجربة مرشح ممتازة.\n\nللتقديم__________________"
     }
   },
-  "SALTRAI:5875": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-25T18:29:36+00:00",
-      "status": "sent",
-      "telegram_message_id": 414
-    },
-    "extracted": {
-      "company": "Flyadeal",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "شركة فلاي اديل",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Coop Training Program",
-      "type": "coop",
-      "url": "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915"
-      ],
-      "message_id": 5875,
-      "permalink": "https://t.me/SALTRAI/5875",
-      "posted_at": "2026-10-25T14:38:27+00:00",
-      "text": "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915\n\nتم فتح التسجيل للتدريب التعاوني في شركة فلاي اديل"
-    }
-  },
   "SALTRAI:5878": {
     "decision": {
       "action": "add",

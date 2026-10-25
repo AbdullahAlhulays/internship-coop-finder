@@ -1607,6 +1607,13 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "يسعدنا اهتمامك بالانضمام لفريق زد من خلال برنامج التدريب التعاوني", "en": "We are pleased that you are interested in joining the Zed team through the collaborative training program"},
     addedAt: "2026-10-25T21:32:19+03:00",
+  },
+  {
+    name: "Flyadeal",
+    logo: {"domain": "careers.flyadeal.com", "file": "flyadeal.jpg"},
+    applicationLink: "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915",
+    type: "CO-OP Training",
+    addedAt: "2026-10-25T21:32:29+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
