@@ -1686,8 +1686,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-25T18:26:07+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-25T18:29:36+00:00",
+      "status": "sent",
+      "telegram_message_id": 414
     },
     "extracted": {
       "company": "Flyadeal",
@@ -1730,8 +1731,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-25T18:26:48+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-25T18:29:36+00:00",
+      "status": "sent",
+      "telegram_message_id": 415
     },
     "extracted": {
       "company": "JXTech Studio",
@@ -1776,8 +1778,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-25T18:28:26+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-25T18:29:36+00:00",
+      "status": "sent",
+      "telegram_message_id": 416
     },
     "extracted": {
       "company": "زد",
@@ -1822,8 +1825,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-25T18:28:36+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-25T18:29:37+00:00",
+      "status": "sent",
+      "telegram_message_id": 417
     },
     "extracted": {
       "company": "Shaker Group | شركة الحسن غازي إبراهيم شاكر",
@@ -1868,8 +1872,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-25T18:29:08+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-25T18:29:37+00:00",
+      "status": "sent",
+      "telegram_message_id": 418
     },
     "extracted": {
       "company": "Seara International",
@@ -1914,8 +1919,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-25T18:29:32+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-25T18:29:38+00:00",
+      "status": "sent",
+      "telegram_message_id": 419
     },
     "extracted": {
       "company": "Elm | علم",
