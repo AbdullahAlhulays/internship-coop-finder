@@ -1592,6 +1592,14 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "💰 المزايا: مكافأة شهرية طوال فترة التدريب، وإشراف وتوجيه حسب التخصص\n\n🎓 التخصصات: علوم الحاسب، تقنية المعلومات، هندسة البرمجيات، الهندسة الصناعية، إدارة المشاريع، المحاسبة، المالية، التسويق، الموارد البشرية، القانون\n\n📋 الشروط: التدريب متطلب تخرج، ومعدل 4 من 5 أو 3.2 من 4 فأعلى، وإجادة الإنجليزية\n\n🗓️ مدة التدريب: 4 إلى 7 أشهر\n\n⏳ آخر موعد للتقديم: 4 نوفمبر 2026", "en": "💰 Benefits: Monthly bonus throughout the training period, supervision and guidance by specialization\n\n🎓 Specialties: Computer Science, Information Technology, Software Engineering, Industrial Engineering, Project Management, Accounting, Finance, Marketing, Human Resources, Law\n\n📋 Requirements: Training is a graduation requirement, an average of 4 out of 5 or 3.2 out of 4 and above, and English proficiency\n\n🗓️ Duration of training: 4 to 7 months\n\nा Deadline for submission: November 4, 2026"},
     addedAt: "2026-10-25T21:31:52+03:00",
+  },
+  {
+    name: "Shaker Group | شركة الحسن غازي إبراهيم شاكر",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4478993931",
+    type: "CO-OP Training",
+    description: {"ar": "شركة الحسن غازي إبراهيم شاكر (Shaker Group) تعلن عن فتح باب التقديم على التدريب التعاوني في مجال التجارة الإلكترونية (E-Commerce) ضمن فريق التجارة الإلكترونية، لاكتساب خبرة عملية في إدارة المتاجر الإلكترونية والتسويق الرقمي.\n\nالتخصصات:\nالتجارة الإلكترونية.\nالتسويق.\nإدارة الأعمال.\nنظم المعلومات.\nتخصصات ذات صلة.\n\nالمتطلبات:\nدرجة البكالوريوس أو الدبلوم في أحد التخصصات المستهدفة.\nمهارات ممتازة في التواصل.\nإجادة استخدام برامج Microsoft Office.\nإجادة اللغة الإنجليزية تحدثًا وكتابةً.\nالرغبة في تعلم عمليات التجارة الإلكترونية والتسويق الرقمي.", "en": "Al Hassan Ghazi Ibrahim Shaker (Shaker Group) announces the opening of applying for cooperative training in the field of e-commerce within the e-commerce team, to gain practical experience in managing e-stores and digital marketing.\n\nSpecialties:\nE-commerce.\nMarketing.\nBusiness Administration.\nInformation Systems.\nRelevant disciplines.\n\nRequirements:\nBachelor's degree or diploma in one of the targeted disciplines.\nExcellent communication skills.\nProficiency in using Microsoft Office programs.\nFluency in spoken and written English.\nDesire to learn e-commerce and digital marketing processes."},
+    addedAt: "2026-10-25T21:32:10+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
