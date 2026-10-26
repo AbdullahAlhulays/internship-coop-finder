@@ -1725,6 +1725,106 @@
       "text": "📢 فرصة تدريب تعاوني في مجال التسويق والاعلام والفنون وغيرها\n\nلطلاب البكالوريوس والدبلوم\n\n​تعلن شركة فرونت لاين للتسويق عن توفر فرص تدريب تعاوني للطلاب والطالبات في مجالات التسويق والاعلام والصحافة وغيرها من المجالات المرتبطة.\n​للتسجيل والدخول في مرحلة الفرز والمقابلات، يُرجى تعبئة البيانات عبر النموذج الرسمي:\n🔗\nرابط النموذج"
     }
   },
+  "SALTRAI:5897": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-26T20:34:35+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Aramco",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تدريب ينتهي بالتوظيف في كبرى شركات العالم بالمزايا: (راتب شهري، توفير رعاية طبية، سداد الرسوم الدراسية) وأخرى"
+      },
+      "evidence": {
+        "company": "أرامكو السعودية",
+        "deadline": null,
+        "description": "تدريب ينتهي بالتوظيف في كبرى شركات العالم بالمزايا: (راتب شهري، توفير رعاية طبية، سداد الرسوم الدراسية) وأخرى",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب الجامعي",
+      "type": "internship_or_coop",
+      "url": "https://wdeftksa.com/sa/jobs/100678"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://api.whatsapp.com/send?text=%D8%A8%D8%B1%D8%A7%D9%85%D8%AC+%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88+%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9+%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC+%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A+%D9%88%D8%A7%D9%84%D9%85%D9%87%D9%86%D9%8A+%D9%84%D8%B7%D9%84%D8%A7%D8%A8+%D8%A7%D9%84%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D9%88%D8%B3+%D9%88%D8%A7%D9%84%D8%AF%D8%A8%D9%84%D9%88%D9%85+-+https%3A%2F%2Fwww.wdeftksa.com%2Fsa%2Fjobs%2F100678+-+%D8%B1%D8%A7%D8%A8%D8%B7+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85%3A+https%3A%2F%2Ft.me%2Fcd4cd",
+        "https://wdeftksa.com/sa/jobs/100678"
+      ],
+      "message_id": 5897,
+      "permalink": "https://t.me/SALTRAI/5897",
+      "posted_at": "2026-10-26T10:33:15+00:00",
+      "text": "(🔴🔥) تقديم أرامكو (بدأ الآن):\n\n‼️ تدريب ينتهي بالتوظيف في كبرى شركات العالم بالمزايا: (راتب شهري، توفير رعاية طبية، سداد الرسوم الدراسية) وأخرى\n\n🌟شركة أرامكو السعودية تعلن موعد التقديم على برنامج (التدريب الجامعي) و (برنامج التدريب المهني)\n\n🔗 انشر الخبر عبر (whatsapp):\nاضغط هنا\n\n↩️ للتقديم (https://wdeftksa.com/sa/jobs/100678)"
+    }
+  },
+  "SALTRAI:5898": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-26T20:35:12+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Elm",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "Elm",
+        "deadline": null,
+        "description": null,
+        "location": "Riyadh, SA"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Elm Co-op Training Program (January 2027 Intake)",
+      "type": "coop",
+      "url": "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Information-Systems/1375161257/?from=email&refid=22530153700&utm_source=J2WEmail&source=2&eid=14800-202653241253-29181354500&locale=en_GB"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Information-Systems/1375161257/?from=email&amp;refid=22530153700&amp;utm_source=J2WEmail&amp;source=2&amp;eid=14800-202653241253-29181354500&amp;locale=en_GB",
+        "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Information-Technology/1375162457/?from=email&amp;refid=22530153700&amp;utm_source=J2WEmail&amp;source=2&amp;eid=14800-202653241253-29181354500&amp;locale=en_GB",
+        "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Management-Information-Systems/1375161157/?from=email&amp;refid=22530153700&amp;utm_source=J2WEmail&amp;source=2&amp;eid=14800-202653241253-29181354500&amp;locale=en_GB",
+        "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Legal/1375162157/?from=email&amp;refid=22530153700&amp;utm_source=J2WEmail&amp;source=2&amp;eid=14800-202653241253-29181354500&amp;locale=en_GB",
+        "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Computer-Science/1375161357/?from=email&amp;refid=22530153700&amp;utm_source=J2WEmail&amp;source=2&amp;eid=14800-202653241253-29181354500&amp;locale=en_GB",
+        "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Human-Resources/1375160657/?from=email&amp;refid=22530153700&amp;utm_source=J2WEmail&amp;source=2&amp;eid=14800-202653241253-29181354500&amp;locale=en_GB",
+        "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Finance/1375162557/?from=email&amp;refid=22530153700&amp;utm_source=J2WEmail&amp;source=2&amp;eid=14800-202653241253-29181354500&amp;locale=en_GB",
+        "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Marketing/1375161857/?from=email&amp;refid=22530153700&amp;utm_source=J2WEmail&amp;source=2&amp;eid=14800-202653241253-29181354500&amp;locale=en_GB",
+        "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Accounting/1375161757/?from=email&amp;refid=22530153700&amp;utm_source=J2WEmail&amp;source=2&amp;eid=14800-202653241253-29181354500&amp;locale=en_GB",
+        "http://career.elm.sa/elm/job/Riyadh-Elm-Co-op-Training-Program-%28January-2027-Intake%29-Industrial-Engineering/1375161957/?from=email&amp;refid=22530153700&amp;utm_source=J2WEmail&amp;source=2&amp;eid=14800-202653241253-29181354500&amp;locale=en_GB"
+      ],
+      "message_id": 5898,
+      "permalink": "https://t.me/SALTRAI/5898",
+      "posted_at": "2026-10-26T11:01:02+00:00",
+      "text": "Elm Co-op Training Program (January 2027 Intake) - Information Systems - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Information Technology - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Management Information Systems - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Legal - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Computer Science - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Human Resources - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Finance - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Marketing - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Accounting - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Industrial Engineering - Riyadh, SA"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
