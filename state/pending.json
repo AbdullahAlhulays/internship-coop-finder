@@ -3451,8 +3451,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-27T23:48:38+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-27T23:48:59+00:00",
+      "status": "sent",
+      "telegram_message_id": 433
     },
     "extracted": {
       "company": "AlAhli Bank | بنك الاهلي السعودي SNB",
@@ -3497,8 +3498,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-27T23:48:40+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-27T23:48:59+00:00",
+      "status": "sent",
+      "telegram_message_id": 434
     },
     "extracted": {
       "company": "Saudi Evaluation Authority | الهيئة السعودية للمقيّمين المعتمدين «تقييم»",
@@ -3544,8 +3546,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-27T23:48:56+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-27T23:49:00+00:00",
+      "status": "sent",
+      "telegram_message_id": 435
     },
     "extracted": {
       "company": "Bupa",
