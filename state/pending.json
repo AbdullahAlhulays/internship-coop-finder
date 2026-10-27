@@ -3357,8 +3357,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-27T06:21:40+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-27T06:22:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 429
     },
     "extracted": {
       "company": "Lumi | لومي",
@@ -3403,8 +3404,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-27T06:21:42+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-27T06:22:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 430
     },
     "extracted": {
       "company": "Visa",
@@ -3449,8 +3451,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-27T06:21:58+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-27T06:22:02+00:00",
+      "status": "sent",
+      "telegram_message_id": 431
     },
     "extracted": {
       "company": "Visa",
