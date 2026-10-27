@@ -1630,6 +1630,15 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "برنامج التدريب Internship Program 2026–2027 للطلاب والخريجين حديثًا، لاكتساب خبرة عملية في المشاريع وتطوير المهارات المهنية.\n\nالتخصصات المستهدفة:\n• الهندسة الصناعية.\n• الهندسة الكهربائية.\n• الهندسة الميكانيكية.\n• علوم الأغذية.\n• الكيمياء.\n\nالمتطلبات:\n• أن يكون المتقدم طالبًا أو خريجًا حديثًا في أحد التخصصات المستهدفة.\n• إجادة التواصل باللغة الإنجليزية.\n• مهارات حل المشكلات والتفكير التحليلي.\n• القدرة على العمل الجماعي والتعاون.\n• الرغبة في التعلم والتطوير.\n\nمدة التدريب:\n• 6 أشهر.", "en": "Internship Program 2026–2027 for students and recent graduates, to gain hands-on project experience and develop professional skills.\n\nTarget disciplines:\n• Industrial Engineering.\n• Electrical Engineering.\n• Mechanical Engineering.\n• Food Science.\n• Chemistry.\n\nRequirements:\n• The applicant must be a student or recent graduate in one of the targeted disciplines.\n• Proficiency in communicating in English.\n• Problem-solving and analytical thinking skills.\n• Ability to work together and collaborate.\n• Desire to learn and develop.\n\nThe internship duration is 6 months."},
     addedAt: "2026-10-25T21:32:56+03:00",
+  },
+  {
+    name: "Lumi | لومي",
+    location: "Jeddah, Riyadh, Dammam, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4483547240",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات :\nلم يتم تحديد تخصصات معينة\n\nالمتطلبات :\nسعودي الجنسية\nطالب متوقع تخرجه\nمعدل تراكمي جيد جدًا\nخطاب من الجامعة\nأن يكون التدريب التعاوني في الفصل الأول أو الثاني أو الصيفي\n\nمدة التدريب:\nحسب الفصل الأكاديمي (أول / ثاني / صيفي)\n\nالمزايا:\nمكافأة شهرية 1,500 ريال\nتوفير جهاز Laptop/PC طوال فترة التدريب\nشهادة خبرة من لومي بعد إتمام التدريب", "en": "Specialties :\nNo specific specialties selected\n\nRequirements :\nSaudi National\nA student expected to graduate\nVery good GPA\nLetter from the University\nThe cooperative training should be in the first, second or summer semester\n\nDuration of training:\nBy Academic Semester (First / Second / Summer)\n\nAdvantages:\nA monthly bonus of 1,500 riyals\nProvide a Laptop/PC throughout the training period\nExperience certificate from Lome after completing the training"},
+    requiresLetter: true,
+    addedAt: "2026-10-27T14:21:18+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
