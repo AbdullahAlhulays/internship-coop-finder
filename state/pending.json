@@ -1981,8 +1981,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-28T23:16:19+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-28T23:17:14+00:00",
+      "status": "sent",
+      "telegram_message_id": 441
     },
     "extracted": {
       "company": "Visa",
@@ -2027,8 +2028,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-28T23:16:20+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-28T23:17:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 442
     },
     "extracted": {
       "company": "Visa",
@@ -2073,8 +2075,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-28T23:16:36+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-28T23:17:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 443
     },
     "extracted": {
       "company": "Saudi Board of Accredited Evaluators | الهيئة السعودية للمقيّمين المعتمدين «تقييم»",
