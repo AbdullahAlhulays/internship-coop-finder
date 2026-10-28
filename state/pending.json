@@ -1827,6 +1827,98 @@
       "text": "Elm Co-op Training Program (January 2027 Intake) - Information Systems - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Information Technology - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Management Information Systems - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Legal - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Computer Science - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Human Resources - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Finance - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Marketing - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Accounting - Riyadh, SA\nElm Co-op Training Program (January 2027 Intake) - Industrial Engineering - Riyadh, SA"
     }
   },
+  "SALTRAI:5900": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-28T13:04:56+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "مركز طفلي للرعاية النهارية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات المتاحة:\n• التربية الخاصة\n• العلاج الوظيفي\n• العلاج الطبيعي\n• علاج النطق واللغة (التخاطب)\n• علم النفس والخدمة الاجتماعية\n• الإدارة والموارد البشرية"
+      },
+      "evidence": {
+        "company": "مركز طفلي للرعاية النهارية",
+        "deadline": null,
+        "description": "التخصصات المتاحة:\n• التربية الخاصة\n• العلاج الوظيفي\n• العلاج الطبيعي\n• علاج النطق واللغة (التخاطب)\n• علم النفس والخدمة الاجتماعية\n• الإدارة والموارد البشرية",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني لطالبات الجامعات",
+      "type": "coop",
+      "url": "https://forms.gle/2BwGJjP62ndDVDVb7"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/2BwGJjP62ndDVDVb7"
+      ],
+      "message_id": 5900,
+      "permalink": "https://t.me/SALTRAI/5900",
+      "posted_at": "2026-10-28T09:27:59+00:00",
+      "text": "يعلن مركز طفلي للرعاية النهارية عن فتح باب التسجيل في برنامج التدريب التعاوني لطالبات الجامعات، لتكوني جزءاً من فريقنا. ✨\n\n🎯 التخصصات المتاحة:\n• التربية الخاصة\n• العلاج الوظيفي\n• العلاج الطبيعي\n• علاج النطق واللغة (التخاطب)\n• علم النفس والخدمة الاجتماعية\n• الإدارة والموارد البشرية\n\n📍 المقر: الرياض، حي البديعة (بيئة نسائية بالكامل)\n📩 للتقديم:\nيرجى تعبئة نموذج التسجيل من الرابط:\nhttps://forms.gle/2BwGJjP62ndDVDVb7"
+    }
+  },
+  "SALTRAI:5909": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-28T13:05:35+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "جهة إدارة وتنظيم فعاليات",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "لإتاحة الفرصه للطلاب والطالبات لخوض تجربه عمليه, وتطوير مهاراتهم، وأكتساب خبره مهنيه ضمن بيئة عمل إبداعية في عالم الفعاليات.\n\nالتخصصات المطلوبه :\n- جرافيك ديزاين\n- ادارة فعاليات\n- سياحة وادارة مشاريع\n- ادارة مشاريع\n- علاقات عامه وتسويق\n- ادارة اعمال\n- سياحه وضيافه\n- صحافه رقميه\n- سياحه وسفر\n- اعلان واتصال تسويقي\n- نظم معلومات اداريه"
+      },
+      "evidence": {
+        "company": "جهة إدارة وتنظيم فعاليات",
+        "deadline": null,
+        "description": "لإتاحة الفرصه للطلاب والطالبات لخوض تجربه عمليه, وتطوير مهاراتهم، وأكتساب خبره مهنيه ضمن بيئة عمل إبداعية في عالم الفعاليات.\n\nالتخصصات المطلوبه :\n- جرافيك ديزاين\n- ادارة فعاليات\n- سياحة وادارة مشاريع\n- ادارة مشاريع\n- علاقات عامه وتسويق\n- ادارة اعمال\n- سياحه وضيافه\n- صحافه رقميه\n- سياحه وسفر\n- اعلان واتصال تسويقي\n- نظم معلومات اداريه",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرص التدريب التعاوني",
+      "type": "coop",
+      "url": "https://hickory-erica-14c.notion.site/3983c75acad580de9c51d301673af430"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://hickory-erica-14c.notion.site/3983c75acad580de9c51d301673af430"
+      ],
+      "message_id": 5909,
+      "permalink": "https://t.me/SALTRAI/5909",
+      "posted_at": "2026-10-28T09:57:34+00:00",
+      "text": "📢 تعلن جهة إدارة وتنظيم فعاليات عن فتح باب التقديم لفرص التدريب التعاوني ,لإتاحة الفرصه للطلاب والطالبات لخوض تجربه عمليه, وتطوير مهاراتهم، وأكتساب خبره مهنيه ضمن بيئة عمل إبداعية في عالم الفعاليات.\n\n📍الموقع : الرياض\n\nالتخصصات المطلوبه :\n- جرافيك ديزاين\n- ادارة فعاليات\n- سياحة وادارة مشاريع\n- ادارة مشاريع\n- علاقات عامه وتسويق\n- ادارة اعمال\n- سياحه وضيافه\n- صحافه رقميه\n- سياحه وسفر\n- اعلان واتصال تسويقي\n- نظم معلومات اداريه\n\n⏪️ للتقديم عبر الرابط Notion"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
