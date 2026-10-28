@@ -1934,8 +1934,9 @@
       "reason": "a newer repost of this exact posting has different details"
     },
     "delivery": {
-      "queued_at": "2026-10-28T18:54:06+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-28T18:54:36+00:00",
+      "status": "sent",
+      "telegram_message_id": 440
     },
     "extracted": {
       "company": "Lumi | لومي",
