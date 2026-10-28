@@ -1835,8 +1835,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-28T13:04:56+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-28T13:06:18+00:00",
+      "status": "sent",
+      "telegram_message_id": 438
     },
     "extracted": {
       "company": "مركز طفلي للرعاية النهارية",
@@ -1881,8 +1882,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-28T13:05:35+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-28T13:06:18+00:00",
+      "status": "sent",
+      "telegram_message_id": 439
     },
     "extracted": {
       "company": "جهة إدارة وتنظيم فعاليات",
