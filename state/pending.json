@@ -2403,8 +2403,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-29T21:51:04+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-29T21:54:27+00:00",
+      "status": "sent",
+      "telegram_message_id": 449
     },
     "extracted": {
       "company": "Front Line | فرونت لاين للتسويق",
@@ -2450,8 +2451,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-29T21:51:30+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-29T21:54:28+00:00",
+      "status": "sent",
+      "telegram_message_id": 450
     },
     "extracted": {
       "company": "مركز طفلي للرعاية النهارية",
@@ -2497,8 +2499,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-29T21:52:21+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-29T21:54:28+00:00",
+      "status": "sent",
+      "telegram_message_id": 451
     },
     "extracted": {
       "company": "جهة إدارة وتنظيم فعاليات",
@@ -2544,8 +2547,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-29T21:52:37+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-29T21:54:29+00:00",
+      "status": "sent",
+      "telegram_message_id": 452
     },
     "extracted": {
       "company": "Schneider Electric",
@@ -2590,8 +2594,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-29T21:53:05+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-29T21:54:29+00:00",
+      "status": "sent",
+      "telegram_message_id": 453
     },
     "extracted": {
       "company": "Majma'a Alshaker | مجموعة شاكر",
@@ -2637,8 +2642,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-29T21:53:32+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-29T21:54:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 454
     },
     "extracted": {
       "company": "Al-Wajeeh Al-Muqawalat | الوجيه للمقاولات",
@@ -2688,8 +2694,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-10-29T21:53:51+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-29T21:54:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 455
     },
     "extracted": {
       "company": "المركز الوطني لنظم الموارد الحكومية",
@@ -4312,8 +4319,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-10-29T21:50:13+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-29T21:54:31+00:00",
+      "status": "sent",
+      "telegram_message_id": 456
     },
     "extracted": {
       "company": "Smart Code | سمارت كود",
