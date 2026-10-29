@@ -2395,6 +2395,338 @@
       "text": "🟡الفرصة رقم ٢٨٣٠\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nالهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا) تعلن فتح التقديم للجنسين في برنامج التدريب التعاوني لطلاب وطالبات الجامعات للفصل الدراسي الثاني لعام 1448هـ، متاح حالياً ويستمر لمدة أسبوع.\n\nhttps://athkax.sdaia.gov.sa/coop"
     }
   },
+  "cooptraning_inksa:4520": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-29T21:51:04+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Front Line | فرونت لاين للتسويق",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "لطلاب البكالوريوس والدبلوم\n\n​تعلن شركة فرونت لاين للتسويق عن توفر فرص تدريب تعاوني للطلاب والطالبات في مجالات التسويق والاعلام والصحافة وغيرها من المجالات المرتبطة.\n\nللتسجيل والدخول في مرحلة الفرز والمقابلات، يُرجى تعبئة البيانات عبر النموذج الرسمي:"
+      },
+      "evidence": {
+        "company": "فرونت لاين للتسويق",
+        "deadline": null,
+        "description": "لطلاب البكالوريوس والدبلوم\n\n​تعلن شركة فرونت لاين للتسويق عن توفر فرص تدريب تعاوني للطلاب والطالبات في مجالات التسويق والاعلام والصحافة وغيرها من المجالات المرتبطة.\n\nللتسجيل والدخول في مرحلة الفرز والمقابلات، يُرجى تعبئة البيانات عبر النموذج الرسمي:",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني في مجال التسويق والاعلام والفنون وغيرها",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScjaWH9WOAeeYr_LSuzZPgApzQtCB9NkU7NJoAMnnSUS_SCRw/viewform?usp=header"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://docs.google.com/forms/d/e/1FAIpQLScjaWH9WOAeeYr_LSuzZPgApzQtCB9NkU7NJoAMnnSUS_SCRw/viewform?usp=header"
+      ],
+      "message_id": 4520,
+      "permalink": "https://t.me/cooptraning_inksa/4520",
+      "posted_at": "2026-10-28T12:39:34+00:00",
+      "text": "🟡الفرصة رقم ٢٨٣٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرصة تدريب تعاوني في مجال التسويق والاعلام والفنون وغيرها\n\nلطلاب البكالوريوس والدبلوم\n\n​تعلن شركة فرونت لاين للتسويق عن توفر فرص تدريب تعاوني للطلاب والطالبات في مجالات التسويق والاعلام والصحافة وغيرها من المجالات المرتبطة.\n​للتسجيل والدخول في مرحلة الفرز والمقابلات، يُرجى تعبئة البيانات عبر النموذج الرسمي:\n🔗\nرابط النموذج"
+    }
+  },
+  "cooptraning_inksa:4522": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-29T21:51:30+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "مركز طفلي للرعاية النهارية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "🎯 التخصصات المتاحة:\n• التربية الخاصة\n• العلاج الوظيفي\n• العلاج الطبيعي\n• علاج النطق واللغة (التخاطب)\n• علم النفس والخدمة الاجتماعية\n• الإدارة والموارد البشرية"
+      },
+      "evidence": {
+        "company": "مركز طفلي للرعاية النهارية",
+        "deadline": null,
+        "description": "🎯 التخصصات المتاحة:\n• التربية الخاصة\n• العلاج الوظيفي\n• العلاج الطبيعي\n• علاج النطق واللغة (التخاطب)\n• علم النفس والخدمة الاجتماعية\n• الإدارة والموارد البشرية",
+        "location": "الرياض، حي البديعة"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني لطالبات الجامعات",
+      "type": "coop",
+      "url": "https://forms.gle/2BwGJjP62ndDVDVb7"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/2BwGJjP62ndDVDVb7"
+      ],
+      "message_id": 4522,
+      "permalink": "https://t.me/cooptraning_inksa/4522",
+      "posted_at": "2026-10-28T12:41:23+00:00",
+      "text": "🟡الفرصة رقم ٢٨٣٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nيعلن مركز طفلي للرعاية النهارية عن فتح باب التسجيل في برنامج التدريب التعاوني لطالبات الجامعات، لتكوني جزءاً من فريقنا. ✨\n\n🎯 التخصصات المتاحة:\n• التربية الخاصة\n• العلاج الوظيفي\n• العلاج الطبيعي\n• علاج النطق واللغة (التخاطب)\n• علم النفس والخدمة الاجتماعية\n• الإدارة والموارد البشرية\n\n📍 المقر: الرياض، حي البديعة (بيئة نسائية بالكامل)\n📩 للتقديم:\nيرجى تعبئة نموذج التسجيل من الرابط:\nhttps://forms.gle/2BwGJjP62ndDVDVb7"
+    }
+  },
+  "cooptraning_inksa:4525": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-29T21:52:21+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "جهة إدارة وتنظيم فعاليات",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن جهة إدارة وتنظيم فعاليات عن فتح باب التقديم لفرص التدريب التعاوني ,لإتاحة الفرصه للطلاب والطالبات لخوض تجربه عمليه, وتطوير مهاراتهم، وأكتساب خبره مهنيه ضمن بيئة عمل إبداعية في عالم الفعاليات."
+      },
+      "evidence": {
+        "company": "جهة إدارة وتنظيم فعاليات",
+        "deadline": null,
+        "description": "تعلن جهة إدارة وتنظيم فعاليات عن فتح باب التقديم لفرص التدريب التعاوني ,لإتاحة الفرصه للطلاب والطالبات لخوض تجربه عمليه, وتطوير مهاراتهم، وأكتساب خبره مهنيه ضمن بيئة عمل إبداعية في عالم الفعاليات.",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرص التدريب التعاوني",
+      "type": "coop",
+      "url": "https://hickory-erica-14c.notion.site/3983c75acad580de9c51d301673af430"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://hickory-erica-14c.notion.site/3983c75acad580de9c51d301673af430"
+      ],
+      "message_id": 4525,
+      "permalink": "https://t.me/cooptraning_inksa/4525",
+      "posted_at": "2026-10-28T12:43:02+00:00",
+      "text": "🟡الفرصة رقم ٢٨٣٧\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 تعلن جهة إدارة وتنظيم فعاليات عن فتح باب التقديم لفرص التدريب التعاوني ,لإتاحة الفرصه للطلاب والطالبات لخوض تجربه عمليه, وتطوير مهاراتهم، وأكتساب خبره مهنيه ضمن بيئة عمل إبداعية في عالم الفعاليات.\n\n📍الموقع : الرياض\n\nالتخصصات المطلوبه :\n- جرافيك ديزاين\n- ادارة فعاليات\n- سياحة وادارة مشاريع\n- ادارة مشاريع\n- علاقات عامه وتسويق\n- ادارة اعمال\n- سياحه وضيافه\n- صحافه رقميه\n- سياحه وسفر\n- اعلان واتصال تسويقي\n- نظم معلومات اداريه\n\n⏪️ للتقديم عبر الرابط Notion"
+    }
+  },
+  "cooptraning_inksa:4527": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-29T21:52:37+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Schneider Electric",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "شركة شنايدر إلكتريك",
+        "deadline": null,
+        "description": null,
+        "location": "الرياض، الدمام، والخبر."
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia; Dammam, Saudi Arabia; Khobar, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Cooperative Training Program",
+      "type": "coop",
+      "url": "http://spr.ly/6047BHYYOF"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "http://spr.ly/6047BHYYOF",
+        "http://spr.ly/6041BHYYOf"
+      ],
+      "message_id": 4527,
+      "permalink": "https://t.me/cooptraning_inksa/4527",
+      "posted_at": "2026-10-28T12:44:37+00:00",
+      "text": "🟡الفرصة رقم ٢٨٣٩\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nبرنامج التدريب التعاوني في شركة شنايدر إلكتريك.\n\n📍 الرياض، الدمام، والخبر.\n\nالتفاصيل والتقديم👇🏻:\nالرياض: ⁦ spr.ly/6047BHYYOF⁩\nالدمام والخبر: ⁦ spr.ly/6041BHYYOf⁩"
+    }
+  },
+  "cooptraning_inksa:4529": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-29T21:53:05+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Majma'a Alshaker | مجموعة شاكر",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "برنامج التدريب التعاوني في مجال التكييف والتهوية هو رحلة تطوير منظمة مدتها 6 أشهر مصممة لطلاب الهندسة لسد الفجوة بين المعرفة الأكاديمية والتطبيق العملي في العالم الحقيقي.\n\nالشروط\n• طالب في السنة النهائية في الهندسة الميكانيكية أو الهندسة الكهربائية أو مجال ذي صلة\n• الحد الأدنى للمعدل التراكمي هو 2.5/4.0 أو 3.5/5.0\n• يجب أن يكون التدريب التعاوني جزءًا من متطلبات تخرج المتقدم.\n• إتقان اللغة الإنجليزية من المستوى المتوسط إلى المتقدم\n• مهارات تواصل وتفاعل شخصي قوية\n• يجب أن يكون المتقدمون حاصلين على الجنسية السعودية."
+      },
+      "evidence": {
+        "company": "#مجموعة_شاكر",
+        "deadline": null,
+        "description": "برنامج التدريب التعاوني في مجال التكييف والتهوية هو رحلة تطوير منظمة مدتها 6 أشهر مصممة لطلاب الهندسة لسد الفجوة بين المعرفة الأكاديمية والتطبيق العملي في العالم الحقيقي.\n\nالشروط\n• طالب في السنة النهائية في الهندسة الميكانيكية أو الهندسة الكهربائية أو مجال ذي صلة\n• الحد الأدنى للمعدل التراكمي هو 2.5/4.0 أو 3.5/5.0\n• يجب أن يكون التدريب التعاوني جزءًا من متطلبات تخرج المتقدم.\n• إتقان اللغة الإنجليزية من المستوى المتوسط إلى المتقدم\n• مهارات تواصل وتفاعل شخصي قوية\n• يجب أن يكون المتقدمون حاصلين على الجنسية السعودية.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني الهندسي",
+      "type": "coop",
+      "url": "https://hunt.kayanhr.com/JobDetails/JobPostDetails/cTllU1JyeVlNUVNScTdFRnZsTGRFZz09/QXcyek9pSFRVdzJjYzQsU1daNldVZ3hRV0Z5UWpZMGVEazRTa0pUYURkblVUMDk%3D"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://hunt.kayanhr.com/JobDetails/JobPostDetails/cTllU1JyeVlNUVNScTdFRnZsTGRFZz09/QXcyek9pSFRVdzJjYzQsU1daNldVZ3hRV0Z5UWpZMGVEazRTa0pUYURkblVUMDk%3D"
+      ],
+      "message_id": 4529,
+      "permalink": "https://t.me/cooptraning_inksa/4529",
+      "posted_at": "2026-10-28T12:47:21+00:00",
+      "text": "🟡الفرصة رقم ٢٨٤١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن ⁧ #مجموعة_شاكر⁩ عن برنامج التدريب التعاوني الهندسي\n\n• برنامج التدريب التعاوني في مجال التكييف والتهوية هو رحلة تطوير منظمة مدتها 6 أشهر مصممة لطلاب الهندسة لسد الفجوة بين المعرفة الأكاديمية والتطبيق العملي في العالم الحقيقي.\n\nالشروط\n• طالب في السنة النهائية في الهندسة الميكانيكية أو الهندسة الكهربائية أو مجال ذي صلة\n• الحد الأدنى للمعدل التراكمي هو 2.5/4.0 أو 3.5/5.0\n• يجب أن يكون التدريب التعاوني جزءًا من متطلبات تخرج المتقدم.\n• إتقان اللغة الإنجليزية من المستوى المتوسط إلى المتقدم\n• مهارات تواصل وتفاعل شخصي قوية\n• يجب أن يكون المتقدمون حاصلين على الجنسية السعودية.\n\nالتقديم : عن طريق موقع الشركة من الرابط التالي https://hunt.kayanhr.com/JobDetails/JobPostDetails/cTllU1JyeVlNUVNScTdFRnZsTGRFZz09/QXcyek9pSFRVdzJjYzQsU1daNldVZ3hRV0Z5UWpZMGVEazRTa0pUYURkblVUMDk%3D"
+    }
+  },
+  "cooptraning_inksa:4533": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-29T21:53:32+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Al-Wajeeh Al-Muqawalat | الوجيه للمقاولات",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "نعلن شركة الوجيه للمقاولات في منطقة عسير عن فتح باب التدريب التعاوني لخريجين الترم الثاني بعدة مجالات ( فني - هندسة - اداري)"
+      },
+      "evidence": {
+        "company": "الوجيه للمقاولات",
+        "deadline": null,
+        "description": "نعلن شركة الوجيه للمقاولات في منطقة عسير عن فتح باب التدريب التعاوني لخريجين الترم الثاني بعدة مجالات ( فني - هندسة - اداري)",
+        "location": "منطقة عسير"
+      },
+      "is_opportunity": true,
+      "location": "Asir, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني لخريجين الترم الثاني",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScewTBvQKEIviIJ2oZGro2upRF2CXjSC800IXo_E4-BKdxH3A/viewform"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://docs.google.com/forms/d/e/1FAIpQLScewTBvQKEIviIJ2oZGro2upRF2CXjSC800IXo_E4-BKdxH3A/viewform"
+      ],
+      "message_id": 4533,
+      "permalink": "https://t.me/cooptraning_inksa/4533",
+      "posted_at": "2026-10-28T12:52:22+00:00",
+      "text": "🟡الفرصة رقم ٢٨٤٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nنعلن شركة الوجيه للمقاولات في منطقة عسير عن فتح باب التدريب التعاوني لخريجين الترم الثاني بعدة مجالات ( فني - هندسة - اداري)\n\nلتسجيل عبر الاستبيان التالي\n\nhttps://docs.google.com/forms/d/e/1FAIpQLScewTBvQKEIviIJ2oZGro2upRF2CXjSC800IXo_E4-BKdxH3A/viewform"
+    }
+  },
+  "cooptraning_inksa:4534": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "التخصصات:-\nعلوم الحاسب\nتقنية معلومات\nأمن سيبراني\nنظم معلومات\nنظم إدارية\nموارد بشرية\nتسويق\nعلاقات عامة\nجرافيك\nإدارة أعمال\nقانون"
+        }
+      },
+      "existing_index": 159,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-10-29T21:53:51+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "المركز الوطني لنظم الموارد الحكومية",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات:-\nعلوم الحاسب\nتقنية معلومات\nأمن سيبراني\nنظم معلومات\nنظم إدارية\nموارد بشرية\nتسويق\nعلاقات عامة\nجرافيك\nإدارة أعمال\nقانون"
+      },
+      "evidence": {
+        "company": "#المركز_الوطني_لنظم_الموارد_الحكومية",
+        "deadline": null,
+        "description": "التخصصات:-\nعلوم الحاسب\nتقنية معلومات\nأمن سيبراني\nنظم معلومات\nنظم إدارية\nموارد بشرية\nتسويق\nعلاقات عامة\nجرافيك\nإدارة أعمال\nقانون",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://career-sa20.hr.cloud.sap/sfcareer/jobreqcareer?jobId=1462&company=national15"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://career-sa20.hr.cloud.sap/sfcareer/jobreqcareer?jobId=1462&company=national15"
+      ],
+      "message_id": 4534,
+      "permalink": "https://t.me/cooptraning_inksa/4534",
+      "posted_at": "2026-10-28T12:53:19+00:00",
+      "text": "🟡الفرصة رقم ٢٨٤٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n🔴| مركز حكومي - ينتهى قريبا\n\nيعلن ⁧ #المركز_الوطني_لنظم_الموارد_الحكومية⁩ عن برنامج التدريب التعاوني - استكشف\n\nالتخصصات:-\nعلوم الحاسب\nتقنية معلومات\nأمن سيبراني\nنظم معلومات\nنظم إدارية\nموارد بشرية\nتسويق\nعلاقات عامة\nجرافيك\nإدارة أعمال\nقانون\n\nhttps://career-sa20.hr.cloud.sap/sfcareer/jobreqcareer?jobId=1462&company=national15"
+    }
+  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
@@ -3966,6 +4298,56 @@
       "permalink": "https://t.me/nobthacv1/2214",
       "posted_at": "2026-10-27T23:56:42+00:00",
       "text": "🎓 #فرص_تدريبية | #الرياض\n\nتعلن أمازون (Amazon) عن توفر فرصة متدرب موارد بشرية — عمليات أمازون ٢٠٢٧ (2027 HR Intern, Amazon Operations)، لاكتساب خبرة عملية في وظائف الموارد البشرية.\n\nأبرز مجالات التدريب:\n\n• علاقات الموظفين والتواصل الداخلي.\n• التدريب والتطوير والتعويضات.\n• تحليل بيانات القوى العاملة وإعداد التقارير.\n• دعم العمليات اليومية وتحسين الإجراءات.\n\nالمتطلبات:\n\n• دراسة البكالوريوس أو الماجستير، على أن يكون موعد التخرج بين ديسمبر ٢٠٢٧م ويونيو ٢٠٢٨م.\n• إجادة متقدمة للغة الإنجليزية تحدثًا وكتابةً.\n• التفرغ بدوام كامل لمدة ٣ إلى ٦ أشهر، بواقع ٤٠ ساعة أسبوعيًا.\n• إمكانية بدء التدريب خلال الفترة من يناير إلى ديسمبر ٢٠٢٧م.\n• امتلاك الحق النظامي للعمل في بلد التدريب عند بدء البرنامج.\n\nمدة التدريب:\n٣ إلى ٦ أشهر.\n\nللتقديم:\nعبر موقع أمازون"
+    }
+  },
+  "nobthacv1:2219": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "نستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.\n\nالتخصصات المطلوبة:\n\n• التسويق\n• العلاقات العامة\n• الذكاء الاصطناعي\n• تقنيه المعلومات (IT)\n• الموارد البشرية (HR)"
+        }
+      },
+      "existing_index": 185,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-10-29T21:50:13+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Smart Code | سمارت كود",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "نستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.\n\nالتخصصات المطلوبة:\n\n• التسويق\n• العلاقات العامة\n• الذكاء الاصطناعي\n• تقنيه المعلومات (IT)\n• الموارد البشرية (HR)"
+      },
+      "evidence": {
+        "company": "سمارت كود",
+        "deadline": null,
+        "description": "نستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://smartcode.sa/training"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://smartcode.sa/training"
+      ],
+      "message_id": 2219,
+      "permalink": "https://t.me/nobthacv1/2219",
+      "posted_at": "2026-10-28T17:20:20+00:00",
+      "text": "سمارت كود | Smart Code\n\nنستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.\n\nالتخصصات المطلوبة:\n\n• التسويق\n• العلاقات العامة\n• الذكاء الاصطناعي\n• تقنيه المعلومات (IT)\n• الموارد البشرية (HR)\n\n📍مقر التدريب : الرياض\n\n📩 للتقديم : https://smartcode.sa/training"
     }
   }
 }
