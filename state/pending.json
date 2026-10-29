@@ -2162,54 +2162,6 @@
       "text": "🎓 #التدريب_التعاوني | #الرياض\n\nتعلن مجموعة بوسطن الاستشارية (BCG) عن برنامج المستشار الزائر (Visiting Associate)، للعمل ضمن فرق الاستشارات والمشاركة في مشاريع فعلية مع العملاء.\n\nالمتطلبات:\n\n• طالب بكالوريوس منتظم في جامعة داخل السعودية.\n• موعد التخرج المتوقع بين مايو ٢٠٢٧م ويناير ٢٠٢٨م، بعد إتمام التدريب.\n• التفرغ للتدريب لمدة ٤ إلى ٧ أشهر.\n• مهارات التحليل والتفكير النقدي وحل المشكلات.\n• إجادة اللغة الإنجليزية تحدثًا وكتابةً.\n• القدرة على العمل الجماعي والتكيف مع المشاريع المختلفة.\n\nالمزايا:\n\n• تدريب مدفوع بمقابل تنافسي.\n• المشاركة في مشاريع استشارية فعلية.\n• التدريب والتوجيه وتطوير المهارات المهنية.\n\nمدة التدريب:\n٤ إلى ٧ أشهر، وفق متطلبات الجامعة.\n\nالمستندات المطلوبة بالإنجليزية:\n\n• السيرة الذاتية.\n• خطاب التقديم.\n• السجل الأكاديمي.\n\nللتقديم:\nعبر موقع BCG"
     }
   },
-  "SALTRAI:5919": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-10-29T02:32:14+00:00",
-      "status": "sent",
-      "telegram_message_id": 445
-    },
-    "extracted": {
-      "company": "Schneider Electric",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "▪️الهندسة الكهربائية.\n▪️الهندسة الصناعية.\n▪️هندسة الأجهزة والتحكم.\n▪️هندسة الأمن السيبراني."
-      },
-      "evidence": {
-        "company": "شركة شنايدر إلكتريك",
-        "deadline": null,
-        "description": "▪️الهندسة الكهربائية.\n▪️الهندسة الصناعية.\n▪️هندسة الأجهزة والتحكم.\n▪️هندسة الأمن السيبراني.",
-        "location": "الرياض والدمام والخبر"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia; Dammam, Saudi Arabia; Khobar, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني - COOP لعام 2027",
-      "type": "coop",
-      "url": "https://wdeftksa.com/sa/jobs/100879"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://api.whatsapp.com/send?text=%D8%B4%D8%B1%D9%83%D8%A9+%D8%B4%D9%86%D8%A7%D9%8A%D8%AF%D8%B1+%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%8A%D9%83+%D8%AA%D8%B9%D9%84%D9%86+%D8%A8%D8%AF%D8%A1+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85+%D8%B9%D9%84%D9%89+%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC+%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A+%D9%81%D9%8A+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6+%D9%88%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85+%D9%88%D8%A7%D9%84%D8%AE%D8%A8%D8%B1+-+https%3A%2F%2Fwww.wdeftksa.com%2Fsa%2Fjobs%2F100879+-+%D8%B1%D8%A7%D8%A8%D8%B7+%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85%3A+https%3A%2F%2Ft.me%2Fcd4cd",
-        "https://wdeftksa.com/sa/jobs/100879"
-      ],
-      "message_id": 5919,
-      "permalink": "https://t.me/SALTRAI/5919",
-      "posted_at": "2026-10-28T10:25:07+00:00",
-      "text": "🔴 | شركة شنايدر إلكتريك تعلن بدء التقديم للجنسين على برنامج (التدريب التعاوني - COOP) لعام 2027 في (الرياض والدمام والخبر) في التخصصات:\n\n▪️الهندسة الكهربائية.\n▪️الهندسة الصناعية.\n▪️هندسة الأجهزة والتحكم.\n▪️هندسة الأمن السيبراني.\n\n🔗 انشر الخبر عبر (whatsapp):\nاضغط هنا\n\n↩️ للتقديم (https://wdeftksa.com/sa/jobs/100879)"
-    }
-  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",

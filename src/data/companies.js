@@ -1639,6 +1639,15 @@ const companyRecords = [
     description: {"ar": "التخصصات :\nلم يتم تحديد تخصصات معينة\n\nالمتطلبات :\nسعودي الجنسية\nطالب متوقع تخرجه\nمعدل تراكمي جيد جدًا\nخطاب من الجامعة\nأن يكون التدريب التعاوني في الفصل الأول أو الثاني أو الصيفي\n\nمدة التدريب:\nحسب الفصل الأكاديمي (أول / ثاني / صيفي)\n\nالمزايا:\nمكافأة شهرية 1,500 ريال\nتوفير جهاز Laptop/PC طوال فترة التدريب\nشهادة خبرة من لومي بعد إتمام التدريب", "en": "Specialties :\nNo specific specialties selected\n\nRequirements :\nSaudi National\nA student expected to graduate\nVery good GPA\nLetter from the University\nThe cooperative training should be in the first, second or summer semester\n\nDuration of training:\nBy Academic Semester (First / Second / Summer)\n\nAdvantages:\nA monthly bonus of 1,500 riyals\nProvide a Laptop/PC throughout the training period\nExperience certificate from Lome after completing the training"},
     requiresLetter: true,
     addedAt: "2026-10-27T14:21:18+03:00",
+  },
+  {
+    name: "Schneider Electric",
+    logo: {"domain": "schneider-electric.com", "file": "schneider-electric.webp"},
+    location: "Riyadh, Saudi Arabia; Dammam, Saudi Arabia; Khobar, Saudi Arabia",
+    applicationLink: "https://wdeftksa.com/sa/jobs/100879",
+    type: "CO-OP Training",
+    description: {"ar": "▪️الهندسة الكهربائية.\n▪️الهندسة الصناعية.\n▪️هندسة الأجهزة والتحكم.\n▪️هندسة الأمن السيبراني.", "en": "▪️Electrical Engineering.\nIndustrial ▪️Engineering.\n▪️Instrumentation and Control Engineering.\nCybersecurity ▪️Engineering."},
+    addedAt: "2026-10-29T15:26:43+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
