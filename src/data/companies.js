@@ -1648,6 +1648,15 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "▪️الهندسة الكهربائية.\n▪️الهندسة الصناعية.\n▪️هندسة الأجهزة والتحكم.\n▪️هندسة الأمن السيبراني.", "en": "▪️Electrical Engineering.\nIndustrial ▪️Engineering.\n▪️Instrumentation and Control Engineering.\nCybersecurity ▪️Engineering."},
     addedAt: "2026-10-29T15:26:43+03:00",
+  },
+  {
+    name: "BCG",
+    logo: {"domain": "careers.bcg.com", "file": "bcg.png"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://careers.bcg.com/global/en/locations/saudi-arabia/visiting-associate",
+    type: "CO-OP Training",
+    description: {"ar": "تعلن مجموعة بوسطن الاستشارية (BCG) عن برنامج المستشار الزائر (Visiting Associate)، للعمل ضمن فرق الاستشارات والمشاركة في مشاريع فعلية مع العملاء.\n\nالمتطلبات:\n\n• طالب بكالوريوس منتظم في جامعة داخل السعودية.\n• موعد التخرج المتوقع بين مايو 2027م ويناير 2028م، بعد إتمام التدريب.\n• التفرغ للتدريب لمدة 4 إلى 7 أشهر.\n• مهارات التحليل والتفكير النقدي وحل المشكلات.\n• إجادة اللغة الإنجليزية تحدثًا وكتابةً.\n• القدرة على العمل الجماعي والتكيف مع المشاريع المختلفة.\n\nالمزايا:\n\n• تدريب مدفوع بمقابل تنافسي.\n• المشاركة في مشاريع استشارية فعلية.\n• التدريب والتوجيه وتطوير المهارات المهنية.\n\nمدة التدريب:\n4 إلى 7 أشهر، وفق متطلبات الجامعة.\n\nالمستندات المطلوبة بالإنجليزية:\n\n• السيرة الذاتية.\n• خطاب التقديم.\n• السجل الأكاديمي.\n\nللتقديم:\nعبر موقع BCG", "en": "Boston Consulting Group (BCG) announces the Visiting Associate program, to work within consulting teams and participate in actual projects with clients.\n\nPrerequisite:\n\n• A regular bachelor student at a university within Saudi Arabia.\n• The expected graduation date is between May 2027 and January 2028, after completing the training.\n• Full-time training for 4 to 7 months.\n• Analytical, critical thinking and problem-solving skills.\n• Fluency in spoken and written English.\n• Ability to work together and adapt to different projects.\n\nAdvantages:\n\n• Competitively paid training.\n• Participate in actual consulting projects.\n• Training, mentoring and professional skills development.\n\nDuration of training:\n4 to 7 months, as per university requirements.\n\nDocuments Required in English:\n\n• Curriculum Vitae.\n• Letter of introduction.\n• Academic record.\n\nTo apply:\nVia BCG website"},
+    addedAt: "2026-10-29T15:27:20+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
