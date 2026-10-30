@@ -2115,6 +2115,53 @@
       "text": "🎓 #التدريب_التعاوني\n\nتعلن الهيئة السعودية للمقيّمين المعتمدين «تقييم» عن توفر فرص تدريب تعاوني بدوام كامل في المجالات التالية:\n\n١. الموارد البشرية\n\nالتخصصات المستهدفة:\n\n• الموارد البشرية أو أحد التخصصات ذات الصلة.\n\nللتقديم:\nتدريب تعاوني — موارد بشرية\n—————————————-\n٢. التصميم الجرافيكي\n\nالتخصصات المستهدفة:\n• التصميم الجرافيكي والوسائط الرقمية.\n\nللتقديم:\nتدريب تعاوني — مصمم جرافيك"
     }
   },
+  "SALTRAI:5920": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-30T15:58:41+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Schneider Electric",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات:\n– الهندسة الكهربائية.\n– الهندسة الصناعية.\n– هندسة الأجهزة والتحكم.\n– هندسة الأمن السيبراني.\n\nيبدأ التدريب في شهر يناير 2027م."
+      },
+      "evidence": {
+        "company": "شركة شنايدر إلكتريك السعودية",
+        "deadline": null,
+        "description": "التخصصات:\n– الهندسة الكهربائية.\n– الهندسة الصناعية.\n– هندسة الأجهزة والتحكم.\n– هندسة الأمن السيبراني.\n\nيبدأ التدريب في شهر يناير 2027م.",
+        "location": "في شركة شنايدر إلكتريك السعودية بالرياض والدمام والخبر"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia; Dammam, Saudi Arabia; Khobar, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://careers.se.com/event-6057/talentcommunity/form"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://careers.se.com/event-6057/talentcommunity/form",
+        "https://careers.se.com/event-6058/talentcommunity/form"
+      ],
+      "message_id": 5920,
+      "permalink": "https://t.me/SALTRAI/5920",
+      "posted_at": "2026-10-30T10:22:25+00:00",
+      "text": "تدريب تعاوني في شركة شنايدر إلكتريك السعودية بالرياض والدمام والخبر\n\nالتخصصات:\n– الهندسة الكهربائية.\n– الهندسة الصناعية.\n– هندسة الأجهزة والتحكم.\n– هندسة الأمن السيبراني.\n\nتدريب الرياض:\n\nيبدأ التدريب في شهر يناير 2027م.\n\nhttps://careers.se.com/event-6057/talentcommunity/form\n\nتدريب الخبر\n\nhttps://careers.se.com/event-6058/talentcommunity/form"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
@@ -4404,6 +4451,103 @@
       "permalink": "https://t.me/nobthacv1/2220",
       "posted_at": "2026-10-28T17:20:23+00:00",
       "text": "🎓 #التدريب_التعاوني | #الرياض #الدمام #الخبر\n\nشركة شنايدر إلكتريك (Schneider Electric) تعلن عن فتح باب التقديم على برنامج التدريب التعاوني NextGen Seed لعام 2027 لطلاب وطالبات الجامعات في عدد من التخصصات الهندسية.\n\nالتخصصات:\n• الهندسة الكهربائية.\n• الهندسة الصناعية.\n• هندسة الأجهزة والتحكم.\n• هندسة الأمن السيبراني.\n\nموعد بدء التدريب:\n• يناير 2027.\n\nمدن التدريب:\n• الرياض.\n• الدمام.\n• الخبر.\n\n• التقديم على فرص الرياض\n\n• التقديم على فرص الدمام والخبر"
+    }
+  },
+  "nobthacv1:2222": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "التخصصات المطلوبة\n• الهندسة الكهربائية.\n• الهندسة الميكانيكية.\n• الهندسة الصناعية.\n• الموارد البشرية.\n• المحاسبة.\n• التسويق.\n\nشروط القبول\n• معدل تراكمي لا يقل عن 3 من 4 أو 4 من 5.\n• تقديم خطاب تدريب رسمي من الجامعة.\n• إجادة اللغة الإنجليزية تحدثًا وكتابةً.\n• الدراسة في أحد التخصصات المحددة للبرنامج."
+        },
+        "requiresLetter": true
+      },
+      "existing_index": 157,
+      "reason": "a newer repost of this exact posting has different details"
+    },
+    "delivery": {
+      "queued_at": "2026-10-30T15:58:45+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "AlFanar",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات المطلوبة\n• الهندسة الكهربائية.\n• الهندسة الميكانيكية.\n• الهندسة الصناعية.\n• الموارد البشرية.\n• المحاسبة.\n• التسويق.\n\nشروط القبول\n• معدل تراكمي لا يقل عن 3 من 4 أو 4 من 5.\n• تقديم خطاب تدريب رسمي من الجامعة.\n• إجادة اللغة الإنجليزية تحدثًا وكتابةً.\n• الدراسة في أحد التخصصات المحددة للبرنامج."
+      },
+      "evidence": {
+        "company": "AlFanarP",
+        "deadline": null,
+        "description": "التخصصات المطلوبة\n• الهندسة الكهربائية.\n• الهندسة الميكانيكية.\n• الهندسة الصناعية.\n• الموارد البشرية.\n• المحاسبة.\n• التسويق.\n\nشروط القبول\n• معدل تراكمي لا يقل عن 3 من 4 أو 4 من 5.\n• تقديم خطاب تدريب رسمي من الجامعة.\n• إجادة اللغة الإنجليزية تحدثًا وكتابةً.\n• الدراسة في أحد التخصصات المحددة للبرنامج.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": null,
+      "type": "coop",
+      "url": "https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&company=AlFanarP&st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=30557&amp;company=AlFanarP&amp;st=5A82677C52E835DA6435BB36583AC1C9668C9A58"
+      ],
+      "message_id": 2222,
+      "permalink": "https://t.me/nobthacv1/2222",
+      "posted_at": "2026-10-30T12:02:08+00:00",
+      "text": "#التدريب_التعاوني\n\nالتخصصات المطلوبة\n• الهندسة الكهربائية.\n• الهندسة الميكانيكية.\n• الهندسة الصناعية.\n• الموارد البشرية.\n• المحاسبة.\n• التسويق.\n\nشروط القبول\n• معدل تراكمي لا يقل عن 3 من 4 أو 4 من 5.\n• تقديم خطاب تدريب رسمي من الجامعة.\n• إجادة اللغة الإنجليزية تحدثًا وكتابةً.\n• الدراسة في أحد التخصصات المحددة للبرنامج.\n\nللتقديم_______________"
+    }
+  },
+  "nobthacv1:2223": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-30T15:59:01+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Waad Academy | أكاديمية وعد",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "• نوع الفرصة: تدريب تعاوني.\n• مقر التدريب: جدة.\n• نمط التدريب: حضوري داخل أكاديمية وعد.\nالتخصصات المطلوبة\n• إدارة الأعمال.\n• الإدارة العامة.\nشروط القبول\n• تقديم خطاب رسمي من الجامعة يؤكد متطلب التدريب التعاوني.\n• أن يكون التدريب جزءًا من المتطلبات الأكاديمية للتخرج.\n• امتلاك مهارات جيدة في التنظيم والتواصل.\n• القدرة على التنسيق والتنظيم وتنفيذ المهام الإدارية المسندة."
+      },
+      "evidence": {
+        "company": "أكاديمية وعد",
+        "deadline": null,
+        "description": "• نوع الفرصة: تدريب تعاوني.\n• مقر التدريب: جدة.\n• نمط التدريب: حضوري داخل أكاديمية وعد.\nالتخصصات المطلوبة\n• إدارة الأعمال.\n• الإدارة العامة.\nشروط القبول\n• تقديم خطاب رسمي من الجامعة يؤكد متطلب التدريب التعاوني.\n• أن يكون التدريب جزءًا من المتطلبات الأكاديمية للتخرج.\n• امتلاك مهارات جيدة في التنظيم والتواصل.\n• القدرة على التنسيق والتنظيم وتنفيذ المهام الإدارية المسندة.",
+        "location": "جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://apply.workable.com/waad-education/j/C904ACCAAE/"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://apply.workable.com/waad-education/j/C904ACCAAE/"
+      ],
+      "message_id": 2223,
+      "permalink": "https://t.me/nobthacv1/2223",
+      "posted_at": "2026-10-30T12:03:46+00:00",
+      "text": "تفاصيل التدريب\n• نوع الفرصة: تدريب تعاوني.\n• مقر التدريب: جدة.\n• نمط التدريب: حضوري داخل أكاديمية وعد.\nالتخصصات المطلوبة\n• إدارة الأعمال.\n• الإدارة العامة.\nشروط القبول\n• تقديم خطاب رسمي من الجامعة يؤكد متطلب التدريب التعاوني.\n• أن يكون التدريب جزءًا من المتطلبات الأكاديمية للتخرج.\n• امتلاك مهارات جيدة في التنظيم والتواصل.\n• القدرة على التنسيق والتنظيم وتنفيذ المهام الإدارية المسندة.\n\nhttps://apply.workable.com/waad-education/j/C904ACCAAE/"
     }
   }
 }
