@@ -4366,8 +4366,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-30T01:59:40+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-30T01:59:58+00:00",
+      "status": "sent",
+      "telegram_message_id": 457
     },
     "extracted": {
       "company": "Schneider Electric",
