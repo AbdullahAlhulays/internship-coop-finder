@@ -2123,8 +2123,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-30T15:58:41+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-30T15:59:05+00:00",
+      "status": "sent",
+      "telegram_message_id": 458
     },
     "extracted": {
       "company": "Schneider Electric",
@@ -4466,8 +4467,9 @@
       "reason": "a newer repost of this exact posting has different details"
     },
     "delivery": {
-      "queued_at": "2026-10-30T15:58:45+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-30T15:59:05+00:00",
+      "status": "sent",
+      "telegram_message_id": 459
     },
     "extracted": {
       "company": "AlFanar",
@@ -4512,8 +4514,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-10-30T15:59:01+00:00",
-      "status": "queued"
+      "sent_at": "2026-10-30T15:59:06+00:00",
+      "status": "sent",
+      "telegram_message_id": 460
     },
     "extracted": {
       "company": "Waad Academy | أكاديمية وعد",
