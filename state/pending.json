@@ -4357,5 +4357,52 @@
       "posted_at": "2026-10-28T17:20:20+00:00",
       "text": "سمارت كود | Smart Code\n\nنستقبل الكفاءات الواعدة للتدريب التعاوني، ونمنحهم فرصة للتعلّم والتطوير واكتساب الخبرة العملية.\n\nالتخصصات المطلوبة:\n\n• التسويق\n• العلاقات العامة\n• الذكاء الاصطناعي\n• تقنيه المعلومات (IT)\n• الموارد البشرية (HR)\n\n📍مقر التدريب : الرياض\n\n📩 للتقديم : https://smartcode.sa/training"
     }
+  },
+  "nobthacv1:2220": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-10-30T01:59:40+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Schneider Electric",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "شركة شنايدر إلكتريك (Schneider Electric) تعلن عن فتح باب التقديم على برنامج التدريب التعاوني NextGen Seed لعام 2027 لطلاب وطالبات الجامعات في عدد من التخصصات الهندسية.\n\nالتخصصات:\n• الهندسة الكهربائية.\n• الهندسة الصناعية.\n• هندسة الأجهزة والتحكم.\n• هندسة الأمن السيبراني.\n\nموعد بدء التدريب:\n• يناير 2027.\n\nمدن التدريب:\n• الرياض.\n• الدمام.\n• الخبر."
+      },
+      "evidence": {
+        "company": "شركة شنايدر إلكتريك (Schneider Electric)",
+        "deadline": null,
+        "description": "شركة شنايدر إلكتريك (Schneider Electric) تعلن عن فتح باب التقديم على برنامج التدريب التعاوني NextGen Seed لعام 2027 لطلاب وطالبات الجامعات في عدد من التخصصات الهندسية.\n\nالتخصصات:\n• الهندسة الكهربائية.\n• الهندسة الصناعية.\n• هندسة الأجهزة والتحكم.\n• هندسة الأمن السيبراني.\n\nموعد بدء التدريب:\n• يناير 2027.\n\nمدن التدريب:\n• الرياض.\n• الدمام.\n• الخبر.",
+        "location": "الرياض #الدمام #الخبر"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia; Dammam, Saudi Arabia; Khobar, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني NextGen Seed لعام 2027",
+      "type": "coop",
+      "url": "https://careers.se.com/event-6057/talentcommunity/form?lang=en-US&utm_source=facebook&utm_medium=organic_social&utm_campaign=2026_oct_sa_allbu_etech&campaign_objective=awareness&mcl_name=etech"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://careers.se.com/event-6057/talentcommunity/form?lang=en-US&amp;utm_source=facebook&amp;utm_medium=organic_social&amp;utm_campaign=2026_oct_sa_allbu_etech&amp;campaign_objective=awareness&amp;mcl_name=etech",
+        "https://careers.se.com/event-6058/talentcommunity/form"
+      ],
+      "message_id": 2220,
+      "permalink": "https://t.me/nobthacv1/2220",
+      "posted_at": "2026-10-28T17:20:23+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض #الدمام #الخبر\n\nشركة شنايدر إلكتريك (Schneider Electric) تعلن عن فتح باب التقديم على برنامج التدريب التعاوني NextGen Seed لعام 2027 لطلاب وطالبات الجامعات في عدد من التخصصات الهندسية.\n\nالتخصصات:\n• الهندسة الكهربائية.\n• الهندسة الصناعية.\n• هندسة الأجهزة والتحكم.\n• هندسة الأمن السيبراني.\n\nموعد بدء التدريب:\n• يناير 2027.\n\nمدن التدريب:\n• الرياض.\n• الدمام.\n• الخبر.\n\n• التقديم على فرص الرياض\n\n• التقديم على فرص الدمام والخبر"
+    }
   }
 }
