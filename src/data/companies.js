@@ -1285,6 +1285,7 @@ const companyRecords = [
     addedAt: "2026-10-18T14:17:19+03:00",
   },
   {
+    contentUpdatedAt: "2026-10-31T12:30:13+03:00",
     name: "المركز_الوطني_لنظم الموارد الحكومية",
     logo: {"domain": "career-sa20.hr.cloud.sap", "file": "career-sa20.ico"},
     location: "Riyadh, Saudi Arabia",
@@ -1292,7 +1293,7 @@ const companyRecords = [
     pageSlug: "company-8",
     deadline: "2026-10-31",
     type: "CO-OP Training",
-    description: {"ar": "يعلن المركز_الوطني_لنظم الموارد الحكومية عن بدء التسجيل في برنامج التدريب التعاوني \"استكشف\" لعام 2027م؛ للإسهام في تعزيز الجاهزية المهنية للكفاءات الوطنية.\n\n:التخصصات المطلوبة\nعلوم الكمبيوتر، تكنولوجيا المعلومات، الأمن السيبراني، نظم المعلومات، نظم المعلومات الإدارية، الموارد البشرية، التسويق،\n\nالعلاقات العامة، التصميم الجرافيكي، إدارة الأعمال، القانون\n\n:الشروط\nمواطن سعودي\nيجب ألا يقل المتوسط التراكمي عن (3.5) من (5) أو (2.5) من (4)\n. لاجتياز جميع المواد والتدريب بدوام كامل\nيجب أن تكون مدة التدريب شهرين بحد أدنى ستة أشهر كحد أقصى\nيجب أن يكون التدريب 8 ساعات في اليوم، 5 أيام في الأسبوع\n• اجتياز المقابلة الشخصية بنجاح", "en": "The National Center for Government Resource Systems announces the start of registration in the cooperative training program \"Explore\" for the year 2027AD; to contribute to enhancing the professional readiness of national competencies.\n\nRequiredmajors:\nComputer Science, Information Technology, Cybersecurity, Information Systems, Management Information Systems, Human Resources, Marketing,\n\nPublic Relations, Graphic Design, Business Administration, Law\n\n:Conditions\nSaudi National\nThe cumulative average must not be less than (3.5) out of (5) or (2.5) out of (4)\n. to pass all subjects and full-time training\nThe duration of the training should be a minimum of two months and a maximum of six months\nTraining should be 8 hours a day, 5 days a week\n• Successfully pass the interview"},
+    description: {"ar": "التخصصات:-\nعلوم الحاسب\nتقنية معلومات\nأمن سيبراني\nنظم معلومات\nنظم إدارية\nموارد بشرية\nتسويق\nعلاقات عامة\nجرافيك\nإدارة أعمال\nقانون", "en": "Specializations:&#10; Computer Science&#10; Information Technology&#10; Cybersecurity&#10; Information systems&#10; Administrative systems&#10; Human Resources&#10; marketing&#10; Public Relations&#10; Graphics&#10; business management&#10; law"},
     addedAt: "2026-10-21T02:15:40+03:00",
   },
   {

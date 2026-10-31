@@ -2730,58 +2730,6 @@
       "text": "🟡الفرصة رقم ٢٨٤٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nنعلن شركة الوجيه للمقاولات في منطقة عسير عن فتح باب التدريب التعاوني لخريجين الترم الثاني بعدة مجالات ( فني - هندسة - اداري)\n\nلتسجيل عبر الاستبيان التالي\n\nhttps://docs.google.com/forms/d/e/1FAIpQLScewTBvQKEIviIJ2oZGro2upRF2CXjSC800IXo_E4-BKdxH3A/viewform"
     }
   },
-  "cooptraning_inksa:4534": {
-    "decision": {
-      "action": "update",
-      "changes": {
-        "description": {
-          "ar": "التخصصات:-\nعلوم الحاسب\nتقنية معلومات\nأمن سيبراني\nنظم معلومات\nنظم إدارية\nموارد بشرية\nتسويق\nعلاقات عامة\nجرافيك\nإدارة أعمال\nقانون"
-        }
-      },
-      "existing_index": 159,
-      "reason": "existing card has no description, this post provides verified details"
-    },
-    "delivery": {
-      "sent_at": "2026-10-29T21:54:30+00:00",
-      "status": "sent",
-      "telegram_message_id": 455
-    },
-    "extracted": {
-      "company": "المركز الوطني لنظم الموارد الحكومية",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": "2026-10-31",
-      "deadline_raw": null,
-      "description": {
-        "ar": "التخصصات:-\nعلوم الحاسب\nتقنية معلومات\nأمن سيبراني\nنظم معلومات\nنظم إدارية\nموارد بشرية\nتسويق\nعلاقات عامة\nجرافيك\nإدارة أعمال\nقانون"
-      },
-      "evidence": {
-        "company": "#المركز_الوطني_لنظم_الموارد_الحكومية",
-        "deadline": null,
-        "description": "التخصصات:-\nعلوم الحاسب\nتقنية معلومات\nأمن سيبراني\nنظم معلومات\nنظم إدارية\nموارد بشرية\nتسويق\nعلاقات عامة\nجرافيك\nإدارة أعمال\nقانون",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني",
-      "type": "coop",
-      "url": "https://career-sa20.hr.cloud.sap/sfcareer/jobreqcareer?jobId=1462&company=national15"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://career-sa20.hr.cloud.sap/sfcareer/jobreqcareer?jobId=1462&company=national15"
-      ],
-      "message_id": 4534,
-      "permalink": "https://t.me/cooptraning_inksa/4534",
-      "posted_at": "2026-10-28T12:53:19+00:00",
-      "text": "🟡الفرصة رقم ٢٨٤٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n🔴| مركز حكومي - ينتهى قريبا\n\nيعلن ⁧ #المركز_الوطني_لنظم_الموارد_الحكومية⁩ عن برنامج التدريب التعاوني - استكشف\n\nالتخصصات:-\nعلوم الحاسب\nتقنية معلومات\nأمن سيبراني\nنظم معلومات\nنظم إدارية\nموارد بشرية\nتسويق\nعلاقات عامة\nجرافيك\nإدارة أعمال\nقانون\n\nhttps://career-sa20.hr.cloud.sap/sfcareer/jobreqcareer?jobId=1462&company=national15"
-    }
-  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
