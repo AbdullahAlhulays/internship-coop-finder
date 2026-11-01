@@ -2730,6 +2730,100 @@
       "text": "🟡الفرصة رقم ٢٨٤٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nنعلن شركة الوجيه للمقاولات في منطقة عسير عن فتح باب التدريب التعاوني لخريجين الترم الثاني بعدة مجالات ( فني - هندسة - اداري)\n\nلتسجيل عبر الاستبيان التالي\n\nhttps://docs.google.com/forms/d/e/1FAIpQLScewTBvQKEIviIJ2oZGro2upRF2CXjSC800IXo_E4-BKdxH3A/viewform"
     }
   },
+  "cooptraning_inksa:4550": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-01T17:09:16+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "INVENU",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n\n💡 ماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار"
+      },
+      "evidence": {
+        "company": "INVENU",
+        "deadline": null,
+        "description": "المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n\n💡 ماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://invenu-hr.com/j/n58s2qkn"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://invenu-hr.com/j/n58s2qkn"
+      ],
+      "message_id": 4550,
+      "permalink": "https://t.me/cooptraning_inksa/4550",
+      "posted_at": "2026-11-01T16:43:17+00:00",
+      "text": "🟡الفرصة رقم ٢٨٥١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n🚀 فرصتك للانضمام إلى فريق INVENU للتدريب التعاوني نعلن عن فتح التقديم لنصنع شيئاً عظيماً معاً وتطبق ما تعلمته على مشاريع حقيقية\n:المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n💡 ماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار\nابدأ مسيرتك المهنية واصنع الأثر معنا! للتقديم\nhttps://invenu-hr.com/j/n58s2qkn"
+    }
+  },
+  "cooptraning_inksa:4551": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-01T17:09:17+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Aramco",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "شركة أرامكو تعلن فتح التقديم في برامج التدريب المهني والجامعي للعام 2026م لطلاب وطالبات الدبلوم والبكالوريوس (برواتب شهرية، سكن، ومواصلات⭐)"
+      },
+      "evidence": {
+        "company": "شركة أرامكو",
+        "deadline": null,
+        "description": "شركة أرامكو تعلن فتح التقديم في برامج التدريب المهني والجامعي للعام 2026م لطلاب وطالبات الدبلوم والبكالوريوس (برواتب شهرية، سكن، ومواصلات⭐)",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برامج التدريب المهني والجامعي",
+      "type": "internship_or_coop",
+      "url": "https://jobs.ar…"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://jobs.ar…"
+      ],
+      "message_id": 4551,
+      "permalink": "https://t.me/cooptraning_inksa/4551",
+      "posted_at": "2026-11-01T16:44:15+00:00",
+      "text": "🟡الفرصة رقم ٢٨٤٨ للمزيد من الفرص: https://t.me/cooptraning_inksa —————————— شركة أرامكو تعلن فتح التقديم في برامج التدريب المهني والجامعي للعام 2026م لطلاب وطالبات الدبلوم والبكالوريوس (برواتب شهرية، سكن، ومواصلات⭐) الروابط للتقديم : https://jobs.ar…"
+    }
+  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
