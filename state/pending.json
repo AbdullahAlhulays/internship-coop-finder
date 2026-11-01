@@ -2738,8 +2738,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-01T17:09:16+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-01T17:09:19+00:00",
+      "status": "sent",
+      "telegram_message_id": 462
     },
     "extracted": {
       "company": "INVENU",
@@ -2785,8 +2786,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-01T17:09:17+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-01T17:09:19+00:00",
+      "status": "sent",
+      "telegram_message_id": 463
     },
     "extracted": {
       "company": "Aramco",
