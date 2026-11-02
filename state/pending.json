@@ -2171,8 +2171,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-02T18:28:08+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-02T18:29:12+00:00",
+      "status": "sent",
+      "telegram_message_id": 464
     },
     "extracted": {
       "company": "MBC Academy",
@@ -2215,8 +2216,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-02T18:28:11+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-02T18:29:12+00:00",
+      "status": "sent",
+      "telegram_message_id": 465
     },
     "extracted": {
       "company": "Career Link",
@@ -2261,8 +2263,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-02T18:28:33+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-02T18:29:13+00:00",
+      "status": "sent",
+      "telegram_message_id": 466
     },
     "extracted": {
       "company": "INVENU",
@@ -2311,8 +2314,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-02T18:28:48+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-02T18:29:13+00:00",
+      "status": "sent",
+      "telegram_message_id": 467
     },
     "extracted": {
       "company": "عزم الإنجاز",
@@ -2357,8 +2361,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-02T18:29:08+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-02T18:29:13+00:00",
+      "status": "sent",
+      "telegram_message_id": 468
     },
     "extracted": {
       "company": "SABIC",
