@@ -3061,6 +3061,296 @@
       "text": "🟡الفرصة رقم ٢٨٤٨ للمزيد من الفرص: https://t.me/cooptraning_inksa —————————— شركة أرامكو تعلن فتح التقديم في برامج التدريب المهني والجامعي للعام 2026م لطلاب وطالبات الدبلوم والبكالوريوس (برواتب شهرية، سكن، ومواصلات⭐) الروابط للتقديم : https://jobs.ar…"
     }
   },
+  "cooptraning_inksa:4557": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق وادارة المشاريع وادارة مكتبيه وخدمة العملاء."
+        }
+      },
+      "existing_index": 161,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-03T01:37:56+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "عزم الإنجاز",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق وادارة المشاريع وادارة مكتبيه وخدمة العملاء."
+      },
+      "evidence": {
+        "company": "عزم الإنجاز",
+        "deadline": null,
+        "description": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق وادارة المشاريع وادارة مكتبيه وخدمة العملاء.",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني | التسويق",
+      "type": "coop",
+      "url": "https://forms.gle/ToZpPYQyiYpmEGFp7"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/ToZpPYQyiYpmEGFp7"
+      ],
+      "message_id": 4557,
+      "permalink": "https://t.me/cooptraning_inksa/4557",
+      "posted_at": "2026-11-02T19:03:35+00:00",
+      "text": "🟡الفرصة رقم ٢٨٥٧\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرصة تدريب تعاوني | التسويق\n\nتعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق وادارة المشاريع وادارة مكتبيه وخدمة العملاء.\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم وإرفاق السيرة الذاتية من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7\n\n✨ انضم لفريقنا واكتسب خبرة عملية حقيقية."
+    }
+  },
+  "cooptraning_inksa:4558": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-03T01:37:59+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Lumi | لومي",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن عن فتح التقديم على Co-op Internship Program 2026.\n\nالتخصصات :\nلم يتم تحديد تخصصات معينة\n\nالمتطلبات :\nسعودي الجنسية\nطالب متوقع تخرجه\nمعدل تراكمي جيد جدًا\nخطاب من الجامعة\nأن يكون التدريب التعاوني في الفصل الأول أو الثاني أو الصيفي\n\nمدة التدريب:\nحسب الفصل الأكاديمي (أول / ثاني / صيفي)\n\nالمزايا:\nمكافأة شهرية 1,500 ريال\nتوفير جهاز Laptop/PC طوال فترة التدريب\nشهادة خبرة من لومي بعد إتمام التدريب"
+      },
+      "evidence": {
+        "company": "شركة لومي Lumi",
+        "deadline": null,
+        "description": "تعلن عن فتح التقديم على Co-op Internship Program 2026.\n\nالتخصصات :\nلم يتم تحديد تخصصات معينة\n\nالمتطلبات :\nسعودي الجنسية\nطالب متوقع تخرجه\nمعدل تراكمي جيد جدًا\nخطاب من الجامعة\nأن يكون التدريب التعاوني في الفصل الأول أو الثاني أو الصيفي\n\nمدة التدريب:\nحسب الفصل الأكاديمي (أول / ثاني / صيفي)\n\nالمزايا:\nمكافأة شهرية 1,500 ريال\nتوفير جهاز Laptop/PC طوال فترة التدريب\nشهادة خبرة من لومي بعد إتمام التدريب",
+        "location": "#جدة #الرياض #الدمام"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Riyadh, Dammam, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "Co-op Internship Program 2026",
+      "type": "internship_or_coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSe5DFrcrwuTeTIpZmqUYIHNo_z5fYuBxFgksbzd0jp9aUj3QA/viewform?pli=1"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://docs.google.com/forms/d/e/1FAIpQLSe5DFrcrwuTeTIpZmqUYIHNo_z5fYuBxFgksbzd0jp9aUj3QA/viewform?pli=1"
+      ],
+      "message_id": 4558,
+      "permalink": "https://t.me/cooptraning_inksa/4558",
+      "posted_at": "2026-11-02T19:04:30+00:00",
+      "text": "🟡الفرصة رقم ٢٨٥٨\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📍#جدة #الرياض #الدمام\n\nشركة لومي Lumi\n\nتعلن عن فتح التقديم على Co-op Internship Program 2026.\n\nالتخصصات :\nلم يتم تحديد تخصصات معينة\n\nالمتطلبات :\nسعودي الجنسية\nطالب متوقع تخرجه\nمعدل تراكمي جيد جدًا\nخطاب من الجامعة\nأن يكون التدريب التعاوني في الفصل الأول أو الثاني أو الصيفي\n\nمدة التدريب:\nحسب الفصل الأكاديمي (أول / ثاني / صيفي)\n\nالمزايا:\nمكافأة شهرية 1,500 ريال\nتوفير جهاز Laptop/PC طوال فترة التدريب\nشهادة خبرة من لومي بعد إتمام التدريب\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSe5DFrcrwuTeTIpZmqUYIHNo_z5fYuBxFgksbzd0jp9aUj3QA/viewform?pli=1"
+    }
+  },
+  "cooptraning_inksa:4561": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-03T01:38:49+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "الشركة الوطنية للخدمات الأمنية (سيف) (شركة حكومية )",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "لطلاب و طالبات الجامعات و ذلك لإكتساب خبرة عملية و تطبيق المعارف الأكاديمية و تطوير المهارات فى بيئة إحترافية\n\nالتخصصات المطلوبة:-\n• الموارد البشرية\n• إدارة الأعمال\n• المالية والمحاسبة\n• نظم وتقنية المعلومات\n\nالشروط\n• درجة البكالوريوس (طلاب وطالبات السنة الأخيرة أو ما قبل الأخيرة)\n• مهارات التواصل باللغتين العربية والإنجليزي\n• الحد الأدنى للمعدل التراكمي (2.5 من 4.0) أو (3.0 من 5.0)"
+      },
+      "evidence": {
+        "company": "الشركة الوطنية للخدمات الأمنية (سيف) (شركة حكومية )",
+        "deadline": null,
+        "description": "لطلاب و طالبات الجامعات و ذلك لإكتساب خبرة عملية و تطبيق المعارف الأكاديمية و تطوير المهارات فى بيئة إحترافية\n\nالتخصصات المطلوبة:-\n• الموارد البشرية\n• إدارة الأعمال\n• المالية والمحاسبة\n• نظم وتقنية المعلومات\n\nالشروط\n• درجة البكالوريوس (طلاب وطالبات السنة الأخيرة أو ما قبل الأخيرة)\n• مهارات التواصل باللغتين العربية والإنجليزي\n• الحد الأدنى للمعدل التراكمي (2.5 من 4.0) أو (3.0 من 5.0)",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج سيف للتدريب التعاوني",
+      "type": "coop",
+      "url": "https://fa-esiu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://fa-esiu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs"
+      ],
+      "message_id": 4561,
+      "permalink": "https://t.me/cooptraning_inksa/4561",
+      "posted_at": "2026-11-02T19:08:29+00:00",
+      "text": "🟡الفرصة رقم ٢٨٦١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nشركة الشركة الوطنية للخدمات الأمنية (سيف) (شركة حكومية ) تعلن عن برنامج سيف للتدريب التعاوني , لطلاب و طالبات الجامعات و ذلك لإكتساب خبرة عملية و تطبيق المعارف الأكاديمية و تطوير المهارات فى بيئة إحترافية\n\nالتخصصات المطلوبة:-\n• الموارد البشرية\n• إدارة الأعمال\n• المالية والمحاسبة\n• نظم وتقنية المعلومات\n\nالشروط\n• درجة البكالوريوس (طلاب وطالبات السنة الأخيرة أو ما قبل الأخيرة)\n• مهارات التواصل باللغتين العربية والإنجليزي\n• الحد الأدنى للمعدل التراكمي (2.5 من 4.0) أو (3.0 من 5.0)\n\nhttps://fa-esiu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs"
+    }
+  },
+  "cooptraning_inksa:4562": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "لطلاب الجامعات لإكسابهم خبرة عملية وتطوير مهاراتهم"
+        }
+      },
+      "existing_index": 190,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-03T01:39:13+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Flyadeal",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "لطلاب الجامعات لإكسابهم خبرة عملية وتطوير مهاراتهم"
+      },
+      "evidence": {
+        "company": "شركة طيران أديل (إحدى شركات مجموعة الخطوط السعودية)",
+        "deadline": null,
+        "description": "لطلاب الجامعات لإكسابهم خبرة عملية وتطوير مهاراتهم",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915"
+      ],
+      "message_id": 4562,
+      "permalink": "https://t.me/cooptraning_inksa/4562",
+      "posted_at": "2026-11-02T19:09:28+00:00",
+      "text": "🟡الفرصة رقم ٢٨٦٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن شركة طيران أديل (إحدى شركات مجموعة الخطوط السعودية) عن فتح باب التقديم في (برنامج التدريب التعاوني) لطلاب الجامعات لإكسابهم خبرة عملية وتطوير مهاراتهم\n\nرابط التقديم: ⁦ https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915"
+    }
+  },
+  "cooptraning_inksa:4563": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-03T01:39:28+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "NEXO Creative",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "• التصميم\n• ⁠التسويق\n• ⁠المالية"
+      },
+      "evidence": {
+        "company": "NEXO Creative",
+        "deadline": null,
+        "description": "• التصميم\n• ⁠التسويق\n• ⁠المالية",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/1psUOja40X3oK2pjS4pBkQVCYQUts8qfkVdnzp6q7fVU/viewform?edit_requested=true&pli=1"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://docs.google.com/forms/d/1psUOja40X3oK2pjS4pBkQVCYQUts8qfkVdnzp6q7fVU/viewform?edit_requested=true&pli=1"
+      ],
+      "message_id": 4563,
+      "permalink": "https://t.me/cooptraning_inksa/4563",
+      "posted_at": "2026-11-02T19:10:06+00:00",
+      "text": "🟡الفرصة رقم ٢٨٦٣\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nفرصة تدريب تعاوني | NEXO Creative\n\nنود إفادتكم بتوفير فرص تدريب تعاوني و تدريب مهني في عدد من التخصصات , وهي :\n• التصميم\n• ⁠التسويق\n• ⁠المالية\n• ⁠للمهتمين بالتقديم ٫ نأمل التواصل معنا عبر هذا الرابط\n\nhttps://docs.google.com/forms/d/1psUOja40X3oK2pjS4pBkQVCYQUts8qfkVdnzp6q7fVU/viewform?edit_requested=true&pli=1"
+    }
+  },
+  "cooptraning_inksa:4565": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-03T01:39:53+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "رابطة الدوري السعودي للمحترفين",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات:\n• إدارة الأعمال\n• التسويق\n• الإدارة الرياضية\n• الاتصال\n• العلاقات العامة\n• الإعلام\n• الصحافة\n• المحاسبة\n• المالية\n• الموارد البشرية\n• نظم المعلومات\n• علوم الحاسب\n• تحليل البيانات\n• الإحصاء\n• أو تخصصات ذات صلة."
+      },
+      "evidence": {
+        "company": "رابطة الدوري السعودي للمحترفين",
+        "deadline": null,
+        "description": "التخصصات:\n• إدارة الأعمال\n• التسويق\n• الإدارة الرياضية\n• الاتصال\n• العلاقات العامة\n• الإعلام\n• الصحافة\n• المحاسبة\n• المالية\n• الموارد البشرية\n• نظم المعلومات\n• علوم الحاسب\n• تحليل البيانات\n• الإحصاء\n• أو تخصصات ذات صلة.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرص تدريب تعاوني لطلاب البكالوريوس",
+      "type": "coop",
+      "url": "https://iaazkf.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SPL-Careers/jobs/preview/144"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://iaazkf.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SPL-Careers/jobs/preview/144"
+      ],
+      "message_id": 4565,
+      "permalink": "https://t.me/cooptraning_inksa/4565",
+      "posted_at": "2026-11-02T19:14:42+00:00",
+      "text": "🟡الفرصة رقم ٢٨٦٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nرابطة الدوري السعودي للمحترفين تعلن عن فرص تدريب تعاوني لطلاب البكالوريوس.\n\nالتخصصات:\n• إدارة الأعمال\n• التسويق\n• الإدارة الرياضية\n• الاتصال\n• العلاقات العامة\n• الإعلام\n• الصحافة\n• المحاسبة\n• المالية\n• الموارد البشرية\n• نظم المعلومات\n• علوم الحاسب\n• تحليل البيانات\n• الإحصاء\n• أو تخصصات ذات صلة.\n\nhttps://iaazkf.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SPL-Careers/jobs/preview/144"
+    }
+  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
@@ -4830,6 +5120,52 @@
       "permalink": "https://t.me/nobthacv1/2223",
       "posted_at": "2026-10-30T12:03:46+00:00",
       "text": "تفاصيل التدريب\n• نوع الفرصة: تدريب تعاوني.\n• مقر التدريب: جدة.\n• نمط التدريب: حضوري داخل أكاديمية وعد.\nالتخصصات المطلوبة\n• إدارة الأعمال.\n• الإدارة العامة.\nشروط القبول\n• تقديم خطاب رسمي من الجامعة يؤكد متطلب التدريب التعاوني.\n• أن يكون التدريب جزءًا من المتطلبات الأكاديمية للتخرج.\n• امتلاك مهارات جيدة في التنظيم والتواصل.\n• القدرة على التنسيق والتنظيم وتنفيذ المهام الإدارية المسندة.\n\nhttps://apply.workable.com/waad-education/j/C904ACCAAE/"
+    }
+  },
+  "nobthacv1:2224": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-03T01:37:54+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Saudi Geological Survey | هيئة المساحة الجيولوجية السعودية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "الهادف إلى تأهيل الكفاءات الوطنية وتعزيز جاهزيتها لسوق العمل، والمخصص لطلبة الجامعات المتوقع تخرجهم عام 2027م."
+      },
+      "evidence": {
+        "company": "هيئة_المساحة_الجيولوجية_السعودية",
+        "deadline": null,
+        "description": "الهادف إلى تأهيل الكفاءات الوطنية وتعزيز جاهزيتها لسوق العمل، والمخصص لطلبة الجامعات المتوقع تخرجهم عام 2027م.",
+        "location": "#جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "صُنّاع الغد",
+      "type": "coop",
+      "url": "https://sgs.gov.sa/%D8%A7%D9%84%D9%85%D8%AA%D8%AF%D8%B1%D8%A8"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://sgs.gov.sa/%D8%A7%D9%84%D9%85%D8%AA%D8%AF%D8%B1%D8%A8"
+      ],
+      "message_id": 2224,
+      "permalink": "https://t.me/nobthacv1/2224",
+      "posted_at": "2026-11-02T23:29:05+00:00",
+      "text": "#التدريب_التعاوني #جدة\nتعلن هيئة_المساحة_الجيولوجية_السعودية عن فتح باب التسجيل في برنامج \"صُنّاع الغد\" ، الهادف إلى تأهيل الكفاءات الوطنية وتعزيز جاهزيتها لسوق العمل، والمخصص لطلبة الجامعات المتوقع تخرجهم عام 2027م.\n\nللتقديم________________"
     }
   }
 }
