@@ -1704,6 +1704,16 @@ const companyRecords = [
     applicationLink: "https://careers.scfhs.org.sa/en/saudi-arabia/jobs/cooperative-training-1100091859/",
     type: "CO-OP Training",
     addedAt: "2026-11-04T01:25:12+03:00",
+  },
+  {
+    name: "Saudi Geological Survey | هيئة المساحة الجيولوجية السعودية",
+    logo: {"domain": "sgs.gov.sa", "file": "saudi-geological-survey.jpg"},
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://sgs.gov.sa/%D8%A7%D9%84%D9%85%D8%AA%D8%AF%D8%B1%D8%A8",
+    deadline: "2026-11-15",
+    type: "CO-OP Training",
+    description: {"ar": "الهادف إلى تأهيل الكفاءات الوطنية وتعزيز جاهزيتها لسوق العمل، والمخصص لطلبة الجامعات المتوقع تخرجهم عام 2027م.", "en": "It aims to qualify national competencies and enhance their readiness for the labor market, which is allocated to university students expected to graduate in 2027."},
+    addedAt: "2026-11-04T01:25:19+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {

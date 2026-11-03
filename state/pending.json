@@ -4993,53 +4993,6 @@
       "text": "تفاصيل التدريب\n• نوع الفرصة: تدريب تعاوني.\n• مقر التدريب: جدة.\n• نمط التدريب: حضوري داخل أكاديمية وعد.\nالتخصصات المطلوبة\n• إدارة الأعمال.\n• الإدارة العامة.\nشروط القبول\n• تقديم خطاب رسمي من الجامعة يؤكد متطلب التدريب التعاوني.\n• أن يكون التدريب جزءًا من المتطلبات الأكاديمية للتخرج.\n• امتلاك مهارات جيدة في التنظيم والتواصل.\n• القدرة على التنسيق والتنظيم وتنفيذ المهام الإدارية المسندة.\n\nhttps://apply.workable.com/waad-education/j/C904ACCAAE/"
     }
   },
-  "nobthacv1:2224": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-03T01:40:31+00:00",
-      "status": "sent",
-      "telegram_message_id": 475
-    },
-    "extracted": {
-      "company": "Saudi Geological Survey | هيئة المساحة الجيولوجية السعودية",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": "2026-11-15",
-      "deadline_raw": null,
-      "description": {
-        "ar": "الهادف إلى تأهيل الكفاءات الوطنية وتعزيز جاهزيتها لسوق العمل، والمخصص لطلبة الجامعات المتوقع تخرجهم عام 2027م."
-      },
-      "evidence": {
-        "company": "هيئة_المساحة_الجيولوجية_السعودية",
-        "deadline": null,
-        "description": "الهادف إلى تأهيل الكفاءات الوطنية وتعزيز جاهزيتها لسوق العمل، والمخصص لطلبة الجامعات المتوقع تخرجهم عام 2027م.",
-        "location": "#جدة"
-      },
-      "is_opportunity": true,
-      "location": "Jeddah, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "صُنّاع الغد",
-      "type": "coop",
-      "url": "https://sgs.gov.sa/%D8%A7%D9%84%D9%85%D8%AA%D8%AF%D8%B1%D8%A8"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://sgs.gov.sa/%D8%A7%D9%84%D9%85%D8%AA%D8%AF%D8%B1%D8%A8"
-      ],
-      "message_id": 2224,
-      "permalink": "https://t.me/nobthacv1/2224",
-      "posted_at": "2026-11-02T23:29:05+00:00",
-      "text": "#التدريب_التعاوني #جدة\nتعلن هيئة_المساحة_الجيولوجية_السعودية عن فتح باب التسجيل في برنامج \"صُنّاع الغد\" ، الهادف إلى تأهيل الكفاءات الوطنية وتعزيز جاهزيتها لسوق العمل، والمخصص لطلبة الجامعات المتوقع تخرجهم عام 2027م.\n\nللتقديم________________"
-    }
-  },
   "nobthacv1:2225": {
     "decision": {
       "action": "add",
