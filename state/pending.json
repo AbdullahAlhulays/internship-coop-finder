@@ -2210,57 +2210,6 @@
       "text": "🚀 فرصتك للانضمام إلى فريق INVENU للتدريب التعاوني نعلن عن فتح التقديم لنصنع شيئاً عظيماً معاً وتطبق ما تعلمته على مشاريع حقيقية\n:المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n💡 ماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار\nابدأ مسيرتك المهنية واصنع الأثر معنا! للتقديم\nhttps://invenu-hr.com/j/n58s2qkn"
     }
   },
-  "SALTRAI:5944": {
-    "decision": {
-      "action": "update",
-      "changes": {
-        "description": {
-          "ar": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق وادارة المشاريع وادارة مكتبيه وخدمة العملاء."
-        }
-      },
-      "existing_index": 161,
-      "reason": "existing card has no description, this post provides verified details"
-    },
-    "delivery": {
-      "sent_at": "2026-11-02T18:29:13+00:00",
-      "status": "sent",
-      "telegram_message_id": 467
-    },
-    "extracted": {
-      "company": "عزم الإنجاز",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق وادارة المشاريع وادارة مكتبيه وخدمة العملاء."
-      },
-      "evidence": {
-        "company": "شركة عزم الإنجاز",
-        "deadline": null,
-        "description": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق وادارة المشاريع وادارة مكتبيه وخدمة العملاء.",
-        "location": "الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "فرصة تدريب تعاوني | التسويق",
-      "type": "coop",
-      "url": "https://forms.gle/ToZpPYQyiYpmEGFp7"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://forms.gle/ToZpPYQyiYpmEGFp7"
-      ],
-      "message_id": 5944,
-      "permalink": "https://t.me/SALTRAI/5944",
-      "posted_at": "2026-11-02T13:05:11+00:00",
-      "text": "📢 فرصة تدريب تعاوني | التسويق\n\nتعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق وادارة المشاريع وادارة مكتبيه وخدمة العملاء.\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم وإرفاق السيرة الذاتية من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7\n\n✨ انضم لفريقنا واكتسب خبرة عملية حقيقية."
-    }
-  },
   "SALTRAI:5945": {
     "decision": {
       "action": "add",

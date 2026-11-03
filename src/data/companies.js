@@ -1307,12 +1307,13 @@ const companyRecords = [
     addedAt: "2026-10-21T02:17:34+03:00",
   },
   {
+    contentUpdatedAt: "2026-11-04T01:24:08+03:00",
     name: "Azm Al Injaz | عزم الإنجاز",
     logo: {"domain":"linkedin.com","file":"azm-al-injaz.jpg"},
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://forms.gle/ToZpPYQyiYpmEGFp7",
     type: "CO-OP Training",
-    description: {"ar": "تعلن عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق.وإدارة المشاريع", "en": "Momentum for Achievement announces the availability of a collaborative training opportunity for university students interested in the field of marketing and project management."},
+    description: {"ar": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التسويق وادارة المشاريع وادارة مكتبيه وخدمة العملاء.", "en": "Azm Achievement Company announces the availability of a cooperative training opportunity for university students interested in the field of marketing, project management, office management and customer service."},
     addedAt: "2026-10-21T02:18:15+03:00",
   },
   {
