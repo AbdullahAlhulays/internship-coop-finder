@@ -1664,6 +1664,13 @@ const companyRecords = [
     applicationLink: "https://share.google/eqfmFNCyRENRJNcl7",
     type: "CO-OP Training",
     addedAt: "2026-11-04T01:23:36+03:00",
+  },
+  {
+    name: "Career Link",
+    applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdiQIXG7Vd-w3k38vqx-mfFueZXsG2mnOYlaU0EcgFrhjAgaw/viewform?usp=publish-editor",
+    type: "Internship / CO-OP Training",
+    description: {"ar": "يسعدنا فتح باب التسجيل في برنامج التدريب لطلاب الجامعات وحديثي التخرج والباحثين عن عمل\n\nالتخصصات المطلوبة:\n• صناعة المحتوى\n• كتابة المحتوى\n• تصميم جرافيك\n• علاقات عامة\n\nعلماً بانه بعد اتمام التدريب سيتم ترشيحكم لشركاتنا للتوظيف", "en": "We are pleased to open the registration for the training program for university students, recent graduates and job seekers\n\nRequired Specialties:\n• Content Creation\n• Content Writing\n• Graphic design\n• Public relations\n\nNote that after completing the training, you will be nominated to our companies for employment"},
+    addedAt: "2026-11-04T01:23:58+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
