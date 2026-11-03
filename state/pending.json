@@ -2163,53 +2163,6 @@
       "text": "تدريب تعاوني في شركة شنايدر إلكتريك السعودية بالرياض والدمام والخبر\n\nالتخصصات:\n– الهندسة الكهربائية.\n– الهندسة الصناعية.\n– هندسة الأجهزة والتحكم.\n– هندسة الأمن السيبراني.\n\nتدريب الرياض:\n\nيبدأ التدريب في شهر يناير 2027م.\n\nhttps://careers.se.com/event-6057/talentcommunity/form\n\nتدريب الخبر\n\nhttps://careers.se.com/event-6058/talentcommunity/form"
     }
   },
-  "SALTRAI:5936": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-02T18:29:13+00:00",
-      "status": "sent",
-      "telegram_message_id": 466
-    },
-    "extracted": {
-      "company": "INVENU",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n\nماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار"
-      },
-      "evidence": {
-        "company": "INVENU",
-        "deadline": null,
-        "description": "المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n\nماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Cooperative Training",
-      "type": "coop",
-      "url": "https://invenu-hr.com/j/n58s2qkn"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://invenu-hr.com/j/n58s2qkn"
-      ],
-      "message_id": 5936,
-      "permalink": "https://t.me/SALTRAI/5936",
-      "posted_at": "2026-11-02T13:05:11+00:00",
-      "text": "🚀 فرصتك للانضمام إلى فريق INVENU للتدريب التعاوني نعلن عن فتح التقديم لنصنع شيئاً عظيماً معاً وتطبق ما تعلمته على مشاريع حقيقية\n:المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n💡 ماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار\nابدأ مسيرتك المهنية واصنع الأثر معنا! للتقديم\nhttps://invenu-hr.com/j/n58s2qkn"
-    }
-  },
   "SALTRAI:5946": {
     "decision": {
       "action": "update",

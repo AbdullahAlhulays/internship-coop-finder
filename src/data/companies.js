@@ -1682,6 +1682,14 @@ const companyRecords = [
     applicationLink: "https://jobs.sabic.com/job/Cooperative-Training-Program/114008-en_US/",
     type: "CO-OP Training",
     addedAt: "2026-11-04T01:24:15+03:00",
+  },
+  {
+    name: "INVENU",
+    logo: {"domain": "invenu.com", "file": "invenu.png"},
+    applicationLink: "https://invenu-hr.com/j/n58s2qkn",
+    type: "CO-OP Training",
+    description: {"ar": "المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n\nماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار", "en": "Available Routes\nMarketing\nGraphic Design\nHuman Resources\nBusiness Development\nContent Writing\n\nWhat do you expect from training with us? Work on actual projects, expert guidance, and a professional work environment that supports innovation"},
+    addedAt: "2026-11-04T01:24:44+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
