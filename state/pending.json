@@ -2163,51 +2163,6 @@
       "text": "تدريب تعاوني في شركة شنايدر إلكتريك السعودية بالرياض والدمام والخبر\n\nالتخصصات:\n– الهندسة الكهربائية.\n– الهندسة الصناعية.\n– هندسة الأجهزة والتحكم.\n– هندسة الأمن السيبراني.\n\nتدريب الرياض:\n\nيبدأ التدريب في شهر يناير 2027م.\n\nhttps://careers.se.com/event-6057/talentcommunity/form\n\nتدريب الخبر\n\nhttps://careers.se.com/event-6058/talentcommunity/form"
     }
   },
-  "SALTRAI:5926": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-02T18:29:12+00:00",
-      "status": "sent",
-      "telegram_message_id": 464
-    },
-    "extracted": {
-      "company": "MBC Academy",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "أكاديمية ام بي سي",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "تدريب تعاوني داخلي",
-      "type": "coop",
-      "url": "https://share.google/eqfmFNCyRENRJNcl7"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://share.google/eqfmFNCyRENRJNcl7"
-      ],
-      "message_id": 5926,
-      "permalink": "https://t.me/SALTRAI/5926",
-      "posted_at": "2026-11-02T13:05:10+00:00",
-      "text": "أكاديمية ام بي سي - تدريب تعاوني داخلي https://share.google/eqfmFNCyRENRJNcl7\nتدريب تعاوني في mbc"
-    }
-  },
   "SALTRAI:5934": {
     "decision": {
       "action": "add",
