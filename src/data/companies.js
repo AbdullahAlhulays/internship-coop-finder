@@ -1697,6 +1697,13 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "التخصصات:\n• إدارة الأعمال\n• التسويق\n• الإدارة الرياضية\n• الاتصال\n• العلاقات العامة\n• الإعلام\n• الصحافة\n• المحاسبة\n• المالية\n• الموارد البشرية\n• نظم المعلومات\n• علوم الحاسب\n• تحليل البيانات\n• الإحصاء\n• أو تخصصات ذات صلة.", "en": "Specialties:\n• Business Administration\n• Marketing\n• Sports Management\n• Communication\n• Public Relations\n• Media\n• Journalism\n• Accounting\n• Finance\n• Human Resources\n• Information Systems\n• Computer Science\n• Data analysis\n• Statistics\n• Or related disciplines."},
     addedAt: "2026-11-04T01:25:01+03:00",
+  },
+  {
+    name: "Saudi Commission for Health Specialties | الهيئة السعودية للمتخصصين الصحيين",
+    logo: {"domain": "careers.scfhs.org.sa", "file": "saudi-commission-for-health-specialties.png"},
+    applicationLink: "https://careers.scfhs.org.sa/en/saudi-arabia/jobs/cooperative-training-1100091859/",
+    type: "CO-OP Training",
+    addedAt: "2026-11-04T01:25:12+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
