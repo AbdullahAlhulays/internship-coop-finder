@@ -1611,6 +1611,8 @@ const companyRecords = [
     addedAt: "2026-10-25T21:32:19+03:00",
   },
   {
+    contentUpdatedAt: "2026-11-04T01:24:35+03:00",
+    description: {"ar": "لطلاب الجامعات لإكسابهم خبرة عملية وتطوير مهاراتهم", "en": "For university students to gain practical experience and develop their skills"},
     name: "Flyadeal",
     logo: {"domain": "careers.flyadeal.com", "file": "flyadeal.jpg"},
     applicationLink: "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915",

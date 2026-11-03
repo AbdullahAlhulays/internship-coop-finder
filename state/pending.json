@@ -3219,58 +3219,6 @@
       "text": "🟡الفرصة رقم ٢٨٦١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nشركة الشركة الوطنية للخدمات الأمنية (سيف) (شركة حكومية ) تعلن عن برنامج سيف للتدريب التعاوني , لطلاب و طالبات الجامعات و ذلك لإكتساب خبرة عملية و تطبيق المعارف الأكاديمية و تطوير المهارات فى بيئة إحترافية\n\nالتخصصات المطلوبة:-\n• الموارد البشرية\n• إدارة الأعمال\n• المالية والمحاسبة\n• نظم وتقنية المعلومات\n\nالشروط\n• درجة البكالوريوس (طلاب وطالبات السنة الأخيرة أو ما قبل الأخيرة)\n• مهارات التواصل باللغتين العربية والإنجليزي\n• الحد الأدنى للمعدل التراكمي (2.5 من 4.0) أو (3.0 من 5.0)\n\nhttps://fa-esiu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs"
     }
   },
-  "cooptraning_inksa:4562": {
-    "decision": {
-      "action": "update",
-      "changes": {
-        "description": {
-          "ar": "لطلاب الجامعات لإكسابهم خبرة عملية وتطوير مهاراتهم"
-        }
-      },
-      "existing_index": 190,
-      "reason": "existing card has no description, this post provides verified details"
-    },
-    "delivery": {
-      "sent_at": "2026-11-03T01:40:29+00:00",
-      "status": "sent",
-      "telegram_message_id": 472
-    },
-    "extracted": {
-      "company": "Flyadeal",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "لطلاب الجامعات لإكسابهم خبرة عملية وتطوير مهاراتهم"
-      },
-      "evidence": {
-        "company": "شركة طيران أديل (إحدى شركات مجموعة الخطوط السعودية)",
-        "deadline": null,
-        "description": "لطلاب الجامعات لإكسابهم خبرة عملية وتطوير مهاراتهم",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني",
-      "type": "coop",
-      "url": "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915"
-      ],
-      "message_id": 4562,
-      "permalink": "https://t.me/cooptraning_inksa/4562",
-      "posted_at": "2026-11-02T19:09:28+00:00",
-      "text": "🟡الفرصة رقم ٢٨٦٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن شركة طيران أديل (إحدى شركات مجموعة الخطوط السعودية) عن فتح باب التقديم في (برنامج التدريب التعاوني) لطلاب الجامعات لإكسابهم خبرة عملية وتطوير مهاراتهم\n\nرابط التقديم: ⁦ https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915"
-    }
-  },
   "cooptraning_inksa:4563": {
     "decision": {
       "action": "add",
