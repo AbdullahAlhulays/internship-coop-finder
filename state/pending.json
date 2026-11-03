@@ -2363,6 +2363,57 @@
       "text": "🟡الفرصة رقم ٢٨٦٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nرابطة الدوري السعودي للمحترفين تعلن عن فرص تدريب تعاوني لطلاب البكالوريوس.\n\nالتخصصات:\n• إدارة الأعمال\n• التسويق\n• الإدارة الرياضية\n• الاتصال\n• العلاقات العامة\n• الإعلام\n• الصحافة\n• المحاسبة\n• المالية\n• الموارد البشرية\n• نظم المعلومات\n• علوم الحاسب\n• تحليل البيانات\n• الإحصاء\n• أو تخصصات ذات صلة.\n\nhttps://iaazkf.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SPL-Careers/jobs/preview/144"
     }
   },
+  "SALTRAI:5958": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "ما تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار"
+        },
+        "location": "Riyadh, Saudi Arabia"
+      },
+      "existing_index": 199,
+      "reason": "a newer repost of this exact posting has different details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-03T23:28:28+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "INVENU",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "ما تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار"
+      },
+      "evidence": {
+        "company": "INVENU",
+        "deadline": null,
+        "description": "ما تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://invenu-hr.com/j/n58s2qkn"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://invenu-hr.com/j/n58s2qkn"
+      ],
+      "message_id": 5958,
+      "permalink": "https://t.me/SALTRAI/5958",
+      "posted_at": "2026-11-03T14:02:23+00:00",
+      "text": "🚀 فرصتك للانضمام إلى فريق INVENU للتدريب التعاوني بالرياض نعلن عن فتح التقديم لنصنع شيئاً عظيماً معاً وتطبق ما تعلمته على مشاريع حقيقية\n:المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n💡 ماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار\nابدأ مسيرتك المهنية واصنع الأثر معنا! للتقديم\nhttps://invenu-hr.com/j/n58s2qkn"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
