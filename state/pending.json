@@ -2411,8 +2411,9 @@
       "reason": "a newer repost of this exact posting has different details"
     },
     "delivery": {
-      "queued_at": "2026-11-03T17:52:50+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-03T17:56:18+00:00",
+      "status": "sent",
+      "telegram_message_id": 476
     },
     "extracted": {
       "company": "Lumi | لومي",
@@ -2461,8 +2462,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-03T17:53:17+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-03T17:56:19+00:00",
+      "status": "sent",
+      "telegram_message_id": 477
     },
     "extracted": {
       "company": "Azm Al Injaz | عزم الإنجاز",
@@ -2508,8 +2510,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-03T17:53:58+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-03T17:56:19+00:00",
+      "status": "sent",
+      "telegram_message_id": 478
     },
     "extracted": {
       "company": "الشركة الوطنية للخدمات الأمنية (سيف) (شركة حكومية )",
@@ -2555,8 +2558,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-03T17:54:26+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-03T17:56:20+00:00",
+      "status": "sent",
+      "telegram_message_id": 479
     },
     "extracted": {
       "company": "Saudi Professional League Association | رابطة الدوري السعودي للمحترفين",
@@ -3365,8 +3369,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-03T17:55:46+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-03T17:56:20+00:00",
+      "status": "sent",
+      "telegram_message_id": 480
     },
     "extracted": {
       "company": "Saudi Commission for Health Specialties | الهيئة السعودية للمتخصصين الصحيين",
@@ -3606,8 +3611,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-03T17:56:12+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-03T17:56:21+00:00",
+      "status": "sent",
+      "telegram_message_id": 481
     },
     "extracted": {
       "company": "SABIC",
@@ -5471,8 +5477,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-03T17:55:16+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-03T17:56:21+00:00",
+      "status": "sent",
+      "telegram_message_id": 482
     },
     "extracted": {
       "company": "Saudi Health Specialties Authority | الهيئة السعودية للتخصصات الصحية",
