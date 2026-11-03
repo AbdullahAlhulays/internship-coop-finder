@@ -3220,54 +3220,6 @@
       "text": "🟡الفرصة رقم ٢٨٦٣\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nفرصة تدريب تعاوني | NEXO Creative\n\nنود إفادتكم بتوفير فرص تدريب تعاوني و تدريب مهني في عدد من التخصصات , وهي :\n• التصميم\n• ⁠التسويق\n• ⁠المالية\n• ⁠للمهتمين بالتقديم ٫ نأمل التواصل معنا عبر هذا الرابط\n\nhttps://docs.google.com/forms/d/1psUOja40X3oK2pjS4pBkQVCYQUts8qfkVdnzp6q7fVU/viewform?edit_requested=true&pli=1"
     }
   },
-  "cooptraning_inksa:4565": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-03T01:40:30+00:00",
-      "status": "sent",
-      "telegram_message_id": 474
-    },
-    "extracted": {
-      "company": "رابطة الدوري السعودي للمحترفين",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "التخصصات:\n• إدارة الأعمال\n• التسويق\n• الإدارة الرياضية\n• الاتصال\n• العلاقات العامة\n• الإعلام\n• الصحافة\n• المحاسبة\n• المالية\n• الموارد البشرية\n• نظم المعلومات\n• علوم الحاسب\n• تحليل البيانات\n• الإحصاء\n• أو تخصصات ذات صلة."
-      },
-      "evidence": {
-        "company": "رابطة الدوري السعودي للمحترفين",
-        "deadline": null,
-        "description": "التخصصات:\n• إدارة الأعمال\n• التسويق\n• الإدارة الرياضية\n• الاتصال\n• العلاقات العامة\n• الإعلام\n• الصحافة\n• المحاسبة\n• المالية\n• الموارد البشرية\n• نظم المعلومات\n• علوم الحاسب\n• تحليل البيانات\n• الإحصاء\n• أو تخصصات ذات صلة.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "فرص تدريب تعاوني لطلاب البكالوريوس",
-      "type": "coop",
-      "url": "https://iaazkf.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SPL-Careers/jobs/preview/144"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://iaazkf.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SPL-Careers/jobs/preview/144"
-      ],
-      "message_id": 4565,
-      "permalink": "https://t.me/cooptraning_inksa/4565",
-      "posted_at": "2026-11-02T19:14:42+00:00",
-      "text": "🟡الفرصة رقم ٢٨٦٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nرابطة الدوري السعودي للمحترفين تعلن عن فرص تدريب تعاوني لطلاب البكالوريوس.\n\nالتخصصات:\n• إدارة الأعمال\n• التسويق\n• الإدارة الرياضية\n• الاتصال\n• العلاقات العامة\n• الإعلام\n• الصحافة\n• المحاسبة\n• المالية\n• الموارد البشرية\n• نظم المعلومات\n• علوم الحاسب\n• تحليل البيانات\n• الإحصاء\n• أو تخصصات ذات صلة.\n\nhttps://iaazkf.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SPL-Careers/jobs/preview/144"
-    }
-  },
   "cooptraning_inksa:4566": {
     "decision": {
       "action": "add",

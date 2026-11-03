@@ -1690,6 +1690,13 @@ const companyRecords = [
     type: "CO-OP Training",
     description: {"ar": "المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n\nماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار", "en": "Available Routes\nMarketing\nGraphic Design\nHuman Resources\nBusiness Development\nContent Writing\n\nWhat do you expect from training with us? Work on actual projects, expert guidance, and a professional work environment that supports innovation"},
     addedAt: "2026-11-04T01:24:44+03:00",
+  },
+  {
+    name: "رابطة الدوري السعودي للمحترفين",
+    applicationLink: "https://iaazkf.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SPL-Careers/jobs/preview/144",
+    type: "CO-OP Training",
+    description: {"ar": "التخصصات:\n• إدارة الأعمال\n• التسويق\n• الإدارة الرياضية\n• الاتصال\n• العلاقات العامة\n• الإعلام\n• الصحافة\n• المحاسبة\n• المالية\n• الموارد البشرية\n• نظم المعلومات\n• علوم الحاسب\n• تحليل البيانات\n• الإحصاء\n• أو تخصصات ذات صلة.", "en": "Specialties:\n• Business Administration\n• Marketing\n• Sports Management\n• Communication\n• Public Relations\n• Media\n• Journalism\n• Accounting\n• Finance\n• Human Resources\n• Information Systems\n• Computer Science\n• Data analysis\n• Statistics\n• Or related disciplines."},
+    addedAt: "2026-11-04T01:25:01+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
