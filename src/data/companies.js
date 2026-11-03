@@ -1672,6 +1672,14 @@ const companyRecords = [
     type: "Internship / CO-OP Training",
     description: {"ar": "يسعدنا فتح باب التسجيل في برنامج التدريب لطلاب الجامعات وحديثي التخرج والباحثين عن عمل\n\nالتخصصات المطلوبة:\n• صناعة المحتوى\n• كتابة المحتوى\n• تصميم جرافيك\n• علاقات عامة\n\nعلماً بانه بعد اتمام التدريب سيتم ترشيحكم لشركاتنا للتوظيف", "en": "We are pleased to open the registration for the training program for university students, recent graduates and job seekers\n\nRequired Specialties:\n• Content Creation\n• Content Writing\n• Graphic design\n• Public relations\n\nNote that after completing the training, you will be nominated to our companies for employment"},
     addedAt: "2026-11-04T01:23:58+03:00",
+  },
+  {
+    name: "SABIC",
+    logo: {"domain": "jobs.sabic.com", "file": "sabic.jpg"},
+    location: "Jubail, Saudi Arabia; Yanbu, Saudi Arabia; Riyadh, Saudi Arabia",
+    applicationLink: "https://jobs.sabic.com/job/Cooperative-Training-Program/114008-en_US/",
+    type: "CO-OP Training",
+    addedAt: "2026-11-04T01:24:15+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {

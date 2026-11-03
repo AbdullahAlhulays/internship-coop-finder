@@ -2210,51 +2210,6 @@
       "text": "🚀 فرصتك للانضمام إلى فريق INVENU للتدريب التعاوني نعلن عن فتح التقديم لنصنع شيئاً عظيماً معاً وتطبق ما تعلمته على مشاريع حقيقية\n:المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n💡 ماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار\nابدأ مسيرتك المهنية واصنع الأثر معنا! للتقديم\nhttps://invenu-hr.com/j/n58s2qkn"
     }
   },
-  "SALTRAI:5945": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-02T18:29:13+00:00",
-      "status": "sent",
-      "telegram_message_id": 468
-    },
-    "extracted": {
-      "company": "SABIC",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "SABIC",
-        "deadline": null,
-        "description": null,
-        "location": "الجبيل و ينبع و الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Jubail, Saudi Arabia; Yanbu, Saudi Arabia; Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Cooperative Training Program",
-      "type": "coop",
-      "url": "https://jobs.sabic.com/job/Cooperative-Training-Program/114008-en_US/"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://jobs.sabic.com/job/Cooperative-Training-Program/114008-en_US/"
-      ],
-      "message_id": 5945,
-      "permalink": "https://t.me/SALTRAI/5945",
-      "posted_at": "2026-11-02T13:05:11+00:00",
-      "text": "https://jobs.sabic.com/job/Cooperative-Training-Program/114008-en_US/\nترا فتح التدريب حق سابك للجبيل و ينبع و الرياض"
-    }
-  },
   "SALTRAI:5946": {
     "decision": {
       "action": "update",
