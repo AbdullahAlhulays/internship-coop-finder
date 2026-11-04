@@ -5104,8 +5104,9 @@
       "reason": "a newer repost of this exact posting has different details"
     },
     "delivery": {
-      "queued_at": "2026-11-04T15:29:24+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-04T15:29:48+00:00",
+      "status": "sent",
+      "telegram_message_id": 498
     },
     "extracted": {
       "company": "SABIC",
@@ -5150,8 +5151,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-04T15:29:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-04T15:29:48+00:00",
+      "status": "sent",
+      "telegram_message_id": 499
     },
     "extracted": {
       "company": "National Center for Sustainable Agriculture Research and Development (Sustainability) | المركز الوطني لأبحاث وتطوير الزراعة المستدامة (استدامة)",
@@ -5196,8 +5198,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-04T15:29:44+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-04T15:29:49+00:00",
+      "status": "sent",
+      "telegram_message_id": 500
     },
     "extracted": {
       "company": "Human Resources Development Fund | صندوق تنمية الموارد البشرية",
