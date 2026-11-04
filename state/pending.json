@@ -2363,6 +2363,50 @@
       "text": "🟡الفرصة رقم ٢٨٦٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nرابطة الدوري السعودي للمحترفين تعلن عن فرص تدريب تعاوني لطلاب البكالوريوس.\n\nالتخصصات:\n• إدارة الأعمال\n• التسويق\n• الإدارة الرياضية\n• الاتصال\n• العلاقات العامة\n• الإعلام\n• الصحافة\n• المحاسبة\n• المالية\n• الموارد البشرية\n• نظم المعلومات\n• علوم الحاسب\n• تحليل البيانات\n• الإحصاء\n• أو تخصصات ذات صلة.\n\nhttps://iaazkf.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SPL-Careers/jobs/preview/144"
     }
   },
+  "SALTRAI:5957": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-04T06:35:15+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Ataba | عتبة",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "عتبة",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://3atabah.com/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://3atabah.com/"
+      ],
+      "message_id": 5957,
+      "permalink": "https://t.me/SALTRAI/5957",
+      "posted_at": "2026-11-03T14:02:23+00:00",
+      "text": "https://3atabah.com/\nموقع عتبة فيه كلشي تطوير خرجين ، تدريب تعاوني"
+    }
+  },
   "SALTRAI:5958": {
     "decision": {
       "action": "update",
