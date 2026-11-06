@@ -5251,8 +5251,9 @@
       "reason": "existing card is missing verified details this post provides"
     },
     "delivery": {
-      "queued_at": "2026-11-06T00:22:07+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-06T00:22:12+00:00",
+      "status": "sent",
+      "telegram_message_id": 501
     },
     "extracted": {
       "company": "Saudi National Bank | البنك الأهلي السعودي",
@@ -5297,8 +5298,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-06T00:22:09+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-06T00:22:13+00:00",
+      "status": "sent",
+      "telegram_message_id": 502
     },
     "extracted": {
       "company": "Al-Mutahidun | شركة المتحدون",
