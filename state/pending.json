@@ -2741,51 +2741,6 @@
       "text": "📢 فرصة تدريب تعاوني | التصميم الجرافيكس\n\nتعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التصميم الجرافيكس .\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم وإرفاق السيرة الذاتية من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7\n\n✨ انضم لفريقنا واكتسب خبرة عملية حقيقية."
     }
   },
-  "SALTRAI:5975": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-07T08:55:01+00:00",
-      "status": "sent",
-      "telegram_message_id": 510
-    },
-    "extracted": {
-      "company": "Ministry of Tourism | وزارة السياحة",
-      "confidence": 0.8,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "وزارة السياحة",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/"
-      ],
-      "message_id": 5975,
-      "permalink": "https://t.me/SALTRAI/5975",
-      "posted_at": "2026-11-07T08:22:35+00:00",
-      "text": "https://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/\n\nهذا وزارة السياحة"
-    }
-  },
   "SALTRAI:5976": {
     "decision": {
       "action": "add",

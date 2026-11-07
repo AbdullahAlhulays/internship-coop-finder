@@ -1730,6 +1730,12 @@ const companyRecords = [
     description: {"ar": "التخصصات الهندسية (الميكانيكية، الكهربائية، الكيميائية، الصناعية، وغيرها)\nتكنولوجيا المعلومات وعلوم الحاسب\nإدارة الأعمال، والموارد البشرية، والتسويق، والمالية، وسلاسل الإمداد\n\nمتطلبات البرنامج\n\nيجب أن يكون التدريب التعاوني (Coop) متطلباً للتخرج في الجامعة أو الكلية.\nيجب أن يتم ترشيح المتقدمين من قِبل جامعتهم أو كليتهم (مع ضرورة تقديم خطاب رسمي للتدريب التعاوني).\nيجب ألا يقل المعدل التراكمي للمتقدم عن 2.50 من 4، أو 3.50 من 5.\nيجب أن يكون المتقدمون للتدريب التعاوني لائقين طبياً.\nيجب ألا يكون المتقدم قد تخرج بالفعل من الجامعة أو الكلية.\n\nأماكن التدريب:\nالجبيل\nالرياض\nينبع\n\nموعد التقديم:\nيبدأ التقديم: 2 نوفمبر 2026\nينتهي التقديم: 15 نوفمبر 2026", "en": "Engineering disciplines (mechanical, electrical, chemical, industrial, etc.)\nInformation Technology and Computer Science\nBusiness Management, Human Resources, Marketing, Finance and Supply Chains\n\nProgramme requirements\n\nCooperative training (Coop) should be a requirement for graduation at a university or college.\nApplicants must be nominated by their university or college (with a formal letter for collaborative training).\nApplicant's GPA should not be less than 2.50 out of 4, or 3.50 out of 5.\nApplicants for cooperative training must be medically fit.\nThe applicant must not have already graduated from university or college.\n\nTraining venues:\nJubail\nRiyadh\nYanbu\n\nDeadline for Submission:\nSubmission begins: November 2, 2026\nSubmission Expires: November 15, 2026"},
     requiresLetter: true,
     addedAt: "2026-11-04T01:25:41+03:00",
+  },
+  {
+    name: "Ministry of Tourism | وزارة السياحة",
+    applicationLink: "https://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/",
+    type: "CO-OP Training",
+    addedAt: "2026-11-07T12:32:04+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
