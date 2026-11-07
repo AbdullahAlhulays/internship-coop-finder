@@ -1611,8 +1611,9 @@ const companyRecords = [
     addedAt: "2026-10-25T21:32:19+03:00",
   },
   {
-    contentUpdatedAt: "2026-11-04T01:24:35+03:00",
-    description: {"ar": "لطلاب الجامعات لإكسابهم خبرة عملية وتطوير مهاراتهم", "en": "For university students to gain practical experience and develop their skills"},
+    location: "Jeddah, Saudi Arabia",
+    contentUpdatedAt: "2026-11-07T12:31:48+03:00",
+    description: {"ar": "التخصصات\nالموارد البشرية\nإدارة الأعمال\nالتسويق والتسويق الرقمي\nالمالية والمحاسبة\nإدارة الطيران\nالهندسة\nتقنية المعلومات وعلوم الحاسب وهندسة البرمجيات\nالأمن السيبراني\nالذكاء الاصطناعي وعلوم البيانات\nالإحصاء\nنظم المعلومات الإدارية\nإدارة المخاطر والامتثال\nسلاسل الإمداد واللوجستيات\nالإعلام والعلاقات العامة والإعلان\n\nالمتطلبات:\nأن يكون التدريب التعاوني متطلبًا أساسيًا للتخرج من جامعة أو كلية معتمدة في السعودية\n#دبلوم #بكالوريوس\n\nسعودي الجنسية\nإجادة اللغتين العربية والإنجليزية تحدثًا وكتابة\nمهارات التواصل والعمل ضمن فريق\nالرغبة في التعلم والتطور والمساهمة الفعالة", "en": "Specialties\nHuman Resources\nBusiness Administration\nMarketing and Digital Marketing\nFinance and Accounting\nAviation Management\nEngineering\nInformation Technology, Computer Science and Software Engineering\nCybersecurity\nArtificial Intelligence and Data Science\nStatistics\nManagement Information Systems\nRisk Management and Compliance\nSupply Chains & Logistics\nMedia, Public Relations and Advertising\n\nRequirements:\nCooperative training should be a prerequisite for graduating from an accredited university or college in Saudi Arabia\n#Diploma #Bachelor\n\nSaudi National\nFluency in spoken and written Arabic and English\nCommunication skills and teamwork\nWillingness to learn, develop and contribute effectively"},
     name: "Flyadeal",
     logo: {"domain": "careers.flyadeal.com", "file": "flyadeal.jpg"},
     applicationLink: "https://careers.flyadeal.com/jobs/coop-training-program-january-2027-1792424915",
