@@ -2460,6 +2460,370 @@
       "text": "🚀 فرصتك للانضمام إلى فريق INVENU للتدريب التعاوني بالرياض نعلن عن فتح التقديم لنصنع شيئاً عظيماً معاً وتطبق ما تعلمته على مشاريع حقيقية\n:المسارات المتاحة\nالتسويق\nالتصميم الجرافيكي\nالموارد البشرية\nتطوير الأعمال\nكتابة المحتوى\n💡 ماذا تتوقع من التدريب معنا؟ العمل على مشاريع فعلية، إرشاد وتوجيه من خبراء، وبيئة عمل احترافية تدعم الابتكار\nابدأ مسيرتك المهنية واصنع الأثر معنا! للتقديم\nhttps://invenu-hr.com/j/n58s2qkn"
     }
   },
+  "SALTRAI:5960": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-07T08:52:11+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "مكتبة الملك عبدالعزيز",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "مكتبة الملك عبدالعزيز",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://kapl.org.sa/ar/electronic-services/collaborative-training"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://kapl.org.sa/ar/electronic-services/collaborative-training"
+      ],
+      "message_id": 5960,
+      "permalink": "https://t.me/SALTRAI/5960",
+      "posted_at": "2026-11-07T08:22:35+00:00",
+      "text": "https://kapl.org.sa/ar/electronic-services/collaborative-training\n\nمكتبة الملك عبدالعزيز عندهم تدريب تعاوني.. بس مدري بصراحة طالبين تدريب او لا.. لكن لقيت لهم رابط تقديم للتدريب التعاوني.."
+    }
+  },
+  "SALTRAI:5962": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-07T08:52:14+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "SABIC",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": "2026-11-15",
+      "deadline_raw": "15 نوفمبر 2026",
+      "description": {
+        "ar": "التخصصات الهندسية (الميكانيكية، الكهربائية، الكيميائية، الصناعية، وغيرها)\nتكنولوجيا المعلومات وعلوم الحاسب\nإدارة الأعمال، والموارد البشرية، والتسويق، والمالية، وسلاسل الإمداد\n\nمتطلبات البرنامج\n\nيجب أن يكون التدريب التعاوني (Coop) متطلباً للتخرج في الجامعة أو الكلية.\nيجب أن يتم ترشيح المتقدمين من قِبل جامعتهم أو كليتهم (مع ضرورة تقديم خطاب رسمي للتدريب التعاوني).\nيجب ألا يقل المعدل التراكمي للمتقدم عن 2.50 من 4، أو 3.50 من 5.\nيجب أن يكون المتقدمون للتدريب التعاوني لائقين طبياً.\nيجب ألا يكون المتقدم قد تخرج بالفعل من الجامعة أو الكلية.\n\nأماكن التدريب:\nالجبيل\nالرياض\nينبع"
+      },
+      "evidence": {
+        "company": "SABIC",
+        "deadline": "15 نوفمبر 2026",
+        "description": "التخصصات الهندسية (الميكانيكية، الكهربائية، الكيميائية، الصناعية، وغيرها)\nتكنولوجيا المعلومات وعلوم الحاسب\nإدارة الأعمال، والموارد البشرية، والتسويق، والمالية، وسلاسل الإمداد\n\nمتطلبات البرنامج\n\nيجب أن يكون التدريب التعاوني (Coop) متطلباً للتخرج في الجامعة أو الكلية.\nيجب أن يتم ترشيح المتقدمين من قِبل جامعتهم أو كليتهم (مع ضرورة تقديم خطاب رسمي للتدريب التعاوني).\nيجب ألا يقل المعدل التراكمي للمتقدم عن 2.50 من 4، أو 3.50 من 5.\nيجب أن يكون المتقدمون للتدريب التعاوني لائقين طبياً.\nيجب ألا يكون المتقدم قد تخرج بالفعل من الجامعة أو الكلية.\n\nأماكن التدريب:\nالجبيل\nالرياض\nينبع",
+        "location": "الجبيل\nالرياض\nينبع"
+      },
+      "is_opportunity": true,
+      "location": "Al Jubail, Saudi Arabia, Riyadh, Saudi Arabia, Yanbu, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": true,
+      "title": "Cooperative Training Program",
+      "type": "coop",
+      "url": "https://www.linkedin.com/jobs/view/4484662537/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.linkedin.com/jobs/view/4484662537/"
+      ],
+      "message_id": 5962,
+      "permalink": "https://t.me/SALTRAI/5962",
+      "posted_at": "2026-11-07T08:22:35+00:00",
+      "text": "شركة سابك SABIC تعلن عن فتح باب التقديم في برنامج التدريب التعاوني (Cooperative Training Program) لطلاب وطالبات الجامعات والكليات في عدة مدن بالمملكة.\n\nSABIC\n\nhttps://www.linkedin.com/jobs/view/4484662537/\n\nالتخصصات الهندسية (الميكانيكية، الكهربائية، الكيميائية، الصناعية، وغيرها)\nتكنولوجيا المعلومات وعلوم الحاسب\nإدارة الأعمال، والموارد البشرية، والتسويق، والمالية، وسلاسل الإمداد\n\nمتطلبات البرنامج\n\nيجب أن يكون التدريب التعاوني (Coop) متطلباً للتخرج في الجامعة أو الكلية.\nيجب أن يتم ترشيح المتقدمين من قِبل جامعتهم أو كليتهم (مع ضرورة تقديم خطاب رسمي للتدريب التعاوني).\nيجب ألا يقل المعدل التراكمي للمتقدم عن 2.50 من 4، أو 3.50 من 5.\nيجب أن يكون المتقدمون للتدريب التعاوني لائقين طبياً.\nيجب ألا يكون المتقدم قد تخرج بالفعل من الجامعة أو الكلية.\n\nأماكن التدريب:\nالجبيل\nالرياض\nينبع\n\nموعد التقديم:\nيبدأ التقديم: 2 نوفمبر 2026\nينتهي التقديم: 15 نوفمبر 2026"
+    }
+  },
+  "SALTRAI:5964": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-07T08:52:37+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "KPMG",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "KPMG",
+        "deadline": null,
+        "description": null,
+        "location": "Riyadh%2C-Jeddah-&-Khobar"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Jeddah & Khobar, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "KPMG COOP & Graduate Internship Program",
+      "type": "internship_or_coop",
+      "url": "https://slccareers.kpmg.com/job/Riyadh-KPMG-COOP-Program-Riyadh%2C-Jeddah-&-Khobar/1368518423/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://slccareers.kpmg.com/job/Riyadh-KPMG-COOP-Program-Riyadh%2C-Jeddah-&-Khobar/1368518423/",
+        "https://slccareers.kpmg.com/job/Riyadh-KPMG-Graduate-Internship-Program-Riyadh%2C-Jeddah-&-Khobar/1368518523/"
+      ],
+      "message_id": 5964,
+      "permalink": "https://t.me/SALTRAI/5964",
+      "posted_at": "2026-11-07T08:22:35+00:00",
+      "text": "https://slccareers.kpmg.com/job/Riyadh-KPMG-COOP-Program-Riyadh%2C-Jeddah-&-Khobar/1368518423/\nكووب\n-\n\nhttps://slccareers.kpmg.com/job/Riyadh-KPMG-Graduate-Internship-Program-Riyadh%2C-Jeddah-&-Khobar/1368518523/\nخريجين\n-\nبكرا تتفعل الروابط"
+    }
+  },
+  "SALTRAI:5967": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-07T08:53:01+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "AlAhli Bank",
+      "confidence": 0.7,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "AlAhli",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "SNB Cooperative Training Program",
+      "type": "coop",
+      "url": "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program"
+      ],
+      "message_id": 5967,
+      "permalink": "https://t.me/SALTRAI/5967",
+      "posted_at": "2026-11-07T08:22:35+00:00",
+      "text": "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program"
+    }
+  },
+  "SALTRAI:5968": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-07T08:53:33+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Najmat Al-Mada'in | نجمة المدائن",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة نجمة المدائن عن فتح باب استقبال طلبات التدريب التعاوني للطلاب والطالبات السعوديين في التخصصات التالية:\n• المحاسبة (Accounting)\n• الموارد البشرية (Human Resources)\nالفئة المستهدفة: طلاب وطالبات الجامعات والكليات ممن لديهم متطلب تدريب تعاوني ضمن خطتهم الدراسية."
+      },
+      "evidence": {
+        "company": "شركة نجمة المدائن",
+        "deadline": null,
+        "description": "تعلن شركة نجمة المدائن عن فتح باب استقبال طلبات التدريب التعاوني للطلاب والطالبات السعوديين في التخصصات التالية:\n• المحاسبة (Accounting)\n• الموارد البشرية (Human Resources)\nالفئة المستهدفة: طلاب وطالبات الجامعات والكليات ممن لديهم متطلب تدريب تعاوني ضمن خطتهم الدراسية.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "COOP Training Opportunities",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfi9I6qRN6P_cLLwvq5Pa-HhROJ9j4PEqGS5-AMczEhbVklcg/viewform?usp=header"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSfi9I6qRN6P_cLLwvq5Pa-HhROJ9j4PEqGS5-AMczEhbVklcg/viewform?usp=header"
+      ],
+      "message_id": 5968,
+      "permalink": "https://t.me/SALTRAI/5968",
+      "posted_at": "2026-11-07T08:22:35+00:00",
+      "text": "فرص تدريب تعاوني | COOP Training Opportunities\nتعلن شركة نجمة المدائن عن فتح باب استقبال طلبات التدريب التعاوني للطلاب والطالبات السعوديين في التخصصات التالية:\n• المحاسبة (Accounting)\n• الموارد البشرية (Human Resources)\nالفئة المستهدفة: طلاب وطالبات الجامعات والكليات ممن لديهم متطلب تدريب تعاوني ضمن خطتهم الدراسية.\nطريقة التقديم: على الراغبين في التقديم تعبئة نموذج التسجيل عبر الرابط التالي:\nhttps://docs.google.com/forms/d/e/1FAIpQLSfi9I6qRN6P_cLLwvq5Pa-HhROJ9j4PEqGS5-AMczEhbVklcg/viewform?usp=header\nسيتم مراجعة الطلبات والتواصل مع المرشحين المناسبين.\nشركة نجمة المدائن نسعد باهتمامكم ونتطلع إلى استقبال الكفاءات الشابة."
+    }
+  },
+  "SALTRAI:5969": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التصميم الجرافيكس .\n\nللمهتمين، يرجى تعبئة نموذج التقديم وإرفاق السيرة الذاتية من خلال الرابط: https://forms.gle/ToZpPYQyiYpmEGFp7\n\nانضم لفريقنا واكتسب خبرة عملية حقيقية."
+        }
+      },
+      "existing_index": 161,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-07T08:53:38+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "عزم الإنجاز",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التصميم الجرافيكس .\n\nللمهتمين، يرجى تعبئة نموذج التقديم وإرفاق السيرة الذاتية من خلال الرابط: https://forms.gle/ToZpPYQyiYpmEGFp7\n\nانضم لفريقنا واكتسب خبرة عملية حقيقية."
+      },
+      "evidence": {
+        "company": "عزم الإنجاز",
+        "deadline": null,
+        "description": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التصميم الجرافيكس .\n\nللمهتمين، يرجى تعبئة نموذج التقديم وإرفاق السيرة الذاتية من خلال الرابط: https://forms.gle/ToZpPYQyiYpmEGFp7\n\nانضم لفريقنا واكتسب خبرة عملية حقيقية.",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني | التصميم الجرافيكس",
+      "type": "coop",
+      "url": "https://forms.gle/ToZpPYQyiYpmEGFp7"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/ToZpPYQyiYpmEGFp7"
+      ],
+      "message_id": 5969,
+      "permalink": "https://t.me/SALTRAI/5969",
+      "posted_at": "2026-11-07T08:22:35+00:00",
+      "text": "📢 فرصة تدريب تعاوني | التصميم الجرافيكس\n\nتعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال التصميم الجرافيكس .\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم وإرفاق السيرة الذاتية من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7\n\n✨ انضم لفريقنا واكتسب خبرة عملية حقيقية."
+    }
+  },
+  "SALTRAI:5975": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-07T08:54:25+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Ministry of Tourism | وزارة السياحة",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "وزارة السياحة",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/"
+      ],
+      "message_id": 5975,
+      "permalink": "https://t.me/SALTRAI/5975",
+      "posted_at": "2026-11-07T08:22:35+00:00",
+      "text": "https://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/\n\nهذا وزارة السياحة"
+    }
+  },
+  "SALTRAI:5976": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-07T08:54:34+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Dover",
+      "confidence": 0.85,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "jobs.dover.com",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://jobs.dover.com/qawafel/245ec639-34b4-45cb-8a0b-a66f6b3a1d92"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://jobs.dover.com/qawafel/245ec639-34b4-45cb-8a0b-a66f6b3a1d92",
+        "https://lnkd.in/p/dCGirRBj"
+      ],
+      "message_id": 5976,
+      "permalink": "https://t.me/SALTRAI/5976",
+      "posted_at": "2026-11-07T08:23:43+00:00",
+      "text": "#تدريب_تعاوني #تدريب\n\nhttps://jobs.dover.com/qawafel/245ec639-34b4-45cb-8a0b-a66f6b3a1d92\n\nhttps://lnkd.in/p/dCGirRBj"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
