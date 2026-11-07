@@ -2468,8 +2468,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-07T08:52:11+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-07T08:54:59+00:00",
+      "status": "sent",
+      "telegram_message_id": 504
     },
     "extracted": {
       "company": "مكتبة الملك عبدالعزيز",
@@ -2512,8 +2513,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-07T08:52:14+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-07T08:54:59+00:00",
+      "status": "sent",
+      "telegram_message_id": 505
     },
     "extracted": {
       "company": "SABIC",
@@ -2558,8 +2560,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-07T08:52:37+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-07T08:55:00+00:00",
+      "status": "sent",
+      "telegram_message_id": 506
     },
     "extracted": {
       "company": "KPMG",
@@ -2603,8 +2606,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-07T08:53:01+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-07T08:55:00+00:00",
+      "status": "sent",
+      "telegram_message_id": 507
     },
     "extracted": {
       "company": "AlAhli Bank",
@@ -2647,8 +2651,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-07T08:53:33+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-07T08:55:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 508
     },
     "extracted": {
       "company": "Najmat Al-Mada'in | نجمة المدائن",
@@ -2697,8 +2702,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-07T08:53:38+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-07T08:55:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 509
     },
     "extracted": {
       "company": "عزم الإنجاز",
@@ -2743,8 +2749,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-07T08:54:25+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-07T08:55:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 510
     },
     "extracted": {
       "company": "Ministry of Tourism | وزارة السياحة",
@@ -2787,8 +2794,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-07T08:54:34+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-07T08:55:02+00:00",
+      "status": "sent",
+      "telegram_message_id": 511
     },
     "extracted": {
       "company": "Dover",
