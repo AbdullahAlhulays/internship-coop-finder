@@ -2795,8 +2795,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-07T15:43:28+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-07T15:44:04+00:00",
+      "status": "sent",
+      "telegram_message_id": 516
     },
     "extracted": {
       "company": "Tamara",
@@ -5610,8 +5611,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-07T15:44:02+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-07T15:44:05+00:00",
+      "status": "sent",
+      "telegram_message_id": 517
     },
     "extracted": {
       "company": "Saudi Consult | شركة سعودكونسلت",
