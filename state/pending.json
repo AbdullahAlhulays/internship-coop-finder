@@ -3745,8 +3745,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-08T18:51:51+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-08T18:51:54+00:00",
+      "status": "sent",
+      "telegram_message_id": 520
     },
     "extracted": {
       "company": "Alrajhi Bank",
