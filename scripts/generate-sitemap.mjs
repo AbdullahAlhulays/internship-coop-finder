@@ -12,13 +12,14 @@ import { getSitePageEntries } from "../src/utils/siteRoutes.js";
 // public routes to this array; company pages need no manual sitemap maintenance.
 // Change this only after a meaningful update to generated page content or metadata.
 const PAGE_TEMPLATE_UPDATED = "2026-10-21";
+const COMPANY_DETAILS_UPDATED = "2026-11-08";
 const latestListingDate = companies
   .flatMap((company) => [company.contentUpdatedAt, company.addedAt])
   .filter(Boolean)
   .map((date) => date.slice(0, 10))
   .sort()
   .at(-1);
-const homeLastmod = [PAGE_TEMPLATE_UPDATED, latestListingDate]
+const homeLastmod = [PAGE_TEMPLATE_UPDATED, COMPANY_DETAILS_UPDATED, latestListingDate]
   .filter(Boolean)
   .sort()
   .at(-1);
@@ -32,6 +33,7 @@ const routes = [
   ...getPublishableCompanyPageEntries(companies).flatMap(({ company, slug }) => {
     const lastmod = [
       PAGE_TEMPLATE_UPDATED,
+      COMPANY_DETAILS_UPDATED,
       company.contentUpdatedAt?.slice(0, 10),
       company.addedAt?.slice(0, 10),
     ]

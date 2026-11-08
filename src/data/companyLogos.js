@@ -129,6 +129,21 @@ const WEBP_LOGO_KEYS = new Set(["sami", "sami-autonomous"]);
 const PNG_LOGO_KEYS = new Set(["taibah-valley"]);
 
 const COMPANY_LOGO_OVERRIDES = {
+  Elm: {
+    domain: "elm.sa",
+    key: "elm",
+    extension: "jpg",
+  },
+  "زد": {
+    domain: "zid.sa",
+    key: "zid",
+    extension: "jpg",
+  },
+  "Seara International": {
+    domain: "linkedin.com",
+    key: "seara-international",
+    extension: "jpg",
+  },
   "Medical Care": {
     domain: "care.med.sa",
     key: "national-medical-care",

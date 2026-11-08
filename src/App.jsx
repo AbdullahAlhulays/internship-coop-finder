@@ -65,7 +65,7 @@ const THEME_STORAGE_KEY = "internship-coop-theme";
 const APPLIED_STORAGE_KEY = "internship-coop-applied";
 
 function getSortLabel(company) {
-  return company.name || company.title || company.type || "";
+  return company.name || company.title || "";
 }
 
 function getSavedTheme() {
@@ -573,6 +573,7 @@ export default function App() {
     return (
       <>
         <CompanyPage
+          slug={activeCompanyRecord.slug}
           company={activeCompanyRecord.company}
           statusKey={activeCompanyRecord.statusKey}
           theme={theme}

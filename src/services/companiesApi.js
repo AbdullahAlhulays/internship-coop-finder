@@ -16,7 +16,6 @@ const COMPANY_FIELDS = [
   "deadlineTime",
   "applicationLink",
   "deadline",
-  "type",
 ];
 
 export const hasRemoteCompanies = Boolean(DATA_URL);
@@ -61,8 +60,7 @@ function isValidCompany(company) {
     (company.openingDate === undefined || typeof company.openingDate === "string") &&
     (company.deadlineTime === undefined || typeof company.deadlineTime === "string") &&
     typeof company.applicationLink === "string" &&
-    (company.deadline === undefined || typeof company.deadline === "string") &&
-    typeof company.type === "string"
+    (company.deadline === undefined || typeof company.deadline === "string")
   );
 }
 

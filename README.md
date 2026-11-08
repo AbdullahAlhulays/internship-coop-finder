@@ -74,8 +74,7 @@ That URL must return JSON in either format:
     "addedAt": "2026-05-03T23:09:44+03:00",
     "openingDate": "2026-05-01",
     "deadline": "2026-05-30",
-    "deadlineTime": "23:55",
-    "type": "Internship / COOP"
+    "deadlineTime": "23:55"
   }
 ]
 ```
@@ -101,8 +100,7 @@ or:
       "addedAt": "2026-05-03T23:09:44+03:00",
       "openingDate": "2026-05-01",
       "deadline": "2026-05-30",
-      "deadlineTime": "23:55",
-      "type": "Internship / COOP"
+      "deadlineTime": "23:55"
     }
   ]
 }
@@ -118,7 +116,9 @@ Expired opportunities are hidden automatically when their deadline passes.
 
 `location` is optional. Add it when you want that detail to appear on the card.
 
-`description` is optional. Store localized text as `{ "en": "...", "ar": "..." }` and add only text you have verified. Normally, a company receives standalone English and Arabic pages, internal detail links, and sitemap entries only after both localized descriptions are available. The 12 restored legacy slugs in `src/utils/companyRoutes.js` are a limited exception: their pages show only recorded facts and application sources. Other incomplete listings remain homepage cards without indexable detail pages. A legacy string is treated as English only. `bio` is accepted as legacy source data but is not displayed in the simplified card design.
+`description` is optional. Store localized text as `{ "en": "...", "ar": "..." }` and add only verified role, program, requirement, or skills information. Any nonempty announcement description qualifies for a detail page; a short description is sufficient. Listings with no description remain homepage cards and have no detail link, generated detail page, or sitemap entry. A company overview alone never qualifies a listing for a detail page. A legacy string is treated as English only. `bio` remains accepted as legacy data but is not displayed.
+
+Sourced bilingual company backgrounds live separately in `src/data/companyOverviews.json`, keyed by stable listing slug. The detail page displays them below the announcement with a dashed divider and source link. Keep these summaries brief, factual, and independent of application requirements; add a researched overview when adding a new detail page.
 
 The Telegram agent copies one source-language description only when the post explicitly includes meaningful role, responsibility, requirement, or program details. It never asks the LLM to translate or invent missing text. Before approval, **Edit a field** lets that source text be corrected. On approval, the lightweight `deep-translator` library translates the final edited text into the missing English or Arabic version, and both versions are published together. Google Translate is retried once and MyMemory is used as a chunked non-LLM fallback if Google is temporarily unavailable. If both languages were entered manually, they are preserved and translation is skipped; if both translation services fail, approval stops instead of publishing a half-localized card.
 

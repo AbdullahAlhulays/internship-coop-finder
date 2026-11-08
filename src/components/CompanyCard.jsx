@@ -3,7 +3,6 @@ import CompanyLogo from "./CompanyLogo.jsx";
 import InternalLink from "./InternalLink.jsx";
 import {
   getCompanyDisplayName,
-  getOpportunityTypeKey,
 } from "../data/companyLogos.js";
 import {
   getCompanyPath,
@@ -91,7 +90,6 @@ function CompanyCard({
     messages,
   );
   const displayName = getCompanyDisplayName(company.name);
-  const opportunityType = getOpportunityTypeKey(company.type);
   const hasDescription = hasPublishableCompanyContent(company);
 
   return (
@@ -114,23 +112,13 @@ function CompanyCard({
         </div>
       </div>
 
-      <div className="opportunity-meta">
-        <span className="opportunity-type">
-          {messages.opportunityTypes[opportunityType]}
-        </span>
-        {requiresLetter && (
-          <span className="letter-requirement">
-            {messages.card.letterRequired}
-          </span>
-        )}
-      </div>
-
       <div className="deadline-line" aria-label={deadlineContent.value}>
         <span className="deadline-dot" aria-hidden="true" />
         {deadlineContent.label && <span>{deadlineContent.label}</span>}
         <strong>{deadlineContent.value}</strong>
       </div>
 
+      <div className="card-summary">
       {hasDescription ? (
         <InternalLink
           className="card-details-link"
@@ -146,6 +134,12 @@ function CompanyCard({
           <span>{messages.card.detailsUnavailable}</span>
         </span>
       )}
+        {requiresLetter && (
+          <span className="letter-requirement">
+            {messages.card.letterRequired}
+          </span>
+        )}
+      </div>
 
       <div className="card-actions">
         <a

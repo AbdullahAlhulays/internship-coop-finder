@@ -3,11 +3,13 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { companies } from "../src/data/companies.js";
+import { getCompanyOverview } from "../src/data/companyOverviews.js";
 import {
   getCanonicalUrl,
   getCompanyPath,
+  getCompanyPageEntries,
+  hasPublishableCompanyContent,
   getPublishableCompanyPageEntries,
-  hasRestoredCompanyPage,
 } from "../src/utils/companyRoutes.js";
 import { getSitePageEntries } from "../src/utils/siteRoutes.js";
 
@@ -57,32 +59,22 @@ for (const pagePath of paths) {
     assert.ok(!descriptions[locale].has(description), `${pagePath}: unique description`);
     descriptions[locale].add(description);
     assert.ok(!html.includes('id="website-schema"'), `${pagePath}: homepage schema only`);
-    assert.ok(
-      hasRestoredCompanyPage(company)
-        ? html.includes(company.applicationLink)
-        : html.includes("<section>"),
-      `${pagePath}: crawlable details`,
-    );
+    assert.ok(html.includes("<section>"), `${pagePath}: crawlable details`);
+    const overview = getCompanyOverview(slug, locale);
+    assert.ok(overview?.text && overview.sourceUrl, `${pagePath}: sourced company overview`);
+    assert.ok(html.includes("<hr />"), `${pagePath}: overview divider`);
+    assert.ok(html.includes(overview.sourceUrl.replace(/&/g, "&amp;")), `${pagePath}: overview source`);
   }
 }
 
-const restoredPaths = [
-  "/companies/tamara",
-  "/companies/ministry-of-tourism",
-  "/companies/petro-rabigh",
-  "/companies/emdad",
-  "/companies/sami",
-  "/companies/alfalak",
-  "/companies/saudi-railway-polytechnic",
-  "/ar/companies/roland-berger",
-  "/companies/saudi-azm",
-  "/companies/al-rajhi-takaful",
-  "/ar/companies/barakah",
-  "/ar/companies/saudi-power-procurement-company-sppc",
-];
-for (const pagePath of restoredPaths) {
-  assert.ok(paths.includes(pagePath), `${pagePath}: restored route`);
-  assert.ok(listedUrls.includes(getCanonicalUrl(pagePath)), `${pagePath}: sitemap`);
+for (const { company, slug } of getCompanyPageEntries(companies)) {
+  if (hasPublishableCompanyContent(company)) continue;
+  for (const locale of ["en", "ar"]) {
+    const pagePath = getCompanyPath(slug, locale);
+    assert.ok(!paths.includes(pagePath), `${pagePath}: no empty detail route`);
+    assert.ok(!listedUrls.includes(getCanonicalUrl(pagePath)), `${pagePath}: excluded from sitemap`);
+    await assert.rejects(readFile(path.join(dist, htmlFile(pagePath))), { code: "ENOENT" });
+  }
 }
 
 for (const homepage of ["index.html", "ar.html"]) {

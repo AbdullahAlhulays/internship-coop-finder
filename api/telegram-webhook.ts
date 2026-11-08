@@ -55,7 +55,6 @@ import {
   buildDispatchPayload,
   buildLetterChoiceKeyboard,
   buildLocationPromptKeyboard,
-  buildTypeChoiceKeyboard,
   CALENDAR_ACTIONS,
   CREATION_ACTIONS,
   CREATION_PROMPTS,
@@ -85,6 +84,7 @@ import {
   validateFieldValue,
 } from "./webhook-logic";
 import {
+  advanceCreationStep,
   applyAwaitingEditPatch,
   applyCreationFieldAndAdvance,
   applyDeadlinePatch,
@@ -476,16 +476,19 @@ async function handleLocalAction(
         return new Response("ok", { status: 200 });
       }
 
+      // Old /new drafts may still have a type keyboard. Resume without storing a type.
       case "newtype": {
         const parsed = parseNewChoice(rest);
-        if (!parsed) throw new Error("malformed newtype button");
-        const { value, draftId } = parsed;
-        const next = nextCreationStep("type"); // always "link"
-        await patchPending(repo, ghToken, `Telegram: /new type=${value} for ${draftId}`, (data) =>
-          applyCreationFieldAndAdvance(data, draftId, CREATION_STEP_FIELD.type, value, next));
+        if (!parsed) throw new Error("malformed legacy type button");
+        let advanced = false;
+        await patchPending(repo, ghToken, `Telegram: resume /new ${parsed.draftId}`, (data) => {
+          if (data[parsed.draftId]?.creating_step !== "type") return data;
+          advanced = true;
+          return advanceCreationStep(data, parsed.draftId, "link");
+        });
         await answerCallbackQuery(token, callbackQueryId);
         await editMessageReplyMarkup(token, chatId, messageId, { inline_keyboard: [] });
-        if (next !== "done") await promptForStep(draftId, next, chatId, token);
+        if (advanced) await promptForStep(parsed.draftId, "link", chatId, token);
         return new Response("ok", { status: 200 });
       }
 
@@ -569,9 +572,6 @@ async function resolveCreationDeadline(
  * reply advances the draft and right after a button-driven step does. */
 async function promptForStep(draftId: string, step: CreationStep, chatId: number | string, token: string): Promise<void> {
   switch (step) {
-    case "type":
-      await sendMessageWithKeyboard(token, chatId, CREATION_PROMPTS.type, buildTypeChoiceKeyboard(draftId));
-      return;
     case "location":
       await sendMessageWithKeyboard(token, chatId, CREATION_PROMPTS.location, buildLocationPromptKeyboard(draftId));
       return;
@@ -653,7 +653,6 @@ async function finishCreation(
   const c: Record<string, unknown> = captured;
   const fields = {
     company: typeof c.company === "string" ? c.company : "",
-    type: typeof c.type === "string" ? c.type : "",
     url: typeof c.url === "string" ? c.url : "",
     location: typeof c.location === "string" && c.location ? c.location : null,
     deadline: typeof c.deadline === "string" && c.deadline ? c.deadline : null,
@@ -779,7 +778,7 @@ async function handleCreationTextReply(
     return new Response("ok", { status: 200 });
   }
 
-  if (step === "type" || step === "letter") {
+  if (step === "letter") {
     await sendPlainMessage(token, chatId, "Please use the buttons above to answer this one, or send /cancel to abandon this card.");
     return new Response("ok", { status: 200 });
   }

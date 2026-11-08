@@ -54,7 +54,7 @@ from dataclasses import dataclass, field
 # in this list — the link must never change (see module docstring),
 # and if the name legitimately changed the link would usually have
 # changed too, so treat that as suspicious rather than auto-applying.
-REFRESHABLE_FIELDS = ("location", "deadline", "type", "description", "requiresLetter")
+REFRESHABLE_FIELDS = ("location", "deadline", "description", "requiresLetter")
 
 
 @dataclass

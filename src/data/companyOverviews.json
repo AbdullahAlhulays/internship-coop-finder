@@ -1,0 +1,562 @@
+{
+  "cerebra": {
+    "en": "Cerebra is a Riyadh-based cybersecurity company that develops security technologies for organizations.\nIts work focuses on managing cyber risks, protecting digital identities, and enabling secure access to digital services.",
+    "ar": "سيريبرا شركة للأمن السيبراني مقرها الرياض، تطور تقنيات أمنية للمنشآت.\nتركز أعمالها على إدارة المخاطر السيبرانية وحماية الهويات الرقمية وتمكين الوصول الآمن إلى الخدمات الرقمية.",
+    "sourceUrl": "https://cerebra.sa/ar/about-us"
+  },
+  "sgs": {
+    "en": "Saudi Ground Services provides ground-handling services for airlines at airports across Saudi Arabia.\nIts activities include passenger services, baggage handling, ramp operations, and airline representation and supervision.",
+    "ar": "تقدم الشركة السعودية للخدمات الأرضية خدمات المناولة الأرضية لشركات الطيران في مطارات المملكة.\nتشمل أعمالها خدمة المسافرين ومناولة الأمتعة وعمليات ساحة الطائرات وتمثيل شركات الطيران والإشراف على خدماتها.",
+    "sourceUrl": "https://www.saudiags.com/"
+  },
+  "osool": {
+    "en": "Osool is an integrated real estate investment and asset management company.\nIt manages a diversified property portfolio and works across investment selection, asset operations, and improving long-term property value.",
+    "ar": "أصول شركة متكاملة للاستثمار العقاري وإدارة الأصول.\nتدير محفظة عقارية متنوعة، وتعمل في اختيار الاستثمارات وتشغيل الأصول وتعزيز قيمة العقارات على المدى الطويل.",
+    "sourceUrl": "https://www.osoolre.com/about-us/"
+  },
+  "zaiti": {
+    "en": "Zaiti is a Saudi vehicle-service company specializing in engine-oil changes and periodic maintenance.\nIt delivers services through specialist centers and technical teams, with digital channels for individual and business customers.",
+    "ar": "زيتي شركة سعودية لخدمات المركبات، متخصصة في تغيير زيت المحركات والصيانة الدورية.\nتقدم خدماتها عبر مراكز متخصصة وفرق فنية، وتوفر قنوات رقمية لخدمة الأفراد والشركات.",
+    "sourceUrl": "https://zaiti.co/"
+  },
+  "roshn-group": {
+    "en": "ROSHN Group is a Saudi real estate developer and a Public Investment Fund company.\nIt develops integrated residential communities and mixed-use destinations, with a focus on connectivity, sustainability, and quality of life.",
+    "ar": "مجموعة روشن مطور عقاري سعودي وإحدى شركات صندوق الاستثمارات العامة.\nتطور مجتمعات سكنية متكاملة ووجهات متعددة الاستخدامات، مع التركيز على الترابط والاستدامة وتحسين جودة الحياة.",
+    "sourceUrl": "https://www.roshn.sa/we-are-roshn"
+  },
+  "devoteam": {
+    "en": "Devoteam is a technology consulting firm serving businesses and public institutions.\nIts expertise includes digital transformation, cloud platforms, data, artificial intelligence, and cybersecurity, from strategy through implementation.",
+    "ar": "ديفوتيم شركة للاستشارات التقنية تخدم الشركات والجهات العامة.\nتشمل خبراتها التحول الرقمي والمنصات السحابية والبيانات والذكاء الاصطناعي والأمن السيبراني، من وضع الاستراتيجية إلى التنفيذ.",
+    "sourceUrl": "https://www.linkedin.com/company/devoteam"
+  },
+  "national-development-fund-ndf": {
+    "en": "The National Development Fund oversees Saudi Arabia's development funds and banks.\nIt coordinates their work, improves the effectiveness and sustainability of development financing, and aligns their activities with national development priorities.",
+    "ar": "يشرف صندوق التنمية الوطني على الصناديق والبنوك التنموية في المملكة العربية السعودية.\nينسق أعمالها ويرفع كفاءة التمويل التنموي واستدامته، ويوائم أنشطتها مع أولويات التنمية الوطنية.",
+    "sourceUrl": "https://ndf.gov.sa/about"
+  },
+  "bupa-arabia": {
+    "en": "Bupa Arabia is a healthcare insurance company based in Saudi Arabia and listed on the Saudi stock market.\nIt offers health insurance solutions tailored to the local market, drawing on the wider Bupa Group's healthcare expertise.",
+    "ar": "بوبا العربية شركة للتأمين الصحي مقرها المملكة العربية السعودية ومدرجة في السوق المالية السعودية.\nتقدم حلول تأمين صحي تلائم السوق المحلية، وتستفيد من خبرات مجموعة بوبا في الرعاية الصحية.",
+    "sourceUrl": "https://bupa.com.sa/en/about"
+  },
+  "tawal": {
+    "en": "TAWAL is a telecommunications infrastructure company that designs, builds, and manages telecom towers.\nIt leases shared infrastructure to operators and other organizations, and provides indoor coverage and operations and maintenance services.",
+    "ar": "توال شركة للبنية التحتية للاتصالات تعمل في تصميم أبراج الاتصالات وبنائها وإدارتها.\nتؤجر البنية التحتية المشتركة للمشغلين والجهات الأخرى، وتقدم حلول التغطية الداخلية وخدمات التشغيل والصيانة.",
+    "sourceUrl": "https://www.tawal.com.sa/en/about-us"
+  },
+  "hewlett-packard-enterprise": {
+    "en": "Hewlett Packard Enterprise is an enterprise technology company supporting organizations across industries.\nIts work combines artificial intelligence, cloud, and networking technologies to help customers use data and improve business performance.",
+    "ar": "هيوليت باكارد إنتربرايز شركة لتقنيات المؤسسات تخدم منشآت في قطاعات متعددة.\nتجمع أعمالها بين الذكاء الاصطناعي والحوسبة السحابية والشبكات لمساعدة العملاء على الاستفادة من البيانات وتحسين أداء الأعمال.",
+    "sourceUrl": "https://www.hpe.com/us/en/about.html"
+  },
+  "ektis": {
+    "en": "Ektis is a specialist financial-services consulting firm serving institutions across the Middle East.\nIt supports strategy, risk, technology, and operations through advisory work, applied innovation, and implementation services.",
+    "ar": "إكتس شركة استشارات متخصصة في الخدمات المالية، تخدم المؤسسات في منطقة الشرق الأوسط.\nتدعم الاستراتيجية والمخاطر والتقنية والعمليات من خلال الاستشارات والابتكار التطبيقي وخدمات التنفيذ.",
+    "sourceUrl": "https://ektis.com/"
+  },
+  "mytrip": {
+    "en": "MyTrip, branded in Arabic as Rihlati, develops a travel app focused on the airport experience.\nIts features include flight and gate updates, interactive airport maps, service discovery, and organizing travel information in one place.",
+    "ar": "ماي تريب، المعروفة عربيًا باسم «رحلتي»، تطور تطبيق سفر يركز على تجربة المسافر داخل المطار.\nتشمل مزاياه تحديثات الرحلات والبوابات وخرائط المطار التفاعلية واكتشاف الخدمات وتنظيم معلومات السفر في مكان واحد.",
+    "sourceUrl": "https://mytrip.company/"
+  },
+  "nexo": {
+    "en": "Nexo is the organization named in the linked announcement, which mentions teams for human resources, design, photography, and editing.\nThe announcement does not establish its full legal identity or core business, so a broader company profile could not be verified.",
+    "ar": "نيكسو هي الجهة المذكورة في الإعلان المرتبط، الذي يشير إلى فرق للموارد البشرية والتصميم والتصوير والمونتاج.\nلا يوضح الإعلان هويتها القانونية الكاملة أو نشاطها الرئيسي، لذلك تعذر التحقق من نبذة أوسع عن الشركة.",
+    "sourceUrl": "https://forms.gle/7ApEmV9eDjhJ5S1i6"
+  },
+  "americana-restaurants": {
+    "en": "Americana Restaurants operates quick-service and casual-dining restaurants across the Middle East, North Africa, and Kazakhstan.\nIts business brings together a portfolio of international restaurant brands and regional expertise in food service and restaurant operations.",
+    "ar": "تشغل أمريكانا للمطاعم مطاعم الخدمة السريعة والمطاعم غير الرسمية في الشرق الأوسط وشمال أفريقيا وكازاخستان.\nتجمع أعمالها بين مجموعة من العلامات العالمية وخبرات إقليمية في تقديم الطعام وتشغيل المطاعم.",
+    "sourceUrl": "https://www.americanarestaurants.com/who-we-are/"
+  },
+  "arabian-oud": {
+    "en": "Arabian Oud is a Saudi perfume manufacturer and retailer with production facilities in Riyadh.\nIts products combine Eastern fragrance traditions with contemporary perfumery and are distributed through an international retail network.",
+    "ar": "العربية للعود شركة سعودية لصناعة العطور وبيعها بالتجزئة، ولديها مصانع في الرياض.\nتمزج منتجاتها بين تقاليد العطور الشرقية وأساليب صناعة العطور المعاصرة، وتوزعها عبر شبكة متاجر دولية.",
+    "sourceUrl": "https://sa.arabianoud.com/en/about-arabian-oud/page-164033926"
+  },
+  "company-4": {
+    "en": "The Cultural Development Fund is a Saudi development fund supporting the cultural sector.\nIt finances cultural projects, facilitates investment, and helps creative businesses grow sustainably across the sectors covered by the National Culture Strategy.",
+    "ar": "صندوق التنمية الثقافي صندوق تنموي سعودي يدعم القطاع الثقافي.\nيمول المشاريع الثقافية ويسهل الاستثمار ويساعد المنشآت الإبداعية على النمو المستدام في القطاعات المشمولة بالاستراتيجية الوطنية للثقافة.",
+    "sourceUrl": "https://ndf.gov.sa/funds/cultural-development-fund"
+  },
+  "wadi-jeddah": {
+    "en": "Wadi Jeddah is the investment arm of King Abdulaziz University.\nIt develops knowledge-economy investments in areas such as education, healthcare, technology, and logistics, while supporting innovation and entrepreneurship.",
+    "ar": "وادي جدة هي الذراع الاستثمارية لجامعة الملك عبدالعزيز.\nتطور استثمارات في الاقتصاد المعرفي بمجالات تشمل التعليم والصحة والتقنية والخدمات اللوجستية، مع دعم الابتكار وريادة الأعمال.",
+    "sourceUrl": "https://kau.edu.sa/en/page-legacy/wadi-jeddah"
+  },
+  "riyadh-air-2": {
+    "en": "Riyadh Air is a Saudi airline connecting destinations through Riyadh.\nIts business includes passenger air travel, digital booking services and dedicated air cargo services.",
+    "ar": "طيران الرياض شركة طيران سعودية تربط الوجهات عبر مدينة الرياض.\nوتشمل أعمالها نقل المسافرين وخدمات الحجز الرقمية وخدمات الشحن الجوي المتخصصة.",
+    "sourceUrl": "https://www.riyadhair.com/en/home"
+  },
+  "mrsool": {
+    "en": "Mrsool is an on-demand delivery platform in Saudi Arabia connecting customers with couriers.\nIt supports orders from restaurants and stores, alongside services for sending and receiving items within cities.",
+    "ar": "مرسول منصة توصيل عند الطلب في المملكة العربية السعودية، تربط العملاء بمناديب التوصيل.\nتتيح الطلب من المطاعم والمتاجر، إلى جانب خدمات إرسال الأغراض واستلامها داخل المدن.",
+    "sourceUrl": "https://mrsool.co/home/"
+  },
+  "ministry-of-communications-and-information-technology-2": {
+    "en": "Saudi Arabia's Ministry of Communications and Information Technology supports the country's digital economy and technology ecosystem.\nIts work includes digital capabilities, infrastructure, entrepreneurship, and initiatives that help accelerate digital transformation.",
+    "ar": "تدعم وزارة الاتصالات وتقنية المعلومات الاقتصاد الرقمي والمنظومة التقنية في المملكة العربية السعودية.\nتشمل أعمالها تنمية القدرات الرقمية والبنية التحتية وريادة الأعمال والمبادرات التي تسهم في تسريع التحول الرقمي.",
+    "sourceUrl": "https://mcit.gov.sa/en/"
+  },
+  "ministry-of-tourism": {
+    "en": "Saudi Arabia's Ministry of Tourism develops the policies and regulatory foundations for the national tourism sector.\nIt works on sustainable tourism growth, investment, visitor experiences, and national talent development with partners across the tourism ecosystem.",
+    "ar": "تطور وزارة السياحة السياسات والأسس التنظيمية لقطاع السياحة في المملكة العربية السعودية.\nتعمل على النمو السياحي المستدام والاستثمار وتجارب الزوار وتنمية الكفاءات الوطنية بالتعاون مع شركاء المنظومة السياحية.",
+    "sourceUrl": "https://mt.gov.sa/about"
+  },
+  "at-group": {
+    "en": "AT Group is the organization named on the linked training announcement.\nThe announcement lists work areas spanning business, media, marketing, data, and web development, but its core commercial activity and full company identity could not be independently verified.",
+    "ar": "مجموعة آت هي الجهة المذكورة في إعلان التدريب المرتبط.\nيسرد الإعلان مجالات تشمل الأعمال والإعلام والتسويق والبيانات وتطوير المواقع، لكن تعذر التحقق بصورة مستقلة من نشاطها التجاري الرئيسي وهويتها الكاملة.",
+    "sourceUrl": "https://training.at-group.me/"
+  },
+  "alfanar-2": {
+    "en": "Alfanar is a Saudi group working in electrical manufacturing, engineering, and construction.\nIt produces electrical equipment and delivers projects and services for power, renewable energy, infrastructure, and related industries.",
+    "ar": "الفنار مجموعة سعودية تعمل في التصنيع الكهربائي والهندسة والإنشاءات.\nتنتج المعدات الكهربائية وتنفذ مشاريع وخدمات لقطاعات الطاقة والطاقة المتجددة والبنية التحتية والصناعات المرتبطة بها.",
+    "sourceUrl": "https://jobs.alfanar.com/alfanar"
+  },
+  "elm-2": {
+    "en": "Elm is a Saudi digital-solutions company serving government entities, businesses, and individuals.\nIt develops digital products and platforms and provides technology and operational services that support digital transformation across sectors.",
+    "ar": "علم شركة سعودية للحلول الرقمية تخدم الجهات الحكومية والشركات والأفراد.\nتطور المنتجات والمنصات الرقمية وتقدم خدمات تقنية وتشغيلية تدعم التحول الرقمي في قطاعات متعددة.",
+    "sourceUrl": "https://elm.sa/en/about-us/company/Pages/brief.aspx"
+  },
+  "seara-international": {
+    "en": "Seara International is a food business and one of the brands of JBS Group.\nIts portfolio includes poultry and prepared foods supplied through retail, food-service, processing, and distribution channels around the world.",
+    "ar": "سيارا إنترناشونال شركة في قطاع الأغذية وإحدى العلامات التابعة لمجموعة جي بي إس.\nتشمل منتجاتها الدواجن والأطعمة المحضرة، وتوردها عبر قنوات التجزئة وخدمات الطعام والتصنيع والتوزيع في أسواق عالمية.",
+    "sourceUrl": "https://www.linkedin.com/company/searainternational/"
+  },
+  "sifi": {
+    "en": "SiFi is a Riyadh-based fintech company providing a corporate expense-management platform.\nIt helps finance teams manage company spending through corporate cards, spending controls, vendor payments, and centralized expense visibility.",
+    "ar": "سيفي شركة تقنية مالية مقرها الرياض، تقدم منصة لإدارة مصروفات الشركات.\nتساعد الفرق المالية على إدارة الإنفاق عبر بطاقات الشركات وضوابط الصرف ومدفوعات الموردين وإتاحة رؤية موحدة للمصروفات.",
+    "sourceUrl": "https://gb.linkedin.com/company/sifiapp"
+  },
+  "impact46": {
+    "en": "Impact46 is a Riyadh-based investment-management and capital-markets advisory firm licensed by the Capital Market Authority.\nIts activities include venture capital, private credit, fund management, and arranging capital-market transactions.",
+    "ar": "إمباكت46 شركة لإدارة الاستثمار واستشارات أسواق المال مقرها الرياض، ومرخصة من هيئة السوق المالية.\nتشمل أنشطتها رأس المال الجريء والائتمان الخاص وإدارة الصناديق وترتيب معاملات أسواق المال.",
+    "sourceUrl": "https://impact46.sa/contact/"
+  },
+  "cognna-2": {
+    "en": "COGNNA develops cybersecurity products and managed security services using artificial intelligence.\nIts Nexus platform supports threat monitoring, investigation, detection and response to help organizations protect their digital systems.",
+    "ar": "تطور كوقنا منتجات للأمن السيبراني وخدمات أمنية مُدارة باستخدام الذكاء الاصطناعي.\nوتدعم منصة نيكسس مراقبة التهديدات والتحقيق فيها واكتشافها والاستجابة لها لمساعدة المنشآت على حماية أنظمتها الرقمية.",
+    "sourceUrl": "https://www.cognna.com/"
+  },
+  "airbus-defence-and-space": {
+    "en": "Airbus Defence and Space is the Airbus business serving defence and space customers.\nIts work spans military aircraft, satellites, secure communications, and related systems and services for government and commercial missions.",
+    "ar": "إيرباص للدفاع والفضاء هي قطاع إيرباص الذي يخدم عملاء الدفاع والفضاء.\nتشمل أعماله الطائرات العسكرية والأقمار الصناعية والاتصالات الآمنة والأنظمة والخدمات المرتبطة بالمهام الحكومية والتجارية.",
+    "sourceUrl": "https://www.airbus.com/sites/g/files/jlcbta136/files/2025-10/Airbus-Defence-and-Space-presentation-October-2025.pdf"
+  },
+  "blackrock": {
+    "en": "BlackRock is a global investment-management firm serving individual and institutional investors.\nIt offers investment solutions across markets and asset classes, alongside technology that supports portfolio and risk management.",
+    "ar": "بلاك روك شركة عالمية لإدارة الاستثمار تخدم المستثمرين الأفراد والمؤسسات.\nتقدم حلولًا استثمارية في أسواق وفئات أصول متعددة، إلى جانب تقنيات تدعم إدارة المحافظ والمخاطر.",
+    "sourceUrl": "https://www.blackrock.com/corporate/about-us/who-we-are/about-blackrock"
+  },
+  "kfm": {
+    "en": "KFM, or Khosh Fkra Media, is a Bahrain-based marketing agency serving brands across the Gulf.\nIt specializes in social media marketing, content creation, advertising campaigns, video production, and creative brand activations.",
+    "ar": "كي إف إم، أو خوش فكرة ميديا، وكالة تسويق مقرها البحرين وتخدم علامات تجارية في الخليج.\nتتخصص في التسويق عبر وسائل التواصل وصناعة المحتوى والحملات الإعلانية وإنتاج الفيديو والتجارب الإبداعية للعلامات التجارية.",
+    "sourceUrl": "https://www.linkedin.com/company/khoshfkramedia"
+  },
+  "nov-2": {
+    "en": "NOV provides equipment and technology for the global energy industry.\nIts products and services support drilling, rig operations and other energy activities with a focus on safe and efficient operations.",
+    "ar": "توفر إن أو في المعدات والتقنيات لقطاع الطاقة العالمي.\nوتدعم منتجاتها وخدماتها أعمال الحفر وتشغيل الحفارات وغيرها من أنشطة الطاقة مع التركيز على سلامة العمليات وكفاءتها.",
+    "sourceUrl": "https://www.nov.com/about"
+  },
+  "ministry-of-economy-and-planning": {
+    "en": "Saudi Arabia’s Ministry of Economy and Planning supports national economic development and policy making.\nIt publishes economic analysis and indicators to help decision makers understand the Saudi economy.",
+    "ar": "تدعم وزارة الاقتصاد والتخطيط التنمية الاقتصادية وصناعة السياسات في المملكة العربية السعودية.\nوتنشر التحليلات والمؤشرات الاقتصادية لمساعدة صناع القرار على فهم أداء الاقتصاد السعودي.",
+    "sourceUrl": "https://mep.gov.sa/ar"
+  },
+  "spark": {
+    "en": "King Salman Energy Park (SPARK) is an integrated industrial ecosystem serving the energy sector in Saudi Arabia.\nIt provides industrial infrastructure, logistics and investor services to support manufacturing and local supply chains.",
+    "ar": "مدينة الملك سلمان للطاقة «سبارك» منظومة صناعية متكاملة تخدم قطاع الطاقة في المملكة العربية السعودية.\nوتوفر البنية التحتية الصناعية والخدمات اللوجستية وخدمات المستثمرين لدعم التصنيع وسلاسل الإمداد المحلية.",
+    "sourceUrl": "https://www.spark.sa/page/Our_Identity"
+  },
+  "sarj-ai": {
+    "en": "Sarj develops AI agents and automation tools for business operations and customer interactions.\nIts platform handles Arabic voice conversations, document processing and workflows connected to enterprise systems.",
+    "ar": "تطور سرج وكلاء ذكاء اصطناعي وأدوات أتمتة للعمليات التجارية وتفاعلات العملاء.\nوتدعم منصتها المحادثات الصوتية العربية ومعالجة المستندات وسير العمل المرتبط بأنظمة المنشآت.",
+    "sourceUrl": "https://sarj.ai/"
+  },
+  "nov": {
+    "en": "NOV provides equipment and technology for the global energy industry.\nIts products and services support drilling, rig operations and other energy activities with a focus on safe and efficient operations.",
+    "ar": "توفر إن أو في المعدات والتقنيات لقطاع الطاقة العالمي.\nوتدعم منتجاتها وخدماتها أعمال الحفر وتشغيل الحفارات وغيرها من أنشطة الطاقة مع التركيز على سلامة العمليات وكفاءتها.",
+    "sourceUrl": "https://www.nov.com/about"
+  },
+  "air-products": {
+    "en": "Air Products supplies industrial gases and related technologies to sectors including chemicals, refining, manufacturing and healthcare.\nIt also develops and operates hydrogen projects and provides specialist equipment for industrial applications.",
+    "ar": "تزود إير برودكتس قطاعات مثل الكيماويات والتكرير والتصنيع والرعاية الصحية بالغازات الصناعية والتقنيات المرتبطة بها.\nكما تطور وتشغل مشروعات الهيدروجين وتوفر معدات متخصصة للتطبيقات الصناعية.",
+    "sourceUrl": "https://www.airproducts.com.cn/en/company"
+  },
+  "riyadh-air": {
+    "en": "Riyadh Air is a Saudi airline connecting destinations through Riyadh.\nIts business includes passenger air travel, digital booking services and dedicated air cargo services.",
+    "ar": "طيران الرياض شركة طيران سعودية تربط الوجهات عبر مدينة الرياض.\nوتشمل أعمالها نقل المسافرين وخدمات الحجز الرقمية وخدمات الشحن الجوي المتخصصة.",
+    "sourceUrl": "https://www.riyadhair.com/en/home"
+  },
+  "amana-cooperative-insurance": {
+    "en": "Amana Cooperative Insurance provides insurance products for individuals and businesses in Saudi Arabia.\nIts services include motor and medical insurance, alongside digital policy and claims services.",
+    "ar": "تقدم أمانة للتأمين التعاوني منتجات تأمينية للأفراد والمنشآت في المملكة العربية السعودية.\nوتشمل خدماتها تأمين المركبات والتأمين الطبي، إلى جانب الخدمات الرقمية للوثائق والمطالبات.",
+    "sourceUrl": "https://www.amana.sa/"
+  },
+  "lumi": {
+    "en": "Lumi operates in Saudi Arabia’s vehicle rental sector.\nIt offers short and long term rentals, online booking and used vehicle sales through its network and digital channels.",
+    "ar": "تعمل لومي في قطاع تأجير المركبات في المملكة العربية السعودية.\nوتقدم التأجير قصير وطويل الأجل والحجز الإلكتروني وبيع السيارات المستعملة عبر فروعها وقنواتها الرقمية.",
+    "sourceUrl": "https://lumirental.com/ar/"
+  },
+  "hassan-allam-holding": {
+    "en": "Hassan Allam Holding is a diversified group operating in engineering and construction, and investment and development.\nIt delivers projects and infrastructure services across areas such as water, energy, transport and logistics.",
+    "ar": "حسن علام القابضة مجموعة متنوعة الأعمال تعمل في الهندسة والإنشاءات والاستثمار والتطوير.\nوتنفذ مشروعات وخدمات بنية تحتية في مجالات مثل المياه والطاقة والنقل والخدمات اللوجستية.",
+    "sourceUrl": "https://www.hassanallam.com/"
+  },
+  "gulf-insulation-group": {
+    "en": "Gulf Insulation Group manufactures insulation products in Saudi Arabia for construction, infrastructure and industrial applications.\nIts portfolio includes fiberglass, rock wool, building panels and insulated piping solutions.",
+    "ar": "تصنع مجموعة الخليج للعوازل منتجات العزل في المملكة العربية السعودية لتطبيقات البناء والبنية التحتية والصناعة.\nوتشمل منتجاتها الألياف الزجاجية والصوف الصخري وألواح المباني وحلول الأنابيب المعزولة.",
+    "sourceUrl": "https://www.giginsulation.com/en/overview"
+  },
+  "flyadeal-2": {
+    "en": "flyadeal is a Saudi airline based in Jeddah offering low fare air travel.\nIt operates a single class passenger service and serves domestic and international destinations.",
+    "ar": "طيران أديل شركة طيران سعودية مقرها جدة تقدم السفر الجوي بأسعار اقتصادية.\nوتشغل خدمات نقل المسافرين بدرجة واحدة إلى وجهات داخلية ودولية.",
+    "sourceUrl": "https://www.linkedin.com/company/flyadeal"
+  },
+  "ministry-of-justice-2": {
+    "en": "The Board of Grievances is Saudi Arabia’s independent administrative judicial body and the operator of the Khabeer platform linked in this announcement.\nIt hears administrative disputes and provides judicial oversight of government administration to protect rights and uphold the law.",
+    "ar": "ديوان المظالم هيئة القضاء الإداري المستقلة في المملكة، وهو الجهة المشغلة لمنصة خبير المرتبطة بهذا الإعلان.\nوينظر في المنازعات الإدارية ويمارس الرقابة القضائية على أعمال الإدارة لحماية الحقوق وضمان تطبيق الأنظمة.",
+    "sourceUrl": "https://www.bog.gov.sa/AboutUs/Pages/default.aspx"
+  },
+  "memf-electrical-industries-co": {
+    "en": "MEMF is a Saudi electrical manufacturer and a subsidiary of KFB Holding Group.\nIt provides transformers, switchgear, smart meters, automation and power distribution solutions for utilities, industry and infrastructure.",
+    "ar": "ميمف شركة سعودية لتصنيع المعدات الكهربائية وإحدى شركات مجموعة كيه إف بي القابضة.\nوتوفر المحولات ولوحات المفاتيح والعدادات الذكية والأتمتة وحلول توزيع الطاقة لقطاعات المرافق والصناعة والبنية التحتية.",
+    "sourceUrl": "https://memf.com.sa/"
+  },
+  "waad-education-company": {
+    "en": "Waad Education is a Saudi education group operating schools and early childhood learning services.\nIts educational network includes Waad Academy, Dar Al-Dhikr Schools and Bloom Schools.",
+    "ar": "وعد التعليمية مجموعة سعودية تعمل في التعليم المدرسي وتعليم الطفولة المبكرة.\nوتضم منظومتها أكاديمية وعد ومدارس دار الذكر ومدارس بلوم.",
+    "sourceUrl": "https://waadeducation.edu.sa/en/about/"
+  },
+  "company-3": {
+    "en": "Daleel Law Firm provides legal services and corporate advisory in Riyadh.\nIts work covers commercial, real estate and estate matters, alongside contracts, dispute resolution and legal representation.",
+    "ar": "تقدم شركة دليل للمحاماة خدمات قانونية واستشارات للشركات في الرياض.\nوتغطي أعمالها المجالات التجارية والعقارية والتركات، إلى جانب العقود وتسوية النزاعات والتمثيل القضائي.",
+    "sourceUrl": "https://sa.linkedin.com/company/daleel-law-firm"
+  },
+  "company-5": {
+    "en": "The Cultural Development Fund is a Saudi development fund supporting the cultural sector.\nIt finances cultural projects, facilitates investment, and helps creative businesses grow sustainably across the sectors covered by the National Culture Strategy.",
+    "ar": "صندوق التنمية الثقافي صندوق تنموي سعودي يدعم القطاع الثقافي.\nيمول المشاريع الثقافية ويسهل الاستثمار ويساعد المنشآت الإبداعية على النمو المستدام في القطاعات المشمولة بالاستراتيجية الوطنية للثقافة.",
+    "sourceUrl": "https://ndf.gov.sa/funds/cultural-development-fund"
+  },
+  "moneymoon": {
+    "en": "Moneymoon is a Saudi financial technology platform connecting individuals for peer to peer financing.\nIt focuses on short term, Sharia compliant financing and investment opportunities supported by digital credit assessment.",
+    "ar": "موني مون منصة تقنية مالية سعودية تربط الأفراد لتقديم التمويل بين الأفراد.\nوتركز على التمويل قصير الأجل المتوافق مع الشريعة وفرص الاستثمار المدعومة بالتقييم الائتماني الرقمي.",
+    "sourceUrl": "https://moneymoon.sa/en/who-we-are/"
+  },
+  "cognna": {
+    "en": "COGNNA develops cybersecurity products and managed security services using artificial intelligence.\nIts Nexus platform supports threat monitoring, investigation, detection and response to help organizations protect their digital systems.",
+    "ar": "تطور كوقنا منتجات للأمن السيبراني وخدمات أمنية مُدارة باستخدام الذكاء الاصطناعي.\nوتدعم منصة نيكسس مراقبة التهديدات والتحقيق فيها واكتشافها والاستجابة لها لمساعدة المنشآت على حماية أنظمتها الرقمية.",
+    "sourceUrl": "https://www.cognna.com/"
+  },
+  "ministry-of-economy-and-planning-2": {
+    "en": "Saudi Arabia’s Ministry of Economy and Planning supports national economic development and policy making.\nIt publishes economic analysis and indicators to help decision makers understand the Saudi economy.",
+    "ar": "تدعم وزارة الاقتصاد والتخطيط التنمية الاقتصادية وصناعة السياسات في المملكة العربية السعودية.\nوتنشر التحليلات والمؤشرات الاقتصادية لمساعدة صناع القرار على فهم أداء الاقتصاد السعودي.",
+    "sourceUrl": "https://mep.gov.sa/ar"
+  },
+  "baqi": {
+    "en": "King Salman Energy Park (SPARK) is an integrated industrial ecosystem serving the energy sector in Saudi Arabia.\nIt provides industrial infrastructure, logistics and investor services to support manufacturing and local supply chains.",
+    "ar": "مدينة الملك سلمان للطاقة «سبارك» منظومة صناعية متكاملة تخدم قطاع الطاقة في المملكة العربية السعودية.\nوتوفر البنية التحتية الصناعية والخدمات اللوجستية وخدمات المستثمرين لدعم التصنيع وسلاسل الإمداد المحلية.",
+    "sourceUrl": "https://www.spark.sa/page/Our_Identity"
+  },
+  "aya": {
+    "en": "Aya is an online fashion marketplace offering abayas and related clothing.\nIts digital storefront brings together boutiques and designers and supports product discovery and online shopping.",
+    "ar": "آيا منصة تسوق إلكترونية للأزياء تقدم العبايات والملابس المرتبطة بها.\nويجمع متجرها الرقمي بوتيكات ومصممين ويدعم استكشاف المنتجات والتسوق عبر الإنترنت.",
+    "sourceUrl": "https://www.aya.app/"
+  },
+  "company-7": {
+    "en": "The announcement names the organization as Azm Al Injaz and describes work in marketing and office administration.\nIts full business identity and sector could not be independently confirmed from the application form, so a broader company profile is unavailable.",
+    "ar": "يسمي الإعلان الجهة «عزم الإنجاز» ويشير إلى أعمال في التسويق وإدارة المكاتب.\nولم يتسن التحقق بشكل مستقل من هويتها التجارية الكاملة وقطاعها عبر نموذج التقديم، لذلك لا تتوفر نبذة أوسع موثقة عنها.",
+    "sourceUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeaM_67r1ZBQXcIEn9lRhdGjWHi8O-SAwm1wdx_gng4tu3HPw/viewform?usp=publish-editor"
+  },
+  "sdaia-2": {
+    "en": "The Saudi Data and Artificial Intelligence Authority (SDAIA) is the national authority for data and AI in Saudi Arabia.\nIts remit covers governance, digital infrastructure, national platforms, research and the development of data and AI capabilities.",
+    "ar": "الهيئة السعودية للبيانات والذكاء الاصطناعي «سدايا» هي المرجع الوطني للبيانات والذكاء الاصطناعي في المملكة.\nوتشمل اختصاصاتها الحوكمة والبنية التحتية الرقمية والمنصات الوطنية والبحث وتطوير القدرات في البيانات والذكاء الاصطناعي.",
+    "sourceUrl": "https://sdaia.gov.sa/en/SDAIA/about/Pages/About.aspx"
+  },
+  "azm-al-injaz": {
+    "en": "The announcement names the organization as Azm Al Injaz and describes activities in marketing and project management.\nSeveral businesses share this name, and the application link does not establish which one issued the announcement.",
+    "ar": "يسمي الإعلان الجهة «عزم الإنجاز» ويشير إلى أنشطة في التسويق وإدارة المشاريع.\nوتحمل عدة منشآت هذا الاسم، ولا يوضح رابط التقديم أيها أصدر الإعلان.",
+    "sourceUrl": "https://forms.gle/ToZpPYQyiYpmEGFp7"
+  },
+  "sarj": {
+    "en": "Sarj develops AI agents and automation tools for business operations and customer interactions.\nIts platform handles Arabic voice conversations, document processing and workflows connected to enterprise systems.",
+    "ar": "تطور سرج وكلاء ذكاء اصطناعي وأدوات أتمتة للعمليات التجارية وتفاعلات العملاء.\nوتدعم منصتها المحادثات الصوتية العربية ومعالجة المستندات وسير العمل المرتبط بأنظمة المنشآت.",
+    "sourceUrl": "https://sarj.ai/"
+  },
+  "lean-technologies": {
+    "en": "Lean Technologies builds financial infrastructure for businesses in the Middle East.\nIts APIs connect applications to bank accounts and support payments, financial data access, identity verification and financial insights.",
+    "ar": "تبني لين تكنولوجيز بنية تحتية مالية للمنشآت في الشرق الأوسط.\nوتربط واجهاتها البرمجية التطبيقات بالحسابات البنكية وتدعم المدفوعات والوصول إلى البيانات المالية والتحقق من الهوية والتحليلات المالية.",
+    "sourceUrl": "https://www2.leantech.me/about"
+  },
+  "atkinsre-alis": {
+    "en": "AtkinsRéalis is a global engineering services and nuclear organization.\nIts consultants, designers, engineers and project managers work on infrastructure and energy systems across sectors including buildings, transportation and water.",
+    "ar": "أتكنز ريالس مؤسسة عالمية للخدمات الهندسية والأعمال النووية.\nويعمل مستشاروها ومصمموها ومهندسوها ومديرو مشاريعها على البنية التحتية وأنظمة الطاقة في قطاعات تشمل المباني والنقل والمياه.",
+    "sourceUrl": "https://www.atkinsrealis.com/en/about"
+  },
+  "imploy": {
+    "en": "Imploy is a Riyadh based human resources services company connecting professionals with employers.\nIts services cover recruitment, candidate screening and evaluation, interviews and career development guidance.",
+    "ar": "إمبلوي شركة لخدمات الموارد البشرية مقرها الرياض تربط المهنيين بجهات التوظيف.\nوتشمل خدماتها الاستقطاب وفرز المرشحين وتقييمهم والمقابلات والإرشاد للتطور المهني.",
+    "sourceUrl": "https://www.linkedin.com/company/imployplatform"
+  },
+  "bcg-x": {
+    "en": "BCG X is Boston Consulting Group’s technology build and design unit.\nIt combines engineering, AI, data science and design to help organizations develop digital products, services and new businesses.",
+    "ar": "بي سي جي إكس هي وحدة بناء التقنية والتصميم التابعة لمجموعة بوسطن الاستشارية.\nوتجمع الهندسة والذكاء الاصطناعي وعلوم البيانات والتصميم لمساعدة المنشآت على تطوير المنتجات والخدمات الرقمية والأعمال الجديدة.",
+    "sourceUrl": "https://www.bcg.com/x/"
+  },
+  "medtronic": {
+    "en": "Medtronic is a healthcare technology company developing medical devices and treatment technologies.\nIts work spans areas such as cardiovascular care, neurological conditions and surgery, alongside support and education for healthcare professionals.",
+    "ar": "مدترونيك شركة لتقنيات الرعاية الصحية تطور الأجهزة الطبية وتقنيات العلاج.\nوتشمل أعمالها مجالات مثل رعاية القلب والأوعية الدموية والأمراض العصبية والجراحة، إلى جانب دعم الممارسين الصحيين وتعليمهم.",
+    "sourceUrl": "https://www.medtronic.com/en-us/our-company.html"
+  },
+  "zaintech": {
+    "en": "ZainTECH is a Zain Group technology provider helping organizations modernize their operations.\nIts services include cloud infrastructure, cybersecurity, data analytics, artificial intelligence and digital process automation.",
+    "ar": "زين تك مزود حلول تقنية تابع لمجموعة زين يساعد المنشآت على تحديث عملياتها.\nوتشمل خدماته البنية التحتية السحابية والأمن السيبراني وتحليل البيانات والذكاء الاصطناعي وأتمتة العمليات الرقمية.",
+    "sourceUrl": "https://zaintech.com/en/"
+  },
+  "smart-code": {
+    "en": "Smart Code is a Saudi company specializing in digital marketing, marketing strategy and technology solutions.\nIts services include creative content, e-commerce management, data analysis and AI applications for business operations and customer experience.",
+    "ar": "سمارت كود شركة سعودية متخصصة في التسويق الرقمي والاستراتيجيات التسويقية والحلول التقنية.\nوتشمل خدماتها المحتوى الإبداعي وإدارة المتاجر الإلكترونية وتحليل البيانات وتطبيقات الذكاء الاصطناعي للعمليات وتجربة العملاء.",
+    "sourceUrl": "https://smartcode.sa/"
+  },
+  "zid": {
+    "en": "Zid is a Saudi commerce technology company that helps merchants launch and grow online stores.\nIts platform connects storefronts with payments, shipping, inventory, and marketing tools.",
+    "ar": "زد شركة سعودية متخصصة في تقنيات التجارة تساعد التجار على إطلاق متاجرهم الإلكترونية وتنميتها.\nتجمع منصتها المتاجر مع حلول الدفع والشحن وإدارة المخزون وأدوات التسويق.",
+    "sourceUrl": "https://helpdesk.zid.sa/en/getting-started/faq"
+  },
+  "bosch": {
+    "en": "Bosch is a global supplier of technology and services.\nIts businesses span mobility, industrial technology, consumer goods, and energy and building technology, combining hardware, software, and engineering expertise.",
+    "ar": "بوش مجموعة عالمية تقدم التقنيات والخدمات.\nتشمل أعمالها التنقل والتقنية الصناعية والسلع الاستهلاكية وتقنيات الطاقة والمباني، مع خبرات في الأجهزة والبرمجيات والهندسة.",
+    "sourceUrl": "https://www.bosch.com/company/"
+  },
+  "king-fahd-armed-forces-hospital": {
+    "en": "King Fahd Armed Forces Hospital is a healthcare institution in Jeddah serving Saudi Armed Forces personnel and their dependents.\nIt provides primary, secondary, and specialist medical services and supports medical and nursing education.",
+    "ar": "مستشفى الملك فهد للقوات المسلحة منشأة صحية في جدة تخدم منسوبي القوات المسلحة السعودية وعائلاتهم.\nيقدم خدمات الرعاية الأولية والثانوية والتخصصية، ويسهم في التعليم الطبي والتمريضي.",
+    "sourceUrl": "https://www.linkedin.com/company/king-fahad-armed-forces-hospital"
+  },
+  "general-authority-for-statistics": {
+    "en": "The General Authority for Statistics is Saudi Arabia's official statistical authority.\nIt oversees the national statistics sector and develops statistical databases and information that support planning and decision-making.",
+    "ar": "الهيئة العامة للإحصاء هي الجهة الرسمية للإحصاء في المملكة العربية السعودية.\nتتولى الإشراف على القطاع الإحصائي وتطوير قواعد البيانات والمعلومات الإحصائية الوطنية لدعم التخطيط واتخاذ القرار.",
+    "sourceUrl": "https://www.stats.gov.sa/en/gastat-about-us"
+  },
+  "panda-retail-company": {
+    "en": "Panda is a Saudi retail company offering groceries, fresh food, and everyday essentials.\nIts operations include stores, distribution centers, and corporate teams supporting the shopping experience across the Kingdom.",
+    "ar": "بنده شركة سعودية تعمل في تجارة التجزئة وتوفر المواد الغذائية والمنتجات الطازجة والاحتياجات اليومية.\nتشمل أعمالها المتاجر ومراكز التوزيع والفرق الإدارية الداعمة لتجربة التسوق في المملكة.",
+    "sourceUrl": "https://careers.panda.com.sa/en/"
+  },
+  "lucidya": {
+    "en": "Lucidya develops an AI-powered platform for customer experience management.\nIts products help organizations understand and engage customers through social listening, channel analytics, surveys, and customer data tools.",
+    "ar": "لوسيديا تطور منصة لإدارة تجربة العملاء مدعومة بالذكاء الاصطناعي.\nتساعد منتجاتها الجهات على فهم العملاء والتفاعل معهم عبر الاستماع الاجتماعي وتحليل القنوات والاستطلاعات وأدوات بيانات العملاء.",
+    "sourceUrl": "https://www.lucidya.com/"
+  },
+  "center-for-national-health-insurance-cnhi": {
+    "en": "The Center for National Health Insurance is a Saudi government entity that purchases healthcare services from accredited providers for its beneficiaries.\nIt focuses on comprehensive health benefits, cost management, and a sustainable healthcare system supported by competition and transparency.",
+    "ar": "مركز التأمين الصحي الوطني جهة حكومية سعودية تشتري الخدمات الصحية من المؤسسات المعتمدة لتقديمها لمستفيديه.\nيركز على المنافع الصحية الشاملة وضبط التكاليف واستدامة الرعاية الصحية من خلال تعزيز التنافسية والشفافية.",
+    "sourceUrl": "https://www.linkedin.com/company/cnhi-sa"
+  },
+  "insurance-authority": {
+    "en": "The Insurance Authority regulates and supervises the insurance sector in Saudi Arabia.\nIts work includes licensing, protecting policyholders and beneficiaries, and developing a reliable and sustainable insurance market.",
+    "ar": "هيئة التأمين هي الجهة المسؤولة عن تنظيم قطاع التأمين والإشراف والرقابة عليه في المملكة.\nتشمل أعمالها التراخيص وحماية حقوق المؤمن لهم والمستفيدين وتطوير سوق تأميني موثوق ومستدام.",
+    "sourceUrl": "https://www.ia.gov.sa/en/about-ia/about"
+  },
+  "national-medical-care": {
+    "en": "National Medical Care Company operates hospitals and specialized healthcare centers in Saudi Arabia under the Care Medical brand.\nIts services span clinical care, emergency medicine, long-term care, and dialysis across its healthcare facilities.",
+    "ar": "شركة رعاية الطبية تشغل مستشفيات ومراكز صحية تخصصية في المملكة تحت علامة رعاية الطبية.\nتشمل خدماتها الرعاية السريرية وطب الطوارئ والرعاية طويلة الأمد وغسيل الكلى عبر منشآتها الصحية.",
+    "sourceUrl": "https://www.care.med.sa/en/AboutCare"
+  },
+  "apex-group-ltd": {
+    "en": "Apex Group is a global financial services provider serving asset managers, financial institutions, and other investment-market participants.\nIts services include fund administration, corporate services, regulatory and compliance support, and investment-related solutions.",
+    "ar": "مجموعة أبيكس مزود عالمي للخدمات المالية يخدم مديري الأصول والمؤسسات المالية وجهات الاستثمار.\nتشمل خدماتها إدارة الصناديق وخدمات الشركات والدعم التنظيمي والامتثال والحلول المرتبطة بالاستثمار.",
+    "sourceUrl": "https://www.apexgroup.com/"
+  },
+  "up-marketing-group": {
+    "en": "UP Marketing Group, also known as Updated Perspective Marketing Group, is a Riyadh-based marketing group serving Saudi Arabia and the Gulf.\nIt provides marketing strategy, brand development, digital campaigns, creative content, events, and film production.",
+    "ar": "مجموعة يو بي للتسويق، المعروفة باسم Updated Perspective Marketing Group، مجموعة تسويقية مقرها الرياض وتخدم المملكة والخليج.\nتقدم الاستراتيجيات التسويقية وبناء العلامات والحملات الرقمية والمحتوى الإبداعي وتنظيم الفعاليات والإنتاج المرئي.",
+    "sourceUrl": "https://upmgsa.com/"
+  },
+  "company": {
+    "en": "The announcement describes an unnamed contracting company based in Riyadh.\nIts legal name and specific construction activities are not disclosed, so a more detailed company profile cannot be verified from the announcement.",
+    "ar": "يصف الإعلان جهة تعمل في قطاع المقاولات ومقرها الرياض دون ذكر اسمها.\nلا يوضح الإعلان الاسم النظامي أو أنشطة المقاولات بالتحديد، لذلك لا يمكن التحقق من نبذة أكثر تفصيلاً عن الشركة من المعلومات المتاحة.",
+    "sourceUrl": "https://forms.gle/KpvJcVDXpBEoqai66"
+  },
+  "company-2": {
+    "en": "SPA News Academy is the Saudi Press Agency's academy for news and media training.\nIt develops journalism and media skills through programs covering news, technology and AI, leadership, and journalistic ethics.",
+    "ar": "أكاديمية واس للتدريب الإخباري هي أكاديمية وكالة الأنباء السعودية المتخصصة في التدريب الإعلامي والإخباري.\nتعمل على تطوير المهارات الصحفية والإعلامية عبر برامج في الأخبار والتقنية والذكاء الاصطناعي والقيادة وأخلاقيات الصحافة.",
+    "sourceUrl": "https://www.spa.gov.sa/N2056558"
+  },
+  "j-b": {
+    "en": "J-B is a Saudi finance company formerly known as Saudi Fransi for Finance Leasing and a subsidiary of Banque Saudi Fransi.\nIt provides digital financing solutions for individuals and businesses, with a focus on accessible information and straightforward financing experiences.",
+    "ar": "جيبي شركة تمويل سعودية تابعة للبنك السعودي الفرنسي، وكانت تعرف بالشركة السعودية الفرنسية للتمويل التأجيري.\nتقدم حلولاً تمويلية رقمية للأفراد والمنشآت مع التركيز على وضوح المعلومات وسهولة تجربة التمويل.",
+    "sourceUrl": "https://j-b.com.sa/ar/faqs/"
+  },
+  "saif-security-services": {
+    "en": "The National Security Services Company, SAFE, provides security solutions and services in Saudi Arabia.\nIts portfolio includes security consulting, technology, event security, protection services, and security education and training.",
+    "ar": "الشركة الوطنية للخدمات الأمنية «سيف» تقدم حلولاً وخدمات أمنية في المملكة.\nتشمل أعمالها الاستشارات الأمنية والتقنية وأمن الفعاليات وخدمات الحماية والتعليم والتدريب الأمني.",
+    "sourceUrl": "https://www.safesecurity.sa/en/pages/default.aspx"
+  },
+  "maahed-ta-sis-al-ali-lil-tadreeb": {
+    "en": "Tasis Higher Training Institute is a Saudi training institution focused on developing national skills and preparing people for employment.\nIt offers professional training programs and diplomas designed to support workforce readiness.",
+    "ar": "معهد تأسيس العالي للتدريب جهة تدريبية سعودية تهدف إلى تطوير الكفاءات الوطنية وتأهيل الأفراد لسوق العمل.\nيقدم برامج تدريبية ودبلومات احترافية تسهم في تنمية المهارات والاستعداد المهني.",
+    "sourceUrl": "https://tasis.edu.sa/"
+  },
+  "wsp-in-the-middle-east": {
+    "en": "WSP is a global engineering and professional services consultancy with operations in the Middle East.\nIts teams plan and design projects across buildings, transport, infrastructure, energy, water, and the environment.",
+    "ar": "دبليو إس بي شركة استشارات هندسية وخدمات مهنية عالمية لها أعمال في الشرق الأوسط.\nتعمل فرقها في تخطيط وتصميم مشاريع المباني والنقل والبنية التحتية والطاقة والمياه والبيئة.",
+    "sourceUrl": "https://www.wsp.com/en-gl/who-we-are"
+  },
+  "visa": {
+    "en": "Visa is a global payments technology company connecting consumers, businesses, financial institutions, and governments.\nIts network and technology support digital payments and help clients develop secure payment solutions.",
+    "ar": "فيزا شركة عالمية لتقنيات المدفوعات تربط الأفراد والشركات والمؤسسات المالية والجهات الحكومية.\nتدعم شبكتها وتقنياتها المدفوعات الرقمية وتساعد عملاءها على تطوير حلول دفع آمنة.",
+    "sourceUrl": "https://corporate.visa.com/content/VISA/visacorporate/global/en/home/about-visa/visanet.html"
+  },
+  "zory-ai": {
+    "en": "ZORY AI is a Riyadh-based platform combining artificial intelligence, interior design, and furniture discovery.\nIt helps users visualize rooms and connects designs with real furniture and décor products from partner retailers.",
+    "ar": "زوري منصة مقرها الرياض تجمع الذكاء الاصطناعي والتصميم الداخلي واكتشاف الأثاث.\nتساعد المستخدمين على تصور الغرف وتربط التصاميم بمنتجات أثاث وديكور حقيقية من المتاجر الشريكة.",
+    "sourceUrl": "https://zory.ai/en"
+  },
+  "aramco": {
+    "en": "Aramco is an integrated energy and chemicals company based in Saudi Arabia.\nIts operations span the hydrocarbon value chain, including exploration, production, refining, and chemicals, alongside technology and energy-efficiency development.",
+    "ar": "أرامكو شركة متكاملة للطاقة والكيميائيات مقرها المملكة العربية السعودية.\nتمتد أعمالها عبر سلسلة القيمة الهيدروكربونية من الاستكشاف والإنتاج إلى التكرير والكيميائيات، إلى جانب تطوير التقنية وكفاءة الطاقة.",
+    "sourceUrl": "https://www.aramco.com/en/about-us"
+  },
+  "tawal-2": {
+    "en": "TAWAL is a telecommunications infrastructure company that designs, builds, and manages telecom towers.\nIt leases shared infrastructure to operators and other organizations, and provides indoor coverage and operations and maintenance services.",
+    "ar": "توال شركة للبنية التحتية للاتصالات تعمل في تصميم أبراج الاتصالات وبنائها وإدارتها.\nتؤجر البنية التحتية المشتركة للمشغلين والجهات الأخرى، وتقدم حلول التغطية الداخلية وخدمات التشغيل والصيانة.",
+    "sourceUrl": "https://www.tawal.com.sa/en/about-us"
+  },
+  "kerten-hospitality": {
+    "en": "Kerten Hospitality develops and operates hospitality destinations across Europe, the Middle East, and Africa.\nIts portfolio brings together hotels, residences, restaurants, leisure venues, and workspaces with an emphasis on local culture and community.",
+    "ar": "كرتن للضيافة تطور وتشغل وجهات للضيافة في أوروبا والشرق الأوسط وأفريقيا.\nتضم محفظتها فنادق ومساكن ومطاعم ومرافق ترفيه ومساحات عمل مع الاهتمام بالثقافة المحلية والمجتمع.",
+    "sourceUrl": "https://www.kertenhospitality.com/"
+  },
+  "company-8": {
+    "en": "The National Center for Government Resource Systems is an independent Saudi government center developing integrated digital resource systems.\nIts solutions support government financial transactions, human resources, procurement, and supply chains, including the Etimad platform.",
+    "ar": "المركز الوطني لنظم الموارد الحكومية مركز حكومي سعودي مستقل يطور أنظمة رقمية متكاملة لإدارة الموارد.\nتدعم حلوله التعاملات المالية الحكومية والموارد البشرية والمشتريات وسلاسل الإمداد، وتشمل منصة اعتماد.",
+    "sourceUrl": "https://ncgr.gov.sa/ar/"
+  },
+  "siemens-energy": {
+    "en": "Siemens Energy is an energy technology company working across conventional and renewable power systems.\nIts portfolio includes grid technology, storage, and industrial electrification, helping customers improve energy reliability and reduce emissions.",
+    "ar": "سيمنس للطاقة شركة متخصصة في تقنيات الطاقة تعمل في أنظمة الطاقة التقليدية والمتجددة.\nتشمل محفظتها تقنيات الشبكات والتخزين وكهربة العمليات الصناعية لدعم موثوقية الطاقة وخفض الانبعاثات.",
+    "sourceUrl": "https://www.siemens-energy.com/global/en/home/company/about.html"
+  },
+  "help-ag": {
+    "en": "Help AG provides cybersecurity services, technology solutions, and strategic consulting in the Middle East.\nIts work includes managed security, threat detection and response, security testing, and advisory services for enterprises and government entities.",
+    "ar": "هيلب إيه جي تقدم خدمات الأمن السيبراني والحلول التقنية والاستشارات الاستراتيجية في الشرق الأوسط.\nتشمل أعمالها الخدمات الأمنية المدارة واكتشاف التهديدات والاستجابة لها والاختبارات الأمنية والاستشارات للشركات والجهات الحكومية.",
+    "sourceUrl": "https://www.helpag.com/cybersecurity-services/"
+  },
+  "hewlett-packard-enterprise-2": {
+    "en": "Hewlett Packard Enterprise is an enterprise technology company supporting organizations across industries.\nIts work combines artificial intelligence, cloud, and networking technologies to help customers use data and improve business performance.",
+    "ar": "هيوليت باكارد إنتربرايز شركة لتقنيات المؤسسات تخدم منشآت في قطاعات متعددة.\nتجمع أعمالها بين الذكاء الاصطناعي والحوسبة السحابية والشبكات لمساعدة العملاء على الاستفادة من البيانات وتحسين أداء الأعمال.",
+    "sourceUrl": "https://www.hpe.com/us/en/about.html"
+  },
+  "sap-2": {
+    "en": "SAP develops enterprise software that helps organizations manage business processes and use their data effectively.\nIts solutions connect business operations, applications, and insights to support more efficient work and decision-making.",
+    "ar": "ساب تطور برمجيات للمؤسسات تساعد الجهات على إدارة عملياتها والاستفادة من بياناتها.\nتربط حلولها العمليات والتطبيقات والرؤى لدعم كفاءة العمل واتخاذ القرار.",
+    "sourceUrl": "https://www.sap.com/about/company.html"
+  },
+  "amgen": {
+    "en": "Amgen is a biotechnology company that discovers, develops, manufactures, and delivers medicines for serious diseases.\nIt combines biology, technology, and human genetic data in research across areas including cancer, inflammation, cardiovascular conditions, and rare diseases.",
+    "ar": "أمجين شركة للتقنية الحيوية تعمل على اكتشاف الأدوية وتطويرها وتصنيعها وتوفيرها لعلاج الأمراض الخطيرة.\nتجمع أبحاثها بين علم الأحياء والتقنية والبيانات الوراثية البشرية في مجالات تشمل السرطان والالتهابات وأمراض القلب والأمراض النادرة.",
+    "sourceUrl": "https://www.amgen.com/about"
+  },
+  "arabyads": {
+    "en": "ArabyAds is an advertising technology and digital marketing company focused on e-commerce growth.\nIts platforms support customer acquisition, influencer marketing, advertising monetization, and customer re-engagement across the region.",
+    "ar": "عربي آدز شركة لتقنيات الإعلان والتسويق الرقمي تركز على نمو التجارة الإلكترونية.\nتدعم منصاتها اكتساب العملاء والتسويق عبر المؤثرين وتحقيق الإيرادات الإعلانية وإعادة التفاعل مع العملاء في المنطقة.",
+    "sourceUrl": "https://www.arabyads.com/"
+  },
+  "meituan": {
+    "en": "Meituan is a technology-driven retail and local services company.\nIts digital platforms connect consumers and merchants through services including food delivery, shopping, dining, and hotel and travel bookings.",
+    "ar": "ميتوان شركة للتجزئة والخدمات المحلية تعتمد على التقنية.\nتربط منصاتها الرقمية المستهلكين بالتجار من خلال خدمات تشمل توصيل الطعام والتسوق والمطاعم وحجوزات الفنادق والسفر.",
+    "sourceUrl": "https://www.meituan.com/en-US/about-us"
+  },
+  "ecolab": {
+    "en": "Ecolab provides water, hygiene, and infection-prevention solutions and services worldwide.\nIt combines science, data, and on-site service to support food safety, clean environments, operational efficiency, and water conservation.",
+    "ar": "إيكولاب تقدم حلولاً وخدمات للمياه والنظافة والوقاية من العدوى حول العالم.\nتجمع بين العلوم والبيانات والخدمات الميدانية لدعم سلامة الغذاء ونظافة البيئات وكفاءة التشغيل وترشيد المياه.",
+    "sourceUrl": "https://www.ecolab.com/en-us/about"
+  },
+  "national-cybersecurity-authority": {
+    "en": "The National Cybersecurity Authority is Saudi Arabia's national authority and reference for cybersecurity affairs.\nIt strengthens cybersecurity to protect national interests, critical infrastructure, priority sectors, and government services through policies, standards, and sector development.",
+    "ar": "الهيئة الوطنية للأمن السيبراني هي الجهة المختصة بالأمن السيبراني في المملكة والمرجع الوطني في شؤونه.\nتعمل على تعزيز الأمن السيبراني لحماية المصالح الوطنية والبنى التحتية الحساسة والقطاعات ذات الأولوية والخدمات الحكومية عبر السياسات والمعايير وتطوير القطاع.",
+    "sourceUrl": "https://nca.gov.sa/en/"
+  },
+  "elm-3": {
+    "en": "Elm is a Saudi digital-solutions company serving government entities, businesses, and individuals.\nIt develops digital products and platforms and provides technology and operational services that support digital transformation across sectors.",
+    "ar": "علم شركة سعودية للحلول الرقمية تخدم الجهات الحكومية والشركات والأفراد.\nتطور المنتجات والمنصات الرقمية وتقدم خدمات تقنية وتشغيلية تدعم التحول الرقمي في قطاعات متعددة.",
+    "sourceUrl": "https://elm.sa/en/about-us/company/Pages/brief.aspx"
+  },
+  "company-9": {
+    "en": "Zid is a Saudi commerce technology company that helps merchants launch and grow online stores.\nIts platform connects storefronts with payments, shipping, inventory, and marketing tools.",
+    "ar": "زد شركة سعودية متخصصة في تقنيات التجارة تساعد التجار على إطلاق متاجرهم الإلكترونية وتنميتها.\nتجمع منصتها المتاجر مع حلول الدفع والشحن وإدارة المخزون وأدوات التسويق.",
+    "sourceUrl": "https://helpdesk.zid.sa/en/getting-started/faq"
+  },
+  "flyadeal-3": {
+    "en": "flyadeal is a Saudi airline based in Jeddah offering low fare air travel.\nIt operates a single class passenger service and serves domestic and international destinations.",
+    "ar": "طيران أديل شركة طيران سعودية مقرها جدة تقدم السفر الجوي بأسعار اقتصادية.\nوتشغل خدمات نقل المسافرين بدرجة واحدة إلى وجهات داخلية ودولية.",
+    "sourceUrl": "https://www.linkedin.com/company/flyadeal"
+  },
+  "seara-international-2": {
+    "en": "Seara International is a food business and one of the brands of JBS Group.\nIts portfolio includes poultry and prepared foods supplied through retail, food-service, processing, and distribution channels around the world.",
+    "ar": "سيارا إنترناشونال شركة في قطاع الأغذية وإحدى العلامات التابعة لمجموعة جي بي إس.\nتشمل منتجاتها الدواجن والأطعمة المحضرة، وتوردها عبر قنوات التجزئة وخدمات الطعام والتصنيع والتوزيع في أسواق عالمية.",
+    "sourceUrl": "https://www.linkedin.com/company/searainternational/"
+  },
+  "lumi-2": {
+    "en": "Lumi operates in Saudi Arabia’s vehicle rental sector.\nIt offers short and long term rentals, online booking and used vehicle sales through its network and digital channels.",
+    "ar": "تعمل لومي في قطاع تأجير المركبات في المملكة العربية السعودية.\nوتقدم التأجير قصير وطويل الأجل والحجز الإلكتروني وبيع السيارات المستعملة عبر فروعها وقنواتها الرقمية.",
+    "sourceUrl": "https://lumirental.com/ar/"
+  },
+  "saudi-national-bank-snb": {
+    "en": "Saudi National Bank is a Saudi banking group formed through the combination of NCB and Samba.\nIt provides personal and corporate banking services, alongside treasury and investment activities that support customers and the national economy.",
+    "ar": "البنك الأهلي السعودي مجموعة مصرفية سعودية نشأت من اندماج البنك الأهلي التجاري ومجموعة سامبا.\nيقدم خدمات مصرفية للأفراد والشركات، إلى جانب أنشطة الخزينة والاستثمار التي تدعم العملاء والاقتصاد الوطني.",
+    "sourceUrl": "https://www.alahli.com/pages/about-us"
+  },
+  "shaker-group": {
+    "en": "Shaker Group is a Saudi company operating in heating, ventilation, air conditioning, and home appliances.\nIt serves households and businesses through a portfolio of international brands, manufacturing capabilities, distribution, and after-sales services.",
+    "ar": "مجموعة شاكر شركة سعودية تعمل في التدفئة والتهوية والتكييف والأجهزة المنزلية.\nتخدم الأفراد والمنشآت من خلال علامات عالمية وقدرات تصنيعية وخدمات التوزيع وما بعد البيع.",
+    "sourceUrl": "https://shaker.com.sa/about-us/overview/"
+  },
+  "jxtech-studio": {
+    "en": "JXTech Studio describes itself as a technology studio developing software solutions for web and backend systems.\nIts published employer announcement emphasizes reliable architecture, performance, maintainability, and collaboration within a remote team.",
+    "ar": "تصف جي إكس تك ستوديو نفسها بأنها استوديو تقني يطور حلولًا برمجية للويب والأنظمة الخلفية.\nيركز إعلانها الوظيفي المنشور على البنية البرمجية الموثوقة والأداء وسهولة الصيانة والتعاون ضمن فريق يعمل عن بُعد.",
+    "sourceUrl": "https://sa.linkedin.com/jobs/view/software-engineer-internship-at-jxtech-studio-4456913496"
+  },
+  "schneider-electric": {
+    "en": "Schneider Electric is a global energy technology company focused on electrification, automation, and digitalization.\nIts products, software, and services support efficient and sustainable operations in buildings, data centers, factories, infrastructure, and power grids.",
+    "ar": "شنايدر إلكتريك شركة عالمية لتقنيات الطاقة تركز على الكهرباء والأتمتة والرقمنة.\nتدعم منتجاتها وبرمجياتها وخدماتها كفاءة التشغيل واستدامته في المباني ومراكز البيانات والمصانع والبنية التحتية وشبكات الكهرباء.",
+    "sourceUrl": "https://www.se.com/ww/en/about-us/"
+  },
+  "bcg": {
+    "en": "Boston Consulting Group is a global management consulting firm serving businesses and public-sector organizations.\nIts work spans strategy, business transformation, operations, digital technology, and applied artificial intelligence across a wide range of industries.",
+    "ar": "مجموعة بوسطن الاستشارية شركة عالمية للاستشارات الإدارية تخدم الشركات وجهات القطاع العام.\nتشمل أعمالها الاستراتيجية وتحول الأعمال والعمليات والتقنيات الرقمية والذكاء الاصطناعي التطبيقي في قطاعات متنوعة.",
+    "sourceUrl": "https://www.bcg.com/about/overview"
+  },
+  "career-link": {
+    "en": "Career Link is the organization named in the linked announcement, which describes activity in content creation, writing, graphic design, and public relations.\nThe announcement does not establish its full company identity or core commercial business, so a broader organizational profile could not be verified.",
+    "ar": "كيرير لينك هي الجهة المذكورة في الإعلان المرتبط، الذي يصف مجالات تشمل صناعة المحتوى وكتابته والتصميم الجرافيكي والعلاقات العامة.\nلا يوضح الإعلان هوية الشركة الكاملة أو نشاطها التجاري الرئيسي، لذلك تعذر التحقق من نبذة مؤسسية أوسع عنها.",
+    "sourceUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdiQIXG7Vd-w3k38vqx-mfFueZXsG2mnOYlaU0EcgFrhjAgaw/viewform?usp=publish-editor"
+  },
+  "sabic-2": {
+    "en": "SABIC is a global diversified chemicals company headquartered in Riyadh.\nIt manufactures chemicals, commodity and high-performance plastics, and agri-nutrients, serving industries such as automotive, healthcare, packaging, agriculture, and construction.",
+    "ar": "سابك شركة عالمية متنوعة في قطاع الكيماويات، ومقرها الرئيسي الرياض.\nتصنع الكيماويات واللدائن الأساسية وعالية الأداء والمغذيات الزراعية، وتخدم قطاعات تشمل السيارات والرعاية الصحية والتغليف والزراعة والبناء.",
+    "sourceUrl": "https://www.sabic.com/en/about/corporate-profile/sabic-at-a-glance"
+  },
+  "invenu": {
+    "en": "INVENU is a marketing and creative-solutions company combining strategy, communications, and content expertise.\nIt works with brands to develop innovative marketing solutions that connect with audiences and support business growth.",
+    "ar": "إنفينيو شركة للتسويق والحلول الإبداعية تجمع بين خبرات الاستراتيجية والاتصال والمحتوى.\nتعمل مع العلامات التجارية لتطوير حلول تسويقية مبتكرة تتواصل مع الجمهور وتدعم نمو الأعمال.",
+    "sourceUrl": "https://www.invenu.com/"
+  },
+  "company-10": {
+    "en": "The Saudi Pro League is the organization governing Saudi Arabia's top professional football division.\nIt works on developing the competition, supporting clubs and talent, engaging fans, and expanding the league's commercial and international reach.",
+    "ar": "رابطة الدوري السعودي للمحترفين هي الجهة المنظمة لمنافسات أعلى دوري لكرة القدم للمحترفين في المملكة.\nتعمل على تطوير المنافسة ودعم الأندية والمواهب وتعزيز تفاعل الجماهير وتوسيع الحضور التجاري والدولي للدوري.",
+    "sourceUrl": "https://www.spl.com.sa/en/news/about-the-spl"
+  },
+  "saudi-geological-survey-2": {
+    "en": "The Saudi Geological Survey is the national authority specializing in earth sciences and geological information.\nIts work includes geological mapping, mineral and groundwater studies, natural-resource exploration, and monitoring geological hazards such as earthquakes and volcanic activity.",
+    "ar": "هيئة المساحة الجيولوجية السعودية جهة وطنية متخصصة في علوم الأرض والمعلومات الجيولوجية.\nتشمل أعمالها إعداد الخرائط والدراسات المعدنية والمياه الجوفية واستكشاف الموارد الطبيعية ورصد المخاطر الجيولوجية مثل الزلازل والنشاط البركاني.",
+    "sourceUrl": "https://sgs.gov.sa/en"
+  },
+  "sabic-3": {
+    "en": "SABIC is a global diversified chemicals company headquartered in Riyadh.\nIt manufactures chemicals, commodity and high-performance plastics, and agri-nutrients, serving industries such as automotive, healthcare, packaging, agriculture, and construction.",
+    "ar": "سابك شركة عالمية متنوعة في قطاع الكيماويات، ومقرها الرئيسي الرياض.\nتصنع الكيماويات واللدائن الأساسية وعالية الأداء والمغذيات الزراعية، وتخدم قطاعات تشمل السيارات والرعاية الصحية والتغليف والزراعة والبناء.",
+    "sourceUrl": "https://www.sabic.com/en/about/corporate-profile/sabic-at-a-glance"
+  }
+}

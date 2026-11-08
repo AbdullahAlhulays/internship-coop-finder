@@ -9,13 +9,13 @@ import {
 import {
   getCompanyDisplayName,
   getEnglishCompanyName,
-  getOpportunityTypeKey,
 } from "../data/companyLogos.js";
 import {
   getLocalizedCompanyDescription,
   getLocalizedLocation,
 } from "../utils/locale.js";
 import { formatDeadline } from "../utils/status.js";
+import { getCompanyOverview } from "../data/companyOverviews.js";
 
 const detailLabels = {
   en: {
@@ -91,6 +91,7 @@ function CompanyDescription({ description }) {
 }
 
 export default function CompanyPage({
+  slug,
   company,
   statusKey,
   theme,
@@ -113,9 +114,10 @@ export default function CompanyPage({
   const canApply = statusKey === "open";
   const isOpenSoon = statusKey === "open-soon";
   const isClosed = statusKey === "closed";
-  const description = getLocalizedCompanyDescription(company, locale);
+  const description = getLocalizedCompanyDescription(company, locale)
+    || getLocalizedCompanyDescription(company, locale === "ar" ? "en" : "ar");
+  const overview = getCompanyOverview(slug, locale);
   const labels = detailLabels[locale] ?? detailLabels.en;
-  const opportunityType = getOpportunityTypeKey(company.type);
   const deadline = company.deadline
     ? formatDeadline(company.deadline, company.deadlineTime, locale)
     : messages.companyPage.openUntilFilled;
@@ -185,10 +187,6 @@ export default function CompanyPage({
             <h2>{labels.details}</h2>
             <dl>
               <div>
-                <dt>{messages.companyPage.type}</dt>
-                <dd>{messages.opportunityTypes[opportunityType]}</dd>
-              </div>
-              <div>
                 <dt>{messages.companyPage.status}</dt>
                 <dd>{statusLabel}</dd>
               </div>
@@ -232,6 +230,20 @@ export default function CompanyPage({
               aria-label={messages.companyPage.descriptionArea(headingName)}
             >
               <CompanyDescription description={description} />
+              {overview && (
+                <div className="company-overview">
+                  <hr />
+                  <section>
+                    <h2>{locale === "ar" ? "نبذة عن الجهة" : "About the company"}</h2>
+                    {overview.text.split(/\n+/).filter(Boolean).map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                    <a href={overview.sourceUrl} target="_blank" rel="noreferrer">
+                      {locale === "ar" ? "المصدر" : "Source"}
+                    </a>
+                  </section>
+                </div>
+              )}
             </section>
           )}
 

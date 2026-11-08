@@ -298,7 +298,7 @@ check("routes to publish", result.route == "publish")
 # here would just be redundant with what the app already does itself.
 card = to_card(result, added_at="2026-08-09T10:00:00+03:00")
 check("card: no isClosed key at all", "isClosed" not in card)
-check("card: internship maps to plain 'Internship' label", card["type"] == "Internship")
+check("card does not include an opportunity type", "type" not in card)
 check("card: name maps from company", card["name"] == result.company)
 check("card: applicationLink maps from url", card["applicationLink"] == result.url)
 check("card: addedAt carried through in Riyadh-offset ISO form",

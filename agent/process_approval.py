@@ -117,6 +117,8 @@ def process_approval(
         # text, not the model's first draft.
         extracted = translate_description_fn(extracted)
         decision = record_to_decision(record)
+        # Reviews queued before the type field was removed must not restore it.
+        decision.changes.pop("type", None)
         post = record["post"]
 
         now = datetime.now(RIYADH)

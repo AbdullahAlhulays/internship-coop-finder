@@ -11,8 +11,8 @@ import {
 
 export const SITE_ORIGIN = "https://internship-coop-finder.vercel.app";
 
-// These existing listings had indexed detail URLs before the bilingual
-// description requirement. Their recorded facts support a concise page.
+// These older listings retain their original localized name formatting.
+// They follow the same nonempty-description rule as every other detail page.
 const RESTORED_COMPANY_SLUGS = new Set([
   "tamara",
   "ministry-of-tourism",
@@ -71,15 +71,8 @@ export function getCompanyPageEntries(companies = []) {
 }
 
 export function hasPublishableCompanyContent(company) {
-  const hasBilingualDescription = ["en", "ar"].every((locale) =>
+  return ["en", "ar"].some((locale) =>
     Boolean(getLocalizedCompanyDescription(company, locale)),
-  );
-
-  return (
-    hasBilingualDescription ||
-    (RESTORED_COMPANY_SLUGS.has(createCompanySlug(company?.name)) &&
-      Boolean(company?.type) &&
-      Boolean(company?.applicationLink))
   );
 }
 
@@ -168,19 +161,6 @@ export function getCompanyPageDescription(
   const description = getLocalizedCompanyDescription(company, locale);
 
   if (description) {
-    const englishDetail = getDescriptionDetail(
-      getLocalizedCompanyDescription(company, "en"),
-    );
-    const sourceMentionsCoop = /\b(?:co-op|coop|cooperative training)\b/i.test(
-      englishDetail,
-    );
-    const sourceMentionsInternship = /\binternship\b/i.test(englishDetail);
-    const statedType =
-      company.type === "Internship" && sourceMentionsCoop
-        ? sourceMentionsInternship
-          ? "Internship / CO-OP Training"
-          : "CO-OP Training"
-        : company.type;
     const name =
       locale === "ar"
         ? company.name
@@ -189,25 +169,23 @@ export function getCompanyPageDescription(
             .find((part) => /[\u0600-\u06ff]/.test(part)) ??
           getEnglishCompanyName(company.name)
         : getEnglishCompanyName(company.name);
-    const type =
-      locale === "ar"
-        ? statedType?.toLowerCase().includes("internship")
-          ? statedType?.toLowerCase().includes("co-op")
-            ? "تدريب وتدريب تعاوني"
-            : "تدريب"
-          : "تدريب تعاوني"
-        : statedType || "training";
+    const type = locale === "ar" ? "\u0641\u0631\u0635\u0629 \u062a\u062f\u0631\u064a\u0628" : "training opportunity";
     const location =
       locale === "en" && company.location?.trim()
         ? ` in ${company.location.trim()}`
         : "";
     const detail = getDescriptionDetail(description).replace(/[.!?\u061f\u3002]+$/, "");
+    const listedDate = company.addedAt?.slice(0, 10);
+    const listingNote = listedDate
+      ? locale === "ar" ? `أضيفت ${listedDate}. ` : `Listed ${listedDate}. `
+      : "";
     const intro =
       locale === "ar"
-        ? `${type} لدى ${name}. `
-        : `${name} ${type}${location}. `;
+        ? `${type} لدى ${name}. ${listingNote}`
+        : `${name} ${type}${location}. ${listingNote}`;
 
-    return trimDescription(`${intro}${detail}.`);
+    const summary = `${intro}${detail}.`;
+    return trimDescription(summary.length >= 50 ? summary : `${summary} ${getMessages(locale).seo.companyDescription(name)}`);
   }
 
   if (hasRestoredCompanyPage(company)) {
@@ -215,14 +193,7 @@ export function getCompanyPageDescription(
       locale === "ar"
         ? getRestoredArabicCompanyName(company)
         : getEnglishCompanyName(company.name);
-    const type =
-      locale === "ar"
-        ? company.type.includes("CO-OP") && company.type.includes("Internship")
-          ? "تدريب وتدريب تعاوني"
-          : company.type.includes("CO-OP")
-            ? "تدريب تعاوني"
-            : "تدريب"
-        : company.type;
+    const type = locale === "ar" ? "\u0641\u0631\u0635\u0629 \u062a\u062f\u0631\u064a\u0628" : "training opportunity";
     const location = company.location?.trim()
       ? locale === "ar"
         ? ` في ${getLocalizedLocation(company.location, locale)}`

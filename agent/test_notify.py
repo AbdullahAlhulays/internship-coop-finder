@@ -108,7 +108,7 @@ check("name shown with an explicit label", "Name: Saudi Aramco" in text)
 check("resolved deadline shown, not the raw Arabic text", "2026-09-15" in text and "Deadline found" in text)
 check("application link present as a clickable href", 'href="https://careers.aramco.com/job/12345"' in text)
 check("source post link included for click-through verification", "https://t.me/SALTRAI/5478" in text)
-check("confidence shown as a percentage", "95%" in text)
+check("type, confidence and reasoning are omitted", all(label not in text for label in ("Type:", "Confidence:", "Why:")))
 check("letter requirement explicitly shown as No, not hidden, when false", "Requires enrollment letter: No" in text)
 check("verified description is visible for review", "Description (English): Role" in text and "data science team" in text)
 

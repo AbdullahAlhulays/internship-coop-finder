@@ -37,12 +37,6 @@ TEST_CANDIDATE_PREFIX = "test:"
 TEST_CARD_BANNER = "🧪 <b>TEST MODE</b> — Approve and Reject are simulated; the website will not change."
 DESCRIPTION_PREVIEW_LIMIT = 600
 
-TYPE_LABELS = {
-    "internship": "Internship",
-    "coop": "CO-OP Training",
-    "internship_or_coop": "Internship / CO-OP Training",
-}
-
 
 class NotifyError(RuntimeError):
     ...
@@ -136,10 +130,8 @@ def format_card_message(extracted, post: dict | None = None) -> str:
     metadata: {"channel": ..., "permalink": ..., "posted_at": ...},
     included so Abood can click through to the real post and verify
     it himself, same as he asked for early on."""
-    type_label = TYPE_LABELS.get(extracted.type, extracted.type or "unknown")
     lines = [
         f"Name: {_esc(extracted.company or 'Unknown company')}",
-        f"Type: {_esc(type_label)}",
     ]
     if extracted.location:
         lines.append(f"Location: {_esc(extracted.location)}")
@@ -171,11 +163,6 @@ def format_card_message(extracted, post: dict | None = None) -> str:
             f"Contact only, no application link: {_esc(extracted.contact.get('type'))} "
             f"{_esc(extracted.contact.get('value'))}"
         )
-    lines.append(f"Confidence: {extracted.confidence:.0%}")
-    if extracted.evidence:
-        note = extracted.evidence.get("note") or extracted.evidence.get("reason")
-        if note:
-            lines.append(f"Why: {_esc(note)}")
     if post:
         if post.get("permalink"):
             lines.append(f'Source: <a href="{_esc(post["permalink"])}">original post</a>')

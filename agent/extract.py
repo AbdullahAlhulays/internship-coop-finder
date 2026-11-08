@@ -447,7 +447,6 @@ def to_card(extracted: Extracted, added_at: str | None = None) -> dict:
     card: dict = {
         "name": extracted.company,
         "applicationLink": extracted.url,
-        "type": card_type,
     }
     if extracted.location:
         card["location"] = extracted.location

@@ -352,8 +352,10 @@ select {
 .city-select {
   display: grid;
   gap: 8px;
-  flex: 0 0 190px;
-  min-width: 190px;
+  flex: 0 1 auto;
+  width: fit-content;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .city-select span,
@@ -381,6 +383,10 @@ select {
 }
 
 .city-select select {
+  field-sizing: content;
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
   font-family: inherit;
   font-size: 0.82rem;
   padding-inline-end: 30px;
@@ -533,10 +539,11 @@ select {
 
 .company-card {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 66px 38px 28px 44px;
+  height: 256px;
   min-height: 0;
-  flex-direction: column;
-  justify-content: flex-start;
   gap: 14px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -547,7 +554,7 @@ select {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   content-visibility: auto;
-  contain-intrinsic-size: auto 260px;
+  contain-intrinsic-size: auto 210px;
   transition: transform 180ms ease;
 }
 
@@ -746,36 +753,38 @@ select {
   white-space: nowrap;
 }
 
-.opportunity-meta {
+.card-summary {
   display: flex;
-  width: 100%;
   min-height: 0;
-  max-width: 100%;
+  min-width: 0;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 7px;
-  font-size: 0.74rem;
-  font-weight: 850;
-  line-height: 1.15;
-  padding: 0;
+  justify-content: space-between;
+  gap: 8px;
 }
 
-.opportunity-meta .opportunity-type,
-.opportunity-meta .letter-requirement {
+.card-summary .letter-requirement {
   display: inline-flex;
-  min-height: 34px;
-  max-width: none;
+  flex: 0 0 auto;
   align-items: center;
-  border-radius: 12px;
+  border-radius: 7px;
   background: var(--deadline-bg);
-  color: var(--leaf-deep);
-  font: inherit;
-  padding: 8px 10px;
-  white-space: normal;
+  color: var(--status-open-soon-text);
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.3;
+  padding: 4px 7px;
+  white-space: nowrap;
 }
 
-.opportunity-meta .letter-requirement {
-  color: var(--status-open-soon-text);
+.card-summary .card-details-link {
+  flex: 1;
+  overflow: hidden;
+}
+
+.card-summary .card-details-link > span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .deadline-line {
@@ -1227,6 +1236,34 @@ select {
   color: var(--leaf-deep);
 }
 
+.company-overview {
+  max-width: 72ch;
+  color: var(--soft-ink);
+  line-height: 1.75;
+}
+
+.company-overview hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px dashed var(--line);
+}
+
+.company-overview h2 {
+  margin: 0 0 12px;
+  color: var(--heading);
+  font-size: 1.05rem;
+}
+
+.company-overview p {
+  margin: 0 0 10px;
+}
+
+.company-overview a {
+  color: var(--leaf-deep);
+  font-size: 0.82rem;
+  text-underline-offset: 3px;
+}
+
 .company-detail-actions {
   border-top: 1px solid var(--line);
   padding: 24px 34px 30px;
@@ -1444,8 +1481,7 @@ select {
 }
 
 @media (max-width: 900px) {
-  .filter-panel,
-  .city-select select {
+  .filter-panel {
     width: 100%;
   }
 
@@ -1460,7 +1496,7 @@ select {
   }
 
   .city-select {
-    flex: 1 1 0;
+    flex: 0 1 auto;
     min-width: 0;
   }
 
@@ -1558,6 +1594,18 @@ select {
     padding-inline: 5px;
   }
 
+  .filter-pair {
+    flex-wrap: wrap;
+  }
+
+  .city-select {
+    flex: 0 1 auto;
+  }
+
+  .filter-toggles {
+    flex-wrap: wrap;
+  }
+
   .company-grid {
     grid-template-columns: 1fr;
   }
@@ -1577,7 +1625,21 @@ select {
 
   .company-card {
     min-height: 0;
-    border-radius: 22px;
+    height: 242px;
+    gap: 11px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .company-card .apply-button,
+  .company-card .applied-button {
+    font-size: 0.76rem;
+    padding-inline: 8px;
+  }
+
+  .filter {
+    font-size: 0.78rem;
+    padding-inline: 8px;
   }
 
   .detail-header-inner,

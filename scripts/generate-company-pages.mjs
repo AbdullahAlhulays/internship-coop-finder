@@ -5,6 +5,7 @@ import { companies } from "../src/data/companies.js";
 import { getLocalizedSitePage, SITE_CONTENT_UPDATED } from "../src/data/siteContent.js";
 import { getMessages } from "../src/locales/messages.js";
 import { getEnglishCompanyName } from "../src/data/companyLogos.js";
+import { getCompanyOverview } from "../src/data/companyOverviews.js";
 import { getLocalizedCompanyDescription, getLocalizedLocation } from "../src/utils/locale.js";
 import {
   getCanonicalUrl,
@@ -86,9 +87,14 @@ function renderInformationFallback(content, locale) {
   return `<main><a href="${locale === "ar" ? "/ar" : "/"}">${escapeHtml(getMessages(locale).companyPage.allOpportunities)}</a><article><h1>${escapeHtml(content.title)}</h1><p>${escapeHtml(content.intro)}</p>${sections}</article></main>`;
 }
 
-function renderCompanyFallback(company, locale) {
+function renderCompanyFallback(company, locale, slug) {
   const messages = getMessages(locale);
-  const description = getLocalizedCompanyDescription(company, locale);
+  const description = getLocalizedCompanyDescription(company, locale)
+    || getLocalizedCompanyDescription(company, locale === "ar" ? "en" : "ar");
+  const overview = getCompanyOverview(slug, locale);
+  const overviewHtml = overview
+    ? `<hr /><section><h2>${locale === "ar" ? "نبذة عن الجهة" : "About the company"}</h2>${overview.text.split(/\n+/).filter(Boolean).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}<a href="${escapeHtml(overview.sourceUrl)}" rel="noopener noreferrer">${locale === "ar" ? "المصدر" : "Source"}</a></section>`
+    : "";
   const sections = description
     .split(/\n{2,}/)
     .map((section) => section.split("\n").map((line) => line.trim()).filter(Boolean))
@@ -132,16 +138,7 @@ function renderCompanyFallback(company, locale) {
     locale === "ar" && hasRestoredCompanyPage(company)
       ? getRestoredArabicCompanyName(company)
       : getEnglishCompanyName(company.name);
-  const type =
-    locale === "ar" && hasRestoredCompanyPage(company)
-      ? company.type.includes("CO-OP") && company.type.includes("Internship")
-        ? "تدريب وتدريب تعاوني"
-        : company.type.includes("CO-OP")
-          ? "تدريب تعاوني"
-          : "تدريب"
-      : company.type || "";
-
-  return `<main><a href="${locale === "ar" ? "/ar" : "/"}">${escapeHtml(messages.companyPage.allOpportunities)}</a><article><h1>${escapeHtml(messages.companyPage.heading(name))}</h1>${location}<p>${escapeHtml(type)}</p>${closed}${deadline}${letter}${verified}${sections}${application}</article></main>`;
+  return `<main><a href="${locale === "ar" ? "/ar" : "/"}">${escapeHtml(messages.companyPage.allOpportunities)}</a><article><h1>${escapeHtml(messages.companyPage.heading(name))}</h1>${location}${closed}${deadline}${letter}${verified}${sections}${overviewHtml}${application}</article></main>`;
 }
 
 function renderDocument({
@@ -301,7 +298,7 @@ await Promise.all(
           canonicalPath: englishPath,
           englishPath,
           arabicPath,
-          bodyHtml: renderCompanyFallback(company, "en"),
+          bodyHtml: renderCompanyFallback(company, "en", slug),
           modifiedAt: company.contentUpdatedAt,
         }),
       ),
@@ -314,7 +311,7 @@ await Promise.all(
           canonicalPath: arabicPath,
           englishPath,
           arabicPath,
-          bodyHtml: renderCompanyFallback(company, "ar"),
+          bodyHtml: renderCompanyFallback(company, "ar", slug),
           modifiedAt: company.contentUpdatedAt,
         }),
       ),

@@ -253,7 +253,6 @@ export function formatIsoDate(year: number, month: number, day: number): string 
 
 export const EDITABLE_FIELDS = [
   "company",
-  "type",
   "location",
   "url",
   "description_en",
@@ -264,7 +263,6 @@ export type EditableField = (typeof EDITABLE_FIELDS)[number];
 
 export const FIELD_LABELS: Record<EditableField, string> = {
   company: "Company name",
-  type: "Type",
   location: "Location",
   url: "Application link",
   description_en: "Description (English)",
@@ -277,18 +275,13 @@ export const FIELD_LABELS: Record<EditableField, string> = {
 // mapping uses: a typo'd free-text type would silently fail to render
 // on the site, since companies.js only recognizes these three strings.
 export const CONSTRAINED_CHOICES: Partial<Record<EditableField, { value: string; label: string }[]>> = {
-  type: [
-    { value: "internship", label: "Internship" },
-    { value: "coop", label: "CO-OP Training" },
-    { value: "internship_or_coop", label: "Internship / CO-OP Training" },
-  ],
   requires_letter: [
     { value: "true", label: "Yes" },
     { value: "false", label: "No" },
   ],
 };
 
-export type ConstrainedField = "type" | "requires_letter";
+export type ConstrainedField = "requires_letter";
 
 // The predicate narrows to ConstrainedField specifically, not the
 // broader EditableField -- narrowing to EditableField here would make
@@ -381,12 +374,6 @@ export function buildConstrainedChoiceKeyboard(field: EditableField, candidateId
 
 // ------------------------------------------------------- review-card text
 
-const TYPE_LABELS: Record<string, string> = {
-  internship: "Internship",
-  coop: "CO-OP Training",
-  internship_or_coop: "Internship / CO-OP Training",
-};
-
 export const TEST_CANDIDATE_PREFIX = "test:";
 export const TEST_CARD_BANNER = "🧪 <b>TEST MODE</b> — Approve and Reject are simulated; the website will not change.";
 
@@ -445,8 +432,6 @@ export function formatPendingCardMessage(
   todayIso?: string,
 ): string {
   const company = nonEmptyString(extracted.company) ?? "Unknown company";
-  const rawType = nonEmptyString(extracted.type) ?? "unknown";
-  const typeLabel = TYPE_LABELS[rawType] ?? rawType;
   const location = nonEmptyString(extracted.location);
   const description = objectValue(extracted.description);
   const englishDescription = description && nonEmptyString(description.en);
@@ -456,7 +441,6 @@ export function formatPendingCardMessage(
   const deadlineRaw = nonEmptyString(extracted.deadline_raw);
   const lines = [
     `Name: ${escapeTelegramHtml(company)}`,
-    `Type: ${escapeTelegramHtml(typeLabel)}`,
   ];
 
   if (location) lines.push(`Location: ${escapeTelegramHtml(location)}`);
@@ -493,15 +477,6 @@ export function formatPendingCardMessage(
       `Contact only, no application link: ${escapeTelegramHtml(contact.type)} ${escapeTelegramHtml(contact.value)}`,
     );
   }
-
-  const confidence = typeof extracted.confidence === "number" && Number.isFinite(extracted.confidence)
-    ? extracted.confidence
-    : 0;
-  lines.push(`Confidence: ${Math.round(confidence * 100)}%`);
-
-  const evidence = objectValue(extracted.evidence);
-  const note = evidence && (nonEmptyString(evidence.note) ?? nonEmptyString(evidence.reason));
-  if (note) lines.push(`Why: ${escapeTelegramHtml(note)}`);
 
   const permalink = nonEmptyString(post.permalink);
   if (permalink) {
@@ -609,12 +584,11 @@ export function validateFieldValue(field: EditableField, value: string): string 
 // the exact same duplicate check and review card as an AI-extracted
 // one, not a second, untested path.
 
-export const CREATION_STEPS = ["company", "type", "link", "location", "deadline", "letter"] as const;
+export const CREATION_STEPS = ["company", "link", "location", "deadline", "letter"] as const;
 export type CreationStep = (typeof CREATION_STEPS)[number];
 
 export const CREATION_PROMPTS: Record<CreationStep, string> = {
   company: "Creating a new card. What's the company name?",
-  type: "Type?",
   link: "Application link?",
   location: "Location? (or tap Skip if unknown)",
   deadline: "Deadline?",
@@ -640,7 +614,6 @@ export function isCreationStep(step: string): step is CreationStep {
 // instead of silently landing under the wrong key.
 export const CREATION_STEP_FIELD: Record<CreationStep, string> = {
   company: "company",
-  type: "type",
   link: "url",
   location: "location",
   deadline: "deadline",
@@ -665,10 +638,6 @@ export const CREATION_ACTIONS = new Set(["newtype", "newletter", "newskip", "new
 // "newcancel:draftId" -- same colon-counting rules as the edit-flow
 // callbacks above (parseLeadingWords / parseCallbackData).
 
-export function newTypeCallback(value: string, draftId: string): string {
-  return withinLimit(`newtype:${value}:${draftId}`);
-}
-
 export function newLetterCallback(value: string, draftId: string): string {
   return withinLimit(`newletter:${value}:${draftId}`);
 }
@@ -685,16 +654,6 @@ export function parseNewChoice(rest: string): ParsedNewChoice | null {
   const draftId = rest.slice(idx + 1);
   if (!value || !draftId) return null;
   return { value, draftId };
-}
-
-export function buildTypeChoiceKeyboard(draftId: string): InlineKeyboard {
-  const choices = CONSTRAINED_CHOICES.type!;
-  return {
-    inline_keyboard: [
-      ...choices.map((c) => [{ text: c.label, callback_data: newTypeCallback(c.value, draftId) }]),
-      [{ text: "Cancel", callback_data: withinLimit(`newcancel:${draftId}`) }],
-    ],
-  };
 }
 
 export function buildLetterChoiceKeyboard(draftId: string): InlineKeyboard {
@@ -741,7 +700,6 @@ export interface CreateDispatchPayload {
   client_payload: {
     draft_id: string;
     company: string;
-    type: string;
     url: string;
     location: string; // "" means none -- create_candidate.py treats blank as "not provided"
     deadline: string; // "" means none
@@ -758,7 +716,6 @@ export function buildCreateDispatchPayload(
   draftId: string,
   fields: {
     company: string;
-    type: string;
     url: string;
     location: string | null;
     deadline: string | null;
@@ -770,7 +727,6 @@ export function buildCreateDispatchPayload(
     client_payload: {
       draft_id: draftId,
       company: fields.company,
-      type: fields.type,
       url: fields.url,
       location: fields.location ?? "",
       deadline: fields.deadline ?? "",
