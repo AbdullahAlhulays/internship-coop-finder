@@ -3643,6 +3643,98 @@
       "text": "🟡الفرصة رقم ٢٨٦٣\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nفرصة تدريب تعاوني | NEXO Creative\n\nنود إفادتكم بتوفير فرص تدريب تعاوني و تدريب مهني في عدد من التخصصات , وهي :\n• التصميم\n• ⁠التسويق\n• ⁠المالية\n• ⁠للمهتمين بالتقديم ٫ نأمل التواصل معنا عبر هذا الرابط\n\nhttps://docs.google.com/forms/d/1psUOja40X3oK2pjS4pBkQVCYQUts8qfkVdnzp6q7fVU/viewform?edit_requested=true&pli=1"
     }
   },
+  "cooptraning_inksa:4573": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-08T13:33:27+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "AlAhli | الأهلي",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "SNB Cooperative Training Program",
+      "type": "coop",
+      "url": "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program"
+      ],
+      "message_id": 4573,
+      "permalink": "https://t.me/cooptraning_inksa/4573",
+      "posted_at": "2026-11-08T13:16:02+00:00",
+      "text": "🟡الفرصة رقم ٢٨٧١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n\nhttps://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program"
+    }
+  },
+  "cooptraning_inksa:4574": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-08T13:33:48+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Najma Al-Mada'in | نجمة المدائن",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة نجمة المدائن عن فتح باب استقبال طلبات التدريب التعاوني للطلاب والطالبات السعوديين في التخصصات التالية: • المحاسبة (Accounting) • الموارد البشرية (Human Resources) الفئة المستهدفة: طلاب وطالبات الجامعات والكليات ممن لديهم متطلب تدريب تعاوني ضمن خطتهم الدراسية. طريقة التقديم: على الراغبين في التقديم تعبئة نموذج التسجيل عبر الرابط التالي:"
+      },
+      "evidence": {
+        "company": "نجمة المدائن",
+        "deadline": null,
+        "description": "تعلن شركة نجمة المدائن عن فتح باب استقبال طلبات التدريب التعاوني للطلاب والطالبات السعوديين في التخصصات التالية: • المحاسبة (Accounting) • الموارد البشرية (Human Resources) الفئة المستهدفة: طلاب وطالبات الجامعات والكليات ممن لديهم متطلب تدريب تعاوني ضمن خطتهم الدراسية. طريقة التقديم: على الراغبين في التقديم تعبئة نموذج التسجيل عبر الرابط التالي:",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfi9I6qRN6P_cLLwvq5Pa-HhROJ9j4PEqGS5-AMczEhbVklcg/viewform?usp=header"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": false,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://docs.google.com/forms/d/e/1FAIpQLSfi9I6qRN6P_cLLwvq5Pa-HhROJ9j4PEqGS5-AMczEhbVklcg/viewform?usp=header"
+      ],
+      "message_id": 4574,
+      "permalink": "https://t.me/cooptraning_inksa/4574",
+      "posted_at": "2026-11-08T13:16:32+00:00",
+      "text": "🟡الفرصة رقم ٢٨٧٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nفرص تدريب تعاوني | COOP Training Opportunities\nتعلن شركة نجمة المدائن عن فتح باب استقبال طلبات التدريب التعاوني للطلاب والطالبات السعوديين في التخصصات التالية:\n• المحاسبة (Accounting)\n• الموارد البشرية (Human Resources)\nالفئة المستهدفة: طلاب وطالبات الجامعات والكليات ممن لديهم متطلب تدريب تعاوني ضمن خطتهم الدراسية.\nطريقة التقديم: على الراغبين في التقديم تعبئة نموذج التسجيل عبر الرابط التالي:\nhttps://docs.google.com/forms/d/e/1FAIpQLSfi9I6qRN6P_cLLwvq5Pa-HhROJ9j4PEqGS5-AMczEhbVklcg/viewform?usp=header\nسيتم مراجعة الطلبات والتواصل مع المرشحين المناسبين.\nشركة نجمة المدائن نسعد باهتمامكم ونتطلع إلى استقبال الكفاءات الشابة."
+    }
+  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
