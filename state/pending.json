@@ -3651,8 +3651,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-08T13:33:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-08T13:34:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 518
     },
     "extracted": {
       "company": "AlAhli | الأهلي",
@@ -3696,8 +3697,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-08T13:33:48+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-08T13:34:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 519
     },
     "extracted": {
       "company": "Najma Al-Mada'in | نجمة المدائن",
