@@ -1,0 +1,104 @@
+import { chromium, expect } from "@playwright/test";
+import assert from "node:assert/strict";
+
+const base = process.env.NAV_TEST_URL || "http://127.0.0.1:5173";
+const browser = await chromium.launch({ channel: "chrome", headless: true });
+try {
+  const context = await browser.newContext({ viewport: { width: 1366, height: 950 } });
+  await context.route("**/pagead/js/adsbygoogle.js?*", (route) => route.fulfill({ contentType: "application/javascript", body: "window.__publicScriptRan = true;" }));
+  const page = await context.newPage(), errors = [], privateLeaks = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  page.on("request", (request) => {
+    if (page.url().includes("build-cv") && !request.url().startsWith(base) && !/^(data|blob):/.test(request.url())) privateLeaks.push(request.url());
+  });
+  await page.goto(base + "/build-cv", { waitUntil: "domcontentloaded" });
+  await expect(page.locator(".cv-dashboard-heading")).toBeVisible();
+  const coldResources = await page.evaluate(() => performance.getEntriesByType("resource").map((entry) => entry.name));
+  assert.ok(!coldResources.some((name) => /PublicApp|CompanyPage|companies\.js|companyDescriptions|\/export-/.test(name)), "Cold CV loads neither company data nor the PDF renderer");
+  assert.equal(await page.evaluate(() => window.__publicScriptRan), undefined);
+  await page.getByRole("button", { name: /^New resume/ }).click();
+  await page.getByRole("button", { name: /^Use this template/ }).click();
+  await page.getByLabel("Full name", { exact: true }).fill("Navigation Persistence Check");
+  await page.getByRole("link", { name: "CO-OP Training Opportunities", exact: true }).hover();
+  await page.getByRole("link", { name: "CO-OP Training Opportunities", exact: true }).click();
+  await expect(page.locator(".company-card").first()).toBeVisible();
+  await expect.poll(() => page.evaluate(() => window.__publicScriptRan)).toBe(true);
+  await page.getByRole("button", { name: "Dark mode", exact: true }).click();
+  const initialCount = await page.locator(".company-card").count();
+  const search = page.locator(".search-bar input");
+  await search.fill("Airbus");
+  await expect(page.locator(".company-card")).toHaveCount(1);
+  await expect(page.locator(".company-card h2")).toContainText("Airbus");
+  await search.fill("");
+  await expect(page.locator(".company-card")).toHaveCount(initialCount);
+  await page.locator(".letter-filter input").check();
+  await expect(page.locator(".letter-requirement")).toHaveCount(0);
+  await page.locator(".letter-filter input").uncheck();
+  const city = page.locator(".city-select select");
+  const choice = await city.locator("option").nth(1).getAttribute("value");
+  await city.selectOption(choice);
+  assert.ok(await page.locator(".company-card").count() > 0);
+  await city.selectOption("all");
+  await page.locator(".deadline-sort input").check();
+  await page.locator(".deadline-sort input").uncheck();
+  const firstCard = page.locator(".company-card").first();
+  const appliedName = await firstCard.locator("h2").getAttribute("title");
+  await firstCard.getByRole("button", { name: "Mark applied", exact: true }).click();
+  await page.locator(".filters .filter").nth(2).click();
+  await expect(page.locator(".company-card")).toHaveCount(1);
+  await expect(page.locator(".company-card h2")).toHaveAttribute("title", appliedName);
+  await page.locator(".filters .filter").first().click();
+  const detailLink = page.locator(".company-card a.card-details-link").first();
+  const detailHref = await detailLink.getAttribute("href");
+  await detailLink.hover();
+  await page.evaluate(() => { window.__sameDocument = "public-route"; });
+  await detailLink.click();
+  await expect(page.locator(".company-detail-card")).toBeVisible();
+  assert.equal(new URL(page.url()).pathname, detailHref);
+  assert.equal(await page.evaluate(() => window.__sameDocument), "public-route");
+  await page.goBack();
+  await expect(page.locator(".company-card").first()).toBeVisible();
+  await page.locator(".site-navigation .primary-nav").getByRole("link", { name: "Build CV", exact: true }).hover();
+  await page.locator(".site-navigation .primary-nav").getByRole("link", { name: "Build CV", exact: true }).click();
+  await expect(page.locator(".cv-dashboard-heading")).toBeVisible();
+  assert.equal(await page.evaluate(() => window.__publicScriptRan), undefined, "A public script cannot survive the privacy boundary");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.locator(".cv-resume-preview-button").first().click();
+  await expect(page.getByLabel("Full name", { exact: true })).toHaveValue("Navigation Persistence Check");
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "noindex, nofollow");
+  assert.deepEqual(privateLeaks, []);
+  assert.deepEqual(errors, []);
+  await context.close();
+  console.log("PASS: lean CV loading, filters/cities/deadlines/applied state, lazy company pages, browser back, theme and CV persistence, privacy boundary, no runtime errors");
+
+  const mobile = await browser.newContext({ viewport: { width: 390, height: 900 }, isMobile: true, hasTouch: true });
+  const p = await mobile.newPage();
+  await p.goto(base + "/ar/build-cv/templates");
+  await expect(p.locator(".cv-template-grid")).toBeVisible();
+  await expect.poll(() => p.locator(".cv-template-paper img").first().evaluate((img) => img.complete && img.currentSrc)).toContain(".webp");
+  assert.equal(await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+  await p.getByRole("link", { name: "فرص التدريب التعاوني", exact: true }).tap();
+  await expect(p.locator(".company-card").first()).toBeVisible();
+  assert.equal(await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+  await mobile.close();
+  console.log("PASS: lighter WebP previews, mobile Arabic navigation and no horizontal overflow");
+
+  // Exercise activation even on CI/browser settings that decline prerendering.
+  // Preparing a CV document must not read any saved resume before activation.
+  const prepared = await browser.newContext();
+  await prepared.addInitScript(() => {
+    Object.defineProperty(document, "prerendering", { configurable: true, writable: true, value: true });
+    window.__resumeReads = 0;
+    const get = Storage.prototype.getItem;
+    Storage.prototype.getItem = function (key) { if (key === "fursati-resumes-v1") window.__resumeReads++; return get.call(this, key); };
+  });
+  const preparedPage = await prepared.newPage();
+  await preparedPage.goto(base + "/build-cv");
+  await expect(preparedPage.locator(".route-loading")).toBeVisible();
+  assert.equal(await preparedPage.evaluate(() => window.__resumeReads), 0);
+  await preparedPage.evaluate(() => { document.prerendering = false; document.dispatchEvent(new Event("prerenderingchange")); });
+  await expect(preparedPage.locator(".cv-dashboard-heading")).toBeVisible();
+  assert.ok(await preparedPage.evaluate(() => window.__resumeReads) > 0);
+  await prepared.close();
+  console.log("PASS: prepared CV documents wait until activation before reading any saved resume data");
+} finally { await browser.close(); }

@@ -80,7 +80,9 @@ function renderInformationFallback(content, locale) {
         ? `<ul>${section.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join("")}</ul>`
         : "";
 
-      return `<section><h2>${escapeHtml(section.heading)}</h2>${paragraphs}${bullets}</section>`;
+      const note = section.note ? `<aside><p><strong>${escapeHtml(section.note)}</strong></p></aside>` : "";
+      const links = (section.links ?? []).map((link) => `<a href="${escapeHtml(link.href.startsWith("/") ? (locale === "ar" ? `/ar${link.href}` : link.href) : link.href)}">${escapeHtml(link.label)}</a>`).join(" ");
+      return `<section><h2>${escapeHtml(section.heading)}</h2>${paragraphs}${note}${bullets}${links ? `<p>${links}</p>` : ""}</section>`;
     })
     .join("");
 
@@ -277,7 +279,7 @@ await Promise.all(
         englishPath,
         arabicPath,
         bodyHtml: renderInformationFallback(content, locale),
-        modifiedAt: SITE_CONTENT_UPDATED,
+        modifiedAt: content.updatedAt ?? SITE_CONTENT_UPDATED,
       }),
     );
   }),

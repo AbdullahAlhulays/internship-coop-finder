@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>document.documentElement.classList.add("js-enabled");</script>
+    <script>
+      document.documentElement.classList.add("js-enabled");
+      document.documentElement.lang = /^\/ar(?:\/|$)/.test(location.pathname) ? "ar" : "en";
+      document.documentElement.dir = document.documentElement.lang === "ar" ? "rtl" : "ltr";
+      try { document.documentElement.dataset.theme = localStorage.getItem("internship-coop-theme") === "dark" ? "dark" : "light"; } catch {}
+    </script>
     <style>
       #app-loading { display: none; }
       .js-enabled #root > .seo-fallback { display: none; }
@@ -13,8 +18,8 @@
         z-index: 1000;
         display: grid;
         place-items: center;
-        background: #fbf8f0;
-        color: #31523a;
+        background: var(--page-bg, #fbf8f0);
+        color: var(--leaf-deep, #31523a);
         font: 700 1.5rem/1.3 system-ui, sans-serif;
       }
     </style>
@@ -22,10 +27,10 @@
       name="description"
       content="Find internship and CO-OP opportunities in Saudi Arabia. Browse application links and discover training opportunities for university students in one place."
     />
-    <link rel="icon" type="image/png" sizes="512x512" href="/fursati-icon-512.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/fursati-icon-512.png?v=2" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png?v=2" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2" />
     <link rel="canonical" href="https://internship-coop-finder.vercel.app/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Fursati" />
@@ -57,11 +62,16 @@
       hreflang="x-default"
       href="https://internship-coop-finder.vercel.app/"
     />
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7325872837418578"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      // The private CV workspace never loads advertising scripts.
+      if (!/^\/(?:ar\/)?build-cv(?:\/|$)/.test(location.pathname)) {
+        const ads = document.createElement("script");
+        ads.async = true;
+        ads.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7325872837418578";
+        ads.crossOrigin = "anonymous";
+        document.head.appendChild(ads);
+      }
+    </script>
     <title>Fursati | Internships &amp; CO-OP Opportunities for Students</title>
   </head>
   <body>

@@ -227,18 +227,17 @@ export const sitePages = [
   {
     slug: "contact",
     en: {
-      title: "Contact Fursati",
+      title: "Contact Us",
+      updatedAt: "2026-11-09",
       description:
-        "Contact Fursati about corrections, suggestions, privacy questions, or site issues.",
+        "Share suggestions for Fursati by email or connect through LinkedIn and X. This email does not accept CVs or job applications.",
       eyebrow: "Contact",
       intro:
-        "Get in touch about an incorrect listing, a broken link, a privacy question, or an idea that could make the directory more useful for students.",
+        "Have a suggestion to improve Fursati? You can reach me by email or through my social profiles below.",
       sections: [
         {
           heading: "Email",
-          paragraphs: [
-            "Include the relevant Fursati page URL and enough context to understand the request. Fursati cannot accept applications or forward CVs to listed organizations.",
-          ],
+          note: "Note: This email is for suggestions only and is not affiliated with any recruitment organization. Please do not send CVs or job applications.",
           links: [
             {
               label: "abdullah.alhulays@gmail.com",
@@ -268,18 +267,17 @@ export const sitePages = [
       ],
     },
     ar: {
-      title: "تواصل مع فرصتي",
+      title: "تواصل معنا",
+      updatedAt: "2026-11-09",
       description:
-        "تواصل مع فرصتي بشأن التصحيحات أو الاقتراحات أو الخصوصية أو مشكلات الموقع.",
+        "شارك اقتراحاتك لتطوير فرصتي عبر البريد الإلكتروني أو تواصل عبر LinkedIn وX. لا يستقبل هذا البريد السير الذاتية أو طلبات التوظيف.",
       eyebrow: "التواصل",
       intro:
-        "تواصل معنا بشأن فرصة غير صحيحة، أو رابط معطل، أو سؤال متعلق بالخصوصية، أو فكرة تجعل الدليل أكثر فائدة للطلاب.",
+        "لديك اقتراح لتطوير فرصتي؟ يمكنك التواصل معي عبر البريد الإلكتروني أو حساباتي أدناه.",
       sections: [
         {
           heading: "البريد الإلكتروني",
-          paragraphs: [
-            "أرفق رابط صفحة فرصتي المعنية وسياقًا كافيًا لفهم الطلب. لا تستقبل فرصتي طلبات التقديم ولا ترسل السير الذاتية إلى الجهات المدرجة.",
-          ],
+          note: "ملاحظة: هذا الايميل للاقتراحات فقط، ولا علاقة له بأي جهة توظيف. فلذلك يرجى عدم إرسال السيرة الذاتية أو أي طلبات للتوظيف",
           links: [
             {
               label: "abdullah.alhulays@gmail.com",

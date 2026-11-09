@@ -126,12 +126,14 @@ function CompanyCard({
           navigate={navigate}
           aria-label={messages.card.descriptionLabel(displayName)}
         >
-          <span>{messages.card.details}</span>
+          <span className="card-copy-full">{messages.card.details}</span>
+          <span className="card-copy-mobile">{messages.card.detailsShort}</span>
           <span aria-hidden="true">{locale === "ar" ? "\u2190" : "\u2192"}</span>
         </InternalLink>
       ) : (
-        <span className="card-details-link unavailable" aria-disabled="true">
-          <span>{messages.card.detailsUnavailable}</span>
+        <span className="card-details-link unavailable" aria-disabled="true" aria-label={messages.card.detailsUnavailable}>
+          <span className="card-copy-full">{messages.card.detailsUnavailable}</span>
+          <span className="card-copy-mobile">{messages.card.detailsUnavailableShort}</span>
         </span>
       )}
         {requiresLetter && (

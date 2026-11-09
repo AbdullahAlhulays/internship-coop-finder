@@ -26,9 +26,9 @@ const homeLastmod = [PAGE_TEMPLATE_UPDATED, COMPANY_DETAILS_UPDATED, latestListi
 const routes = [
   { path: "/", lastmod: homeLastmod },
   { path: "/ar", lastmod: homeLastmod },
-  ...getSitePageEntries().map(({ path }) => ({
+  ...getSitePageEntries().map(({ path, page, locale }) => ({
     path,
-    lastmod: [PAGE_TEMPLATE_UPDATED, SITE_CONTENT_UPDATED].sort().at(-1),
+    lastmod: [PAGE_TEMPLATE_UPDATED, page[locale]?.updatedAt ?? SITE_CONTENT_UPDATED].sort().at(-1),
   })),
   ...getPublishableCompanyPageEntries(companies).flatMap(({ company, slug }) => {
     const lastmod = [

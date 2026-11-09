@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useTransition } from "react";
+import { isCvPath } from "../services/routeModules.js";
 
 function getCurrentPathname() {
   return window.location.pathname || "/";
@@ -7,6 +8,7 @@ function getCurrentPathname() {
 export default function useClientRoute() {
   const [pathname, setPathname] = useState(getCurrentPathname);
   const pendingScrollPosition = useRef(null);
+  const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
     const previousScrollRestoration = window.history.scrollRestoration;
@@ -25,7 +27,7 @@ export default function useClientRoute() {
       pendingScrollPosition.current = Number.isFinite(event.state?.scrollY)
         ? event.state.scrollY
         : 0;
-      setPathname(getCurrentPathname());
+      startTransition(() => setPathname(getCurrentPathname()));
     }
 
     window.addEventListener("popstate", handlePopState);
@@ -62,6 +64,14 @@ export default function useClientRoute() {
     const currentLocation = `${window.location.pathname}${window.location.search}${window.location.hash}`;
 
     if (nextLocation !== currentLocation) {
+      const event = new CustomEvent("fursati:before-navigate", { cancelable: true, detail: { pathname: nextUrl.pathname } });
+      if (!window.dispatchEvent(event)) return;
+      // A fresh document removes already-running third-party advertising code
+      // when entering the local-data-only resume workspace.
+      if (isCvPath(nextUrl.pathname) !== isCvPath(window.location.pathname)) {
+        window.location.assign(nextLocation);
+        return;
+      }
       window.history.replaceState(
         {
           ...window.history.state,
@@ -80,7 +90,7 @@ export default function useClientRoute() {
         nextLocation,
       );
       pendingScrollPosition.current = 0;
-      setPathname(nextUrl.pathname);
+      startTransition(() => setPathname(nextUrl.pathname));
       return;
     }
 
@@ -96,5 +106,5 @@ export default function useClientRoute() {
     navigate(fallbackPath);
   }, [navigate]);
 
-  return { pathname, navigate, returnTo };
+  return { pathname, navigate, returnTo, isPending };
 }

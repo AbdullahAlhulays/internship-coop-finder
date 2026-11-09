@@ -265,6 +265,7 @@ export function formatCountdown(countdown) {
   return `${paddedHours}h ${paddedMinutes}m ${paddedSeconds}s`;
 }
 
+const deadlineFormatters = new Map();
 export function formatDeadline(deadline, deadlineTime, locale = "en") {
   if (!deadline) {
     return "";
@@ -290,5 +291,7 @@ export function formatDeadline(deadline, deadlineTime, locale = "en") {
   const dateLocale =
     locale === "ar" ? "ar-SA-u-ca-gregory-nu-arab" : "en-US";
 
-  return new Intl.DateTimeFormat(dateLocale, options).format(displayDate);
+  const key = `${dateLocale}:${Boolean(deadlineTime)}`;
+  if (!deadlineFormatters.has(key)) deadlineFormatters.set(key, new Intl.DateTimeFormat(dateLocale, options));
+  return deadlineFormatters.get(key).format(displayDate);
 }

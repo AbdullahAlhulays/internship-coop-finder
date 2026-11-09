@@ -1071,6 +1071,7 @@ const companyRecords = [
   },
   {
     name: "Al Rajhi Bank",
+    isClosed: true,
     logo: {"domain": "careers.alrajhibank.com.sa", "file": "al-rajhi-bank.png"},
     applicationLink: "https://careers.alrajhibank.com.sa/ar/saudi-arabia/jobs/coop-training-التدريب-التعاوني-1100037814/",
     addedAt: "2026-10-04T16:58:01+03:00",

@@ -70,11 +70,13 @@ export function getLocalizedCity(city = "", locale = DEFAULT_LOCALE) {
   return getMessages(locale).cities[city] ?? city;
 }
 
+const numberFormatters = new Map();
 export function formatNumber(value, locale = DEFAULT_LOCALE) {
   const numberLocale =
     locale === ARABIC_LOCALE ? "ar-SA-u-nu-arab" : "en-US";
 
-  return new Intl.NumberFormat(numberLocale).format(value);
+  if (!numberFormatters.has(numberLocale)) numberFormatters.set(numberLocale, new Intl.NumberFormat(numberLocale));
+  return numberFormatters.get(numberLocale).format(value);
 }
 
 export function getLocalizedCompanyDescription(

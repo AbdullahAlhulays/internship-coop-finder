@@ -3,9 +3,10 @@ import { localizePathname } from "../utils/locale.js";
 import Footer from "./Footer.jsx";
 import InternalLink from "./InternalLink.jsx";
 import PageHeader from "./PageHeader.jsx";
+import Header from "./Header.jsx";
 
-function formatUpdatedDate(locale) {
-  const date = new Date(`${SITE_CONTENT_UPDATED}T12:00:00`);
+function formatUpdatedDate(locale, updatedAt = SITE_CONTENT_UPDATED) {
+  const date = new Date(`${updatedAt}T12:00:00`);
 
   return new Intl.DateTimeFormat(
     locale === "ar" ? "ar-SA-u-ca-gregory-nu-arab" : "en-US",
@@ -15,6 +16,7 @@ function formatUpdatedDate(locale) {
 
 export default function InformationPage({
   content,
+  pageSlug,
   theme,
   onThemeToggle,
   navigate,
@@ -23,9 +25,10 @@ export default function InformationPage({
   homeHref,
   languageHref,
 }) {
+  const SiteHeader = pageSlug === "contact" ? Header : PageHeader;
   return (
     <div className="company-page">
-      <PageHeader
+      <SiteHeader
         theme={theme}
         onThemeToggle={onThemeToggle}
         navigate={navigate}
@@ -33,6 +36,7 @@ export default function InformationPage({
         messages={messages}
         homeHref={homeHref}
         languageHref={languageHref}
+        brandHeading={false}
       />
 
       <main className="company-detail-shell information-page-shell">
@@ -48,7 +52,7 @@ export default function InformationPage({
             <p>{content.intro}</p>
             <p className="information-page-updated">
               {locale === "ar" ? "آخر تحديث" : "Last updated"}: {" "}
-              {formatUpdatedDate(locale)}
+              {formatUpdatedDate(locale, content.updatedAt)}
             </p>
           </header>
 
@@ -59,6 +63,7 @@ export default function InformationPage({
                 {section.paragraphs?.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
+                {section.note && <aside className="contact-notice"><p><strong>{section.note}</strong></p></aside>}
                 {section.bullets && (
                   <ul>
                     {section.bullets.map((bullet) => (

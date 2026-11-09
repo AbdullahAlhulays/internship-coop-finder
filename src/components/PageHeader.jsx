@@ -1,6 +1,7 @@
 import InternalLink from "./InternalLink.jsx";
 import LanguageSwitcher from "./LanguageSwitcher.jsx";
 import ThemeToggle from "./ThemeToggle.jsx";
+import PrimaryNav from "./PrimaryNav.jsx";
 
 export default function PageHeader({
   theme,
@@ -38,6 +39,7 @@ export default function PageHeader({
           <span>{messages.siteName}</span>
         </InternalLink>
 
+        <PrimaryNav locale={locale} navigate={navigate} />
         <div className="detail-header-actions">
           <LanguageSwitcher
             href={languageHref}

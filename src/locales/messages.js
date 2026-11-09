@@ -116,7 +116,9 @@ export const messages = {
       viewApplication: "View application",
       applyNow: "Apply now",
       details: "View requirements and skills",
+      detailsShort: "View details",
       detailsUnavailable: "Details coming soon",
+      detailsUnavailableShort: "Details soon",
       descriptionLabel: (name) =>
         `View ${name} company details`,
       applied: "Applied",
@@ -178,7 +180,7 @@ export const messages = {
     languageSwitchLabel: "عرض النسخة الإنجليزية من هذه الصفحة",
     quote:
       "{ والذي نفسُ محمّدٍ بيدِهِ لا يؤمنُ أحدُكم حتى يحبَّ لأخيهِ ما يحبُّ لنفسهِ من الخيرِ }",
-    heroSubtitle: "فرص التدريب والتدريب التعاوني للطلاب",
+    heroSubtitle: "فرص التدريب التعاوني للطلاب",
     seo: {
       homeTitle: "فرصتي | التدريب التعاوني والصيفي في السعودية",
       homeDescription:
@@ -238,7 +240,9 @@ export const messages = {
       viewApplication: "عرض طلب التقديم",
       applyNow: "التقديم",
       details: "عرض المتطلبات والمهارات",
+      detailsShort: "عرض التفاصيل",
       detailsUnavailable: "ستتوفر التفاصيل قريبًا",
+      detailsUnavailableShort: "التفاصيل قريبًا",
       descriptionLabel: (name) => `عرض وصف شركة ${name}`,
       applied: "تم التقديم",
       markApplied: "تم التقديم",
