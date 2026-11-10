@@ -2832,6 +2832,51 @@
       "text": "#تدريب\n\nhttps://tamara.co/en-sa/job-detail?gh_jid=5028314101"
     }
   },
+  "SALTRAI:5984": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-10T20:51:59+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "AlAhli Bank",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "AlAhli",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "SNB Cooperative Training Program",
+      "type": "coop",
+      "url": "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program"
+      ],
+      "message_id": 5984,
+      "permalink": "https://t.me/SALTRAI/5984",
+      "posted_at": "2026-11-10T15:13:46+00:00",
+      "text": "🟡الفرصة رقم ٢٨٧١\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n\nhttps://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
