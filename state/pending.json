@@ -3791,8 +3791,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-10T13:32:01+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-10T13:32:03+00:00",
+      "status": "sent",
+      "telegram_message_id": 521
     },
     "extracted": {
       "company": "cooptraning_inksa",
@@ -5846,8 +5847,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-10T13:31:57+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-10T13:32:03+00:00",
+      "status": "sent",
+      "telegram_message_id": 522
     },
     "extracted": {
       "company": "Amazon Web Services",
