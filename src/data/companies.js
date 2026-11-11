@@ -1581,6 +1581,15 @@ const companyRecords = [
     name: "AlAhli Bank",
     applicationLink: "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program",
     addedAt: "2026-11-11T22:30:37+03:00",
+  },
+  {
+    name: "Saudi Consult | شركة سعودكونسلت",
+    logo: {"domain": "saudconsult.com", "file": "saudi-consult.png"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://saudconsult.com/ar/jobs/%d8%aa%d8%af%d8%b1%d8%a8-%d8%aa%d8%b9%d8%a7%d9%88%d9%86%d9%8a/",
+    description: {"ar": "تعلن شركة سعودكونسلت عن فتح باب التقديم لبرنامج التدريب التعاوني لطلاب وطالبات في مختلف التخصصات، ممن يُعد التدريب التعاوني متطلباً جامعياً رسمياً لإتمام دراستهم. يهدف البرنامج إلى توفير بيئة عمل احترافية تمكّن الكفاءات الوطنية الشابة من اكتساب الخبرة العملية وتطوير مهاراتهم الميدانية.\n\nالمتطلبات\n• أن يكون التدريب التعاوني متطلباً جامعياً رسمياً من الكلية/الجامعة\n• أن يكون المتقدم سعودي الجنسية\n• الالتزام التام بساعات وضوابط العمل الرسمية\n• الشغف والاهتمام بالتعلم وتطوير المهارات\n• إجادة استخدام الأدوات والبرامج الأساسية الخاصة بالتخصص", "en": "SaudiConsult announces the opening of applications for the Cooperative Training Programme for male and female students in various disciplines, for whom cooperative training is an official university requirement to complete their studies. The programme aims to provide a professional working environment that enables young national talent to gain practical experience and develop their skills in the field.\n\nRequirements\n• The cooperative training must be an official university requirement of the college/university.\n• The applicant must be a Saudi national.\n• Full compliance with official working hours and regulations\n• Passion and interest in learning and skills development\n• Proficiency in using the basic tools and software relevant to the specialisation"},
+    requiresLetter: true,
+    addedAt: "2026-11-11T22:30:55+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
