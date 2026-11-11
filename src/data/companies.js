@@ -1556,6 +1556,12 @@ const companyRecords = [
     description: {"ar": "• صورة الهوية الوطنية\n• خطاب التدريب من الجامعة أو الكلية\n• السجل الأكاديمي", "en": "• Copy of National ID\n• Internship letter from the university or college\n• Academic Transcript"},
     requiresLetter: true,
     addedAt: "2026-11-11T22:29:36+03:00",
+  },
+  {
+    name: "Alrajhi Bank",
+    logo: {"domain": "careers.alrajhibank.com.sa", "file": "alrajhi-bank.png"},
+    applicationLink: "https://careers.alrajhibank.com.sa/en/saudi-arabia/jobs/coop-training-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-1100037814/",
+    addedAt: "2026-11-11T22:29:51+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {

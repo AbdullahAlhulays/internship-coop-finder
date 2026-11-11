@@ -3830,52 +3830,6 @@
       "text": "🟡الفرصة رقم ٢٨٧٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nفرص تدريب تعاوني | COOP Training Opportunities\nتعلن شركة نجمة المدائن عن فتح باب استقبال طلبات التدريب التعاوني للطلاب والطالبات السعوديين في التخصصات التالية:\n• المحاسبة (Accounting)\n• الموارد البشرية (Human Resources)\nالفئة المستهدفة: طلاب وطالبات الجامعات والكليات ممن لديهم متطلب تدريب تعاوني ضمن خطتهم الدراسية.\nطريقة التقديم: على الراغبين في التقديم تعبئة نموذج التسجيل عبر الرابط التالي:\nhttps://docs.google.com/forms/d/e/1FAIpQLSfi9I6qRN6P_cLLwvq5Pa-HhROJ9j4PEqGS5-AMczEhbVklcg/viewform?usp=header\nسيتم مراجعة الطلبات والتواصل مع المرشحين المناسبين.\nشركة نجمة المدائن نسعد باهتمامكم ونتطلع إلى استقبال الكفاءات الشابة."
     }
   },
-  "cooptraning_inksa:4575": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-08T18:51:54+00:00",
-      "status": "sent",
-      "telegram_message_id": 520
-    },
-    "extracted": {
-      "company": "Alrajhi Bank",
-      "confidence": 0.7,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "Alrajhi Bank",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "coop",
-      "url": "https://careers.alrajhibank.com.sa/en/saudi-arabia/jobs/coop-training-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-1100037814/"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://careers.alrajhibank.com.sa/en/saudi-arabia/jobs/coop-training-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-1100037814/"
-      ],
-      "message_id": 4575,
-      "permalink": "https://t.me/cooptraning_inksa/4575",
-      "posted_at": "2026-11-08T13:17:31+00:00",
-      "text": "🟡الفرصة رقم ٢٨٧٣\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n\nhttps://careers.alrajhibank.com.sa/en/saudi-arabia/jobs/coop-training-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-1100037814/"
-    }
-  },
   "cooptraning_inksa:4582": {
     "decision": {
       "action": "add",
