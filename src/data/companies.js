@@ -1562,6 +1562,12 @@ const companyRecords = [
     logo: {"domain": "careers.alrajhibank.com.sa", "file": "alrajhi-bank.png"},
     applicationLink: "https://careers.alrajhibank.com.sa/en/saudi-arabia/jobs/coop-training-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-1100037814/",
     addedAt: "2026-11-11T22:29:51+03:00",
+  },
+  {
+    name: "Najma Al-Mada'in | نجمة المدائن",
+    applicationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfi9I6qRN6P_cLLwvq5Pa-HhROJ9j4PEqGS5-AMczEhbVklcg/viewform?usp=header",
+    description: {"ar": "تعلن شركة نجمة المدائن عن فتح باب استقبال طلبات التدريب التعاوني للطلاب والطالبات السعوديين في التخصصات التالية: • المحاسبة (Accounting) • الموارد البشرية (Human Resources) الفئة المستهدفة: طلاب وطالبات الجامعات والكليات ممن لديهم متطلب تدريب تعاوني ضمن خطتهم الدراسية. طريقة التقديم: على الراغبين في التقديم تعبئة نموذج التسجيل عبر الرابط التالي:", "en": "Najmat Al-Madaen Company announces the opening of applications for cooperative training for Saudi male and female students in the following disciplines: • Accounting • Human Resources Target group: Male and female students from universities and colleges who have a cooperative training requirement as part of their academic programme. Application Method: Those wishing to apply should complete the registration form via the following link:"},
+    addedAt: "2026-11-11T22:30:14+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
