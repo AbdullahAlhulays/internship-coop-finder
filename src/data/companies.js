@@ -1576,6 +1576,11 @@ const companyRecords = [
     applicationLink: "https://www.amazon.jobs/en/jobs/10573069/data-center-engineering-operations-2027-internship",
     description: {"ar": "شركة أمازون ويب سيرفيسز (AWS) تعلن عن فتح باب التقديم على برنامج التدريب لعام 2027 في مجال العمليات الهندسية والفنية لمراكز البيانات، لطلاب السنة الأخيرة من مرحلة البكالوريوس، بهدف اكتساب خبرة عملية في تشغيل وصيانة البنية التحتية التقنية.\n\nالمسارات:\n• مهندس عمليات مراكز البيانات (Data Center Engineering Operations).\n• فني مراكز البيانات (Data Center Technician).\n\nالمتطلبات:\n• أن يكون المتقدم طالب بكالوريوس ومتوقع تخرجه خلال عام 2027، قبل انتهاء التدريب.\n• إجادة اللغة الإنجليزية تحدثًا وكتابةً.\n• مهارات العمل الجماعي وإدارة الوقت.\n• توفر وسيلة نقل خاصة للوصول إلى مقر التدريب.\n• رخصة قيادة سارية لمسار فني مراكز البيانات.\n\nمدة التدريب:\n• 3 أشهر، تبدأ في صيف 2027.\n• 40 ساعة أسبوعيًا، من الأحد إلى الخميس.\n• التدريب حضوري في الرياض.", "en": "Amazon Web Services (AWS) announces the opening of applications for the 2027 Internship Programme in Data Centre Engineering and Technical Operations for final-year undergraduate students, with the aim of gaining practical experience in the operation and maintenance of technical infrastructure.\n\nCareer Paths:\n• Data Centre Engineering Operations Engineer.\n• Data Centre Technician.\n\nRequirements:\n• The applicant must be a bachelor's degree student expected to graduate in 2027, before the end of the internship.\n• Proficiency in spoken and written English.\n• Teamwork and time management skills.\n• Availability of private transportation to reach the training venue.\n• A valid driving licence for the Data Centre Technician track.\n\nDuration of the Internship:\n• 3 months, starting in summer 2027.\n• 40 hours per week, Sunday to Thursday.\n• The internship is in-person in Riyadh."},
     addedAt: "2026-11-11T22:30:29+03:00",
+  },
+  {
+    name: "AlAhli Bank",
+    applicationLink: "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program",
+    addedAt: "2026-11-11T22:30:37+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
