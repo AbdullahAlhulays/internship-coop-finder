@@ -2886,8 +2886,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-11T01:16:46+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-11T01:17:22+00:00",
+      "status": "sent",
+      "telegram_message_id": 524
     },
     "extracted": {
       "company": "Kabsarak | مركز الملك عبدالله للدراسات والبحوث البترولية",
@@ -5987,8 +5988,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-11T01:16:50+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-11T01:17:22+00:00",
+      "status": "sent",
+      "telegram_message_id": 525
     },
     "extracted": {
       "company": "KACST",
@@ -6034,8 +6036,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-11T01:17:19+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-11T01:17:23+00:00",
+      "status": "sent",
+      "telegram_message_id": 526
     },
     "extracted": {
       "company": "KAPSARC | مركز الملك عبدالله للدراسات والبحوث البترولية",
