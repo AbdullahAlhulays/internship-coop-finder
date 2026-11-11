@@ -1537,6 +1537,15 @@ const companyRecords = [
     name: "Ministry of Tourism | وزارة السياحة",
     applicationLink: "https://www.hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/",
     addedAt: "2026-11-07T12:32:04+03:00",
+  },
+  {
+    name: "KAPSARC | مركز الملك عبدالله للدراسات والبحوث البترولية",
+    logo: {"domain": "careers.kapsarc.org", "file": "kapsarc.png"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://careers.kapsarc.org/job/Co-op-Training-%28Internship%29-Spring-2027-Riya/1368490923/",
+    description: {"ar": "مركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك – KAPSARC) يعلن عن فتح باب التقديم على برنامج التدريب التعاوني للفصل الدراسي الربيعي لعام 2027، بهدف تأهيل طلاب وطالبات الجامعات وإكسابهم الخبرة العملية في مجالات الطاقة والتخصصات الإدارية والتقنية.\n\nالتخصصات المستهدفة:\n\n• إدارة المشاريع.\n• الهندسة.\n• إدارة الأعمال.\n• الموارد البشرية.\n• المحاسبة.\n• الاقتصاد.\n• نظم المعلومات الإدارية.\n• الأمن السيبراني.\n• علوم الحاسب.\n• نظم المعلومات.\n\nالمتطلبات:\n\n• أن يكون المتقدم طالب بكالوريوس في السنة الأخيرة.\n• ألا يقل المعدل التراكمي عن 4 من 5 أو 3.2 من 4.\n• تقديم خطاب رسمي من الجامعة يؤكد أن التدريب التعاوني متطلب دراسي.\n• إجادة اللغة الإنجليزية تحدثًا وكتابةً.\n• الالتزام بمدة التدريب المحددة.\n\nمدة التدريب:\n\n• 6 أشهر خلال عام 2027.\n\nتاريخ نشر الإعلان:\n\n• 19 أكتوبر 2026.", "en": "King Abdullah Petroleum Studies and Research Center (KAPSARC) announces the opening of applications for the Cooperative Training Programme for the Spring Semester of 2027, with the aim of preparing university students and providing them with practical experience in the fields of energy and administrative and technical disciplines.\n\nTargeted Disciplines:\n\n• Project Management.\n• Engineering.\n• Business Administration.\n• Human Resources.\n• Accounting.\n• Economics.\n• Management Information Systems.\n• Cybersecurity.\n• Computer Science.\n• Information Systems.\n\nPrerequisite:\n\n• The applicant must be a final-year bachelor's degree student.\n• The cumulative GPA must be at least 4 out of 5 or 3.2 out of 4.\n• Submit an official letter from the university confirming that the cooperative training is a course requirement.\n• Proficiency in spoken and written English.\n• Commitment to the specified duration of the internship.\n\nTraining Duration:\n\n• 6 months during 2027.\n\nتاريخ نشر الإعلان\n\n• 19 October 2026."},
+    requiresLetter: true,
+    addedAt: "2026-11-11T22:29:18+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
