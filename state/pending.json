@@ -5753,8 +5753,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-12T20:52:40+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-12T20:55:29+00:00",
+      "status": "sent",
+      "telegram_message_id": 534
     },
     "extracted": {
       "company": "General Comptroller Office | الديوان العام للمحاسبة",
@@ -5803,8 +5804,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-12T20:53:12+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-12T20:55:29+00:00",
+      "status": "sent",
+      "telegram_message_id": 535
     },
     "extracted": {
       "company": "Smart Code | سمارت كود",
@@ -5849,8 +5851,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-12T20:53:30+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-12T20:55:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 536
     },
     "extracted": {
       "company": "عنيزة",
@@ -5895,8 +5898,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-12T20:53:54+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-12T20:55:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 537
     },
     "extracted": {
       "company": "Mobily",
@@ -5941,8 +5945,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-12T20:54:22+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-12T20:55:30+00:00",
+      "status": "sent",
+      "telegram_message_id": 538
     },
     "extracted": {
       "company": "Qiddiya Investment Company | شركة القدية للاستثمار",
@@ -5987,8 +5992,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-12T20:54:51+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-12T20:55:31+00:00",
+      "status": "sent",
+      "telegram_message_id": 539
     },
     "extracted": {
       "company": "Atkins Réalis | أتكينز رياليس",
@@ -6033,8 +6039,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-12T20:55:26+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-12T20:55:31+00:00",
+      "status": "sent",
+      "telegram_message_id": 540
     },
     "extracted": {
       "company": "Musanadah | مساندة",
