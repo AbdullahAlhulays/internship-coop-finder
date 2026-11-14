@@ -2879,6 +2879,189 @@
       "text": "برنامج التدريب التعاوني في مركز كابسارك لحملة البكالوريوس في الرياض\n\nيعلن مركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) عن فتح باب التسجيل في برنامج التدريب التعاوني لشهر يناير 2027، مستهدفًا طلبة البكاليوس في مختلف التخصصات. يشترط أن يكون المتقدم في السنة الأخيرة بمعدل تراكمي لا يقل عن 4.0 من 5.0، وإجادة اللغة الإنجليزية، بالإضافة إلى الالتزام بفترة تدريب تمتد لستة أشهر في الرياض. يبدأ التسجيل من 10 نوفمبر 2026 وينتهي في 30 نوفمبر 2026.\n\nشارك عبر الواتساب"
     }
   },
+  "SALTRAI:5987": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-14T14:14:02+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Schneider Electric | شنايدر إلكتريك السعودية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات:\n– الهندسة الكهربائية.\n– الهندسة الصناعية.\n– هندسة الأجهزة والتحكم.\n– هندسة الأمن السيبراني.\n\nتدريب الرياض:\nيبدأ التدريب في شهر يناير 2027م.\n\nتدريب الخبر"
+      },
+      "evidence": {
+        "company": "شنايدر إلكتريك السعودية",
+        "deadline": null,
+        "description": "التخصصات:\n– الهندسة الكهربائية.\n– الهندسة الصناعية.\n– هندسة الأجهزة والتحكم.\n– هندسة الأمن السيبراني.\n\nتدريب الرياض:\nيبدأ التدريب في شهر يناير 2027م.\n\nتدريب الخبر",
+        "location": "Riyadh, Saudi Arabia; Dammam, Saudi Arabia; Khobar, Saudi Arabia"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia; Dammam, Saudi Arabia; Khobar, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://careers.se.com/event-6057/talentcommunity/form"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://careers.se.com/event-6057/talentcommunity/form",
+        "https://careers.se.com/event-6058/talentcommunity/form"
+      ],
+      "message_id": 5987,
+      "permalink": "https://t.me/SALTRAI/5987",
+      "posted_at": "2026-11-14T11:50:25+00:00",
+      "text": "تدريب تعاوني في شركة شنايدر إلكتريك السعودية بالرياض والدمام والخبر\n\nالتخصصات:\n– الهندسة الكهربائية.\n– الهندسة الصناعية.\n– هندسة الأجهزة والتحكم.\n– هندسة الأمن السيبراني.\n\nتدريب الرياض:\n\nيبدأ التدريب في شهر يناير 2027م.\n\nhttps://careers.se.com/event-6057/talentcommunity/form\n\nتدريب الخبر\n\nhttps://careers.se.com/event-6058/talentcommunity/form"
+    }
+  },
+  "SALTRAI:5989": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-14T14:14:03+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "AWS",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "AWS",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Data Center Engineer",
+      "type": "coop",
+      "url": "https://www.amazon.jobs/en/jobs/10573069/data-center-engineering-operations-2027-internship?ss=paid"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.amazon.jobs/en/jobs/10573069/data-center-engineering-operations-2027-internship?ss=paid"
+      ],
+      "message_id": 5989,
+      "permalink": "https://t.me/SALTRAI/5989",
+      "posted_at": "2026-11-14T11:51:47+00:00",
+      "text": "تدريب تعاوني مهندس مركز بيانات لدى AWS\nhttps://www.amazon.jobs/en/jobs/10573069/data-center-engineering-operations-2027-internship?ss=paid\n\nكذلك بنفس الموقع فيه فني قواعد بيانات"
+    }
+  },
+  "SALTRAI:5995": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-14T14:14:04+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Ma'ahad Ta'sis Al'ali | معهد تأسيس العالي للتدريب",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "• الموارد البشرية\n• التسويق\n• البرمجة"
+      },
+      "evidence": {
+        "company": "معهد تأسيس العالي للتدريب",
+        "deadline": null,
+        "description": "• الموارد البشرية\n• التسويق\n• البرمجة",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "التدريب التعاوني",
+      "type": "coop",
+      "url": "https://forms.gle/cSPU2W43S9r94NtD7"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://forms.gle/cSPU2W43S9r94NtD7"
+      ],
+      "message_id": 5995,
+      "permalink": "https://t.me/SALTRAI/5995",
+      "posted_at": "2026-11-14T11:51:47+00:00",
+      "text": "📢 إعلان فتح باب التسجيل للتدريب التعاوني\n\nيعلن معهد تأسيس العالي للتدريب عن فتح باب التسجيل للتدريب التعاوني في التخصصات التالية:\n\n• الموارد البشرية\n• التسويق\n• البرمجة\n\n📍 المدينة: الرياض\n🏢 الموقع: حي العريجاء\n\n🔗 رابط التسجيل: https://forms.gle/cSPU2W43S9r94NtD7\n\nنتطلع لاستقبال طلباتكم، مع تمنياتنا للجميع بالتوفيق. 🌟"
+    }
+  },
+  "SALTRAI:5998": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-14T14:14:31+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "جهة إدارة وتنظيم فعاليات",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن جهة إدارة وتنظيم فعاليات عن فتح باب التقديم لفرص التدريب التعاوني ,لإتاحة الفرصه للطلاب والطالبات لخوض تجربه عمليه, وتطوير مهاراتهم، وأكتساب خبره مهنيه ضمن بيئة عمل إبداعية في عالم الفعاليات.\n\nالموقع : الرياض\n\nالتخصصات المطلوبه :\nجرافيك ديزاين\nادارة فعاليات\nسياحة وادارة مشاريع\nادارة مشاريع\nعلاقات عامه وتسويق\nادارة اعمال\nسياحه وضيافه\nصحافه رقميه\nسياحه وسفر\nاعلان واتصال تسويقي\nنظم معلومات اداريه"
+      },
+      "evidence": {
+        "company": "جهة إدارة وتنظيم فعاليات",
+        "deadline": null,
+        "description": "تعلن جهة إدارة وتنظيم فعاليات عن فتح باب التقديم لفرص التدريب التعاوني ,لإتاحة الفرصه للطلاب والطالبات لخوض تجربه عمليه, وتطوير مهاراتهم، وأكتساب خبره مهنيه ضمن بيئة عمل إبداعية في عالم الفعاليات.\n\nالموقع : الرياض\n\nالتخصصات المطلوبه :\nجرافيك ديزاين\nادارة فعاليات\nسياحة وادارة مشاريع\nادارة مشاريع\nعلاقات عامه وتسويق\nادارة اعمال\nسياحه وضيافه\nصحافه رقميه\nسياحه وسفر\nاعلان واتصال تسويقي\nنظم معلومات اداريه",
+        "location": "الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرص التدريب التعاوني",
+      "type": "coop",
+      "url": "https://hickory-erica-14c.notion.site/6243c75acad58235a5b30104bf74c9b5?pvs=105"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://hickory-erica-14c.notion.site/6243c75acad58235a5b30104bf74c9b5?pvs=105"
+      ],
+      "message_id": 5998,
+      "permalink": "https://t.me/SALTRAI/5998",
+      "posted_at": "2026-11-14T12:16:02+00:00",
+      "text": "📢 تعلن جهة إدارة وتنظيم فعاليات عن فتح باب التقديم لفرص التدريب التعاوني ,لإتاحة الفرصه للطلاب والطالبات لخوض تجربه عمليه, وتطوير مهاراتهم، وأكتساب خبره مهنيه ضمن بيئة عمل إبداعية في عالم الفعاليات.\n📍الموقع : الرياض\nالتخصصات المطلوبه :\nجرافيك ديزاين\nادارة فعاليات\nسياحة وادارة مشاريع\nادارة مشاريع\nعلاقات عامه وتسويق\nادارة اعمال\nسياحه وضيافه\nصحافه رقميه\nسياحه وسفر\nاعلان واتصال تسويقي\nنظم معلومات اداريه\n⏪️ للتقديم عبر الرابط\nhttps://hickory-erica-14c.notion.site/6243c75acad58235a5b30104bf74c9b5?pvs=105"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
