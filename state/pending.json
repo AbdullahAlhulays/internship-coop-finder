@@ -3074,8 +3074,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-14T19:14:15+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-14T19:14:51+00:00",
+      "status": "sent",
+      "telegram_message_id": 546
     },
     "extracted": {
       "company": "AtkinsRéalis",
@@ -3120,8 +3121,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-14T19:14:16+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-14T19:14:52+00:00",
+      "status": "sent",
+      "telegram_message_id": 547
     },
     "extracted": {
       "company": "Atkins Realis",
