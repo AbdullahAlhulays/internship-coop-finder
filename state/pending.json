@@ -2887,8 +2887,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-14T14:14:02+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-14T14:15:41+00:00",
+      "status": "sent",
+      "telegram_message_id": 542
     },
     "extracted": {
       "company": "Schneider Electric | شنايدر إلكتريك السعودية",
@@ -2934,8 +2935,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-14T14:14:03+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-14T14:15:41+00:00",
+      "status": "sent",
+      "telegram_message_id": 543
     },
     "extracted": {
       "company": "AWS",
@@ -2978,8 +2980,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-14T14:14:04+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-14T14:15:42+00:00",
+      "status": "sent",
+      "telegram_message_id": 544
     },
     "extracted": {
       "company": "Ma'ahad Ta'sis Al'ali | معهد تأسيس العالي للتدريب",
@@ -3024,8 +3027,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-14T14:14:31+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-14T14:15:43+00:00",
+      "status": "sent",
+      "telegram_message_id": 545
     },
     "extracted": {
       "company": "جهة إدارة وتنظيم فعاليات",
