@@ -3158,6 +3158,329 @@
       "text": "https://www.careers.atkinsrealis.com/en/jobs/intern-r-163162?section=job-overview\n\nمن هالرابط"
     }
   },
+  "SALTRAI:6007": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-15T17:47:28+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "KPMG",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التدريب التعاوني COOP: لطلاب البكالوريوس في السنة الأخيرة، والمتميزين يترشحون لبرنامج Hamaat للخريجين\nتدريب الخريجين Graduate Internship: لخريجي البكالوريوس والماجستير بدون خبرة عمل سابقة بدوام كامل\nالمدة: 6 أشهر\nالشروط: معدل 3 من 4 أو 4 من 5، وإجادة العربية والإنجليزية\nالتخصصات: المحاسبة، المالية، إدارة الأعمال، علوم الحاسب، الأمن السيبراني، نظم المعلومات، الذكاء الاصطناعي، الهندسة، القانون، التسويق، الموارد البشرية، إدارة المشاريع"
+      },
+      "evidence": {
+        "company": "KPMG",
+        "deadline": null,
+        "description": "التدريب التعاوني COOP: لطلاب البكالوريوس في السنة الأخيرة، والمتميزين يترشحون لبرنامج Hamaat للخريجين\nتدريب الخريجين Graduate Internship: لخريجي البكالوريوس والماجستير بدون خبرة عمل سابقة بدوام كامل\nالمدة: 6 أشهر\nالشروط: معدل 3 من 4 أو 4 من 5، وإجادة العربية والإنجليزية\nالتخصصات: المحاسبة، المالية، إدارة الأعمال، علوم الحاسب، الأمن السيبراني، نظم المعلومات، الذكاء الاصطناعي، الهندسة، القانون، التسويق، الموارد البشرية، إدارة المشاريع",
+        "location": "الرياض وجدة والخبر"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Jeddah, Khobar, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "KPMG Internship & Co-op Programs",
+      "type": "internship_or_coop",
+      "url": "https://ftn.sa/opportunity/10309"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://ftn.sa/opportunity/10309",
+        "https://ftn.sa/opportunity/10308",
+        "https://linktr.ee/FtnSa"
+      ],
+      "message_id": 6007,
+      "permalink": "https://t.me/SALTRAI/6007",
+      "posted_at": "2026-11-15T14:05:08+00:00",
+      "text": "رسميًا: KPMG تفتح برنامجين للطلاب والخريجين 🔥\n\nشركة KPMG وحدة من الـ Big Four وأكبر شركات الاستشارات والمراجعة في العالم، وفتحت التقديم على برنامجين في الرياض وجدة والخبر 🇸🇦\n\n🎓 التدريب التعاوني COOP: لطلاب البكالوريوس في السنة الأخيرة، والمتميزين يترشحون لبرنامج Hamaat للخريجين\n\n💼 تدريب الخريجين Graduate Internship: لخريجي البكالوريوس والماجستير بدون خبرة عمل سابقة بدوام كامل\n\n⏳ المدة: 6 أشهر\n\n📋 الشروط: معدل 3 من 4 أو 4 من 5، وإجادة العربية والإنجليزية\n\n📚 التخصصات: المحاسبة، المالية، إدارة الأعمال، علوم الحاسب، الأمن السيبراني، نظم المعلومات، الذكاء الاصطناعي، الهندسة، القانون، التسويق، الموارد البشرية، إدارة المشاريع\n\n🔗 تقديم التعاوني COOP:\nhttps://ftn.sa/opportunity/10309\n\n🔗 تقديم الخريجين Graduate Internship:\nhttps://ftn.sa/opportunity/10308\n\n————————————————\nتبا فُرص أكثر ؟ تحصلنا في جميع المنصات هنا https://linktr.ee/FtnSa"
+    }
+  },
+  "SALTRAI:6008": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-15T17:47:30+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "PwC",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "🏢 البرامج\n• الضرائب\n• المراجعة\n• الاستشارات\n• الصفقات\n• التقنيات الناشئة والذكاء الاصطناعي\n\n📚 التخصصات\nالمحاسبة، المالية، الأعمال والإدارة، علوم الحاسب، تقنية المعلومات، هندسة البرمجيات، الذكاء الاصطناعي، الهندسة الصناعية\n\n📋 الشروط\n• طلاب البكالوريوس في السنة الأخيرة\n• المعدل من 3 إلى 3.5 من 4 حسب البرنامج\n• إجادة الإنجليزية"
+      },
+      "evidence": {
+        "company": "PwC",
+        "deadline": null,
+        "description": "🏢 البرامج\n• الضرائب\n• المراجعة\n• الاستشارات\n• الصفقات\n• التقنيات الناشئة والذكاء الاصطناعي\n\n📚 التخصصات\nالمحاسبة، المالية، الأعمال والإدارة، علوم الحاسب، تقنية المعلومات، هندسة البرمجيات، الذكاء الاصطناعي، الهندسة الصناعية\n\n📋 الشروط\n• طلاب البكالوريوس في السنة الأخيرة\n• المعدل من 3 إلى 3.5 من 4 حسب البرنامج\n• إجادة الإنجليزية",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "5 برامج تدريب تعاوني من PwC",
+      "type": "coop",
+      "url": "https://x.com/TheFtnSa/status/2119821756785406117"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://x.com/TheFtnSa/status/2119821756785406117",
+        "https://linktr.ee/FtnSa"
+      ],
+      "message_id": 6008,
+      "permalink": "https://t.me/SALTRAI/6008",
+      "posted_at": "2026-11-15T14:05:55+00:00",
+      "text": "5 برامج تدريب تعاوني من PwC نزلت دفعة وحدة 🔥😳\n\n🏢 البرامج\n• الضرائب\n• المراجعة\n• الاستشارات\n• الصفقات\n• التقنيات الناشئة والذكاء الاصطناعي\n\n📚 التخصصات\nالمحاسبة، المالية، الأعمال والإدارة، علوم الحاسب، تقنية المعلومات، هندسة البرمجيات، الذكاء الاصطناعي، الهندسة الصناعية\n\n📋 الشروط\n• طلاب البكالوريوس في السنة الأخيرة\n• المعدل من 3 إلى 3.5 من 4 حسب البرنامج\n• إجادة الإنجليزية\n\n🔗 التفاصيل والتقديم\nhttps://x.com/TheFtnSa/status/2119821756785406117\n\n————————————————\nتبا فُرص أكثر ؟ تحصلنا في جميع المنصات هنا\nhttps://linktr.ee/FtnSa"
+    }
+  },
+  "SALTRAI:6010": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-15T17:47:47+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "SAMI | الشركة السعودية للصناعات العسكرية",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "SAMI",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "internship",
+      "url": "https://www.sami.com.sa/join-internship-program/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://www.sami.com.sa/join-internship-program/"
+      ],
+      "message_id": 6010,
+      "permalink": "https://t.me/SALTRAI/6010",
+      "posted_at": "2026-11-15T14:07:18+00:00",
+      "text": "https://www.sami.com.sa/join-internship-program/"
+    }
+  },
+  "SALTRAI:6011": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-15T17:48:03+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Capital Market Authority | هيئة السوق المالية",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "اليوم بيفتح تدريب هيئة السوق المالية"
+      },
+      "evidence": {
+        "company": "Capital Market Authority | هيئة السوق المالية",
+        "deadline": null,
+        "description": "اليوم بيفتح تدريب هيئة السوق المالية",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "internship_or_coop",
+      "url": "https://cma.talentera.com/ar/page/coop-program/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://cma.talentera.com/ar/page/coop-program/"
+      ],
+      "message_id": 6011,
+      "permalink": "https://t.me/SALTRAI/6011",
+      "posted_at": "2026-11-15T14:07:18+00:00",
+      "text": "اليوم بيفتح تدريب هيئة السوق المالية\nهذا الرابط\nhttps://cma.talentera.com/ar/page/coop-program/"
+    }
+  },
+  "SALTRAI:6014": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-15T17:48:41+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Habaka Al-Mawtawa | حبكة المحتوى",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "شركة حبكة المحتوى",
+        "deadline": null,
+        "description": null,
+        "location": "المنطقة الشرقية ، الدمام"
+      },
+      "is_opportunity": true,
+      "location": "Dammam, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب صناعة المحتوى",
+      "type": "internship_or_coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScDf1EHZmYoHMOcSYidDTpy0KIA47u5fxMllgzCZd2lyQ_WUA/viewform?usp=publish-editor"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLScDf1EHZmYoHMOcSYidDTpy0KIA47u5fxMllgzCZd2lyQ_WUA/viewform?usp=publish-editor"
+      ],
+      "message_id": 6014,
+      "permalink": "https://t.me/SALTRAI/6014",
+      "posted_at": "2026-11-15T14:07:18+00:00",
+      "text": "فرصة تدريب صناعة المحتوى\n-شركة حبكة المحتوى\n📍المنطقة الشرقية ، الدمام\n\nhttps://docs.google.com/forms/d/e/1FAIpQLScDf1EHZmYoHMOcSYidDTpy0KIA47u5fxMllgzCZd2lyQ_WUA/viewform?usp=publish-editor"
+    }
+  },
+  "SALTRAI:6016": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-15T17:49:25+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Trigoria",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "en": "We are excited to announce a Co-op opportunity to contribute to the expansion of Trigoria! Trigorias.com/en is an innovative educational platform designed to help students study through interactive learning experiences, personalized practice, and modern educational technologies. If you're eager to gain hands-on experience and contribute to building an impactful educational platform, we'd love to hear from you!"
+      },
+      "evidence": {
+        "company": "Trigoria",
+        "deadline": null,
+        "description": "We are excited to announce a Co-op opportunity to contribute to the expansion of Trigoria! Trigorias.com/en is an innovative educational platform designed to help students study through interactive learning experiences, personalized practice, and modern educational technologies. If you're eager to gain hands-on experience and contribute to building an impactful educational platform, we'd love to hear from you!",
+        "location": "Dhahran"
+      },
+      "is_opportunity": true,
+      "location": "Dhahran, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Co-op opportunity – Trigoria Expansion Program!",
+      "type": "coop",
+      "url": "https://forms.gle/jUxd2xfpEv63SwnN6"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "http://Trigorias.com/en",
+        "https://forms.gle/jUxd2xfpEv63SwnN6"
+      ],
+      "message_id": 6016,
+      "permalink": "https://t.me/SALTRAI/6016",
+      "posted_at": "2026-11-15T14:07:18+00:00",
+      "text": "Co-op Opportunity – Trigoria Expansion Program!\n\nAssalamu Alaikum,\nWe are excited to announce a Co-op opportunity to contribute to the expansion of Trigoria!\nTrigorias.com/en is an innovative educational platform designed to help students study through interactive learning experiences, personalized practice, and modern educational technologies.\n\nIf you're eager to gain hands-on experience and contribute to building an impactful educational platform, we'd love to hear from you!\n\nLocation: Dhahran\nEligible Majors:\n- Marketing\n- Business Administration\n- Management Information Systems\n- Computer Science\n- Related majors\n\nIf you're interested, please complete the application form below.\nApplication Form: https://forms.gle/jUxd2xfpEv63SwnN6\n\nThank you!"
+    }
+  },
+  "SALTRAI:6017": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-15T17:49:45+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Trigoria | توسع Trigoria",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "يسرّنا الإعلان عن إتاحة فرصة للتدريب التعاوني للمساهمة في تطوير منصة Trigoria وتوسيع نطاق أعمالها!\\nتُعد منصة Trigorias.com/en منصة تعليمية مبتكرة تهدف إلى مساعدة الطلاب على المذاكرة والتعلّم من خلال تجارب تعليمية تفاعلية بالذكاء الاصطناعي.\\nإذا كنت تطمح إلى اكتساب خبرة عملية حقيقية والمساهمة في بناء منصة تعليمية ذات أثر، يسعدنا انضمامك إلينا!\\n📍 موقع التدريب: الظهران\\n🎓 التخصصات المستهدفة:\\n- التسويق\\n- إدارة الأعمال\\n- نظم المعلومات الإدارية\\n- علوم الحاسب\\n- التخصصات المشابهة"
+      },
+      "evidence": {
+        "company": "توسع Trigoria",
+        "deadline": null,
+        "description": "يسرّنا الإعلان عن إتاحة فرصة للتدريب التعاوني للمساهمة في تطوير منصة Trigoria وتوسيع نطاق أعمالها!\\nتُعد منصة Trigorias.com/en منصة تعليمية مبتكرة تهدف إلى مساعدة الطلاب على المذاكرة والتعلّم من خلال تجارب تعليمية تفاعلية بالذكاء الاصطناعي.\\nإذا كنت تطمح إلى اكتساب خبرة عملية حقيقية والمساهمة في بناء منصة تعليمية ذات أثر، يسعدنا انضمامك إلينا!\\n📍 موقع التدريب: الظهران\\n🎓 التخصصات المستهدفة:\\n- التسويق\\n- إدارة الأعمال\\n- نظم المعلومات الإدارية\\n- علوم الحاسب\\n- التخصصات المشابهة",
+        "location": "الظهران"
+      },
+      "is_opportunity": true,
+      "location": "Dhahran, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني – برنامج توسع Trigoria!",
+      "type": "coop",
+      "url": "https://forms.gle/jUxd2xfpEv63SwnN6"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://trigorias.com/en",
+        "https://forms.gle/jUxd2xfpEv63SwnN6"
+      ],
+      "message_id": 6017,
+      "permalink": "https://t.me/SALTRAI/6017",
+      "posted_at": "2026-11-15T14:07:18+00:00",
+      "text": "فرصة تدريب تعاوني – برنامج توسع Trigoria!\n\nيسرّنا الإعلان عن إتاحة فرصة للتدريب التعاوني للمساهمة في تطوير منصة Trigoria وتوسيع نطاق أعمالها!\nتُعد منصة Trigorias.com/en منصة تعليمية مبتكرة تهدف إلى مساعدة الطلاب على المذاكرة والتعلّم من خلال تجارب تعليمية تفاعلية بالذكاء الاصطناعي.\nإذا كنت تطمح إلى اكتساب خبرة عملية حقيقية والمساهمة في بناء منصة تعليمية ذات أثر، يسعدنا انضمامك إلينا!\n\n📍 موقع التدريب: الظهران\n🎓 التخصصات المستهدفة:\n- التسويق\n- إدارة الأعمال\n- نظم المعلومات الإدارية\n- علوم الحاسب\n- التخصصات المشابهة\n\nللمهتمين بالانضمام، يُرجى تعبئة نموذج التقديم عبر الرابط التالي:\n🔗 نموذج التقديم: https://forms.gle/jUxd2xfpEv63SwnN6\n\nشكرًا لكم!"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
