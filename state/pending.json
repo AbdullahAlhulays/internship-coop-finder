@@ -6744,8 +6744,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-16T11:34:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-16T11:35:22+00:00",
+      "status": "sent",
+      "telegram_message_id": 555
     },
     "extracted": {
       "company": "شركة الماجد للعود",
@@ -6788,8 +6789,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-16T11:34:29+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-16T11:35:23+00:00",
+      "status": "sent",
+      "telegram_message_id": 556
     },
     "extracted": {
       "company": "Capital Market Authority | هيئة السوق المالية",
@@ -6834,8 +6836,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-16T11:34:45+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-16T11:35:24+00:00",
+      "status": "sent",
+      "telegram_message_id": 557
     },
     "extracted": {
       "company": "ARDARA | شركة أردارا",
