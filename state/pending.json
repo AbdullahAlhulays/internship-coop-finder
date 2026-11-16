@@ -3255,51 +3255,6 @@
       "text": "5 برامج تدريب تعاوني من PwC نزلت دفعة وحدة 🔥😳\n\n🏢 البرامج\n• الضرائب\n• المراجعة\n• الاستشارات\n• الصفقات\n• التقنيات الناشئة والذكاء الاصطناعي\n\n📚 التخصصات\nالمحاسبة، المالية، الأعمال والإدارة، علوم الحاسب، تقنية المعلومات، هندسة البرمجيات، الذكاء الاصطناعي، الهندسة الصناعية\n\n📋 الشروط\n• طلاب البكالوريوس في السنة الأخيرة\n• المعدل من 3 إلى 3.5 من 4 حسب البرنامج\n• إجادة الإنجليزية\n\n🔗 التفاصيل والتقديم\nhttps://x.com/TheFtnSa/status/2119821756785406117\n\n————————————————\nتبا فُرص أكثر ؟ تحصلنا في جميع المنصات هنا\nhttps://linktr.ee/FtnSa"
     }
   },
-  "SALTRAI:6010": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-15T17:49:48+00:00",
-      "status": "sent",
-      "telegram_message_id": 550
-    },
-    "extracted": {
-      "company": "SAMI | الشركة السعودية للصناعات العسكرية",
-      "confidence": 0.8,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": null,
-      "evidence": {
-        "company": "SAMI",
-        "deadline": null,
-        "description": null,
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": null,
-      "type": "internship",
-      "url": "https://www.sami.com.sa/join-internship-program/"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": false,
-      "links": [
-        "https://www.sami.com.sa/join-internship-program/"
-      ],
-      "message_id": 6010,
-      "permalink": "https://t.me/SALTRAI/6010",
-      "posted_at": "2026-11-15T14:07:18+00:00",
-      "text": "https://www.sami.com.sa/join-internship-program/"
-    }
-  },
   "SALTRAI:6011": {
     "decision": {
       "action": "add",
