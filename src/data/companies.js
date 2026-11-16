@@ -1600,6 +1600,15 @@ const companyRecords = [
     description: {"ar": "المتطلبات:\nأن يكون المتقدم سعودي الجنسية.\nأن يكون في الفصل الدراسي الأخير قبل التخرج.\nألا يقل المعدل التراكمي للتخصصات الهندسية عن 3 من 5 أو 2.4 من 4.\nألا يقل المعدل التراكمي لبقية التخصصات عن 3.25 من 5 أو 2.6 من 4.\nتقديم خطاب التدريب التعاوني من الجامعة.\nإجادة اللغة الإنجليزية تحدثًا وكتابةً.\nالتفرغ التام خلال فترة التدريب.", "en": "Requirements:\nThe applicant must be a Saudi national.\nThe applicant must be in the final semester before graduation.\nThe cumulative GPA for engineering disciplines must be at least 3 out of 5 or 2.4 out of 4.\nThe cumulative GPA for other disciplines must be at least 3.25 out of 5 or 2.6 out of 4.\nSubmission of a cooperative training letter from the university.\nProficiency in spoken and written English.\nFull-time availability during the training period."},
     requiresLetter: true,
     addedAt: "2026-11-16T18:17:26+03:00",
+  },
+  {
+    name: "Musanadah | مساندة",
+    logo: {"domain": "careers.alturkiholding.com", "file": "musanadah.webp"},
+    location: "Dhahran, Saudi Arabia",
+    applicationLink: "https://careers.alturkiholding.com/vacancy/176105",
+    deadline: "2026-12-05",
+    description: {"ar": "التخصصات والمسارات التدريبية:\n1. التدريب الهندسي:\nالهندسة الصناعية.\nالهندسة الميكانيكية.\nالهندسة الكهربائية.\n\n2. التدريب القانوني:\nالقانون.\nالدراسات القانونية والتخصصات ذات الصلة.\n\n3. التدريب المالي:\nالمالية.\nالمحاسبة والتخصصات ذات الصلة.\n.\nالمتطلبات:\nأن يكون المتقدم طالب بكالوريوس مؤهلًا للتدريب التعاوني.\nإجادة اللغة الإنجليزية.\nإجادة استخدام Microsoft Office للمسار القانوني.\nإجادة استخدام Excel للمسار المالي.", "en": "Specialisations and Training Pathways:\n1. Engineering Training:\nIndustrial Engineering.\nMechanical Engineering.\nElectrical Engineering.\n\n2. Legal Training:\nLaw.\nLegal studies and related disciplines.\n\n3. Financial Training:\nFinance.\nAccounting and related disciplines.\n.\nRequirements:\nThe applicant must be a bachelor's degree student eligible for cooperative training.\nProficiency in English.\nProficiency in Microsoft Office for the legal track.\nProficiency in using Excel for the financial track."},
+    addedAt: "2026-11-16T18:18:06+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
