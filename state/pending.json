@@ -3443,6 +3443,94 @@
       "text": "فرصة تدريب تعاوني – برنامج توسع Trigoria!\n\nيسرّنا الإعلان عن إتاحة فرصة للتدريب التعاوني للمساهمة في تطوير منصة Trigoria وتوسيع نطاق أعمالها!\nتُعد منصة Trigorias.com/en منصة تعليمية مبتكرة تهدف إلى مساعدة الطلاب على المذاكرة والتعلّم من خلال تجارب تعليمية تفاعلية بالذكاء الاصطناعي.\nإذا كنت تطمح إلى اكتساب خبرة عملية حقيقية والمساهمة في بناء منصة تعليمية ذات أثر، يسعدنا انضمامك إلينا!\n\n📍 موقع التدريب: الظهران\n🎓 التخصصات المستهدفة:\n- التسويق\n- إدارة الأعمال\n- نظم المعلومات الإدارية\n- علوم الحاسب\n- التخصصات المشابهة\n\nللمهتمين بالانضمام، يُرجى تعبئة نموذج التقديم عبر الرابط التالي:\n🔗 نموذج التقديم: https://forms.gle/jUxd2xfpEv63SwnN6\n\nشكرًا لكم!"
     }
   },
+  "SALTRAI:6019": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-16T22:13:40+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Mobily",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "Mobily",
+        "deadline": null,
+        "description": null,
+        "location": "في الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب",
+      "type": "internship_or_coop",
+      "url": "https://careers.mobily.com.sa/en/sites/opportunities/job/2113"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://careers.mobily.com.sa/en/sites/opportunities/job/2113"
+      ],
+      "message_id": 6019,
+      "permalink": "https://t.me/SALTRAI/6019",
+      "posted_at": "2026-11-16T13:08:27+00:00",
+      "text": "الي يبغا تدريب موبايلي فتحو تدريب في الرياض ب مكافاءة شهرية\nhttps://careers.mobily.com.sa/en/sites/opportunities/job/2113"
+    }
+  },
+  "SALTRAI:6024": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-16T22:13:41+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Habka Al-Mawtawa | حبكة المحتوى",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "حبكة المحتوى",
+        "deadline": null,
+        "description": null,
+        "location": "المنطقة الشرقية ، الدمام"
+      },
+      "is_opportunity": true,
+      "location": "Dammam, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب صناعة المحتوى",
+      "type": "internship_or_coop",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScDf1EHZmYoHMOcSYidDTpy0KIA47u5fxMllgzCZd2lyQ_WUA/viewform?usp=publish-editor"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLScDf1EHZmYoHMOcSYidDTpy0KIA47u5fxMllgzCZd2lyQ_WUA/viewform?usp=publish-editor"
+      ],
+      "message_id": 6024,
+      "permalink": "https://t.me/SALTRAI/6024",
+      "posted_at": "2026-11-16T13:08:27+00:00",
+      "text": "فرصة تدريب صناعة المحتوى\n-شركة حبكة المحتوى\n📍المنطقة الشرقية ، الدمام\n\nhttps://docs.google.com/forms/d/e/1FAIpQLScDf1EHZmYoHMOcSYidDTpy0KIA47u5fxMllgzCZd2lyQ_WUA/viewform?usp=publish-editor"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
