@@ -3451,8 +3451,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-16T22:13:40+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-16T22:14:11+00:00",
+      "status": "sent",
+      "telegram_message_id": 564
     },
     "extracted": {
       "company": "Mobily",
@@ -3495,8 +3496,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-16T22:13:41+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-16T22:14:12+00:00",
+      "status": "sent",
+      "telegram_message_id": 565
     },
     "extracted": {
       "company": "Habka Al-Mawtawa | حبكة المحتوى",
