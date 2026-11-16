@@ -1590,6 +1590,16 @@ const companyRecords = [
     description: {"ar": "تعلن شركة سعودكونسلت عن فتح باب التقديم لبرنامج التدريب التعاوني لطلاب وطالبات في مختلف التخصصات، ممن يُعد التدريب التعاوني متطلباً جامعياً رسمياً لإتمام دراستهم. يهدف البرنامج إلى توفير بيئة عمل احترافية تمكّن الكفاءات الوطنية الشابة من اكتساب الخبرة العملية وتطوير مهاراتهم الميدانية.\n\nالمتطلبات\n• أن يكون التدريب التعاوني متطلباً جامعياً رسمياً من الكلية/الجامعة\n• أن يكون المتقدم سعودي الجنسية\n• الالتزام التام بساعات وضوابط العمل الرسمية\n• الشغف والاهتمام بالتعلم وتطوير المهارات\n• إجادة استخدام الأدوات والبرامج الأساسية الخاصة بالتخصص", "en": "SaudiConsult announces the opening of applications for the Cooperative Training Programme for male and female students in various disciplines, for whom cooperative training is an official university requirement to complete their studies. The programme aims to provide a professional working environment that enables young national talent to gain practical experience and develop their skills in the field.\n\nRequirements\n• The cooperative training must be an official university requirement of the college/university.\n• The applicant must be a Saudi national.\n• Full compliance with official working hours and regulations\n• Passion and interest in learning and skills development\n• Proficiency in using the basic tools and software relevant to the specialisation"},
     requiresLetter: true,
     addedAt: "2026-11-11T22:30:55+03:00",
+  },
+  {
+    name: "Mobily",
+    logo: {"domain": "careers.mobily.com.sa", "file": "mobily.jpg"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://careers.mobily.com.sa/en/sites/opportunities/job/2113?utm_source=Linkedin&utm_medium=Organic&utm_campaign=2026_COOPTrainee_Nov",
+    deadline: "2026-11-29",
+    description: {"ar": "المتطلبات:\nأن يكون المتقدم سعودي الجنسية.\nأن يكون في الفصل الدراسي الأخير قبل التخرج.\nألا يقل المعدل التراكمي للتخصصات الهندسية عن 3 من 5 أو 2.4 من 4.\nألا يقل المعدل التراكمي لبقية التخصصات عن 3.25 من 5 أو 2.6 من 4.\nتقديم خطاب التدريب التعاوني من الجامعة.\nإجادة اللغة الإنجليزية تحدثًا وكتابةً.\nالتفرغ التام خلال فترة التدريب.", "en": "Requirements:\nThe applicant must be a Saudi national.\nThe applicant must be in the final semester before graduation.\nThe cumulative GPA for engineering disciplines must be at least 3 out of 5 or 2.4 out of 4.\nThe cumulative GPA for other disciplines must be at least 3.25 out of 5 or 2.6 out of 4.\nSubmission of a cooperative training letter from the university.\nProficiency in spoken and written English.\nFull-time availability during the training period."},
+    requiresLetter: true,
+    addedAt: "2026-11-16T18:17:26+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
