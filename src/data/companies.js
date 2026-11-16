@@ -1609,6 +1609,14 @@ const companyRecords = [
     deadline: "2026-12-05",
     description: {"ar": "التخصصات والمسارات التدريبية:\n1. التدريب الهندسي:\nالهندسة الصناعية.\nالهندسة الميكانيكية.\nالهندسة الكهربائية.\n\n2. التدريب القانوني:\nالقانون.\nالدراسات القانونية والتخصصات ذات الصلة.\n\n3. التدريب المالي:\nالمالية.\nالمحاسبة والتخصصات ذات الصلة.\n.\nالمتطلبات:\nأن يكون المتقدم طالب بكالوريوس مؤهلًا للتدريب التعاوني.\nإجادة اللغة الإنجليزية.\nإجادة استخدام Microsoft Office للمسار القانوني.\nإجادة استخدام Excel للمسار المالي.", "en": "Specialisations and Training Pathways:\n1. Engineering Training:\nIndustrial Engineering.\nMechanical Engineering.\nElectrical Engineering.\n\n2. Legal Training:\nLaw.\nLegal studies and related disciplines.\n\n3. Financial Training:\nFinance.\nAccounting and related disciplines.\n.\nRequirements:\nThe applicant must be a bachelor's degree student eligible for cooperative training.\nProficiency in English.\nProficiency in Microsoft Office for the legal track.\nProficiency in using Excel for the financial track."},
     addedAt: "2026-11-16T18:18:06+03:00",
+  },
+  {
+    name: "Atkins Réalis | أتكينز رياليس",
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.careers.atkinsrealis.com/en/jobs/intern-r-163162%D8%B1",
+    description: {"ar": "التخصصات المستهدفة:\nالهندسة المدنية.\nالهندسة الميكانيكية.\nالهندسة الإنشائية.\nالهندسة والتخصصات ذات الصلة.\nالهندسة المعمارية.\nالمالية.\nتقنية المعلومات.\nإدارة الأعمال.\nالمتطلبات:\nأن يكون المتقدم سعودي الجنسية.\nأن يكون طالبًا أو خريجًا حديثًا من إحدى جامعات الرياض.\nألا يقل المعدل التراكمي عن 3.75 من 5 أو 2.75 من 4.\nتقديم خطاب تدريب تعاوني من الجامعة.\nإجادة اللغة الإنجليزية.\nمدة التدريب:\n3 أو 4 أو 6 أشهر.\nالمزايا:\nمكافأة شهرية قدرها 3,500 ريال سعودي.\nاكتساب خبرة عملية في مشروع حديقة الملك سلمان.", "en": "Targeted Disciplines:\nCivil Engineering.\nMechanical Engineering.\nStructural Engineering.\nEngineering and related disciplines.\nArchitecture.\nFinance.\nInformation Technology.\nBusiness Administration.\nRequirements:\nThe applicant must be a Saudi national.\nBe a student or a recent graduate from one of Riyadh's universities.\nThe cumulative GPA must be at least 3.75 out of 5 or 2.75 out of 4.\nSubmission of a cooperative training letter from the university.\nProficiency in English.\nDuration of the internship:\n3, 4 or 6 months.\nBenefits:\nA monthly stipend of SAR 3,500.\nGaining practical experience in the King Salman Park project."},
+    requiresLetter: true,
+    addedAt: "2026-11-16T18:18:20+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
