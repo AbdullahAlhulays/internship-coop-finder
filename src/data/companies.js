@@ -1631,6 +1631,16 @@ const companyRecords = [
     name: "SAMI | الشركة السعودية للصناعات العسكرية",
     applicationLink: "https://www.sami.com.sa/join-internship-program/",
     addedAt: "2026-11-16T18:20:23+03:00",
+  },
+  {
+    name: "YASREF",
+    logo: {"domain": "careers.yasref.com", "file": "yasref.png"},
+    location: "Yanbu, Saudi Arabia",
+    applicationLink: "https://careers.yasref.com/job/COOP-Trainee/206-en_US/",
+    deadline: "2026-11-30",
+    description: {"ar": "التخصصات:\nالتخصصات التقنية وغير التقنية.\n\nالمتطلبات:\n• أن يكون المتقدم سعودي الجنسية.\n• أن يكون التدريب العملي متطلباً للتخرج من الجامعة أو الكلية.\n• ألا يكون المتقدم قد تخرج من جامعته.\n• ألا يقل المعدل التراكمي عن:\n• التخصصات التقنية: 2.6 من 4 أو 3.3 من 5.\n• التخصصات غير التقنية: 2.8 من 4 أو 3.5 من 5.\n• الأولوية لأصحاب المعدلات الأعلى.\n• الالتزام بإكمال التدريب التعاوني بالكامل.\n• ألا يكون المتدرب مسجلاً في مقررات جامعية خلال فترة التدريب.\n\nالمستندات المطلوبة:\n• صورة من الهوية الوطنية.\n• نسخة من أحدث كشف درجات رسمي.\n• خطاب من الجامعة يوضح أهداف التدريب ومدته.\n\nفترة التقديم:\nمن 16 إلى 30 نوفمبر 2026م.\n\nالتقديم__________________", "en": "Specialisations:\nTechnical and non-technical disciplines.\n\nRequirements:\n• The applicant must be a Saudi national.\n• The practical training must be a requirement for graduation from the university or college.\n• The applicant must not have graduated from his university.\n• The cumulative GPA must not be less than:\n• Technical disciplines: 2.6 out of 4 or 3.3 out of 5.\n• Non-technical disciplines: 2.8 out of 4 or 3.5 out of 5.\n• Priority is given to those with the highest GPAs.\n• Commitment to completing the cooperative training in full.\n• The trainee must not be enrolled in university courses during the training period.\n\nRequired Documents:\n• A copy of the national ID card.\n• A copy of the most recent official academic transcript.\n• A letter from the university outlining the objectives and duration of the internship.\n\nApplication Period:\nFrom 16 to 30 November 2026.\n\nAdmission"},
+    requiresLetter: true,
+    addedAt: "2026-11-17T18:49:23+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
