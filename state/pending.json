@@ -4634,59 +4634,6 @@
       "text": "🟡الفرصة رقم ٢٩٠٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nشركة ينبع أرامكو سينوبك للتكرير (ياسرف) تعلن تاريخ بدء التقديم في برنامج التدريب التعاوني لطلبة الجامعات والكليات في مختلف التخصصات.\n\nhttps://careers.yasref.com/job/COOP-Trainee/206-en_US/"
     }
   },
-  "cooptraning_inksa:4615": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-18T14:09:52+00:00",
-      "status": "sent",
-      "telegram_message_id": 576
-    },
-    "extracted": {
-      "company": "Ardara | اردارا",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": "2026-12-10",
-      "deadline_raw": null,
-      "description": {
-        "ar": "برنامج تدريب تعاوني يهدف إلى تطوير مهارات طلاب الجامعات واكتساب الخبرة العملية.\nالتخصصات: تقنية المعلومات، الهندسة، الأمن السيبراني، المالية، المحاسبة، القانون، الموارد البشرية، التسويق وغيرها.\nالفئة المستهدفة: الطلاب السعوديون المقبلون على إنهاء مرحلة البكالوريوس.\nالشروط: إجادة اللغة الإنجليزية، اجتياز المقابلة الشخصية، خطاب توصية من الجامعة، والتفرغ للتدريب.\nمقر التدريب: الرياض.\nآخر موعد للتسجيل: 10 ديسمبر 2026.\nملاحظة: لم يُذكر في الإعلان ما إذا كان التدريب بمكافأة مالية أو يوفر سكنًا، كما لم تُحدد مدته."
-      },
-      "evidence": {
-        "company": "#اردارا",
-        "deadline": null,
-        "description": "فرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء المهارات والاستعداد لسوق العمل.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": true,
-      "title": "رواد الغد",
-      "type": "coop",
-      "url": "http://bit.ly/4iMRenP"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "http://bit.ly/4iMRenP"
-      ],
-      "message_id": 4615,
-      "permalink": "https://t.me/cooptraning_inksa/4615",
-      "posted_at": "2026-11-17T20:19:55+00:00",
-      "text": "🟡الفرصة رقم ٢٩٠٩\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nانطلاقًا من التزامنا بتمكين الكفاءات الوطنية وتنمية المواهب الشابة.. يسرّنا في ⁧ #اردارا⁩ الإعلان عن فتح باب التقديم للدفعة الرابعة من برنامج التدريب\nالتعاوني \"رواد الغد\"\n\nفرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء\nالمهارات والاستعداد لسوق العمل.\n\nنتطلع لاستقبال جيل جديد من المواهب الطموحة..\n\nللتقديم: ⁦ bit.ly/4iMRenP⁩"
-    },
-    "last_edit": {
-      "message_id": 584,
-      "field": "description_ar",
-      "card_message_id": 576
-    }
-  },
   "cooptraning_inksa:4616": {
     "decision": {
       "action": "add",
