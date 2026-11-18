@@ -4730,6 +4730,57 @@
       "text": "🟡الفرصة رقم ٢٩١٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nعاجل | الهيئة السعودية للمقيّمين المعتمدين (تقييم) تعلن عن 5 فرص تدريب تعاوني:\n⠀\n◾️ مدة التدريب 6 أشهر، لتخصصات البكالوريوس الإدارية والتقنية والهندسية والقانونية.\n\nhttps://taqeem.gov.sa/en/jobs"
     }
   },
+  "cooptraning_inksa:4620": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال ادارة المتاجر الإكترونية ."
+        }
+      },
+      "existing_index": 161,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-18T22:01:56+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Azm Al-Injaz | عزم الإنجاز",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال ادارة المتاجر الإكترونية ."
+      },
+      "evidence": {
+        "company": "شركة عزم الإنجاز",
+        "deadline": null,
+        "description": "تعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال ادارة المتاجر الإكترونية .",
+        "location": "الموقع: الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرصة تدريب تعاوني",
+      "type": "coop",
+      "url": "https://forms.gle/ToZpPYQyiYpmEGFp7"
+    },
+    "post": {
+      "channel": "cooptraning_inksa",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://forms.gle/ToZpPYQyiYpmEGFp7"
+      ],
+      "message_id": 4620,
+      "permalink": "https://t.me/cooptraning_inksa/4620",
+      "posted_at": "2026-11-18T17:50:50+00:00",
+      "text": "🟡الفرصة رقم ٢٩١٣\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\n📢 فرصة تدريب تعاوني | في ادارة وتشغيل المتجر الإكتروني\n\nتعلن شركة عزم الإنجاز عن توفر فرصة تدريب تعاوني لطلاب وطالبات الجامعات المهتمين بمجال ادارة المتاجر الإكترونية .\n\n📍 الموقع: الرياض\n\nللمهتمين، يرجى تعبئة نموذج التقديم وإرفاق السيرة الذاتية من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7"
+    }
+  },
   "nobthacv1:2042": {
     "decision": {
       "action": "add",
