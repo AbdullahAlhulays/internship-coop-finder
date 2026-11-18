@@ -4664,7 +4664,7 @@
       "is_opportunity": true,
       "location": null,
       "reason_excluded": null,
-      "requires_letter": false,
+      "requires_letter": true,
       "title": "رواد الغد",
       "type": "coop",
       "url": "http://bit.ly/4iMRenP"
