@@ -4682,55 +4682,6 @@
       "text": "🟡الفرصة رقم ٢٩٠٧\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nسانس تعلن برنامج التدريب التعاوني لـ (طلاب وطالبات الجامعات).\n\n📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م.\n\nhttps://careers.sans.com.sa/#en/sites/CX_1/job/2008?mode=location"
     }
   },
-  "cooptraning_inksa:4614": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-18T14:09:51+00:00",
-      "status": "sent",
-      "telegram_message_id": 575
-    },
-    "extracted": {
-      "company": "King Abdullah Petroleum Studies and Research Center | مركز الملك عبدالله للدراسات والبحوث البترولية",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": "2026-11-30",
-      "deadline_raw": "30 نوفمبر 2026",
-      "description": {
-        "ar": "تعرّفوا على التخصصات المطلوبة في برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027."
-      },
-      "evidence": {
-        "company": "مركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك)",
-        "deadline": "30 نوفمبر 2026",
-        "description": "تعرّفوا على التخصصات المطلوبة في برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027",
-      "type": "coop",
-      "url": "https://kapsarc.org/internship/"
-    },
-    "post": {
-      "channel": "cooptraning_inksa",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "http://kapsarc.org/ar/internship/",
-        "http://kapsarc.org/internship/"
-      ],
-      "message_id": 4614,
-      "permalink": "https://t.me/cooptraning_inksa/4614",
-      "posted_at": "2026-11-17T20:19:02+00:00",
-      "text": "🟡الفرصة رقم ٢٩٠٨\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعرّفوا على التخصصات المطلوبة في برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027.​\n\nآخر موعد للتقديم: 30 نوفمبر 2026​\nبداية التدريب: 10 يناير 2027​\n\nللتقديم والاطلاع على التفاصيل: ⁦ kapsarc.org/ar/internship/⁩​\n\nExplore the eligible majors for KAPSARC’s Spring 2027 Co-op Internship Program.​\n\nApplication deadline: November 30, 2026​\nProgram start date: January 10, 2027​\n\nTo apply and learn more:​\n⁦ kapsarc.org/internship/⁩"
-    }
-  },
   "cooptraning_inksa:4615": {
     "decision": {
       "action": "add",
