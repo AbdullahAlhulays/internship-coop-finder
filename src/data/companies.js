@@ -1646,6 +1646,13 @@ const companyRecords = [
     name: "النهدي_الطبية",
     applicationLink: "https://efan.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
     addedAt: "2026-11-18T20:03:30+03:00",
+  },
+  {
+    name: "Trigoria",
+    location: "Dhahran, Saudi Arabia",
+    applicationLink: "https://forms.gle/jUxd2xfpEv63SwnN6",
+    description: {"ar": "فرصة تدريب تعاوني – برنامج توسع Trigoria!\n\nيسرّنا الإعلان عن إتاحة فرصة للتدريب التعاوني للمساهمة في تطوير منصة Trigoria وتوسيع نطاق أعمالها!\nتُعد منصة Trigorias.com/en منصة تعليمية مبتكرة تهدف إلى مساعدة الطلاب على المذاكرة والتعلّم من خلال تجارب تعليمية تفاعلية بالذكاء الاصطناعي.\nإذا كنت تطمح إلى اكتساب خبرة عملية حقيقية والمساهمة في بناء منصة تعليمية ذات أثر، يسعدنا انضمامك إلينا!\n\n📍 موقع التدريب: الظهران\n🎓 التخصصات المستهدفة:\n- التسويق\n- إدارة الأعمال\n- نظم المعلومات الإدارية\n- علوم الحاسب\n- التخصصات المشابهة\n\nللمهتمين بالانضمام، يُرجى تعبئة نموذج التقديم عبر الرابط التالي:\n🔗 نموذج التقديم: https://forms.gle/jUxd2xfpEv63SwnN6\n\nشكرًا لكم!", "en": "Cooperative Training Opportunity – Trigoria Expansion Programme!\n\nWe are pleased to announce a cooperative training opportunity to contribute to the development of the Trigoria platform and the expansion of its business!\nTrigorias.com/en is an innovative learning platform that aims to help students study and learn through interactive AI-powered learning experiences.\nIf you aspire to gain real-world experience and contribute to building an impactful educational platform, we would be delighted to have you join us!\n\n📍 Training Location: Dhahran\n🎓 Target Disciplines:\n- Marketing\n- Business Administration\n- Management Information Systems\n- Computer Science\n- Similar disciplines\n\nIf you are interested in joining, please fill out the application form via the following link:\n🔗 Application Form: https://forms.gle/jUxd2xfpEv63SwnN6\n\nThank You!"},
+    addedAt: "2026-11-18T20:03:44+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
