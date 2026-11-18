@@ -1660,6 +1660,15 @@ const companyRecords = [
     deadline: "2026-11-30",
     description: {"ar": "تعرّفوا على التخصصات المطلوبة في برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027.", "en": "Learn about the specialisations required for the Cooperative Training Programme at King Abdullah Petroleum Studies and Research Centre (KAPSARC) for the January 2027 intake."},
     addedAt: "2026-11-18T20:04:03+03:00",
+  },
+  {
+    name: "SANS | سانس",
+    logo: {"domain": "sans.com.sa", "file": "sans.ico"},
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://careers.sans.com.sa/#en/sites/CX_1/job/2008?mode=location",
+    deadline: "2026-11-25",
+    description: {"ar": "برنامج التدريب التعاوني لـ (طلاب وطالبات الجامعات).\n📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م.", "en": "Cooperative Training Programme for (male and female university students).\n📍 Place of work: Jeddah.\n📘 Duration: From 2 to 7 months, starting on Sunday, 10/01/2027.\n📅 Applications will be accepted until Wednesday, 25/11/2026."},
+    addedAt: "2026-11-18T20:04:29+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
