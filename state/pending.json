@@ -4784,8 +4784,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-18T14:09:07+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-18T14:09:51+00:00",
+      "status": "sent",
+      "telegram_message_id": 575
     },
     "extracted": {
       "company": "King Abdullah Petroleum Studies and Research Center | مركز الملك عبدالله للدراسات والبحوث البترولية",
@@ -4832,8 +4833,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-18T14:09:09+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-18T14:09:52+00:00",
+      "status": "sent",
+      "telegram_message_id": 576
     },
     "extracted": {
       "company": "Ardara | اردارا",
@@ -4879,8 +4881,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-18T14:09:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-18T14:09:52+00:00",
+      "status": "sent",
+      "telegram_message_id": 577
     },
     "extracted": {
       "company": "Saudi Parkinson Association | الجمعية السعودية لمرضى الباركنسون",
@@ -4926,8 +4929,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-18T14:09:49+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-18T14:09:55+00:00",
+      "status": "sent",
+      "telegram_message_id": 578
     },
     "extracted": {
       "company": "Saudi Accreditation Authority | الهيئة السعودية للمقيّمين المعتمدين",
