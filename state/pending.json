@@ -7128,8 +7128,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:21:26+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:00+00:00",
+      "status": "sent",
+      "telegram_message_id": 589
     },
     "extracted": {
       "company": "Apex Digital",
@@ -7174,8 +7175,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:21:27+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 590
     },
     "extracted": {
       "company": "TRIKO",
@@ -7220,8 +7222,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:21:29+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:02+00:00",
+      "status": "sent",
+      "telegram_message_id": 591
     },
     "extracted": {
       "company": "شركة المصنع السعودي للأعلام",
@@ -7266,8 +7269,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:21:49+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:02+00:00",
+      "status": "sent",
+      "telegram_message_id": 592
     },
     "extracted": {
       "company": "Toot | توت",
@@ -7312,8 +7316,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:22:15+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:03+00:00",
+      "status": "sent",
+      "telegram_message_id": 593
     },
     "extracted": {
       "company": "R House",
@@ -7358,8 +7363,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:22:41+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:03+00:00",
+      "status": "sent",
+      "telegram_message_id": 594
     },
     "extracted": {
       "company": "Confidential",
@@ -7404,8 +7410,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:23:05+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:04+00:00",
+      "status": "sent",
+      "telegram_message_id": 595
     },
     "extracted": {
       "company": "Moneymoon",
@@ -7451,8 +7458,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:23:19+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:04+00:00",
+      "status": "sent",
+      "telegram_message_id": 596
     },
     "extracted": {
       "company": "Chalhoub Group | شركة الشلهوب",
@@ -7498,8 +7506,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:23:51+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:05+00:00",
+      "status": "sent",
+      "telegram_message_id": 597
     },
     "extracted": {
       "company": "Olo",
@@ -7544,8 +7553,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:24:18+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:05+00:00",
+      "status": "sent",
+      "telegram_message_id": 598
     },
     "extracted": {
       "company": "Gulf Insulation Group",
@@ -7590,8 +7600,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:24:39+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:06+00:00",
+      "status": "sent",
+      "telegram_message_id": 599
     },
     "extracted": {
       "company": "شركة إمداد التابعة لشركة علم",
@@ -7636,8 +7647,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:24:51+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:07+00:00",
+      "status": "sent",
+      "telegram_message_id": 600
     },
     "extracted": {
       "company": "Honeywell",
@@ -7682,8 +7694,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T13:25:24+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T13:26:07+00:00",
+      "status": "sent",
+      "telegram_message_id": 601
     },
     "extracted": {
       "company": "عزم السعودية",
