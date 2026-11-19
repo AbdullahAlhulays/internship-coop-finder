@@ -7745,8 +7745,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-19T22:12:50+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T22:14:11+00:00",
+      "status": "sent",
+      "telegram_message_id": 602
     },
     "extracted": {
       "company": "SANS | شركة خدمات الملاحة الجوية السعودية",
@@ -7791,8 +7792,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T22:12:52+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T22:14:11+00:00",
+      "status": "sent",
+      "telegram_message_id": 603
     },
     "extracted": {
       "company": "Aqua-Tots Saudi Arabia",
@@ -7837,8 +7839,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-19T22:13:06+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-19T22:14:12+00:00",
+      "status": "sent",
+      "telegram_message_id": 604
     },
     "extracted": {
       "company": "شركة النهدي الطبية",
