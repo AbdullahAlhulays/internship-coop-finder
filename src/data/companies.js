@@ -1702,6 +1702,14 @@ const companyRecords = [
     description: {"ar": "شركة Honeywell تعلن عن فتح باب التقديم في فرصة تدريب هندسي بمسمى (Intern – Bachelor's Systems Engineering)، للمواطنين السعوديين، ضمن قسم الحلول الهندسية، مع التركيز على حلول الأتمتة الصناعية.\n\nالتخصصات:\nالهندسة الكهربائية.\nهندسة الحاسب.\nهندسة الإلكترونيات.\nعلوم الحاسب.\nهندسة الأجهزة الدقيقة والتحكم بالعمليات (Process Instrumentation & Control).\n\nالمتطلبات:\nأن يكون المتقدم سعودي الجنسية.\nأن يكون في المراحل النهائية من استكمال متطلبات التخرج.\nالاستعداد للتعلم ومواجهة التحديات.\nالقدرة على العمل ضمن فريق واتباع التوجيهات.\nامتلاك مهارات التواصل والانتباه للتفاصيل.\n\nمدة التدريب:\nوفقاً للمدة المحددة في خطاب التدريب الصادر من الجامعة.\nللتقديمـــــــــــــــــــــــــــــ", "en": "Honeywell announces the opening of applications for an engineering internship opportunity entitled \"Intern – Bachelor's Systems Engineering\", for Saudi nationals, within the Engineering Solutions Department, with a focus on industrial automation solutions.\n\nSpecialisations:\nElectrical Engineering.\nComputer Engineering.\nElectronics Engineering.\nComputer Science.\nProcess Instrumentation & Control Engineering.\n\nRequirements:\nThe applicant must be a Saudi national.\nBe in the final stages of completing graduation requirements.\nWillingness to learn and face challenges.\nAbility to work as part of a team and follow instructions.\nPossess communication skills and attention to detail.\n\nDuration of the internship:\nAccording to the duration specified in the internship letter issued by the university.\nTo apply"},
     requiresLetter: true,
     addedAt: "2026-11-21T01:57:48+03:00",
+  },
+  {
+    name: "شركة إمداد التابعة لشركة علم",
+    location: "Jeddah, Saudi Arabia",
+    applicationLink: "https://people-ksa.com/job/951",
+    description: {"ar": "التخصصات:\nعلوم الحاسب.\nتقنية المعلومات.\nهندسة البرمجيات.\nهندسة الحاسب.\nالتخصصات التقنية ذات الصلة.\n\nالمتطلبات:\nأن يكون المتقدم طالب بكالوريوس في تخصص تقني أو متعلق بتقنية المعلومات.\nأن يكون مؤهلاً للتدريب التعاوني من خلال جامعته.\nأن تكون مدة التدريب المطلوبة من 4 إلى 6 أشهر.\nالرغبة في التعلم وتطوير المهارات التقنية.\nالاستعداد لإكمال التدريب في مدينة جدة.\n\nمدة التدريب:\nمن 4 إلى 6 أشهر.", "en": "Specialisations:\nComputer Science.\nInformation Technology.\nSoftware Engineering.\nComputer Engineering.\nRelated technical disciplines.\n\nRequirements:\nThe applicant must be a bachelor's degree student in a technical or IT-related field.\nBe eligible for cooperative training through their university.\nThe required duration of the internship should be 4 to 6 months.\nWillingness to learn and develop technical skills.\nWillingness to complete the training in Jeddah.\n\nDuration of the training:\n4 to 6 months."},
+    requiresLetter: true,
+    addedAt: "2026-11-21T01:58:03+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
