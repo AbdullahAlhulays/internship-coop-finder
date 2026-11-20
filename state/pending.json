@@ -7886,8 +7886,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-20T03:26:56+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-20T03:27:01+00:00",
+      "status": "sent",
+      "telegram_message_id": 605
     },
     "extracted": {
       "company": "SAMREF | شركة مصفاة أرامكو السعودية موبيل المحدودة",
@@ -7932,8 +7933,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-20T03:26:59+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-20T03:27:02+00:00",
+      "status": "sent",
+      "telegram_message_id": 606
     },
     "extracted": {
       "company": "NHC | الشركة الوطنية للإسكان",
