@@ -7672,7 +7672,7 @@
       "is_opportunity": true,
       "location": "Jeddah, Saudi Arabia",
       "reason_excluded": null,
-      "requires_letter": false,
+      "requires_letter": true,
       "title": "برنامج التدريب التعاوني 2026–2027 (COOP Training)",
       "type": "coop",
       "url": "https://careers.sans.com.sa/#en/sites/CX_1/job/2008?mode=location"
