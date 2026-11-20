@@ -7766,7 +7766,7 @@
       "is_opportunity": true,
       "location": "Jeddah, Riyadh, Saudi Arabia",
       "reason_excluded": null,
-      "requires_letter": false,
+      "requires_letter": true,
       "title": "برنامج التدريب التعاوني (COOP Training)",
       "type": "coop",
       "url": "https://efan.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?keyword=coop&mode=location"
