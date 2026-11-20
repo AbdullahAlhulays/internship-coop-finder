@@ -7432,7 +7432,7 @@
       "is_opportunity": true,
       "location": "Riyadh, Saudi Arabia",
       "reason_excluded": null,
-      "requires_letter": false,
+      "requires_letter": true,
       "title": "برامج التدريب التعاوني لعام 2027 (COOP Training)",
       "type": "coop",
       "url": "https://www.linkedin.com/jobs/view/4486048820"
