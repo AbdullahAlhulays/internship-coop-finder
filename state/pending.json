@@ -7574,7 +7574,7 @@
       "is_opportunity": true,
       "location": "Jeddah, Saudi Arabia",
       "reason_excluded": null,
-      "requires_letter": false,
+      "requires_letter": true,
       "title": "متدرب تقنية معلومات (IT Co-op Intern)",
       "type": "coop",
       "url": "https://people-ksa.com/job/951"
