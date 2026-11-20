@@ -1686,6 +1686,14 @@ const companyRecords = [
     description: {"ar": "التخصصات والمسارات التدريبية:\nأولاً: الموارد البشرية (HR Officer Co-Op)\nالموارد البشرية.\nالتخصصات ذات الصلة.\n\nثانياً: البيانات والذكاء الاصطناعي (Data and AI Co-op)\nمسار تدريبي يركز على:\nالبيانات والذكاء الاصطناعي.\nالبرمجة باستخدام Python.\nبناء الأتمتة وسير العمل باستخدام n8n.\nتطوير الحلول والأدوات الداخلية.\nتطبيقات الذكاء الاصطناعي والنماذج اللغوية الكبيرة (LLMs).\nالعمل على خدمات Oracle Cloud.\n\nالمتطلبات:\nأن يكون المتقدم طالباً في برنامج التدريب التعاوني.\nالحضور إلى مقر الشركة الرئيسي في الرياض.\nإكمال مقابلة الذكاء الاصطناعي (AI Interview)، وهي خطوة إلزامية لدراسة الطلب.\n\nطريقة التقديم:\nمسار الموارد البشرية:\n\nمسار البيانات والذكاء الاصطناعي:", "en": "Specialisations and Training Pathways:\nFirst: Human Resources (HR Officer Co-Op)\nHuman Resources.\nRelated disciplines.\n\nSecond: Data and AI Co-op\nA training programme that focuses on:\nData and Artificial Intelligence.\nProgramming with Python.\nBuilding automation and workflows using n8n.\nDeveloping in-house solutions and tools.\nArtificial Intelligence Applications and Large Language Models (LLMs).\nWorking with Oracle Cloud services.\n\nRequirements:\nThe applicant must be a student in the Cooperative Training Programme.\nAttend the company's headquarters in Riyadh.\nComplete the AI Interview, which is a mandatory step for the application to be considered.\n\nApplication Method:\nHuman Resources Pathway:\n\nData and AI:"},
     requiresLetter: true,
     addedAt: "2026-11-21T01:56:23+03:00",
+  },
+  {
+    name: "Olo",
+    logo: {"domain": "olohq.com", "file": "olo.jpg"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://www.linkedin.com/jobs/view/4489528844",
+    description: {"ar": "التخصصات:\nالتسويق.\nإدارة الأعمال.\nالتخصصات ذات الصلة.\n\nالمتطلبات:\nأن يكون المتقدم طالباً جامعياً أو حديث التخرج في أحد التخصصات ذات الصلة.\nامتلاك مهارات التواصل والإبداع.\nمعرفة أساسية بأدوات ومنصات التسويق الرقمي.\nالمبادرة والرغبة في التعلم والتطوير.\n\nالمزايا:\nمكافأة شهرية.\nالتوجيه والإرشاد من مختصين.\nالتدريب العملي واستخدام موارد الشركة وبرامجها التدريبية.\nإمكانية الحصول على فرص وظيفية مستقبلية.", "en": "Specialisations:\nMarketing.\nBusiness Administration.\nRelated disciplines.\n\nRequirements:\nThe applicant must be a university student or a recent graduate in one of the relevant disciplines.\nPossess communication and creative skills.\nBasic knowledge of digital marketing tools and platforms.\nInitiative and a desire to learn and develop.\n\nBenefits:\nMonthly bonus.\nGuidance and mentoring from experts.\nPractical training and use of the company's resources and training programmes.\nThe possibility of securing future job opportunities."},
+    addedAt: "2026-11-21T01:56:59+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
