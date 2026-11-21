@@ -8139,5 +8139,97 @@
       "posted_at": "2026-11-19T14:42:16+00:00",
       "text": "🎓 #التدريب_التعاوني | #جدة / #الرياض لم يذكر بس غالبا هناك\n\nشركة النهدي الطبية تعلن عن فتح باب التقديم في برنامج التدريب التعاوني (COOP Training)، لاستقطاب طلاب وطالبات البكالوريوس السعوديين، وإكسابهم الخبرة العملية وتطوير مهاراتهم من خلال العمل على مشاريع فعلية والتدرب مع خبراء الشركة.\n\nالمسارات التدريبية:\nتقنية المعلومات (Information Technology).\nالقطاع التجاري (Commercial).\nالعمليات (Operations).\nالمحاسبة (Accounting).\n\nالمتطلبات:\nأن يكون المتقدم طالب بكالوريوس سعودي الجنسية.\nأن يكون التدريب متطلباً لاستكمال متطلبات الجامعة.\nالالتزام بفترة التدريب والعمل على المشاريع الفعلية.\n\nمدة التدريب:\n6 أشهر.\n\nللتقديمـــــــــــــــــــــــــــــــ"
     }
+  },
+  "nobthacv1:2301": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T23:25:14+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "SADAFCO",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "جميع التخصصات الأكاديمية، وفق الإدارات والفرص المتاحة.\nالمتطلبات:\n• أن يكون المتقدم سعودي الجنسية.\n• توفر المهارات اللازمة للعمل الجماعي والتواصل وحل المشكلات."
+      },
+      "evidence": {
+        "company": "شركة سدافكو SADAFCO",
+        "deadline": null,
+        "description": "جميع التخصصات الأكاديمية، وفق الإدارات والفرص المتاحة.\nالمتطلبات:\n• أن يكون المتقدم سعودي الجنسية.\n• توفر المهارات اللازمة للعمل الجماعي والتواصل وحل المشكلات.",
+        "location": "#جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني - COOP Training",
+      "type": "coop",
+      "url": "https://careers.sadafco.com/en/saudi-arabia/jobs/jeddah-university-career-fair-2026-coop-program-all-specialties-1100092600/"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://careers.sadafco.com/en/saudi-arabia/jobs/jeddah-university-career-fair-2026-coop-program-all-specialties-1100092600/"
+      ],
+      "message_id": 2301,
+      "permalink": "https://t.me/nobthacv1/2301",
+      "posted_at": "2026-11-21T22:44:00+00:00",
+      "text": "🎓 #التدريب_التعاوني | #جدة\n\nشركة سدافكو SADAFCO\n\nتعلن شركة سدافكو عن فتح باب التقديم في برنامج التدريب التعاوني - COOP Training لجميع التخصصات.\n\nالتخصصات:\nجميع التخصصات الأكاديمية، وفق الإدارات والفرص المتاحة.\n\nالمتطلبات:\n\n• أن يكون المتقدم سعودي الجنسية.\n• توفر المهارات اللازمة للعمل الجماعي والتواصل وحل المشكلات.\n\nالتقديم______________"
+    }
+  },
+  "nobthacv1:2302": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T23:25:16+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "HADEED | الشركة السعودية للحديد والصلب",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "المتطلبات:\\n• أن يتطلب البرنامج الجامعي إتمام تدريب عملي قبل التخرج.\\n• ألا يكون المتقدم قد تخرج من الجامعة.\\n• ألا يكون لدى الطالب مقررات دراسية خلال فترة التدريب.\\n• المعدل التراكمي لا يقل عن 2 من 4 للتخصصات التقنية، و2.5 من 4 للتخصصات غير التقنية، أو ما يعادله.\\n• يشمل البرنامج طلاب الجامعات داخل المملكة وخارجها، والكليات الصناعية والتقنية ومعهد الإدارة العامة."
+      },
+      "evidence": {
+        "company": "الشركة السعودية للحديد والصلب (حديد) HADEED",
+        "deadline": null,
+        "description": "المتطلبات:\\n• أن يتطلب البرنامج الجامعي إتمام تدريب عملي قبل التخرج.\\n• ألا يكون المتقدم قد تخرج من الجامعة.\\n• ألا يكون لدى الطالب مقررات دراسية خلال فترة التدريب.\\n• المعدل التراكمي لا يقل عن 2 من 4 للتخصصات التقنية، و2.5 من 4 للتخصصات غير التقنية، أو ما يعادله.\\n• يشمل البرنامج طلاب الجامعات داخل المملكة وخارجها، والكليات الصناعية والتقنية ومعهد الإدارة العامة.",
+        "location": "#الجبيل"
+      },
+      "is_opportunity": true,
+      "location": "Al Jubail, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "COOP Internship Program",
+      "type": "coop",
+      "url": "https://app.zenats.com/en/public_job/flEgVE0XW2pHgXTj35IA-g"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://app.zenats.com/en/public_job/flEgVE0XW2pHgXTj35IA-g"
+      ],
+      "message_id": 2302,
+      "permalink": "https://t.me/nobthacv1/2302",
+      "posted_at": "2026-11-21T22:45:46+00:00",
+      "text": "🎓 #التدريب_التعاوني #الجبيل\n\nالشركة السعودية للحديد والصلب (حديد) HADEED\n\nتعلن شركة حديد عن فتح باب التقديم في برنامج التدريب التعاوني - COOP Internship Program،\n\nالمتطلبات:\n\n• أن يتطلب البرنامج الجامعي إتمام تدريب عملي قبل التخرج.\n• ألا يكون المتقدم قد تخرج من الجامعة.\n• ألا يكون لدى الطالب مقررات دراسية خلال فترة التدريب.\n• المعدل التراكمي لا يقل عن 2 من 4 للتخصصات التقنية، و2.5 من 4 للتخصصات غير التقنية، أو ما يعادله.\n• يشمل البرنامج طلاب الجامعات داخل المملكة وخارجها، والكليات الصناعية والتقنية ومعهد الإدارة العامة.\n\nالتقديم______________"
+    }
   }
 }
