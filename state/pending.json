@@ -3545,8 +3545,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-21T18:04:44+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-21T18:08:14+00:00",
+      "status": "sent",
+      "telegram_message_id": 615
     },
     "extracted": {
       "company": "Yasref | شركة ينبع أرامكو سينوبك للتكرير (ياسرف)",
@@ -3596,8 +3597,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-21T18:04:45+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-21T18:08:14+00:00",
+      "status": "sent",
+      "telegram_message_id": 616
     },
     "extracted": {
       "company": "النهدي_الطبية",
@@ -3643,8 +3645,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-21T18:04:54+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-21T18:08:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 617
     },
     "extracted": {
       "company": "Bupa",
@@ -3694,8 +3697,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-21T18:05:14+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-21T18:08:15+00:00",
+      "status": "sent",
+      "telegram_message_id": 618
     },
     "extracted": {
       "company": "Sans | سانس",
@@ -3745,8 +3749,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-21T18:05:45+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-21T18:08:16+00:00",
+      "status": "sent",
+      "telegram_message_id": 619
     },
     "extracted": {
       "company": "KAPSARC | مركز الملك عبدالله للدراسات والبحوث البترولية",
@@ -3797,8 +3802,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-21T18:06:10+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-21T18:08:16+00:00",
+      "status": "sent",
+      "telegram_message_id": 620
     },
     "extracted": {
       "company": "Ardara | اردارا",
@@ -3844,8 +3850,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-21T18:06:17+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-21T18:08:17+00:00",
+      "status": "sent",
+      "telegram_message_id": 621
     },
     "extracted": {
       "company": "Saudi Parkinson Association | الجمعية السعودية لمرضى الباركنسون",
@@ -3891,8 +3898,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-21T18:06:40+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-21T18:08:17+00:00",
+      "status": "sent",
+      "telegram_message_id": 622
     },
     "extracted": {
       "company": "Saudi Accreditation Authority | الهيئة السعودية للمقيّمين المعتمدين",
@@ -3942,8 +3950,9 @@
       "reason": "existing card has no description, this post provides verified details"
     },
     "delivery": {
-      "queued_at": "2026-11-21T18:07:25+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-21T18:08:18+00:00",
+      "status": "sent",
+      "telegram_message_id": 623
     },
     "extracted": {
       "company": "عزم الإنجاز",
@@ -3988,8 +3997,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-21T18:08:10+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-21T18:08:20+00:00",
+      "status": "sent",
+      "telegram_message_id": 624
     },
     "extracted": {
       "company": "Microsoft",
