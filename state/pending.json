@@ -3533,6 +3533,498 @@
       "text": "فرصة تدريب صناعة المحتوى\n-شركة حبكة المحتوى\n📍المنطقة الشرقية ، الدمام\n\nhttps://docs.google.com/forms/d/e/1FAIpQLScDf1EHZmYoHMOcSYidDTpy0KIA47u5fxMllgzCZd2lyQ_WUA/viewform?usp=publish-editor"
     }
   },
+  "SALTRAI:6051": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "لطلبة الجامعات والكليات في مختلف التخصصات."
+        }
+      },
+      "existing_index": 217,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T18:04:44+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Yasref | شركة ينبع أرامكو سينوبك للتكرير (ياسرف)",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "لطلبة الجامعات والكليات في مختلف التخصصات."
+      },
+      "evidence": {
+        "company": "شركة ينبع أرامكو سينوبك للتكرير (ياسرف)",
+        "deadline": null,
+        "description": "لطلبة الجامعات والكليات في مختلف التخصصات.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://careers.yasref.com/job/COOP-Trainee/206-en_US/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://careers.yasref.com/job/COOP-Trainee/206-en_US/"
+      ],
+      "message_id": 6051,
+      "permalink": "https://t.me/SALTRAI/6051",
+      "posted_at": "2026-11-21T13:09:44+00:00",
+      "text": "🟡الفرصة رقم ٢٩٠٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nشركة ينبع أرامكو سينوبك للتكرير (ياسرف) تعلن تاريخ بدء التقديم في برنامج التدريب التعاوني لطلبة الجامعات والكليات في مختلف التخصصات.\n\nhttps://careers.yasref.com/job/COOP-Trainee/206-en_US/"
+    }
+  },
+  "SALTRAI:6052": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "تعلن شركة النهدي_الطبية عن تدريب تعاوني في عدة تخصصات"
+        }
+      },
+      "existing_index": 218,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T18:04:45+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "النهدي_الطبية",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن شركة النهدي_الطبية عن تدريب تعاوني في عدة تخصصات"
+      },
+      "evidence": {
+        "company": "شركة النهدي_الطبية",
+        "deadline": null,
+        "description": "تعلن شركة النهدي_الطبية عن تدريب تعاوني في عدة تخصصات",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب تعاوني",
+      "type": "coop",
+      "url": "https://efan.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://efan.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs"
+      ],
+      "message_id": 6052,
+      "permalink": "https://t.me/SALTRAI/6052",
+      "posted_at": "2026-11-21T13:09:44+00:00",
+      "text": "🟡الفرصة رقم ٢٩٠٥\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن شركة النهدي_الطبية عن تدريب تعاوني في عدة تخصصات\n\nhttps://efan.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs"
+    }
+  },
+  "SALTRAI:6053": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T18:04:54+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Bupa",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تعلن بوبا عن عدة فرص للتدريب التعاوني"
+      },
+      "evidence": {
+        "company": "بوبا",
+        "deadline": null,
+        "description": "تعلن بوبا عن عدة فرص للتدريب التعاوني",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "فرص التدريب التعاوني",
+      "type": "coop",
+      "url": "https://careers.bupa.com.sa/en/job-search-results/?page=1"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://careers.bupa.com.sa/en/job-search-results/?page=1"
+      ],
+      "message_id": 6053,
+      "permalink": "https://t.me/SALTRAI/6053",
+      "posted_at": "2026-11-21T13:09:44+00:00",
+      "text": "🟡الفرصة رقم ٢٩٠٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن بوبا عن عدة فرص للتدريب التعاوني\n\nhttps://careers.bupa.com.sa/en/job-search-results/?page=1"
+    }
+  },
+  "SALTRAI:6054": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م."
+        }
+      },
+      "existing_index": 221,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T18:05:14+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Sans | سانس",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": "2026-11-25",
+      "deadline_raw": "25-11-2026م",
+      "description": {
+        "ar": "📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م."
+      },
+      "evidence": {
+        "company": "سانس",
+        "deadline": "25-11-2026م",
+        "description": "📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م.",
+        "location": "مدينة جدة"
+      },
+      "is_opportunity": true,
+      "location": "Jeddah, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني",
+      "type": "coop",
+      "url": "https://careers.sans.com.sa/#en/sites/CX_1/job/2008?mode=location"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://careers.sans.com.sa/#en/sites/CX_1/job/2008?mode=location"
+      ],
+      "message_id": 6054,
+      "permalink": "https://t.me/SALTRAI/6054",
+      "posted_at": "2026-11-21T13:09:44+00:00",
+      "text": "🟡الفرصة رقم ٢٩٠٧\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nسانس تعلن برنامج التدريب التعاوني لـ (طلاب وطالبات الجامعات).\n\n📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م.\n\nhttps://careers.sans.com.sa/#en/sites/CX_1/job/2008?mode=location"
+    }
+  },
+  "SALTRAI:6055": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "تعرّفوا على التخصصات المطلوبة في برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027."
+        }
+      },
+      "existing_index": 220,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T18:05:45+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "KAPSARC | مركز الملك عبدالله للدراسات والبحوث البترولية",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": "2026-11-30",
+      "deadline_raw": "30 نوفمبر 2026",
+      "description": {
+        "ar": "تعرّفوا على التخصصات المطلوبة في برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027."
+      },
+      "evidence": {
+        "company": "مركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك)",
+        "deadline": "30 نوفمبر 2026",
+        "description": "تعرّفوا على التخصصات المطلوبة في برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Co-op Internship Program",
+      "type": "coop",
+      "url": "https://kapsarc.org/internship/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "http://kapsarc.org/ar/internship/",
+        "http://kapsarc.org/internship/"
+      ],
+      "message_id": 6055,
+      "permalink": "https://t.me/SALTRAI/6055",
+      "posted_at": "2026-11-21T13:09:44+00:00",
+      "text": "🟡الفرصة رقم ٢٩٠٨\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعرّفوا على التخصصات المطلوبة في برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027.​\n\nآخر موعد للتقديم: 30 نوفمبر 2026​\nبداية التدريب: 10 يناير 2027​\n\nللتقديم والاطلاع على التفاصيل: ⁦ kapsarc.org/ar/internship/⁩​\n\nExplore the eligible majors for KAPSARC’s Spring 2027 Co-op Internship Program.​\n\nApplication deadline: November 30, 2026​\nProgram start date: January 10, 2027​\n\nTo apply and learn more:​\n⁦ kapsarc.org/internship/⁩"
+    }
+  },
+  "SALTRAI:6056": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "فرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء المهارات والاستعداد لسوق العمل."
+        }
+      },
+      "existing_index": 222,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T18:06:10+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Ardara | اردارا",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "فرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء المهارات والاستعداد لسوق العمل."
+      },
+      "evidence": {
+        "company": "#اردارا",
+        "deadline": null,
+        "description": "فرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء المهارات والاستعداد لسوق العمل.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "رواد الغد",
+      "type": "coop",
+      "url": "http://bit.ly/4iMRenP"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "http://bit.ly/4iMRenP"
+      ],
+      "message_id": 6056,
+      "permalink": "https://t.me/SALTRAI/6056",
+      "posted_at": "2026-11-21T13:09:44+00:00",
+      "text": "🟡الفرصة رقم ٢٩٠٩\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nانطلاقًا من التزامنا بتمكين الكفاءات الوطنية وتنمية المواهب الشابة.. يسرّنا في ⁧ #اردارا⁩ الإعلان عن فتح باب التقديم للدفعة الرابعة من برنامج التدريب\nالتعاوني \"رواد الغد\"\n\nفرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء\nالمهارات والاستعداد لسوق العمل.\n\nنتطلع لاستقبال جيل جديد من المواهب الطموحة..\n\nللتقديم: ⁦ bit.ly/4iMRenP⁩"
+    }
+  },
+  "SALTRAI:6057": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T18:06:17+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Saudi Parkinson Association | الجمعية السعودية لمرضى الباركنسون",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "تفتح الجمعية السعودية لمرضى الباركنسون أبوابها لطلاب وطالبات الجامعات للتدريب التعاوني في بيئة تُنمّي المهارات وتمنحك فرصة لصناعة أثر مجتمعي."
+      },
+      "evidence": {
+        "company": "الجمعية السعودية لمرضى الباركنسون",
+        "deadline": null,
+        "description": "تفتح الجمعية السعودية لمرضى الباركنسون أبوابها لطلاب وطالبات الجامعات للتدريب التعاوني في بيئة تُنمّي المهارات وتمنحك فرصة لصناعة أثر مجتمعي.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "Cooperative Training",
+      "type": "coop",
+      "url": "https://saudiparkinson.sa/co-op-training-application/"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://saudiparkinson.sa/co-op-training-application/"
+      ],
+      "message_id": 6057,
+      "permalink": "https://t.me/SALTRAI/6057",
+      "posted_at": "2026-11-21T13:09:44+00:00",
+      "text": "🟡الفرصة رقم ٢٩١٠\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nابدأ مسيرتك المهنية بخبرة تصنع الفرق!\n\nتفتح ⁧ #الجمعية_السعودية_لمرضى_الباركنسون⁩ أبوابها لطلاب وطالبات الجامعات للتدريب التعاوني في بيئة تُنمّي المهارات وتمنحك فرصة لصناعة أثر مجتمعي.\n\n✨ استثمر معرفتك، طوّر مهاراتك، وكن جزءًا من الأثر!\n\n🔗 للتقديم:\nhttps://saudiparkinson.sa/co-op-training-application/"
+    }
+  },
+  "SALTRAI:6059": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T18:06:40+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Saudi Accreditation Authority | الهيئة السعودية للمقيّمين المعتمدين",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "◾️ مدة التدريب 6 أشهر، لتخصصات البكالوريوس الإدارية والتقنية والهندسية والقانونية."
+      },
+      "evidence": {
+        "company": "الهيئة السعودية للمقيّمين المعتمدين (تقييم)",
+        "deadline": null,
+        "description": "◾️ مدة التدريب 6 أشهر، لتخصصات البكالوريوس الإدارية والتقنية والهندسية والقانونية.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "5 فرص تدريب تعاوني",
+      "type": "coop",
+      "url": "https://taqeem.gov.sa/en/jobs"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://t.me/cooptraning_inksa",
+        "https://taqeem.gov.sa/en/jobs"
+      ],
+      "message_id": 6059,
+      "permalink": "https://t.me/SALTRAI/6059",
+      "posted_at": "2026-11-21T13:09:44+00:00",
+      "text": "🟡الفرصة رقم ٢٩١٢\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nعاجل | الهيئة السعودية للمقيّمين المعتمدين (تقييم) تعلن عن 5 فرص تدريب تعاوني:\n⠀\n◾️ مدة التدريب 6 أشهر، لتخصصات البكالوريوس الإدارية والتقنية والهندسية والقانونية.\n\nhttps://taqeem.gov.sa/en/jobs"
+    }
+  },
+  "SALTRAI:6061": {
+    "decision": {
+      "action": "update",
+      "changes": {
+        "description": {
+          "ar": "نبحث عن متدربين ومتدربات لديهم اهتمام بالتجارة الإلكترونية، للمشاركة في تشغيل المتجر وتنظيم أعماله اليومية.\n\nالمهام التدريبية\n\n• إضافة المنتجات وتحديث الصور والأوصاف والأسعار.\n• متابعة الطلبات والتنسيق بشأن الشحن والتوصيل.\n• تحديث بيانات المخزون بالتنسيق مع المسؤول.\n• متابعة استفسارات العملاء بإشراف الفريق.\n• المساهمة في تجهيز العروض وتنظيم ظهور المنتجات.\n• إعداد تقارير مبسطة عن الطلبات والمبيعات.\n\nالتخصصات المناسبة\n\nالتجارة الإلكترونية، التسويق، إدارة الأعمال، نظم المعلومات الإدارية، أو تخصص ذو صلة.\n\nالمهارات المطلوبة\n\nالدقة والتنظيم، التواصل الجيد، الإلمام بإكسل أو جداول البيانات، والاستعداد لتعلّم منصات المتاجر الإلكترونية. موقعنا الرياض التدريب حضوري"
+        }
+      },
+      "existing_index": 161,
+      "reason": "existing card has no description, this post provides verified details"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T18:07:25+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "عزم الإنجاز",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "نبحث عن متدربين ومتدربات لديهم اهتمام بالتجارة الإلكترونية، للمشاركة في تشغيل المتجر وتنظيم أعماله اليومية.\n\nالمهام التدريبية\n\n• إضافة المنتجات وتحديث الصور والأوصاف والأسعار.\n• متابعة الطلبات والتنسيق بشأن الشحن والتوصيل.\n• تحديث بيانات المخزون بالتنسيق مع المسؤول.\n• متابعة استفسارات العملاء بإشراف الفريق.\n• المساهمة في تجهيز العروض وتنظيم ظهور المنتجات.\n• إعداد تقارير مبسطة عن الطلبات والمبيعات.\n\nالتخصصات المناسبة\n\nالتجارة الإلكترونية، التسويق، إدارة الأعمال، نظم المعلومات الإدارية، أو تخصص ذو صلة.\n\nالمهارات المطلوبة\n\nالدقة والتنظيم، التواصل الجيد، الإلمام بإكسل أو جداول البيانات، والاستعداد لتعلّم منصات المتاجر الإلكترونية. موقعنا الرياض التدريب حضوري"
+      },
+      "evidence": {
+        "company": "عزم الإنجاز",
+        "deadline": null,
+        "description": "نبحث عن متدربين ومتدربات لديهم اهتمام بالتجارة الإلكترونية، للمشاركة في تشغيل المتجر وتنظيم أعماله اليومية.\n\nالمهام التدريبية\n\n• إضافة المنتجات وتحديث الصور والأوصاف والأسعار.\n• متابعة الطلبات والتنسيق بشأن الشحن والتوصيل.\n• تحديث بيانات المخزون بالتنسيق مع المسؤول.\n• متابعة استفسارات العملاء بإشراف الفريق.\n• المساهمة في تجهيز العروض وتنظيم ظهور المنتجات.\n• إعداد تقارير مبسطة عن الطلبات والمبيعات.\n\nالتخصصات المناسبة\n\nالتجارة الإلكترونية، التسويق، إدارة الأعمال، نظم المعلومات الإدارية، أو تخصص ذو صلة.\n\nالمهارات المطلوبة\n\nالدقة والتنظيم، التواصل الجيد، الإلمام بإكسل أو جداول البيانات، والاستعداد لتعلّم منصات المتاجر الإلكترونية. موقعنا الرياض التدريب حضوري",
+        "location": "موقعنا الرياض التدريب حضوري"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "تدريب في إدارة وتشغيل متجر إلكتروني",
+      "type": "internship",
+      "url": "https://forms.gle/ToZpPYQyiYpmEGFp7"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": false,
+      "links": [
+        "https://forms.gle/ToZpPYQyiYpmEGFp7"
+      ],
+      "message_id": 6061,
+      "permalink": "https://t.me/SALTRAI/6061",
+      "posted_at": "2026-11-21T13:09:45+00:00",
+      "text": "📢 فرصة تدريب في إدارة وتشغيل متجر إلكتروني لدى عزم الإنجاز\n\nنبحث عن متدربين ومتدربات لديهم اهتمام بالتجارة الإلكترونية، للمشاركة في تشغيل المتجر وتنظيم أعماله اليومية.\n\nالمهام التدريبية\n\n• إضافة المنتجات وتحديث الصور والأوصاف والأسعار.\n• متابعة الطلبات والتنسيق بشأن الشحن والتوصيل.\n• تحديث بيانات المخزون بالتنسيق مع المسؤول.\n• متابعة استفسارات العملاء بإشراف الفريق.\n• المساهمة في تجهيز العروض وتنظيم ظهور المنتجات.\n• إعداد تقارير مبسطة عن الطلبات والمبيعات.\n\nالتخصصات المناسبة\n\nالتجارة الإلكترونية، التسويق، إدارة الأعمال، نظم المعلومات الإدارية، أو تخصص ذو صلة.\n\nالمهارات المطلوبة\n\nالدقة والتنظيم، التواصل الجيد، الإلمام بإكسل أو جداول البيانات، والاستعداد لتعلّم منصات المتاجر الإلكترونية. موقعنا الرياض التدريب حضوري\n\nللمهتمين، يرجى تعبئة نموذج التقديم وإرفاق السيرة الذاتية من خلال الرابط:\nhttps://forms.gle/ToZpPYQyiYpmEGFp7"
+    }
+  },
+  "SALTRAI:6069": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-21T18:08:10+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Microsoft",
+      "confidence": 0.8,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": null,
+      "evidence": {
+        "company": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=fmixyQTDhEaVc9y5ctH4Hje8bJStXz5Nikt8bd1Waa9URDBWMUk4TVNQTDhLREVBTTY1UlhPR01MUiQlQCNjPTEu&origin=QRCode",
+        "deadline": null,
+        "description": null,
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "coop",
+      "url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=fmixyQTDhEaVc9y5ctH4Hje8bJStXz5Nikt8bd1Waa9URDBWMUk4TVNQTDhLREVBTTY1UlhPR01MUiQlQCNjPTEu&origin=QRCode"
+    },
+    "post": {
+      "channel": "SALTRAI",
+      "has_media": true,
+      "links": [
+        "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=fmixyQTDhEaVc9y5ctH4Hje8bJStXz5Nikt8bd1Waa9URDBWMUk4TVNQTDhLREVBTTY1UlhPR01MUiQlQCNjPTEu&origin=QRCode",
+        "https://lnkd.in/p/dJVHQYVZ"
+      ],
+      "message_id": 6069,
+      "permalink": "https://t.me/SALTRAI/6069",
+      "posted_at": "2026-11-21T13:10:11+00:00",
+      "text": "#تدريب_تعاوني #تدريب\n\nhttps://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=fmixyQTDhEaVc9y5ctH4Hje8bJStXz5Nikt8bd1Waa9URDBWMUk4TVNQTDhLREVBTTY1UlhPR01MUiQlQCNjPTEu&origin=QRCode\n\nhttps://lnkd.in/p/dJVHQYVZ"
+    }
+  },
   "cooptraning_inksa:4346": {
     "decision": {
       "action": "add",
