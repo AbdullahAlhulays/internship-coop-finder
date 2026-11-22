@@ -3533,58 +3533,6 @@
       "text": "فرصة تدريب صناعة المحتوى\n-شركة حبكة المحتوى\n📍المنطقة الشرقية ، الدمام\n\nhttps://docs.google.com/forms/d/e/1FAIpQLScDf1EHZmYoHMOcSYidDTpy0KIA47u5fxMllgzCZd2lyQ_WUA/viewform?usp=publish-editor"
     }
   },
-  "SALTRAI:6051": {
-    "decision": {
-      "action": "update",
-      "changes": {
-        "description": {
-          "ar": "لطلبة الجامعات والكليات في مختلف التخصصات."
-        }
-      },
-      "existing_index": 217,
-      "reason": "existing card has no description, this post provides verified details"
-    },
-    "delivery": {
-      "sent_at": "2026-11-21T18:08:14+00:00",
-      "status": "sent",
-      "telegram_message_id": 615
-    },
-    "extracted": {
-      "company": "Yasref | شركة ينبع أرامكو سينوبك للتكرير (ياسرف)",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "لطلبة الجامعات والكليات في مختلف التخصصات."
-      },
-      "evidence": {
-        "company": "شركة ينبع أرامكو سينوبك للتكرير (ياسرف)",
-        "deadline": null,
-        "description": "لطلبة الجامعات والكليات في مختلف التخصصات.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني",
-      "type": "coop",
-      "url": "https://careers.yasref.com/job/COOP-Trainee/206-en_US/"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://careers.yasref.com/job/COOP-Trainee/206-en_US/"
-      ],
-      "message_id": 6051,
-      "permalink": "https://t.me/SALTRAI/6051",
-      "posted_at": "2026-11-21T13:09:44+00:00",
-      "text": "🟡الفرصة رقم ٢٩٠٤\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nشركة ينبع أرامكو سينوبك للتكرير (ياسرف) تعلن تاريخ بدء التقديم في برنامج التدريب التعاوني لطلبة الجامعات والكليات في مختلف التخصصات.\n\nhttps://careers.yasref.com/job/COOP-Trainee/206-en_US/"
-    }
-  },
   "SALTRAI:6052": {
     "decision": {
       "action": "update",
