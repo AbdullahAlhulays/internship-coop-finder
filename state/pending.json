@@ -8033,8 +8033,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-22T15:25:24+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-22T15:26:23+00:00",
+      "status": "sent",
+      "telegram_message_id": 638
     },
     "extracted": {
       "company": "General Entertainment Authority | الهيئة العامة للترفيه",
@@ -8079,8 +8080,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-22T15:25:26+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-22T15:26:24+00:00",
+      "status": "sent",
+      "telegram_message_id": 639
     },
     "extracted": {
       "company": "Al Rugaib | شركة حمد محمد الرقيب وأولاده التجارية",
@@ -8125,8 +8127,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-22T15:25:45+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-22T15:26:24+00:00",
+      "status": "sent",
+      "telegram_message_id": 640
     },
     "extracted": {
       "company": "شركة سول العربية",
@@ -8174,8 +8177,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-22T15:25:47+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-22T15:26:25+00:00",
+      "status": "sent",
+      "telegram_message_id": 641
     },
     "extracted": {
       "company": "ELERIA | شركة ELERIA",
