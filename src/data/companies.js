@@ -1656,10 +1656,11 @@ const companyRecords = [
     addedAt: "2026-11-18T20:03:44+03:00",
   },
   {
+    contentUpdatedAt: "2026-11-22T11:19:47+03:00",
     name: "King Abdullah Petroleum Studies and Research Center | مركز الملك عبدالله للدراسات والبحوث البترولية",
     applicationLink: "https://kapsarc.org/internship/",
     deadline: "2026-11-30",
-    description: {"ar": "تعرّفوا على التخصصات المطلوبة في برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027.", "en": "Learn about the specialisations required for the Cooperative Training Programme at King Abdullah Petroleum Studies and Research Centre (KAPSARC) for the January 2027 intake."},
+    description: {"ar": "تعرّفوا على التخصصات المطلوبة في برنامج التدريب التعاوني بمركز الملك عبدالله للدراسات والبحوث البترولية (كابسارك) لدورة يناير 2027.", "en": "er Science\nCybersecurity\nInformation Systems and Management Information Systems\nEconomics and Accounting\nBusiness Administration and Project Management\nHuman Resources\nGraphic Design\nCorporate Communications\nImportant Dates:\nApplication Deadline: November 30, 2026\nTraining Start Date: January 10, 2027\nLocation: Saudi Arabia (specific training location not stated in the advertisement)."},
     addedAt: "2026-11-18T20:04:03+03:00",
   },
   {
