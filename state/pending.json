@@ -3633,64 +3633,6 @@
       "text": "🟡الفرصة رقم ٢٩٠٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن بوبا عن عدة فرص للتدريب التعاوني\n\nhttps://careers.bupa.com.sa/en/job-search-results/?page=1"
     }
   },
-  "SALTRAI:6056": {
-    "decision": {
-      "action": "update",
-      "changes": {
-        "description": {
-          "ar": "فرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء المهارات والاستعداد لسوق العمل."
-        }
-      },
-      "existing_index": 222,
-      "reason": "existing card has no description, this post provides verified details"
-    },
-    "delivery": {
-      "sent_at": "2026-11-21T18:08:16+00:00",
-      "status": "sent",
-      "telegram_message_id": 620
-    },
-    "extracted": {
-      "company": "Ardara | اردارا",
-      "confidence": 0.9,
-      "contact": null,
-      "deadline": "2026-12-10",
-      "deadline_raw": null,
-      "description": {
-        "ar": "فرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء المهارات والاستعداد لسوق العمل.",
-        "en": "and Risk Management\nAccounting and Finance\nHuman Resources\nLaw\nArchitecture\nGraphic Design\nMarketing and Sales\nProgram Requirements:\nSaudi nationality\nGood English language proficiency\nPass the personal interview\nFull-time availability throughout the training period\nCommitment to the program duration\nCooperative training must be a university requirement for completing a bachelor’s degree\nCommitment to in-office attendance\nImportant Details:\nApplication Deadline: December 10, 2026\nTraining Location: Riyadh, Saudi Arabia\nProgram: Cooperative Training (COOP)\nCohort: 4th"
-      },
-      "evidence": {
-        "company": "#اردارا",
-        "deadline": null,
-        "description": "فرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء المهارات والاستعداد لسوق العمل.",
-        "location": null
-      },
-      "is_opportunity": true,
-      "location": null,
-      "reason_excluded": null,
-      "requires_letter": true,
-      "title": "رواد الغد",
-      "type": "coop",
-      "url": "http://bit.ly/4iMRenP"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "http://bit.ly/4iMRenP"
-      ],
-      "message_id": 6056,
-      "permalink": "https://t.me/SALTRAI/6056",
-      "posted_at": "2026-11-21T13:09:44+00:00",
-      "text": "🟡الفرصة رقم ٢٩٠٩\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nانطلاقًا من التزامنا بتمكين الكفاءات الوطنية وتنمية المواهب الشابة.. يسرّنا في ⁧ #اردارا⁩ الإعلان عن فتح باب التقديم للدفعة الرابعة من برنامج التدريب\nالتعاوني \"رواد الغد\"\n\nفرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء\nالمهارات والاستعداد لسوق العمل.\n\nنتطلع لاستقبال جيل جديد من المواهب الطموحة..\n\nللتقديم: ⁦ bit.ly/4iMRenP⁩"
-    },
-    "last_edit": {
-      "message_id": 635,
-      "field": "description_en",
-      "card_message_id": 620
-    }
-  },
   "SALTRAI:6057": {
     "decision": {
       "action": "add",

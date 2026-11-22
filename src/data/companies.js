@@ -1674,10 +1674,11 @@ const companyRecords = [
     addedAt: "2026-11-18T20:04:29+03:00",
   },
   {
+    contentUpdatedAt: "2026-11-22T11:21:11+03:00",
     name: "Ardara | اردارا",
     applicationLink: "http://bit.ly/4iMRenP",
     deadline: "2026-12-10",
-    description: {"ar": "برنامج تدريب تعاوني يهدف إلى تطوير مهارات طلاب الجامعات واكتساب الخبرة العملية.\nالتخصصات: تقنية المعلومات، الهندسة، الأمن السيبراني، المالية، المحاسبة، القانون، الموارد البشرية، التسويق وغيرها.\nالفئة المستهدفة: الطلاب السعوديون المقبلون على إنهاء مرحلة البكالوريوس.\nالشروط: إجادة اللغة الإنجليزية، اجتياز المقابلة الشخصية، خطاب توصية من الجامعة، والتفرغ للتدريب.\nمقر التدريب: الرياض.\nآخر موعد للتسجيل: 10 ديسمبر 2026.\nملاحظة: لم يُذكر في الإعلان ما إذا كان التدريب بمكافأة مالية أو يوفر سكنًا، كما لم تُحدد مدته.", "en": "A cooperative training programme aimed at developing the skills of university students and enabling them to gain practical experience.\nDisciplines: Information Technology, Engineering, Cybersecurity, Finance, Accounting, Law, Human Resources, Marketing and others.\nTarget group: Saudi students about to complete their bachelor's degree.\nRequirements: Proficiency in English, successful completion of the interview, a letter of recommendation from the university, and full-time availability for the training.\nTraining Location: Riyadh.\nRegistration deadline: 10 December 2026.\nNote: The announcement did not specify what\nIf the internship offers financial remuneration or accommodation, and its duration has not been specified."},
+    description: {"ar": "فرصة لخوض تجربة مهنية ثرية تجمع بين المعرفة الأكاديمية والتطبيق العملي .. وتسهم في بناء المهارات والاستعداد لسوق العمل.", "en": "and Risk Management\nAccounting and Finance\nHuman Resources\nLaw\nArchitecture\nGraphic Design\nMarketing and Sales\nProgram Requirements:\nSaudi nationality\nGood English language proficiency\nPass the personal interview\nFull-time availability throughout the training period\nCommitment to the program duration\nCooperative training must be a university requirement for completing a bachelor’s degree\nCommitment to in-office attendance\nImportant Details:\nApplication Deadline: December 10, 2026\nTraining Location: Riyadh, Saudi Arabia\nProgram: Cooperative Training (COOP)\nCohort: 4th"},
     requiresLetter: true,
     addedAt: "2026-11-18T20:07:25+03:00",
   },
