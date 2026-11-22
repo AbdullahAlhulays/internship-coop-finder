@@ -1663,13 +1663,13 @@ const companyRecords = [
     addedAt: "2026-11-18T20:04:03+03:00",
   },
   {
-    contentUpdatedAt: "2026-11-21T01:58:19+03:00",
+    contentUpdatedAt: "2026-11-22T11:18:25+03:00",
     name: "SANS | سانس",
     logo: {"domain": "careers.sans.com.sa", "file": "sans.ico"},
     location: "Jeddah, Saudi Arabia",
     applicationLink: "https://careers.sans.com.sa/#en/sites/CX_1/job/2008?mode=location",
     deadline: "2026-11-25",
-    description: {"ar": "لطلاب وطالبات الجامعات والكليات المعتمدة، بهدف اكتساب الخبرة العملية والتطوير المهني في قطاع الطيران والملاحة الجوية.\n\nالتخصصات:\nهندسة الشبكات.\nهندسة الحاسب.\nهندسة النظم.\nهندسة البرمجيات.\nالهندسة الكهربائية.\nالأمن السيبراني.\nإدارة الأعمال.\nهندسة الاتصالات والإلكترونيات.\nالهندسة الميكانيكية.\nالهندسة الصناعية.\nإدارة الحركة الجوية.\nإدارة الطيران.\nتخصصات ذات صلة.\n\nالمتطلبات:\nأن يكون التدريب التعاوني متطلباً إلزامياً للتخرج.\nأن يكون المتقدم مرشحاً من جامعته أو مؤسسته التعليمية.\nألا يقل المعدل التراكمي عن 2.5 من 4 أو 3.5 من 5.\nمدة التدريب:\nمن 8 أسابيع إلى 28 أسبوعاً.", "en": "For male and female students of accredited universities and colleges, with the aim of gaining practical experience and professional development in the aviation and air navigation sector.\n\nSpecialisations:\nNetwork Engineering.\nComputer Engineering.\nSystems Engineering.\nSoftware Engineering.\nElectrical Engineering.\nCybersecurity.\nBusiness Administration.\nCommunications and Electronics Engineering.\nMechanical Engineering.\nIndustrial Engineering.\nAir Traffic Management.\nAviation Management.\nRelated disciplines.\n\nRequirements:\nCooperative training must be a mandatory requirement for graduation.\nThe applicant must be nominated by his university or educational institution.\nThe cumulative GPA must be at least 2.5 out of 4 or 3.5 out of 5.\nDuration of the internship:\nFrom 8 weeks to 28 weeks."},
+    description: {"ar": "📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م.", "en": "📍 Place of work: Jeddah.\n📘 Duration: From 2 to 7 months, starting on Sunday, 10/01/2027.\n📅 Applications are open until Wednesday, 25/11/2026."},
     addedAt: "2026-11-18T20:04:29+03:00",
   },
   {

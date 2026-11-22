@@ -3633,58 +3633,6 @@
       "text": "🟡الفرصة رقم ٢٩٠٦\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nتعلن بوبا عن عدة فرص للتدريب التعاوني\n\nhttps://careers.bupa.com.sa/en/job-search-results/?page=1"
     }
   },
-  "SALTRAI:6054": {
-    "decision": {
-      "action": "update",
-      "changes": {
-        "description": {
-          "ar": "📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م."
-        }
-      },
-      "existing_index": 221,
-      "reason": "existing card has no description, this post provides verified details"
-    },
-    "delivery": {
-      "sent_at": "2026-11-21T18:08:15+00:00",
-      "status": "sent",
-      "telegram_message_id": 618
-    },
-    "extracted": {
-      "company": "Sans | سانس",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": "2026-11-25",
-      "deadline_raw": "25-11-2026م",
-      "description": {
-        "ar": "📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م."
-      },
-      "evidence": {
-        "company": "سانس",
-        "deadline": "25-11-2026م",
-        "description": "📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م.",
-        "location": "مدينة جدة"
-      },
-      "is_opportunity": true,
-      "location": "Jeddah, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "برنامج التدريب التعاوني",
-      "type": "coop",
-      "url": "https://careers.sans.com.sa/#en/sites/CX_1/job/2008?mode=location"
-    },
-    "post": {
-      "channel": "SALTRAI",
-      "has_media": true,
-      "links": [
-        "https://t.me/cooptraning_inksa",
-        "https://careers.sans.com.sa/#en/sites/CX_1/job/2008?mode=location"
-      ],
-      "message_id": 6054,
-      "permalink": "https://t.me/SALTRAI/6054",
-      "posted_at": "2026-11-21T13:09:44+00:00",
-      "text": "🟡الفرصة رقم ٢٩٠٧\nللمزيد من الفرص:\nhttps://t.me/cooptraning_inksa\n——————————\nسانس تعلن برنامج التدريب التعاوني لـ (طلاب وطالبات الجامعات).\n\n📍 مكان العمل: مدينة جدة.\n📘 المدة: من شهرين إلى 7 أشهر، ويبدأ الأحد 10-01-2027م.\n📅 يستمر التقديم حتى الأربعاء 25-11-2026م.\n\nhttps://careers.sans.com.sa/#en/sites/CX_1/job/2008?mode=location"
-    }
-  },
   "SALTRAI:6055": {
     "decision": {
       "action": "update",
