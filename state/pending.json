@@ -8226,8 +8226,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-23T12:59:58+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-23T13:00:03+00:00",
+      "status": "sent",
+      "telegram_message_id": 642
     },
     "extracted": {
       "company": "ديمة",
