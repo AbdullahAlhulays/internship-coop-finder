@@ -8217,5 +8217,51 @@
       "posted_at": "2026-11-22T12:02:59+00:00",
       "text": "السلام عليكم\nتتيح شركة ELERIA للحقائب النسائيه\nتدريب تعاوني في مقرها الرياض /الملز\n\nhttps://eleriaofficial.com\n\nلتخصصات التاليه\nالتسويق\nالتصميم\nالذكاء الاصطناعي\nادارة الاعمال والمشاريع\n\nالرجاء ملىء النموذج في حال الاهتمام للفرصه وسيتم التواصل معك من قبل قسم التدريب\n\n🟢🟢تقديم معلوماتك بشكل مباشر من هنا\nhttps://docs.google.com/forms/d/e/1FAIpQLSfc7zLLAkQ4hJZZ6TNymm4LL2AaMPfi6TFz_z_oj_i0P60hJA/viewform"
     }
+  },
+  "nobthacv1:2308": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-23T12:59:58+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "ديمة",
+      "confidence": 0.9,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "الفرص التدريبية المتاحة في مجال المبيعات وتطوير الأعمال."
+      },
+      "evidence": {
+        "company": "ديمة",
+        "deadline": null,
+        "description": "الفرص التدريبية المتاحة في مجال المبيعات وتطوير الأعمال.",
+        "location": null
+      },
+      "is_opportunity": true,
+      "location": null,
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": null,
+      "type": "internship_or_coop",
+      "url": "https://www.deymh.com/training/apply"
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": false,
+      "links": [
+        "https://www.deymh.com/training/apply"
+      ],
+      "message_id": 2308,
+      "permalink": "https://t.me/nobthacv1/2308",
+      "posted_at": "2026-11-22T12:04:17+00:00",
+      "text": "مرحباً 👋\n\nيسعدنا انضمامكم إلى فريق *ديمة* من خلال الفرص التدريبية المتاحة في مجال المبيعات وتطوير الأعمال.\n\nللمهتمين، نأمل التقديم على الفرصة التدريبية عبر الرابط التالي:\n\n🔗 https://www.deymh.com/training/apply\n\nنتطلع للتعرف عليكم، ونتمنى لكم تجربة تدريبية ثرية ومليئة بالتعلم والإنجاز. 🚀"
+    }
   }
 }
