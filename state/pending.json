@@ -8273,8 +8273,9 @@
       "reason": "no existing card has this application link"
     },
     "delivery": {
-      "queued_at": "2026-11-24T11:01:54+00:00",
-      "status": "queued"
+      "sent_at": "2026-11-24T11:01:57+00:00",
+      "status": "sent",
+      "telegram_message_id": 643
     },
     "extracted": {
       "company": "Airbus",
