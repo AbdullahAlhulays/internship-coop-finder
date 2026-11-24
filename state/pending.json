@@ -8264,52 +8264,5 @@
       "posted_at": "2026-11-22T12:04:17+00:00",
       "text": "مرحباً 👋\n\nيسعدنا انضمامكم إلى فريق *ديمة* من خلال الفرص التدريبية المتاحة في مجال المبيعات وتطوير الأعمال.\n\nللمهتمين، نأمل التقديم على الفرصة التدريبية عبر الرابط التالي:\n\n🔗 https://www.deymh.com/training/apply\n\nنتطلع للتعرف عليكم، ونتمنى لكم تجربة تدريبية ثرية ومليئة بالتعلم والإنجاز. 🚀"
     }
-  },
-  "nobthacv1:2311": {
-    "decision": {
-      "action": "add",
-      "changes": {},
-      "existing_index": null,
-      "reason": "no existing card has this application link"
-    },
-    "delivery": {
-      "sent_at": "2026-11-24T11:01:57+00:00",
-      "status": "sent",
-      "telegram_message_id": 643
-    },
-    "extracted": {
-      "company": "Airbus",
-      "confidence": 0.95,
-      "contact": null,
-      "deadline": null,
-      "deadline_raw": null,
-      "description": {
-        "ar": "في مجال الشؤون المالية والمحاسبة.\n\nالتخصصات:\nالمحاسبة، المالية والتخصصات ذات الصلة."
-      },
-      "evidence": {
-        "company": "شركة إيرباص Airbus",
-        "deadline": null,
-        "description": "في مجال الشؤون المالية والمحاسبة.\n\nالتخصصات:\nالمحاسبة، المالية والتخصصات ذات الصلة.",
-        "location": "#الرياض"
-      },
-      "is_opportunity": true,
-      "location": "Riyadh, Saudi Arabia",
-      "reason_excluded": null,
-      "requires_letter": false,
-      "title": "Finance COOP Internship",
-      "type": "coop",
-      "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Riyadh/Finance-COOP-internship_JR10415602?utm_source=chatgpt.com"
-    },
-    "post": {
-      "channel": "nobthacv1",
-      "has_media": true,
-      "links": [
-        "https://ag.wd3.myworkdayjobs.com/Airbus/job/Riyadh/Finance-COOP-internship_JR10415602?utm_source=chatgpt.com"
-      ],
-      "message_id": 2311,
-      "permalink": "https://t.me/nobthacv1/2311",
-      "posted_at": "2026-11-24T04:20:59+00:00",
-      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nشركة إيرباص Airbus تعلن عن فتح باب التقديم في برنامج التدريب التعاوني - Finance COOP Internship، في مجال الشؤون المالية والمحاسبة.\n\nالتخصصات:\nالمحاسبة، المالية والتخصصات ذات الصلة.\n\nالتقديمــــــــــــــــ"
-    }
   }
 }

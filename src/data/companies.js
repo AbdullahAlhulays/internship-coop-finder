@@ -1731,6 +1731,14 @@ const companyRecords = [
     applicationLink: "https://eghj.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3001/job/361",
     description: {"ar": "مدة التدريب:\n6 أشهر.\nبداية التقديم:\n18 نوفمبر 2026م.\n\nالمزايا:\n• مكافاة شهرية.\n• دورات تدريبية (فنية ومهنية).\n• خبرة عملية تحت إشراف مرشد.\n\nالمتطلبات\n• مواطن سعودي\n• المؤهل: درجة البكالوريوس\n• إجادة اللغة العربية والإنجليزية\n• معدل تراكمي لا يقل عن 3.20/4 أو 4/5\n• المدة: 6 أشهر", "en": "Duration of the training:\n6 months.\nApplication Start Date:\n18 November 2026.\n\nBenefits:\n• Monthly stipend.\n• Training courses (technical and professional).\n• Practical experience under the supervision of a mentor.\n\nRequirements\n• Saudi national\n• Qualification: Bachelor's degree\n• Proficiency in Arabic and English\n• Cumulative GPA of at least 3.20/4 or 4/5\n• Duration: 6 months"},
     addedAt: "2026-11-21T01:59:06+03:00",
+  },
+  {
+    name: "Airbus",
+    logo: {"domain": "airbus.com", "file": "airbus.png"},
+    location: "Riyadh, Saudi Arabia",
+    applicationLink: "https://ag.wd3.myworkdayjobs.com/Airbus/job/Riyadh/Finance-COOP-internship_JR10415602?utm_source=chatgpt.com",
+    description: {"ar": "في مجال الشؤون المالية والمحاسبة.\n\nالتخصصات:\nالمحاسبة، المالية والتخصصات ذات الصلة.", "en": "In the field of finance and accounting.\n\nSpecialisations:\nAccounting, finance and related disciplines."},
+    addedAt: "2026-11-24T21:19:03+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
