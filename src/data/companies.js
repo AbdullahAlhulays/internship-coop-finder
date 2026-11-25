@@ -1739,6 +1739,14 @@ const companyRecords = [
     applicationLink: "https://ag.wd3.myworkdayjobs.com/Airbus/job/Riyadh/Finance-COOP-internship_JR10415602?utm_source=chatgpt.com",
     description: {"ar": "في مجال الشؤون المالية والمحاسبة.\n\nالتخصصات:\nالمحاسبة، المالية والتخصصات ذات الصلة.", "en": "In the field of finance and accounting.\n\nSpecialisations:\nAccounting, finance and related disciplines."},
     addedAt: "2026-11-24T21:19:03+03:00",
+  },
+  {
+    name: "Coca-Cola",
+    logo: {"domain": "coca-cola.com", "file": "coca-cola.png"},
+    location: "Riyadh, Saudi Arabia; Al Majma'ah, Saudi Arabia; Sadir, Saudi Arabia; Jeddah, Saudi Arabia; Abha, Saudi Arabia; Dammam, Saudi Arabia",
+    applicationLink: "https://forms.cloud.microsoft/r/ARfGu96wNW?origin=QRCode",
+    description: {"ar": "التخصصات:\nالموارد البشرية.\nإدارة الأعمال.\nالمالية والمحاسبة.\nالتسويق.\nإدارة سلاسل الإمداد والمشتريات.\nالقانون.\nتقنية المعلومات.\nتخصصات أخرى.\n\nمدة التدريب:\nالتدريب التعاوني: من 12 إلى 16 أسبوعًا.\nالتدريب التعاوني: من 16 إلى 26 أسبوعًا.\nالتدريب الصيفي: من 8 إلى 10 أسابيع.\nالتدريب الصيفي: من 10 إلى 12 أسبوعًا.\n\nالتقديمــــــــــــــــــــ", "en": "Specialisations:\nHuman Resources.\nBusiness Administration.\nFinance and Accounting.\nMarketing.\nSupply Chain and Procurement Management.\nLaw.\nInformation Technology.\nOther disciplines.\n\nDuration of the Internship:\nCooperative Training: 12 to 16 weeks.\nCooperative Training: 16 to 26 weeks.\nSummer Internship: 8 to 10 weeks.\nSummer Internship: 10 to 12 weeks.\n\nIntroduction"},
+    addedAt: "2026-11-25T19:41:29+03:00",
   },];
 
 export const companies = companyRecords.map((company) => {
