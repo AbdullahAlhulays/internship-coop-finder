@@ -745,7 +745,9 @@ select {
 }
 
 .company-logo--aya,
-.company-logo--cognna {
+.company-logo--cognna,
+.company-logo--mbc-academy,
+.company-logo--saudi-pro-league {
   border-color: rgba(255, 255, 255, 0.2);
   background: #101728;
 }

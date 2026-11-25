@@ -129,6 +129,26 @@ const WEBP_LOGO_KEYS = new Set(["sami", "sami-autonomous"]);
 const PNG_LOGO_KEYS = new Set(["taibah-valley"]);
 
 const COMPANY_LOGO_OVERRIDES = {
+  "AlAhli Bank": { domain: "alahli.com", key: "saudi-national-bank-snb", extension: "jpg" },
+  "Atkins Réalis": { domain: "atkinsrealis.com", key: "atkinsre-alis", extension: "jpg" },
+  "النهدي_الطبية": { domain: "nahdi.sa", key: "nahdi-medical", extension: "jpg" },
+  "King Abdullah Petroleum Studies and Research Center": { domain: "kapsarc.org", key: "kapsarc", extension: "png" },
+  Ardara: { domain: "ardara.sa", key: "ardara", extension: "svg" },
+  "Shaker Group": {
+    domain: "shaker.com.sa",
+    key: "shaker-group",
+    extension: "png",
+  },
+  "MBC Academy": {
+    domain: "mbcacademy.me",
+    key: "mbc-academy",
+    extension: "svg",
+  },
+  "رابطة الدوري السعودي للمحترفين": {
+    domain: "spl.com.sa",
+    key: "saudi-pro-league",
+    extension: "svg",
+  },
   Elm: {
     domain: "elm.sa",
     key: "elm",

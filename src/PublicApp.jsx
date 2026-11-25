@@ -28,6 +28,7 @@ import {
   haveSameCompanies,
 } from "./services/companiesApi.js";
 import { getCompanyCities } from "./utils/cities.js";
+import { isFeaturedClosedCompany } from "./utils/closedCompanies.js";
 import {
   getCanonicalUrl,
   getCompanyPageDescription,
@@ -286,6 +287,12 @@ export default function PublicApp({ pathname, navigate, returnTo, locale, messag
     }).sort((first, second) => companyCollator.compare(first.searchLabel, second.searchLabel));
   }, [companyEntries, statusTime]);
 
+  const visibleCompanyRecords = useMemo(
+    () => companyRecords.filter(({ company, statusKey }) =>
+      statusKey !== "closed" || isFeaturedClosedCompany(company)),
+    [companyRecords],
+  );
+
   const companySlug = getCompanySlugFromPathname(pathname);
   const activeCompanyRecord = useMemo(
     () => companyRecords.find((record) => record.slug === companySlug),
@@ -384,7 +391,7 @@ export default function PublicApp({ pathname, navigate, returnTo, locale, messag
   const filteredRecords = useMemo(() => {
     const normalizedSearch = deferredSearchTerm.trim().toLowerCase();
 
-    const matchingRecords = companyRecords
+    const matchingRecords = visibleCompanyRecords
       .filter((record) => {
         const { company, cities, searchLabel, statusKey } = record;
         const isClosed = statusKey === "closed";
@@ -420,14 +427,14 @@ export default function PublicApp({ pathname, navigate, returnTo, locale, messag
     activeCity,
     activeFilter,
     appliedLinksSet,
-    companyRecords,
+    visibleCompanyRecords,
     deferredSearchTerm,
     showNoLetterOnly,
     sortByDeadline,
   ]);
 
   const opportunityCounts = useMemo(() => {
-    return companyRecords.reduce(
+    return visibleCompanyRecords.reduce(
       (counts, { company, statusKey }) => {
         if (statusKey === "closed") {
           counts.closed += 1;
@@ -453,7 +460,7 @@ export default function PublicApp({ pathname, navigate, returnTo, locale, messag
         applied: 0,
       },
     );
-  }, [appliedLinksSet, companyRecords]);
+  }, [appliedLinksSet, visibleCompanyRecords]);
 
   const handleAppliedToggle = useCallback((applicationLink) => {
     setAppliedLinks((currentLinks) =>
@@ -470,7 +477,7 @@ export default function PublicApp({ pathname, navigate, returnTo, locale, messag
   const cityCounts = useMemo(() => {
     const normalizedSearch = deferredSearchTerm.trim().toLowerCase();
 
-    return companyRecords.reduce(
+    return visibleCompanyRecords.reduce(
       (counts, { company, cities, searchLabel, statusKey }) => {
         const isClosed = statusKey === "closed";
         const isApplied = appliedLinksSet.has(company.applicationLink);
@@ -509,7 +516,7 @@ export default function PublicApp({ pathname, navigate, returnTo, locale, messag
   }, [
     activeFilter,
     appliedLinksSet,
-    companyRecords,
+    visibleCompanyRecords,
     deferredSearchTerm,
     showNoLetterOnly,
   ]);
