@@ -558,5 +558,120 @@
     "en": "SABIC is a global diversified chemicals company headquartered in Riyadh.\nIt manufactures chemicals, commodity and high-performance plastics, and agri-nutrients, serving industries such as automotive, healthcare, packaging, agriculture, and construction.",
     "ar": "سابك شركة عالمية متنوعة في قطاع الكيماويات، ومقرها الرئيسي الرياض.\nتصنع الكيماويات واللدائن الأساسية وعالية الأداء والمغذيات الزراعية، وتخدم قطاعات تشمل السيارات والرعاية الصحية والتغليف والزراعة والبناء.",
     "sourceUrl": "https://www.sabic.com/en/about/corporate-profile/sabic-at-a-glance"
+  },
+  "siemens": {
+    "en": "Siemens develops technology for industry, infrastructure, mobility, and healthcare. Its work connects industrial equipment and physical systems with software and digital services.",
+    "ar": "تطور سيمنس تقنيات للصناعة والبنية التحتية والتنقل والرعاية الصحية. وتربط أعمالها المعدات والأنظمة المادية بالبرمجيات والخدمات الرقمية.",
+    "sourceUrl": "https://www.siemens.com/en-us/company/"
+  },
+  "amazon": {
+    "en": "Amazon operates businesses in retail, cloud computing, digital devices, entertainment, and logistics. This opportunity is advertised within its Amazon Payments business.",
+    "ar": "تعمل أمازون في تجارة التجزئة والحوسبة السحابية والأجهزة الرقمية والترفيه والخدمات اللوجستية. وتندرج هذه الفرصة المعلنة ضمن أعمال Amazon Payments.",
+    "sourceUrl": "https://www.aboutamazon.com/what-we-do"
+  },
+  "deloitte-2": {
+    "en": "Deloitte is a professional services network offering audit and assurance, tax, risk, technology, and business advisory services. Its teams work with organizations across multiple industries.",
+    "ar": "ديلويت شبكة للخدمات المهنية تقدم خدمات التدقيق والتأكيد والضرائب والمخاطر والتقنية والاستشارات للأعمال. وتعمل فرقها مع جهات من قطاعات متعددة.",
+    "sourceUrl": "https://www.deloitte.com/global/en/about.html"
+  },
+  "atkinsre-alis-2": {
+    "en": "AtkinsRéalis is a global engineering services and nuclear organization.\nIts consultants, designers, engineers and project managers work on infrastructure and energy systems across sectors including buildings, transportation and water.",
+    "ar": "أتكنز ريالس مؤسسة عالمية للخدمات الهندسية والأعمال النووية.\nويعمل مستشاروها ومصمموها ومهندسوها ومديرو مشاريعها على البنية التحتية وأنظمة الطاقة في قطاعات تشمل المباني والنقل والمياه.",
+    "sourceUrl": "https://www.atkinsrealis.com/en/about"
+  },
+  "knight-frank-middle-east": {
+    "en": "Knight Frank provides real estate consultancy and market research. Its Hospitality, Leisure and Tourism team advises public entities, developers, and investors on property markets and development projects.",
+    "ar": "تقدم نايت فرانك الاستشارات العقارية وأبحاث السوق. ويقدم فريق الضيافة والترفيه والسياحة المشورة للجهات العامة والمطورين والمستثمرين بشأن الأسواق العقارية ومشاريع التطوير.",
+    "sourceUrl": "https://www.linkedin.com/jobs/view/4493991866/"
+  },
+  "panda-retail-company-2": {
+    "en": "Panda is a Saudi retail company offering groceries, fresh food, and everyday essentials.\nIts operations include stores, distribution centers, and corporate teams supporting the shopping experience across the Kingdom.",
+    "ar": "بنده شركة سعودية تعمل في تجارة التجزئة وتوفر المواد الغذائية والمنتجات الطازجة والاحتياجات اليومية.\nتشمل أعمالها المتاجر ومراكز التوزيع والفرق الإدارية الداعمة لتجربة التسوق في المملكة.",
+    "sourceUrl": "https://careers.panda.com.sa/en/"
+  },
+  "procter-and-gamble": {
+    "en": "Procter & Gamble, known as P&G, develops and markets consumer goods through a portfolio of household and personal-care brands. Its business includes commercial, manufacturing, and supply-chain functions.",
+    "ar": "تطور بروكتر آند جامبل، المعروفة باسم P&G، السلع الاستهلاكية وتسوقها عبر مجموعة من العلامات التجارية للمنتجات المنزلية والعناية الشخصية. وتشمل أعمالها الأنشطة التجارية والتصنيع وسلاسل الإمداد.",
+    "sourceUrl": "https://www.pgcareers.com/global/en/about-us"
+  },
+  "recruitable": {
+    "en": "Recruitable advertises this position on behalf of a Saudi B2B trade-finance fintech client. The client works on using SME trade documents and data to support access to financing; its legal name is not disclosed in the announcement.",
+    "ar": "تعلن Recruitable عن هذه الفرصة نيابة عن عميل سعودي في التقنية المالية لتمويل التجارة بين الشركات. ويعمل العميل على استخدام مستندات وبيانات تجارة المنشآت الصغيرة والمتوسطة لدعم الوصول إلى التمويل، دون الإفصاح عن اسمه القانوني في الإعلان.",
+    "sourceUrl": "https://www.linkedin.com/jobs/view/4491834120/"
+  },
+  "kuehne-nagel": {
+    "en": "Kuehne+Nagel is a logistics company supporting international supply chains. Its operations include shipment coordination, logistics documentation, and customer-care services.",
+    "ar": "كوهني آند ناغل شركة للخدمات اللوجستية تدعم سلاسل الإمداد الدولية. وتشمل عملياتها تنسيق الشحنات والمستندات اللوجستية وخدمات العملاء.",
+    "sourceUrl": "https://www.linkedin.com/jobs/view/4492063632/"
+  },
+  "halliburton": {
+    "en": "Halliburton provides products, engineering, and services for the energy industry. Its activities support customers throughout the lifecycle of oil and gas reservoirs and wells.",
+    "ar": "تقدم هاليبرتون المنتجات والحلول الهندسية والخدمات لقطاع الطاقة. وتدعم أنشطتها العملاء عبر مراحل دورة حياة مكامن وآبار النفط والغاز.",
+    "sourceUrl": "https://www.halliburton.com/"
+  },
+  "beiersdorf": {
+    "en": "Beiersdorf develops skin-care products and consumer brands including NIVEA and Eucerin. Its activities span product research, brand development, and commercial operations.",
+    "ar": "تطور بايرسدورف منتجات العناية بالبشرة وعلامات استهلاكية تشمل NIVEA وEucerin. وتشمل أنشطتها أبحاث المنتجات وتطوير العلامات التجارية والعمليات التجارية.",
+    "sourceUrl": "https://www.beiersdorf.com/about-us"
+  },
+  "hitachi-energy": {
+    "en": "Hitachi Energy develops technologies and services for electrical power systems. Its work supports the transition to a more connected and electrified energy system.",
+    "ar": "تطور هيتاشي إنرجي التقنيات والخدمات لأنظمة الطاقة الكهربائية. وتدعم أعمالها الانتقال إلى منظومة طاقة أكثر ترابطًا واعتمادًا على الكهرباء.",
+    "sourceUrl": "https://www.hitachienergy.com/"
+  },
+  "systems-arabia": {
+    "en": "The linked Systems Arabia announcement describes work on AI products, including conversational assistants, document intelligence, summarization, and analytics. Product, engineering, and data teams collaborate on these projects.",
+    "ar": "يصف إعلان Systems Arabia المرتبط العمل على منتجات الذكاء الاصطناعي، بما فيها المساعدات الحوارية وفهم المستندات والتلخيص والتحليلات. وتتعاون فرق المنتجات والهندسة والبيانات في هذه المشاريع.",
+    "sourceUrl": "https://www.linkedin.com/jobs/view/4491574333/"
+  },
+  "theinterna": {
+    "en": "theInterna connects students and graduates with internships and startup work experience. Its services include a career accelerator and remote opportunities with international startups.",
+    "ar": "تربط theInterna الطلاب والخريجين بفرص التدريب والخبرة العملية لدى الشركات الناشئة. وتشمل خدماتها برنامجًا لتسريع المسار المهني وفرصًا عن بُعد مع شركات ناشئة دولية.",
+    "sourceUrl": "https://theinterna.com/"
+  },
+  "ge-vernova-2": {
+    "en": "GE Vernova provides equipment, technologies, and services for electricity generation and electrification. Its business includes Power, Wind, and Electrification segments.",
+    "ar": "تقدم جي إي فيرنوفا المعدات والتقنيات والخدمات لتوليد الكهرباء والكهربة. وتشمل أعمالها قطاعات الطاقة والرياح والكهربة.",
+    "sourceUrl": "https://www.gevernova.com/investors"
+  },
+  "nahdi-medical-company": {
+    "en": "Nahdi Medical Company operates a pharmacy and healthcare business in Saudi Arabia. Its services combine physical pharmacies, digital channels, and primary-care services.",
+    "ar": "تدير شركة النهدي الطبية أعمالًا في الصيدليات والرعاية الصحية في السعودية. وتجمع خدماتها بين الصيدليات والقنوات الرقمية وخدمات الرعاية الأولية.",
+    "sourceUrl": "https://www.nahdi.sa/en"
+  },
+  "saudi-aramco-base-oil-company-luberef": {
+    "en": "Luberef is the Saudi Aramco Base Oil Company. The linked company announcement identifies refineries in Jeddah and Yanbu and a headquarters office in Jeddah as its training locations.",
+    "ar": "لوبريف هي شركة أرامكو السعودية لزيوت الأساس. ويحدد إعلان الشركة المرتبط مصافي جدة وينبع والمقر الرئيسي في جدة ضمن مواقع التدريب لديها.",
+    "sourceUrl": "https://www.linkedin.com/jobs/view/4479802631/"
+  },
+  "emdad-by-elm": {
+    "en": "Emdad is an Elm subsidiary specializing in business and human-capital solutions. Its services include workforce provision, capability development, and human-capital platforms.",
+    "ar": "إمداد شركة تابعة لعلم متخصصة في حلول الأعمال ورأس المال البشري. وتشمل خدماتها توفير الكوادر وتطوير القدرات ومنصات رأس المال البشري.",
+    "sourceUrl": "https://www.linkedin.com/company/emdad-al-khebrat"
+  },
+  "saudi-food-and-drug-authority-sfda": {
+    "en": "The Saudi Food and Drug Authority is a Saudi government regulator responsible for protecting the safety of food, medicines, and health-related products and devices. Its work includes regulatory oversight and supervision.",
+    "ar": "الهيئة العامة للغذاء والدواء جهة تنظيمية حكومية سعودية مسؤولة عن حماية سلامة الغذاء والدواء والمنتجات والأجهزة المرتبطة بالصحة. وتشمل أعمالها الرقابة والإشراف التنظيمي.",
+    "sourceUrl": "https://www.sfda.gov.sa/en/overview"
+  },
+  "allianz-trade-in-middle-east": {
+    "en": "Allianz Trade's Middle East business operates in the insurance industry. Its linked Saudi graduate program provides practical exposure to insurance portfolio operations and digital tools.",
+    "ar": "تعمل Allianz Trade في الشرق الأوسط في قطاع التأمين. ويتيح برنامجها السعودي للخريجين الوارد في الإعلان خبرة عملية في عمليات محافظ التأمين والأدوات الرقمية.",
+    "sourceUrl": "https://www.linkedin.com/jobs/view/4494491529/"
+  },
+  "saudi-azm-2": {
+    "en": "Saudi Azm is a Saudi communications and information-technology company. It develops digital solutions, technology products, and services for public- and private-sector organizations.",
+    "ar": "عزم السعودية شركة سعودية في الاتصالات وتقنية المعلومات. وتطور الحلول الرقمية والمنتجات والخدمات التقنية لجهات القطاعين الحكومي والخاص.",
+    "sourceUrl": "https://azm.com/"
+  },
+  "olayan-saudi-holding-company": {
+    "en": "Olayan Saudi Holding Company is part of Olayan's Middle East business portfolio. Its companies operate across food and beverages, restaurants, health and personal care, business-to-business activities, and energy services.",
+    "ar": "تندرج شركة العليان السعودية القابضة ضمن محفظة أعمال العليان في الشرق الأوسط. وتعمل شركاتها في الأغذية والمشروبات والمطاعم والصحة والعناية الشخصية والأنشطة الموجهة للشركات وخدمات الطاقة.",
+    "sourceUrl": "https://olayan.com/"
+  },
+  "confidential": {
+    "en": "The employer's identity is not disclosed in the linked announcement. A verified company name, website, and official logo cannot be established from this posting.",
+    "ar": "لم يُفصح الإعلان المرتبط عن هوية جهة العمل. لذلك لا يمكن إثبات اسم الشركة أو موقعها أو شعارها الرسمي بالاعتماد على هذا الإعلان.",
+    "sourceUrl": "https://www.linkedin.com/jobs/view/4489480990/"
   }
 }
