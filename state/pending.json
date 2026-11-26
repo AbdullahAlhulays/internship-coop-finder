@@ -8312,6 +8312,52 @@
       "text": "تعلن أورا جروب عن فتح باب التقديم على التدريب التعاوني لطلاب وطالبات الجامعات والكليات.\n\n#بكالوريوس #دبلوم\n\nالتخصصات المطلوبة:\n\nتنسيق المشاريع والحسابات: إدارة الأعمال، التسويق\nكتابة المحتوى وإدارة الحسابات: الإعلام، الاتصال، الصحافة\nالتصميم الجرافيكي: التصميم الجرافيكي، الوسائط المتعددة\nالمونتاج والإنتاج المرئي: الإنتاج المرئي، السينما\nالمحاسبة والتسعير: المحاسبة، المالية\n\nللتقديم:\nhttps://www.auragroupsa.com/co-op-training\n\nمقر التدريب: الرياض."
     }
   },
+  "nobthacv1:2314": {
+    "decision": {
+      "action": "add",
+      "changes": {},
+      "existing_index": null,
+      "reason": "no existing card has this application link"
+    },
+    "delivery": {
+      "queued_at": "2026-11-26T00:28:50+00:00",
+      "status": "queued"
+    },
+    "extracted": {
+      "company": "Expro | هيئة كفاءة الانفاق",
+      "confidence": 0.95,
+      "contact": null,
+      "deadline": null,
+      "deadline_raw": null,
+      "description": {
+        "ar": "التخصصات:\nالقانون (Legal).\nالإدارة المالية والمحاسبة (Finance Management and Accounting).\nالأمن السيبراني (Cybersecurity).\nالموارد البشرية (Human Resources).\nعلوم الحاسب وتقنية المعلومات (Computer Science and Information Technology).\nالسلامة والصحة المهنية (Occupational Safety and Health).\nالإعلام والاتصال (Media and Communications).\nالهندسة الكهربائية (Electrical Engineering).\nالتصميم الجرافيكي والوسائط المتعددة (Graphic Design & Multimedia).\nإدارة الأعمال (Business Administration).\nالهندسة الصناعية (Industrial Engineering).\nهندسة البرمجيات (Software Engineering).\nنظم المعلومات الإدارية (Management Information System).\nالاقتصاد (Economics)."
+      },
+      "evidence": {
+        "company": "هيئة كفاءة الانفاق EXPRO",
+        "deadline": null,
+        "description": "التخصصات:\nالقانون (Legal).\nالإدارة المالية والمحاسبة (Finance Management and Accounting).\nالأمن السيبراني (Cybersecurity).\nالموارد البشرية (Human Resources).\nعلوم الحاسب وتقنية المعلومات (Computer Science and Information Technology).\nالسلامة وصحة المهنية (Occupational Safety and Health).\nالإعلام والاتصال (Media and Communications).\nالهندسة الكهربائية (Electrical Engineering).\nالتصميم الجرافيكي والوسائط المتعددة (Graphic Design & Multimedia).\nإدارة الأعمال (Business Administration).\nالهندسة الصناعية (Industrial Engineering).\nهندسة البرمجيات (Software Engineering).\nنظم المعلومات الإدارية (Management Information System).\nالاقتصاد (Economics).",
+        "location": "#الرياض"
+      },
+      "is_opportunity": true,
+      "location": "Riyadh, Saudi Arabia",
+      "reason_excluded": null,
+      "requires_letter": false,
+      "title": "برنامج التدريب التعاوني - COOP Training",
+      "type": "coop",
+      "url": "https://careers.expro.gov.sa/search/?createNewAlert=false&q="
+    },
+    "post": {
+      "channel": "nobthacv1",
+      "has_media": true,
+      "links": [
+        "https://careers.expro.gov.sa/search/?createNewAlert=false&amp;q="
+      ],
+      "message_id": 2314,
+      "permalink": "https://t.me/nobthacv1/2314",
+      "posted_at": "2026-11-24T13:19:34+00:00",
+      "text": "🎓 #التدريب_التعاوني | #الرياض\n\nهيئة كفاءة الانفاق EXPRO تفتح باب التقديم في برنامج التدريب التعاوني - COOP Training، عبر عدة مسارات تخصصية لاستقطاب طلاب وطالبات الجامعات.\n\nالتخصصات:\nالقانون (Legal).\nالإدارة المالية والمحاسبة (Finance Management and Accounting).\nالأمن السيبراني (Cybersecurity).\nالموارد البشرية (Human Resources).\nعلوم الحاسب وتقنية المعلومات (Computer Science and Information Technology).\nالسلامة والصحة المهنية (Occupational Safety and Health).\nالإعلام والاتصال (Media and Communications).\nالهندسة الكهربائية (Electrical Engineering).\nالتصميم الجرافيكي والوسائط المتعددة (Graphic Design & Multimedia).\nإدارة الأعمال (Business Administration).\nالهندسة الصناعية (Industrial Engineering).\nهندسة البرمجيات (Software Engineering).\nنظم المعلومات الإدارية (Management Information System).\nالاقتصاد (Economics).\n\nالتقديمـــــــــــــــــــــــــ"
+    }
+  },
   "nobthacv1:2316": {
     "decision": {
       "action": "add",
