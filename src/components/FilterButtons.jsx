@@ -21,6 +21,7 @@ export default function FilterButtons({
               key={value}
               type="button"
               className={activeFilter === value ? "filter active" : "filter"}
+              aria-pressed={activeFilter === value}
               onClick={() => onFilterChange(value)}
             >
               <span>{messages.filters[value]}</span>

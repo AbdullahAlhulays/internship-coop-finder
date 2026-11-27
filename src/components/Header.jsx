@@ -34,11 +34,6 @@ export default function Header({
       </div>
       <header className="site-header">
         <div className="header-content">
-          <div className="quote-wrap">
-            <p className="arabic-quote" lang="ar" dir="rtl">
-              {messages.quote}
-            </p>
-          </div>
           <div className="intro">
             <div className="brand-lockup" aria-label={messages.siteName}>
               <span className="brand-mark" aria-hidden="true">

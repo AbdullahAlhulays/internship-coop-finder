@@ -1201,16 +1201,6 @@ const companyRecords = [
     addedAt: "2026-10-21T16:26:23.466Z",
   },
   {
-    name: "AtkinsRéalis",
-    logo: {"domain":"linkedin.com","file":"atkinsre-alis.jpg"},
-    location: "Riyadh, Saudi Arabia",
-    applicationLink: "https://www.linkedin.com/jobs/view/4467725700/",
-    description: {"ar":"تدريب تعاوني مدفوع لدى AtkinsRéalis ضمن مشروع حديقة الملك سلمان في الرياض لمدة 3 أو 4 أو 6 أشهر حسب متطلبات الجامعة، بمكافأة شهرية قدرها 3,500 ريال. تتضمن المهام دعم فرق الهندسة والعمارة وتنسيق التصميم والتقارير ووثائق المشروع. يشترط أن يكون المتقدم سعودي الجنسية ويدرس في جامعة مقرها الرياض أو تخرج منها حديثًا في الهندسة أو العمارة أو المالية أو تقنية المعلومات أو إدارة الأعمال، بمعدل لا يقل عن 3.75 من 5 أو 2.75 من 4. **يلزم خطاب تدريب تعاوني أو طلب تدريب رسمي من الجامعة** مع سيرة ذاتية محدثة ونسخة من الهوية الوطنية، وإجادة الإنجليزية.","en":"Paid CO-OP internship with AtkinsRéalis on the King Salman Park project in Riyadh, lasting 3, 4, or 6 months depending on university requirements, with a SAR 3,500 monthly stipend. Interns support engineering, architecture, design coordination, project documentation, reporting, and multidisciplinary project teams. Saudi nationals enrolled at or recently graduated from a Riyadh-based university in Engineering, Architecture, Finance, IT, or Business Administration may apply. Minimum GPA: 3.75/5 or 2.75/4. Applicants must provide an official university CO-OP/internship request letter, updated CV, and national ID copy; English fluency is required."},
-    requiresLetter: true,
-    isClosed: false,
-    addedAt: "2026-10-21T16:26:23.466Z",
-  },
-  {
     name: "SAP",
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4472602203/",
@@ -1676,15 +1666,6 @@ const companyRecords = [
     location: "Riyadh, Saudi Arabia",
     applicationLink: "https://www.linkedin.com/jobs/view/4490696805/",
     description: {"en":"Currently pursuing Computer Science or a related degree. Fluent English; Arabic-English bilingual candidates preferred. Leadership, problem-solving, communication, teamwork and ability to manage multiple assignments.","ar":"تدريب في تدقيق تقنية المعلومات ضمن التدقيق والتأكيد لدى Deloitte في الرياض. يستهدف الطلاب الذين يدرسون علوم الحاسب أو تخصصًا ذا صلة. تُطلب إجادة الإنجليزية، مع تفضيل المتحدثين بالعربية والإنجليزية، ومهارات القيادة وحل المشكلات والتواصل والعمل الجماعي وإدارة مهام متعددة."},
-    addedAt: "2026-11-25T20:19:00+03:00",
-  },
-  {
-    name: "AtkinsRéalis",
-    logo: {"domain":"atkinsrealis.com","file":"atkinsre-alis.jpg"},
-    location: "Riyadh, Saudi Arabia",
-    applicationLink: "https://www.linkedin.com/jobs/view/4493918336/",
-    description: {"en":"Saudi nationals studying at or recently graduated from a Riyadh-based university. Civil, Mechanical, Structural or related Engineering, Architecture, Finance, IT or Business Administration. Minimum GPA 2.75/4 or 3.75/5. University internship request letter, updated CV, national ID and fluent English required. King Salman Park project; January–February 2027, two months; SAR 3,500 monthly stipend.","ar":"تدريب تعاوني لدى AtkinsRéalis ضمن مشروع حديقة الملك سلمان في الرياض خلال يناير وفبراير 2027 لمدة شهرين، بمكافأة شهرية قدرها 3,500 ريال. يستهدف السعوديين الذين يدرسون في جامعة مقرها الرياض أو تخرجوا منها حديثًا في الهندسة المدنية أو الميكانيكية أو الإنشائية أو التخصصات الهندسية ذات الصلة أو العمارة أو المالية أو تقنية المعلومات أو إدارة الأعمال. الحد الأدنى للمعدل 2.75 من 4 أو 3.75 من 5. يلزم خطاب تدريب رسمي من الجامعة وسيرة ذاتية محدثة ونسخة من الهوية الوطنية وإجادة الإنجليزية."},
-    requiresLetter: true,
     addedAt: "2026-11-25T20:19:00+03:00",
   },
   {

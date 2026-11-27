@@ -18,7 +18,6 @@ import LetterRequirementToggle from "./components/LetterRequirementToggle.jsx";
 import CompanyList from "./components/CompanyList.jsx";
 import NotFoundPage from "./components/NotFoundPage.jsx";
 import Footer from "./components/Footer.jsx";
-import MobileBottomNav from "./components/MobileBottomNav.jsx";
 import { companies as fallbackCompanies } from "./data/companies.js";
 import { getLocalizedSitePage, SITE_CONTENT_UPDATED } from "./data/siteContent.js";
 import useDocumentMetadata from "./hooks/useDocumentMetadata.js";
@@ -136,6 +135,7 @@ export default function PublicApp({ pathname, navigate, returnTo, locale, messag
   const [activeCity, setActiveCity] = useState("all");
   const [sortByDeadline, setSortByDeadline] = useState(false);
   const [showNoLetterOnly, setShowNoLetterOnly] = useState(false);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [appliedLinks, setAppliedLinks] = useState(() =>
     getStoredLinks(APPLIED_STORAGE_KEY),
   );
@@ -606,12 +606,23 @@ export default function PublicApp({ pathname, navigate, returnTo, locale, messag
           {messages.lastUpdated}: {lastUpdated}
         </p>
 
-        <section className="controls" aria-label={messages.filters.controlsLabel}>
+        <section className={mobileFiltersOpen ? "controls filters-expanded" : "controls"} aria-label={messages.filters.controlsLabel}>
           <SearchBar
             searchTerm={searchTerm}
             onSearchChange={setSearchTerm}
             messages={messages}
           />
+          <button
+            type="button"
+            className="mobile-filter-toggle"
+            aria-label={messages.filters.controlsLabel}
+            aria-expanded={mobileFiltersOpen}
+            aria-controls="opportunity-filters"
+            onClick={() => setMobileFiltersOpen((open) => !open)}
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" /></svg>
+            {(activeCity !== "all" || sortByDeadline || showNoLetterOnly) && <span className="filter-indicator" />}
+          </button>
           <div className="filter-panel">
             <FilterButtons
               activeFilter={activeFilter}
@@ -620,7 +631,7 @@ export default function PublicApp({ pathname, navigate, returnTo, locale, messag
               locale={locale}
               messages={messages}
             />
-            <div className="filter-pair">
+            <div className="filter-pair" id="opportunity-filters">
               <CitySelect
                 activeCity={activeCity}
                 cities={cityOptions}
@@ -663,13 +674,6 @@ export default function PublicApp({ pathname, navigate, returnTo, locale, messag
       </main>
 
       <Footer messages={messages} locale={locale} navigate={navigate} />
-      <MobileBottomNav
-        activeFilter={activeFilter}
-        counts={opportunityCounts}
-        onFilterChange={setActiveFilter}
-        locale={locale}
-        messages={messages}
-      />
       <Analytics beforeSend={excludeResumeAnalytics} />
     </>
   );

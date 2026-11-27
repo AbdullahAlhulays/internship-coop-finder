@@ -116,6 +116,14 @@ function CompanyCard({
         <span className="deadline-dot" aria-hidden="true" />
         {deadlineContent.label && <span>{deadlineContent.label}</span>}
         <strong>{deadlineContent.value}</strong>
+        {requiresLetter && (
+          <span className="letter-requirement" role="img" aria-label={messages.card.letterRequired} title={messages.card.letterRequired} tabIndex={0}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z" />
+              <path d="M14 3v6h6M8 13h8M8 17h5" />
+            </svg>
+          </span>
+        )}
       </div>
 
       <div className="card-summary">
@@ -136,11 +144,6 @@ function CompanyCard({
           <span className="card-copy-mobile">{messages.card.detailsUnavailableShort}</span>
         </span>
       )}
-        {requiresLetter && (
-          <span className="letter-requirement">
-            {messages.card.letterRequired}
-          </span>
-        )}
       </div>
 
       <div className="card-actions">
